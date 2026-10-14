@@ -1,0 +1,75 @@
+{
+  "ShortName": "MOD02QKM",
+  "Version": "7",
+  "EntryTitle": "MODIS/Terra Calibrated Radiances 5-Min L1B Swath 250m V7",
+  "Abstract": "The Terra MODIS (Moderate resolution Imaging Spectroradiometer) Level-1B (L1B) product includes calibrated and geolocated at-aperture radiances for 36 bands generated from MODIS Level-1A raw sensor counts. The radiances are provided in watts/m2/micrometer/steradian. The Terra MODIS L1B product is a set three datasets (MOD02QKM, MOD02HKM, and MOD021KM) that are produced to address the three spatial-resolution variations: 250 m, 500 m, and 1000 m. This landing page describes the quarter-kilometer product with a short-name MOD02QKM. It provides calibrated radiances derived from the 250-m at-nadir visible band-1 and near-infrared band-2 that have central wavelengths at 0.645 µm and 0.858 µm, respectively. Each 250-m band has 40 detectors in the along-track direction.",
+  "DOI": {
+    "DOI": "10.5067/MODIS/MOD02QKM.007",
+    "Authority": "https://doi.org"
+  },
+  "ProcessingLevel": {
+    "Id": "1B"
+  },
+  "Platforms": [
+    {
+      "Type": "Earth Observation Satellites",
+      "ShortName": "Terra"
+    }
+  ],
+  "Instruments": [
+    {
+      "ShortName": "MODIS"
+    }
+  ],
+  "ScienceKeywords": [
+    {
+      "Category": "EARTH SCIENCE",
+      "Topic": "SPECTRAL/ENGINEERING",
+      "Term": "INFRARED WAVELENGTHS",
+      "VariableLevel1": "INFRARED RADIANCE"
+    },
+    {
+      "Category": "EARTH SCIENCE",
+      "Topic": "SPECTRAL/ENGINEERING",
+      "Term": "INFRARED WAVELENGTHS",
+      "VariableLevel1": "REFLECTED INFRARED"
+    },
+    {
+      "Category": "EARTH SCIENCE",
+      "Topic": "SPECTRAL/ENGINEERING",
+      "Term": "VISIBLE WAVELENGTHS",
+      "VariableLevel1": "VISIBLE RADIANCE"
+    }
+  ],
+  "MetadataAssociations": [
+    {
+      "Type": "PARENT",
+      "Description": "MOD02QKM is derived from MOD01 (MODIS/Terra Raw Radiances in Counts 5-Min L1A Swath). Processing: MOD_PR02 (PGE02) radiometric calibration of L1A Earth View digital numbers to TOA radiance and reflectance factors for 250m bands 1-2, applied per band, detector, sub-sample and mirror side using L1B LUTs. ATBD Section: 5.1 (MODIS L1B ATBD (Collection 7)). Source: 'Each L1A granule contains 5 minutes of data, consisting of the sensor's response in digital numbers (DNs) as well as other engineering and telemetry information. These are the principal inputs to the Level 1B (L1B) process.' MODIS L1B Product User's Guide (MOD_PR02 V7.0.20) Section 1.2: 'MOD_PR02 ordinarily inputs three Level 1A files that are consecutive in time' (previous, current, subsequent). Note: no standard (non-NRT) MOD01 V7 collection was found in CMR; Version omitted.",
+      "EntryId": "MOD01"
+    },
+    {
+      "Type": "INPUT",
+      "Description": "MOD03 (MODIS/Terra Geolocation Fields 5-Min L1A Swath 1km V7) serves as input to MOD02QKM. Role: Geolocation input; Level 1B organizes calibrated data into a swath tied to MOD03 pixel geolocation and copies subsets of MOD03 latitude/longitude into the MOD02QKM Earth View product. ATBD Section: 5.1 (MODIS L1B ATBD (Collection 7)). Source: 'Other inputs include a geolocation file and a set of L1B Look-Up Tables (LUTs)'. MODIS L1B Product User's Guide (MOD_PR02 V7.0.20) Section 3.3.2: 'Level 1B copies subsets of the geolocation data from the geolocation file to the Earth View products to support plotting and data visualization.'",
+      "EntryId": "MOD03",
+      "Version": "7"
+    },
+    {
+      "Type": "RELATED",
+      "Description": "MOD02HKM is related to MOD02QKM. Relationship: Parallel L1B product from the same MOD_PR02 run (identical granule time boundaries) containing calibrated 500m Earth View data, including MOD02QKM bands 1-2 aggregated from 250m to 500m (EV_250_Aggr500_RefSB) using triangular (scan) and rectangular (track) weighting. MODIS L1B Product User's Guide (MOD_PR02 V7.0.20) Table 1.2.1: 'Calibrated Earth View data at 500m resolution, including the 250m resolution bands aggregated to 500m resolution.' Section 5.4.5 (Aggregation).",
+      "EntryId": "MOD02HKM",
+      "Version": "7"
+    },
+    {
+      "Type": "RELATED",
+      "Description": "MOD021KM is related to MOD02QKM. Relationship: Parallel L1B product from the same MOD_PR02 run containing calibrated 1km Earth View data for all 36 bands, including MOD02QKM bands 1-2 aggregated from 250m to 1km (EV_250_Aggr1km_RefSB). MODIS L1B Product User's Guide (MOD_PR02 V7.0.20) Table 1.2.1: 'Calibrated Earth View data at 1km resolution, including the 250m and 500m resolution bands aggregated to 1km resolution.' Section 5.4.5 (Aggregation).",
+      "EntryId": "MOD021KM",
+      "Version": "7"
+    },
+    {
+      "Type": "RELATED",
+      "Description": "MYD02QKM is related to MOD02QKM. Relationship: Equivalent 250m L1B calibrated radiance product from the Aqua MODIS instrument (MOD_PR02AQUA), with the same file structure, enabling Terra/Aqua inter-platform comparison and complementary diurnal coverage. Each instrument has its own instrument-specific LUTs. ATBD Sections: 1.3 and 4.4 (MODIS L1B ATBD (Collection 7)). Source: 'the L1B software to generate the MODIS MOD02 (Terra) and MYD02 (Aqua) data products.' MODIS L1B Product User's Guide (MOD_PR02 V7.0.20) Table 1.2.1 lists MOD02QKM / MYD02QKM.",
+      "EntryId": "MYD02QKM",
+      "Version": "7"
+    }
+  ]
+}

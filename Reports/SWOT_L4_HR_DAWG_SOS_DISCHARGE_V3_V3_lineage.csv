@@ -1,0 +1,4 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+SWOT_L4_HR_DAWG_SOS_DISCHARGE_V3,3,PARENT,SWOT_L2_HR_RiverSP_D,D,MEDIUM,derived_from
+SWOT_L4_HR_DAWG_SOS_DISCHARGE_V3,3,INPUT,HLSL30,2.0,MEDIUM,input_to
+SWOT_L4_HR_DAWG_SOS_DISCHARGE_V3,3,INPUT,HLSS30,2.0,MEDIUM,input_to

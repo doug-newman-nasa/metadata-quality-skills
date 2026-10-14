@@ -1,0 +1,128 @@
+{
+  "ShortName": "MOD11A2",
+  "Version": "6.1",
+  "EntryTitle": "MODIS/Terra Land Surface Temperature/Emissivity 8-Day L3 Global 1km SIN Grid V061",
+  "Abstract": "The Terra Moderate Resolution Imaging Spectroradiometer (MODIS) Land Surface Temperature/Emissivity 8-Day (MOD11A2) Version 6.1 product provides an average 8-day per-pixel Land Surface Temperature and Emissivity (LST&E) with a 1 kilometer (km) spatial resolution in a 1,200 by 1,200 km grid.",
+  "DOI": {
+    "DOI": "10.5067/MODIS/MOD11A2.061",
+    "Authority": "https://doi.org"
+  },
+  "ProcessingLevel": {
+    "Id": "3"
+  },
+  "Platforms": [
+    {
+      "Type": "Earth Observation Satellites",
+      "ShortName": "Terra"
+    }
+  ],
+  "Instruments": [
+    {
+      "ShortName": "MODIS"
+    }
+  ],
+  "ScienceKeywords": [
+    {
+      "Category": "EARTH SCIENCE",
+      "Topic": "LAND SURFACE",
+      "Term": "SURFACE THERMAL PROPERTIES",
+      "VariableLevel1": "LAND SURFACE TEMPERATURE"
+    },
+    {
+      "Category": "EARTH SCIENCE",
+      "Topic": "LAND SURFACE",
+      "Term": "SURFACE RADIATIVE PROPERTIES",
+      "VariableLevel1": "EMISSIVITY"
+    }
+  ],
+  "MetadataAssociations": [
+    {
+      "Type": "DerivedFrom",
+      "Description": "MOD11A2 is derived from MOD11A1. Processing: 8-day temporal averaging of daily LST pixels. ATBD Section: 2.4. Source: 'Each pixel value in the MOD11A2 is a simple average of all the corresponding MOD11A1 LST pixels collected within that 8-day period.'",
+      "CollectionRef": {
+        "ShortName": "MOD11A1",
+        "Version": "6.1",
+        "ConceptId": "C1748058432-LPCLOUD"
+      },
+      "AssociationDetails": {
+        "ProcessingMethodDescription": "8-day temporal averaging: MOD11A2[pixel] = mean(MOD11A1[pixel, day1:day8]) with minimum 4 valid days requirement. Aggregates daily LST observations into composite product.",
+        "RelatedUrl": {
+          "URL": "https://doi.org/10.5067/MODIS/MOD11A1.061",
+          "Description": "MOD11A1 collection landing page and documentation"
+        },
+        "AtbdReference": {
+          "URL": "https://lpdaac.usgs.gov/documents/119/MOD11_ATBD.pdf",
+          "Section": "2.4 (Temporal Aggregation Algorithm)",
+          "SectionTitle": "MOD11A2 8-Day Composite Procedure",
+          "Quote": "Each pixel value in the MOD11A2 is a simple average of all the corresponding MOD11A1 LST pixels collected within that 8-day period. The 8-day compositing period was chosen because twice that period is the exact ground track repeat period of the Terra and Aqua platforms."
+        }
+      },
+      "ExtractionMetadata": {
+        "ExtractedFrom": "ATBD",
+        "ExtractedDate": "2025-09-11T10:30:00Z",
+        "Confidence": "HIGH",
+        "ValidationStatus": "CMR_Verified",
+        "ValidationNotes": "Parent collection MOD11A1 verified in CMR. Processing level progression valid (L2→L3). Version compatibility confirmed (V6.1→V6.1)."
+      }
+    },
+    {
+      "Type": "Input",
+      "Description": "MOD03 provides geolocation information required for spatial mapping and georeferencing of MOD11A2 pixels. Essential supporting data for pixel coordinate reference.",
+      "CollectionRef": {
+        "ShortName": "MOD03",
+        "Version": "6.1",
+        "ConceptId": "C2146618819-LPCLOUD"
+      },
+      "AssociationDetails": {
+        "ProcessingMethodDescription": "Geolocation reference: latitude/longitude per pixel at 1 km resolution. Used for spatial mapping and geographic registration.",
+        "RelatedUrl": {
+          "URL": "https://doi.org/10.5067/MODIS/MOD03.061",
+          "Description": "MOD03 geolocation collection"
+        },
+        "AtbdReference": {
+          "URL": "https://lpdaac.usgs.gov/documents/119/MOD11_ATBD.pdf",
+          "Section": "Appendix B (Ancillary Data Requirements)",
+          "Quote": "MOD03 geolocation data is required for pixel mapping and geographic registration of output products."
+        }
+      },
+      "ExtractionMetadata": {
+        "ExtractedFrom": "ATBD",
+        "ExtractedDate": "2025-09-11T10:30:00Z",
+        "Confidence": "MEDIUM",
+        "ValidationStatus": "CMR_Verified",
+        "ValidationNotes": "MOD03 verified as supporting input. Secondary rather than primary input collection."
+      }
+    },
+    {
+      "Type": "RelatedTo",
+      "Description": "MYD11A2 is the equivalent product from the Aqua platform. Both collections provide global LST observations with identical processing algorithms and output structure, enabling inter-platform comparison and complementary spatial/temporal coverage.",
+      "CollectionRef": {
+        "ShortName": "MYD11A2",
+        "Version": "6.1",
+        "ConceptId": "C2269281690-LPCLOUD"
+      },
+      "AssociationDetails": {
+        "ProcessingMethodDescription": "Identical processing to MOD11A2 but from Aqua MODIS instrument. Enables enhanced temporal coverage through combined Terra-Aqua observations.",
+        "RelatedUrl": {
+          "URL": "https://doi.org/10.5067/MODIS/MYD11A2.061",
+          "Description": "MYD11A2 (Aqua equivalent) collection"
+        }
+      },
+      "ExtractionMetadata": {
+        "ExtractedFrom": "CMR_Pattern_Match",
+        "ExtractedDate": "2025-09-11T10:30:00Z",
+        "Confidence": "HIGH",
+        "ValidationStatus": "CMR_Verified",
+        "ValidationNotes": "Related through identical product architecture and processing chain."
+      }
+    }
+  ],
+  "MetadataProvenance": {
+    "GeneratedBy": "Generic_Collection_Lineage_UMM_C_Export_Skill v1.0",
+    "GenerationDate": "2025-09-11T10:30:00Z",
+    "Source": "ATBD-based lineage extraction with CMR validation",
+    "ExtractionMethod": "Automated ATBD parsing and UMM-C generation",
+    "ValidationLevel": "Complete",
+    "ReadyForCMRUpdate": true
+  }
+}

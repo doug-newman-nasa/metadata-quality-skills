@@ -1,0 +1,4421 @@
+{
+  "scope": "34 NISAR collections in CMR: 31 with platform NISAR, plus NISAR_DEM, NISAR_WATERMASK and NISAR_VWC (NISAR mission ancillary collections)",
+  "subjects": [
+    {
+      "shortname": "NISAR_ANC_AUX",
+      "version": "1",
+      "concept_id": "C3622222871-ASF"
+    },
+    {
+      "shortname": "NISAR_COP",
+      "version": "1",
+      "concept_id": "C2727904608-ASF"
+    },
+    {
+      "shortname": "NISAR_DEM",
+      "version": "1",
+      "concept_id": "C3803703055-ASF"
+    },
+    {
+      "shortname": "NISAR_L0B_CRSD_PROVISIONAL_V1",
+      "version": "1",
+      "concept_id": "C2853091612-ASF"
+    },
+    {
+      "shortname": "NISAR_L0B_RRSD_PROVISIONAL_V1",
+      "version": "1",
+      "concept_id": "C2853089814-ASF"
+    },
+    {
+      "shortname": "NISAR_L1_RIFG_BETA_V1",
+      "version": "1",
+      "concept_id": "C2850234202-ASF"
+    },
+    {
+      "shortname": "NISAR_L1_RIFG_PROVISIONAL_V1",
+      "version": "1",
+      "concept_id": "C2853147928-ASF"
+    },
+    {
+      "shortname": "NISAR_L1_ROFF_BETA_V1",
+      "version": "1",
+      "concept_id": "C2850237619-ASF"
+    },
+    {
+      "shortname": "NISAR_L1_ROFF_PROVISIONAL_V1",
+      "version": "1",
+      "concept_id": "C2853156054-ASF"
+    },
+    {
+      "shortname": "NISAR_L1_RSLC_BETA_V1",
+      "version": "1",
+      "concept_id": "C2850225585-ASF"
+    },
+    {
+      "shortname": "NISAR_L1_RSLC_PROVISIONAL_V1",
+      "version": "1",
+      "concept_id": "C2853145197-ASF"
+    },
+    {
+      "shortname": "NISAR_L1_RUNW_BETA_V1",
+      "version": "1",
+      "concept_id": "C2850235455-ASF"
+    },
+    {
+      "shortname": "NISAR_L1_RUNW_PROVISIONAL_V1",
+      "version": "1",
+      "concept_id": "C2853153429-ASF"
+    },
+    {
+      "shortname": "NISAR_L2_GCOV_BETA_V1",
+      "version": "1",
+      "concept_id": "C3622214170-ASF"
+    },
+    {
+      "shortname": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "version": "1",
+      "concept_id": "C2854338529-ASF"
+    },
+    {
+      "shortname": "NISAR_L2_GOFF_BETA_V1",
+      "version": "1",
+      "concept_id": "C2850263910-ASF"
+    },
+    {
+      "shortname": "NISAR_L2_GOFF_PROVISIONAL_V1",
+      "version": "1",
+      "concept_id": "C2854341702-ASF"
+    },
+    {
+      "shortname": "NISAR_L2_GSLC_BETA_V1",
+      "version": "1",
+      "concept_id": "C2850259510-ASF"
+    },
+    {
+      "shortname": "NISAR_L2_GSLC_PROVISIONAL_V1",
+      "version": "1",
+      "concept_id": "C2854332392-ASF"
+    },
+    {
+      "shortname": "NISAR_L2_GUNW_BETA_V1",
+      "version": "1",
+      "concept_id": "C2850261892-ASF"
+    },
+    {
+      "shortname": "NISAR_L2_GUNW_PROVISIONAL_V1",
+      "version": "1",
+      "concept_id": "C2854335566-ASF"
+    },
+    {
+      "shortname": "NISAR_L3_SME2_BETA_V1",
+      "version": "1",
+      "concept_id": "C2850265000-ASF"
+    },
+    {
+      "shortname": "NISAR_L3_SME2_PROVISIONAL_V1",
+      "version": "1",
+      "concept_id": "C2854344945-ASF"
+    },
+    {
+      "shortname": "NISAR_LRCLK_UTC",
+      "version": "1",
+      "concept_id": "C3632501432-ASF"
+    },
+    {
+      "shortname": "NISAR_OE",
+      "version": "1",
+      "concept_id": "C2727908375-ASF"
+    },
+    {
+      "shortname": "NISAR_OROST",
+      "version": "1",
+      "concept_id": "C2727911748-ASF"
+    },
+    {
+      "shortname": "NISAR_RP",
+      "version": "1",
+      "concept_id": "C2727912431-ASF"
+    },
+    {
+      "shortname": "NISAR_STUF",
+      "version": "1",
+      "concept_id": "C3622233495-ASF"
+    },
+    {
+      "shortname": "NISAR_TEC",
+      "version": "1",
+      "concept_id": "C3622219145-ASF"
+    },
+    {
+      "shortname": "NISAR_UR_L0B_RRSD",
+      "version": "1",
+      "concept_id": "C2887469134-ASF"
+    },
+    {
+      "shortname": "NISAR_UR_L1",
+      "version": "1",
+      "concept_id": "C2887499907-ASF"
+    },
+    {
+      "shortname": "NISAR_UR_L2",
+      "version": "1",
+      "concept_id": "C2887502657-ASF"
+    },
+    {
+      "shortname": "NISAR_VWC",
+      "version": "1",
+      "concept_id": "C4066106685-ASF"
+    },
+    {
+      "shortname": "NISAR_WATERMASK",
+      "version": "1",
+      "concept_id": "C3807638962-ASF"
+    }
+  ],
+  "generated": "2026-10-14T13:18:08+00:00",
+  "skill": "Collection_Lineage_CSV_Export_Skill v1.3",
+  "atbd_search_depth": 1,
+  "documents": [
+    {
+      "id": "SPEC_RSLC",
+      "title": "NISAR L1 RSLC Product Specification (JPL D-102268 Rev F)",
+      "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102268_RevF_NASA_SDS_Product_Specification_L1_RSLC_w-esigs.pdf"
+    },
+    {
+      "id": "SPEC_GSLC",
+      "title": "NISAR L2 GSLC Product Specification (JPL D-102269 Rev F)",
+      "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102269_RevF_NASA_SDS_Product_Specification_L2_GSLC_w-esigs.pdf"
+    },
+    {
+      "id": "SPEC_GCOV",
+      "title": "NISAR L2 GCOV Product Specification (JPL D-102274 Rev F)",
+      "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102274_RevF_NASA_SDS_Product_Specification_L2_GCOV_w-esigs.pdf"
+    },
+    {
+      "id": "SPEC_L0B",
+      "title": "NISAR L0B RRSD and CRSD Product Specification (JPL D-102267 Rev G)",
+      "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102267_RevG_NASA_SDS_Product_Specification_L0B_RRSD_CRSD_w-esigs.pdf"
+    },
+    {
+      "id": "SIS_TFDB",
+      "title": "NISAR Track-Frame Database SIS (JPL D-105021 Rev A)",
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR-SAMPLE-DATA/DOCS/NISAR_D-105021_RevA_Track_Frame_Database_SIS_20250428_w-esig.pdf"
+    },
+    {
+      "id": "MEMO_VWC",
+      "title": "NISAR Mission Ancillary Data Product Memo: Vegetation Water Content",
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR-SAMPLE-DATA/DOCS/NISAR_VWC_product_memo_260624.pdf"
+    },
+    {
+      "id": "ASF_GSLC",
+      "title": "NISAR Data User Guide: GSLC (ASF)",
+      "url": "https://nisar-docs.asf.alaska.edu/gslc/"
+    },
+    {
+      "id": "ABS:NISAR_VWC",
+      "title": "NISAR_VWC collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C4066106685-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_WATERMASK",
+      "title": "NISAR_WATERMASK collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3807638962-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_DEM",
+      "title": "NISAR_DEM collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3803703055-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_ANC_AUX",
+      "title": "NISAR_ANC_AUX collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3622222871-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_L2_GOFF_BETA_V1",
+      "title": "NISAR_L2_GOFF_BETA_V1 collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850263910-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_L2_GCOV_BETA_V1",
+      "title": "NISAR_L2_GCOV_BETA_V1 collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3622214170-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_L2_GSLC_BETA_V1",
+      "title": "NISAR_L2_GSLC_BETA_V1 collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850259510-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_L2_GUNW_BETA_V1",
+      "title": "NISAR_L2_GUNW_BETA_V1 collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850261892-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_L1_ROFF_BETA_V1",
+      "title": "NISAR_L1_ROFF_BETA_V1 collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850237619-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_L1_RSLC_BETA_V1",
+      "title": "NISAR_L1_RSLC_BETA_V1 collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850225585-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_L1_RUNW_BETA_V1",
+      "title": "NISAR_L1_RUNW_BETA_V1 collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850235455-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_L1_RIFG_BETA_V1",
+      "title": "NISAR_L1_RIFG_BETA_V1 collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850234202-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_L3_SME2_BETA_V1",
+      "title": "NISAR_L3_SME2_BETA_V1 collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850265000-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_COP",
+      "title": "NISAR_COP collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2727904608-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_LRCLK_UTC",
+      "title": "NISAR_LRCLK_UTC collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3632501432-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_OROST",
+      "title": "NISAR_OROST collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2727911748-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_OE",
+      "title": "NISAR_OE collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2727908375-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_L2_GOFF_PROVISIONAL_V1",
+      "title": "NISAR_L2_GOFF_PROVISIONAL_V1 collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2854341702-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_L2_GCOV_PROVISIONAL_V1",
+      "title": "NISAR_L2_GCOV_PROVISIONAL_V1 collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2854338529-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_L2_GSLC_PROVISIONAL_V1",
+      "title": "NISAR_L2_GSLC_PROVISIONAL_V1 collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2854332392-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_L2_GUNW_PROVISIONAL_V1",
+      "title": "NISAR_L2_GUNW_PROVISIONAL_V1 collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2854335566-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_L0B_CRSD_PROVISIONAL_V1",
+      "title": "NISAR_L0B_CRSD_PROVISIONAL_V1 collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2853091612-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_L0B_RRSD_PROVISIONAL_V1",
+      "title": "NISAR_L0B_RRSD_PROVISIONAL_V1 collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2853089814-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_L1_ROFF_PROVISIONAL_V1",
+      "title": "NISAR_L1_ROFF_PROVISIONAL_V1 collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2853156054-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_L1_RSLC_PROVISIONAL_V1",
+      "title": "NISAR_L1_RSLC_PROVISIONAL_V1 collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2853145197-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_L1_RUNW_PROVISIONAL_V1",
+      "title": "NISAR_L1_RUNW_PROVISIONAL_V1 collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2853153429-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_L1_RIFG_PROVISIONAL_V1",
+      "title": "NISAR_L1_RIFG_PROVISIONAL_V1 collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2853147928-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_L3_SME2_PROVISIONAL_V1",
+      "title": "NISAR_L3_SME2_PROVISIONAL_V1 collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2854344945-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_RP",
+      "title": "NISAR_RP collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2727912431-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_STUF",
+      "title": "NISAR_STUF collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3622233495-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_TEC",
+      "title": "NISAR_TEC collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3622219145-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_UR_L1",
+      "title": "NISAR_UR_L1 collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2887499907-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_UR_L2",
+      "title": "NISAR_UR_L2 collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2887502657-ASF.umm_json"
+    },
+    {
+      "id": "ABS:NISAR_UR_L0B_RRSD",
+      "title": "NISAR_UR_L0B_RRSD collection abstract (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2887469134-ASF.umm_json"
+    }
+  ],
+  "method_notes": [
+    "No ATBD is linked from any NISAR collection; evidence comes from the linked Product Specifications, SIS documents, the VWC memo, ASF user guide pages and collection abstracts.",
+    "BETA products are linked to BETA inputs and PROVISIONAL to PROVISIONAL (same maturity).",
+    "PARENT rows have matching CHILD rows on the parent; RELATED rows are written in both directions. INPUT rows have no inverse in the vocabulary.",
+    "The processing-level progression check is applied to PARENT/CHILD rows only, as in the parent skill's Step 6."
+  ],
+  "rows": [
+    {
+      "shortname": "NISAR_L1_RSLC_BETA_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_OE",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2727908375-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1A",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "MOE/POE are product types within NISAR_OE (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L1_RSLC_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850225585-ASF.umm_json",
+          "quote": "All standard (i.e., non-urgent response) products are processed using the Medium-fidelity Orbit Ephemeris (MOE) product for forward processing and the Precise Orbit Ephemeris (POE) product for reprocessing campaigns"
+        },
+        {
+          "document": "NISAR_OE collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2727908375-ASF.umm_json",
+          "quote": "MOE=Medium precision Orbit Ephemeris, and POE=Precise Orbit Ephemeris"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RSLC_BETA_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_RP",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2727912431-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1A",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "PRP is a product type within NISAR_RP (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR L1 RSLC Product Specification (JPL D-102268 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102268_RevF_NASA_SDS_Product_Specification_L1_RSLC_w-esigs.pdf",
+          "quote": "In nominal operations, this would be the Precise Radar Pointing (PRP) state vectors that were used by the L1 processor"
+        },
+        {
+          "document": "NISAR_RP collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2727912431-ASF.umm_json",
+          "quote": "PRP=Precise Radar Pointing"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RSLC_BETA_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_DEM",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3803703055-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic 'DEM' mapped to NISAR_DEM (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR L1 RSLC Product Specification (JPL D-102268 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102268_RevF_NASA_SDS_Product_Specification_L1_RSLC_w-esigs.pdf",
+          "quote": "The key input files – L0B granules, orbit, attitude, calibration, DEM source description, and configuration files"
+        },
+        {
+          "document": "NISAR_DEM collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3803703055-ASF.umm_json",
+          "quote": "representing the DEM used for processing NISAR products"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RSLC_BETA_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_ANC_AUX",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3622222871-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "Not Provided",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Calibration files and the Track-Frame Database are distributed in NISAR_ANC_AUX (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR L1 RSLC Product Specification (JPL D-102268 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102268_RevF_NASA_SDS_Product_Specification_L1_RSLC_w-esigs.pdf",
+          "quote": "The key input files – L0B granules, orbit, attitude, calibration, DEM source description, and configuration files"
+        },
+        {
+          "document": "NISAR Track-Frame Database SIS (JPL D-105021 Rev A)",
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR-SAMPLE-DATA/DOCS/NISAR_D-105021_RevA_Track_Frame_Database_SIS_20250428_w-esig.pdf",
+          "quote": "The TFdb is primarily used to determine the track and frames covered by the L1 RSLC products"
+        },
+        {
+          "document": "NISAR_ANC_AUX collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3622222871-ASF.umm_json",
+          "quote": "LSAR Calibration File (EXT_CAL)"
+        },
+        {
+          "document": "NISAR_ANC_AUX collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3622222871-ASF.umm_json",
+          "quote": "Track Frame Database (TFDB)"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RSLC_BETA_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_STUF",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3622233495-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "Not Provided",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "STUF supplies the cycle reference time used to frame L0B observations into RSLC products.",
+      "evidence": [
+        {
+          "document": "NISAR Track-Frame Database SIS (JPL D-105021 Rev A)",
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR-SAMPLE-DATA/DOCS/NISAR_D-105021_RevA_Track_Frame_Database_SIS_20250428_w-esig.pdf",
+          "quote": "the NISAR SDS will receive the ascending node time of the first orbit of every cycle, here after called “SDS cycle reference time”, from the STUF file delivered by the Navigation team to the SDS"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GSLC_BETA_V1",
+      "version": "1",
+      "association_type": "PARENT",
+      "related_shortname": "NISAR_L1_RSLC_BETA_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "derived_from",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850225585-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR L2 GSLC Product Specification (JPL D-102269 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102269_RevF_NASA_SDS_Product_Specification_L2_GSLC_w-esigs.pdf",
+          "quote": "The GSLC product is a Level 2 product derived from the Level-1 RSLC product by geocoding the input RSLC into a geocoded map coordinate system"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RSLC_BETA_V1",
+      "version": "1",
+      "association_type": "CHILD",
+      "related_shortname": "NISAR_L2_GSLC_BETA_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850259510-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred). Inverse of NISAR_L2_GSLC_BETA_V1 derived_from NISAR_L1_RSLC_BETA_V1.",
+      "evidence": [
+        {
+          "document": "NISAR L2 GSLC Product Specification (JPL D-102269 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102269_RevF_NASA_SDS_Product_Specification_L2_GSLC_w-esigs.pdf",
+          "quote": "The GSLC product is a Level 2 product derived from the Level-1 RSLC product by geocoding the input RSLC into a geocoded map coordinate system"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GSLC_BETA_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_OE",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2727908375-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "1A",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic 'orbit' / 'DEM' mapped to NISAR_OE / NISAR_DEM (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR L2 GSLC Product Specification (JPL D-102269 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102269_RevF_NASA_SDS_Product_Specification_L2_GSLC_w-esigs.pdf",
+          "quote": "The key input file – L1 RSLC granule, orbit, DEM source description, and configuration files are tracked and listed under the subgroup"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GSLC_BETA_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_DEM",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3803703055-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic 'orbit' / 'DEM' mapped to NISAR_OE / NISAR_DEM (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR L2 GSLC Product Specification (JPL D-102269 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102269_RevF_NASA_SDS_Product_Specification_L2_GSLC_w-esigs.pdf",
+          "quote": "The key input file – L1 RSLC granule, orbit, DEM source description, and configuration files are tracked and listed under the subgroup"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GSLC_BETA_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_TEC",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3622219145-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "1A",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic 'GNSS-based TEC data' mapped to NISAR_TEC (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR L2 GSLC Product Specification (JPL D-102269 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102269_RevF_NASA_SDS_Product_Specification_L2_GSLC_w-esigs.pdf",
+          "quote": "The ionospheric delay is estimated using GNSS-based TEC data and corrected during the geocoding process"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GCOV_BETA_V1",
+      "version": "1",
+      "association_type": "PARENT",
+      "related_shortname": "NISAR_L1_RSLC_BETA_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "derived_from",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850225585-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR L2 GCOV Product Specification (JPL D-102274 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102274_RevF_NASA_SDS_Product_Specification_L2_GCOV_w-esigs.pdf",
+          "quote": "The GCOV product is an L2 product derived from the L1 Range Doppler Single Look Complex (RSLC) product"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RSLC_BETA_V1",
+      "version": "1",
+      "association_type": "CHILD",
+      "related_shortname": "NISAR_L2_GCOV_BETA_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3622214170-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred). Inverse of NISAR_L2_GCOV_BETA_V1 derived_from NISAR_L1_RSLC_BETA_V1.",
+      "evidence": [
+        {
+          "document": "NISAR L2 GCOV Product Specification (JPL D-102274 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102274_RevF_NASA_SDS_Product_Specification_L2_GCOV_w-esigs.pdf",
+          "quote": "The GCOV product is an L2 product derived from the L1 Range Doppler Single Look Complex (RSLC) product"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GCOV_BETA_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_DEM",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3803703055-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Copernicus-based reference DEM mapped to NISAR_DEM (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR L2 GCOV Product Specification (JPL D-102274 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102274_RevF_NASA_SDS_Product_Specification_L2_GCOV_w-esigs.pdf",
+          "quote": "The reference DEM for processing and radiometric terrain correcting GCOV products is based on the Copernicus DEM 30m (GLO-30)"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GCOV_BETA_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_TEC",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3622219145-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "1A",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic 'GNSS-based TEC data' mapped to NISAR_TEC (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR L2 GCOV Product Specification (JPL D-102274 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102274_RevF_NASA_SDS_Product_Specification_L2_GCOV_w-esigs.pdf",
+          "quote": "The ionospheric delay is estimated using GNSS-based TEC data (if available) and corrected during the geocoding process"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RIFG_BETA_V1",
+      "version": "1",
+      "association_type": "PARENT",
+      "related_shortname": "NISAR_L1_RSLC_BETA_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "derived_from",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850225585-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L1_RIFG_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850234202-ASF.umm_json",
+          "quote": "wrapped interferogram generated from two Level 1 Range-Doppler Single Look Complex (RSLC) products"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RSLC_BETA_V1",
+      "version": "1",
+      "association_type": "CHILD",
+      "related_shortname": "NISAR_L1_RIFG_BETA_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850234202-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred). Inverse of NISAR_L1_RIFG_BETA_V1 derived_from NISAR_L1_RSLC_BETA_V1.",
+      "evidence": [
+        {
+          "document": "NISAR_L1_RIFG_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850234202-ASF.umm_json",
+          "quote": "wrapped interferogram generated from two Level 1 Range-Doppler Single Look Complex (RSLC) products"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RIFG_BETA_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_DEM",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3803703055-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic DEM / orbit ephemeris mapped to NISAR_DEM / NISAR_OE (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L1_RIFG_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850234202-ASF.umm_json",
+          "quote": "coregisters a pair of RSLC products using a Digital Elevation Model and the best available orbit ephemeris"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RIFG_BETA_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_OE",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2727908375-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1A",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic DEM / orbit ephemeris mapped to NISAR_DEM / NISAR_OE (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L1_RIFG_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850234202-ASF.umm_json",
+          "quote": "coregisters a pair of RSLC products using a Digital Elevation Model and the best available orbit ephemeris"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RIFG_BETA_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_L1_ROFF_BETA_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850237619-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Used only when ROFF is available for the frame. Generic product reference mapped to the same-maturity NISAR collection (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L1_RIFG_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850234202-ASF.umm_json",
+          "quote": "If a Range Doppler Pixel Offsets (ROFF) product is available for the processed frame, the sub-pixel offset layers included in RIFG are obtained by optimally blending the multi-resolution offset layers included in ROFF"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_ROFF_BETA_V1",
+      "version": "1",
+      "association_type": "PARENT",
+      "related_shortname": "NISAR_L1_RSLC_BETA_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "derived_from",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850225585-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L1_ROFF_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850237619-ASF.umm_json",
+          "quote": "dense pixel offset layers obtained from applying incoherent cross-correlation on a pair of coarsely coregistered Level 1 Range Doppler Single Look Complex (RSLC) products"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RSLC_BETA_V1",
+      "version": "1",
+      "association_type": "CHILD",
+      "related_shortname": "NISAR_L1_ROFF_BETA_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850237619-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred). Inverse of NISAR_L1_ROFF_BETA_V1 derived_from NISAR_L1_RSLC_BETA_V1.",
+      "evidence": [
+        {
+          "document": "NISAR_L1_ROFF_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850237619-ASF.umm_json",
+          "quote": "dense pixel offset layers obtained from applying incoherent cross-correlation on a pair of coarsely coregistered Level 1 Range Doppler Single Look Complex (RSLC) products"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_ROFF_BETA_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_OE",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2727908375-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1A",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic orbit ephemeris / DEM mapped to NISAR_OE / NISAR_DEM (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L1_ROFF_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850237619-ASF.umm_json",
+          "quote": "first coarsely aligned with geometrical coregistration using the best available sensor orbit ephemeris and a Digital Elevation Model (DEM)"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_ROFF_BETA_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_DEM",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3803703055-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic orbit ephemeris / DEM mapped to NISAR_OE / NISAR_DEM (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L1_ROFF_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850237619-ASF.umm_json",
+          "quote": "first coarsely aligned with geometrical coregistration using the best available sensor orbit ephemeris and a Digital Elevation Model (DEM)"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RUNW_BETA_V1",
+      "version": "1",
+      "association_type": "PARENT",
+      "related_shortname": "NISAR_L1_RSLC_BETA_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "derived_from",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850225585-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L1_RUNW_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850235455-ASF.umm_json",
+          "quote": "multi-looked interferogram generated from two Level 1 Range Doppler Single Look Complex (RSLC) products"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RSLC_BETA_V1",
+      "version": "1",
+      "association_type": "CHILD",
+      "related_shortname": "NISAR_L1_RUNW_BETA_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850235455-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred). Inverse of NISAR_L1_RUNW_BETA_V1 derived_from NISAR_L1_RSLC_BETA_V1.",
+      "evidence": [
+        {
+          "document": "NISAR_L1_RUNW_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850235455-ASF.umm_json",
+          "quote": "multi-looked interferogram generated from two Level 1 Range Doppler Single Look Complex (RSLC) products"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RUNW_BETA_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_L1_ROFF_BETA_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850237619-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Used only when ROFF is available for the frame. Generic product reference mapped to the same-maturity NISAR collection (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L1_RUNW_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850235455-ASF.umm_json",
+          "quote": "If a Range Doppler Pixel Offsets (ROFF) product is available for the processed frame, the sub-pixel offset layers included in RUNW are obtained by optimally blending the multi resolution offset layers included in ROFF"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GUNW_BETA_V1",
+      "version": "1",
+      "association_type": "PARENT",
+      "related_shortname": "NISAR_L1_RIFG_BETA_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "derived_from",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850234202-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L2_GUNW_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850261892-ASF.umm_json",
+          "quote": "derived from the Range Doppler Wrapped Interferogram (RIFG) and Range Doppler Unwrapped Interferogram (RUNW) products by geocoding"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RIFG_BETA_V1",
+      "version": "1",
+      "association_type": "CHILD",
+      "related_shortname": "NISAR_L2_GUNW_BETA_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850261892-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred). Inverse of NISAR_L2_GUNW_BETA_V1 derived_from NISAR_L1_RIFG_BETA_V1.",
+      "evidence": [
+        {
+          "document": "NISAR_L2_GUNW_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850261892-ASF.umm_json",
+          "quote": "derived from the Range Doppler Wrapped Interferogram (RIFG) and Range Doppler Unwrapped Interferogram (RUNW) products by geocoding"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GUNW_BETA_V1",
+      "version": "1",
+      "association_type": "PARENT",
+      "related_shortname": "NISAR_L1_RUNW_BETA_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "derived_from",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850235455-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L2_GUNW_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850261892-ASF.umm_json",
+          "quote": "derived from the Range Doppler Wrapped Interferogram (RIFG) and Range Doppler Unwrapped Interferogram (RUNW) products by geocoding"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RUNW_BETA_V1",
+      "version": "1",
+      "association_type": "CHILD",
+      "related_shortname": "NISAR_L2_GUNW_BETA_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850261892-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred). Inverse of NISAR_L2_GUNW_BETA_V1 derived_from NISAR_L1_RUNW_BETA_V1.",
+      "evidence": [
+        {
+          "document": "NISAR_L2_GUNW_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850261892-ASF.umm_json",
+          "quote": "derived from the Range Doppler Wrapped Interferogram (RIFG) and Range Doppler Unwrapped Interferogram (RUNW) products by geocoding"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GUNW_BETA_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_L1_RSLC_BETA_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850225585-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "The reference RSLC supplies the orbit; generic DEM mapped to NISAR_DEM (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L2_GUNW_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850261892-ASF.umm_json",
+          "quote": "Geocoding is performed using the orbit of the reference Range Doppler Single Look Complex (RSLC) product and a Digital Elevation Model (DEM)"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GUNW_BETA_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_DEM",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3803703055-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "The reference RSLC supplies the orbit; generic DEM mapped to NISAR_DEM (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L2_GUNW_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850261892-ASF.umm_json",
+          "quote": "Geocoding is performed using the orbit of the reference Range Doppler Single Look Complex (RSLC) product and a Digital Elevation Model (DEM)"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GUNW_BETA_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_L1_ROFF_BETA_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850237619-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Used only when ROFF is available for the frame. Generic product reference mapped to the same-maturity NISAR collection (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L2_GUNW_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850261892-ASF.umm_json",
+          "quote": "If a Range Doppler Pixel Offsets (ROFF) product is available for the processed frame, the sub-pixel offset layers included in GUNW are obtained by optimally blending the multi resolution offset layers included in ROFF"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GOFF_BETA_V1",
+      "version": "1",
+      "association_type": "PARENT",
+      "related_shortname": "NISAR_L1_ROFF_BETA_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "derived_from",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850237619-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L2_GOFF_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850263910-ASF.umm_json",
+          "quote": "derived from the Range Doppler Pixel Offsets (ROFF) product by geocoding the pixel offset layers"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_ROFF_BETA_V1",
+      "version": "1",
+      "association_type": "CHILD",
+      "related_shortname": "NISAR_L2_GOFF_BETA_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850263910-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred). Inverse of NISAR_L2_GOFF_BETA_V1 derived_from NISAR_L1_ROFF_BETA_V1.",
+      "evidence": [
+        {
+          "document": "NISAR_L2_GOFF_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850263910-ASF.umm_json",
+          "quote": "derived from the Range Doppler Pixel Offsets (ROFF) product by geocoding the pixel offset layers"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GOFF_BETA_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_L1_RSLC_BETA_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850225585-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "The reference RSLC supplies the orbit; generic DEM mapped to NISAR_DEM (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L2_GOFF_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850263910-ASF.umm_json",
+          "quote": "Geocoding uses the orbit of the reference Range Doppler Single Look Complex (RSLC) product and a Digital Elevation Model (DEM)"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GOFF_BETA_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_DEM",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3803703055-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "The reference RSLC supplies the orbit; generic DEM mapped to NISAR_DEM (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L2_GOFF_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850263910-ASF.umm_json",
+          "quote": "Geocoding uses the orbit of the reference Range Doppler Single Look Complex (RSLC) product and a Digital Elevation Model (DEM)"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L3_SME2_BETA_V1",
+      "version": "1",
+      "association_type": "PARENT",
+      "related_shortname": "NISAR_L2_GCOV_BETA_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "derived_from",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3622214170-ASF"
+        ],
+        "subject_level": "3",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "'NISAR Level 2 backscatter product' mapped to GCOV, the radiometrically terrain-corrected L2 backscatter product (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L3_SME2_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850265000-ASF.umm_json",
+          "quote": "backscatter observations will estimate a global high-resolution soil moisture product (200 m)"
+        },
+        {
+          "document": "NISAR_L3_SME2_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850265000-ASF.umm_json",
+          "quote": "The NISAR Level 2 backscatter product has a data latency of 48 hours"
+        },
+        {
+          "document": "NISAR Data User Guide: GSLC (ASF)",
+          "url": "https://nisar-docs.asf.alaska.edu/gslc/",
+          "quote": "For radiometrically terrain corrected backscatter, refer to the Geocoded Covariance (GCOV) products"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GCOV_BETA_V1",
+      "version": "1",
+      "association_type": "CHILD",
+      "related_shortname": "NISAR_L3_SME2_BETA_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850265000-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "'NISAR Level 2 backscatter product' mapped to GCOV, the radiometrically terrain-corrected L2 backscatter product (inferred). Inverse of NISAR_L3_SME2_BETA_V1 derived_from NISAR_L2_GCOV_BETA_V1.",
+      "evidence": [
+        {
+          "document": "NISAR_L3_SME2_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850265000-ASF.umm_json",
+          "quote": "backscatter observations will estimate a global high-resolution soil moisture product (200 m)"
+        },
+        {
+          "document": "NISAR_L3_SME2_BETA_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2850265000-ASF.umm_json",
+          "quote": "The NISAR Level 2 backscatter product has a data latency of 48 hours"
+        },
+        {
+          "document": "NISAR Data User Guide: GSLC (ASF)",
+          "url": "https://nisar-docs.asf.alaska.edu/gslc/",
+          "quote": "For radiometrically terrain corrected backscatter, refer to the Geocoded Covariance (GCOV) products"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L3_SME2_BETA_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_VWC",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C4066106685-ASF"
+        ],
+        "subject_level": "3",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "The VWC memo describes use in 'the soil moisture algorithms' (SME2, inferred).",
+      "evidence": [
+        {
+          "document": "NISAR Mission Ancillary Data Product Memo: Vegetation Water Content",
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR-SAMPLE-DATA/DOCS/NISAR_VWC_product_memo_260624.pdf",
+          "quote": "Vegetation water content (VWC) ancillary serves two purposes in the soil moisture algorithms"
+        },
+        {
+          "document": "NISAR_VWC collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C4066106685-ASF.umm_json",
+          "quote": "contains vegetation water content products used for creation of products from the NISAR mission"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L3_SME2_BETA_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_ANC_AUX",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3622222871-ASF"
+        ],
+        "subject_level": "3",
+        "related_level": "Not Provided",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Soil-moisture static files in NISAR_ANC_AUX; use by SME2 inferred from their names.",
+      "evidence": [
+        {
+          "document": "NISAR_ANC_AUX collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3622222871-ASF.umm_json",
+          "quote": "Soil Moisture Static File (SM_STATIC), and Disaggregation File (DSG_STATIC)"
+        },
+        {
+          "document": "NISAR_ANC_AUX collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3622222871-ASF.umm_json",
+          "quote": "Time Series Ratio (TSR_STATIC), Physical Model Inversion (PMI_STATIC)"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RSLC_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "PARENT",
+      "related_shortname": "NISAR_L0B_RRSD_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "derived_from",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853089814-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "0",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic 'L0B granules' / 'RRSD' mapped to the only standard L0B RRSD collection (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR L1 RSLC Product Specification (JPL D-102268 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102268_RevF_NASA_SDS_Product_Specification_L1_RSLC_w-esigs.pdf",
+          "quote": "The key input files – L0B granules, orbit, attitude, calibration, DEM source description, and configuration files are tracked and listed under the subgroup"
+        },
+        {
+          "document": "NISAR_L0B_RRSD_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2853089814-ASF.umm_json",
+          "quote": "The RRSD data is focused to a NISAR Radar Single Look Complex (RSLC) product before use in higher-level processing"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L0B_RRSD_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "CHILD",
+      "related_shortname": "NISAR_L1_RSLC_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853145197-ASF"
+        ],
+        "subject_level": "0",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic 'L0B granules' / 'RRSD' mapped to the only standard L0B RRSD collection (inferred). Inverse of NISAR_L1_RSLC_PROVISIONAL_V1 derived_from NISAR_L0B_RRSD_PROVISIONAL_V1.",
+      "evidence": [
+        {
+          "document": "NISAR L1 RSLC Product Specification (JPL D-102268 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102268_RevF_NASA_SDS_Product_Specification_L1_RSLC_w-esigs.pdf",
+          "quote": "The key input files – L0B granules, orbit, attitude, calibration, DEM source description, and configuration files are tracked and listed under the subgroup"
+        },
+        {
+          "document": "NISAR_L0B_RRSD_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2853089814-ASF.umm_json",
+          "quote": "The RRSD data is focused to a NISAR Radar Single Look Complex (RSLC) product before use in higher-level processing"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RSLC_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_OE",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2727908375-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1A",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "MOE/POE are product types within NISAR_OE (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L1_RSLC_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2853145197-ASF.umm_json",
+          "quote": "All standard (i.e., non-urgent response) products are processed using the Medium-fidelity Orbit Ephemeris (MOE) product for forward processing and the Precise Orbit Ephemeris (POE) product for reprocessing campaigns"
+        },
+        {
+          "document": "NISAR_OE collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2727908375-ASF.umm_json",
+          "quote": "MOE=Medium precision Orbit Ephemeris, and POE=Precise Orbit Ephemeris"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RSLC_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_RP",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2727912431-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1A",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "PRP is a product type within NISAR_RP (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR L1 RSLC Product Specification (JPL D-102268 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102268_RevF_NASA_SDS_Product_Specification_L1_RSLC_w-esigs.pdf",
+          "quote": "In nominal operations, this would be the Precise Radar Pointing (PRP) state vectors that were used by the L1 processor"
+        },
+        {
+          "document": "NISAR_RP collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2727912431-ASF.umm_json",
+          "quote": "PRP=Precise Radar Pointing"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RSLC_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_DEM",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3803703055-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic 'DEM' mapped to NISAR_DEM (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR L1 RSLC Product Specification (JPL D-102268 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102268_RevF_NASA_SDS_Product_Specification_L1_RSLC_w-esigs.pdf",
+          "quote": "The key input files – L0B granules, orbit, attitude, calibration, DEM source description, and configuration files"
+        },
+        {
+          "document": "NISAR_DEM collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3803703055-ASF.umm_json",
+          "quote": "representing the DEM used for processing NISAR products"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RSLC_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_ANC_AUX",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3622222871-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "Not Provided",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Calibration files and the Track-Frame Database are distributed in NISAR_ANC_AUX (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR L1 RSLC Product Specification (JPL D-102268 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102268_RevF_NASA_SDS_Product_Specification_L1_RSLC_w-esigs.pdf",
+          "quote": "The key input files – L0B granules, orbit, attitude, calibration, DEM source description, and configuration files"
+        },
+        {
+          "document": "NISAR Track-Frame Database SIS (JPL D-105021 Rev A)",
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR-SAMPLE-DATA/DOCS/NISAR_D-105021_RevA_Track_Frame_Database_SIS_20250428_w-esig.pdf",
+          "quote": "The TFdb is primarily used to determine the track and frames covered by the L1 RSLC products"
+        },
+        {
+          "document": "NISAR_ANC_AUX collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3622222871-ASF.umm_json",
+          "quote": "LSAR Calibration File (EXT_CAL)"
+        },
+        {
+          "document": "NISAR_ANC_AUX collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3622222871-ASF.umm_json",
+          "quote": "Track Frame Database (TFDB)"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RSLC_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_STUF",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3622233495-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "Not Provided",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "STUF supplies the cycle reference time used to frame L0B observations into RSLC products.",
+      "evidence": [
+        {
+          "document": "NISAR Track-Frame Database SIS (JPL D-105021 Rev A)",
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR-SAMPLE-DATA/DOCS/NISAR_D-105021_RevA_Track_Frame_Database_SIS_20250428_w-esig.pdf",
+          "quote": "the NISAR SDS will receive the ascending node time of the first orbit of every cycle, here after called “SDS cycle reference time”, from the STUF file delivered by the Navigation team to the SDS"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GSLC_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "PARENT",
+      "related_shortname": "NISAR_L1_RSLC_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "derived_from",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853145197-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR L2 GSLC Product Specification (JPL D-102269 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102269_RevF_NASA_SDS_Product_Specification_L2_GSLC_w-esigs.pdf",
+          "quote": "The GSLC product is a Level 2 product derived from the Level-1 RSLC product by geocoding the input RSLC into a geocoded map coordinate system"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RSLC_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "CHILD",
+      "related_shortname": "NISAR_L2_GSLC_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2854332392-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred). Inverse of NISAR_L2_GSLC_PROVISIONAL_V1 derived_from NISAR_L1_RSLC_PROVISIONAL_V1.",
+      "evidence": [
+        {
+          "document": "NISAR L2 GSLC Product Specification (JPL D-102269 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102269_RevF_NASA_SDS_Product_Specification_L2_GSLC_w-esigs.pdf",
+          "quote": "The GSLC product is a Level 2 product derived from the Level-1 RSLC product by geocoding the input RSLC into a geocoded map coordinate system"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GSLC_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_OE",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2727908375-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "1A",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic 'orbit' / 'DEM' mapped to NISAR_OE / NISAR_DEM (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR L2 GSLC Product Specification (JPL D-102269 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102269_RevF_NASA_SDS_Product_Specification_L2_GSLC_w-esigs.pdf",
+          "quote": "The key input file – L1 RSLC granule, orbit, DEM source description, and configuration files are tracked and listed under the subgroup"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GSLC_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_DEM",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3803703055-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic 'orbit' / 'DEM' mapped to NISAR_OE / NISAR_DEM (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR L2 GSLC Product Specification (JPL D-102269 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102269_RevF_NASA_SDS_Product_Specification_L2_GSLC_w-esigs.pdf",
+          "quote": "The key input file – L1 RSLC granule, orbit, DEM source description, and configuration files are tracked and listed under the subgroup"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GSLC_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_TEC",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3622219145-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "1A",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic 'GNSS-based TEC data' mapped to NISAR_TEC (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR L2 GSLC Product Specification (JPL D-102269 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102269_RevF_NASA_SDS_Product_Specification_L2_GSLC_w-esigs.pdf",
+          "quote": "The ionospheric delay is estimated using GNSS-based TEC data and corrected during the geocoding process"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "PARENT",
+      "related_shortname": "NISAR_L1_RSLC_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "derived_from",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853145197-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR L2 GCOV Product Specification (JPL D-102274 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102274_RevF_NASA_SDS_Product_Specification_L2_GCOV_w-esigs.pdf",
+          "quote": "The GCOV product is an L2 product derived from the L1 Range Doppler Single Look Complex (RSLC) product"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RSLC_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "CHILD",
+      "related_shortname": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2854338529-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred). Inverse of NISAR_L2_GCOV_PROVISIONAL_V1 derived_from NISAR_L1_RSLC_PROVISIONAL_V1.",
+      "evidence": [
+        {
+          "document": "NISAR L2 GCOV Product Specification (JPL D-102274 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102274_RevF_NASA_SDS_Product_Specification_L2_GCOV_w-esigs.pdf",
+          "quote": "The GCOV product is an L2 product derived from the L1 Range Doppler Single Look Complex (RSLC) product"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_DEM",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3803703055-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Copernicus-based reference DEM mapped to NISAR_DEM (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR L2 GCOV Product Specification (JPL D-102274 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102274_RevF_NASA_SDS_Product_Specification_L2_GCOV_w-esigs.pdf",
+          "quote": "The reference DEM for processing and radiometric terrain correcting GCOV products is based on the Copernicus DEM 30m (GLO-30)"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_TEC",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3622219145-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "1A",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic 'GNSS-based TEC data' mapped to NISAR_TEC (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR L2 GCOV Product Specification (JPL D-102274 Rev F)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102274_RevF_NASA_SDS_Product_Specification_L2_GCOV_w-esigs.pdf",
+          "quote": "The ionospheric delay is estimated using GNSS-based TEC data (if available) and corrected during the geocoding process"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RIFG_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "PARENT",
+      "related_shortname": "NISAR_L1_RSLC_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "derived_from",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853145197-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L1_RIFG_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2853147928-ASF.umm_json",
+          "quote": "wrapped interferogram generated from two Level 1 Range-Doppler Single Look Complex (RSLC) products"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RSLC_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "CHILD",
+      "related_shortname": "NISAR_L1_RIFG_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853147928-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred). Inverse of NISAR_L1_RIFG_PROVISIONAL_V1 derived_from NISAR_L1_RSLC_PROVISIONAL_V1.",
+      "evidence": [
+        {
+          "document": "NISAR_L1_RIFG_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2853147928-ASF.umm_json",
+          "quote": "wrapped interferogram generated from two Level 1 Range-Doppler Single Look Complex (RSLC) products"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RIFG_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_DEM",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3803703055-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic DEM / orbit ephemeris mapped to NISAR_DEM / NISAR_OE (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L1_RIFG_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2853147928-ASF.umm_json",
+          "quote": "coregisters a pair of RSLC products using a Digital Elevation Model and the best available orbit ephemeris"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RIFG_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_OE",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2727908375-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1A",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic DEM / orbit ephemeris mapped to NISAR_DEM / NISAR_OE (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L1_RIFG_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2853147928-ASF.umm_json",
+          "quote": "coregisters a pair of RSLC products using a Digital Elevation Model and the best available orbit ephemeris"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RIFG_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_L1_ROFF_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853156054-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Used only when ROFF is available for the frame. Generic product reference mapped to the same-maturity NISAR collection (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L1_RIFG_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2853147928-ASF.umm_json",
+          "quote": "If a Range Doppler Pixel Offsets (ROFF) product is available for the processed frame, the sub-pixel offset layers included in RIFG are obtained by optimally blending the multi-resolution offset layers included in ROFF"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_ROFF_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "PARENT",
+      "related_shortname": "NISAR_L1_RSLC_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "derived_from",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853145197-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L1_ROFF_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2853156054-ASF.umm_json",
+          "quote": "dense pixel offset layers obtained from applying incoherent cross-correlation on a pair of coarsely coregistered Level 1 Range Doppler Single Look Complex (RSLC) products"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RSLC_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "CHILD",
+      "related_shortname": "NISAR_L1_ROFF_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853156054-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred). Inverse of NISAR_L1_ROFF_PROVISIONAL_V1 derived_from NISAR_L1_RSLC_PROVISIONAL_V1.",
+      "evidence": [
+        {
+          "document": "NISAR_L1_ROFF_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2853156054-ASF.umm_json",
+          "quote": "dense pixel offset layers obtained from applying incoherent cross-correlation on a pair of coarsely coregistered Level 1 Range Doppler Single Look Complex (RSLC) products"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_ROFF_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_OE",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2727908375-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1A",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic orbit ephemeris / DEM mapped to NISAR_OE / NISAR_DEM (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L1_ROFF_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2853156054-ASF.umm_json",
+          "quote": "first coarsely aligned with geometrical coregistration using the best available sensor orbit ephemeris and a Digital Elevation Model (DEM)"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_ROFF_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_DEM",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3803703055-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic orbit ephemeris / DEM mapped to NISAR_OE / NISAR_DEM (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L1_ROFF_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2853156054-ASF.umm_json",
+          "quote": "first coarsely aligned with geometrical coregistration using the best available sensor orbit ephemeris and a Digital Elevation Model (DEM)"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RUNW_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "PARENT",
+      "related_shortname": "NISAR_L1_RSLC_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "derived_from",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853145197-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L1_RUNW_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2853153429-ASF.umm_json",
+          "quote": "multi-looked interferogram generated from two Level 1 Range Doppler Single Look Complex (RSLC) products"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RSLC_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "CHILD",
+      "related_shortname": "NISAR_L1_RUNW_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853153429-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred). Inverse of NISAR_L1_RUNW_PROVISIONAL_V1 derived_from NISAR_L1_RSLC_PROVISIONAL_V1.",
+      "evidence": [
+        {
+          "document": "NISAR_L1_RUNW_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2853153429-ASF.umm_json",
+          "quote": "multi-looked interferogram generated from two Level 1 Range Doppler Single Look Complex (RSLC) products"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RUNW_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_L1_ROFF_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853156054-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Used only when ROFF is available for the frame. Generic product reference mapped to the same-maturity NISAR collection (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L1_RUNW_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2853153429-ASF.umm_json",
+          "quote": "If a Range Doppler Pixel Offsets (ROFF) product is available for the processed frame, the sub-pixel offset layers included in RUNW are obtained by optimally blending the multi resolution offset layers included in ROFF"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GUNW_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "PARENT",
+      "related_shortname": "NISAR_L1_RIFG_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "derived_from",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853147928-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L2_GUNW_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2854335566-ASF.umm_json",
+          "quote": "derived from the Range Doppler Wrapped Interferogram (RIFG) and Range Doppler Unwrapped Interferogram (RUNW) products by geocoding"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RIFG_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "CHILD",
+      "related_shortname": "NISAR_L2_GUNW_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2854335566-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred). Inverse of NISAR_L2_GUNW_PROVISIONAL_V1 derived_from NISAR_L1_RIFG_PROVISIONAL_V1.",
+      "evidence": [
+        {
+          "document": "NISAR_L2_GUNW_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2854335566-ASF.umm_json",
+          "quote": "derived from the Range Doppler Wrapped Interferogram (RIFG) and Range Doppler Unwrapped Interferogram (RUNW) products by geocoding"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GUNW_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "PARENT",
+      "related_shortname": "NISAR_L1_RUNW_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "derived_from",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853153429-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L2_GUNW_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2854335566-ASF.umm_json",
+          "quote": "derived from the Range Doppler Wrapped Interferogram (RIFG) and Range Doppler Unwrapped Interferogram (RUNW) products by geocoding"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RUNW_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "CHILD",
+      "related_shortname": "NISAR_L2_GUNW_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2854335566-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred). Inverse of NISAR_L2_GUNW_PROVISIONAL_V1 derived_from NISAR_L1_RUNW_PROVISIONAL_V1.",
+      "evidence": [
+        {
+          "document": "NISAR_L2_GUNW_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2854335566-ASF.umm_json",
+          "quote": "derived from the Range Doppler Wrapped Interferogram (RIFG) and Range Doppler Unwrapped Interferogram (RUNW) products by geocoding"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GUNW_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_L1_RSLC_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853145197-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "The reference RSLC supplies the orbit; generic DEM mapped to NISAR_DEM (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L2_GUNW_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2854335566-ASF.umm_json",
+          "quote": "Geocoding is performed using the orbit of the reference Range Doppler Single Look Complex (RSLC) product and a Digital Elevation Model (DEM)"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GUNW_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_DEM",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3803703055-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "The reference RSLC supplies the orbit; generic DEM mapped to NISAR_DEM (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L2_GUNW_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2854335566-ASF.umm_json",
+          "quote": "Geocoding is performed using the orbit of the reference Range Doppler Single Look Complex (RSLC) product and a Digital Elevation Model (DEM)"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GUNW_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_L1_ROFF_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853156054-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Used only when ROFF is available for the frame. Generic product reference mapped to the same-maturity NISAR collection (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L2_GUNW_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2854335566-ASF.umm_json",
+          "quote": "If a Range Doppler Pixel Offsets (ROFF) product is available for the processed frame, the sub-pixel offset layers included in GUNW are obtained by optimally blending the multi resolution offset layers included in ROFF"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GOFF_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "PARENT",
+      "related_shortname": "NISAR_L1_ROFF_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "derived_from",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853156054-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L2_GOFF_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2854341702-ASF.umm_json",
+          "quote": "derived from the Range Doppler Pixel Offsets (ROFF) product by geocoding the pixel offset layers"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_ROFF_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "CHILD",
+      "related_shortname": "NISAR_L2_GOFF_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2854341702-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Generic product reference mapped to the same-maturity NISAR collection (inferred). Inverse of NISAR_L2_GOFF_PROVISIONAL_V1 derived_from NISAR_L1_ROFF_PROVISIONAL_V1.",
+      "evidence": [
+        {
+          "document": "NISAR_L2_GOFF_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2854341702-ASF.umm_json",
+          "quote": "derived from the Range Doppler Pixel Offsets (ROFF) product by geocoding the pixel offset layers"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GOFF_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_L1_RSLC_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853145197-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "The reference RSLC supplies the orbit; generic DEM mapped to NISAR_DEM (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L2_GOFF_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2854341702-ASF.umm_json",
+          "quote": "Geocoding uses the orbit of the reference Range Doppler Single Look Complex (RSLC) product and a Digital Elevation Model (DEM)"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GOFF_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_DEM",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3803703055-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "The reference RSLC supplies the orbit; generic DEM mapped to NISAR_DEM (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L2_GOFF_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2854341702-ASF.umm_json",
+          "quote": "Geocoding uses the orbit of the reference Range Doppler Single Look Complex (RSLC) product and a Digital Elevation Model (DEM)"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L3_SME2_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "PARENT",
+      "related_shortname": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "derived_from",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2854338529-ASF"
+        ],
+        "subject_level": "3",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "'NISAR Level 2 backscatter product' mapped to GCOV, the radiometrically terrain-corrected L2 backscatter product (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_L3_SME2_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2854344945-ASF.umm_json",
+          "quote": "backscatter observations will estimate a global high-resolution soil moisture product (200 m)"
+        },
+        {
+          "document": "NISAR_L3_SME2_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2854344945-ASF.umm_json",
+          "quote": "The NISAR Level 2 backscatter product has a data latency of 48 hours"
+        },
+        {
+          "document": "NISAR Data User Guide: GSLC (ASF)",
+          "url": "https://nisar-docs.asf.alaska.edu/gslc/",
+          "quote": "For radiometrically terrain corrected backscatter, refer to the Geocoded Covariance (GCOV) products"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "CHILD",
+      "related_shortname": "NISAR_L3_SME2_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2854344945-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "'NISAR Level 2 backscatter product' mapped to GCOV, the radiometrically terrain-corrected L2 backscatter product (inferred). Inverse of NISAR_L3_SME2_PROVISIONAL_V1 derived_from NISAR_L2_GCOV_PROVISIONAL_V1.",
+      "evidence": [
+        {
+          "document": "NISAR_L3_SME2_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2854344945-ASF.umm_json",
+          "quote": "backscatter observations will estimate a global high-resolution soil moisture product (200 m)"
+        },
+        {
+          "document": "NISAR_L3_SME2_PROVISIONAL_V1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2854344945-ASF.umm_json",
+          "quote": "The NISAR Level 2 backscatter product has a data latency of 48 hours"
+        },
+        {
+          "document": "NISAR Data User Guide: GSLC (ASF)",
+          "url": "https://nisar-docs.asf.alaska.edu/gslc/",
+          "quote": "For radiometrically terrain corrected backscatter, refer to the Geocoded Covariance (GCOV) products"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L3_SME2_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_VWC",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C4066106685-ASF"
+        ],
+        "subject_level": "3",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "The VWC memo describes use in 'the soil moisture algorithms' (SME2, inferred).",
+      "evidence": [
+        {
+          "document": "NISAR Mission Ancillary Data Product Memo: Vegetation Water Content",
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR-SAMPLE-DATA/DOCS/NISAR_VWC_product_memo_260624.pdf",
+          "quote": "Vegetation water content (VWC) ancillary serves two purposes in the soil moisture algorithms"
+        },
+        {
+          "document": "NISAR_VWC collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C4066106685-ASF.umm_json",
+          "quote": "contains vegetation water content products used for creation of products from the NISAR mission"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L3_SME2_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NISAR_ANC_AUX",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3622222871-ASF"
+        ],
+        "subject_level": "3",
+        "related_level": "Not Provided",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Soil-moisture static files in NISAR_ANC_AUX; use by SME2 inferred from their names.",
+      "evidence": [
+        {
+          "document": "NISAR_ANC_AUX collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3622222871-ASF.umm_json",
+          "quote": "Soil Moisture Static File (SM_STATIC), and Disaggregation File (DSG_STATIC)"
+        },
+        {
+          "document": "NISAR_ANC_AUX collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3622222871-ASF.umm_json",
+          "quote": "Time Series Ratio (TSR_STATIC), Physical Model Inversion (PMI_STATIC)"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L0B_CRSD_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L0B_RRSD_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "parallel_product",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853089814-ASF"
+        ],
+        "subject_level": "0",
+        "related_level": "0",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Product names CRSD/RRSD mapped to the provisional L0B collections.",
+      "evidence": [
+        {
+          "document": "NISAR L0B RRSD and CRSD Product Specification (JPL D-102267 Rev G)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102267_RevG_NASA_SDS_Product_Specification_L0B_RRSD_CRSD_w-esigs.pdf",
+          "quote": "The CRSD calibration product is generated with the RRSD to contain only the instrument telemetry for the entire datatake"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L0B_RRSD_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L0B_CRSD_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "parallel_product",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853091612-ASF"
+        ],
+        "subject_level": "0",
+        "related_level": "0",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Product names CRSD/RRSD mapped to the provisional L0B collections.",
+      "evidence": [
+        {
+          "document": "NISAR L0B RRSD and CRSD Product Specification (JPL D-102267 Rev G)",
+          "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102267_RevG_NASA_SDS_Product_Specification_L0B_RRSD_CRSD_w-esigs.pdf",
+          "quote": "The CRSD calibration product is generated with the RRSD to contain only the instrument telemetry for the entire datatake"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_UR_L0B_RRSD",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L0B_RRSD_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "related_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853089814-ASF"
+        ],
+        "subject_level": "0",
+        "related_level": "0",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Expedited (urgent response) counterpart of the standard L0B RRSD product.",
+      "evidence": [
+        {
+          "document": "NISAR_UR_L0B_RRSD collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2887469134-ASF.umm_json",
+          "quote": "are available in the associated standard Level 0 product collections"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L0B_RRSD_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_UR_L0B_RRSD",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "related_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2887469134-ASF"
+        ],
+        "subject_level": "0",
+        "related_level": "0",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Expedited (urgent response) counterpart of the standard L0B RRSD product.",
+      "evidence": [
+        {
+          "document": "NISAR_UR_L0B_RRSD collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2887469134-ASF.umm_json",
+          "quote": "are available in the associated standard Level 0 product collections"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_UR_L1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L1_RSLC_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "related_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853145197-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Expedited counterpart. 'Associated standard' collection mapped to PROVISIONAL; the BETA collection is also active (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_UR_L1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2887499907-ASF.umm_json",
+          "quote": "are available in the associated standard Level 1 product collections"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RSLC_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_UR_L1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "related_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2887499907-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Expedited counterpart. 'Associated standard' collection mapped to PROVISIONAL; the BETA collection is also active (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_UR_L1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2887499907-ASF.umm_json",
+          "quote": "are available in the associated standard Level 1 product collections"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_UR_L1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L1_RIFG_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "related_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853147928-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Expedited counterpart. 'Associated standard' collection mapped to PROVISIONAL; the BETA collection is also active (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_UR_L1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2887499907-ASF.umm_json",
+          "quote": "are available in the associated standard Level 1 product collections"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RIFG_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_UR_L1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "related_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2887499907-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Expedited counterpart. 'Associated standard' collection mapped to PROVISIONAL; the BETA collection is also active (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_UR_L1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2887499907-ASF.umm_json",
+          "quote": "are available in the associated standard Level 1 product collections"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_UR_L1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L1_RUNW_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "related_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853153429-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Expedited counterpart. 'Associated standard' collection mapped to PROVISIONAL; the BETA collection is also active (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_UR_L1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2887499907-ASF.umm_json",
+          "quote": "are available in the associated standard Level 1 product collections"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RUNW_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_UR_L1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "related_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2887499907-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Expedited counterpart. 'Associated standard' collection mapped to PROVISIONAL; the BETA collection is also active (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_UR_L1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2887499907-ASF.umm_json",
+          "quote": "are available in the associated standard Level 1 product collections"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_UR_L1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L1_ROFF_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "related_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853156054-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Expedited counterpart. 'Associated standard' collection mapped to PROVISIONAL; the BETA collection is also active (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_UR_L1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2887499907-ASF.umm_json",
+          "quote": "are available in the associated standard Level 1 product collections"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_ROFF_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_UR_L1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "related_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2887499907-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Expedited counterpart. 'Associated standard' collection mapped to PROVISIONAL; the BETA collection is also active (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_UR_L1 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2887499907-ASF.umm_json",
+          "quote": "are available in the associated standard Level 1 product collections"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_UR_L2",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L2_GSLC_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "related_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2854332392-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Expedited counterpart. 'Associated standard' collection mapped to PROVISIONAL; the BETA collection is also active (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_UR_L2 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2887502657-ASF.umm_json",
+          "quote": "are available in the associated standard Level 2 product collections"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GSLC_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_UR_L2",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "related_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2887502657-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Expedited counterpart. 'Associated standard' collection mapped to PROVISIONAL; the BETA collection is also active (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_UR_L2 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2887502657-ASF.umm_json",
+          "quote": "are available in the associated standard Level 2 product collections"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_UR_L2",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L2_GUNW_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "related_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2854335566-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Expedited counterpart. 'Associated standard' collection mapped to PROVISIONAL; the BETA collection is also active (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_UR_L2 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2887502657-ASF.umm_json",
+          "quote": "are available in the associated standard Level 2 product collections"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GUNW_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_UR_L2",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "related_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2887502657-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Expedited counterpart. 'Associated standard' collection mapped to PROVISIONAL; the BETA collection is also active (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_UR_L2 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2887502657-ASF.umm_json",
+          "quote": "are available in the associated standard Level 2 product collections"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_UR_L2",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "related_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2854338529-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Expedited counterpart. 'Associated standard' collection mapped to PROVISIONAL; the BETA collection is also active (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_UR_L2 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2887502657-ASF.umm_json",
+          "quote": "are available in the associated standard Level 2 product collections"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_UR_L2",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "related_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2887502657-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Expedited counterpart. 'Associated standard' collection mapped to PROVISIONAL; the BETA collection is also active (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_UR_L2 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2887502657-ASF.umm_json",
+          "quote": "are available in the associated standard Level 2 product collections"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_UR_L2",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L2_GOFF_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "related_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2854341702-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Expedited counterpart. 'Associated standard' collection mapped to PROVISIONAL; the BETA collection is also active (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_UR_L2 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2887502657-ASF.umm_json",
+          "quote": "are available in the associated standard Level 2 product collections"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L2_GOFF_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_UR_L2",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "related_to",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2887502657-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Expedited counterpart. 'Associated standard' collection mapped to PROVISIONAL; the BETA collection is also active (inferred).",
+      "evidence": [
+        {
+          "document": "NISAR_UR_L2 collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2887502657-ASF.umm_json",
+          "quote": "are available in the associated standard Level 2 product collections"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_L1_RSLC_BETA_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L1_RSLC_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "LOW",
+      "lineage_relationship": "version_of",
+      "evidence_source": "naming_convention",
+      "named_explicitly": false,
+      "keyword_priority": null,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853145197-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Same product at Beta vs Provisional maturity; linked by naming and a shared Product Specification only.",
+      "evidence": []
+    },
+    {
+      "shortname": "NISAR_L1_RSLC_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L1_RSLC_BETA_V1",
+      "related_version": "1",
+      "confidence": "LOW",
+      "lineage_relationship": "version_of",
+      "evidence_source": "naming_convention",
+      "named_explicitly": false,
+      "keyword_priority": null,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850225585-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Same product at Beta vs Provisional maturity; linked by naming and a shared Product Specification only.",
+      "evidence": []
+    },
+    {
+      "shortname": "NISAR_L1_RIFG_BETA_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L1_RIFG_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "LOW",
+      "lineage_relationship": "version_of",
+      "evidence_source": "naming_convention",
+      "named_explicitly": false,
+      "keyword_priority": null,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853147928-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Same product at Beta vs Provisional maturity; linked by naming and a shared Product Specification only.",
+      "evidence": []
+    },
+    {
+      "shortname": "NISAR_L1_RIFG_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L1_RIFG_BETA_V1",
+      "related_version": "1",
+      "confidence": "LOW",
+      "lineage_relationship": "version_of",
+      "evidence_source": "naming_convention",
+      "named_explicitly": false,
+      "keyword_priority": null,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850234202-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Same product at Beta vs Provisional maturity; linked by naming and a shared Product Specification only.",
+      "evidence": []
+    },
+    {
+      "shortname": "NISAR_L1_ROFF_BETA_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L1_ROFF_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "LOW",
+      "lineage_relationship": "version_of",
+      "evidence_source": "naming_convention",
+      "named_explicitly": false,
+      "keyword_priority": null,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853156054-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Same product at Beta vs Provisional maturity; linked by naming and a shared Product Specification only.",
+      "evidence": []
+    },
+    {
+      "shortname": "NISAR_L1_ROFF_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L1_ROFF_BETA_V1",
+      "related_version": "1",
+      "confidence": "LOW",
+      "lineage_relationship": "version_of",
+      "evidence_source": "naming_convention",
+      "named_explicitly": false,
+      "keyword_priority": null,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850237619-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Same product at Beta vs Provisional maturity; linked by naming and a shared Product Specification only.",
+      "evidence": []
+    },
+    {
+      "shortname": "NISAR_L1_RUNW_BETA_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L1_RUNW_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "LOW",
+      "lineage_relationship": "version_of",
+      "evidence_source": "naming_convention",
+      "named_explicitly": false,
+      "keyword_priority": null,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2853153429-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Same product at Beta vs Provisional maturity; linked by naming and a shared Product Specification only.",
+      "evidence": []
+    },
+    {
+      "shortname": "NISAR_L1_RUNW_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L1_RUNW_BETA_V1",
+      "related_version": "1",
+      "confidence": "LOW",
+      "lineage_relationship": "version_of",
+      "evidence_source": "naming_convention",
+      "named_explicitly": false,
+      "keyword_priority": null,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850235455-ASF"
+        ],
+        "subject_level": "1",
+        "related_level": "1",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Same product at Beta vs Provisional maturity; linked by naming and a shared Product Specification only.",
+      "evidence": []
+    },
+    {
+      "shortname": "NISAR_L2_GSLC_BETA_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L2_GSLC_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "LOW",
+      "lineage_relationship": "version_of",
+      "evidence_source": "naming_convention",
+      "named_explicitly": false,
+      "keyword_priority": null,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2854332392-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Same product at Beta vs Provisional maturity; linked by naming and a shared Product Specification only.",
+      "evidence": []
+    },
+    {
+      "shortname": "NISAR_L2_GSLC_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L2_GSLC_BETA_V1",
+      "related_version": "1",
+      "confidence": "LOW",
+      "lineage_relationship": "version_of",
+      "evidence_source": "naming_convention",
+      "named_explicitly": false,
+      "keyword_priority": null,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850259510-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Same product at Beta vs Provisional maturity; linked by naming and a shared Product Specification only.",
+      "evidence": []
+    },
+    {
+      "shortname": "NISAR_L2_GCOV_BETA_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "LOW",
+      "lineage_relationship": "version_of",
+      "evidence_source": "naming_convention",
+      "named_explicitly": false,
+      "keyword_priority": null,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2854338529-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Same product at Beta vs Provisional maturity; linked by naming and a shared Product Specification only.",
+      "evidence": []
+    },
+    {
+      "shortname": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L2_GCOV_BETA_V1",
+      "related_version": "1",
+      "confidence": "LOW",
+      "lineage_relationship": "version_of",
+      "evidence_source": "naming_convention",
+      "named_explicitly": false,
+      "keyword_priority": null,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3622214170-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Same product at Beta vs Provisional maturity; linked by naming and a shared Product Specification only.",
+      "evidence": []
+    },
+    {
+      "shortname": "NISAR_L2_GOFF_BETA_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L2_GOFF_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "LOW",
+      "lineage_relationship": "version_of",
+      "evidence_source": "naming_convention",
+      "named_explicitly": false,
+      "keyword_priority": null,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2854341702-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Same product at Beta vs Provisional maturity; linked by naming and a shared Product Specification only.",
+      "evidence": []
+    },
+    {
+      "shortname": "NISAR_L2_GOFF_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L2_GOFF_BETA_V1",
+      "related_version": "1",
+      "confidence": "LOW",
+      "lineage_relationship": "version_of",
+      "evidence_source": "naming_convention",
+      "named_explicitly": false,
+      "keyword_priority": null,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850263910-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Same product at Beta vs Provisional maturity; linked by naming and a shared Product Specification only.",
+      "evidence": []
+    },
+    {
+      "shortname": "NISAR_L2_GUNW_BETA_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L2_GUNW_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "LOW",
+      "lineage_relationship": "version_of",
+      "evidence_source": "naming_convention",
+      "named_explicitly": false,
+      "keyword_priority": null,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2854335566-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Same product at Beta vs Provisional maturity; linked by naming and a shared Product Specification only.",
+      "evidence": []
+    },
+    {
+      "shortname": "NISAR_L2_GUNW_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L2_GUNW_BETA_V1",
+      "related_version": "1",
+      "confidence": "LOW",
+      "lineage_relationship": "version_of",
+      "evidence_source": "naming_convention",
+      "named_explicitly": false,
+      "keyword_priority": null,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850261892-ASF"
+        ],
+        "subject_level": "2",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Same product at Beta vs Provisional maturity; linked by naming and a shared Product Specification only.",
+      "evidence": []
+    },
+    {
+      "shortname": "NISAR_L3_SME2_BETA_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L3_SME2_PROVISIONAL_V1",
+      "related_version": "1",
+      "confidence": "LOW",
+      "lineage_relationship": "version_of",
+      "evidence_source": "naming_convention",
+      "named_explicitly": false,
+      "keyword_priority": null,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2854344945-ASF"
+        ],
+        "subject_level": "3",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Same product at Beta vs Provisional maturity; linked by naming and a shared Product Specification only.",
+      "evidence": []
+    },
+    {
+      "shortname": "NISAR_L3_SME2_PROVISIONAL_V1",
+      "version": "1",
+      "association_type": "RELATED",
+      "related_shortname": "NISAR_L3_SME2_BETA_V1",
+      "related_version": "1",
+      "confidence": "LOW",
+      "lineage_relationship": "version_of",
+      "evidence_source": "naming_convention",
+      "named_explicitly": false,
+      "keyword_priority": null,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2850265000-ASF"
+        ],
+        "subject_level": "3",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Same product at Beta vs Provisional maturity; linked by naming and a shared Product Specification only.",
+      "evidence": []
+    },
+    {
+      "shortname": "NISAR_WATERMASK",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "NSIDC-0714",
+      "related_version": "1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "component_of",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C3298007158-NSIDC_CPRD"
+        ],
+        "subject_level": "3",
+        "related_level": null,
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "note": "Named by title and DOI; DOI matches NSIDC-0714 exactly.",
+      "evidence": [
+        {
+          "document": "NISAR_WATERMASK collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3807638962-ASF.umm_json",
+          "quote": "MEaSUREs GIMP Mask v1 (Howat 2017, doi:10.5067/B8X58MQBFUPA"
+        }
+      ]
+    },
+    {
+      "shortname": "NISAR_WATERMASK",
+      "version": "1",
+      "association_type": "INPUT",
+      "related_shortname": "urn:eop:VITO:ESA_WorldCover_10m_2020_V1",
+      "related_version": "V1",
+      "confidence": "MEDIUM",
+      "lineage_relationship": "component_of",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "substituted",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_ids": [
+          "C2655129129-FEDEO"
+        ],
+        "subject_level": "3",
+        "related_level": "NA",
+        "level_progression_valid": true,
+        "version_compatible": false
+      },
+      "note": "Mapped to the FEDEO ESA WorldCover 10 m 2020 V1 record; an AWS copy (…_2020_AWS_V1) also exists.",
+      "evidence": [
+        {
+          "document": "NISAR_WATERMASK collection abstract (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3807638962-ASF.umm_json",
+          "quote": "ESA WorldCover 10 m 2020"
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "subject": "NISAR_L1_RSLC_BETA_V1",
+      "related": "NISAR_L0B_RRSD_PROVISIONAL_V1",
+      "reason": "ambiguous",
+      "detail": "Beta RSLC begins 2025-10-01, before the only L0B RRSD collection (2025-10-28); its L0B source is not in CMR."
+    },
+    {
+      "subject": "NISAR_DEM",
+      "related": "Copernicus DEM GLO-30 (COP-DEM_GLO-30-DGED/2023_1)",
+      "reason": "not_in_cmr",
+      "detail": "Abstract: 'derived from the Copernicus DEM 30-m'. No CMR record."
+    },
+    {
+      "subject": "NISAR_VWC",
+      "related": "SMAP 1-km VWC daily climatology (from MODIS)",
+      "reason": "not_in_cmr",
+      "detail": "VWC memo: 'The daily climatology of 1-km resolution VWC was generated by the SMAP project.' No CMR record."
+    },
+    {
+      "subject": "NISAR_WATERMASK",
+      "related": "JRC Global Surface Water v1.3; OpenStreetMap Water Polygons",
+      "reason": "not_in_cmr",
+      "detail": "Named in the abstract; no CMR records."
+    },
+    {
+      "subject": "NISAR_L0B_RRSD_PROVISIONAL_V1",
+      "related": "Radar Raw Science Telemetry (RRST, L0A)",
+      "reason": "not_in_cmr",
+      "detail": "Spec Table 2-1: RRSD is 'derived from the RRST products'. RRST is not distributed through CMR."
+    },
+    {
+      "subject": "NISAR_COP, NISAR_OROST, NISAR_LRCLK_UTC",
+      "related": "-",
+      "reason": "no_documented_lineage",
+      "detail": "No documentation is linked, and the abstracts and the other NISAR documents describe no processing relationship for these collections."
+    }
+  ]
+}

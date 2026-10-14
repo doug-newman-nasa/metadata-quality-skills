@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Notebook run outputs (downloaded docs, cached Claude responses, generated records)
+lineage_output/
+Notebooks/lineage_output/
+
+# Local tool settings
+.claude/settings.local.json
+
+# Broken symlinks to old skill names (targets do not exist)
+.claude/skills/Generic_Collection_Lineage_UMM_C_Export_Skill_Corrected.md
+.claude/skills/Generic_Collection_Lineage_with_ATBD_Skill.md

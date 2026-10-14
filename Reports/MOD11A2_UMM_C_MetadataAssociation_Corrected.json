@@ -1,0 +1,58 @@
+{
+  "ShortName": "MOD11A2",
+  "Version": "6.1",
+  "EntryTitle": "MODIS/Terra Land Surface Temperature/Emissivity 8-Day L3 Global 1km SIN Grid V061",
+  "Abstract": "The Terra Moderate Resolution Imaging Spectroradiometer (MODIS) Land Surface Temperature/Emissivity 8-Day (MOD11A2) Version 6.1 product provides an average 8-day per-pixel Land Surface Temperature and Emissivity (LST&E) with a 1 kilometer (km) spatial resolution in a 1,200 by 1,200 km grid.",
+  "DOI": {
+    "DOI": "10.5067/MODIS/MOD11A2.061",
+    "Authority": "https://doi.org"
+  },
+  "ProcessingLevel": {
+    "Id": "3"
+  },
+  "Platforms": [
+    {
+      "Type": "Earth Observation Satellites",
+      "ShortName": "Terra"
+    }
+  ],
+  "Instruments": [
+    {
+      "ShortName": "MODIS"
+    }
+  ],
+  "ScienceKeywords": [
+    {
+      "Category": "EARTH SCIENCE",
+      "Topic": "LAND SURFACE",
+      "Term": "SURFACE THERMAL PROPERTIES",
+      "VariableLevel1": "LAND SURFACE TEMPERATURE"
+    },
+    {
+      "Category": "EARTH SCIENCE",
+      "Topic": "LAND SURFACE",
+      "Term": "SURFACE RADIATIVE PROPERTIES",
+      "VariableLevel1": "EMISSIVITY"
+    }
+  ],
+  "MetadataAssociations": [
+    {
+      "Type": "PARENT",
+      "Description": "MOD11A2 is derived from MOD11A1. Processing: 8-day temporal averaging of daily LST pixels. ATBD Section: 2.4. Source: 'Each pixel value in the MOD11A2 is a simple average of all the corresponding MOD11A1 LST pixels collected within that 8-day period.' Processing Formula: MOD11A2[pixel] = mean(MOD11A1[pixel, day1:day8]) with minimum 4 valid days requirement. Aggregates daily LST observations into composite product. ATBD URL: https://lpdaac.usgs.gov/documents/119/MOD11_ATBD.pdf",
+      "EntryId": "MOD11A1",
+      "Version": "6.1"
+    },
+    {
+      "Type": "RELATED",
+      "Description": "MOD03 provides geolocation information required for spatial mapping and georeferencing of MOD11A2 pixels. Essential supporting data for pixel coordinate reference. Geolocation data includes latitude/longitude per pixel at 1 km resolution used for spatial mapping and geographic registration. ATBD Reference: Appendix B (Ancillary Data Requirements)",
+      "EntryId": "MOD03",
+      "Version": "6.1"
+    },
+    {
+      "Type": "RELATED",
+      "Description": "MYD11A2 is the equivalent product from the Aqua platform. Both collections provide global LST observations with identical processing algorithms and output structure, enabling inter-platform comparison and complementary spatial/temporal coverage. MYD11A2 uses identical processing methodology as MOD11A2 but from Aqua MODIS instrument, providing enhanced temporal coverage through combined Terra-Aqua observations.",
+      "EntryId": "MYD11A2",
+      "Version": "6.1"
+    }
+  ]
+}

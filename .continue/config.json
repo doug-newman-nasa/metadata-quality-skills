@@ -1,0 +1,35 @@
+{
+  "customCommands": [
+    {
+      "name": "Generic_Collection_Keyword_Extraction_Skill",
+      "prompt": "Use the Generic Collection Keyword Extraction Skill to extract documentation and suggest keywords for a CMR collection"
+    },
+    {
+      "name": "Collection_Lineage_via_ATBD_Skill",
+      "prompt": "Use the Collection Lineage via ATBD Skill to determine collection lineage using ATBD documentation from collection metadata"
+    }
+  ],
+  "skills": {
+    "installed": [
+      {
+        "name": "Generic_Collection_Keyword_Extraction_Skill",
+        "version": "1.0",
+        "location": ".continue/skills/Generic_Collection_Keyword_Extraction_Skill.md",
+        "status": "active"
+      },
+      {
+        "name": "Collection_Lineage_via_ATBD_Skill",
+        "version": "2.0",
+        "location": ".continue/skills/Collection_Lineage_via_ATBD_Skill.md",
+        "status": "active",
+        "features": [
+          "ATBD-priority workflow",
+          "Metadata-referred ATBD extraction",
+          "Lineage keyword detection",
+          "CMR cross-validation",
+          "Multi-level lineage discovery"
+        ]
+      }
+    ]
+  }
+}

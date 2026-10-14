@@ -1,0 +1,84 @@
+{
+  "ShortName": "SWOT_L4_HR_DAWG_SOS_DISCHARGE_V3",
+  "Version": "3",
+  "EntryTitle": "SWOT Level 4 Sword of Science River Discharge Products, Version 3",
+  "Abstract": "The SWOT Sword of Science River Discharge Products dataset from the Surface Water and Ocean Topography (SWOT) mission and produced by the Discharge Algorithm Working Group (DAWG), provides estimates of river discharge derived from the SWOT Level 2 River Single-Pass Vector Data Product, and includes both unconstrained and gauge constrained estimates that leverage in-situ measurements. The SWOT mission is implemented jointly by NASA and Centre National D'Etudes Spatiales (CNES). Sword of Science data products are generated from the open-source SWOT Confluence program and contain river discharge parameter estimates as well as discharge time series for both river reaches and river nodes, following the SWOT River Database (SWORD) structure.",
+  "DOI": {
+    "DOI": "10.5067/SWOT-SOS-RD3",
+    "Authority": "https://doi.org"
+  },
+  "ProcessingLevel": {
+    "Id": "4"
+  },
+  "Platforms": [
+    {
+      "Type": "Earth Observation Satellites",
+      "ShortName": "SWOT"
+    }
+  ],
+  "Instruments": [
+    {
+      "ShortName": "KaRIn"
+    }
+  ],
+  "ScienceKeywords": [
+    {
+      "Category": "EARTH SCIENCE",
+      "Topic": "TERRESTRIAL HYDROSPHERE",
+      "Term": "GROUND WATER",
+      "VariableLevel1": "GROUND WATER PROCESSES/MEASUREMENTS",
+      "VariableLevel2": "DISCHARGE",
+      "VariableLevel3": "DISCHARGE AMOUNT"
+    },
+    {
+      "Category": "EARTH SCIENCE",
+      "Topic": "TERRESTRIAL HYDROSPHERE",
+      "Term": "GROUND WATER",
+      "VariableLevel1": "GROUND WATER PROCESSES/MEASUREMENTS",
+      "VariableLevel2": "DRAINAGE",
+      "VariableLevel3": "DRAINAGE AMOUNT"
+    },
+    {
+      "Category": "EARTH SCIENCE",
+      "Topic": "TERRESTRIAL HYDROSPHERE",
+      "Term": "SURFACE WATER",
+      "VariableLevel1": "SURFACE WATER FEATURES",
+      "VariableLevel2": "RIVERS/STREAMS"
+    },
+    {
+      "Category": "EARTH SCIENCE",
+      "Topic": "TERRESTRIAL HYDROSPHERE",
+      "Term": "SURFACE WATER",
+      "VariableLevel1": "SURFACE WATER PROCESSES/MEASUREMENTS",
+      "VariableLevel2": "TOTAL SURFACE WATER"
+    },
+    {
+      "Category": "EARTH SCIENCE",
+      "Topic": "TERRESTRIAL HYDROSPHERE",
+      "Term": "SURFACE WATER",
+      "VariableLevel1": "SURFACE WATER PROCESSES/MEASUREMENTS",
+      "VariableLevel2": "RUNOFF",
+      "VariableLevel3": "TOTAL RUNOFF"
+    }
+  ],
+  "MetadataAssociations": [
+    {
+      "Type": "PARENT",
+      "Description": "SWOT_L4_HR_DAWG_SOS_DISCHARGE_V3 is derived from SWOT Level 2 River Single-Pass Vector data. The L4 product estimates river discharge from SWOT L2 measurements of water surface elevation changes across river cross-sections. Processing: Uses SWOT Confluence (open-source) discharge estimation algorithm with model data assimilation. Produces both unconstrained (observation-driven) and gauge-constrained discharge estimates incorporating in-situ measurements. Output includes river reach and node discharge time series in NetCDF format following SWORD (SWOT River Database) structure.",
+      "EntryId": "SWOT_L2_HR_RiverSP_VECTOR",
+      "Version": "1.0"
+    },
+    {
+      "Type": "INPUT",
+      "Description": "In-situ hydrological gauge measurements serve as calibration and validation data for the gauge-constrained discharge product variant. Ground-truth discharge observations constrain model output to measured values, improving L4 product accuracy. Used for gauge-constrained discharge estimates.",
+      "EntryId": "HYDROLOGICAL_GAUGE_NETWORKS",
+      "Version": "1.0"
+    },
+    {
+      "Type": "INPUT",
+      "Description": "Global hydrological model discharge priors (e.g., GLDAS predictions) provide mean annual flow estimates and regularization constraints. Model-based priors help constrain discharge estimates in areas with limited SWOT observations or high measurement uncertainty. Integrated into discharge estimation algorithm.",
+      "EntryId": "GLDAS_DISCHARGE_PRIORS",
+      "Version": "1.0"
+    }
+  ]
+}

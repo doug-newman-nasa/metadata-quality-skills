@@ -1,0 +1,135 @@
+{
+  "target": {
+    "shortname": "SWOT_L4_HR_DAWG_SOS_DISCHARGE_V3",
+    "version": "3",
+    "concept_id": "C3905028734-POCLOUD",
+    "revision_id": 31
+  },
+  "generated": "2026-10-14T13:02:30+00:00",
+  "skill": "Collection_Lineage_CSV_Export_Skill v1.3",
+  "atbd_search_depth": 1,
+  "documents": [
+    {
+      "title": "SWOT HR River Discharge Products v3 - Quick guide / Product Description Document (10 Dec 2025)",
+      "subtype": "USER'S GUIDE",
+      "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/web-misc/swot_mission_docs/SWOT_Discharge_Product_Description_Document_20251210.docx.pdf"
+    },
+    {
+      "title": "Collection abstract (CMR UMM-C)",
+      "subtype": "metadata",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3905028734-POCLOUD.umm_json"
+    }
+  ],
+  "note": "No ATBD is linked from the collection metadata; evidence comes from the linked Product Description Document and the collection abstract.",
+  "rows": [
+    {
+      "related_shortname": "SWOT_L2_HR_RiverSP_D",
+      "related_version": "D",
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "confidence": "MEDIUM",
+      "evidence_source": "other_doc",
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "quote_verified": true,
+      "version_status": "substituted",
+      "cmr_validation": {
+        "concept_ids": [
+          "C3233944997-POCLOUD"
+        ],
+        "processing_level": "2",
+        "target_level": "4",
+        "level_progression_valid": true,
+        "version_compatible": false
+      },
+      "note": "Product named by title ('SWOT Level 2 River Single-Pass Vector Data Product') and family name ('SWOT_HR_L2_RiverSP'), not by ShortName. The RiverSP version used is not documented; mapped to the current Version D combined collection (reach + node). Version C (SWOT_L2_HR_RiverSP_2.0) and the separate _reach_/_node_ collections also exist in CMR.",
+      "evidence": [
+        {
+          "source": "collection abstract (CMR)",
+          "quote": "provides estimates of river discharge derived from the SWOT Level 2 River Single-Pass Vector Data Product"
+        },
+        {
+          "source": "Product Description Document, page 1",
+          "quote": "Prediagnostics contains all of the information about how the input SWOT data were filtered before being used to estimate discharge"
+        },
+        {
+          "source": "Product Description Document, section 1.2",
+          "quote": "Level 2 discharge products - Available in SWOT_HR_L2_RiverSP products"
+        }
+      ]
+    },
+    {
+      "related_shortname": "HLSL30",
+      "related_version": "2.0",
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "confidence": "MEDIUM",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "substituted",
+      "cmr_validation": {
+        "concept_ids": [
+          "C2021957657-LPCLOUD"
+        ],
+        "processing_level": "3",
+        "target_level": "4",
+        "level_progression_valid": true,
+        "version_compatible": false
+      },
+      "note": "Generic 'HLS data' mapped to the two HLS v2.0 collections (Landsat HLSL30, Sentinel-2 HLSS30). Input to the SSC group only.",
+      "evidence": [
+        {
+          "source": "Product Description Document, page 1",
+          "quote": "SSC is an estimate of suspended sediment made from HLS data on the same day as SWOT observations"
+        }
+      ]
+    },
+    {
+      "related_shortname": "HLSS30",
+      "related_version": "2.0",
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "confidence": "MEDIUM",
+      "evidence_source": "user_guide",
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "quote_verified": true,
+      "version_status": "substituted",
+      "cmr_validation": {
+        "concept_ids": [
+          "C2021957295-LPCLOUD"
+        ],
+        "processing_level": "3",
+        "target_level": "4",
+        "level_progression_valid": true,
+        "version_compatible": false
+      },
+      "note": "Generic 'HLS data' mapped to the two HLS v2.0 collections (Landsat HLSL30, Sentinel-2 HLSS30). Input to the SSC group only.",
+      "evidence": [
+        {
+          "source": "Product Description Document, page 1",
+          "quote": "SSC is an estimate of suspended sediment made from HLS data on the same day as SWOT observations"
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "name": "SWORD (SWOT River Database)",
+      "reason": "not_in_cmr",
+      "evidence": "Reach/node IDs and priors are 'Taken from SWORD PDD' and 'contained and hosted in the SWORD database' (PDD pages 3-4, 11-12). SWORD v16 is distributed outside CMR."
+    },
+    {
+      "name": "In-situ streamgage networks",
+      "reason": "not_a_cmr_collection",
+      "evidence": "Qgage: 'obtained from an existing streamgage network' (PDD page 10). No network or collection is named."
+    },
+    {
+      "name": "Global hydrological model priors",
+      "reason": "not_a_cmr_collection",
+      "evidence": "Abstract: 'prior information (e.g., mean annual flow predicted by global hydrological models)'. No model or collection is named."
+    }
+  ]
+}
