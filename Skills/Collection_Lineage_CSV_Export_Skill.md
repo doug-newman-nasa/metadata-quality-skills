@@ -4,6 +4,7 @@
 This skill extends **Collection_Lineage_via_ATBD_Skill** by writing a collection's lineage to a CSV file. Each row describes one relationship between two collection versions and the confidence in that relationship. The CSV is a flat, tabular view of lineage for spreadsheets, databases and graph tools. It can hold several levels of lineage (parents of parents) in one file.
 
 **Skill Type:** Data Provenance Documentation & Tabular Export
+
 **Difficulty Level:** Advanced
 
 **Parent Skills:**
