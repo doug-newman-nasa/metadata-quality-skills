@@ -5,9 +5,11 @@ This skill extends **Collection_Lineage_via_ATBD_Skill** by writing a collection
 
 **Skill Type:** Data Provenance Documentation & Tabular Export
 **Difficulty Level:** Advanced
+
 **Parent Skills:**
 - Collection_Lineage_via_ATBD_Skill (lineage discovery, Steps 1–7)
 - Collection_Lineage_Generation_Skill (relationship definitions, Step 1a–1c)
+  
 **Use Cases:**
 - Lineage inventories across many collections
 - Loading lineage into a database or graph tool
