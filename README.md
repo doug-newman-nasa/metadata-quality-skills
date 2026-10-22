@@ -1,5 +1,8 @@
 # Metadata Quality Skills
 This repository is designed to hold an evolving set of AI skills designed to automate the process of metadata quality improvement.
+
+![AI Skills applied to metadata quality improvement](diagrams/AI%20skills%20and%20metadata%20quality.png)
+
 Specific areas we are targeting
 ## Science keyword assignment
 The determination of appropriate science keywords for a collection based on
