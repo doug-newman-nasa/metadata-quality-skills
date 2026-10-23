@@ -1,0 +1,69 @@
+url,priority,ok,exact_text,valid_for_lineage,error,document_accessible,contains_algorithm_section,mentions_input_data,mentions_parent_collection,contains_processing_algorithm
+https://webdocs.asf.alaska.edu/Sentinel-1/Sentinel-1-User-Guide.pdf,4,True,True,True,,True,True,False,True,True
+https://asdc.larc.nasa.gov/documents/calipso/CALIPSO_DPC_Rev5x00.pdf,4,True,True,True,,True,True,True,True,True
+https://asdc.larc.nasa.gov/documents/calipso/user_guides/CALIPSO_Data_Users_Guide_FAQ_mod2.pdf,4,True,True,True,,True,True,True,True,True
+https://d2pn8kiwq2w21t.cloudfront.net/documents/OPERA_TROPO_CalVal_Product_Spec.pdf,4,True,True,True,,True,True,True,True,True
+https://www.ecmwf.int/en/forecasts/datasets/set-i/,4,True,True,False,,True,False,True,True,False
+https://asdc.larc.nasa.gov/documents/calipso/user_guides/CALIPSO_Data_Users_Guide_Payload.pdf,4,True,True,True,,True,True,True,True,True
+https://asdc.larc.nasa.gov/documents/calipso/user_guides/CALIPSO_Data_Users_Guide_Peer_Reviewed_Bibliography.pdf,4,True,True,True,,True,True,True,True,True
+https://asdc.larc.nasa.gov/documents/misr/MISR_ATBDs.pdf,1,True,True,True,,True,True,False,True,True
+https://asdc.larc.nasa.gov/documents/misr/ASDC_MISR_Overview_2023.pdf,4,True,True,False,,True,False,True,True,False
+https://cdn.earthdata.nasa.gov/conduit/upload/1257/NASA_SOP_2005_Cloudy_with_a_Chance_of_Drizzle.pdf,4,True,True,False,,True,False,False,False,False
+https://asdc.larc.nasa.gov/documents/misr/quality_summaries/L3_CFbA_Product.pdf,4,True,True,True,,True,True,True,True,True
+https://asdc.larc.nasa.gov/documents/misr/quality_summaries/L3_Products.pdf,4,True,True,True,,True,True,True,True,True
+https://cdn.earthdata.nasa.gov/conduit/upload/1194/NASA_SOP_2008_Aerosols_over_Australia.pdf,4,True,True,False,,True,False,True,False,False
+https://asdc.larc.nasa.gov/documents/airmisr/airmisr_read_software.pdf,4,True,True,False,,True,False,False,True,False
+https://asdc.larc.nasa.gov/documents/airmisr/readme/readme_airmisr_konvex,4,True,True,True,,True,True,True,True,True
+https://asdc.larc.nasa.gov/documents/airmisr/readme/readme_airmisr_lunar_lake_2000,4,True,True,True,,True,False,True,True,True
+https://eosweb.larc.nasa.gov/sites/default/files/project/arese/guide/arese_project.pdf,4,False,False,False,"ConnectionError: HTTPSConnectionPool(host='eosweb.larc.nasa.gov', port=443): Max retries exceeded with url: /sites/default/files/project/arese/guide/arese_project.pdf (Caused by NameResolutionError(""HTTPSConnection(host='eosweb.larc.nasa.gov', port=443): Failed to resolve 'eosweb.larc.nasa.gov' ([Er",False,False,False,False,False
+https://eosweb.larc.nasa.gov/sites/default/files/project/arese/guide/base_arese_er2_mas_dataset.pdf,4,False,False,False,"ConnectionError: HTTPSConnectionPool(host='eosweb.larc.nasa.gov', port=443): Max retries exceeded with url: /sites/default/files/project/arese/guide/base_arese_er2_mas_dataset.pdf (Caused by NameResolutionError(""HTTPSConnection(host='eosweb.larc.nasa.gov', port=443): Failed to resolve 'eosweb.larc.n",False,False,False,False,False
+https://asdc.larc.nasa.gov/documents/misr/version/file_descriptions.pdf,4,True,True,False,,True,False,True,True,False
+https://asdc.larc.nasa.gov/documents/misr/quality_summaries/L1_Products.pdf,4,True,True,True,,True,True,True,True,True
+https://eosweb.larc.nasa.gov/project/airmspi/guide/AirMSPI_Cloud_Droplet_ATBD.20180117.pdf,1,False,False,False,"ConnectionError: HTTPSConnectionPool(host='eosweb.larc.nasa.gov', port=443): Max retries exceeded with url: /project/airmspi/guide/AirMSPI_Cloud_Droplet_ATBD.20180117.pdf (Caused by NameResolutionError(""HTTPSConnection(host='eosweb.larc.nasa.gov', port=443): Failed to resolve 'eosweb.larc.nasa.gov' ",False,False,False,False,False
+https://eosweb.larc.nasa.gov/project/airmspi/quality_summaries/AirMSPI_L1B2_Quality.SEAC4RS-20180205.pdf,4,False,False,False,"ConnectionError: HTTPSConnectionPool(host='eosweb.larc.nasa.gov', port=443): Max retries exceeded with url: /project/airmspi/quality_summaries/AirMSPI_L1B2_Quality.SEAC4RS-20180205.pdf (Caused by NameResolutionError(""HTTPSConnection(host='eosweb.larc.nasa.gov', port=443): Failed to resolve 'eosweb.l",False,False,False,False,False
+https://www-calipso.larc.nasa.gov/products/CALIPSO_DPC_Rev4x96.pdf,4,False,False,False,HTTPError: 404 Client Error: Not Found for url: https://science.nasa.gov/mission/calipso/products/CALIPSO_DPC_Rev4x96.pdf,False,False,False,False,False
+https://www-calipso.larc.nasa.gov/resources/calipso_users_guide/,4,False,False,False,HTTPError: 404 Client Error: Not Found for url: https://science.nasa.gov/mission/calipso/resources/calipso_users_guide/,False,False,False,False,False
+https://www-calipso.larc.nasa.gov/products/CALIPSO_DPC_Rev4x95.pdf,4,False,False,False,HTTPError: 404 Client Error: Not Found for url: https://science.nasa.gov/mission/calipso/products/CALIPSO_DPC_Rev4x95.pdf,False,False,False,False,False
+https://atrain.nasa.gov/publications/CALIPSO.pdf,4,True,True,False,,True,False,False,True,False
+https://asdc.larc.nasa.gov/documents/calipso/TiltModeGeometry.pdf,4,True,True,False,,True,False,False,False,False
+https://www-calipso.larc.nasa.gov/products/CALIPSO_DPC_Rev4x92.pdf,4,False,False,False,HTTPError: 404 Client Error: Not Found for url: https://science.nasa.gov/mission/calipso/products/CALIPSO_DPC_Rev4x92.pdf,False,False,False,False,False
+https://docserver.gesdisc.eosdis.nasa.gov/public/project/CAR/CAR_BRDF_README-v2.pdf,4,True,True,True,,True,True,True,True,True
+https://asdc.larc.nasa.gov/documents/cats/guide/CATS_ATBD.pdf,1,True,True,True,,True,True,True,True,True
+https://cats.gsfc.nasa.gov/media/docs/CATS_Data_Products_Catalog.pdf,4,True,True,True,,True,True,True,True,True
+https://asdc.larc.nasa.gov/documents/cats/quality_summaries/CATS_Release_Notes6_v2.pdf,4,True,True,True,,True,True,True,True,True
+https://asdc.larc.nasa.gov/documents/cats/quality_summaries/CATS_QS_L2O_Profile_2.01.pdf,4,True,True,True,,True,True,True,True,True
+https://asdc.larc.nasa.gov/documents/ceres/CERES_ATBDs.pdf,1,True,True,False,,True,True,False,False,True
+https://asdc.larc.nasa.gov/documents/ceres/readme/DPC_BDS_R6V1.pdf,4,True,True,False,,True,False,True,True,False
+https://asdc.larc.nasa.gov/documents/ceres/quality_summaries/CER_BDS_Aqua_Edition1.pdf,4,True,True,True,,True,True,True,True,True
+https://asdc.larc.nasa.gov/documents/ceres/guide/cer_bds.pdf,4,True,True,True,,True,True,True,True,True
+https://ceres.larc.nasa.gov/documents/DQ_summaries/CERES_CCCM_DQS_RelD2.pdf,4,True,True,True,,True,True,True,True,True
+https://ceres.larc.nasa.gov/documents/DPC/DPC_current/pdfs/DPC_SSF_CRS_C3M_RelD1.pdf,4,True,True,True,,True,True,True,True,True
+https://asdc.larc.nasa.gov/documents/ceres/examples.pdf,4,True,True,False,,True,False,False,True,False
+https://asdc.larc.nasa.gov/documents/ceres/readme/DPC_CRS_R5V1.pdf,4,True,True,False,,True,False,True,True,False
+https://ceres.larc.nasa.gov/documents/collect_guide/pdf/ES4_CG_R1V1.pdf,4,True,True,True,,True,True,True,True,True
+https://asdc.larc.nasa.gov/documents/ceres/readme/DPC_ES8_R7V1.pdf,4,True,True,True,,True,True,False,True,True
+https://asdc.larc.nasa.gov/documents/ceres/readme/DPC_ES9_R7V1.pdf,4,True,True,True,,True,True,True,True,True
+https://ceres.larc.nasa.gov/documents/DQ_summaries/CERES_SSF1deg_Ed4A_DQS.pdf,4,True,True,True,,True,True,True,True,True
+https://ceres.larc.nasa.gov/documents/DPC/DPC_current/pdfs/DPC_SSF1deg-Month_R5V1.pdf,4,True,True,True,,True,False,True,True,True
+https://asdc.larc.nasa.gov/documents/ceres/guide/cer_syn1deg.pdf,4,True,True,True,,True,True,True,True,True
+https://asdc.larc.nasa.gov/documents/clams/readme/readme_clams_mas.txt,4,True,True,True,,True,True,True,True,True
+https://asdc.larc.nasa.gov/documents/measures/quality_summaries/ERBE-Measures_DQS.pdf,4,True,True,True,,True,True,True,True,True
+https://asdc.larc.nasa.gov/documents/misr/gallery/field_campaigns/GoMACCS/gomaccs_lm_sites.pdf,4,True,True,False,,True,False,False,False,False
+https://asdc.larc.nasa.gov/documents/misr/DPS_GRP_V030.20240624.pdf,4,True,True,True,,True,True,True,True,True
+https://asdc.larc.nasa.gov/documents/misr/observing_concept.pdf,4,True,True,False,,True,False,False,False,False
+https://asdc.larc.nasa.gov/documents/misr/DPS_v50_RevS.pdf,4,False,False,False,ValueError: document larger than 25 MB,False,False,False,False,False
+https://cdn.earthdata.nasa.gov/conduit/upload/1187/NASA_SOP_2007_Following_the_World_Trade_Center_plume.pdf,4,True,True,True,,True,False,True,True,True
+https://asdc.larc.nasa.gov/documents/misr/quality_summaries/L2_AS_Products.pdf,4,True,True,True,,True,True,True,True,True
+https://asdc.larc.nasa.gov/documents/prefire/guide/PREFIRE_Data_User_Guide_3-SFC-SORTED-ALLSKY_R01-20250430.pdf,4,True,True,True,,True,True,True,True,True
+https://asdc.larc.nasa.gov/documents/sage2/sage2_release_v7_notes.pdf,4,True,True,True,,True,True,False,True,True
+https://asdc.larc.nasa.gov/documents/scara/guide/base_scar_a_er2_mas_dataset.pdf,4,True,True,True,,True,True,False,True,True
+https://asdc.larc.nasa.gov/documents/scara/guide/scar_project.pdf,4,True,True,False,,True,False,True,True,False
+https://webdocs.asf.alaska.edu/Sentinel-1/ASF_SAR_Sentinel-1_product_specification_v1.1.pdf,4,True,True,False,,True,False,False,True,False
+https://webdocs.asf.alaska.edu/Sentinel-1-Bursts/Sentinel-1-Bursts-User-Guide.pdf,4,True,True,True,,True,True,False,True,True
+https://asdc.larc.nasa.gov/documents/misr/gallery/field_campaigns/UAE/UAE_LM_sites.pdf,4,True,True,False,,True,False,False,False,False
+https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/Document%20Archive/Science%20Data%20Product%20Documentation/Black-Marble_v2.0_UG_2024.pdf,4,True,True,True,,True,True,True,True,True
+https://landweb.modaps.eosdis.nasa.gov/data/userguide/BlackMarbleUserGuide_Collection2.0_20241203.pdf,4,True,True,True,,True,True,True,True,True
+https://asdc.larc.nasa.gov/documents/sage3/ATBDs/Cloud_Data_Products.pdf,1,True,True,True,,True,True,True,True,True
+https://asdc.larc.nasa.gov/documents/sage3/guide/Data_Product_User_Guide.pdf,4,True,True,True,,True,True,True,True,True
+https://asdc.larc.nasa.gov/documents/sage3/ATBDs/Solar_and_Lunar_Algorithm.pdf,1,True,True,True,,True,True,True,True,True
+https://asdc.larc.nasa.gov/documents/sage3/quality_summaries/sage3_quality_summary_v3.pdf,4,True,True,True,,True,True,False,True,True
