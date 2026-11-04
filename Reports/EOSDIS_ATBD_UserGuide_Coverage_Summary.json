@@ -1,0 +1,367 @@
+{
+  "query": {
+    "consortium": "EOSDIS"
+  },
+  "fetched": "2026-11-04T13:19:32Z",
+  "cmr_hits": 11388,
+  "total": 11388,
+  "excluded_level0": 103,
+  "assessed": 11285,
+  "status_counts": {
+    "USER_GUIDE_ONLY": 4798,
+    "MISSING_ALT_DOCS": 1154,
+    "ATBD_ONLY": 1249,
+    "BOTH": 1813,
+    "MISSING_GENERAL_DOCS_ONLY": 1537,
+    "MISSING_POSSIBLE_MISTAG": 98,
+    "MISSING_NO_DOCS": 636
+  },
+  "missing": 3425,
+  "by_provider": {
+    "LARC_CLOUD": {
+      "covered": 637,
+      "missing": 1096
+    },
+    "GES_DISC": {
+      "covered": 1301,
+      "missing": 768
+    },
+    "OB_DAAC": {
+      "missing": 394,
+      "covered": 61
+    },
+    "ESDIS": {
+      "missing": 258,
+      "covered": 69
+    },
+    "CDDIS": {
+      "missing": 204
+    },
+    "POCLOUD": {
+      "covered": 835,
+      "missing": 169
+    },
+    "NSIDCV0": {
+      "covered": 196,
+      "missing": 116
+    },
+    "LANCEMODIS": {
+      "covered": 77,
+      "missing": 93
+    },
+    "OB_CLOUD": {
+      "missing": 90,
+      "covered": 387
+    },
+    "ASF": {
+      "covered": 87,
+      "missing": 68
+    },
+    "MLHUB": {
+      "missing": 58
+    },
+    "NSIDC_CPRD": {
+      "covered": 573,
+      "missing": 37
+    },
+    "OMINRT": {
+      "missing": 22
+    },
+    "LAADS": {
+      "covered": 179,
+      "missing": 16
+    },
+    "ASIPS": {
+      "missing": 15
+    },
+    "NCCS": {
+      "missing": 7
+    },
+    "LPCLOUD": {
+      "covered": 787,
+      "missing": 5
+    },
+    "ORNL_CLOUD": {
+      "covered": 1982,
+      "missing": 4
+    },
+    "LANCEAMSR2": {
+      "missing": 3,
+      "covered": 4
+    },
+    "GHRC_DAAC": {
+      "covered": 683,
+      "missing": 2
+    },
+    "LPDAAC_ECS": {
+      "covered": 2
+    }
+  },
+  "by_level": {
+    "1": {
+      "covered": 209,
+      "missing": 197
+    },
+    "1A": {
+      "covered": 181,
+      "missing": 68
+    },
+    "1B": {
+      "covered": 663,
+      "missing": 92
+    },
+    "1C": {
+      "covered": 14,
+      "missing": 3
+    },
+    "2": {
+      "covered": 2002,
+      "missing": 1724
+    },
+    "3": {
+      "covered": 3665,
+      "missing": 529
+    },
+    "4": {
+      "missing": 668,
+      "covered": 861
+    },
+    "MISSING": {
+      "missing": 133,
+      "covered": 226
+    },
+    "NON_STANDARD": {
+      "covered": 39,
+      "missing": 11
+    }
+  },
+  "by_data_type": {
+    "NOT SET": {
+      "covered": 5081,
+      "missing": 2175
+    },
+    "SCIENCE_QUALITY": {
+      "missing": 1079,
+      "covered": 2418
+    },
+    "OTHER": {
+      "covered": 48,
+      "missing": 15
+    },
+    "NEAR_REAL_TIME": {
+      "missing": 134,
+      "covered": 141
+    },
+    "LOW_LATENCY": {
+      "missing": 2,
+      "covered": 6
+    },
+    "EXPEDITED": {
+      "missing": 20,
+      "covered": 166
+    }
+  },
+  "possible_mistag_examples": [
+    {
+      "short_name": "OMMYDCLD",
+      "version": "003",
+      "provider": "GES_DISC",
+      "urls": [
+        "https://docserver.gesdisc.eosdis.nasa.gov/public/project/OMI/README.OMI_DUG.pdf"
+      ]
+    },
+    {
+      "short_name": "OMMYDCLD",
+      "version": "004",
+      "provider": "GES_DISC",
+      "urls": [
+        "https://docserver.gesdisc.eosdis.nasa.gov/public/project/OMI/README.OMI_DUG.pdf"
+      ]
+    },
+    {
+      "short_name": "OMNO2d",
+      "version": "004",
+      "provider": "GES_DISC",
+      "urls": [
+        "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/OMI/3.3_ScienceDataProductDocumentation/3.3.2_ProductRequirements_Designs/README.OMI_DUG.pdf"
+      ]
+    },
+    {
+      "short_name": "OMNO2d",
+      "version": "003",
+      "provider": "GES_DISC",
+      "urls": [
+        "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/OMI/3.3_ScienceDataProductDocumentation/3.3.2_ProductRequirements_Designs/README.OMI_DUG.pdf"
+      ]
+    },
+    {
+      "short_name": "OMDOAO3e",
+      "version": "003",
+      "provider": "GES_DISC",
+      "urls": [
+        "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/OMI/3.3_ScienceDataProductDocumentation/3.3.2_ProductRequirements_Designs/README.OMI_DUG.pdf"
+      ]
+    },
+    {
+      "short_name": "OMTO3e",
+      "version": "003",
+      "provider": "GES_DISC",
+      "urls": [
+        "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/OMI/3.3_ScienceDataProductDocumentation/3.3.2_ProductRequirements_Designs/README.OMI_DUG.pdf"
+      ]
+    },
+    {
+      "short_name": "OMUVBd",
+      "version": "003",
+      "provider": "GES_DISC",
+      "urls": [
+        "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/OMI/3.3_ScienceDataProductDocumentation/3.3.2_ProductRequirements_Designs/README.OMI_DUG.pdf"
+      ]
+    },
+    {
+      "short_name": "OMSO2e",
+      "version": "004",
+      "provider": "GES_DISC",
+      "urls": [
+        "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/OMI/3.3_ScienceDataProductDocumentation/3.3.2_ProductRequirements_Designs/README.OMI_DUG.pdf"
+      ]
+    },
+    {
+      "short_name": "OMSO2e",
+      "version": "003",
+      "provider": "GES_DISC",
+      "urls": [
+        "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/OMI/3.3_ScienceDataProductDocumentation/3.3.2_ProductRequirements_Designs/README.OMI_DUG.pdf"
+      ]
+    },
+    {
+      "short_name": "OMTO3d",
+      "version": "003",
+      "provider": "GES_DISC",
+      "urls": [
+        "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/OMI/3.3_ScienceDataProductDocumentation/3.3.2_ProductRequirements_Designs/README.OMI_DUG.pdf"
+      ]
+    },
+    {
+      "short_name": "GPM_2ADPRENV",
+      "version": "07",
+      "provider": "GES_DISC",
+      "urls": [
+        "https://pps.gsfc.nasa.gov/Documents/ATBD_GPM_DPR_n3_dec15.pdf"
+      ]
+    },
+    {
+      "short_name": "OMAERUVd",
+      "version": "003",
+      "provider": "GES_DISC",
+      "urls": [
+        "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/OMI/3.3_ScienceDataProductDocumentation/3.3.2_ProductRequirements_Designs/README.OMI_DUG.pdf"
+      ]
+    },
+    {
+      "short_name": "OMAEROe",
+      "version": "003",
+      "provider": "GES_DISC",
+      "urls": [
+        "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/OMI/3.3_ScienceDataProductDocumentation/3.3.2_ProductRequirements_Designs/README.OMI_DUG.pdf"
+      ]
+    },
+    {
+      "short_name": "OMPIXCOR",
+      "version": "003",
+      "provider": "GES_DISC",
+      "urls": [
+        "https://docserver.gesdisc.eosdis.nasa.gov/public/project/OMI/README.OMI_DUG.pdf"
+      ]
+    },
+    {
+      "short_name": "GPM_2AGPROFMETOPAMHS_CLIM",
+      "version": "07",
+      "provider": "GES_DISC",
+      "urls": [
+        "https://arthurhou.pps.eosdis.nasa.gov/Documents/ATBD_GPM_V7_GPROF.pdf"
+      ]
+    },
+    {
+      "short_name": "GPM_2AGPROFTRMMTMI_CLIM",
+      "version": "07",
+      "provider": "GES_DISC",
+      "urls": [
+        "https://pps.gsfc.nasa.gov/Documents/ATBD_GPM_V5B_April15_2018.pdf"
+      ]
+    },
+    {
+      "short_name": "GPM_2HCSH_TRMM",
+      "version": "07",
+      "provider": "GES_DISC",
+      "urls": [
+        "https://pps.gsfc.nasa.gov/Documents/CSH_ATBD.pdf"
+      ]
+    },
+    {
+      "short_name": "GPM_2HSLH_TRMM",
+      "version": "07",
+      "provider": "GES_DISC",
+      "urls": [
+        "https://pps.gsfc.nasa.gov/Documents/CSH_ATBD.pdf"
+      ]
+    },
+    {
+      "short_name": "AEHYP1TPPOK",
+      "version": "001",
+      "provider": "LPCLOUD",
+      "urls": [
+        "https://doi.org/10.5067/Community/Airborne/AEHYP1TPPOK.001"
+      ]
+    },
+    {
+      "short_name": "AEHYPCCMN300MM",
+      "version": "001",
+      "provider": "LPCLOUD",
+      "urls": [
+        "https://doi.org/10.5067/Community/Airborne/AEHYPCCMN300MM.001"
+      ]
+    },
+    {
+      "short_name": "AEHYPICNE1M",
+      "version": "001",
+      "provider": "LPCLOUD",
+      "urls": [
+        "https://doi.org/10.5067/Community/Airborne/AEHYPICNE1M.001"
+      ]
+    },
+    {
+      "short_name": "AEHYPWRNE1M",
+      "version": "001",
+      "provider": "LPCLOUD",
+      "urls": [
+        "https://doi.org/10.5067/Community/Airborne/AEHYPWRNE1M.001"
+      ]
+    },
+    {
+      "short_name": "AQUARIUS_L3_SSS_SMI_DAILY_V5",
+      "version": "5.0",
+      "provider": "POCLOUD",
+      "urls": [
+        "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/aquarius/open/docs/v5/AQ-010-UG-0008_AquariusUserGuide_DatasetV5.0.pdf",
+        "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/aquarius/open/docs/v5/AQ-010-UG-0008_AquariusUserGuide_DatasetV5.0.pdf"
+      ]
+    },
+    {
+      "short_name": "AVHRR_SST_METOP_A-OSISAF-L2P-v1.0",
+      "version": "1",
+      "provider": "POCLOUD",
+      "urls": [
+        "https://osi-saf.eumetsat.int/lml/doc/osisaf_cdop2_ss1_pum_leo_sst.pdf"
+      ]
+    },
+    {
+      "short_name": "AVHRR_SST_METOP_A_GLB-OSISAF-L3C-v1.0",
+      "version": "1",
+      "provider": "POCLOUD",
+      "urls": [
+        "https://osi-saf.eumetsat.int/lml/doc/osisaf_cdop2_ss1_pum_leo_sst.pdf"
+      ]
+    }
+  ]
+}
