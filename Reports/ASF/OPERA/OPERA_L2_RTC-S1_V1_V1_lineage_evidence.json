@@ -1,0 +1,875 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3)",
+  "generated": "2026-11-12T17:44:16+00:00",
+  "parameters": {
+    "collection_short_name": "OPERA_L2_RTC-S1_V1",
+    "collection_version": "1",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 2,
+    "validate_against_cmr": true,
+    "extract_processing_details": true
+  },
+  "target": {
+    "short_name": "OPERA_L2_RTC-S1_V1",
+    "version": "1",
+    "concept_id": "C2777436413-ASF",
+    "revision_id": 22,
+    "entry_title": "OPERA Radiometric Terrain Corrected SAR Backscatter from Sentinel-1 validated product (Version 1)",
+    "processing_level": "2",
+    "platforms": [
+      "Sentinel-1A",
+      "Sentinel-1B",
+      "Sentinel-1C",
+      "Sentinel-1D"
+    ],
+    "temporal": [
+      {
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2016-04-14T00:00:00.000Z"
+          }
+        ],
+        "EndsAtPresentFlag": true
+      }
+    ],
+    "granules_in_cmr": 77265261,
+    "existing_metadata_associations": [
+      {
+        "Type": "INPUT",
+        "EntryId": "SENTINEL-1A_SLC",
+        "Description": "This dataset contains the original Sentinel-1A Single Look Complex scenes which are used to create the granules in this collection."
+      },
+      {
+        "Type": "INPUT",
+        "EntryId": "SENTINEL-1B_SLC",
+        "Description": "This dataset contains the original Sentinel-1B Single Look Complex scenes which are used to create the granules in this collection."
+      },
+      {
+        "Type": "INPUT",
+        "EntryId": "SENTINEL-1C_SLC",
+        "Description": "This dataset contains the original Sentinel-1C Single Look Complex scenes which are used to create the granules in this collection."
+      },
+      {
+        "Type": "INPUT",
+        "EntryId": "SENTINEL-1D_SLC",
+        "Description": "This dataset contains the original Sentinel-1D Single Look Complex scenes which are used to create the granules in this collection."
+      },
+      {
+        "Type": "SCIENCE ASSOCIATED",
+        "EntryId": "OPERA_L2_RTC-S1-STATIC_V1",
+        "Description": "This dataset contains static radar geometry layers associated with the OPERA RTC-S1 products in this collection.",
+        "Version": "1"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [
+      {
+        "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/OPERA/D-107393_OPERA_RTC-S1_ATBD_Initial_2024-06-25_wsigs.pdf",
+        "priority": 1,
+        "source": "official_ATBD_designation",
+        "description": "OPERA Algorithm Theoretical Basis Document for Radiometric Terrain-Corrected SAR Backscatter from Sentinel-1 Product"
+      }
+    ],
+    "decision_tree_branch": "[1] YES: ATBD in related_urls is the primary source"
+  },
+  "source_documents": [
+    {
+      "key": "rtc_atbd",
+      "title": "OPERA RTC-S1 ATBD (JPL D-107393)",
+      "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/OPERA/D-107393_OPERA_RTC-S1_ATBD_Initial_2024-06-25_wsigs.pdf",
+      "evidence_source": "atbd",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "rtc_spec",
+      "title": "OPERA RTC-S1 Product Specification",
+      "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/OPERA/ProductSpec_RTC-S1.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "rtc_static_spec",
+      "title": "OPERA RTC-S1-STATIC Product Specification (JPL D-108758)",
+      "url": "https://d2pn8kiwq2w21t.cloudfront.net/documents/ProductSpec_RTC-S1-STATIC.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "dist_atbd",
+      "title": "OPERA DIST-S1 ATBD (JPL D-108776 Rev A; image PDF, OCR)",
+      "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/OPERA/OPERA_DIST-S1_ATBD_D-108776_Rev_A_CL26-1593.pdf",
+      "evidence_source": "atbd",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "dswx_s1_atbd",
+      "title": "OPERA DSWx-S1/NI ATBD (JPL D-108763 Rev A)",
+      "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/web-misc/opera/atbd/D-108763_Rev_A_OPERA_DSWx_S1_NI_ATBD_20240530_SIGNED.pdf",
+      "evidence_source": "atbd",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "cmr_record:OPERA_L2_RTC-S1_V1",
+      "title": "CMR abstract and MetadataAssociations: OPERA_L2_RTC-S1_V1",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2777436413-ASF.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_record:NISAR_DEM",
+      "title": "CMR abstract and associations: NISAR_DEM",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3803703055-ASF.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "rtc_atbd",
+      "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/OPERA/D-107393_OPERA_RTC-S1_ATBD_Initial_2024-06-25_wsigs.pdf",
+      "status": "ok",
+      "text_chars": 42142
+    },
+    {
+      "key": "rtc_spec",
+      "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/OPERA/ProductSpec_RTC-S1.pdf",
+      "status": "ok",
+      "text_chars": 81809
+    },
+    {
+      "key": "rtc_static_spec",
+      "url": "https://d2pn8kiwq2w21t.cloudfront.net/documents/ProductSpec_RTC-S1-STATIC.pdf",
+      "status": "ok",
+      "text_chars": 38317
+    },
+    {
+      "key": "dist_atbd",
+      "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/OPERA/OPERA_DIST-S1_ATBD_D-108776_Rev_A_CL26-1593.pdf",
+      "status": "ok (OCR: tesseract 5.5.4)",
+      "text_chars": 100509
+    },
+    {
+      "key": "dswx_s1_atbd",
+      "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/web-misc/opera/atbd/D-108763_Rev_A_OPERA_DSWx_S1_NI_ATBD_20240530_SIGNED.pdf",
+      "status": "ok",
+      "text_chars": 68200
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "OPERA_L2_RTC-S1_V1",
+      "version": "1",
+      "level": "2"
+    },
+    "primary_parents": [
+      "SENTINEL-1A_SLC",
+      "SENTINEL-1B_SLC",
+      "SENTINEL-1C_SLC",
+      "SENTINEL-1D_SLC"
+    ],
+    "supporting_parents": [
+      "NISAR_DEM"
+    ],
+    "derived_children": [
+      "OPERA_L3_DIST-ALERT-S1_V1",
+      "OPERA_L3_DSWX-S1_V1"
+    ],
+    "related": [
+      "OPERA_L2_RTC-S1-STATIC_V1"
+    ],
+    "processing_chain": [
+      "  SENTINEL-1A/1B/1C/1D_SLC ──(burst SLC)──► RTC-S1 SAS (ISCE3): calibration, noise removal, area-projection RTC, geocoding",
+      "        ◄── INPUT: NISAR_DEM",
+      "        ▼",
+      "  OPERA_L2_RTC-S1_V1 (L2)  ← TARGET   ~  OPERA_L2_RTC-S1-STATIC_V1 (same workflow)",
+      "        ├──► OPERA_L3_DIST-ALERT-S1_V1 (ASF)",
+      "        └──► OPERA_L3_DSWX-S1_V1 (PO.DAAC)"
+    ],
+    "depth_2": {
+      "note": "Depth 2 is recorded but not written as CSV rows: each parent's own lineage is documented in its own notebook (CSLC-S1 / RTC-S1 → Sentinel-1 SLC → Sentinel-1 RAW). Inputs of a parent are not inputs of the target (rule 1c-1).",
+      "parents": [
+        {
+          "parent": "SENTINEL-1A_SLC",
+          "level": "1",
+          "atbd_candidates": null,
+          "its_associations": []
+        },
+        {
+          "parent": "SENTINEL-1B_SLC",
+          "level": "1",
+          "atbd_candidates": null,
+          "its_associations": []
+        },
+        {
+          "parent": "SENTINEL-1C_SLC",
+          "level": "1",
+          "atbd_candidates": null,
+          "its_associations": [
+            [
+              "RELATED",
+              "SENTINEL-1A_SLC"
+            ],
+            [
+              "RELATED",
+              "SENTINEL-1B_SLC"
+            ],
+            [
+              "SCIENCE ASSOCIATED",
+              "SENTINEL-1C_META_SLC"
+            ]
+          ]
+        },
+        {
+          "parent": "SENTINEL-1D_SLC",
+          "level": "1",
+          "atbd_candidates": null,
+          "its_associations": [
+            [
+              "RELATED",
+              "SENTINEL-1A_SLC"
+            ],
+            [
+              "RELATED",
+              "SENTINEL-1B_SLC"
+            ],
+            [
+              "RELATED",
+              "SENTINEL-1C_SLC"
+            ],
+            [
+              "SCIENCE ASSOCIATED",
+              "Sentinel-1D_META_SLC"
+            ]
+          ]
+        },
+        {
+          "parent": "NISAR_DEM",
+          "level": "3",
+          "atbd_candidates": null,
+          "its_associations": []
+        }
+      ]
+    },
+    "existing_associations_check": [
+      {
+        "Type": "INPUT",
+        "EntryId": "'SENTINEL-1A_SLC'",
+        "whitespace_in_EntryId": false,
+        "found_in_cmr": true,
+        "Version": null
+      },
+      {
+        "Type": "INPUT",
+        "EntryId": "'SENTINEL-1B_SLC'",
+        "whitespace_in_EntryId": false,
+        "found_in_cmr": true,
+        "Version": null
+      },
+      {
+        "Type": "INPUT",
+        "EntryId": "'SENTINEL-1C_SLC'",
+        "whitespace_in_EntryId": false,
+        "found_in_cmr": true,
+        "Version": null
+      },
+      {
+        "Type": "INPUT",
+        "EntryId": "'SENTINEL-1D_SLC'",
+        "whitespace_in_EntryId": false,
+        "found_in_cmr": true,
+        "Version": null
+      },
+      {
+        "Type": "SCIENCE ASSOCIATED",
+        "EntryId": "'OPERA_L2_RTC-S1-STATIC_V1'",
+        "whitespace_in_EntryId": false,
+        "found_in_cmr": true,
+        "Version": "1"
+      }
+    ],
+    "opera_collections": [
+      {
+        "short_name": "OPERA_DSWX-S1_CALVAL_V1",
+        "version": "1",
+        "level": "NA",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L2_CSLC-S1-STATIC_V1",
+        "version": "1",
+        "level": "2",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L2_CSLC-S1_V1",
+        "version": "1",
+        "level": "2",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L2_RTC-S1-STATIC_V1",
+        "version": "1",
+        "level": "2",
+        "proposed_here": "RELATED / parallel_product",
+        "its_associations_to_this_collection": [
+          "SCIENCE ASSOCIATED"
+        ]
+      },
+      {
+        "short_name": "OPERA_L3_DISP-S1-STATIC_V1",
+        "version": "1",
+        "level": "3",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L3_DISP-S1_V1",
+        "version": "1",
+        "level": "3",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L3_DIST-ALERT-HLS_V1",
+        "version": "1",
+        "level": "3",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L3_DIST-ALERT-S1_V1",
+        "version": "1",
+        "level": "3",
+        "proposed_here": "CHILD / downstream_product",
+        "its_associations_to_this_collection": [
+          "INPUT"
+        ]
+      },
+      {
+        "short_name": "OPERA_L3_DIST-ANN-HLS_V1",
+        "version": "1",
+        "level": "3",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L3_DSWX-HLS_V1",
+        "version": "1.0",
+        "level": "3",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L3_DSWX-S1_V1",
+        "version": "1.0",
+        "level": "3",
+        "proposed_here": "CHILD / downstream_product",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L4_TROPO-ZENITH_V1",
+        "version": "1",
+        "level": "4",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "shortname": "OPERA_L2_RTC-S1_V1",
+      "version": "1",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "SENTINEL-1A_SLC",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "atbd",
+      "evidence_document": "OPERA RTC-S1 ATBD (JPL D-107393)",
+      "evidence_url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/OPERA/D-107393_OPERA_RTC-S1_ATBD_Initial_2024-06-25_wsigs.pdf",
+      "evidence_section": "ATBD 1.2 Product Overview",
+      "evidence_quote": "The OPERA RTC-S1 product provides map-projected burst-based radar images derived from the Copernicus Sentinel-1 single-look complex (SLC) data and normalized to gamma-naught",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: each RTC-S1 is one Sentinel-1A SLC burst, calibrated, terrain-corrected and geocoded (PARENT; the record says INPUT). Generic \"S1 SLC\" mapped to SENTINEL-1A_SLC by platform; confirmed in granule InputGranules (Step 6b).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1214470488-ASF",
+        "related_level": "1",
+        "related_platforms": [
+          "Sentinel-1A"
+        ],
+        "level_progression_valid": true,
+        "level_check": "parent L1 <= target L2",
+        "version_compatible": true,
+        "existing_association_in_target": "INPUT"
+      },
+      "granule_evidence": {
+        "example_input": "S1A_IW_SLC__1SSV_20160414T000512_20160414T000541_010810_0102A3_8D70",
+        "used_by": "OPERA_L2_RTC-S1_T063-133239-IW1_20160414T000512Z_20250927T035512Z_S1A_30_v1.0",
+        "found_in_collection": true
+      },
+      "supporting_evidence": []
+    },
+    {
+      "shortname": "OPERA_L2_RTC-S1_V1",
+      "version": "1",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "SENTINEL-1B_SLC",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "atbd",
+      "evidence_document": "OPERA RTC-S1 ATBD (JPL D-107393)",
+      "evidence_url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/OPERA/D-107393_OPERA_RTC-S1_ATBD_Initial_2024-06-25_wsigs.pdf",
+      "evidence_section": "ATBD 1.2 Product Overview",
+      "evidence_quote": "The OPERA RTC-S1 product provides map-projected burst-based radar images derived from the Copernicus Sentinel-1 single-look complex (SLC) data and normalized to gamma-naught",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: each RTC-S1 is one Sentinel-1B SLC burst, calibrated, terrain-corrected and geocoded (PARENT; the record says INPUT). Generic \"S1 SLC\" mapped to SENTINEL-1B_SLC by platform; confirmed in granule InputGranules (Step 6b).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1327985661-ASF",
+        "related_level": "1",
+        "related_platforms": [
+          "Sentinel-1B"
+        ],
+        "level_progression_valid": true,
+        "level_check": "parent L1 <= target L2",
+        "version_compatible": true,
+        "existing_association_in_target": "INPUT"
+      },
+      "granule_evidence": {
+        "example_input": "S1B_IW_SLC__1SDV_20160820T051840_20160820T051907_001696_002693_82CA",
+        "used_by": "OPERA_L2_RTC-S1_T095-202718-IW2_20160820T051840Z_20250927T040545Z_S1B_30_v1.0",
+        "found_in_collection": true
+      },
+      "supporting_evidence": []
+    },
+    {
+      "shortname": "OPERA_L2_RTC-S1_V1",
+      "version": "1",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "SENTINEL-1C_SLC",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "atbd",
+      "evidence_document": "OPERA RTC-S1 ATBD (JPL D-107393)",
+      "evidence_url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/OPERA/D-107393_OPERA_RTC-S1_ATBD_Initial_2024-06-25_wsigs.pdf",
+      "evidence_section": "ATBD 1.2 Product Overview",
+      "evidence_quote": "The OPERA RTC-S1 product provides map-projected burst-based radar images derived from the Copernicus Sentinel-1 single-look complex (SLC) data and normalized to gamma-naught",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: each RTC-S1 is one Sentinel-1C SLC burst, calibrated, terrain-corrected and geocoded (PARENT; the record says INPUT). Generic \"S1 SLC\" mapped to SENTINEL-1C_SLC by platform; confirmed in granule InputGranules (Step 6b).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C3470873558-ASF",
+        "related_level": "1",
+        "related_platforms": [
+          "Sentinel-1C"
+        ],
+        "level_progression_valid": true,
+        "level_check": "parent L1 <= target L2",
+        "version_compatible": true,
+        "existing_association_in_target": "INPUT"
+      },
+      "granule_evidence": {
+        "example_input": "S1C_IW_SLC__1SDV_20250328T121704_20250328T121731_001641_002A52_DF8B",
+        "used_by": "OPERA_L2_RTC-S1_T070-149172-IW2_20250328T121704Z_20251016T032341Z_S1C_30_v1.0",
+        "found_in_collection": true
+      },
+      "supporting_evidence": []
+    },
+    {
+      "shortname": "OPERA_L2_RTC-S1_V1",
+      "version": "1",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "SENTINEL-1D_SLC",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "atbd",
+      "evidence_document": "OPERA RTC-S1 ATBD (JPL D-107393)",
+      "evidence_url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/OPERA/D-107393_OPERA_RTC-S1_ATBD_Initial_2024-06-25_wsigs.pdf",
+      "evidence_section": "ATBD 1.2 Product Overview",
+      "evidence_quote": "The OPERA RTC-S1 product provides map-projected burst-based radar images derived from the Copernicus Sentinel-1 single-look complex (SLC) data and normalized to gamma-naught",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: each RTC-S1 is one Sentinel-1D SLC burst, calibrated, terrain-corrected and geocoded (PARENT; the record says INPUT). Generic \"S1 SLC\" mapped to SENTINEL-1D_SLC by platform; confirmed in granule InputGranules (Step 6b).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C4175278193-ASF",
+        "related_level": "1",
+        "related_platforms": [
+          "Sentinel-1D"
+        ],
+        "level_progression_valid": true,
+        "level_check": "parent L1 <= target L2",
+        "version_compatible": true,
+        "existing_association_in_target": "INPUT"
+      },
+      "granule_evidence": {
+        "example_input": "S1D_IW_SLC__1SDV_20260613T001113_20260613T001144_003210_005992_8F59",
+        "used_by": "OPERA_L2_RTC-S1_T019-039404-IW1_20260613T001113Z_20261010T013654Z_S1D_30_v1.0",
+        "found_in_collection": true
+      },
+      "supporting_evidence": []
+    },
+    {
+      "shortname": "OPERA_L2_RTC-S1_V1",
+      "version": "1",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "NISAR_DEM",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "atbd",
+      "evidence_document": "OPERA RTC-S1 ATBD (JPL D-107393)",
+      "evidence_url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/OPERA/D-107393_OPERA_RTC-S1_ATBD_Initial_2024-06-25_wsigs.pdf",
+      "evidence_section": "ATBD 2.4 Algorithm Inputs (DEM)",
+      "evidence_quote": "The DEM is the same as prepared for the NASA-ISRO Synthetic Aperture Radar mission, referred to as the NISAR-DEM.",
+      "quote_verified": true,
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "rationale": "Ancillary input: the reference DEM for geocoding/terrain correction. The document names the \"NISAR-DEM\"; CMR's NISAR_DEM is \"the Modified Copernicus DEM used by the NISAR Mission\" (GLO-30 re-referenced to WGS84). The NISAR_DEM collection is a 2025 release of that DEM; earlier OPERA production may have used an earlier build of it. The ATBD also mentions GLO-90; NISAR_DEM is the GLO-30-based DEM.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C3803703055-ASF",
+        "related_level": "3",
+        "related_platforms": [
+          "DEM"
+        ],
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": null,
+      "supporting_evidence": [
+        {
+          "document": "CMR abstract and associations: NISAR_DEM",
+          "quote": "The Modified Copernicus Digital Elevation Model used by the NISAR Mission",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "OPERA_L2_RTC-S1_V1",
+      "version": "1",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "related_shortname": "OPERA_L2_RTC-S1-STATIC_V1",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "atbd",
+      "evidence_document": "OPERA RTC-S1 ATBD (JPL D-107393)",
+      "evidence_url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/OPERA/D-107393_OPERA_RTC-S1_ATBD_Initial_2024-06-25_wsigs.pdf",
+      "evidence_section": "ATBD 2.5 Algorithm Outputs",
+      "evidence_quote": "These static layers are provided as the OPERA RTC-S1 static layers (RTC-S1-STATIC) product, separately from the RTC-S1 product.",
+      "quote_verified": true,
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 4: the static layers are produced by the same RTC-S1 workflow and distributed separately.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2795135174-ASF",
+        "related_level": "2",
+        "related_platforms": [
+          "Sentinel-1A",
+          "Sentinel-1B",
+          "Sentinel-1C",
+          "Sentinel-1D"
+        ],
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": "SCIENCE ASSOCIATED"
+      },
+      "granule_evidence": null,
+      "supporting_evidence": [
+        {
+          "document": "OPERA RTC-S1-STATIC Product Specification (JPL D-108758)",
+          "quote": "The workflow for generating the RTC-S1-STATIC is the same used for generating the standard RTC-S1 product.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "OPERA_L2_RTC-S1_V1",
+      "version": "1",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "OPERA_L3_DIST-ALERT-S1_V1",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "atbd",
+      "evidence_document": "OPERA DIST-S1 ATBD (JPL D-108776 Rev A; image PDF, OCR)",
+      "evidence_url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/OPERA/OPERA_DIST-S1_ATBD_D-108776_Rev_A_CL26-1593.pdf",
+      "evidence_section": "DIST-S1 ATBD §4 Data Access",
+      "evidence_quote": "The primary input data to generate the DIST-S1 products, are the RTC products",
+      "quote_verified": true,
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 1: DIST-S1 is computed from time series of RTC-S1 products (its own ATBD; its record lists RTC-S1 as INPUT).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C4090131664-ASF",
+        "related_level": "3",
+        "related_platforms": [
+          "Sentinel-1A",
+          "Sentinel-1C",
+          "Sentinel-1D"
+        ],
+        "level_progression_valid": true,
+        "level_check": "child L3 >= target L2",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": null,
+      "supporting_evidence": [
+        {
+          "document": "OPERA DIST-S1 ATBD (JPL D-108776 Rev A; image PDF, OCR)",
+          "quote": "Our goal is to use the OPERA RTC-S1 product for",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "OPERA_L2_RTC-S1_V1",
+      "version": "1",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "OPERA_L3_DSWX-S1_V1",
+      "related_version": "1.0",
+      "version_status": "substituted",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: cmr",
+      "evidence_source": "atbd",
+      "evidence_document": "OPERA DSWx-S1/NI ATBD (JPL D-108763 Rev A)",
+      "evidence_url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/web-misc/opera/atbd/D-108763_Rev_A_OPERA_DSWx_S1_NI_ATBD_20240530_SIGNED.pdf",
+      "evidence_section": "DSWx-S1 ATBD §2.2 Algorithm description",
+      "evidence_quote": "The DSWx-S1 and DSWx-NI algorithms generate the surface water extent products from OPERA RTC-S1 and NISAR GCOV products, respectively.",
+      "quote_verified": true,
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 1: DSWx-S1 (PO.DAAC) mosaics RTC-S1 bursts into MGRS water maps; its granules list RTC-S1 files as InputGranules (Step 6c).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2949811996-POCLOUD",
+        "related_level": "3",
+        "related_platforms": [
+          "Sentinel-1A",
+          "Sentinel-1B"
+        ],
+        "level_progression_valid": true,
+        "level_check": "child L3 >= target L2",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": null,
+      "supporting_evidence": []
+    }
+  ],
+  "granule_level_check": {
+    "by_sample": [
+      {
+        "platform": "Sentinel-1A",
+        "granules": 50374997,
+        "sampled": 100,
+        "without_InputGranules": 0,
+        "input_prefixes": {
+          "S1A": 100
+        },
+        "product_versions": null,
+        "first": "2016-04-14T00:05:12Z",
+        "last": "2026-06-29T19:41:10Z"
+      },
+      {
+        "platform": "Sentinel-1B",
+        "granules": 18772842,
+        "sampled": 100,
+        "without_InputGranules": 0,
+        "input_prefixes": {
+          "S1B": 100
+        },
+        "product_versions": null,
+        "first": "2016-08-20T05:18:40Z",
+        "last": "2021-12-23T06:53:25Z"
+      },
+      {
+        "platform": "Sentinel-1C",
+        "granules": 6135652,
+        "sampled": 100,
+        "without_InputGranules": 0,
+        "input_prefixes": {
+          "S1C": 100
+        },
+        "product_versions": null,
+        "first": "2025-03-28T12:17:04Z",
+        "last": "2026-11-11T17:05:11Z"
+      },
+      {
+        "platform": "Sentinel-1D",
+        "granules": 1981770,
+        "sampled": 100,
+        "without_InputGranules": 0,
+        "input_prefixes": {
+          "S1D": 100
+        },
+        "product_versions": null,
+        "first": "2026-06-13T00:11:13Z",
+        "last": "2026-11-12T12:26:28Z"
+      }
+    ],
+    "input_existence_check": [
+      {
+        "platform": "S1A",
+        "example_input_SLC": "S1A_IW_SLC__1SSV_20160414T000512_20160414T000541_010810_0102A3_8D70",
+        "used_by": "OPERA_L2_RTC-S1_T063-133239-IW1_20160414T000512Z_20250927T035512Z_S1A_30_v1.0",
+        "collection": "SENTINEL-1A_SLC (C1214470488-ASF)",
+        "found_in_collection": true,
+        "granule_ur": "S1A_IW_SLC__1SSV_20160414T000512_20160414T000541_010810_0102A3_8D70-SLC"
+      },
+      {
+        "platform": "S1B",
+        "example_input_SLC": "S1B_IW_SLC__1SDV_20160820T051840_20160820T051907_001696_002693_82CA",
+        "used_by": "OPERA_L2_RTC-S1_T095-202718-IW2_20160820T051840Z_20250927T040545Z_S1B_30_v1.0",
+        "collection": "SENTINEL-1B_SLC (C1327985661-ASF)",
+        "found_in_collection": true,
+        "granule_ur": "S1B_IW_SLC__1SDV_20160820T051840_20160820T051907_001696_002693_82CA-SLC"
+      },
+      {
+        "platform": "S1C",
+        "example_input_SLC": "S1C_IW_SLC__1SDV_20250328T121704_20250328T121731_001641_002A52_DF8B",
+        "used_by": "OPERA_L2_RTC-S1_T070-149172-IW2_20250328T121704Z_20251016T032341Z_S1C_30_v1.0",
+        "collection": "SENTINEL-1C_SLC (C3470873558-ASF)",
+        "found_in_collection": true,
+        "granule_ur": "S1C_IW_SLC__1SDV_20250328T121704_20250328T121731_001641_002A52_DF8B-SLC"
+      },
+      {
+        "platform": "S1D",
+        "example_input_SLC": "S1D_IW_SLC__1SDV_20260613T001113_20260613T001144_003210_005992_8F59",
+        "used_by": "OPERA_L2_RTC-S1_T019-039404-IW1_20260613T001113Z_20261010T013654Z_S1D_30_v1.0",
+        "collection": "SENTINEL-1D_SLC (C4175278193-ASF)",
+        "found_in_collection": true,
+        "granule_ur": "S1D_IW_SLC__1SDV_20260613T001113_20260613T001144_003210_005992_8F59-SLC"
+      }
+    ],
+    "platforms_in_inputs_missing_from_record": [],
+    "child_granule_check": [
+      {
+        "child": "OPERA_L3_DSWX-S1_V1",
+        "granule": "OPERA_L3_DSWx-S1_T46SBG_20261112T115059Z_20261112T171245Z_S1D_30_v1.0",
+        "inputs_from_target": 156,
+        "example_input": "OPERA_L2_RTC-S1_T143-305215-IW3_20261112T115059Z_20261112T145544Z_S1D_30_v1.0.h5",
+        "example_found_in_target": true
+      },
+      {
+        "child": "OPERA_L3_DSWX-S1_V1",
+        "granule": "OPERA_L3_DSWx-S1_T45SYB_20261112T115059Z_20261112T171245Z_S1D_30_v1.0",
+        "inputs_from_target": 156,
+        "example_input": "OPERA_L2_RTC-S1_T143-305215-IW3_20261112T115059Z_20261112T145544Z_S1D_30_v1.0.h5",
+        "example_found_in_target": true
+      },
+      {
+        "child": "OPERA_L3_DSWX-S1_V1",
+        "granule": "OPERA_L3_DSWx-S1_T46SCG_20261112T115059Z_20261112T171245Z_S1D_30_v1.0",
+        "inputs_from_target": 156,
+        "example_input": "OPERA_L2_RTC-S1_T143-305215-IW3_20261112T115059Z_20261112T145544Z_S1D_30_v1.0.h5",
+        "example_found_in_target": true
+      }
+    ]
+  },
+  "metadata_findings": [
+    "The Sentinel-1 SLC collections are associated as INPUT; by the PARENT vs INPUT test they are PARENT.",
+    "OPERA_L2_RTC-S1-STATIC_V1 is labelled SCIENCE ASSOCIATED; by the lineage definitions it is RELATED (parallel_product).",
+    "No association to NISAR_DEM, the DEM the ATBD names.",
+    "No CHILD associations to OPERA_L3_DIST-ALERT-S1_V1 (ASF) and OPERA_L3_DSWX-S1_V1 (PO.DAAC), both made from RTC-S1."
+  ],
+  "excluded": [
+    {
+      "name": "Sentinel-1 orbit ephemerides",
+      "role": "input",
+      "reason": "not a CMR collection (rule 1c-4)"
+    },
+    {
+      "name": "OPERA burst database",
+      "role": "optional input",
+      "reason": "not a CMR collection"
+    }
+  ],
+  "csv": {
+    "path": "Reports/OPERA_L2_RTC-S1_V1_V1_lineage.csv",
+    "rows": 8,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  }
+}

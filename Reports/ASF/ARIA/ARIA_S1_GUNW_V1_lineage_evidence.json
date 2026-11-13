@@ -1,0 +1,880 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3)",
+  "generated": "2026-11-12T16:32:54+00:00",
+  "parameters": {
+    "collection_short_name": "ARIA_S1_GUNW",
+    "collection_version": "1",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 2,
+    "validate_against_cmr": true,
+    "extract_processing_details": true
+  },
+  "target": {
+    "short_name": "ARIA_S1_GUNW",
+    "version": "1",
+    "concept_id": "C2859376221-ASF",
+    "revision_id": 15,
+    "entry_title": "ARIA Sentinel-1 Geocoded Unwrapped Interferograms",
+    "processing_level": "2",
+    "platforms": [
+      "Sentinel-1A",
+      "Sentinel-1B",
+      "Sentinel-1C"
+    ],
+    "temporal": [
+      {
+        "PrecisionOfSeconds": 1,
+        "EndsAtPresentFlag": true,
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2014-06-15T03:44:43.000Z"
+          }
+        ]
+      }
+    ],
+    "granules_in_cmr": 470801,
+    "existing_metadata_associations": [
+      {
+        "Type": "SCIENCE ASSOCIATED",
+        "EntryId": "SENTINEL-1_INTERFEROGRAMS",
+        "Description": "This dataset contains earlier versions of the Sentinel-1 geocoded unwrapped interferograms produced by the ARIA project.",
+        "Version": "1"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [],
+    "decision_tree_branch": "[2] NO: no ATBD in related_urls; lineage from the GUNW Product Guide, the DockerizedTopsApp processor documentation/source and CMR metadata"
+  },
+  "source_documents": [
+    {
+      "key": "gunw_product_guide",
+      "title": "ASF HyP3: ARIA Sentinel-1 GUNW Product Guide",
+      "url": "https://hyp3-docs.asf.alaska.edu/guides/gunw_product_guide/",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": false,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": false,
+        "VALID": false
+      }
+    },
+    {
+      "key": "topsapp_readme",
+      "title": "DockerizedTopsApp README (GUNW processor)",
+      "url": "https://raw.githubusercontent.com/ACCESS-Cloud-Based-InSAR/DockerizedTopsApp/dev/README.md",
+      "evidence_source": "other_doc",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": false,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": false,
+        "VALID": false
+      }
+    },
+    {
+      "key": "src_localize_slc",
+      "title": "DockerizedTopsApp source: isce2_topsapp/localize_slc.py",
+      "url": "https://raw.githubusercontent.com/ACCESS-Cloud-Based-InSAR/DockerizedTopsApp/dev/isce2_topsapp/localize_slc.py",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "src_localize_orbits",
+      "title": "DockerizedTopsApp source: isce2_topsapp/localize_orbits.py",
+      "url": "https://raw.githubusercontent.com/ACCESS-Cloud-Based-InSAR/DockerizedTopsApp/dev/isce2_topsapp/localize_orbits.py",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "src_localize_dem",
+      "title": "DockerizedTopsApp source: isce2_topsapp/localize_dem.py",
+      "url": "https://raw.githubusercontent.com/ACCESS-Cloud-Based-InSAR/DockerizedTopsApp/dev/isce2_topsapp/localize_dem.py",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "src_localize_mask",
+      "title": "DockerizedTopsApp source: isce2_topsapp/localize_mask.py",
+      "url": "https://raw.githubusercontent.com/ACCESS-Cloud-Based-InSAR/DockerizedTopsApp/dev/isce2_topsapp/localize_mask.py",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "src_localize_aux_cal",
+      "title": "DockerizedTopsApp source: isce2_topsapp/localize_aux_cal.py",
+      "url": "https://raw.githubusercontent.com/ACCESS-Cloud-Based-InSAR/DockerizedTopsApp/dev/isce2_topsapp/localize_aux_cal.py",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "src_topsapp_params",
+      "title": "DockerizedTopsApp source: isce2_topsapp/topsapp_params.py",
+      "url": "https://raw.githubusercontent.com/ACCESS-Cloud-Based-InSAR/DockerizedTopsApp/dev/isce2_topsapp/topsapp_params.py",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "product_comparison",
+      "title": "ASF Sentinel-1 InSAR On Demand Product Comparison (StoryMap)",
+      "url": "https://arcg.is/0bHSjW2",
+      "evidence_source": "other_doc",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": false,
+        "mentions_input_data": false,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": false,
+        "VALID": false
+      }
+    },
+    {
+      "key": "cmr_associations:ARIA_S1_GUNW",
+      "title": "CMR MetadataAssociations: ARIA_S1_GUNW",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2859376221-ASF.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_record:SENTINEL-1_INTERFEROGRAMS",
+      "title": "CMR abstract and associations: SENTINEL-1_INTERFEROGRAMS",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C1595422627-ASF.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_record:Sentinel-1_Burst_Map",
+      "title": "CMR abstract and associations: Sentinel-1_Burst_Map",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2450786986-ASF.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "gunw_product_guide",
+      "url": "https://hyp3-docs.asf.alaska.edu/guides/gunw_product_guide/",
+      "status": "ok",
+      "text_chars": 20306
+    },
+    {
+      "key": "topsapp_readme",
+      "url": "https://raw.githubusercontent.com/ACCESS-Cloud-Based-InSAR/DockerizedTopsApp/dev/README.md",
+      "status": "ok",
+      "text_chars": 31354
+    },
+    {
+      "key": "src_localize_slc",
+      "url": "https://raw.githubusercontent.com/ACCESS-Cloud-Based-InSAR/DockerizedTopsApp/dev/isce2_topsapp/localize_slc.py",
+      "status": "ok",
+      "text_chars": 12686
+    },
+    {
+      "key": "src_localize_orbits",
+      "url": "https://raw.githubusercontent.com/ACCESS-Cloud-Based-InSAR/DockerizedTopsApp/dev/isce2_topsapp/localize_orbits.py",
+      "status": "ok",
+      "text_chars": 739
+    },
+    {
+      "key": "src_localize_dem",
+      "url": "https://raw.githubusercontent.com/ACCESS-Cloud-Based-InSAR/DockerizedTopsApp/dev/isce2_topsapp/localize_dem.py",
+      "status": "ok",
+      "text_chars": 4641
+    },
+    {
+      "key": "src_localize_mask",
+      "url": "https://raw.githubusercontent.com/ACCESS-Cloud-Based-InSAR/DockerizedTopsApp/dev/isce2_topsapp/localize_mask.py",
+      "status": "ok",
+      "text_chars": 2934
+    },
+    {
+      "key": "src_localize_aux_cal",
+      "url": "https://raw.githubusercontent.com/ACCESS-Cloud-Based-InSAR/DockerizedTopsApp/dev/isce2_topsapp/localize_aux_cal.py",
+      "status": "ok",
+      "text_chars": 4085
+    },
+    {
+      "key": "src_topsapp_params",
+      "url": "https://raw.githubusercontent.com/ACCESS-Cloud-Based-InSAR/DockerizedTopsApp/dev/isce2_topsapp/topsapp_params.py",
+      "status": "ok",
+      "text_chars": 878
+    },
+    {
+      "key": "product_comparison",
+      "url": "https://arcg.is/0bHSjW2",
+      "status": "ok",
+      "text_chars": 49
+    },
+    {
+      "key": "aria_home",
+      "url": "https://aria.jpl.nasa.gov/",
+      "status": "FAILED: ConnectionError"
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "ARIA_S1_GUNW",
+      "version": "1",
+      "level": "2"
+    },
+    "primary_parents": [
+      "SENTINEL-1A_SLC",
+      "SENTINEL-1B_SLC",
+      "SENTINEL-1C_SLC",
+      "SENTINEL-1D_SLC"
+    ],
+    "supporting_parents": [],
+    "supporting_inputs_not_in_cmr": [
+      "NOAA HRRR",
+      "Copernicus GLO-30 DEM",
+      "Sentinel-1 orbit files",
+      "Pekel 2021 water occurrence",
+      "Sentinel-1 AUX_CAL"
+    ],
+    "derived_children": [],
+    "related": [
+      "SENTINEL-1_INTERFEROGRAMS",
+      "Sentinel-1_Burst_Map"
+    ],
+    "processing_chain": [
+      "SENTINEL-1A/1B/1C/1D_SLC (L1): reference and secondary IW SLC scenes covering one ARIA frame (VV)",
+      "Staging: orbits (s1_orbits), Copernicus GLO-30 DEM, Pekel water mask, AUX_CAL",
+      "ISCE2 topsApp: coregistration (with ESD), interferogram, filtering, unwrapping, geocoding to 3 arcsec (~90 m)",
+      "Corrections: ionosphere (ISCE2 range split-spectrum), solid Earth tide (PySolid), troposphere (RAiDER + HRRR, CONUS/AK)",
+      "Packaging: NISAR-style NetCDF4 (science/grids/data, imagingGeometry, corrections) -> ARIA_S1_GUNW (L2, v3.x products)",
+      "Earlier product versions (v2.x): SENTINEL-1_INTERFEROGRAMS"
+    ],
+    "depth_2": {
+      "note": "Each Sentinel-1 SLC parent is an ESA Level-1 product made from the same platform's Level-0 (SENTINEL-1x_RAW) data, per ESA SentiWiki (see the SENTINEL-1C_DP_GRD_HIGH notebook). None of the SLC records links an ATBD, and they have no PARENT association. This notebook does not write depth-2 rows: SLC <- RAW is the parents' lineage, not the target's (rule 1c-1). It is recorded here for completeness.",
+      "parents": [
+        {
+          "parent": "SENTINEL-1A_SLC",
+          "parent_level": "1",
+          "atbd_candidates": null,
+          "parent_associations": [],
+          "level0_collection": "SENTINEL-1A_RAW",
+          "level0_in_cmr": true
+        },
+        {
+          "parent": "SENTINEL-1B_SLC",
+          "parent_level": "1",
+          "atbd_candidates": null,
+          "parent_associations": [],
+          "level0_collection": "SENTINEL-1B_RAW",
+          "level0_in_cmr": true
+        },
+        {
+          "parent": "SENTINEL-1C_SLC",
+          "parent_level": "1",
+          "atbd_candidates": null,
+          "parent_associations": [
+            "SENTINEL-1A_SLC",
+            "SENTINEL-1B_SLC",
+            "SENTINEL-1C_META_SLC"
+          ],
+          "level0_collection": "SENTINEL-1C_RAW",
+          "level0_in_cmr": true
+        },
+        {
+          "parent": "SENTINEL-1D_SLC",
+          "parent_level": "1",
+          "atbd_candidates": null,
+          "parent_associations": [
+            "SENTINEL-1A_SLC",
+            "SENTINEL-1B_SLC",
+            "SENTINEL-1C_SLC",
+            "Sentinel-1D_META_SLC"
+          ],
+          "level0_collection": "SENTINEL-1D_RAW",
+          "level0_in_cmr": true
+        }
+      ]
+    }
+  },
+  "relationships": [
+    {
+      "shortname": "ARIA_S1_GUNW",
+      "version": "1",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "SENTINEL-1A_SLC",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "ASF HyP3: ARIA Sentinel-1 GUNW Product Guide",
+      "evidence_url": "https://hyp3-docs.asf.alaska.edu/guides/gunw_product_guide/",
+      "evidence_section": "Product Guide: Processing Parameters",
+      "evidence_quote": "the ARIA processing code takes a list of reference and secondary Sentinel-1 IW SLC granules as input",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Decision step 2: the unwrapped phase, coherence and amplitude are the Sentinel-1A SLC data, coregistered, interferometrically combined and geocoded by ISCE2 topsApp (PARENT). Generic \"Sentinel-1 IW SLC\" mapped to the Sentinel-1A ShortName by platform; confirmed by Sentinel-1A SLC names in granule InputGranules (Step 6b).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1214470488-ASF",
+        "related_level": "1",
+        "related_platforms": [
+          "Sentinel-1A"
+        ],
+        "level_progression_valid": true,
+        "level_check": "parent L1 <= target L2",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": {
+        "example_input": "S1A_IW_SLC__1SDV_20141025T193231_20141025T193259_002990_003673_45AE",
+        "used_by": "S1-GUNW-D-R-118-tops-20141025_20141013-193254-00143E_00039S-PP-470a-v3_0_1",
+        "found_in_collection": true
+      },
+      "supporting_evidence": [
+        {
+          "document": "DockerizedTopsApp README (GUNW processor)",
+          "quote": "generating an ARIA Sentinel-1 Geocoded Unwrapped Interferogram (ARIA-S1-GUNW) product from a collection of valid Sentinel-1 IW-mode Single Look Complex (SLC) IDs across a date pair using ISCE2",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "ARIA_S1_GUNW",
+      "version": "1",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "SENTINEL-1B_SLC",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "ASF HyP3: ARIA Sentinel-1 GUNW Product Guide",
+      "evidence_url": "https://hyp3-docs.asf.alaska.edu/guides/gunw_product_guide/",
+      "evidence_section": "Product Guide: Processing Parameters",
+      "evidence_quote": "the ARIA processing code takes a list of reference and secondary Sentinel-1 IW SLC granules as input",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Decision step 2: the unwrapped phase, coherence and amplitude are the Sentinel-1B SLC data, coregistered, interferometrically combined and geocoded by ISCE2 topsApp (PARENT). Generic \"Sentinel-1 IW SLC\" mapped to the Sentinel-1B ShortName by platform; confirmed by Sentinel-1B SLC names in granule InputGranules (Step 6b).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1327985661-ASF",
+        "related_level": "1",
+        "related_platforms": [
+          "Sentinel-1B"
+        ],
+        "level_progression_valid": true,
+        "level_check": "parent L1 <= target L2",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": {
+        "example_input": "S1B_IW_SLC__1SDV_20161226T054951_20161226T055018_003563_006185_1F44",
+        "used_by": "S1-GUNW-D-R-037-tops-20170101_20161226-055030-00004E_00050N-PP-eb63-v3_0_1",
+        "found_in_collection": true
+      },
+      "supporting_evidence": [
+        {
+          "document": "DockerizedTopsApp README (GUNW processor)",
+          "quote": "generating an ARIA Sentinel-1 Geocoded Unwrapped Interferogram (ARIA-S1-GUNW) product from a collection of valid Sentinel-1 IW-mode Single Look Complex (SLC) IDs across a date pair using ISCE2",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "ARIA_S1_GUNW",
+      "version": "1",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "SENTINEL-1C_SLC",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "ASF HyP3: ARIA Sentinel-1 GUNW Product Guide",
+      "evidence_url": "https://hyp3-docs.asf.alaska.edu/guides/gunw_product_guide/",
+      "evidence_section": "Product Guide: Processing Parameters",
+      "evidence_quote": "the ARIA processing code takes a list of reference and secondary Sentinel-1 IW SLC granules as input",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Decision step 2: the unwrapped phase, coherence and amplitude are the Sentinel-1C SLC data, coregistered, interferometrically combined and geocoded by ISCE2 topsApp (PARENT). Generic \"Sentinel-1 IW SLC\" mapped to the Sentinel-1C ShortName by platform; confirmed by Sentinel-1C SLC names in granule InputGranules (Step 6b).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C3470873558-ASF",
+        "related_level": "1",
+        "related_platforms": [
+          "Sentinel-1C"
+        ],
+        "level_progression_valid": true,
+        "level_check": "parent L1 <= target L2",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": {
+        "example_input": "S1C_IW_SLC__1SDV_20260101T055804_20260101T055831_005706_00B66C_6F06",
+        "used_by": "S1-GUNW-D-R-110-tops-20260101_20251220-055804-00002E_00050N-PP-4c52-v3_0_1",
+        "found_in_collection": true
+      },
+      "supporting_evidence": [
+        {
+          "document": "DockerizedTopsApp README (GUNW processor)",
+          "quote": "generating an ARIA Sentinel-1 Geocoded Unwrapped Interferogram (ARIA-S1-GUNW) product from a collection of valid Sentinel-1 IW-mode Single Look Complex (SLC) IDs across a date pair using ISCE2",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "ARIA_S1_GUNW",
+      "version": "1",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "SENTINEL-1D_SLC",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement",
+      "evidence_source": "other_doc",
+      "evidence_document": "DockerizedTopsApp source: isce2_topsapp/localize_slc.py",
+      "evidence_url": "https://raw.githubusercontent.com/ACCESS-Cloud-Based-InSAR/DockerizedTopsApp/dev/isce2_topsapp/localize_slc.py",
+      "evidence_section": "isce2_topsapp/localize_slc.py (SLC validity check)",
+      "evidence_quote": "S1D_MIN_DATE = datetime.datetime(2026, 6, 24, tzinfo=datetime.UTC)",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Same input relationship as the other platforms. The processor accepts S1D SLCs acquired from 2026-06-24, and S1D SLCs appear in InputGranules (Step 6b). The Product Guide's \"Sentinel-1D not yet supported\" note (quoted as supporting evidence) applies to On Demand ordering and is out of date for the ARIA-produced archive. Sentinel-1D is missing from the record's Platforms.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C4175278193-ASF",
+        "related_level": "1",
+        "related_platforms": [
+          "Sentinel-1D"
+        ],
+        "level_progression_valid": true,
+        "level_check": "parent L1 <= target L2",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": {
+        "example_input": "S1D_IW_SLC__1SDV_20261024T163834_20261024T163901_005159_009C8C_7DA4",
+        "used_by": "S1-GUNW-A-R-043-tops-20261024_20261012-163835-00028E_00026S-PP-9cdc-v3_0_1",
+        "found_in_collection": true
+      },
+      "supporting_evidence": [
+        {
+          "document": "DockerizedTopsApp README (GUNW processor)",
+          "quote": "generating an ARIA Sentinel-1 Geocoded Unwrapped Interferogram (ARIA-S1-GUNW) product from a collection of valid Sentinel-1 IW-mode Single Look Complex (SLC) IDs across a date pair using ISCE2",
+          "verified": true
+        },
+        {
+          "document": "ASF HyP3: ARIA Sentinel-1 GUNW Product Guide",
+          "quote": "The code used for processing ARIA-S1-GUNW products does not currently support processing SLCs acquired by the Sentinel-1D platform.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "ARIA_S1_GUNW",
+      "version": "1",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "version_of",
+      "related_shortname": "SENTINEL-1_INTERFEROGRAMS",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source",
+      "evidence_source": "other_doc",
+      "evidence_document": "CMR MetadataAssociations: ARIA_S1_GUNW",
+      "evidence_url": "https://cmr.earthdata.nasa.gov/search/concepts/C2859376221-ASF.umm_json",
+      "evidence_section": "CMR MetadataAssociations (target record)",
+      "evidence_quote": "This dataset contains earlier versions of the Sentinel-1 geocoded unwrapped interferograms produced by the ARIA project.",
+      "quote_verified": true,
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "rationale": "Decision step 6: a different ShortName holding earlier (v2.x) versions of the same ARIA GUNW product family (version_of). Not a PARENT: v3 GUNWs are reprocessed from SLCs, not from v2 GUNWs. The current record labels it SCIENCE ASSOCIATED.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1595422627-ASF",
+        "related_level": "2",
+        "related_platforms": [
+          "Sentinel-1A",
+          "Sentinel-1B"
+        ],
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": "SCIENCE ASSOCIATED"
+      },
+      "granule_evidence": null,
+      "supporting_evidence": [
+        {
+          "document": "CMR abstract and associations: SENTINEL-1_INTERFEROGRAMS",
+          "quote": "This dataset contains an updated version of the Sentinel-1 geocoded unwrapped interferograms produced by the ARIA project.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "ARIA_S1_GUNW",
+      "version": "1",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "related_to",
+      "related_shortname": "Sentinel-1_Burst_Map",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement",
+      "evidence_source": "other_doc",
+      "evidence_document": "DockerizedTopsApp README (GUNW processor)",
+      "evidence_url": "https://raw.githubusercontent.com/ACCESS-Cloud-Based-InSAR/DockerizedTopsApp/dev/README.md",
+      "evidence_section": "README: What makes an ARIA-S1-GUNW Product standard?",
+      "evidence_quote": "The geojson of spatially-fixed frames with their ids can be downloaded here. These are derived from ESA's burst map.",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "The ARIA frame polygons that set each GUNW's extent are derived from ESA's Burst ID map (the Sentinel-1_Burst_Map CMR record is that ESA product). No measurement data flows into the GUNW, and the frames are a static look-up table in the processor, so this is not INPUT (rule 1c-4). Recorded as related_to.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2450786986-ASF",
+        "related_level": "4",
+        "related_platforms": [
+          "Sentinel-1A",
+          "Sentinel-1B"
+        ],
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": null,
+      "supporting_evidence": [
+        {
+          "document": "ASF HyP3: ARIA Sentinel-1 GUNW Product Guide",
+          "quote": "Each ARIA frame is defined by the extent of a specific collection of these individual burst SLCs.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "granule_level_check": {
+    "note": "InputGranules sampled (up to 100 granules per year, plus the 200 most recent) across the record",
+    "sample_by_year": [
+      {
+        "window": "2014",
+        "granules_in_window": 415,
+        "sampled": 100,
+        "without_InputGranules": 0,
+        "with_S1A_input": 100,
+        "with_S1B_input": 0,
+        "with_S1C_input": 0,
+        "with_S1D_input": 0,
+        "product_versions": {
+          "3.0.1": 68,
+          "3.0.0": 32
+        }
+      },
+      {
+        "window": "2015",
+        "granules_in_window": 8564,
+        "sampled": 100,
+        "without_InputGranules": 0,
+        "with_S1A_input": 100,
+        "with_S1B_input": 0,
+        "with_S1C_input": 0,
+        "with_S1D_input": 0,
+        "product_versions": {
+          "3.0.1": 100
+        }
+      },
+      {
+        "window": "2016",
+        "granules_in_window": 21781,
+        "sampled": 100,
+        "without_InputGranules": 0,
+        "with_S1A_input": 100,
+        "with_S1B_input": 0,
+        "with_S1C_input": 0,
+        "with_S1D_input": 0,
+        "product_versions": {
+          "3.0.1": 64,
+          "3.0.0": 36
+        }
+      },
+      {
+        "window": "2017",
+        "granules_in_window": 44516,
+        "sampled": 100,
+        "without_InputGranules": 0,
+        "with_S1A_input": 92,
+        "with_S1B_input": 13,
+        "with_S1C_input": 0,
+        "with_S1D_input": 0,
+        "product_versions": {
+          "3.0.1": 56,
+          "3.0.0": 44
+        }
+      },
+      {
+        "window": "2018",
+        "granules_in_window": 50989,
+        "sampled": 100,
+        "without_InputGranules": 0,
+        "with_S1A_input": 98,
+        "with_S1B_input": 9,
+        "with_S1C_input": 0,
+        "with_S1D_input": 0,
+        "product_versions": {
+          "3.0.1": 82,
+          "3.0.0": 18
+        }
+      },
+      {
+        "window": "2019",
+        "granules_in_window": 60083,
+        "sampled": 100,
+        "without_InputGranules": 0,
+        "with_S1A_input": 99,
+        "with_S1B_input": 19,
+        "with_S1C_input": 0,
+        "with_S1D_input": 0,
+        "product_versions": {
+          "3.0.1": 91,
+          "3.0.0": 9
+        }
+      },
+      {
+        "window": "2020",
+        "granules_in_window": 60736,
+        "sampled": 100,
+        "without_InputGranules": 0,
+        "with_S1A_input": 37,
+        "with_S1B_input": 82,
+        "with_S1C_input": 0,
+        "with_S1D_input": 0,
+        "product_versions": {
+          "3.0.1": 100
+        }
+      },
+      {
+        "window": "2021",
+        "granules_in_window": 57540,
+        "sampled": 100,
+        "without_InputGranules": 0,
+        "with_S1A_input": 69,
+        "with_S1B_input": 63,
+        "with_S1C_input": 0,
+        "with_S1D_input": 0,
+        "product_versions": {
+          "3.0.1": 100
+        }
+      },
+      {
+        "window": "2022",
+        "granules_in_window": 47258,
+        "sampled": 100,
+        "without_InputGranules": 0,
+        "with_S1A_input": 100,
+        "with_S1B_input": 35,
+        "with_S1C_input": 0,
+        "with_S1D_input": 0,
+        "product_versions": {
+          "3.0.1": 100
+        }
+      },
+      {
+        "window": "2023",
+        "granules_in_window": 49203,
+        "sampled": 100,
+        "without_InputGranules": 0,
+        "with_S1A_input": 100,
+        "with_S1B_input": 0,
+        "with_S1C_input": 0,
+        "with_S1D_input": 0,
+        "product_versions": {
+          "3.0.1": 100
+        }
+      },
+      {
+        "window": "2024",
+        "granules_in_window": 46087,
+        "sampled": 100,
+        "without_InputGranules": 0,
+        "with_S1A_input": 100,
+        "with_S1B_input": 0,
+        "with_S1C_input": 0,
+        "with_S1D_input": 0,
+        "product_versions": {
+          "3.0.1": 88,
+          "3.0.0": 12
+        }
+      },
+      {
+        "window": "2025",
+        "granules_in_window": 22824,
+        "sampled": 100,
+        "without_InputGranules": 0,
+        "with_S1A_input": 100,
+        "with_S1B_input": 0,
+        "with_S1C_input": 0,
+        "with_S1D_input": 0,
+        "product_versions": {
+          "3.0.1": 100
+        }
+      },
+      {
+        "window": "2026",
+        "granules_in_window": 805,
+        "sampled": 100,
+        "without_InputGranules": 0,
+        "with_S1A_input": 78,
+        "with_S1B_input": 0,
+        "with_S1C_input": 69,
+        "with_S1D_input": 0,
+        "product_versions": {
+          "3.0.1": 100
+        }
+      },
+      {
+        "window": "most recent 200",
+        "granules_in_window": 470801,
+        "sampled": 200,
+        "without_InputGranules": 0,
+        "with_S1A_input": 128,
+        "with_S1B_input": 0,
+        "with_S1C_input": 95,
+        "with_S1D_input": 48,
+        "product_versions": {
+          "3.0.1": 200
+        }
+      }
+    ],
+    "input_existence_check": [
+      {
+        "platform": "S1A",
+        "example_input_SLC": "S1A_IW_SLC__1SDV_20141025T193231_20141025T193259_002990_003673_45AE",
+        "used_by_GUNW": "S1-GUNW-D-R-118-tops-20141025_20141013-193254-00143E_00039S-PP-470a-v3_0_1",
+        "collection": "SENTINEL-1A_SLC (C1214470488-ASF)",
+        "found_in_collection": true,
+        "granule_ur": "S1A_IW_SLC__1SDV_20141025T193231_20141025T193259_002990_003673_45AE-SLC"
+      },
+      {
+        "platform": "S1B",
+        "example_input_SLC": "S1B_IW_SLC__1SDV_20161226T054951_20161226T055018_003563_006185_1F44",
+        "used_by_GUNW": "S1-GUNW-D-R-037-tops-20170101_20161226-055030-00004E_00050N-PP-eb63-v3_0_1",
+        "collection": "SENTINEL-1B_SLC (C1327985661-ASF)",
+        "found_in_collection": true,
+        "granule_ur": "S1B_IW_SLC__1SDV_20161226T054951_20161226T055018_003563_006185_1F44-SLC"
+      },
+      {
+        "platform": "S1C",
+        "example_input_SLC": "S1C_IW_SLC__1SDV_20260101T055804_20260101T055831_005706_00B66C_6F06",
+        "used_by_GUNW": "S1-GUNW-D-R-110-tops-20260101_20251220-055804-00002E_00050N-PP-4c52-v3_0_1",
+        "collection": "SENTINEL-1C_SLC (C3470873558-ASF)",
+        "found_in_collection": true,
+        "granule_ur": "S1C_IW_SLC__1SDV_20260101T055804_20260101T055831_005706_00B66C_6F06-SLC"
+      },
+      {
+        "platform": "S1D",
+        "example_input_SLC": "S1D_IW_SLC__1SDV_20261024T163834_20261024T163901_005159_009C8C_7DA4",
+        "used_by_GUNW": "S1-GUNW-A-R-043-tops-20261024_20261012-163835-00028E_00026S-PP-9cdc-v3_0_1",
+        "collection": "SENTINEL-1D_SLC (C4175278193-ASF)",
+        "found_in_collection": true,
+        "granule_ur": "S1D_IW_SLC__1SDV_20261024T163834_20261024T163901_005159_009C8C_7DA4-SLC"
+      }
+    ],
+    "platforms_in_inputs_missing_from_record": [
+      "Sentinel-1D"
+    ]
+  },
+  "metadata_findings": [
+    "No PARENT associations: the Sentinel-1A/1B/1C/1D SLC collections should be added as PARENT.",
+    "SENTINEL-1_INTERFEROGRAMS is labelled SCIENCE ASSOCIATED; by the lineage definitions it is RELATED (version_of).",
+    "Platforms omit Sentinel-1D, although granules made from those platforms' SLCs are in the archive.",
+    "The Product Guide says Sentinel-1D SLCs are not supported; this applies to On Demand jobs and is out of date for the archive.",
+    "No ATBD is linked. The IGARSS 2023 paper (Bekaert et al., \"The ARIA-S1-GUNW ...\") cited in the Product Guide could be linked as the algorithm reference."
+  ],
+  "excluded": [
+    {
+      "name": "NOAA HRRR weather model",
+      "role": "tropospheric correction input (via RAiDER), CONUS/Alaska only",
+      "reason": "not a CMR collection (rule 1c-4)",
+      "evidence": "RAiDER uses the NOAA High-Resolution Rapid Refresh weather model to calculate the tropospheric delay correction"
+    },
+    {
+      "name": "Copernicus GLO-30 DEM",
+      "role": "topography / geocoding (dem_stitcher, dem_name=glo_30)",
+      "reason": "not a CMR collection (rule 1c-4)"
+    },
+    {
+      "name": "Sentinel-1 precise orbit files",
+      "role": "geometry (s1_orbits)",
+      "reason": "not a CMR collection (rule 1c-4)"
+    },
+    {
+      "name": "Pekel 2021 global surface water occurrence",
+      "role": "default water mask",
+      "reason": "not a CMR collection (rule 1c-4)"
+    },
+    {
+      "name": "Sentinel-1 AUX_CAL files; PySolid solid-Earth-tide model",
+      "role": "calibration file; tide model",
+      "reason": "not CMR collections (rule 1c-4)"
+    },
+    {
+      "name": "urn:eop:VITO:ESA_WorldCover_10m_2021_V2 (C2655129178-FEDEO); SRTMSWBD (LPCLOUD)",
+      "role": "optional water masks",
+      "reason": "not used by default for standard products; omitted for precision (rule 1c-6)"
+    },
+    {
+      "name": "SENTINEL-1_BURSTS",
+      "role": "frames are defined by burst footprints",
+      "reason": "GUNWs are processed from full IW SLCs (InputGranules are SLC scenes), not from the burst collection"
+    },
+    {
+      "name": "SENTINEL-1x_RAW (Level 0)",
+      "role": "grandparent through the SLC parents",
+      "reason": "lineage of the parents, not of the target (rule 1c-1); see depth_2"
+    },
+    {
+      "name": "NISAR_L2_GUNW_PROVISIONAL_V1 (C2854335566-ASF)",
+      "role": "CMR keyword / name-pattern match",
+      "reason": "shares the GUNW name and NISAR NetCDF layout but is a different processor and sensor; generic \"NISAR netcdf file\" cannot be mapped to one collection (rule 1c-3)",
+      "evidence": "The NASA-ISRO Synthetic Aperture Radar (NISAR) Geocode Unwrapped Interferogram (GUNW) product is a Level 2 product derived from the Range Doppler Wrapped Interferogram (RIFG) and Range Doppler Unwrapp"
+    },
+    {
+      "name": "NISAR_L2_GUNW_BETA_V1 (C2850261892-ASF)",
+      "role": "CMR keyword / name-pattern match",
+      "reason": "shares the GUNW name and NISAR NetCDF layout but is a different processor and sensor; generic \"NISAR netcdf file\" cannot be mapped to one collection (rule 1c-3)",
+      "evidence": "The NASA-ISRO Synthetic Aperture Radar (NISAR) Geocode Unwrapped Interferogram (GUNW) product is a Level 2 product derived from the Range Doppler Wrapped Interferogram (RIFG) and Range Doppler Unwrapp"
+    },
+    {
+      "name": "NISAR_UR_L2 (C2887502657-ASF)",
+      "role": "CMR keyword / name-pattern match",
+      "reason": "shares the GUNW name and NISAR NetCDF layout but is a different processor and sensor; generic \"NISAR netcdf file\" cannot be mapped to one collection (rule 1c-3)",
+      "evidence": "NISAR Level 1 products with expedited processing. NISAR Level 2 products are Geocoded Single Look Complex (GSLC), Geocoded Unwrapped Interferogram (GUNW), Geocoded Polarimetric Covariance Product (GCO"
+    },
+    {
+      "name": "NISAR_L2_GUNW_V1 (C3622247503-ASF)",
+      "role": "CMR keyword / name-pattern match",
+      "reason": "shares the GUNW name and NISAR NetCDF layout but is a different processor and sensor; generic \"NISAR netcdf file\" cannot be mapped to one collection (rule 1c-3)",
+      "evidence": "The NASA-ISRO Synthetic Aperture Radar (NISAR) Geocode Unwrapped Interferogram (GUNW) product is a Level 2 product derived from the Range Doppler Wrapped Interferogram (RIFG) and Range Doppler Unwrapp"
+    }
+  ],
+  "csv": {
+    "path": "Reports/ARIA_S1_GUNW_V1_lineage.csv",
+    "rows": 6,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  }
+}

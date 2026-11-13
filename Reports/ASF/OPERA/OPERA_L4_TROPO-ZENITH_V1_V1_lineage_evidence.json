@@ -1,0 +1,413 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3)",
+  "generated": "2026-11-12T17:37:51+00:00",
+  "parameters": {
+    "collection_short_name": "OPERA_L4_TROPO-ZENITH_V1",
+    "collection_version": "1",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 2,
+    "validate_against_cmr": true,
+    "extract_processing_details": true
+  },
+  "target": {
+    "short_name": "OPERA_L4_TROPO-ZENITH_V1",
+    "version": "1",
+    "concept_id": "C3717139408-ASF",
+    "revision_id": 13,
+    "entry_title": "OPERA Tropospheric Correction at Zenith validated product (Version 1)",
+    "processing_level": "4",
+    "platforms": [
+      "ECMWF"
+    ],
+    "temporal": [
+      {
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2016-01-01T00:00:00.000Z"
+          }
+        ],
+        "EndsAtPresentFlag": true,
+        "TemporalResolution": {
+          "Value": 6,
+          "Unit": "Hour"
+        }
+      }
+    ],
+    "granules_in_cmr": 15864,
+    "existing_metadata_associations": [
+      {
+        "Type": "INPUT",
+        "EntryId": "ASF_ECMWF_TROPO",
+        "Description": "This dataset contains modified ECMWF products which are used in the creation of the products in this collection.",
+        "Version": "1"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [],
+    "decision_tree_branch": "[2] NO: no ATBD in related_urls; product specification plus the producing algorithm's ATBD where one exists"
+  },
+  "source_documents": [
+    {
+      "key": "tropo_spec",
+      "title": "OPERA L4 TROPO-ZENITH Product Specification (JPL D-108783)",
+      "url": "https://d2pn8kiwq2w21t.cloudfront.net/documents/OPERA_TROPO_CalVal_Product_Spec.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "cmr_record:OPERA_L4_TROPO-ZENITH_V1",
+      "title": "CMR abstract and MetadataAssociations: OPERA_L4_TROPO-ZENITH_V1",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3717139408-ASF.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_record:ASF_ECMWF_TROP",
+      "title": "CMR abstract and associations: ASF_ECMWF_TROP",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3653531162-ASF.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "tropo_spec",
+      "url": "https://d2pn8kiwq2w21t.cloudfront.net/documents/OPERA_TROPO_CalVal_Product_Spec.pdf",
+      "status": "ok",
+      "text_chars": 26210
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "OPERA_L4_TROPO-ZENITH_V1",
+      "version": "1",
+      "level": "4"
+    },
+    "primary_parents": [
+      "ASF_ECMWF_TROP"
+    ],
+    "supporting_parents": [],
+    "derived_children": [],
+    "related": [],
+    "processing_chain": [
+      "  ASF_ECMWF_TROP (ECMWF HRES: geopotential, ln surface pressure, humidity, temperature on 137 levels; 0/6/12/18 UTC)",
+      "        ▼  RAiDER: refractivity → zenith-integrated wet + hydrostatic delay at height levels",
+      "  OPERA_L4_TROPO-ZENITH_V1 (L4)  ← TARGET"
+    ],
+    "depth_2": {
+      "note": "Depth 2 is recorded but not written as CSV rows: each parent's own lineage is documented in its own notebook (CSLC-S1 / RTC-S1 → Sentinel-1 SLC → Sentinel-1 RAW). Inputs of a parent are not inputs of the target (rule 1c-1).",
+      "parents": [
+        {
+          "parent": "ASF_ECMWF_TROP",
+          "level": "4",
+          "atbd_candidates": null,
+          "its_associations": []
+        }
+      ]
+    },
+    "existing_associations_check": [
+      {
+        "Type": "INPUT",
+        "EntryId": "'ASF_ECMWF_TROPO'",
+        "whitespace_in_EntryId": false,
+        "found_in_cmr": false,
+        "Version": "1"
+      }
+    ],
+    "opera_collections": [
+      {
+        "short_name": "OPERA_DSWX-S1_CALVAL_V1",
+        "version": "1",
+        "level": "NA",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L2_CSLC-S1-STATIC_V1",
+        "version": "1",
+        "level": "2",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L2_CSLC-S1_V1",
+        "version": "1",
+        "level": "2",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L2_RTC-S1-STATIC_V1",
+        "version": "1",
+        "level": "2",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L2_RTC-S1_V1",
+        "version": "1",
+        "level": "2",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L3_DISP-S1-STATIC_V1",
+        "version": "1",
+        "level": "3",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L3_DISP-S1_V1",
+        "version": "1",
+        "level": "3",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L3_DIST-ALERT-HLS_V1",
+        "version": "1",
+        "level": "3",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L3_DIST-ALERT-S1_V1",
+        "version": "1",
+        "level": "3",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L3_DIST-ANN-HLS_V1",
+        "version": "1",
+        "level": "3",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L3_DSWX-HLS_V1",
+        "version": "1.0",
+        "level": "3",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L3_DSWX-S1_V1",
+        "version": "1.0",
+        "level": "3",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "shortname": "OPERA_L4_TROPO-ZENITH_V1",
+      "version": "1",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "ASF_ECMWF_TROP",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "OPERA L4 TROPO-ZENITH Product Specification (JPL D-108783)",
+      "evidence_url": "https://d2pn8kiwq2w21t.cloudfront.net/documents/OPERA_TROPO_CalVal_Product_Spec.pdf",
+      "evidence_section": "Spec 2.1 Product Background",
+      "evidence_quote": "The OPERA Level 4 Troposphere Zenith Radar Delays (L4_TROPO-ZENITH) product is derived from the high-resolution 10-day forecast (HRES) model of the European Centre for Medium-Range Weather Forecasts (ECMWF).",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: the delays are integrated from the HRES model fields (PARENT; the record says INPUT). \"HRES model products\" mapped to ASF_ECMWF_TROP, ASF's \"subset of ECMWF products used for creation of products for ... OPERA\"; granule InputGranules name its granules (Step 6b).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C3653531162-ASF",
+        "related_level": "4",
+        "related_platforms": [
+          "ECMWF"
+        ],
+        "level_progression_valid": true,
+        "level_check": "parent L4 <= target L4",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": null,
+      "supporting_evidence": [
+        {
+          "document": "OPERA L4 TROPO-ZENITH Product Specification (JPL D-108783)",
+          "quote": "The primary input datasets of the workflow are a set of HRES model products for specific data and time.",
+          "verified": true
+        },
+        {
+          "document": "CMR abstract and associations: ASF_ECMWF_TROP",
+          "quote": "Subset of ECMWF products used for creation of products for the NISAR mission and OPERA project.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "granule_level_check": {
+    "by_sample": [
+      {
+        "sample": "earliest",
+        "granule": "OPERA_L4_TROPO-ZENITH_20160101T000000Z_20251118T212047Z_HRES_v1.0",
+        "input": "ECMWF_TROP_201601010000_201601010000_1",
+        "input_in_ASF_ECMWF_TROP": false
+      },
+      {
+        "sample": "earliest",
+        "granule": "OPERA_L4_TROPO-ZENITH_20160101T060000Z_20251119T095030Z_HRES_v1.0",
+        "input": "ECMWF_TROP_201601010600_201601010600_1",
+        "input_in_ASF_ECMWF_TROP": false
+      },
+      {
+        "sample": "earliest",
+        "granule": "OPERA_L4_TROPO-ZENITH_20160101T120000Z_20251119T103602Z_HRES_v1.0",
+        "input": "ECMWF_TROP_201601011200_201601011200_1",
+        "input_in_ASF_ECMWF_TROP": false
+      },
+      {
+        "sample": "earliest",
+        "granule": "OPERA_L4_TROPO-ZENITH_20160101T180000Z_20251119T022815Z_HRES_v1.0",
+        "input": "ECMWF_TROP_201601011800_201601011800_1",
+        "input_in_ASF_ECMWF_TROP": false
+      },
+      {
+        "sample": "earliest",
+        "granule": "OPERA_L4_TROPO-ZENITH_20160102T000000Z_20251119T024008Z_HRES_v1.0",
+        "input": "ECMWF_TROP_201601020000_201601020000_1",
+        "input_in_ASF_ECMWF_TROP": false
+      },
+      {
+        "sample": "earliest",
+        "granule": "OPERA_L4_TROPO-ZENITH_20160102T060000Z_20251119T025258Z_HRES_v1.0",
+        "input": "ECMWF_TROP_201601020600_201601020600_1",
+        "input_in_ASF_ECMWF_TROP": false
+      },
+      {
+        "sample": "earliest",
+        "granule": "OPERA_L4_TROPO-ZENITH_20160102T120000Z_20251118T235351Z_HRES_v1.0",
+        "input": "ECMWF_TROP_201601021200_201601021200_1",
+        "input_in_ASF_ECMWF_TROP": false
+      },
+      {
+        "sample": "earliest",
+        "granule": "OPERA_L4_TROPO-ZENITH_20160102T180000Z_20251119T042312Z_HRES_v1.0",
+        "input": "ECMWF_TROP_201601021800_201601021800_1",
+        "input_in_ASF_ECMWF_TROP": false
+      },
+      {
+        "sample": "earliest",
+        "granule": "OPERA_L4_TROPO-ZENITH_20160103T000000Z_20251119T070827Z_HRES_v1.0",
+        "input": "ECMWF_TROP_201601030000_201601030000_1",
+        "input_in_ASF_ECMWF_TROP": false
+      },
+      {
+        "sample": "earliest",
+        "granule": "OPERA_L4_TROPO-ZENITH_20160103T060000Z_20251119T030138Z_HRES_v1.0",
+        "input": "ECMWF_TROP_201601030600_201601030600_1",
+        "input_in_ASF_ECMWF_TROP": false
+      },
+      {
+        "sample": "latest",
+        "granule": "OPERA_L4_TROPO-ZENITH_20261108T180000Z_20261112T000623Z_HRES_v1.0",
+        "input": "ECMWF_TROP_202611081800_202611081800_1",
+        "input_in_ASF_ECMWF_TROP": true
+      },
+      {
+        "sample": "latest",
+        "granule": "OPERA_L4_TROPO-ZENITH_20261108T120000Z_20261112T000645Z_HRES_v1.0",
+        "input": "ECMWF_TROP_202611081200_202611081200_1",
+        "input_in_ASF_ECMWF_TROP": true
+      },
+      {
+        "sample": "latest",
+        "granule": "OPERA_L4_TROPO-ZENITH_20261108T060000Z_20261112T000622Z_HRES_v1.0",
+        "input": "ECMWF_TROP_202611080600_202611080600_1",
+        "input_in_ASF_ECMWF_TROP": true
+      },
+      {
+        "sample": "latest",
+        "granule": "OPERA_L4_TROPO-ZENITH_20261108T000000Z_20261112T000544Z_HRES_v1.0",
+        "input": "ECMWF_TROP_202611080000_202611080000_1",
+        "input_in_ASF_ECMWF_TROP": true
+      },
+      {
+        "sample": "latest",
+        "granule": "OPERA_L4_TROPO-ZENITH_20261107T180000Z_20261111T003442Z_HRES_v1.0",
+        "input": "ECMWF_TROP_202611071800_202611071800_1",
+        "input_in_ASF_ECMWF_TROP": true
+      },
+      {
+        "sample": "latest",
+        "granule": "OPERA_L4_TROPO-ZENITH_20261107T120000Z_20261111T001841Z_HRES_v1.0",
+        "input": "ECMWF_TROP_202611071200_202611071200_1",
+        "input_in_ASF_ECMWF_TROP": true
+      },
+      {
+        "sample": "latest",
+        "granule": "OPERA_L4_TROPO-ZENITH_20261107T060000Z_20261111T000647Z_HRES_v1.0",
+        "input": "ECMWF_TROP_202611070600_202611070600_1",
+        "input_in_ASF_ECMWF_TROP": true
+      },
+      {
+        "sample": "latest",
+        "granule": "OPERA_L4_TROPO-ZENITH_20261107T000000Z_20261111T000636Z_HRES_v1.0",
+        "input": "ECMWF_TROP_202611070000_202611070000_1",
+        "input_in_ASF_ECMWF_TROP": true
+      },
+      {
+        "sample": "latest",
+        "granule": "OPERA_L4_TROPO-ZENITH_20261106T180000Z_20261110T000920Z_HRES_v1.0",
+        "input": "ECMWF_TROP_202611061800_202611061800_1",
+        "input_in_ASF_ECMWF_TROP": true
+      },
+      {
+        "sample": "latest",
+        "granule": "OPERA_L4_TROPO-ZENITH_20261106T120000Z_20261110T000627Z_HRES_v1.0",
+        "input": "ECMWF_TROP_202611061200_202611061200_1",
+        "input_in_ASF_ECMWF_TROP": true
+      }
+    ],
+    "input_existence_check": [],
+    "platforms_in_inputs_missing_from_record": [],
+    "child_granule_check": null
+  },
+  "metadata_findings": [
+    "The INPUT association names \"ASF_ECMWF_TROPO\", which is not in CMR; the ECMWF collection is ASF_ECMWF_TROP (C3653531162-ASF). It should be fixed and typed PARENT.",
+    "ASF_ECMWF_TROP holds granules only from 2025-08-01; earlier TROPO granules name ECMWF inputs that are not in CMR.",
+    "The record's platform is \"ECMWF\"; the spec calls the input a \"Level 3 HRES product produced by ECMWF, and packaged by SDS\".",
+    "No ATBD is linked; the spec says the ATBD is \"JPL-TBD\"."
+  ],
+  "excluded": [
+    {
+      "name": "ASF_ECMWF_TROPO",
+      "role": "existing INPUT association",
+      "reason": "EntryId not in CMR; the collection is ASF_ECMWF_TROP"
+    },
+    {
+      "name": "OPERA_L3_DISP-S1_V1",
+      "role": "possible user",
+      "reason": "TROPO is not a documented DISP-S1 input"
+    }
+  ],
+  "csv": {
+    "path": "Reports/OPERA_L4_TROPO-ZENITH_V1_V1_lineage.csv",
+    "rows": 1,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  }
+}

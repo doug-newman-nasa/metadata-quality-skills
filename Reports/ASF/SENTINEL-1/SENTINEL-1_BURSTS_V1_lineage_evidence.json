@@ -1,0 +1,674 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3)",
+  "generated": "2026-11-12T16:42:08+00:00",
+  "parameters": {
+    "collection_short_name": "SENTINEL-1_BURSTS",
+    "collection_version": "1",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 2,
+    "validate_against_cmr": true,
+    "extract_processing_details": true
+  },
+  "target": {
+    "short_name": "SENTINEL-1_BURSTS",
+    "version": "1",
+    "concept_id": "C2709161906-ASF",
+    "revision_id": 15,
+    "entry_title": "Sentinel-1 Single Look Complex (SLC) Bursts",
+    "processing_level": "1",
+    "platforms": [
+      "Sentinel-1A",
+      "Sentinel-1B",
+      "Sentinel-1C",
+      "Sentinel-1D"
+    ],
+    "temporal": [
+      {
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2014-06-15T00:00:00Z"
+          }
+        ],
+        "PrecisionOfSeconds": 1,
+        "EndsAtPresentFlag": true
+      }
+    ],
+    "granules_in_cmr": 168266979,
+    "existing_metadata_associations": [
+      {
+        "Type": "INPUT",
+        "EntryId": "SENTINEL-1A_SLC",
+        "Description": "This dataset contains the original Sentinel-1A Single Look Complex scenes which are used to create the granules in this collection."
+      },
+      {
+        "Type": "INPUT",
+        "EntryId": "SENTINEL-1B_SLC",
+        "Description": "This dataset contains the original Sentinel-1B Single Look Complex scenes which are used to create the granules in this collection."
+      },
+      {
+        "Type": "INPUT",
+        "EntryId": "SENIINEL-1C_SLC",
+        "Description": "This dataset contains the original Sentinel-1C Single Look Complex scenes which are used to create the granules in this collection."
+      },
+      {
+        "Type": "INPUT",
+        "EntryId": "SENIINEL-1D_SLC",
+        "Description": "This dataset contains the original Sentinel-1D Single Look Complex scenes which are used to create the granules in this collection."
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [],
+    "decision_tree_branch": "[2] NO: no ATBD in related_urls; lineage from the Burst User Guide, the Burst Extractor documentation, SentiWiki and CMR metadata"
+  },
+  "source_documents": [
+    {
+      "key": "burst_user_guide",
+      "title": "ASF Synthetic Aperture Radar Product User Guide: SENTINEL-1 Bursts SAR Data Products",
+      "url": "https://webdocs.asf.alaska.edu/Sentinel-1-Bursts/Sentinel-1-Bursts-User-Guide.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": false,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "burst_extractor_docs",
+      "title": "ASF Sentinel-1 Burst Extractor documentation",
+      "url": "https://sentinel1-burst-documentation.asf.alaska.edu/",
+      "evidence_source": "other_doc",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": false,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": false,
+        "VALID": false
+      }
+    },
+    {
+      "key": "sentiwiki_home",
+      "title": "SentiWiki: Sentinel-1",
+      "url": "https://sentiwiki.copernicus.eu/web/sentinel-1",
+      "evidence_source": "other_doc",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": false,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "sentiwiki_products",
+      "title": "SentiWiki: S1 Products",
+      "url": "https://sentiwiki.copernicus.eu/web/s1-products",
+      "evidence_source": "other_doc",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "sentiwiki_processing",
+      "title": "SentiWiki: S1 Processing",
+      "url": "https://sentiwiki.copernicus.eu/web/s1-processing",
+      "evidence_source": "other_doc",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "cmr_record:SENTINEL-1_BURSTS",
+      "title": "CMR abstract and MetadataAssociations: SENTINEL-1_BURSTS",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2709161906-ASF.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_record:Sentinel-1_Burst_Map",
+      "title": "CMR abstract and associations: Sentinel-1_Burst_Map",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2450786986-ASF.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "burst_user_guide",
+      "url": "https://webdocs.asf.alaska.edu/Sentinel-1-Bursts/Sentinel-1-Bursts-User-Guide.pdf",
+      "status": "ok",
+      "text_chars": 7709
+    },
+    {
+      "key": "burst_extractor_docs",
+      "url": "https://sentinel1-burst-documentation.asf.alaska.edu/",
+      "status": "ok",
+      "text_chars": 5462
+    },
+    {
+      "key": "sentiwiki_home",
+      "url": "https://sentiwiki.copernicus.eu/web/sentinel-1",
+      "status": "ok",
+      "text_chars": 2783
+    },
+    {
+      "key": "sentiwiki_products",
+      "url": "https://sentiwiki.copernicus.eu/web/s1-products",
+      "status": "ok",
+      "text_chars": 49004
+    },
+    {
+      "key": "sentiwiki_processing",
+      "url": "https://sentiwiki.copernicus.eu/web/s1-processing",
+      "status": "ok",
+      "text_chars": 64516
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "SENTINEL-1_BURSTS",
+      "version": "1",
+      "level": "1"
+    },
+    "primary_parents": [
+      "SENTINEL-1A_SLC",
+      "SENTINEL-1B_SLC",
+      "SENTINEL-1C_SLC",
+      "SENTINEL-1D_SLC"
+    ],
+    "supporting_parents": [],
+    "derived_children": [],
+    "related": [
+      "Sentinel-1_Burst_Map"
+    ],
+    "processing_chain": [
+      "SENTINEL-1A/1B/1C/1D_SLC (L1): ESA IW/EW SLC SAFE products in ASF's archive",
+      "ASF Burst Extractor (on request): reads one burst (burst_index) of one sub-swath x polarization measurement TIFF, plus annotation",
+      "SENTINEL-1_BURSTS (L1): one granule per burst x polarization; GeoTIFF / XML / SAFE-ZIP, named by ESA Burst ID",
+      "Downstream (not CMR collections): HyP3-ISCE2 burst InSAR products"
+    ],
+    "depth_2": {
+      "note": "Each SLC parent is an ESA Level-1 product made by the IPF from the same platform's Level-0 data (SENTINEL-1x_RAW); see the SENTINEL-1C_DP_GRD_HIGH notebook. No SLC record links an ATBD or a PARENT. SLC <- RAW is the parents' lineage, not the target's (rule 1c-1), so no depth-2 rows are written.",
+      "parents": [
+        {
+          "parent": "SENTINEL-1A_SLC",
+          "parent_level": "1",
+          "atbd_candidates": null,
+          "parent_associations": [],
+          "level0_collection": "SENTINEL-1A_RAW",
+          "level0_in_cmr": true
+        },
+        {
+          "parent": "SENTINEL-1B_SLC",
+          "parent_level": "1",
+          "atbd_candidates": null,
+          "parent_associations": [],
+          "level0_collection": "SENTINEL-1B_RAW",
+          "level0_in_cmr": true
+        },
+        {
+          "parent": "SENTINEL-1C_SLC",
+          "parent_level": "1",
+          "atbd_candidates": null,
+          "parent_associations": [
+            "SENTINEL-1A_SLC",
+            "SENTINEL-1B_SLC",
+            "SENTINEL-1C_META_SLC"
+          ],
+          "level0_collection": "SENTINEL-1C_RAW",
+          "level0_in_cmr": true
+        },
+        {
+          "parent": "SENTINEL-1D_SLC",
+          "parent_level": "1",
+          "atbd_candidates": null,
+          "parent_associations": [
+            "SENTINEL-1A_SLC",
+            "SENTINEL-1B_SLC",
+            "SENTINEL-1C_SLC",
+            "Sentinel-1D_META_SLC"
+          ],
+          "level0_collection": "SENTINEL-1D_RAW",
+          "level0_in_cmr": true
+        }
+      ]
+    },
+    "existing_associations_check": [
+      {
+        "Type": "INPUT",
+        "EntryId": "SENTINEL-1A_SLC",
+        "found_in_cmr": true,
+        "likely_intended": null
+      },
+      {
+        "Type": "INPUT",
+        "EntryId": "SENTINEL-1B_SLC",
+        "found_in_cmr": true,
+        "likely_intended": null
+      },
+      {
+        "Type": "INPUT",
+        "EntryId": "SENIINEL-1C_SLC",
+        "found_in_cmr": false,
+        "likely_intended": "SENTINEL-1C_SLC"
+      },
+      {
+        "Type": "INPUT",
+        "EntryId": "SENIINEL-1D_SLC",
+        "found_in_cmr": false,
+        "likely_intended": "SENTINEL-1D_SLC"
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "shortname": "SENTINEL-1_BURSTS",
+      "version": "1",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "SENTINEL-1A_SLC",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement",
+      "evidence_source": "other_doc",
+      "evidence_document": "ASF Sentinel-1 Burst Extractor documentation",
+      "evidence_url": "https://sentinel1-burst-documentation.asf.alaska.edu/",
+      "evidence_section": "Burst Extractor docs: Overview",
+      "evidence_quote": "The Sentinel-1 Burst Extractor allows users to download a single burst from the Sentinel-1 SLC without having to download the entire SLC that contains it.",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: each burst granule is a subset of one Sentinel-1A SLC product's data, unchanged (PARENT; the record currently says INPUT). Generic \"the Sentinel-1 SLC\" mapped to the platform ShortName; confirmed by Sentinel-1A SLC names in granule InputGranules (Step 6c).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1214470488-ASF",
+        "related_level": "1",
+        "related_platforms": [
+          "Sentinel-1A"
+        ],
+        "level_progression_valid": true,
+        "level_check": "parent L1 <= target L1",
+        "version_compatible": true,
+        "existing_association_in_target": "INPUT"
+      },
+      "granule_evidence": {
+        "example_input": "S1A_IW_SLC__1SDV_20141003T054235_20141003T054304_002661_002F66_D5C8",
+        "used_by": "S1_301495_IW3_20141003T054235_VV_D5C8-BURST",
+        "found_in_collection": true
+      },
+      "supporting_evidence": [
+        {
+          "document": "CMR abstract and MetadataAssociations: SENTINEL-1_BURSTS",
+          "quote": "The granule metadata describes the burst and provides links to a service which extracts the burst image from the SLC product and returns a GeoTIFF file.",
+          "verified": true
+        },
+        {
+          "document": "CMR abstract and MetadataAssociations: SENTINEL-1_BURSTS",
+          "quote": "INPUT SENTINEL-1A_SLC: This dataset contains the original Sentinel-1A Single Look Complex scenes which are used to create the granules in this collection.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "SENTINEL-1_BURSTS",
+      "version": "1",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "SENTINEL-1B_SLC",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement",
+      "evidence_source": "other_doc",
+      "evidence_document": "ASF Sentinel-1 Burst Extractor documentation",
+      "evidence_url": "https://sentinel1-burst-documentation.asf.alaska.edu/",
+      "evidence_section": "Burst Extractor docs: Overview",
+      "evidence_quote": "The Sentinel-1 Burst Extractor allows users to download a single burst from the Sentinel-1 SLC without having to download the entire SLC that contains it.",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: each burst granule is a subset of one Sentinel-1B SLC product's data, unchanged (PARENT; the record currently says INPUT). Generic \"the Sentinel-1 SLC\" mapped to the platform ShortName; confirmed by Sentinel-1B SLC names in granule InputGranules (Step 6c).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1327985661-ASF",
+        "related_level": "1",
+        "related_platforms": [
+          "Sentinel-1B"
+        ],
+        "level_progression_valid": true,
+        "level_check": "parent L1 <= target L1",
+        "version_compatible": true,
+        "existing_association_in_target": "INPUT"
+      },
+      "granule_evidence": {
+        "example_input": "S1B_IW_SLC__1SDV_20160820T051840_20160820T051907_001696_002693_82CA",
+        "used_by": "S1_202718_IW2_20160820T051840_VV_82CA-BURST",
+        "found_in_collection": true
+      },
+      "supporting_evidence": [
+        {
+          "document": "CMR abstract and MetadataAssociations: SENTINEL-1_BURSTS",
+          "quote": "The granule metadata describes the burst and provides links to a service which extracts the burst image from the SLC product and returns a GeoTIFF file.",
+          "verified": true
+        },
+        {
+          "document": "CMR abstract and MetadataAssociations: SENTINEL-1_BURSTS",
+          "quote": "INPUT SENTINEL-1B_SLC: This dataset contains the original Sentinel-1B Single Look Complex scenes which are used to create the granules in this collection.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "SENTINEL-1_BURSTS",
+      "version": "1",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "SENTINEL-1C_SLC",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement",
+      "evidence_source": "other_doc",
+      "evidence_document": "ASF Sentinel-1 Burst Extractor documentation",
+      "evidence_url": "https://sentinel1-burst-documentation.asf.alaska.edu/",
+      "evidence_section": "Burst Extractor docs: Overview",
+      "evidence_quote": "The Sentinel-1 Burst Extractor allows users to download a single burst from the Sentinel-1 SLC without having to download the entire SLC that contains it.",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: each burst granule is a subset of one Sentinel-1C SLC product's data, unchanged (PARENT; the record currently says INPUT). Generic \"the Sentinel-1 SLC\" mapped to the platform ShortName; confirmed by Sentinel-1C SLC names in granule InputGranules (Step 6c). The record's association for this collection uses the misspelled EntryId \"SENIINEL-1C_SLC\".",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C3470873558-ASF",
+        "related_level": "1",
+        "related_platforms": [
+          "Sentinel-1C"
+        ],
+        "level_progression_valid": true,
+        "level_check": "parent L1 <= target L1",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": {
+        "example_input": "S1C_IW_SLC__1SDV_20250328T121704_20250328T121731_001641_002A52_DF8B",
+        "used_by": "S1_149172_IW2_20250328T121704_VH_DF8B-BURST",
+        "found_in_collection": true
+      },
+      "supporting_evidence": [
+        {
+          "document": "CMR abstract and MetadataAssociations: SENTINEL-1_BURSTS",
+          "quote": "The granule metadata describes the burst and provides links to a service which extracts the burst image from the SLC product and returns a GeoTIFF file.",
+          "verified": true
+        },
+        {
+          "document": "CMR abstract and MetadataAssociations: SENTINEL-1_BURSTS",
+          "quote": "INPUT SENIINEL-1C_SLC: This dataset contains the original Sentinel-1C Single Look Complex scenes which are used to create the granules in this collection.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "SENTINEL-1_BURSTS",
+      "version": "1",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "SENTINEL-1D_SLC",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement",
+      "evidence_source": "other_doc",
+      "evidence_document": "ASF Sentinel-1 Burst Extractor documentation",
+      "evidence_url": "https://sentinel1-burst-documentation.asf.alaska.edu/",
+      "evidence_section": "Burst Extractor docs: Overview",
+      "evidence_quote": "The Sentinel-1 Burst Extractor allows users to download a single burst from the Sentinel-1 SLC without having to download the entire SLC that contains it.",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: each burst granule is a subset of one Sentinel-1D SLC product's data, unchanged (PARENT; the record currently says INPUT). Generic \"the Sentinel-1 SLC\" mapped to the platform ShortName; confirmed by Sentinel-1D SLC names in granule InputGranules (Step 6c). The record's association for this collection uses the misspelled EntryId \"SENIINEL-1D_SLC\".",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C4175278193-ASF",
+        "related_level": "1",
+        "related_platforms": [
+          "Sentinel-1D"
+        ],
+        "level_progression_valid": true,
+        "level_check": "parent L1 <= target L1",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": {
+        "example_input": "S1D_IW_SLC__1SDV_20260416T155617_20260416T155643_002374_003DF8_94A0",
+        "used_by": "S1_122610_IW3_20260416T155617_VV_94A0-BURST",
+        "found_in_collection": true
+      },
+      "supporting_evidence": [
+        {
+          "document": "CMR abstract and MetadataAssociations: SENTINEL-1_BURSTS",
+          "quote": "The granule metadata describes the burst and provides links to a service which extracts the burst image from the SLC product and returns a GeoTIFF file.",
+          "verified": true
+        },
+        {
+          "document": "CMR abstract and MetadataAssociations: SENTINEL-1_BURSTS",
+          "quote": "INPUT SENIINEL-1D_SLC: This dataset contains the original Sentinel-1D Single Look Complex scenes which are used to create the granules in this collection.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "SENTINEL-1_BURSTS",
+      "version": "1",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "related_to",
+      "related_shortname": "Sentinel-1_Burst_Map",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement",
+      "evidence_source": "other_doc",
+      "evidence_document": "ASF Sentinel-1 Burst Extractor documentation",
+      "evidence_url": "https://sentinel1-burst-documentation.asf.alaska.edu/",
+      "evidence_section": "Burst Extractor docs: Product Formats",
+      "evidence_quote": "RelativeBurstId = Burst ID values assigned by ESA, each value identifies a burst cycle, within each sub-swath the burst ID values are unique.",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "rationale": "Granule names and BURST_ID_* attributes use ESA Burst IDs, which the Burst ID map ties to footprints. There is no data dependency, so this is related_to rather than INPUT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2450786986-ASF",
+        "related_level": "4",
+        "related_platforms": [
+          "Sentinel-1A",
+          "Sentinel-1B"
+        ],
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": null,
+      "supporting_evidence": [
+        {
+          "document": "CMR abstract and associations: Sentinel-1_Burst_Map",
+          "quote": "The Burst ID map is a complementary auxiliary product.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "granule_level_check": {
+    "note": "Per-platform granule counts; InputGranules of up to 100 granules per platform (earliest and latest 50)",
+    "by_platform": [
+      {
+        "platform": "Sentinel-1A",
+        "granules": 108664181,
+        "sampled": 100,
+        "without_InputGranules": 0,
+        "input_prefixes": {
+          "S1A": 100
+        },
+        "product_versions": null,
+        "first": "2014-10-03T05:42:37.182162Z",
+        "last": "2026-06-29T19:41:11.630821Z"
+      },
+      {
+        "platform": "Sentinel-1B",
+        "granules": 39508762,
+        "sampled": 100,
+        "without_InputGranules": 0,
+        "input_prefixes": {
+          "S1B": 100
+        },
+        "product_versions": null,
+        "first": "2016-08-20T05:18:41.106350Z",
+        "last": "2021-12-23T06:53:26.287505Z"
+      },
+      {
+        "platform": "Sentinel-1C",
+        "granules": 14547345,
+        "sampled": 100,
+        "without_InputGranules": 0,
+        "input_prefixes": {
+          "S1C": 100
+        },
+        "product_versions": null,
+        "first": "2025-03-28T12:17:05.213380Z",
+        "last": "2026-11-11T17:05:13.081706Z"
+      },
+      {
+        "platform": "Sentinel-1D",
+        "granules": 5546691,
+        "sampled": 100,
+        "without_InputGranules": 0,
+        "input_prefixes": {
+          "S1D": 100
+        },
+        "product_versions": null,
+        "first": "2026-04-16T15:56:18.150388Z",
+        "last": "2026-11-12T12:26:29.878735Z"
+      }
+    ],
+    "input_existence_check": [
+      {
+        "platform": "S1A",
+        "example_input_SLC": "S1A_IW_SLC__1SDV_20141003T054235_20141003T054304_002661_002F66_D5C8",
+        "used_by": "S1_301495_IW3_20141003T054235_VV_D5C8-BURST",
+        "collection": "SENTINEL-1A_SLC (C1214470488-ASF)",
+        "found_in_collection": true,
+        "granule_ur": "S1A_IW_SLC__1SDV_20141003T054235_20141003T054304_002661_002F66_D5C8-SLC"
+      },
+      {
+        "platform": "S1B",
+        "example_input_SLC": "S1B_IW_SLC__1SDV_20160820T051840_20160820T051907_001696_002693_82CA",
+        "used_by": "S1_202718_IW2_20160820T051840_VV_82CA-BURST",
+        "collection": "SENTINEL-1B_SLC (C1327985661-ASF)",
+        "found_in_collection": true,
+        "granule_ur": "S1B_IW_SLC__1SDV_20160820T051840_20160820T051907_001696_002693_82CA-SLC"
+      },
+      {
+        "platform": "S1C",
+        "example_input_SLC": "S1C_IW_SLC__1SDV_20250328T121704_20250328T121731_001641_002A52_DF8B",
+        "used_by": "S1_149172_IW2_20250328T121704_VH_DF8B-BURST",
+        "collection": "SENTINEL-1C_SLC (C3470873558-ASF)",
+        "found_in_collection": true,
+        "granule_ur": "S1C_IW_SLC__1SDV_20250328T121704_20250328T121731_001641_002A52_DF8B-SLC"
+      },
+      {
+        "platform": "S1D",
+        "example_input_SLC": "S1D_IW_SLC__1SDV_20260416T155617_20260416T155643_002374_003DF8_94A0",
+        "used_by": "S1_122610_IW3_20260416T155617_VV_94A0-BURST",
+        "collection": "SENTINEL-1D_SLC (C4175278193-ASF)",
+        "found_in_collection": true,
+        "granule_ur": "S1D_IW_SLC__1SDV_20260416T155617_20260416T155643_002374_003DF8_94A0-SLC"
+      }
+    ],
+    "platforms_in_inputs_missing_from_record": []
+  },
+  "metadata_findings": [
+    "The SLC collections are recorded as INPUT; by the PARENT vs INPUT test they are PARENT (bursts are the SLC data, subset).",
+    "Two association EntryIds are misspelled and do not resolve in CMR: SENIINEL-1C_SLC and SENIINEL-1D_SLC.",
+    "Platforms check: all input platforms are listed.",
+    "The Burst User Guide describes only Sentinel-1A/1B/1C (launch list) and has no product-generation content; the Burst Extractor documentation, which does, is linked only from granules, not from the collection.",
+    "No ATBD is linked; the Burst Extractor documentation could be added as a collection-level related URL."
+  ],
+  "excluded": [
+    {
+      "name": "OPERA_L2_CSLC-S1_V1, OPERA_L2_RTC-S1_V1 (+ STATIC)",
+      "role": "per-burst products",
+      "reason": "made from full SLC scenes (their InputGranules and INPUT associations name SLCs), not from this collection (rule 1c-1)",
+      "evidence": [
+        {
+          "collection": "OPERA_L2_CSLC-S1_V1",
+          "example_granule": "OPERA_L2_CSLC-S1_T129-275873-IW3_20261111T132206Z_20261112T142554Z_S1D_VV_v1.1",
+          "InputGranules": [
+            "S1D_IW_SLC__1SDV_20261111T132144_20261111T132209_005420_00A57F_AAA1"
+          ],
+          "inputs_are_bursts": false
+        },
+        {
+          "collection": "OPERA_L2_RTC-S1-STATIC_V1",
+          "example_granule": "OPERA_L2_RTC-S1-STATIC_T004-006637-IW3_20140403_S1A_30_v1.0",
+          "InputGranules": [
+            "S1A_IW_SLC__1SDV_20170215T230510_20170215T230537_015301_01914D_5364"
+          ],
+          "inputs_are_bursts": false
+        },
+        {
+          "collection": "OPERA_L2_RTC-S1_V1",
+          "example_granule": "OPERA_L2_RTC-S1_T143-305237-IW3_20261112T115159Z_20261112T150520Z_S1D_30_v1.0",
+          "InputGranules": [
+            "S1D_IW_SLC__1SDV_20261112T115130_20261112T115203_005434_00A5F7_DEAB"
+          ],
+          "inputs_are_bursts": false
+        }
+      ]
+    },
+    {
+      "name": "HyP3-ISCE2 burst InSAR products",
+      "role": "downstream on-demand products made from burst SLCs",
+      "reason": "no CMR collection (rule 1c-4)",
+      "evidence": "HyP3-ISCE2 is a burst-based Python package for creating burst InSAR products using ASF's burst SLC products."
+    },
+    {
+      "name": "SENTINEL-1_INTERFEROGRAMS, ARIA_S1_GUNW",
+      "role": "InSAR products over burst-defined frames",
+      "reason": "made from full SLC scenes (InputGranules), not from burst granules"
+    },
+    {
+      "name": "SENTINEL-1x_RAW (Level 0)",
+      "role": "grandparent through the SLC parents",
+      "reason": "lineage of the parents, not of the target (rule 1c-1); see depth_2"
+    }
+  ],
+  "csv": {
+    "path": "Reports/SENTINEL-1_BURSTS_V1_lineage.csv",
+    "rows": 5,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  }
+}

@@ -1,0 +1,1695 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3)",
+  "generated": "2026-11-12T17:15:26+00:00",
+  "parameters": {
+    "collection_short_name": "UAVSAR_POLSAR",
+    "collection_version": "1",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 2,
+    "validate_against_cmr": true,
+    "extract_processing_details": true
+  },
+  "target": {
+    "short_name": "UAVSAR_POLSAR",
+    "version": "1",
+    "concept_id": "C4261555796-ASF",
+    "revision_id": 8,
+    "entry_title": "UAVSAR Polarimetric Synthetic Aperture Radar (PolSAR) Product",
+    "processing_level": "1",
+    "platforms": [
+      "G-III"
+    ],
+    "temporal": [
+      {
+        "PrecisionOfSeconds": 1,
+        "EndsAtPresentFlag": true,
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2008-07-24T00:00:00.000Z"
+          }
+        ]
+      }
+    ],
+    "granules_in_cmr": 9765,
+    "existing_metadata_associations": [
+      {
+        "Type": "RELATED",
+        "EntryId": "UAVSAR_RPI",
+        "Description": "This dataset contains UAVSAR Repeat Pass Interferometric products."
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [],
+    "decision_tree_branch": "[2] NO: no ATBD in related_urls; lineage from the JPL data-format specification, granule attributes, and the user guides of candidate child collections"
+  },
+  "source_documents": [
+    {
+      "key": "format_spec",
+      "title": "JPL UAVSAR POLSAR Data Format",
+      "url": "https://uavsar.jpl.nasa.gov/science/documents/polsar-format.html",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": false,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": false,
+        "VALID": false
+      }
+    },
+    {
+      "key": "other_format_spec",
+      "title": "JPL UAVSAR RPI Data Format (related collection)",
+      "url": "https://uavsar.jpl.nasa.gov/science/documents/rpi-format.html",
+      "evidence_source": "other_doc",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": false,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": false,
+        "VALID": false
+      }
+    },
+    {
+      "key": "cmr_record:UAVSAR_POLSAR",
+      "title": "CMR abstract and MetadataAssociations: UAVSAR_POLSAR",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C4261555796-ASF.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_record:UAVSAR_RPI",
+      "title": "CMR abstract and associations: UAVSAR_RPI",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C4261689115-ASF.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "child_guide:SV12UBK",
+      "title": "User guide: SV12UBK",
+      "url": "https://nsidc.org/sites/default/files/sv12ubk-v001-userguide.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": false,
+        "mentions_input_data": false,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": false
+      }
+    },
+    {
+      "key": "child_guide:SV19MA_SAR",
+      "title": "User guide: SV19MA_SAR",
+      "url": "https://nsidc.org/sites/default/files/documents/user-guide/sv19ma_sar-v001-userguide.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": false,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": false,
+        "VALID": false
+      }
+    },
+    {
+      "key": "child_guide:SV19MB_SAR",
+      "title": "User guide: SV19MB_SAR",
+      "url": "https://nsidc.org/sites/default/files/documents/user-guide/sv19mb_sar-v001-userguide.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": false,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": false,
+        "VALID": false
+      }
+    },
+    {
+      "key": "child_guide:Lake_Wetland_Classes_UAVSAR_1883",
+      "title": "User guide: Lake_Wetland_Classes_UAVSAR_1883",
+      "url": "https://data.ornldaac.earthdata.nasa.gov/public/above/Lake_Wetland_Classes_UAVSAR/comp/Lake_Wetland_Classes_UAVSAR.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": false,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": false,
+        "VALID": false
+      }
+    },
+    {
+      "key": "child_guide:Wetland_VegClassification_PAD_2069",
+      "title": "User guide: Wetland_VegClassification_PAD_2069",
+      "url": "https://data.ornldaac.earthdata.nasa.gov/public/above/Wetland_VegClassification_PAD/comp/Wetland_VegClassification_PAD.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "format_spec",
+      "url": "https://uavsar.jpl.nasa.gov/science/documents/polsar-format.html",
+      "status": "ok",
+      "text_chars": 11071
+    },
+    {
+      "key": "other_format_spec",
+      "url": "https://uavsar.jpl.nasa.gov/science/documents/rpi-format.html",
+      "status": "ok",
+      "text_chars": 13064
+    },
+    {
+      "key": "child_guide:SV12UBK",
+      "url": "https://nsidc.org/sites/default/files/sv12ubk-v001-userguide.pdf",
+      "status": "ok",
+      "text_chars": 13308
+    },
+    {
+      "key": "child_guide:SV19MA_SAR",
+      "url": "https://nsidc.org/sites/default/files/documents/user-guide/sv19ma_sar-v001-userguide.pdf",
+      "status": "ok",
+      "text_chars": 12004
+    },
+    {
+      "key": "child_guide:SV19MB_SAR",
+      "url": "https://nsidc.org/sites/default/files/documents/user-guide/sv19mb_sar-v001-userguide.pdf",
+      "status": "ok",
+      "text_chars": 11920
+    },
+    {
+      "key": "child_guide:Lake_Wetland_Classes_UAVSAR_1883",
+      "url": "https://data.ornldaac.earthdata.nasa.gov/public/above/Lake_Wetland_Classes_UAVSAR/comp/Lake_Wetland_Classes_UAVSAR.pdf",
+      "status": "ok",
+      "text_chars": 24130
+    },
+    {
+      "key": "child_guide:Wetland_VegClassification_PAD_2069",
+      "url": "https://data.ornldaac.earthdata.nasa.gov/public/above/Wetland_VegClassification_PAD/comp/Wetland_VegClassification_PAD.pdf",
+      "status": "ok",
+      "text_chars": 20428
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "UAVSAR_POLSAR",
+      "version": "1",
+      "level": "1"
+    },
+    "primary_parents": [],
+    "supporting_parents": [
+      "JPL_SRTM_V2",
+      "SRTMGL1",
+      "SRTMGL30"
+    ],
+    "derived_children": [
+      "SV12UBK",
+      "SV19MA_SAR",
+      "SV19MB_SAR",
+      "Lake_Wetland_Classes_UAVSAR_1883",
+      "Wetland_VegClassification_PAD_2069"
+    ],
+    "related": [
+      "UAVSAR_RPI"
+    ],
+    "processing_chain": [
+      "UAVSAR L-band quad-pol data take (G-III flight line) -> JPL processor: focusing, calibration -> SLC (internal; not a CMR collection)",
+      "MLC: averaged SLC cross products (3 x 12 looks); GRD: backward projection to lat/lon onto the DEM (SOURCE_DEM)",
+      "UAVSAR_POLSAR (L1): .mlc, .grd, .hgt, .slope, .inc, .ann",
+      "Downstream: SMAPVEX12 normalized backscatter, SMAPVEX19-22 gamma-nought mosaics, ABoVE wetland classifications"
+    ],
+    "depth_2": {
+      "note": "There are no PARENT or PARENT-like collections. The JPL UAVSAR SLCs (and raw data) are not distributed as CMR collections. The only UAVSAR SLC collections in CMR are campaign stacks (Delta-X, Pre-Delta-X) that are siblings, not inputs. The DEM INPUTs have their own lineage (SRTM, ASTER), outside the target's (rule 1c-1). So no depth-2 rows are written.",
+      "parents": [
+        {
+          "search": "*UAVSAR*SLC*, *UAVSAR*L0*, *UAVSAR*RAW*",
+          "hits": [
+            "DeltaX_L1_UAVSAR_SLC_Stack_1984",
+            "PreDeltaX_UAVSAR_SLC_1816"
+          ]
+        }
+      ]
+    },
+    "dem_inventory": [
+      {
+        "SOURCE_DEM": "SRTM1 v2",
+        "granules": 3513,
+        "collection": "JPL_SRTM_V2",
+        "version": "2",
+        "status": "mapped"
+      },
+      {
+        "SOURCE_DEM": "SRTM1 v3",
+        "granules": 2611,
+        "collection": "SRTMGL1",
+        "version": "003",
+        "status": "mapped"
+      },
+      {
+        "SOURCE_DEM": "SRTM3 v2",
+        "granules": 1340,
+        "collection": "JPL_SRTM_V2",
+        "version": "2",
+        "status": "mapped"
+      },
+      {
+        "SOURCE_DEM": "Copernicus WorldDEM-30 (GLO-30)",
+        "granules": 1122,
+        "collection": null,
+        "version": null,
+        "status": "Copernicus DEM GLO-30: no CMR collection"
+      },
+      {
+        "SOURCE_DEM": "SRTM30 v2",
+        "granules": 655,
+        "collection": "SRTMGL30",
+        "version": "002",
+        "status": "mapped"
+      },
+      {
+        "SOURCE_DEM": "Iceland",
+        "granules": 233,
+        "collection": null,
+        "version": null,
+        "status": "national DEM of Iceland: no CMR collection"
+      },
+      {
+        "SOURCE_DEM": "SRTM30 v2 float",
+        "granules": 119,
+        "collection": "SRTMGL30",
+        "version": "002",
+        "status": "mapped"
+      },
+      {
+        "SOURCE_DEM": "SRTM V2 1 arcsec",
+        "granules": 95,
+        "collection": "JPL_SRTM_V2",
+        "version": "2",
+        "status": "mapped"
+      },
+      {
+        "SOURCE_DEM": "Alaska IFSAR, ArcticDEM, ALOS, SRTM, CDEM, ASTER GDEM",
+        "granules": 37,
+        "collection": null,
+        "version": null,
+        "status": "regional or composite DEM (Alaska IFSAR / ArcticDEM / CDEM mosaic): no single CMR collection"
+      },
+      {
+        "SOURCE_DEM": "TanDEM-X 90m",
+        "granules": 34,
+        "collection": null,
+        "version": null,
+        "status": "TanDEM-X 90 m DEM: no CMR collection"
+      },
+      {
+        "SOURCE_DEM": "ASTER v1.0",
+        "granules": 2,
+        "collection": "ASTGTM",
+        "version": "001",
+        "status": "ASTGTM version 001 not in CMR"
+      },
+      {
+        "SOURCE_DEM": "Alaska",
+        "granules": 2,
+        "collection": null,
+        "version": null,
+        "status": "regional or composite DEM (Alaska IFSAR / ArcticDEM / CDEM mosaic): no single CMR collection"
+      },
+      {
+        "SOURCE_DEM": "ArcticDEM",
+        "granules": 1,
+        "collection": null,
+        "version": null,
+        "status": "regional or composite DEM (Alaska IFSAR / ArcticDEM / CDEM mosaic): no single CMR collection"
+      },
+      {
+        "SOURCE_DEM": "Arctic",
+        "granules": 1,
+        "collection": null,
+        "version": null,
+        "status": "regional or composite DEM (Alaska IFSAR / ArcticDEM / CDEM mosaic): no single CMR collection"
+      }
+    ],
+    "shared_acquisitions": [
+      {
+        "granule": "cvalle_0901N_26003_006_260417_L090_CX_01",
+        "data_take": "0901N 26003-006",
+        "other_collection_hits": 1
+      },
+      {
+        "granule": "cvalle_32304_26003_007_260417_L090_CX_01",
+        "data_take": "32304 26003-007",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "cvalle_05536_26003_008_260417_L090_CX_01",
+        "data_take": "05536 26003-008",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "cvalle_14306_26003_009_260417_L090_CX_01",
+        "data_take": "14306 26003-009",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "crparc_09118_26003_010_260417_L090_CX_01",
+        "data_take": "09118 26003-010",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "crparc_09118_26003_011_260417_L090_CX_01",
+        "data_take": "09118 26003-011",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PCanal_13503_26007_000_260505_L090_CX_01",
+        "data_take": "13503 26007-000",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PanCan_20012_26007_004_260505_L090_CX_01",
+        "data_take": "20012 26007-004",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PanCaA_20033_26007_005_260505_L090_CX_01",
+        "data_take": "20033 26007-005",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PanCaB_20034_26007_006_260505_L090_CX_01",
+        "data_take": "20034 26007-006",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PanCaC_20035_26007_007_260505_L090_CX_01",
+        "data_take": "20035 26007-007",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PanCaD_20036_26007_008_260505_L090_CX_01",
+        "data_take": "20036 26007-008",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PanCaE_20037_26007_009_260505_L090_CX_01",
+        "data_take": "20037 26007-009",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PanCaF_20038_26007_010_260505_L090_CX_01",
+        "data_take": "20038 26007-010",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PanCaG_20039_26007_011_260505_L090_CX_01",
+        "data_take": "20039 26007-011",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PanCaH_20040_26007_012_260505_L090_CX_01",
+        "data_take": "20040 26007-012",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PanCaI_20041_26007_013_260505_L090_CX_01",
+        "data_take": "20041 26007-013",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PCanal_13503_26007_014_260505_L090_CX_01",
+        "data_take": "13503 26007-014",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PCanal_13503_26008_000_260506_L090_CX_01",
+        "data_take": "13503 26008-000",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "hgalle_25523_26008_001_260506_L090_CX_01",
+        "data_take": "25523 26008-001",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "fortun_10214_26008_008_260506_L090_CX_01",
+        "data_take": "10214 26008-008",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "fortun_16019_26008_009_260506_L090_CX_01",
+        "data_take": "16019 26008-009",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PCanal_13503_26008_020_260506_L090_CX_01",
+        "data_take": "13503 26008-020",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "cehoya_25708_26008_021_260506_L090_CX_01",
+        "data_take": "25708 26008-021",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "pchame_06021_26008_022_260506_L090_CX_01",
+        "data_take": "06021 26008-022",
+        "other_collection_hits": 0
+      }
+    ],
+    "child_coverage": [
+      {
+        "related": "SV12UBK",
+        "boxes": 1,
+        "time_ranges": 1,
+        "target_granules_in_window": 159
+      },
+      {
+        "related": "SV19MA_SAR",
+        "boxes": 1,
+        "time_ranges": 1,
+        "target_granules_in_window": 79
+      },
+      {
+        "related": "SV19MB_SAR",
+        "boxes": 1,
+        "time_ranges": 1,
+        "target_granules_in_window": 60
+      },
+      {
+        "related": "Lake_Wetland_Classes_UAVSAR_1883",
+        "boxes": 1,
+        "time_ranges": 1,
+        "target_granules_in_window": 224
+      },
+      {
+        "related": "Wetland_VegClassification_PAD_2069",
+        "boxes": 1,
+        "time_ranges": 1,
+        "target_granules_in_window": 1
+      }
+    ],
+    "candidate_triage": [
+      {
+        "short_name": "ABoVE_L1_P_SAR_1800",
+        "concept_id": "C2143401773-ORNL_CLOUD",
+        "version": "1",
+        "level": "1A",
+        "outcome": "excluded",
+        "reason": "P-band (AirMOSS) UAVSAR products; this collection is L-band (possible equivalent_product, not asserted)"
+      },
+      {
+        "short_name": "ABoVE_ReSALT_InSAR_PolSAR_V3_2004",
+        "concept_id": "C2432584227-ORNL_CLOUD",
+        "version": "3",
+        "level": "3",
+        "outcome": "excluded",
+        "reason": "uses UAVSAR L-band InSAR (UAVSAR_RPI) and AirMOSS P-band PolSAR, not this L-band PolSAR collection; see the UAVSAR_RPI notebook"
+      },
+      {
+        "short_name": "ABoVE_Soil_ThawMoisture_2369",
+        "concept_id": "C3565295489-ORNL_CLOUD",
+        "version": "2",
+        "level": "3",
+        "outcome": "excluded",
+        "reason": "cites UAVSAR only as a validation target, co-located data or generic input; no product identified"
+      },
+      {
+        "short_name": "AGB_Great_Slave_Lake_NWT_2365",
+        "concept_id": "C3235172460-ORNL_CLOUD",
+        "version": "1",
+        "level": "4",
+        "outcome": "excluded",
+        "reason": "own documentation does not identify the UAVSAR input product (precision over recall)"
+      },
+      {
+        "short_name": "DeltaX_ANUGA_AtchafalayaBasin_2306",
+        "concept_id": "C3091330782-ORNL_CLOUD",
+        "version": "1",
+        "level": "4",
+        "outcome": "excluded",
+        "reason": "cites UAVSAR only as a validation target, co-located data or generic input; no product identified"
+      },
+      {
+        "short_name": "DeltaX_AVIRIS-NG_UAVSAR_L3_AGB_2410",
+        "concept_id": "C3556516287-ORNL_CLOUD",
+        "version": "1",
+        "level": "3",
+        "outcome": "excluded",
+        "reason": "made from the Delta-X / Pre-Delta-X SLC-stack collections (ISCE/SNAPHU re-processing), not from this collection"
+      },
+      {
+        "short_name": "DeltaX_L1B_UAVSAR_WaterLevels_1979",
+        "concept_id": "C2255219113-ORNL_CLOUD",
+        "version": "1.1",
+        "level": "1B",
+        "outcome": "excluded",
+        "reason": "made from the Delta-X / Pre-Delta-X SLC-stack collections (ISCE/SNAPHU re-processing), not from this collection"
+      },
+      {
+        "short_name": "DeltaX_L1_UAVSAR_SLC_Stack_1984",
+        "concept_id": "C2256889308-ORNL_CLOUD",
+        "version": "1.1",
+        "level": "1A",
+        "outcome": "excluded",
+        "reason": "campaign SLC-stack product processed separately by the UAVSAR team; a sibling of this collection, not made from it"
+      },
+      {
+        "short_name": "DeltaX_L2_UAVSAR_WaterLevels_2057",
+        "concept_id": "C2428388674-ORNL_CLOUD",
+        "version": "1.1",
+        "level": "2",
+        "outcome": "excluded",
+        "reason": "made from the Delta-X / Pre-Delta-X SLC-stack collections (ISCE/SNAPHU re-processing), not from this collection"
+      },
+      {
+        "short_name": "DeltaX_L3_UAVSAR_WaterLevels_2058",
+        "concept_id": "C2428357062-ORNL_CLOUD",
+        "version": "1.1",
+        "level": "3",
+        "outcome": "excluded",
+        "reason": "made from the Delta-X / Pre-Delta-X SLC-stack collections (ISCE/SNAPHU re-processing), not from this collection"
+      },
+      {
+        "short_name": "DeltaX_UAVSAR_L3_ChannelMap_V2_2344",
+        "concept_id": "C3110694695-ORNL_CLOUD",
+        "version": "2",
+        "level": "3",
+        "outcome": "excluded",
+        "reason": "made from the Delta-X / Pre-Delta-X SLC-stack collections (ISCE/SNAPHU re-processing), not from this collection"
+      },
+      {
+        "short_name": "FS_SoilMoisture_T_SantaBarb_CA_2504",
+        "concept_id": "C4219861950-ORNL_CLOUD",
+        "version": "1",
+        "level": "3",
+        "outcome": "excluded",
+        "reason": "cites UAVSAR only as a validation target, co-located data or generic input; no product identified"
+      },
+      {
+        "short_name": "GeoCryoAI_PermafrostThaw_CFlux_2371",
+        "concept_id": "C3497223254-ORNL_CLOUD",
+        "version": "1",
+        "level": "4",
+        "outcome": "excluded",
+        "reason": "cites UAVSAR only as a validation target, co-located data or generic input; no product identified"
+      },
+      {
+        "short_name": "Lake_Wetland_Classes_UAVSAR_1883",
+        "concept_id": "C2192619280-ORNL_CLOUD",
+        "version": "1",
+        "level": "4",
+        "outcome": "selected: downstream_product",
+        "reason": "own user guide identifies this collection's product (Step 5)"
+      },
+      {
+        "short_name": "NACP_Forest_Biophysical_1046",
+        "concept_id": "C2552905405-ORNL_CLOUD",
+        "version": "1",
+        "level": "3",
+        "outcome": "excluded",
+        "reason": "cites UAVSAR only as a validation target, co-located data or generic input; no product identified"
+      },
+      {
+        "short_name": "OMG_L3_ICE_ELEV_GLISTINA",
+        "concept_id": "C2491772159-POCLOUD",
+        "version": "1",
+        "level": "3",
+        "outcome": "excluded",
+        "reason": "Ka-band GLISTIN-A, not this instrument mode"
+      },
+      {
+        "short_name": "Polarimetric_CT_1601",
+        "concept_id": "C2734261393-ORNL_CLOUD",
+        "version": "1",
+        "level": "3",
+        "outcome": "excluded",
+        "reason": "AfriSAR TomoSAR/PolInSAR from repeat-pass SLC stacks, not from this collection"
+      },
+      {
+        "short_name": "Polarimetric_height_profile_1577",
+        "concept_id": "C2734257089-ORNL_CLOUD",
+        "version": "1",
+        "level": "1A",
+        "outcome": "excluded",
+        "reason": "AfriSAR TomoSAR/PolInSAR from repeat-pass SLC stacks, not from this collection"
+      },
+      {
+        "short_name": "PreDeltaX_L3_AVIRIS_Biomass_1821",
+        "concept_id": "C2025126705-ORNL_CLOUD",
+        "version": "1",
+        "level": "3",
+        "outcome": "excluded",
+        "reason": "cites UAVSAR only as a validation target, co-located data or generic input; no product identified"
+      },
+      {
+        "short_name": "PreDeltaX_UAVSARChannelMaps_V2_2366",
+        "concept_id": "C3385943342-ORNL_CLOUD",
+        "version": "2",
+        "level": "3",
+        "outcome": "excluded",
+        "reason": "made from the Delta-X / Pre-Delta-X SLC-stack collections (ISCE/SNAPHU re-processing), not from this collection"
+      },
+      {
+        "short_name": "PreDeltaX_UAVSAR_SLC_1816",
+        "concept_id": "C2025125085-ORNL_CLOUD",
+        "version": "1",
+        "level": "1B",
+        "outcome": "excluded",
+        "reason": "campaign SLC-stack product processed separately by the UAVSAR team; a sibling of this collection, not made from it"
+      },
+      {
+        "short_name": "PreDeltaX_UAVSAR_WaterLevel_1823",
+        "concept_id": "C2025126876-ORNL_CLOUD",
+        "version": "1",
+        "level": "3",
+        "outcome": "excluded",
+        "reason": "made from the Delta-X / Pre-Delta-X SLC-stack collections (ISCE/SNAPHU re-processing), not from this collection"
+      },
+      {
+        "short_name": "PreDeltaX_Vegetation_Structure_1805",
+        "concept_id": "C2025123672-ORNL_CLOUD",
+        "version": "1",
+        "level": "3",
+        "outcome": "excluded",
+        "reason": "cites UAVSAR only as a validation target, co-located data or generic input; no product identified"
+      },
+      {
+        "short_name": "SNEX17_InSAR",
+        "concept_id": "C4322673172-NSIDCV0",
+        "version": "1",
+        "level": "NA",
+        "outcome": "excluded",
+        "reason": "Ka-band GLISTIN-A, not this instrument mode"
+      },
+      {
+        "short_name": "SNEX20_TLS_UNAVCO",
+        "concept_id": "C4322673782-NSIDCV0",
+        "version": "1",
+        "level": "0",
+        "outcome": "excluded",
+        "reason": "cites UAVSAR only as a validation target, co-located data or generic input; no product identified"
+      },
+      {
+        "short_name": "SNEX20_TS_IB",
+        "concept_id": "C3834908328-NSIDC_CPRD",
+        "version": "1",
+        "level": "2",
+        "outcome": "excluded",
+        "reason": "cites UAVSAR only as a validation target, co-located data or generic input; no product identified"
+      },
+      {
+        "short_name": "SNEX21_TS_IB",
+        "concept_id": "C3868549810-NSIDC_CPRD",
+        "version": "1",
+        "level": "2",
+        "outcome": "excluded",
+        "reason": "cites UAVSAR only as a validation target, co-located data or generic input; no product identified"
+      },
+      {
+        "short_name": "SNEX_UAVSAR",
+        "concept_id": "C4322672886-NSIDCV0",
+        "version": "1",
+        "level": "NA",
+        "outcome": "excluded",
+        "reason": "SnowEx index of UAVSAR repeat-pass (RPI) products; see the UAVSAR_RPI notebook"
+      },
+      {
+        "short_name": "SV12UBK",
+        "concept_id": "C3284167685-NSIDC_CPRD",
+        "version": "1",
+        "level": "Not provided",
+        "outcome": "selected: downstream_product",
+        "reason": "own user guide identifies this collection's product (Step 5)"
+      },
+      {
+        "short_name": "SV19MA_SAR",
+        "concept_id": "C3333728852-NSIDC_CPRD",
+        "version": "1",
+        "level": "2",
+        "outcome": "selected: downstream_product",
+        "reason": "own user guide identifies this collection's product (Step 5)"
+      },
+      {
+        "short_name": "SV19MB_SAR",
+        "concept_id": "C3333729661-NSIDC_CPRD",
+        "version": "1",
+        "level": "2",
+        "outcome": "selected: downstream_product",
+        "reason": "own user guide identifies this collection's product (Step 5)"
+      },
+      {
+        "short_name": "UAVSAR_Wetland_Peace-Athabasca_2442",
+        "concept_id": "C3730677272-ORNL_CLOUD",
+        "version": "1",
+        "level": "2",
+        "outcome": "excluded",
+        "reason": "own documentation does not identify the UAVSAR input product (precision over recall)"
+      },
+      {
+        "short_name": "Wetland_VegClassification_PAD_2069",
+        "concept_id": "C2308233855-ORNL_CLOUD",
+        "version": "1",
+        "level": "4",
+        "outcome": "selected: downstream_product",
+        "reason": "own user guide identifies this collection's product (Step 5)"
+      },
+      {
+        "short_name": "Wildfires_NWT_Canada_2018_1703",
+        "concept_id": "C2143403376-ORNL_CLOUD",
+        "version": "1",
+        "level": "2",
+        "outcome": "excluded",
+        "reason": "cites UAVSAR only as a validation target, co-located data or generic input; no product identified"
+      },
+      {
+        "short_name": "Wildfires_NWT_Canada_2019_1900",
+        "concept_id": "C2445465291-ORNL_CLOUD",
+        "version": "1",
+        "level": "3",
+        "outcome": "excluded",
+        "reason": "cites UAVSAR only as a validation target, co-located data or generic input; no product identified"
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "shortname": "UAVSAR_POLSAR",
+      "version": "1",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "related_to",
+      "related_shortname": "UAVSAR_RPI",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement",
+      "evidence_source": "other_doc",
+      "evidence_document": "CMR abstract and MetadataAssociations: UAVSAR_POLSAR",
+      "evidence_url": "https://cmr.earthdata.nasa.gov/search/concepts/C4261555796-ASF.umm_json",
+      "evidence_section": "CMR abstract and MetadataAssociations (target record)",
+      "evidence_quote": "UAVSAR interferometric products can be found in the associated",
+      "quote_verified": true,
+      "named_explicitly": true,
+      "keyword_priority": 3,
+      "rationale": "Companion product of the same instrument (single-pass polarimetric vs repeat-pass interferometric), made by separate JPL processing streams from the same kind of data takes; neither is made from the other (shared acquisitions checked in Step 6b).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C4261689115-ASF",
+        "related_level": "1",
+        "related_platforms": [
+          "G-III"
+        ],
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": "RELATED"
+      },
+      "granule_evidence": {
+        "shared_data_takes_check": [
+          {
+            "granule": "cvalle_0901N_26003_006_260417_L090_CX_01",
+            "data_take": "0901N 26003-006",
+            "other_collection_hits": 1
+          },
+          {
+            "granule": "cvalle_32304_26003_007_260417_L090_CX_01",
+            "data_take": "32304 26003-007",
+            "other_collection_hits": 0
+          },
+          {
+            "granule": "cvalle_05536_26003_008_260417_L090_CX_01",
+            "data_take": "05536 26003-008",
+            "other_collection_hits": 0
+          },
+          {
+            "granule": "cvalle_14306_26003_009_260417_L090_CX_01",
+            "data_take": "14306 26003-009",
+            "other_collection_hits": 0
+          },
+          {
+            "granule": "crparc_09118_26003_010_260417_L090_CX_01",
+            "data_take": "09118 26003-010",
+            "other_collection_hits": 0
+          },
+          {
+            "granule": "crparc_09118_26003_011_260417_L090_CX_01",
+            "data_take": "09118 26003-011",
+            "other_collection_hits": 0
+          },
+          {
+            "granule": "PCanal_13503_26007_000_260505_L090_CX_01",
+            "data_take": "13503 26007-000",
+            "other_collection_hits": 0
+          },
+          {
+            "granule": "PanCan_20012_26007_004_260505_L090_CX_01",
+            "data_take": "20012 26007-004",
+            "other_collection_hits": 0
+          },
+          {
+            "granule": "PanCaA_20033_26007_005_260505_L090_CX_01",
+            "data_take": "20033 26007-005",
+            "other_collection_hits": 0
+          },
+          {
+            "granule": "PanCaB_20034_26007_006_260505_L090_CX_01",
+            "data_take": "20034 26007-006",
+            "other_collection_hits": 0
+          },
+          {
+            "granule": "PanCaC_20035_26007_007_260505_L090_CX_01",
+            "data_take": "20035 26007-007",
+            "other_collection_hits": 0
+          },
+          {
+            "granule": "PanCaD_20036_26007_008_260505_L090_CX_01",
+            "data_take": "20036 26007-008",
+            "other_collection_hits": 0
+          },
+          {
+            "granule": "PanCaE_20037_26007_009_260505_L090_CX_01",
+            "data_take": "20037 26007-009",
+            "other_collection_hits": 0
+          },
+          {
+            "granule": "PanCaF_20038_26007_010_260505_L090_CX_01",
+            "data_take": "20038 26007-010",
+            "other_collection_hits": 0
+          },
+          {
+            "granule": "PanCaG_20039_26007_011_260505_L090_CX_01",
+            "data_take": "20039 26007-011",
+            "other_collection_hits": 0
+          },
+          {
+            "granule": "PanCaH_20040_26007_012_260505_L090_CX_01",
+            "data_take": "20040 26007-012",
+            "other_collection_hits": 0
+          },
+          {
+            "granule": "PanCaI_20041_26007_013_260505_L090_CX_01",
+            "data_take": "20041 26007-013",
+            "other_collection_hits": 0
+          },
+          {
+            "granule": "PCanal_13503_26007_014_260505_L090_CX_01",
+            "data_take": "13503 26007-014",
+            "other_collection_hits": 0
+          },
+          {
+            "granule": "PCanal_13503_26008_000_260506_L090_CX_01",
+            "data_take": "13503 26008-000",
+            "other_collection_hits": 0
+          },
+          {
+            "granule": "hgalle_25523_26008_001_260506_L090_CX_01",
+            "data_take": "25523 26008-001",
+            "other_collection_hits": 0
+          },
+          {
+            "granule": "fortun_10214_26008_008_260506_L090_CX_01",
+            "data_take": "10214 26008-008",
+            "other_collection_hits": 0
+          },
+          {
+            "granule": "fortun_16019_26008_009_260506_L090_CX_01",
+            "data_take": "16019 26008-009",
+            "other_collection_hits": 0
+          },
+          {
+            "granule": "PCanal_13503_26008_020_260506_L090_CX_01",
+            "data_take": "13503 26008-020",
+            "other_collection_hits": 0
+          },
+          {
+            "granule": "cehoya_25708_26008_021_260506_L090_CX_01",
+            "data_take": "25708 26008-021",
+            "other_collection_hits": 0
+          },
+          {
+            "granule": "pchame_06021_26008_022_260506_L090_CX_01",
+            "data_take": "06021 26008-022",
+            "other_collection_hits": 0
+          }
+        ]
+      },
+      "supporting_evidence": [
+        {
+          "document": "CMR abstract and associations: UAVSAR_RPI",
+          "quote": "Standard UAVSAR polarimetric synthetic aperture radar products can be found in the associated",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "UAVSAR_POLSAR",
+      "version": "1",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "JPL_SRTM_V2",
+      "related_version": "2",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "JPL UAVSAR POLSAR Data Format",
+      "evidence_url": "https://uavsar.jpl.nasa.gov/science/documents/polsar-format.html",
+      "evidence_section": "Format spec: HGT data",
+      "evidence_quote": "This height file contains the values of elevation used to project the slant range data to the Earth's surface.",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Ancillary input: 4,948 of 9,765 granules were projected to this DEM (SOURCE_DEM = SRTM1 v2, SRTM3 v2, SRTM V2 1 arcsec). Mapped from the label to JPL_SRTM_V2 2. JPL_SRTM_V2 is a metadata-only USGS record (no granules in CMR) for the SRTM Version 2 release.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1220566612-USGS_LTA",
+        "related_level": "Not provided",
+        "related_platforms": [
+          "Not provided",
+          "OV-105",
+          "STS-99"
+        ],
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": {
+        "SOURCE_DEM_labels": [
+          "SRTM1 v2",
+          "SRTM3 v2",
+          "SRTM V2 1 arcsec"
+        ],
+        "granules": 4948,
+        "of_total": 9765
+      },
+      "supporting_evidence": [
+        {
+          "document": "JPL UAVSAR POLSAR Data Format",
+          "quote": "The source of the DEM is given by \"DEM source\" in the annotation file.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "UAVSAR_POLSAR",
+      "version": "1",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "SRTMGL1",
+      "related_version": "003",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "JPL UAVSAR POLSAR Data Format",
+      "evidence_url": "https://uavsar.jpl.nasa.gov/science/documents/polsar-format.html",
+      "evidence_section": "Format spec: HGT data",
+      "evidence_quote": "This height file contains the values of elevation used to project the slant range data to the Earth's surface.",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Ancillary input: 2,611 of 9,765 granules were projected to this DEM (SOURCE_DEM = SRTM1 v3). Mapped from the label to SRTMGL1 003.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2763266360-LPCLOUD",
+        "related_level": "3",
+        "related_platforms": [
+          "STS-99"
+        ],
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": {
+        "SOURCE_DEM_labels": [
+          "SRTM1 v3"
+        ],
+        "granules": 2611,
+        "of_total": 9765
+      },
+      "supporting_evidence": [
+        {
+          "document": "JPL UAVSAR POLSAR Data Format",
+          "quote": "The source of the DEM is given by \"DEM source\" in the annotation file.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "UAVSAR_POLSAR",
+      "version": "1",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "SRTMGL30",
+      "related_version": "002",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "JPL UAVSAR POLSAR Data Format",
+      "evidence_url": "https://uavsar.jpl.nasa.gov/science/documents/polsar-format.html",
+      "evidence_section": "Format spec: HGT data",
+      "evidence_quote": "This height file contains the values of elevation used to project the slant range data to the Earth's surface.",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Ancillary input: 774 of 9,765 granules were projected to this DEM (SOURCE_DEM = SRTM30 v2, SRTM30 v2 float). Mapped from the label to SRTMGL30 002.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2763266346-LPCLOUD",
+        "related_level": "3",
+        "related_platforms": [
+          "STS-99"
+        ],
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": {
+        "SOURCE_DEM_labels": [
+          "SRTM30 v2",
+          "SRTM30 v2 float"
+        ],
+        "granules": 774,
+        "of_total": 9765
+      },
+      "supporting_evidence": [
+        {
+          "document": "JPL UAVSAR POLSAR Data Format",
+          "quote": "The source of the DEM is given by \"DEM source\" in the annotation file.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "UAVSAR_POLSAR",
+      "version": "1",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "SV12UBK",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "User guide: SV12UBK",
+      "evidence_url": "https://nsidc.org/sites/default/files/sv12ubk-v001-userguide.pdf",
+      "evidence_section": "User Guide §2.2.2 Raw Data & Normalized Data",
+      "evidence_quote": "The ground-projected file (.grd) is taken as the raw data.",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Incidence-angle-normalized backscatter (.ngrd) made from UAVSAR PolSAR ground-projected (.grd) files. Generic UAVSAR file type mapped to UAVSAR_POLSAR by product type; coverage checked in Step 6c.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C3284167685-NSIDC_CPRD",
+        "related_level": "Not provided",
+        "related_platforms": [
+          "G-III"
+        ],
+        "level_progression_valid": true,
+        "level_check": "child level \"Not provided\" (not assessable)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": {
+        "target_granules_in_child_window": 159
+      },
+      "supporting_evidence": []
+    },
+    {
+      "shortname": "UAVSAR_POLSAR",
+      "version": "1",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "SV19MA_SAR",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "User guide: SV19MA_SAR",
+      "evidence_url": "https://nsidc.org/sites/default/files/documents/user-guide/sv19ma_sar-v001-userguide.pdf",
+      "evidence_section": "User Guide §7 References (processing method)",
+      "evidence_quote": "ISCE Docker Tools: Automated Radiometric Terrain Correction and Image Coregistration of UAVSAR MLC Data",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Terrain-flattened gamma-nought mosaics made with ISCE Docker Tools, the cited method for UAVSAR MLC data. Generic UAVSAR file type mapped to UAVSAR_POLSAR by product type; coverage checked in Step 6c.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C3333728852-NSIDC_CPRD",
+        "related_level": "2",
+        "related_platforms": [
+          "G-III"
+        ],
+        "level_progression_valid": true,
+        "level_check": "child L2 >= target L1",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": {
+        "target_granules_in_child_window": 79
+      },
+      "supporting_evidence": []
+    },
+    {
+      "shortname": "UAVSAR_POLSAR",
+      "version": "1",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "SV19MB_SAR",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "User guide: SV19MB_SAR",
+      "evidence_url": "https://nsidc.org/sites/default/files/documents/user-guide/sv19mb_sar-v001-userguide.pdf",
+      "evidence_section": "User Guide §2.1 Acquisition and Processing",
+      "evidence_quote": "Docker Tools was then used to process the terrain flattened UAVSAR images.",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Terrain-flattened gamma-nought mosaics made with ISCE Docker Tools from UAVSAR MLC data. Generic UAVSAR file type mapped to UAVSAR_POLSAR by product type; coverage checked in Step 6c.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C3333729661-NSIDC_CPRD",
+        "related_level": "2",
+        "related_platforms": [
+          "G-III"
+        ],
+        "level_progression_valid": true,
+        "level_check": "child L2 >= target L1",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": {
+        "target_granules_in_child_window": 60
+      },
+      "supporting_evidence": [
+        {
+          "document": "User guide: SV19MB_SAR",
+          "quote": "ISCE Docker Tools: Automated Radiometric Terrain Correction and Image Coregistration of UAVSAR MLC Data",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "UAVSAR_POLSAR",
+      "version": "1",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "Lake_Wetland_Classes_UAVSAR_1883",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "User guide: Lake_Wetland_Classes_UAVSAR_1883",
+      "evidence_url": "https://data.ornldaac.earthdata.nasa.gov/public/above/Lake_Wetland_Classes_UAVSAR/comp/Lake_Wetland_Classes_UAVSAR.pdf",
+      "evidence_section": "User Guide: Data Characteristics (file naming)",
+      "evidence_quote": "Names of GeoTIFFs align with the UAVSAR footprints follow the PolSAR naming convention for multi-look complex (MLC) files",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Wetland classes derived from UAVSAR L-band PolSAR scenes (MLC naming and footprints; cites the PolSAR format). Generic UAVSAR file type mapped to UAVSAR_POLSAR by product type; coverage checked in Step 6c.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2192619280-ORNL_CLOUD",
+        "related_level": "4",
+        "related_platforms": [
+          "FIELD SURVEYS",
+          "UAV"
+        ],
+        "level_progression_valid": true,
+        "level_check": "child L4 >= target L1",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": {
+        "target_granules_in_child_window": 224
+      },
+      "supporting_evidence": [
+        {
+          "document": "User guide: Lake_Wetland_Classes_UAVSAR_1883",
+          "quote": "Polarimetric (PolSAR) Data Format: UAVSAR data format for polarimetric products",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "UAVSAR_POLSAR",
+      "version": "1",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "Wetland_VegClassification_PAD_2069",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "User guide: Wetland_VegClassification_PAD_2069",
+      "evidence_url": "https://data.ornldaac.earthdata.nasa.gov/public/above/Wetland_VegClassification_PAD/comp/Wetland_VegClassification_PAD.pdf",
+      "evidence_section": "User Guide: Data Acquisition, Materials, and Methods",
+      "evidence_quote": "The UAVSAR products used in this study were the multi-looked ground range projected (equiangular) imagery.",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Land-cover maps from AVIRIS-NG + UAVSAR PolSAR ground-projected (GRD) imagery + LiDAR. Generic UAVSAR file type mapped to UAVSAR_POLSAR by product type; coverage checked in Step 6c.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2308233855-ORNL_CLOUD",
+        "related_level": "4",
+        "related_platforms": [
+          "PIPER NAVAJO CHIEFTAIN",
+          "G-III",
+          "B-200"
+        ],
+        "level_progression_valid": true,
+        "level_check": "child L4 >= target L1",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": {
+        "target_granules_in_child_window": 1
+      },
+      "supporting_evidence": []
+    }
+  ],
+  "granule_level_check": {
+    "note": "Complete granule inventory: InputGranules are empty; SOURCE_DEM counted over all granules",
+    "granules": 9765,
+    "with_InputGranules": 0,
+    "source_dem_counts": {
+      "SRTM1 v3": 2611,
+      "SRTM1 v2": 3513,
+      "SRTM V2 1 arcsec": 95,
+      "SRTM3 v2": 1340,
+      "SRTM30 v2": 655,
+      "TanDEM-X 90m": 34,
+      "ASTER v1.0": 2,
+      "Iceland": 233,
+      "Copernicus WorldDEM-30 (GLO-30)": 1122,
+      "Alaska IFSAR, ArcticDEM, ALOS, SRTM, CDEM, ASTER GDEM": 37,
+      "Alaska": 2,
+      "SRTM30 v2 float": 119,
+      "ArcticDEM": 1,
+      "Arctic": 1
+    },
+    "shared_acquisitions": [
+      {
+        "granule": "cvalle_0901N_26003_006_260417_L090_CX_01",
+        "data_take": "0901N 26003-006",
+        "other_collection_hits": 1
+      },
+      {
+        "granule": "cvalle_32304_26003_007_260417_L090_CX_01",
+        "data_take": "32304 26003-007",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "cvalle_05536_26003_008_260417_L090_CX_01",
+        "data_take": "05536 26003-008",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "cvalle_14306_26003_009_260417_L090_CX_01",
+        "data_take": "14306 26003-009",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "crparc_09118_26003_010_260417_L090_CX_01",
+        "data_take": "09118 26003-010",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "crparc_09118_26003_011_260417_L090_CX_01",
+        "data_take": "09118 26003-011",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PCanal_13503_26007_000_260505_L090_CX_01",
+        "data_take": "13503 26007-000",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PanCan_20012_26007_004_260505_L090_CX_01",
+        "data_take": "20012 26007-004",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PanCaA_20033_26007_005_260505_L090_CX_01",
+        "data_take": "20033 26007-005",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PanCaB_20034_26007_006_260505_L090_CX_01",
+        "data_take": "20034 26007-006",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PanCaC_20035_26007_007_260505_L090_CX_01",
+        "data_take": "20035 26007-007",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PanCaD_20036_26007_008_260505_L090_CX_01",
+        "data_take": "20036 26007-008",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PanCaE_20037_26007_009_260505_L090_CX_01",
+        "data_take": "20037 26007-009",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PanCaF_20038_26007_010_260505_L090_CX_01",
+        "data_take": "20038 26007-010",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PanCaG_20039_26007_011_260505_L090_CX_01",
+        "data_take": "20039 26007-011",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PanCaH_20040_26007_012_260505_L090_CX_01",
+        "data_take": "20040 26007-012",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PanCaI_20041_26007_013_260505_L090_CX_01",
+        "data_take": "20041 26007-013",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PCanal_13503_26007_014_260505_L090_CX_01",
+        "data_take": "13503 26007-014",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PCanal_13503_26008_000_260506_L090_CX_01",
+        "data_take": "13503 26008-000",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "hgalle_25523_26008_001_260506_L090_CX_01",
+        "data_take": "25523 26008-001",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "fortun_10214_26008_008_260506_L090_CX_01",
+        "data_take": "10214 26008-008",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "fortun_16019_26008_009_260506_L090_CX_01",
+        "data_take": "16019 26008-009",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "PCanal_13503_26008_020_260506_L090_CX_01",
+        "data_take": "13503 26008-020",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "cehoya_25708_26008_021_260506_L090_CX_01",
+        "data_take": "25708 26008-021",
+        "other_collection_hits": 0
+      },
+      {
+        "granule": "pchame_06021_26008_022_260506_L090_CX_01",
+        "data_take": "06021 26008-022",
+        "other_collection_hits": 0
+      }
+    ],
+    "child_coverage": [
+      {
+        "related": "SV12UBK",
+        "boxes": 1,
+        "time_ranges": 1,
+        "target_granules_in_window": 159
+      },
+      {
+        "related": "SV19MA_SAR",
+        "boxes": 1,
+        "time_ranges": 1,
+        "target_granules_in_window": 79
+      },
+      {
+        "related": "SV19MB_SAR",
+        "boxes": 1,
+        "time_ranges": 1,
+        "target_granules_in_window": 60
+      },
+      {
+        "related": "Lake_Wetland_Classes_UAVSAR_1883",
+        "boxes": 1,
+        "time_ranges": 1,
+        "target_granules_in_window": 224
+      },
+      {
+        "related": "Wetland_VegClassification_PAD_2069",
+        "boxes": 1,
+        "time_ranges": 1,
+        "target_granules_in_window": 1
+      }
+    ]
+  },
+  "metadata_findings": [
+    "No ATBD or processing document is linked; the JPL data-format specification is the only documentation.",
+    "No CMR collection holds the UAVSAR SLC inputs, so lineage upstream of this collection cannot be expressed.",
+    "Granules record SOURCE_DEM, but there are no MetadataAssociations to the DEM collections that exist in CMR (SRTMGL1, SRTMGL30).",
+    "Child collections at NSIDC and ORNL that document using UAVSAR PolSAR .grd/MLC files have no association to this collection (and this collection has none to them).",
+    "The format specification lists .slc files, but SLCs are not in the ASF granules sampled (.mlc, .grd, .hgt ...)."
+  ],
+  "excluded": [
+    {
+      "name": "Copernicus WorldDEM-30 (GLO-30)",
+      "role": "DEM (1122 granules)",
+      "reason": "Copernicus DEM GLO-30: no CMR collection"
+    },
+    {
+      "name": "Iceland",
+      "role": "DEM (233 granules)",
+      "reason": "national DEM of Iceland: no CMR collection"
+    },
+    {
+      "name": "Alaska IFSAR, ArcticDEM, ALOS, SRTM, CDEM, ASTER GDEM",
+      "role": "DEM (37 granules)",
+      "reason": "regional or composite DEM (Alaska IFSAR / ArcticDEM / CDEM mosaic): no single CMR collection"
+    },
+    {
+      "name": "TanDEM-X 90m",
+      "role": "DEM (34 granules)",
+      "reason": "TanDEM-X 90 m DEM: no CMR collection"
+    },
+    {
+      "name": "ASTER v1.0",
+      "role": "DEM (2 granules)",
+      "reason": "ASTGTM version 001 not in CMR"
+    },
+    {
+      "name": "Alaska",
+      "role": "DEM (2 granules)",
+      "reason": "regional or composite DEM (Alaska IFSAR / ArcticDEM / CDEM mosaic): no single CMR collection"
+    },
+    {
+      "name": "ArcticDEM",
+      "role": "DEM (1 granules)",
+      "reason": "regional or composite DEM (Alaska IFSAR / ArcticDEM / CDEM mosaic): no single CMR collection"
+    },
+    {
+      "name": "Arctic",
+      "role": "DEM (1 granules)",
+      "reason": "regional or composite DEM (Alaska IFSAR / ArcticDEM / CDEM mosaic): no single CMR collection"
+    },
+    {
+      "name": "UAVSAR SLC / raw data (JPL)",
+      "role": "data input",
+      "reason": "not a CMR collection (rule 1c-4)"
+    },
+    {
+      "name": "ABoVE_L1_P_SAR_1800",
+      "role": "UAVSAR-related collection",
+      "reason": "P-band (AirMOSS) UAVSAR products; this collection is L-band (possible equivalent_product, not asserted)"
+    },
+    {
+      "name": "ABoVE_ReSALT_InSAR_PolSAR_V3_2004",
+      "role": "UAVSAR-related collection",
+      "reason": "uses UAVSAR L-band InSAR (UAVSAR_RPI) and AirMOSS P-band PolSAR, not this L-band PolSAR collection; see the UAVSAR_RPI notebook"
+    },
+    {
+      "name": "ABoVE_Soil_ThawMoisture_2369",
+      "role": "UAVSAR-related collection",
+      "reason": "cites UAVSAR only as a validation target, co-located data or generic input; no product identified"
+    },
+    {
+      "name": "AGB_Great_Slave_Lake_NWT_2365",
+      "role": "UAVSAR-related collection",
+      "reason": "own documentation does not identify the UAVSAR input product (precision over recall)"
+    },
+    {
+      "name": "DeltaX_ANUGA_AtchafalayaBasin_2306",
+      "role": "UAVSAR-related collection",
+      "reason": "cites UAVSAR only as a validation target, co-located data or generic input; no product identified"
+    },
+    {
+      "name": "DeltaX_AVIRIS-NG_UAVSAR_L3_AGB_2410",
+      "role": "UAVSAR-related collection",
+      "reason": "made from the Delta-X / Pre-Delta-X SLC-stack collections (ISCE/SNAPHU re-processing), not from this collection"
+    },
+    {
+      "name": "DeltaX_L1B_UAVSAR_WaterLevels_1979",
+      "role": "UAVSAR-related collection",
+      "reason": "made from the Delta-X / Pre-Delta-X SLC-stack collections (ISCE/SNAPHU re-processing), not from this collection"
+    },
+    {
+      "name": "DeltaX_L1_UAVSAR_SLC_Stack_1984",
+      "role": "UAVSAR-related collection",
+      "reason": "campaign SLC-stack product processed separately by the UAVSAR team; a sibling of this collection, not made from it"
+    },
+    {
+      "name": "DeltaX_L2_UAVSAR_WaterLevels_2057",
+      "role": "UAVSAR-related collection",
+      "reason": "made from the Delta-X / Pre-Delta-X SLC-stack collections (ISCE/SNAPHU re-processing), not from this collection"
+    },
+    {
+      "name": "DeltaX_L3_UAVSAR_WaterLevels_2058",
+      "role": "UAVSAR-related collection",
+      "reason": "made from the Delta-X / Pre-Delta-X SLC-stack collections (ISCE/SNAPHU re-processing), not from this collection"
+    },
+    {
+      "name": "DeltaX_UAVSAR_L3_ChannelMap_V2_2344",
+      "role": "UAVSAR-related collection",
+      "reason": "made from the Delta-X / Pre-Delta-X SLC-stack collections (ISCE/SNAPHU re-processing), not from this collection"
+    },
+    {
+      "name": "FS_SoilMoisture_T_SantaBarb_CA_2504",
+      "role": "UAVSAR-related collection",
+      "reason": "cites UAVSAR only as a validation target, co-located data or generic input; no product identified"
+    },
+    {
+      "name": "GeoCryoAI_PermafrostThaw_CFlux_2371",
+      "role": "UAVSAR-related collection",
+      "reason": "cites UAVSAR only as a validation target, co-located data or generic input; no product identified"
+    },
+    {
+      "name": "NACP_Forest_Biophysical_1046",
+      "role": "UAVSAR-related collection",
+      "reason": "cites UAVSAR only as a validation target, co-located data or generic input; no product identified"
+    },
+    {
+      "name": "OMG_L3_ICE_ELEV_GLISTINA",
+      "role": "UAVSAR-related collection",
+      "reason": "Ka-band GLISTIN-A, not this instrument mode"
+    },
+    {
+      "name": "Polarimetric_CT_1601",
+      "role": "UAVSAR-related collection",
+      "reason": "AfriSAR TomoSAR/PolInSAR from repeat-pass SLC stacks, not from this collection"
+    },
+    {
+      "name": "Polarimetric_height_profile_1577",
+      "role": "UAVSAR-related collection",
+      "reason": "AfriSAR TomoSAR/PolInSAR from repeat-pass SLC stacks, not from this collection"
+    },
+    {
+      "name": "PreDeltaX_L3_AVIRIS_Biomass_1821",
+      "role": "UAVSAR-related collection",
+      "reason": "cites UAVSAR only as a validation target, co-located data or generic input; no product identified"
+    },
+    {
+      "name": "PreDeltaX_UAVSARChannelMaps_V2_2366",
+      "role": "UAVSAR-related collection",
+      "reason": "made from the Delta-X / Pre-Delta-X SLC-stack collections (ISCE/SNAPHU re-processing), not from this collection"
+    },
+    {
+      "name": "PreDeltaX_UAVSAR_SLC_1816",
+      "role": "UAVSAR-related collection",
+      "reason": "campaign SLC-stack product processed separately by the UAVSAR team; a sibling of this collection, not made from it"
+    },
+    {
+      "name": "PreDeltaX_UAVSAR_WaterLevel_1823",
+      "role": "UAVSAR-related collection",
+      "reason": "made from the Delta-X / Pre-Delta-X SLC-stack collections (ISCE/SNAPHU re-processing), not from this collection"
+    },
+    {
+      "name": "PreDeltaX_Vegetation_Structure_1805",
+      "role": "UAVSAR-related collection",
+      "reason": "cites UAVSAR only as a validation target, co-located data or generic input; no product identified"
+    },
+    {
+      "name": "SNEX17_InSAR",
+      "role": "UAVSAR-related collection",
+      "reason": "Ka-band GLISTIN-A, not this instrument mode"
+    },
+    {
+      "name": "SNEX20_TLS_UNAVCO",
+      "role": "UAVSAR-related collection",
+      "reason": "cites UAVSAR only as a validation target, co-located data or generic input; no product identified"
+    },
+    {
+      "name": "SNEX20_TS_IB",
+      "role": "UAVSAR-related collection",
+      "reason": "cites UAVSAR only as a validation target, co-located data or generic input; no product identified"
+    },
+    {
+      "name": "SNEX21_TS_IB",
+      "role": "UAVSAR-related collection",
+      "reason": "cites UAVSAR only as a validation target, co-located data or generic input; no product identified"
+    },
+    {
+      "name": "SNEX_UAVSAR",
+      "role": "UAVSAR-related collection",
+      "reason": "SnowEx index of UAVSAR repeat-pass (RPI) products; see the UAVSAR_RPI notebook"
+    },
+    {
+      "name": "UAVSAR_Wetland_Peace-Athabasca_2442",
+      "role": "UAVSAR-related collection",
+      "reason": "own documentation does not identify the UAVSAR input product (precision over recall)"
+    },
+    {
+      "name": "Wildfires_NWT_Canada_2018_1703",
+      "role": "UAVSAR-related collection",
+      "reason": "cites UAVSAR only as a validation target, co-located data or generic input; no product identified"
+    },
+    {
+      "name": "Wildfires_NWT_Canada_2019_1900",
+      "role": "UAVSAR-related collection",
+      "reason": "cites UAVSAR only as a validation target, co-located data or generic input; no product identified"
+    }
+  ],
+  "csv": {
+    "path": "Reports/UAVSAR_POLSAR_V1_lineage.csv",
+    "rows": 9,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  }
+}

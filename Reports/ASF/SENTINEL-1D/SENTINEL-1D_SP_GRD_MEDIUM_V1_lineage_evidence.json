@@ -1,0 +1,774 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3)",
+  "generated": "2026-11-12T18:47:09+00:00",
+  "parameters": {
+    "collection_short_name": "SENTINEL-1D_SP_GRD_MEDIUM",
+    "collection_version": "1",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 2,
+    "validate_against_cmr": true,
+    "extract_processing_details": true
+  },
+  "target": {
+    "short_name": "SENTINEL-1D_SP_GRD_MEDIUM",
+    "version": "1",
+    "concept_id": "C4175200051-ASF",
+    "revision_id": 3,
+    "entry_title": "Sentinel-1D Single Polarization Medium Resolution Ground Range Detected Product",
+    "processing_level": "1",
+    "platforms": [
+      "Sentinel-1D"
+    ],
+    "temporal": [
+      {
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2026-04-15T00:00:00.000Z"
+          }
+        ],
+        "PrecisionOfSeconds": 1,
+        "EndsAtPresentFlag": true
+      }
+    ],
+    "granules_in_cmr": 3042,
+    "existing_metadata_associations": [
+      {
+        "Type": "RELATED",
+        "EntryId": "SENTINEL-1A_SP_GRD_MEDIUM"
+      },
+      {
+        "Type": "RELATED",
+        "EntryId": "SENTINEL-1B_SP_GRD_MEDIUM"
+      },
+      {
+        "Type": "RELATED",
+        "EntryId": "SENTINEL-1C_SP_GRD_MEDIUM"
+      },
+      {
+        "Type": "SCIENCE ASSOCIATED",
+        "EntryId": "SENTINEL-1D_SP_META_GRD_MEDIUM"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [],
+    "decision_tree_branch": "[2] NO: no ATBD in related_urls; lineage from ESA SentiWiki, the ASF user guide / product specification and CMR metadata"
+  },
+  "source_documents": [
+    {
+      "key": "asf_user_guide",
+      "title": "ASF Synthetic Aperture Radar Product User Guide: SENTINEL-1 SAR Data Products",
+      "url": "https://webdocs.asf.alaska.edu/Sentinel-1/Sentinel-1-User-Guide.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": false,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "sentiwiki_home",
+      "title": "SentiWiki: Sentinel-1",
+      "url": "https://sentiwiki.copernicus.eu/web/sentinel-1",
+      "evidence_source": "other_doc",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": false,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "sentiwiki_products",
+      "title": "SentiWiki: S1 Products",
+      "url": "https://sentiwiki.copernicus.eu/web/s1-products",
+      "evidence_source": "other_doc",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "sentiwiki_processing",
+      "title": "SentiWiki: S1 Processing",
+      "url": "https://sentiwiki.copernicus.eu/web/s1-processing",
+      "evidence_source": "other_doc",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "cmr_record:SENTINEL-1D_SP_GRD_MEDIUM",
+      "title": "CMR abstract and MetadataAssociations: SENTINEL-1D_SP_GRD_MEDIUM",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C4175200051-ASF.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_record:SENTINEL-1D_RAW",
+      "title": "CMR abstract and associations: SENTINEL-1D_RAW",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C4175250274-ASF.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_record:SENTINEL-1D_SP_META_GRD_MEDIUM",
+      "title": "CMR abstract and associations: SENTINEL-1D_SP_META_GRD_MEDIUM",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C4175200042-ASF.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "asf_user_guide",
+      "url": "https://webdocs.asf.alaska.edu/Sentinel-1/Sentinel-1-User-Guide.pdf",
+      "status": "ok",
+      "text_chars": 8091
+    },
+    {
+      "key": "sentiwiki_home",
+      "url": "https://sentiwiki.copernicus.eu/web/sentinel-1",
+      "status": "ok",
+      "text_chars": 2783
+    },
+    {
+      "key": "sentiwiki_products",
+      "url": "https://sentiwiki.copernicus.eu/web/s1-products",
+      "status": "ok",
+      "text_chars": 49004
+    },
+    {
+      "key": "sentiwiki_processing",
+      "url": "https://sentiwiki.copernicus.eu/web/s1-processing",
+      "status": "ok",
+      "text_chars": 64516
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "SENTINEL-1D_SP_GRD_MEDIUM",
+      "version": "1",
+      "level": "1"
+    },
+    "primary_parents": [
+      "SENTINEL-1D_RAW"
+    ],
+    "supporting_parents": [],
+    "derived_children": [
+      "SENTINEL-1D_SP_META_GRD_MEDIUM"
+    ],
+    "related": [
+      "SENTINEL-1D_SLC",
+      "SENTINEL-1D_OCN",
+      "SENTINEL-1D_SP_GRD_HIGH",
+      "SENTINEL-1D_DP_GRD_MEDIUM",
+      "SENTINEL-1A_SP_GRD_MEDIUM",
+      "SENTINEL-1B_SP_GRD_MEDIUM",
+      "SENTINEL-1C_SP_GRD_MEDIUM"
+    ],
+    "processing_chain": [
+      "  SENTINEL-1D_RAW (L0) ──ESA IPF──► SENTINEL-1D_SP_GRD_MEDIUM (L1)  ← TARGET    ~ SLC, OCN (same IPF run); SENTINEL-1D_SP_GRD_HIGH, SENTINEL-1D_DP_GRD_MEDIUM (GRD family)",
+      "        └──► SENTINEL-1D_SP_META_GRD_MEDIUM (ASF ISO XML)                         ≡ 1A/1B/1C_SP_GRD_MEDIUM"
+    ],
+    "depth_2": {
+      "note": "SENTINEL-1D_RAW is Level 0 (instrument source packets); nothing in CMR is upstream of it. Depth-2 rows are not written: each parent's lineage is in its own notebook of this family.",
+      "parents": [
+        {
+          "parent": "SENTINEL-1D_RAW",
+          "level": "0",
+          "its_PARENT_associations": []
+        }
+      ]
+    },
+    "existing_associations_check": [
+      {
+        "Type": "RELATED",
+        "EntryId": "SENTINEL-1A_SP_GRD_MEDIUM",
+        "found_in_cmr": true,
+        "cmr_short_name": "SENTINEL-1A_SP_GRD_MEDIUM",
+        "exact_case_match": true,
+        "platform_matches_target": true
+      },
+      {
+        "Type": "RELATED",
+        "EntryId": "SENTINEL-1B_SP_GRD_MEDIUM",
+        "found_in_cmr": true,
+        "cmr_short_name": "SENTINEL-1B_SP_GRD_MEDIUM",
+        "exact_case_match": true,
+        "platform_matches_target": true
+      },
+      {
+        "Type": "RELATED",
+        "EntryId": "SENTINEL-1C_SP_GRD_MEDIUM",
+        "found_in_cmr": true,
+        "cmr_short_name": "SENTINEL-1C_SP_GRD_MEDIUM",
+        "exact_case_match": true,
+        "platform_matches_target": true
+      },
+      {
+        "Type": "SCIENCE ASSOCIATED",
+        "EntryId": "SENTINEL-1D_SP_META_GRD_MEDIUM",
+        "found_in_cmr": true,
+        "cmr_short_name": "SENTINEL-1D_SP_META_GRD_MEDIUM",
+        "exact_case_match": true,
+        "platform_matches_target": true
+      }
+    ],
+    "family_table": [
+      {
+        "short_name": "SENTINEL-1D_DP_GRD_HIGH",
+        "level": "1",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": []
+      },
+      {
+        "short_name": "SENTINEL-1D_DP_GRD_MEDIUM",
+        "level": "1",
+        "proposed_here": "RELATED / related_to",
+        "its_associations_to_this_collection": []
+      },
+      {
+        "short_name": "SENTINEL-1D_DP_META_GRD_HIGH",
+        "level": "Not Provided",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": []
+      },
+      {
+        "short_name": "SENTINEL-1D_DP_META_GRD_MEDIUM",
+        "level": "Not Provided",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": []
+      },
+      {
+        "short_name": "SENTINEL-1D_META_OCN",
+        "level": "Not Provided",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": []
+      },
+      {
+        "short_name": "SENTINEL-1D_META_RAW",
+        "level": "Not Provided",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": []
+      },
+      {
+        "short_name": "SENTINEL-1D_META_SLC",
+        "level": "Not Provided",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": []
+      },
+      {
+        "short_name": "SENTINEL-1D_OCN",
+        "level": "2",
+        "proposed_here": "RELATED / parallel_product",
+        "its_associations_to_this_collection": []
+      },
+      {
+        "short_name": "SENTINEL-1D_RAW",
+        "level": "0",
+        "proposed_here": "PARENT / derived_from",
+        "its_associations_to_this_collection": []
+      },
+      {
+        "short_name": "SENTINEL-1D_SLC",
+        "level": "1",
+        "proposed_here": "RELATED / parallel_product",
+        "its_associations_to_this_collection": []
+      },
+      {
+        "short_name": "SENTINEL-1D_SP_GRD_HIGH",
+        "level": "1",
+        "proposed_here": "RELATED / related_to",
+        "its_associations_to_this_collection": []
+      },
+      {
+        "short_name": "SENTINEL-1D_SP_META_GRD_HIGH",
+        "level": "Not Provided",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": []
+      },
+      {
+        "short_name": "SENTINEL-1D_SP_META_GRD_MEDIUM",
+        "level": "Not Provided",
+        "proposed_here": "CHILD / downstream_product",
+        "its_associations_to_this_collection": [
+          "DEPENDENT"
+        ]
+      }
+    ],
+    "granule_counts": [
+      {
+        "collection": "SENTINEL-1D_SP_GRD_MEDIUM",
+        "granules": 3042
+      },
+      {
+        "collection": "SENTINEL-1D_SP_META_GRD_MEDIUM",
+        "granules": 3042
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "shortname": "SENTINEL-1D_SP_GRD_MEDIUM",
+      "version": "1",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "SENTINEL-1D_RAW",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement",
+      "evidence_source": "other_doc",
+      "evidence_document": "SentiWiki: S1 Products",
+      "evidence_url": "https://sentiwiki.copernicus.eu/web/s1-products",
+      "evidence_section": "S1 Products: overview of processing levels",
+      "evidence_quote": "All products, with the exception of Extended Timing Annotation Dataset (ETAD), are currently processed directly from the Level-0 product.",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: made by ESA's IPF from the Sentinel-1D Level-0 data take (PARENT). Generic \"Level-0 product\" mapped to SENTINEL-1D_RAW by platform; same datatake IDs in both collections (Step 6b).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C4175250274-ASF",
+        "related_level": "0",
+        "related_platforms": [
+          "Sentinel-1D"
+        ],
+        "level_progression_valid": true,
+        "level_check": "parent L0 <= target L1",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": null,
+      "supporting_evidence": [
+        {
+          "document": "CMR abstract and associations: SENTINEL-1D_RAW",
+          "quote": "Level 0 products are the basis from which all other high level products are produced.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "SENTINEL-1D_SP_GRD_MEDIUM",
+      "version": "1",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "related_shortname": "SENTINEL-1D_SLC",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement",
+      "evidence_source": "other_doc",
+      "evidence_document": "SentiWiki: S1 Products",
+      "evidence_url": "https://sentiwiki.copernicus.eu/web/s1-products",
+      "evidence_section": "S1 Products: Level-1 Products",
+      "evidence_quote": "From data in each acquisition mode, the Instrument Processing Facility (IPF) generates focused Level-1 Single Look Complex (SLC) products and Level-1 Ground Range Detected (GRD) products.",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Decision step 4: SLC and GRD are both outputs of IPF Level-1 post-processing; GRD is not made from distributed SLC files.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C4175278193-ASF",
+        "related_level": "1",
+        "related_platforms": [
+          "Sentinel-1D"
+        ],
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": null,
+      "supporting_evidence": [
+        {
+          "document": "SentiWiki: S1 Processing",
+          "quote": "The Level-1 post-processing then generates the output Level-1 SLC products and the Level-1 Ground Range Detected (GRD) products.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "SENTINEL-1D_SP_GRD_MEDIUM",
+      "version": "1",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "related_shortname": "SENTINEL-1D_OCN",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement",
+      "evidence_source": "other_doc",
+      "evidence_document": "SentiWiki: S1 Products",
+      "evidence_url": "https://sentiwiki.copernicus.eu/web/s1-products",
+      "evidence_section": "S1 Products: Level-2 Products (Table 8 note)",
+      "evidence_quote": "Note that inputs of L2 algorithms are internal SLC and GRD products, which can be processed with dedicated configuration, and are called SL2 and GR2, respectively.",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Decision step 4: OCN wind (OWI) is made from an internal GR2 product in the same IPF run, not from this collection's files.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C4162942865-ASF",
+        "related_level": "2",
+        "related_platforms": [
+          "Sentinel-1D"
+        ],
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": null,
+      "supporting_evidence": [
+        {
+          "document": "SentiWiki: S1 Processing",
+          "quote": "From internally generated Level-1 SLC and GRD products, the Level-2 Ocean (OCN) products are produced.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "SENTINEL-1D_SP_GRD_MEDIUM",
+      "version": "1",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "related_to",
+      "related_shortname": "SENTINEL-1D_SP_GRD_HIGH",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement",
+      "evidence_source": "other_doc",
+      "evidence_document": "SentiWiki: S1 Products",
+      "evidence_url": "https://sentiwiki.copernicus.eu/web/s1-products",
+      "evidence_section": "S1 Products: GRD resolution classes",
+      "evidence_quote": "GRD products are further classified by resolution (Full, High or Medium).",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "rationale": "Same GRD family and polarization mode, other resolution class. Operationally IW/SM are produced High and EW Medium, so the two come from different acquisitions.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C4174044457-ASF",
+        "related_level": "1",
+        "related_platforms": [
+          "Sentinel-1D"
+        ],
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": null,
+      "supporting_evidence": [
+        {
+          "document": "SentiWiki: S1 Products",
+          "quote": "EW: Medium resolution (with IPF being able to generate High and Medium resolution products)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "SENTINEL-1D_SP_GRD_MEDIUM",
+      "version": "1",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "related_to",
+      "related_shortname": "SENTINEL-1D_DP_GRD_MEDIUM",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "ASF Synthetic Aperture Radar Product User Guide: SENTINEL-1 SAR Data Products",
+      "evidence_url": "https://webdocs.asf.alaska.edu/Sentinel-1/Sentinel-1-User-Guide.pdf",
+      "evidence_section": "User Guide p.1, Polarization",
+      "evidence_quote": "Supports operation in single polarization (HH or VV) and dual polarization (HH+HV or VV+VH)",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "rationale": "Same GRD resolution class, other polarization mode. Polarization is set at acquisition, so there is no shared run or data dependency.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C4174076966-ASF",
+        "related_level": "1",
+        "related_platforms": [
+          "Sentinel-1D"
+        ],
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": null,
+      "supporting_evidence": []
+    },
+    {
+      "shortname": "SENTINEL-1D_SP_GRD_MEDIUM",
+      "version": "1",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "SENTINEL-1D_SP_META_GRD_MEDIUM",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement",
+      "evidence_source": "other_doc",
+      "evidence_document": "CMR abstract and associations: SENTINEL-1D_SP_META_GRD_MEDIUM",
+      "evidence_url": "https://cmr.earthdata.nasa.gov/search/concepts/C4175200042-ASF.umm_json",
+      "evidence_section": "CMR abstract (SENTINEL-1D_SP_META_GRD_MEDIUM)",
+      "evidence_quote": "The products in this collection are ISO compliant XML metadata created by the Alaska Satellite Facility Distributed Active Archive Center from the associated Sentinel-1D SAFE format product.",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 1: ASF makes one ISO XML metadata granule from each SAFE product of this collection (names match, Step 6b). The record labels it SCIENCE ASSOCIATED.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C4175200042-ASF",
+        "related_level": "Not Provided",
+        "related_platforms": [
+          "Sentinel-1D"
+        ],
+        "level_progression_valid": true,
+        "level_check": "child level \"Not Provided\" (not assessable)",
+        "version_compatible": true,
+        "existing_association_in_target": "SCIENCE ASSOCIATED"
+      },
+      "granule_evidence": null,
+      "supporting_evidence": []
+    },
+    {
+      "shortname": "SENTINEL-1D_SP_GRD_MEDIUM",
+      "version": "1",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "related_shortname": "SENTINEL-1A_SP_GRD_MEDIUM",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement",
+      "evidence_source": "other_doc",
+      "evidence_document": "CMR abstract and MetadataAssociations: SENTINEL-1D_SP_GRD_MEDIUM",
+      "evidence_url": "https://cmr.earthdata.nasa.gov/search/concepts/C4175200051-ASF.umm_json",
+      "evidence_section": "CMR abstract (this record)",
+      "evidence_quote": "The Sentinel-1 satellites (Sentinel-1A, Sentinel-1B,",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "rationale": "Same product from the Sentinel-1A platform (S1A<->S1D naming counterpart), named in the abstract.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1214472994-ASF",
+        "related_level": "1",
+        "related_platforms": [
+          "Sentinel-1A"
+        ],
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": "RELATED"
+      },
+      "granule_evidence": null,
+      "supporting_evidence": [
+        {
+          "document": "CMR abstract and MetadataAssociations: SENTINEL-1D_SP_GRD_MEDIUM",
+          "quote": "and Sentinel-1D) are sun",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "SENTINEL-1D_SP_GRD_MEDIUM",
+      "version": "1",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "related_shortname": "SENTINEL-1B_SP_GRD_MEDIUM",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement",
+      "evidence_source": "other_doc",
+      "evidence_document": "CMR abstract and MetadataAssociations: SENTINEL-1D_SP_GRD_MEDIUM",
+      "evidence_url": "https://cmr.earthdata.nasa.gov/search/concepts/C4175200051-ASF.umm_json",
+      "evidence_section": "CMR abstract (this record)",
+      "evidence_quote": "The Sentinel-1 satellites (Sentinel-1A, Sentinel-1B,",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "rationale": "Same product from the Sentinel-1B platform (S1B<->S1D naming counterpart), named in the abstract.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1327985740-ASF",
+        "related_level": "1",
+        "related_platforms": [
+          "Sentinel-1B"
+        ],
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": "RELATED"
+      },
+      "granule_evidence": null,
+      "supporting_evidence": [
+        {
+          "document": "CMR abstract and MetadataAssociations: SENTINEL-1D_SP_GRD_MEDIUM",
+          "quote": "and Sentinel-1D) are sun",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "SENTINEL-1D_SP_GRD_MEDIUM",
+      "version": "1",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "related_shortname": "SENTINEL-1C_SP_GRD_MEDIUM",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement",
+      "evidence_source": "other_doc",
+      "evidence_document": "CMR abstract and MetadataAssociations: SENTINEL-1D_SP_GRD_MEDIUM",
+      "evidence_url": "https://cmr.earthdata.nasa.gov/search/concepts/C4175200051-ASF.umm_json",
+      "evidence_section": "CMR abstract (this record)",
+      "evidence_quote": "The Sentinel-1 satellites (Sentinel-1A, Sentinel-1B,",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "rationale": "Same product from the Sentinel-1C platform (S1C<->S1D naming counterpart), named in the abstract.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C3488414315-ASF",
+        "related_level": "1",
+        "related_platforms": [
+          "Sentinel-1C"
+        ],
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": "RELATED"
+      },
+      "granule_evidence": null,
+      "supporting_evidence": [
+        {
+          "document": "CMR abstract and MetadataAssociations: SENTINEL-1D_SP_GRD_MEDIUM",
+          "quote": "and Sentinel-1D) are sun",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "granule_level_check": {
+    "datatake_and_name_check": [
+      {
+        "granule": "S1D_EW_GRDM_1SSH_20261112T080023_20261112T080118_005431_00A5DF_DA70-GRD_MS",
+        "datatake": "00A5DF",
+        "SENTINEL-1D_RAW": 1,
+        "SENTINEL-1D_SLC": 0,
+        "SENTINEL-1D_OCN": 1,
+        "SENTINEL-1D_SP_GRD_HIGH": 0,
+        "SENTINEL-1D_DP_GRD_MEDIUM": 0,
+        "SENTINEL-1D_SP_META_GRD_MEDIUM": 1
+      },
+      {
+        "granule": "S1D_EW_GRDM_1SSH_20261112T075617_20261112T075638_005431_00A5DE_2810-GRD_MS",
+        "datatake": "00A5DE",
+        "SENTINEL-1D_RAW": 1,
+        "SENTINEL-1D_SLC": 0,
+        "SENTINEL-1D_OCN": 1,
+        "SENTINEL-1D_SP_GRD_HIGH": 0,
+        "SENTINEL-1D_DP_GRD_MEDIUM": 0,
+        "SENTINEL-1D_SP_META_GRD_MEDIUM": 1
+      },
+      {
+        "granule": "S1D_EW_GRDM_1SSH_20261112T061706_20261112T061809_005430_00A5D1_3132-GRD_MS",
+        "datatake": "00A5D1",
+        "SENTINEL-1D_RAW": 6,
+        "SENTINEL-1D_SLC": 0,
+        "SENTINEL-1D_OCN": 6,
+        "SENTINEL-1D_SP_GRD_HIGH": 0,
+        "SENTINEL-1D_DP_GRD_MEDIUM": 0,
+        "SENTINEL-1D_SP_META_GRD_MEDIUM": 1
+      },
+      {
+        "granule": "S1D_EW_GRDM_1SSH_20261112T061606_20261112T061706_005430_00A5D1_4DBD-GRD_MS",
+        "datatake": "00A5D1",
+        "SENTINEL-1D_RAW": 6,
+        "SENTINEL-1D_SLC": 0,
+        "SENTINEL-1D_OCN": 6,
+        "SENTINEL-1D_SP_GRD_HIGH": 0,
+        "SENTINEL-1D_DP_GRD_MEDIUM": 0,
+        "SENTINEL-1D_SP_META_GRD_MEDIUM": 1
+      },
+      {
+        "granule": "S1D_EW_GRDM_1SSH_20260417T043709_20260417T043814_002381_003E3F_A9B0-GRD_MS",
+        "datatake": "003E3F",
+        "SENTINEL-1D_RAW": 2,
+        "SENTINEL-1D_SLC": 2,
+        "SENTINEL-1D_OCN": 2,
+        "SENTINEL-1D_SP_GRD_HIGH": 0,
+        "SENTINEL-1D_DP_GRD_MEDIUM": 0,
+        "SENTINEL-1D_SP_META_GRD_MEDIUM": 1
+      }
+    ],
+    "granule_counts": [
+      {
+        "collection": "SENTINEL-1D_SP_GRD_MEDIUM",
+        "granules": 3042
+      },
+      {
+        "collection": "SENTINEL-1D_SP_META_GRD_MEDIUM",
+        "granules": 3042
+      }
+    ],
+    "external_children": null
+  },
+  "metadata_findings": [
+    "No PARENT association to SENTINEL-1D_RAW, the Level-0 input of this product.",
+    "The metadata companion SENTINEL-1D_SP_META_GRD_MEDIUM is labelled SCIENCE ASSOCIATED; by the lineage definitions it is CHILD (downstream_product).",
+    "No sibling (parallel_product) associations between the SLC, GRD and OCN collections made in the same IPF run."
+  ],
+  "excluded": [
+    {
+      "name": "Sentinel-1 orbit / attitude and POD files",
+      "role": "IPF ancillary",
+      "reason": "not CMR collections (rule 1c-4)"
+    },
+    {
+      "name": "Other *META* collections",
+      "role": "share the ASF ISO XML template",
+      "reason": "template_of not recorded: no data dependency; precision over recall"
+    }
+  ],
+  "csv": {
+    "path": "Reports/SENTINEL-1D_SP_GRD_MEDIUM_V1_lineage.csv",
+    "rows": 9,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  }
+}

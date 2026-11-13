@@ -1,0 +1,2 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+OPERA_L4_TROPO-ZENITH_V1,1,PARENT,ASF_ECMWF_TROP,1,MEDIUM,derived_from

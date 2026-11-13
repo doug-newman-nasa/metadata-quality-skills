@@ -1,0 +1,9 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+OPERA_L2_RTC-S1_V1,1,PARENT,SENTINEL-1A_SLC,1,MEDIUM,derived_from
+OPERA_L2_RTC-S1_V1,1,PARENT,SENTINEL-1B_SLC,1,MEDIUM,derived_from
+OPERA_L2_RTC-S1_V1,1,PARENT,SENTINEL-1C_SLC,1,MEDIUM,derived_from
+OPERA_L2_RTC-S1_V1,1,PARENT,SENTINEL-1D_SLC,1,MEDIUM,derived_from
+OPERA_L2_RTC-S1_V1,1,INPUT,NISAR_DEM,1,HIGH,input_to
+OPERA_L2_RTC-S1_V1,1,CHILD,OPERA_L3_DIST-ALERT-S1_V1,1,HIGH,downstream_product
+OPERA_L2_RTC-S1_V1,1,CHILD,OPERA_L3_DSWX-S1_V1,1.0,MEDIUM,downstream_product
+OPERA_L2_RTC-S1_V1,1,RELATED,OPERA_L2_RTC-S1-STATIC_V1,1,HIGH,parallel_product

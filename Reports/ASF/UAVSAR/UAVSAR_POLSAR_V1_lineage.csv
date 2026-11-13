@@ -1,0 +1,10 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+UAVSAR_POLSAR,1,INPUT,JPL_SRTM_V2,2,MEDIUM,input_to
+UAVSAR_POLSAR,1,INPUT,SRTMGL1,003,MEDIUM,input_to
+UAVSAR_POLSAR,1,INPUT,SRTMGL30,002,MEDIUM,input_to
+UAVSAR_POLSAR,1,CHILD,Lake_Wetland_Classes_UAVSAR_1883,1,MEDIUM,downstream_product
+UAVSAR_POLSAR,1,CHILD,SV12UBK,1,MEDIUM,downstream_product
+UAVSAR_POLSAR,1,CHILD,SV19MA_SAR,1,MEDIUM,downstream_product
+UAVSAR_POLSAR,1,CHILD,SV19MB_SAR,1,MEDIUM,downstream_product
+UAVSAR_POLSAR,1,CHILD,Wetland_VegClassification_PAD_2069,1,MEDIUM,downstream_product
+UAVSAR_POLSAR,1,RELATED,UAVSAR_RPI,1,MEDIUM,related_to

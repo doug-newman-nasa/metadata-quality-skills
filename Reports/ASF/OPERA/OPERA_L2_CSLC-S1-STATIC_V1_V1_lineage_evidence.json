@@ -1,0 +1,792 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3)",
+  "generated": "2026-11-12T17:43:32+00:00",
+  "parameters": {
+    "collection_short_name": "OPERA_L2_CSLC-S1-STATIC_V1",
+    "collection_version": "1",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 2,
+    "validate_against_cmr": true,
+    "extract_processing_details": true
+  },
+  "target": {
+    "short_name": "OPERA_L2_CSLC-S1-STATIC_V1",
+    "version": "1",
+    "concept_id": "C2795135668-ASF",
+    "revision_id": 12,
+    "entry_title": "OPERA Coregistered Single-Look Complex from Sentinel-1 Static Layers validated product (Version 1)",
+    "processing_level": "2",
+    "platforms": [
+      "Sentinel-1A",
+      "Sentinel-1B",
+      "Sentinel-1C",
+      "Sentinel-1D"
+    ],
+    "temporal": [
+      {
+        "EndsAtPresentFlag": true,
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2014-04-03T00:00:00.000Z"
+          }
+        ]
+      }
+    ],
+    "granules_in_cmr": 44347,
+    "existing_metadata_associations": [
+      {
+        "Type": "INPUT",
+        "EntryId": "SENTINEL-1A_SLC",
+        "Description": "This dataset contains the original Sentinel-1A Single Look Complex scenes which are used to create the granules in this collection."
+      },
+      {
+        "Type": "INPUT",
+        "EntryId": "SENTINEL-1B_SLC",
+        "Description": "This dataset contains the original Sentinel-1B Single Look Complex scenes which are used to create the granules in this collection."
+      },
+      {
+        "Type": "INPUT",
+        "EntryId": "SENTINEL-1C_SLC",
+        "Description": "This dataset contains the original Sentinel-1C Single Look Complex scenes which are used to create the granules in this collection."
+      },
+      {
+        "Type": "INPUT",
+        "EntryId": "SENTINEL-1D_SLC",
+        "Description": "This dataset contains the original Sentinel-1D Single Look Complex scenes which are used to create the granules in this collection."
+      },
+      {
+        "Type": "SCIENCE ASSOCIATED",
+        "EntryId": "OPERA_L2_CSLC-S1_V1",
+        "Description": "This dataset contains the OPERA CSLC from Sentinel-1 associated with the static radar geometry products in this collection.",
+        "Version": "1"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [],
+    "decision_tree_branch": "[2] NO: no ATBD in related_urls; product specification plus the producing algorithm's ATBD where one exists"
+  },
+  "source_documents": [
+    {
+      "key": "cslc_static_spec",
+      "title": "OPERA CSLC-S1-STATIC Product Specification",
+      "url": "https://d2pn8kiwq2w21t.cloudfront.net/documents/ProductSpec_CSLC-S1-STATIC.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "cslc_atbd",
+      "title": "OPERA CSLC-S1 ATBD (JPL D-108752)",
+      "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/OPERA/OPERA_CSLC-S1_ATBD_D-108752_Initial_2024-06-24_signed.pdf",
+      "evidence_source": "atbd",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "disp_atbd",
+      "title": "OPERA DISP-S1 ATBD (JPL D-108765 Rev A)",
+      "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/OPERA/OPERA_DISP-S1_ATBD_D-108765_Rev_A_v1.0.0_Final.pdf",
+      "evidence_source": "atbd",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "disp_spec",
+      "title": "OPERA DISP-S1 Product Specification (JPL D-108772)",
+      "url": "https://d2pn8kiwq2w21t.cloudfront.net/documents/OPERA_DISP_S1_Final_Product_Spec.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "disp_static_spec",
+      "title": "OPERA DISP-S1-STATIC Product Specification (JPL D-108762 Rev A)",
+      "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/OPERA/OPERA_DISP_S1_STATIC_ProductSpec_v1.0.0_D-108762_Rev_A_2025-03-20.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "cmr_record:OPERA_L2_CSLC-S1-STATIC_V1",
+      "title": "CMR abstract and MetadataAssociations: OPERA_L2_CSLC-S1-STATIC_V1",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2795135668-ASF.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_record:NISAR_DEM",
+      "title": "CMR abstract and associations: NISAR_DEM",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3803703055-ASF.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "cslc_static_spec",
+      "url": "https://d2pn8kiwq2w21t.cloudfront.net/documents/ProductSpec_CSLC-S1-STATIC.pdf",
+      "status": "ok",
+      "text_chars": 53412
+    },
+    {
+      "key": "cslc_atbd",
+      "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/OPERA/OPERA_CSLC-S1_ATBD_D-108752_Initial_2024-06-24_signed.pdf",
+      "status": "ok",
+      "text_chars": 89034
+    },
+    {
+      "key": "disp_atbd",
+      "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/OPERA/OPERA_DISP-S1_ATBD_D-108765_Rev_A_v1.0.0_Final.pdf",
+      "status": "ok",
+      "text_chars": 81726
+    },
+    {
+      "key": "disp_spec",
+      "url": "https://d2pn8kiwq2w21t.cloudfront.net/documents/OPERA_DISP_S1_Final_Product_Spec.pdf",
+      "status": "ok",
+      "text_chars": 47464
+    },
+    {
+      "key": "disp_static_spec",
+      "url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/OPERA/OPERA_DISP_S1_STATIC_ProductSpec_v1.0.0_D-108762_Rev_A_2025-03-20.pdf",
+      "status": "ok",
+      "text_chars": 28958
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "OPERA_L2_CSLC-S1-STATIC_V1",
+      "version": "1",
+      "level": "2"
+    },
+    "primary_parents": [],
+    "supporting_parents": [
+      "SENTINEL-1A_SLC",
+      "SENTINEL-1B_SLC",
+      "SENTINEL-1C_SLC",
+      "NISAR_DEM"
+    ],
+    "derived_children": [
+      "OPERA_L3_DISP-S1_V1",
+      "OPERA_L3_DISP-S1-STATIC_V1"
+    ],
+    "related": [
+      "OPERA_L2_CSLC-S1_V1"
+    ],
+    "processing_chain": [
+      "  SENTINEL-1A/1B/1C/1D_SLC (radar geometry only) ─┐",
+      "  NISAR_DEM ──────────────────────────────────────┤ INPUT",
+      "        ▼  CSLC-S1 workflow, static-layer mode: forward mapping → LOS, local incidence, layover/shadow",
+      "  OPERA_L2_CSLC-S1-STATIC_V1 (L2)  ← TARGET   ~  OPERA_L2_CSLC-S1_V1 (same workflow)",
+      "        ├──► OPERA_L3_DISP-S1_V1 (LOS vectors for corrections)",
+      "        └──► OPERA_L3_DISP-S1-STATIC_V1 (LOS layer mosaicked per frame)"
+    ],
+    "depth_2": {
+      "note": "Depth 2 is recorded but not written as CSV rows: each parent's own lineage is documented in its own notebook (CSLC-S1 / RTC-S1 → Sentinel-1 SLC → Sentinel-1 RAW). Inputs of a parent are not inputs of the target (rule 1c-1).",
+      "parents": [
+        {
+          "parent": "SENTINEL-1A_SLC",
+          "level": "1",
+          "atbd_candidates": null,
+          "its_associations": []
+        },
+        {
+          "parent": "SENTINEL-1B_SLC",
+          "level": "1",
+          "atbd_candidates": null,
+          "its_associations": []
+        },
+        {
+          "parent": "SENTINEL-1C_SLC",
+          "level": "1",
+          "atbd_candidates": null,
+          "its_associations": [
+            [
+              "RELATED",
+              "SENTINEL-1A_SLC"
+            ],
+            [
+              "RELATED",
+              "SENTINEL-1B_SLC"
+            ],
+            [
+              "SCIENCE ASSOCIATED",
+              "SENTINEL-1C_META_SLC"
+            ]
+          ]
+        },
+        {
+          "parent": "NISAR_DEM",
+          "level": "3",
+          "atbd_candidates": null,
+          "its_associations": []
+        }
+      ]
+    },
+    "existing_associations_check": [
+      {
+        "Type": "INPUT",
+        "EntryId": "'SENTINEL-1A_SLC'",
+        "whitespace_in_EntryId": false,
+        "found_in_cmr": true,
+        "Version": null
+      },
+      {
+        "Type": "INPUT",
+        "EntryId": "'SENTINEL-1B_SLC'",
+        "whitespace_in_EntryId": false,
+        "found_in_cmr": true,
+        "Version": null
+      },
+      {
+        "Type": "INPUT",
+        "EntryId": "'SENTINEL-1C_SLC'",
+        "whitespace_in_EntryId": false,
+        "found_in_cmr": true,
+        "Version": null
+      },
+      {
+        "Type": "INPUT",
+        "EntryId": "'SENTINEL-1D_SLC'",
+        "whitespace_in_EntryId": false,
+        "found_in_cmr": true,
+        "Version": null
+      },
+      {
+        "Type": "SCIENCE ASSOCIATED",
+        "EntryId": "'OPERA_L2_CSLC-S1_V1'",
+        "whitespace_in_EntryId": false,
+        "found_in_cmr": true,
+        "Version": "1"
+      }
+    ],
+    "opera_collections": [
+      {
+        "short_name": "OPERA_DSWX-S1_CALVAL_V1",
+        "version": "1",
+        "level": "NA",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L2_CSLC-S1_V1",
+        "version": "1",
+        "level": "2",
+        "proposed_here": "RELATED / parallel_product",
+        "its_associations_to_this_collection": [
+          "SCIENCE ASSOCIATED"
+        ]
+      },
+      {
+        "short_name": "OPERA_L2_RTC-S1-STATIC_V1",
+        "version": "1",
+        "level": "2",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L2_RTC-S1_V1",
+        "version": "1",
+        "level": "2",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L3_DISP-S1-STATIC_V1",
+        "version": "1",
+        "level": "3",
+        "proposed_here": "CHILD / downstream_product",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L3_DISP-S1_V1",
+        "version": "1",
+        "level": "3",
+        "proposed_here": "CHILD / downstream_product",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L3_DIST-ALERT-HLS_V1",
+        "version": "1",
+        "level": "3",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L3_DIST-ALERT-S1_V1",
+        "version": "1",
+        "level": "3",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L3_DIST-ANN-HLS_V1",
+        "version": "1",
+        "level": "3",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L3_DSWX-HLS_V1",
+        "version": "1.0",
+        "level": "3",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L3_DSWX-S1_V1",
+        "version": "1.0",
+        "level": "3",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      },
+      {
+        "short_name": "OPERA_L4_TROPO-ZENITH_V1",
+        "version": "1",
+        "level": "4",
+        "proposed_here": "—",
+        "its_associations_to_this_collection": ""
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "shortname": "OPERA_L2_CSLC-S1-STATIC_V1",
+      "version": "1",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "SENTINEL-1A_SLC",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "OPERA CSLC-S1-STATIC Product Specification",
+      "evidence_url": "https://d2pn8kiwq2w21t.cloudfront.net/documents/ProductSpec_CSLC-S1-STATIC.pdf",
+      "evidence_section": "Spec 2.1 Product Background",
+      "evidence_quote": "The main input to the function generating CSLC-S1-STATIC product is a S1-A/B Standard Archive Format for Europe (SAFE) file containing the SLC bursts to process",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Decision step 3: the static layers are computed from the Sentinel-1A burst's radar geometry (orbit, timing) and the DEM, not from its pixel values (\"parameters derived from satellite's geometry and/or DEM\"). So the SLC is INPUT, as the record says. Generic \"S1 SLC\" mapped to SENTINEL-1A_SLC by platform; confirmed in granule InputGranules (Step 6b).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1214470488-ASF",
+        "related_level": "1",
+        "related_platforms": [
+          "Sentinel-1A"
+        ],
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": "INPUT"
+      },
+      "granule_evidence": {
+        "example_input": "S1A_IW_SLC__1SDV_20170215T230510_20170215T230537_015301_01914D_5364",
+        "used_by": "OPERA_L2_CSLC-S1-STATIC_T004-006637-IW3_20140403_S1A_v1.0",
+        "found_in_collection": true
+      },
+      "supporting_evidence": [
+        {
+          "document": "OPERA CSLC-S1 ATBD (JPL D-108752)",
+          "quote": "it is expected that the parameters derived from satellite's geometry and/or DEM does not significantly change over time for each burst product.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "OPERA_L2_CSLC-S1-STATIC_V1",
+      "version": "1",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "SENTINEL-1B_SLC",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "OPERA CSLC-S1-STATIC Product Specification",
+      "evidence_url": "https://d2pn8kiwq2w21t.cloudfront.net/documents/ProductSpec_CSLC-S1-STATIC.pdf",
+      "evidence_section": "Spec 2.1 Product Background",
+      "evidence_quote": "The main input to the function generating CSLC-S1-STATIC product is a S1-A/B Standard Archive Format for Europe (SAFE) file containing the SLC bursts to process",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Decision step 3: the static layers are computed from the Sentinel-1B burst's radar geometry (orbit, timing) and the DEM, not from its pixel values (\"parameters derived from satellite's geometry and/or DEM\"). So the SLC is INPUT, as the record says. Generic \"S1 SLC\" mapped to SENTINEL-1B_SLC by platform; confirmed in granule InputGranules (Step 6b).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1327985661-ASF",
+        "related_level": "1",
+        "related_platforms": [
+          "Sentinel-1B"
+        ],
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": "INPUT"
+      },
+      "granule_evidence": {
+        "example_input": "S1B_IW_SLC__1SDV_20170910T114106_20170910T114134_007329_00CEDD_D852",
+        "used_by": "OPERA_L2_CSLC-S1-STATIC_T128-273683-IW1_20140403_S1B_v1.0",
+        "found_in_collection": true
+      },
+      "supporting_evidence": [
+        {
+          "document": "OPERA CSLC-S1 ATBD (JPL D-108752)",
+          "quote": "it is expected that the parameters derived from satellite's geometry and/or DEM does not significantly change over time for each burst product.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "OPERA_L2_CSLC-S1-STATIC_V1",
+      "version": "1",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "SENTINEL-1C_SLC",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "OPERA CSLC-S1-STATIC Product Specification",
+      "evidence_url": "https://d2pn8kiwq2w21t.cloudfront.net/documents/ProductSpec_CSLC-S1-STATIC.pdf",
+      "evidence_section": "Spec 2.1 Product Background",
+      "evidence_quote": "The main input to the function generating CSLC-S1-STATIC product is a S1-A/B Standard Archive Format for Europe (SAFE) file containing the SLC bursts to process",
+      "quote_verified": true,
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Decision step 3: the static layers are computed from the Sentinel-1C burst's radar geometry (orbit, timing) and the DEM, not from its pixel values (\"parameters derived from satellite's geometry and/or DEM\"). So the SLC is INPUT, as the record says. Generic \"S1 SLC\" mapped to SENTINEL-1C_SLC by platform; confirmed in granule InputGranules (Step 6b).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C3470873558-ASF",
+        "related_level": "1",
+        "related_platforms": [
+          "Sentinel-1C"
+        ],
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": "INPUT"
+      },
+      "granule_evidence": {
+        "example_input": "S1C_IW_SLC__1SDV_20250525T104720_20250525T104750_002486_0052F9_25B6",
+        "used_by": "OPERA_L2_CSLC-S1-STATIC_T040-084578-IW2_20140403_S1C_v1.0",
+        "found_in_collection": true
+      },
+      "supporting_evidence": [
+        {
+          "document": "OPERA CSLC-S1 ATBD (JPL D-108752)",
+          "quote": "it is expected that the parameters derived from satellite's geometry and/or DEM does not significantly change over time for each burst product.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "OPERA_L2_CSLC-S1-STATIC_V1",
+      "version": "1",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "NISAR_DEM",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "atbd",
+      "evidence_document": "OPERA CSLC-S1 ATBD (JPL D-108752)",
+      "evidence_url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/OPERA/OPERA_CSLC-S1_ATBD_D-108752_Initial_2024-06-24_signed.pdf",
+      "evidence_section": "CSLC ATBD 2.3 Algorithm inputs (DEM)",
+      "evidence_quote": "This DEM corresponds to the DEM used for the NASA-ISRO SAR (NISAR) mission, often referred to as NISAR-DEM.",
+      "quote_verified": true,
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "rationale": "Ancillary input: the reference DEM for geocoding/terrain correction. The document names the \"NISAR-DEM\"; CMR's NISAR_DEM is \"the Modified Copernicus DEM used by the NISAR Mission\" (GLO-30 re-referenced to WGS84). The NISAR_DEM collection is a 2025 release of that DEM; earlier OPERA production may have used an earlier build of it. The static layers come from the same CSLC-S1 algorithm (ATBD 2.2.9).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C3803703055-ASF",
+        "related_level": "3",
+        "related_platforms": [
+          "DEM"
+        ],
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": null,
+      "supporting_evidence": [
+        {
+          "document": "CMR abstract and associations: NISAR_DEM",
+          "quote": "The Modified Copernicus Digital Elevation Model used by the NISAR Mission",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "OPERA_L2_CSLC-S1-STATIC_V1",
+      "version": "1",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "related_shortname": "OPERA_L2_CSLC-S1_V1",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "OPERA CSLC-S1-STATIC Product Specification",
+      "evidence_url": "https://d2pn8kiwq2w21t.cloudfront.net/documents/ProductSpec_CSLC-S1-STATIC.pdf",
+      "evidence_section": "Spec 2.1 Product Background",
+      "evidence_quote": "serves as an ancillary product to the OPERA Level 2 Single Look Complex (CSLC-S1) products.",
+      "quote_verified": true,
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 4: produced by the same CSLC-S1 workflow, distributed separately.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2777443834-ASF",
+        "related_level": "2",
+        "related_platforms": [
+          "Sentinel-1A",
+          "Sentinel-1B",
+          "Sentinel-1C",
+          "Sentinel-1D"
+        ],
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": "SCIENCE ASSOCIATED"
+      },
+      "granule_evidence": null,
+      "supporting_evidence": [
+        {
+          "document": "OPERA CSLC-S1-STATIC Product Specification",
+          "quote": "Figure 2-1 shows the processing workflow used to generate a CSLC-S1 product which includes the functionality to generate the CSLC-S1-STATIC product.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "OPERA_L2_CSLC-S1-STATIC_V1",
+      "version": "1",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "OPERA_L3_DISP-S1_V1",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "atbd",
+      "evidence_document": "OPERA DISP-S1 ATBD (JPL D-108765 Rev A)",
+      "evidence_url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/OPERA/OPERA_DISP-S1_ATBD_D-108765_Rev_A_v1.0.0_Final.pdf",
+      "evidence_section": "DISP-S1 ATBD §2.18 Algorithm Inputs",
+      "evidence_quote": "The CSLC-S1 Static Layer products, containing the line-of-sight unit vectors, are used at this stage to project the zenith delays onto the line-of-sight.",
+      "quote_verified": true,
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 1: DISP-S1 uses these LOS vectors to project its corrections; from the CSLC-S1-STATIC side, DISP-S1 is a downstream product.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C3294057315-ASF",
+        "related_level": "3",
+        "related_platforms": [
+          "Sentinel-1A",
+          "Sentinel-1B",
+          "Sentinel-1C",
+          "Sentinel-1D"
+        ],
+        "level_progression_valid": true,
+        "level_check": "child L3 >= target L2",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": null,
+      "supporting_evidence": [
+        {
+          "document": "OPERA DISP-S1 Product Specification (JPL D-108772)",
+          "quote": "Geometry Files Static layer produced by CSLC-S1 SAS describing the radar geometry of the input SLCs",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "shortname": "OPERA_L2_CSLC-S1-STATIC_V1",
+      "version": "1",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "OPERA_L3_DISP-S1-STATIC_V1",
+      "related_version": "1",
+      "version_status": "matched",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "OPERA DISP-S1-STATIC Product Specification (JPL D-108762 Rev A)",
+      "evidence_url": "https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/OPERA/OPERA_DISP_S1_STATIC_ProductSpec_v1.0.0_D-108762_Rev_A_2025-03-20.pdf",
+      "evidence_section": "DISP-S1-STATIC spec: input products table",
+      "evidence_quote": "CSLC-S1-STATIC The input level 2 OPERA CSLC S1 Static layers files for the 27 bursts in the DISP-S1 frame",
+      "quote_verified": true,
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 1: DISP-S1-STATIC mosaics the CSLC-S1-STATIC line-of-sight layers of the 27 bursts of each frame.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C3959290248-ASF",
+        "related_level": "3",
+        "related_platforms": [
+          "Sentinel-1A",
+          "Sentinel-1B",
+          "Sentinel-1C",
+          "Sentinel-1D"
+        ],
+        "level_progression_valid": true,
+        "level_check": "child L3 >= target L2",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      },
+      "granule_evidence": null,
+      "supporting_evidence": []
+    }
+  ],
+  "granule_level_check": {
+    "by_sample": [
+      {
+        "platform": "Sentinel-1A",
+        "granules": 34770,
+        "sampled": 100,
+        "without_InputGranules": 0,
+        "input_prefixes": {
+          "S1A": 100
+        },
+        "product_versions": null,
+        "first": "2014-04-03T00:00:00Z",
+        "last": "2014-04-03T00:00:00Z"
+      },
+      {
+        "platform": "Sentinel-1B",
+        "granules": 8046,
+        "sampled": 100,
+        "without_InputGranules": 0,
+        "input_prefixes": {
+          "S1B": 100
+        },
+        "product_versions": null,
+        "first": "2014-04-03T00:00:00Z",
+        "last": "2014-04-03T00:00:00Z"
+      },
+      {
+        "platform": "Sentinel-1C",
+        "granules": 1531,
+        "sampled": 100,
+        "without_InputGranules": 0,
+        "input_prefixes": {
+          "S1C": 100
+        },
+        "product_versions": null,
+        "first": "2014-04-03T00:00:00Z",
+        "last": "2014-04-03T00:00:00Z"
+      },
+      {
+        "platform": "Sentinel-1D",
+        "granules": 0,
+        "sampled": 0,
+        "without_InputGranules": 0,
+        "input_prefixes": {},
+        "product_versions": null,
+        "first": null,
+        "last": null
+      }
+    ],
+    "input_existence_check": [
+      {
+        "platform": "S1A",
+        "example_input_SLC": "S1A_IW_SLC__1SDV_20170215T230510_20170215T230537_015301_01914D_5364",
+        "used_by": "OPERA_L2_CSLC-S1-STATIC_T004-006637-IW3_20140403_S1A_v1.0",
+        "collection": "SENTINEL-1A_SLC (C1214470488-ASF)",
+        "found_in_collection": true,
+        "granule_ur": "S1A_IW_SLC__1SDV_20170215T230510_20170215T230537_015301_01914D_5364-SLC"
+      },
+      {
+        "platform": "S1B",
+        "example_input_SLC": "S1B_IW_SLC__1SDV_20170910T114106_20170910T114134_007329_00CEDD_D852",
+        "used_by": "OPERA_L2_CSLC-S1-STATIC_T128-273683-IW1_20140403_S1B_v1.0",
+        "collection": "SENTINEL-1B_SLC (C1327985661-ASF)",
+        "found_in_collection": true,
+        "granule_ur": "S1B_IW_SLC__1SDV_20170910T114106_20170910T114134_007329_00CEDD_D852-SLC"
+      },
+      {
+        "platform": "S1C",
+        "example_input_SLC": "S1C_IW_SLC__1SDV_20250525T104720_20250525T104750_002486_0052F9_25B6",
+        "used_by": "OPERA_L2_CSLC-S1-STATIC_T040-084578-IW2_20140403_S1C_v1.0",
+        "collection": "SENTINEL-1C_SLC (C3470873558-ASF)",
+        "found_in_collection": true,
+        "granule_ur": "S1C_IW_SLC__1SDV_20250525T104720_20250525T104750_002486_0052F9_25B6-SLC"
+      }
+    ],
+    "platforms_in_inputs_missing_from_record": [],
+    "child_granule_check": null
+  },
+  "metadata_findings": [
+    "Platforms list Sentinel-1D and an INPUT association names SENTINEL-1D_SLC, but the collection has no Sentinel-1D granules.",
+    "No ATBD is linked; the CSLC-S1 ATBD (linked from OPERA_L2_CSLC-S1_V1) describes the static-layer algorithm (§2.2.9) and could be linked here.",
+    "OPERA_L2_CSLC-S1_V1 is labelled SCIENCE ASSOCIATED; by the lineage definitions it is RELATED (parallel_product).",
+    "No CHILD associations to OPERA_L3_DISP-S1_V1 and OPERA_L3_DISP-S1-STATIC_V1, which both document using these layers.",
+    "Granule names carry a validity date (e.g. 20140403) that differs from the acquisition date of the input SLC named in InputGranules."
+  ],
+  "excluded": [
+    {
+      "name": "SENTINEL-1D_SLC",
+      "role": "INPUT in the record",
+      "reason": "no granule of this collection has a Sentinel-1D input (0 Sentinel-1D granules; Step 6b), so no row"
+    },
+    {
+      "name": "Sentinel-1 orbit ephemerides",
+      "role": "input",
+      "reason": "not a CMR collection (rule 1c-4)"
+    }
+  ],
+  "csv": {
+    "path": "Reports/OPERA_L2_CSLC-S1-STATIC_V1_V1_lineage.csv",
+    "rows": 7,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  }
+}

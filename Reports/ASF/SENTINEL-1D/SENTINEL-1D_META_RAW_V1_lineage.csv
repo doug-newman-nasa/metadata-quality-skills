@@ -1,0 +1,5 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+SENTINEL-1D_META_RAW,1,PARENT,SENTINEL-1D_RAW,1,MEDIUM,derived_from
+SENTINEL-1D_META_RAW,1,RELATED,SENTINEL-1A_META_RAW,1,MEDIUM,equivalent_product
+SENTINEL-1D_META_RAW,1,RELATED,SENTINEL-1B_META_RAW,1,MEDIUM,equivalent_product
+SENTINEL-1D_META_RAW,1,RELATED,SENTINEL-1C_META_RAW,1,MEDIUM,equivalent_product

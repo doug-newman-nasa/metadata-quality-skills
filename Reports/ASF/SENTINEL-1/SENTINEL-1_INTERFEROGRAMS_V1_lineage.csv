@@ -1,0 +1,4 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+SENTINEL-1_INTERFEROGRAMS,1,PARENT,SENTINEL-1A_SLC,1,MEDIUM,derived_from
+SENTINEL-1_INTERFEROGRAMS,1,PARENT,SENTINEL-1B_SLC,1,MEDIUM,derived_from
+SENTINEL-1_INTERFEROGRAMS,1,RELATED,ARIA_S1_GUNW,1,MEDIUM,version_of

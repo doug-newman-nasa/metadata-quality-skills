@@ -1,0 +1,7 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+UAVSAR_RPI,1,INPUT,JPL_SRTM_V2,2,MEDIUM,input_to
+UAVSAR_RPI,1,INPUT,SRTMGL1,003,MEDIUM,input_to
+UAVSAR_RPI,1,INPUT,SRTMGL30,002,MEDIUM,input_to
+UAVSAR_RPI,1,CHILD,ABoVE_ReSALT_InSAR_PolSAR_V3_2004,3,MEDIUM,downstream_product
+UAVSAR_RPI,1,RELATED,SNEX_UAVSAR,1,MEDIUM,related_to
+UAVSAR_RPI,1,RELATED,UAVSAR_POLSAR,1,MEDIUM,related_to

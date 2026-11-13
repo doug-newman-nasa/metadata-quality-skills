@@ -1,0 +1,3 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+OPERA_L3_DIST-ALERT-S1_V1,1,PARENT,OPERA_L2_RTC-S1_V1,1,HIGH,derived_from
+OPERA_L3_DIST-ALERT-S1_V1,1,RELATED,OPERA_L3_DIST-ALERT-HLS_V1,1,MEDIUM,related_to
