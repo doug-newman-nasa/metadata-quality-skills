@@ -1,0 +1,36 @@
+[
+  {
+    "concept_id": "C2407807500-LANCEMODIS", "short_name": "MCD19A2N", "version": "6.1NRT",
+    "action": "ADD", "outcome": "FOUND_SIBLING", "tier": 2, "confidence": "HIGH",
+    "RelatedUrl": {"URL": "https://lpdaac.usgs.gov/documents/1500/MCD19_User_Guide_V61.pdf", "URLContentType": "PublicationURL",
+                   "Type": "VIEW RELATED INFORMATION", "Subtype": "USER'S GUIDE",
+                   "Description": "MODIS MAIAC (MCD19) Data User's Guide, Collection 6.1"},
+    "evidence": "Title page: 'MODIS Multi-Angle Implementation of Atmospheric Correct (MAIAC) Data User's Guide Collection 6.1 Version 3.1' (Nov 2022, 24 pp.); names MCD19A2 11 times (e.g., TOC '3.2.1 Atmospheric Properties File (MCD19A2)'); linked by sibling MCD19A2 v061 C-LPCLOUD"
+  },
+  {
+    "concept_id": "C2407807500-LANCEMODIS", "short_name": "MCD19A2N", "version": "6.1NRT",
+    "action": "ADD", "outcome": "FOUND_SIBLING", "tier": 2, "confidence": "HIGH",
+    "RelatedUrl": {"URL": "https://lpdaac.usgs.gov/documents/111/MCD19_ATBD.pdf", "URLContentType": "PublicationURL",
+                   "Type": "VIEW RELATED INFORMATION", "Subtype": "ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
+                   "Description": "MAIAC: Multi-Angle Implementation of Atmospheric Correction for MODIS ATBD"},
+    "evidence": "Title page: 'MAIAC: MULTI-ANGLE IMPLEMENTATION OF ATMOSPHERIC CORRECTION FOR MODIS ALGORITHM THEORETICAL BASIS DOCUMENT (ver. 1.0)' (77 pp.); algorithm-level document predating C6.1 short names; linked by sibling MCD19A2 v061"
+  },
+  {
+    "concept_id": "C3618504061-GES_DISC", "short_name": "AER_DBDT_D10KM_L3_MODIS_AQUA", "version": "001",
+    "action": "RETAG", "outcome": "FOUND_RETAG", "tier": 1, "confidence": "HIGH",
+    "RelatedUrl": {"URL": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Community/Gupta/TASNPP_AOD_Level3_README.pdf",
+                   "from_subtype": "READ-ME", "to_subtype": "USER'S GUIDE",
+                   "Description": "README Document for High Resolution Level 3 Aerosol Datasets (user guide)"},
+    "evidence": "16-pp. GES DISC document (rev. Aug 13, 2025) with sections 2.1 File Naming Convention, 2.2 File Format and Structure, 3.3 Data Fields, 3.4 Fill Values, 4 Using the Data; names AER_DBDT_D10KM_L3_MODIS_AQUA explicitly (incl. DOI 10.5067/MODIS/AER_DBDT_D10KM_L3_MODIS_AQUA.001)"
+  },
+  {
+    "concept_id": "C1000000000-CDDIS", "short_name": "DORIS_data_cycle", "version": "1",
+    "action": "ADD", "outcome": "CANDIDATE", "tier": 1, "confidence": "LOW",
+    "RelatedUrl": {"URL": "https://www.earthdata.nasa.gov/data/space-geodesy-techniques/doris/multiday-preprocessed-doris-data",
+                   "URLContentType": "PublicationURL", "Type": "VIEW RELATED INFORMATION", "Subtype": "USER'S GUIDE",
+                   "Description": "Multi-Day Preprocessed DORIS Data: product description, file naming and access"},
+    "evidence": "Product web page (not a guide document): description, DOI 10.5067/DORIS/DORIS_DATA_MULTIDAY, format 'DORIS 2.2', file naming convention 'sss/sssdataMMM.LLL.Z' with satellite codes, access path. Curator to decide whether a web page satisfies the User's Guide requirement",
+    "also_consider": {"URL": "ftp://ftp.ids-doris.org/pub/ids/data/doris22.fmt", "Subtype": "DATA PRODUCT SPECIFICATION", "tier": 3,
+                      "note": "DORIS 2.2 format specification, linked from the page above"}
+  }
+]
