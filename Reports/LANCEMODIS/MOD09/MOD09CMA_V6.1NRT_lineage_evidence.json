@@ -1,0 +1,318 @@
+{
+  "generated_at": "2026-11-12T14:02:00+00:00",
+  "target": {
+    "shortname": "MOD09CMA",
+    "version": "6.1NRT",
+    "concept_id": "C4169087730-LANCEMODIS",
+    "processing_level": "3",
+    "provider": "LANCEMODIS",
+    "collection_data_type": "NEAR_REAL_TIME"
+  },
+  "atbd_search_depth": 1,
+  "version_choice_note": "CMR versions with ShortName MOD09CMA: ['6.1NRT']. All related rows matched at 6.1NRT.",
+  "cmr_state_note": "Records fetched live from CMR on 2026-11-12; see process/*.json. Confidence depends on CMR state.",
+  "no_parent_note": "No PARENT row: the direct parents MOD09IDN/IDT/IDS are not CMR collections. MOD09 (same MOD_PR09.exe run) is recorded as RELATED related_to.",
+  "level_ranking_note": "MODIS levels are strings; level progression compared with rank 1A < 1B < 2 < 2G < 3.",
+  "source_documents": [
+    {
+      "id": "atbd_cmr_target",
+      "subject": "MOD09CMA 6.1NRT",
+      "kind": "atbd",
+      "subtype": "ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
+      "title": null,
+      "url": null,
+      "fetched": false,
+      "error": "The NRT record (C4169087730-LANCEMODIS) links no documentation at all: only the LANCE NRT home page and two GET DATA links (it lacks even the LANCE data-flow diagram that the sibling NRT records carry). No standard MOD09CMA exists in CMR. Per the decision tree, the documents linked from the sibling MOD09CMG 061 (C2565788876-LPCLOUD) were used: both products are written by the same MOD_PR09C.exe run."
+    },
+    {
+      "id": "atbd",
+      "subject": "MOD09 family",
+      "kind": "atbd",
+      "subtype": "ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
+      "title": "Atmospheric Correction Algorithm: Spectral Reflectances (MOD09), ATBD Version 4.0, April 1999 (E. F. Vermote, A. Vermeulen)",
+      "url": "https://lpdaac.usgs.gov/documents/305/MOD09_ATBD.pdf",
+      "fetched": true,
+      "note": "Linked from MOD09CMG 061; sha256 0df984f2... = the correct MOD09 ATBD. Describes the aerosol retrieval; the CMG/CMA products postdate it."
+    },
+    {
+      "id": "ug",
+      "subject": "MOD09 family, Collection 6.1",
+      "kind": "user_guide",
+      "subtype": "USER'S GUIDE",
+      "title": "MODIS Surface Reflectance User's Guide, Collection 6.1",
+      "url": "https://lpdaac.usgs.gov/documents/925/MOD09_User_Guide_V61.pdf",
+      "fetched": true,
+      "note": "Linked from MOD09CMG 061; sha256 33070e6c.... §2.1, §2.2, §2.6 and Table 1 describe MOD09CMA; no SDS table for it."
+    },
+    {
+      "id": "fs",
+      "subject": "MOD09CMA Collection 6.1",
+      "kind": "other_doc",
+      "subtype": "GENERAL DOCUMENTATION (file specification)",
+      "title": "LAADS DAAC file specification MOD09CMA (C6.1)",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MOD09CMA",
+      "fetched": true,
+      "note": "Not linked from CMR (the MOD09CMG 061 record links the equivalent page for MOD09CMG). Source of the 16 SDS definitions and AOD QA codes."
+    },
+    {
+      "id": "home",
+      "subject": "LANCE MODIS NRT",
+      "kind": "other_doc",
+      "subtype": "HOME PAGE",
+      "title": "Earthdata: MODIS Near Real-Time data (product table)",
+      "url": "https://www.earthdata.nasa.gov/data/instruments/modis/near-real-time-data",
+      "fetched": true,
+      "note": "Product table only (\"L3 Aerosol Optical Thickness, Climate Modeling Grid\"); no lineage statements."
+    },
+    {
+      "id": "cmr_target",
+      "subject": "MOD09CMA 6.1NRT",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORD",
+      "title": "CMR UMM-C record C4169087730-LANCEMODIS (revision 2, 2026-04-29T14:06:13.237Z)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C4169087730-LANCEMODIS.umm_json",
+      "fetched": true
+    },
+    {
+      "id": "cmr_related",
+      "subject": "candidate related collections",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORDS",
+      "title": "23 UMM-C records for 13 ShortNames (process/related_umm.json)",
+      "url": "https://cmr.earthdata.nasa.gov/search/collections.umm_json",
+      "fetched": true
+    }
+  ],
+  "rows": [
+    {
+      "related_shortname": "MOD09",
+      "related_version": "6.1NRT",
+      "related_concept_id": "C2007657580-LANCEMODIS",
+      "association_type": "RELATED",
+      "lineage_relationship": "related_to",
+      "confidence": "HIGH",
+      "confidence_rule": "HIGH rule: source, statement and CMR validation all strong",
+      "evidence_source": "user_guide",
+      "evidence_doc": "ug",
+      "evidence_section": "User Guide §2.2 Products of MOD_PR09.exe -- levels 2 and 3",
+      "evidence_quote": "These files are intermediate in the sense that they serve as inputs to MOD_PR09C.exe, which composites MOD09IDN, -IDT and -IDS files for each orbit into daily MOD09CMG and MOD09CMA files.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "ug",
+          "section": "User Guide §2.2",
+          "quote": "Other outputs of MOD_PR09.exe are the MOD09 Intermediate Surface Reflectance datasets (MOD09IDN, -IDT and -IDS), in which all surface reflectance data and band quality data for each orbit are geolocated into a linear latitude and longitude projection at 5 km",
+          "verified": true
+        },
+        {
+          "doc": "ug",
+          "section": "User Guide §4.3 atmospheric correction",
+          "quote": "Aerosol optical thickness (AOT) is estimated by comparing actual corrected top-of-atmosphere values to modeled top-of-atmosphere values with known amounts of AOT added.",
+          "verified": true
+        },
+        {
+          "doc": "cmr_target",
+          "section": "CMR record C4169087730-LANCEMODIS Abstract",
+          "quote": "This product is derived from MOD09IDN, MOD09IDT and MOD09IDS for each orbit by compositing the data on the basis of minimum band 3",
+          "verified": true
+        },
+        {
+          "doc": "fs",
+          "section": "LAADS file specification MOD09CMA, DataFields",
+          "quote": "The exact contents of this file depends upon the contents of the IDS inputs that are read by MOD_PR09C.exe.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "mapping_note": "MOD09 / MOD_PR09.exe named exactly. Version 6.1NRT matched (C2007657580-LANCEMODIS).",
+      "decision_procedure": "Step 1b Q1 no. Q2 no: T is not made from MOD09 granules but from the MOD09IDN/IDT/IDS intermediates that the same MOD_PR09.exe run writes alongside MOD09 (the AOT values are the same retrieval). Q3-Q5 no. Rule 1c-1 (direct only): the intermediates are T's true parents but have no CMR record, so MOD09 is recorded as related_to (RELATED), the reciprocal of the MOD09 run's MOD09 -> MOD09CMA row.",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2007657580-LANCEMODIS",
+        "related_processing_level": "2",
+        "target_processing_level": "3",
+        "level_progression": {
+          "status": "not_applicable",
+          "rule": "parent skill Step 6 checks level progression for parents and children only"
+        },
+        "related_versions_in_cmr": [
+          "6.1",
+          "6.1NRT"
+        ],
+        "version_compatible": true
+      }
+    },
+    {
+      "related_shortname": "MOD09CMG",
+      "related_version": "6.1NRT",
+      "related_concept_id": "C2007659960-LANCEMODIS",
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "confidence": "HIGH",
+      "confidence_rule": "HIGH rule: source, statement and CMR validation all strong",
+      "evidence_source": "user_guide",
+      "evidence_doc": "ug",
+      "evidence_section": "User Guide §2.6 Products of MOD_PR09C.exe -- level 3 CMG",
+      "evidence_quote": "The MOD09CMG file contains surface reflectance for bands 1 through 7, band quality data and other important information, but does not contain retrieved aerosol data -- aerosol data is put into a separate file, the MOD09CMA file.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "ug",
+          "section": "User Guide §2.1",
+          "quote": "daily level 3 CMG (climate modeling grid) products (MOD09CMG and MOD09CMA, generated by PGE75's MOD_PR09C.exe program)",
+          "verified": true
+        },
+        {
+          "doc": "ug",
+          "section": "User Guide §2.6",
+          "quote": "It is derived from MOD09IDN, MOD09IDT and MOD09IDS files for each orbit by compositing the data in these files on the basis of minimum band 3 (459 - 479 nm band) values (after excluding pixels flagged for clouds and high solar zenith angles).",
+          "verified": true
+        },
+        {
+          "doc": "ug",
+          "section": "User Guide Table 1 (MOD_PR09C.exe rows)",
+          "quote": "MOD09IDT MOD09CMG none",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "mapping_note": "Named exactly. Version 6.1NRT matched (C2007659960-LANCEMODIS); the standard 061 (LPCLOUD) also exists.",
+      "decision_procedure": "Step 1b Q1-Q3 no: neither is made from the other. Q4 yes: MOD_PR09C.exe composites the same IDN/IDT/IDS inputs into both files in one run; reflectance goes to MOD09CMG and the retrieved aerosol data to MOD09CMA -> parallel_product (RELATED).",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2007659960-LANCEMODIS",
+        "related_processing_level": "3",
+        "target_processing_level": "3",
+        "level_progression": {
+          "status": "not_applicable",
+          "rule": "parent skill Step 6 checks level progression for parents and children only"
+        },
+        "related_versions_in_cmr": [
+          "061",
+          "6.1NRT"
+        ],
+        "version_compatible": true
+      }
+    },
+    {
+      "related_shortname": "MYD09CMA",
+      "related_version": "6.1NRT",
+      "related_concept_id": "C2007652084-LANCEMODIS",
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement",
+      "evidence_source": "user_guide",
+      "evidence_doc": "ug",
+      "evidence_section": "User Guide §4.5 All I've seen in this document is \"MOD\", meaning Terra -- what about Aqua (\"MYD\")?",
+      "evidence_quote": "All programs discussed in this document process either Terra- or Aqua-derived data.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "cmr_MYD09CMA",
+          "section": "CMR record MYD09CMA 6.1NRT Abstract",
+          "quote": "This product is derived from MYD09IDN, MYD09IDT and MYD09IDS for each orbit by compositing the data on the basis of minimum band 3",
+          "verified": true
+        },
+        {
+          "doc": "cmr_target",
+          "section": "CMR record C4169087730-LANCEMODIS Abstract",
+          "quote": "This product is derived from MOD09IDN, MOD09IDT and MOD09IDS for each orbit by compositing the data on the basis of minimum band 3",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "mapping_note": "Generic \"MYD\" in the User Guide mapped to MYD09CMA (MOD/MYD naming; abstracts identical in structure). Inferred. Version 6.1NRT matched.",
+      "decision_procedure": "Step 1b Q1-Q4 no (separate Aqua processing, no data flow). Q5 yes: the same CMA product made by the same MOD_PR09C.exe algorithm from Aqua MODIS -> equivalent_product (RELATED).",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2007652084-LANCEMODIS",
+        "related_processing_level": "3",
+        "target_processing_level": "3",
+        "level_progression": {
+          "status": "not_applicable",
+          "rule": "parent skill Step 6 checks level progression for parents and children only"
+        },
+        "related_versions_in_cmr": [
+          "6.1NRT"
+        ],
+        "version_compatible": true
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "related": "MOD09IDN, MOD09IDT, MOD09IDS",
+      "lineage_relationship": "aggregated_from",
+      "reason": "not_in_cmr",
+      "detail": "The true direct parents (orbit-level 0.05 degree intermediates composited by MOD_PR09C.exe). No CMR record (searched by ShortName; rule 1c-4), so no PARENT row can be written.",
+      "evidence_doc": "cmr_target",
+      "evidence_quote": "This product is derived from MOD09IDN, MOD09IDT and MOD09IDS for each orbit by compositing the data on the basis of minimum band 3",
+      "quote_verified": true
+    },
+    {
+      "related": "MOD021KM, MOD02HKM, MOD02QKM, MOD03, MOD35_L2 (6.1NRT)",
+      "lineage_relationship": null,
+      "reason": "indirect_input_of_parent",
+      "detail": "Inputs of MOD_PR09.exe, which writes the intermediates; depth 2 for MOD09CMA (rule 1c-1).",
+      "evidence_doc": "ug",
+      "evidence_quote": "Table 1: Inputs and outputs of MODIS surface reflectance programs.",
+      "quote_verified": true
+    },
+    {
+      "related": "MOD04_L2 6.1NRT (C1426436561-LANCEMODIS)",
+      "lineage_relationship": "input_to",
+      "reason": "no_document_evidence",
+      "detail": "Different aerosol product (MODIS atmosphere team). The C6.1 User Guide says AOT is calculated inside MOD_PR09.exe, and MOD04 is not in the Table 1 inputs. Listed only in the 1999 ATBD as an input of MOD09 (see the MOD09 run).",
+      "evidence_doc": "ug",
+      "evidence_quote": "Ancillary data is either read from coarse resolution meterological data and interpolated spatially and temporally (surface pressure, ozone), or is calculated within MOD_PR09.exe (water vapor, aerosol optical thickness).",
+      "quote_verified": true
+    },
+    {
+      "related": "MODAODHD 6.1NRT (C1426516654-LANCEMODIS)",
+      "lineage_relationship": null,
+      "reason": "no_document_evidence",
+      "detail": "Another L3 NRT aerosol product, built from the MODIS Level 2 aerosol products (MOD04), not from the MOD09 chain.",
+      "evidence_doc": "cmr_MODAODHD",
+      "evidence_quote": "developed this value-added aerosol optical depth dataset based on MODIS Level 2 aerosol products",
+      "quote_verified": true
+    },
+    {
+      "related": "MOD08_D3 6.1, MCD19A2N 6.1NRT / MCD19A2 061",
+      "lineage_relationship": null,
+      "reason": "no_document_evidence",
+      "detail": "Other MODIS aerosol products (atmosphere L3; MAIAC). No document links them to MOD09CMA."
+    },
+    {
+      "related": "MYD09CMG 6.1NRT (C2007651397-LANCEMODIS)",
+      "lineage_relationship": "equivalent_product",
+      "reason": "equivalent_of_related",
+      "detail": "Aqua equivalent of the sibling MOD09CMG; one hop away from T."
+    },
+    {
+      "related": "MOD09CMG 061 (C2565788876-LPCLOUD)",
+      "lineage_relationship": "parallel_product",
+      "reason": "version_mismatch",
+      "detail": "Standard-processing version of the sibling; MOD09CMG 6.1NRT matches the target and is used instead. Its record supplied the documents."
+    },
+    {
+      "related": "MOD09CMA standard (non-NRT) Collection 6.1",
+      "lineage_relationship": null,
+      "reason": "not_in_cmr",
+      "detail": "The User Guide lists MOD09CMA as a publicly available output for collection 4 and up, but CMR has only the NRT record. The existing SCIENCE ASSOCIATED -> MOD09CMA association therefore can only resolve to the record itself.",
+      "evidence_doc": "ug",
+      "evidence_quote": "daily level 3 CMG (climate modeling grid) products (MOD09CMG and MOD09CMA, generated by PGE75's MOD_PR09C.exe program)",
+      "quote_verified": true
+    }
+  ],
+  "csv_validation": {
+    "valid": true,
+    "errors": []
+  }
+}

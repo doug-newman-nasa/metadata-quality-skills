@@ -1,0 +1,566 @@
+{
+  "generated_at": "2026-11-12T20:34:29+00:00",
+  "target": {
+    "shortname": "VJ114IMG_NRT",
+    "version": "2",
+    "concept_id": "C1907902788-LANCEMODIS",
+    "processing_level": "2",
+    "provider": "LANCEMODIS",
+    "collection_data_type": "NEAR_REAL_TIME",
+    "granules_in_cmr": {
+      "C1907902788-LANCEMODIS (VJ114IMG_NRT)": 1653,
+      "C3264430167-LANCEMODIS (VJ114IMGTDL_NRT)": 7,
+      "C1355615368-LANCEMODIS (VJ114IMGT_NRT)": 0,
+      "checked": "2026-11-12"
+    }
+  },
+  "atbd_search_depth": 1,
+  "version_choice_note": "Only one CMR record has ShortName VJ114IMG_NRT (version 2). The NRT L1B inputs exist only as version 2.1 (substituted); all other rows matched at version 2.",
+  "cmr_state_note": "Records fetched live from CMR on 2026-11-12; see process/*.json. Confidence depends on CMR state.",
+  "confidence_note": "No HIGH rows: the documents name the L1B inputs, the vector distribution and the platform equivalents only generically or by their standard (non-NRT) names; every ShortName mapping is inferred.",
+  "consistency_note": "Reciprocal of the VJ114IMGTDL_NRT and VJ114IMGT_NRT runs (both list VJ114IMG_NRT as PARENT, MEDIUM).",
+  "level_ranking_note": "Levels compared with rank 1A < 1B < 2 < 2G < 3.",
+  "source_documents": [
+    {
+      "id": "atbd_cmr_target",
+      "subject": "VJ114IMG_NRT 2",
+      "kind": "atbd",
+      "subtype": "ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
+      "title": null,
+      "url": null,
+      "fetched": false,
+      "error": "The target record (C1907902788-LANCEMODIS) links no ATBD or User Guide (home page lance3.modaps, GET DATA and the FIRMS map only). Per the decision tree the VIIRS 375 m active fire ATBD and User Guides were used; the abstract cites Schroeder et al. (2014)."
+    },
+    {
+      "id": "ug",
+      "subject": "VNP14IMG / VJ114IMG / VJ214IMG Collection 2",
+      "kind": "user_guide",
+      "subtype": "USER'S GUIDE",
+      "title": "Collection 2 VIIRS 375-m Active Fire Product User's Guide, Version 1.2 (June 2025)",
+      "url": "https://www.earthdata.nasa.gov/s3fs-public/2025-06/VIIRS_C2_AF-375m_User_Guide_1.2.pdf",
+      "fetched": true,
+      "note": "Not linked from CMR; linked from the FIRMS VIIRS 375 m page. Matches the target version (Collection 2)."
+    },
+    {
+      "id": "ug14",
+      "subject": "VNP14IMG / VNP14 Collection 1",
+      "kind": "user_guide",
+      "subtype": "USER'S GUIDE",
+      "title": "VIIRS 375 m & 750 m Active Fire Products User's Guide Version 1.4 (June 2018)",
+      "url": "https://lpdaac.usgs.gov/documents/427/VNP14_User_Guide_V1.pdf",
+      "fetched": true,
+      "note": "Linked from VJ114IMG 002 (C2734197957-LPCLOUD). Collection 1."
+    },
+    {
+      "id": "atbd",
+      "subject": "VIIRS 375 m active fire",
+      "kind": "atbd",
+      "subtype": "ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
+      "title": "VIIRS 375 m Active Fire Detection and Characterization ATBD 1.0 (December 2016; Schroeder & Giglio)",
+      "url": "https://viirsland.gsfc.nasa.gov/PDF/VIIRS_activefire_375m_ATBD.pdf",
+      "fetched": true,
+      "note": "NOT linked from any CMR record; the correct ATBD for the 375 m products."
+    },
+    {
+      "id": "atbd750",
+      "subject": "VIIRS 750 m active fire (VNP14)",
+      "kind": "other_doc",
+      "subtype": "ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
+      "title": "VIIRS 750 m Active Fire Detection and Characterization ATBD 1.0 (September 2017)",
+      "url": "https://lpdaac.usgs.gov/documents/133/VNP14_ATBD.pdf",
+      "fetched": true,
+      "note": "Linked as the ATBD of VJ114IMG 002, but it describes the 750 m product. CURATION FINDING."
+    },
+    {
+      "id": "firms",
+      "subject": "FIRMS VIIRS 375 m NRT",
+      "kind": "other_doc",
+      "subtype": "GENERAL DOCUMENTATION",
+      "title": "Earthdata: VIIRS I-Band 375 m Active Fire Data (FIRMS)",
+      "url": "https://www.earthdata.nasa.gov/data/instruments/viirs/viirs-i-band-375-m-active-fire-data",
+      "fetched": true
+    },
+    {
+      "id": "faq",
+      "subject": "FIRMS",
+      "kind": "other_doc",
+      "subtype": "GENERAL DOCUMENTATION",
+      "title": "Earthdata: FIRMS FAQ",
+      "url": "https://www.earthdata.nasa.gov/data/tools/firms/faq",
+      "fetched": true
+    },
+    {
+      "id": "fs",
+      "subject": "VNP14IMG",
+      "kind": "other_doc",
+      "subtype": "GENERAL DOCUMENTATION (file specification)",
+      "title": "LAADS file specification VNP14IMG (C1)",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/filespec/VIIRS/1/VNP14IMG",
+      "fetched": true,
+      "note": "Linked from VJ114IMG 002. Context only."
+    },
+    {
+      "id": "cmr_target",
+      "subject": "VJ114IMG_NRT 2",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORD",
+      "title": "CMR UMM-C record C1907902788-LANCEMODIS (revision 6, 2026-07-20T13:46:54.495Z)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C1907902788-LANCEMODIS.umm_json",
+      "fetched": true
+    },
+    {
+      "id": "cmr_related",
+      "subject": "candidate related collections",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORDS",
+      "title": "16 UMM-C records for 15 ShortNames (process/related_umm.json)",
+      "url": "https://cmr.earthdata.nasa.gov/search/collections.umm_json",
+      "fetched": true
+    }
+  ],
+  "rows": [
+    {
+      "related_shortname": "VJ102IMG_NRT",
+      "related_version": "2.1",
+      "related_concept_id": "C2208779826-LANCEMODIS",
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement, cmr_validation",
+      "evidence_source": "user_guide",
+      "evidence_doc": "ug",
+      "evidence_section": "VIIRS C2 375-m Active Fire User's Guide v1.2 §2 Summary of Collection 2 changes",
+      "evidence_quote": "The fire product is now produced using the significantly improved and much more robust Collection-2 NASA Level-1B VIIRS radiance and geolocation products.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "atbd",
+          "section": "ATBD 375 m §2.2 Algorithm input",
+          "quote": "The VIIRS 375 m fire product uses input data from all five 375 m channels (I1-I5) and the dual-gain 750 m mid-infrared data (channel M13)",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "mapping_note": "The documents name the inputs generically (\"Collection-2 NASA Level-1B VIIRS radiance and geolocation products\"; channels I1-I5 and M13). Mapped to the NOAA-20 NRT L1B collection VJ102IMG_NRT by product naming. Inferred. CMR has VJ102IMG_NRT only as version 2.1 (substituted).",
+      "decision_procedure": "Step 1b Q1 no. Q2 yes: the fire mask and fire-pixel brightness temperatures are computed directly from the I1-I5 L1B radiances -> derived_from (PARENT). PARENT vs INPUT: recalibrating the L1B changes the detections.",
+      "version_status": "substituted",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2208779826-LANCEMODIS",
+        "related_processing_level": "1B",
+        "target_processing_level": "2",
+        "level_progression": {
+          "status": "valid",
+          "rule": "parent level 1B <= target level 2"
+        },
+        "related_versions_in_cmr": [
+          "2.1"
+        ],
+        "version_compatible": false
+      }
+    },
+    {
+      "related_shortname": "VJ102MOD_NRT",
+      "related_version": "2.1",
+      "related_concept_id": "C2208778455-LANCEMODIS",
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement, cmr_validation",
+      "evidence_source": "atbd",
+      "evidence_doc": "atbd",
+      "evidence_section": "ATBD 375 m §2.3.10 Fire radiative power retrieval",
+      "evidence_quote": "Co-located M13 aggregated radiances coinciding with the fire-affected and background pixels are used in the FRP retrieval following Wooster et al. [2003]",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "atbd",
+          "section": "ATBD 375 m §2.2",
+          "quote": "The VIIRS 375 m fire product uses input data from all five 375 m channels (I1-I5) and the dual-gain 750 m mid-infrared data (channel M13)",
+          "verified": true
+        },
+        {
+          "doc": "ug",
+          "section": "User Guide v1.2 §2",
+          "quote": "The fire product is now produced using the significantly improved and much more robust Collection-2 NASA Level-1B VIIRS radiance and geolocation products.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "mapping_note": "The documents name the inputs generically (\"Collection-2 NASA Level-1B VIIRS radiance and geolocation products\"; channels I1-I5 and M13). Mapped to the NOAA-20 NRT L1B collection VJ102MOD_NRT by product naming. Inferred. CMR has VJ102MOD_NRT only as version 2.1 (substituted).",
+      "decision_procedure": "Step 1b Q2 yes: the M13 (750 m) radiances are used to compute FRP and to detect fires over water and in the South Atlantic Magnetic Anomaly; FP_M13 / FP_power are made from them -> derived_from (PARENT).",
+      "version_status": "substituted",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2208778455-LANCEMODIS",
+        "related_processing_level": "1B",
+        "target_processing_level": "2",
+        "level_progression": {
+          "status": "valid",
+          "rule": "parent level 1B <= target level 2"
+        },
+        "related_versions_in_cmr": [
+          "2.1"
+        ],
+        "version_compatible": false
+      }
+    },
+    {
+      "related_shortname": "VJ103IMG_NRT",
+      "related_version": "2.1",
+      "related_concept_id": "C2208793489-LANCEMODIS",
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement, cmr_validation",
+      "evidence_source": "atbd",
+      "evidence_doc": "atbd",
+      "evidence_section": "ATBD 375 m §2.2 Algorithm input (Table 1 note)",
+      "evidence_quote": "The corresponding VIIRS Level 1B data quality flags, terrain-corrected geolocation and quarterly land- water mask data complement the list of input files used.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "ug",
+          "section": "User Guide v1.2 §2",
+          "quote": "The fire product is now produced using the significantly improved and much more robust Collection-2 NASA Level-1B VIIRS radiance and geolocation products.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "mapping_note": "The documents name the inputs generically (\"Collection-2 NASA Level-1B VIIRS radiance and geolocation products\"; channels I1-I5 and M13). Mapped to the NOAA-20 NRT L1B collection VJ103IMG_NRT by product naming. Inferred. CMR has VJ103IMG_NRT only as version 2.1 (substituted).",
+      "decision_procedure": "Step 1b Q1-Q2 no. Q3 yes: the terrain-corrected I-band geolocation is consumed (fire-pixel latitude, longitude, angles) without being reprocessed -> input_to (INPUT).",
+      "version_status": "substituted",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2208793489-LANCEMODIS",
+        "related_processing_level": "1B",
+        "target_processing_level": "2",
+        "level_progression": {
+          "status": "not_applicable",
+          "rule": "parent skill Step 6 checks level progression for parents and children only"
+        },
+        "related_versions_in_cmr": [
+          "2.1"
+        ],
+        "version_compatible": false
+      }
+    },
+    {
+      "related_shortname": "VJ103MOD_NRT",
+      "related_version": "2.1",
+      "related_concept_id": "C2208781576-LANCEMODIS",
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement, cmr_validation",
+      "evidence_source": "atbd",
+      "evidence_doc": "atbd",
+      "evidence_section": "ATBD 375 m §2.2 Algorithm input (Table 1 note)",
+      "evidence_quote": "The corresponding VIIRS Level 1B data quality flags, terrain-corrected geolocation and quarterly land- water mask data complement the list of input files used.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "atbd",
+          "section": "ATBD 375 m §2.3.10",
+          "quote": "Co-located M13 aggregated radiances coinciding with the fire-affected and background pixels are used in the FRP retrieval following Wooster et al. [2003]",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "mapping_note": "The documents name the inputs generically (\"Collection-2 NASA Level-1B VIIRS radiance and geolocation products\"; channels I1-I5 and M13). Mapped to the NOAA-20 NRT L1B collection VJ103MOD_NRT by product naming. Inferred. CMR has VJ103MOD_NRT only as version 2.1 (substituted).",
+      "decision_procedure": "Step 1b Q3 yes: the M-band geolocation is consumed to co-locate the M13 radiances with the 375 m fire pixels -> input_to (INPUT).",
+      "version_status": "substituted",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2208781576-LANCEMODIS",
+        "related_processing_level": "1B",
+        "target_processing_level": "2",
+        "level_progression": {
+          "status": "not_applicable",
+          "rule": "parent skill Step 6 checks level progression for parents and children only"
+        },
+        "related_versions_in_cmr": [
+          "2.1"
+        ],
+        "version_compatible": false
+      }
+    },
+    {
+      "related_shortname": "VJ114IMGTDL_NRT",
+      "related_version": "2",
+      "related_concept_id": "C3264430167-LANCEMODIS",
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement",
+      "evidence_source": "user_guide",
+      "evidence_doc": "ug",
+      "evidence_section": "VIIRS C2 375-m Active Fire User's Guide v1.2 §4.3 Near-real time fire data",
+      "evidence_quote": "users can obtain near-real time (NRT) VNP14IMG and VNP14 data generated by NASA's Land, Atmosphere Near real-time Capability for EOS (LANCE). The former is additionally distributed in GIS-friendly (e.g., ASCII, shapefile) formats.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "cmr_target",
+          "section": "CMR record C1907902788-LANCEMODIS Abstract",
+          "quote": "Complementary ASCII files containing the short list of fire pixels detected are also available through LANCE FIRMS processing systems.",
+          "verified": true
+        },
+        {
+          "doc": "faq",
+          "section": "FIRMS FAQ",
+          "quote": "VIIRS 375 m NRT active fire data are available from NOAA-20 ( VJ114IMGTDL_NRT )",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "mapping_note": "\"GIS-friendly (e.g., ASCII, shapefile) formats\" mapped to VJ114IMGTDL_NRT (named on the FIRMS pages). Inferred. Reciprocal of the VJ114IMGTDL_NRT run (PARENT VJ114IMG_NRT). Version 2 matched.",
+      "decision_procedure": "Step 1b Q1 yes: FIRMS converts the fire pixels of each VJ114IMG_NRT swath to TXT/SHP/KML/WMS records -> downstream_product (CHILD).",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C3264430167-LANCEMODIS",
+        "related_processing_level": "2",
+        "target_processing_level": "2",
+        "level_progression": {
+          "status": "valid",
+          "rule": "child level 2 >= target level 2"
+        },
+        "related_versions_in_cmr": [
+          "2"
+        ],
+        "version_compatible": true
+      }
+    },
+    {
+      "related_shortname": "VJ114IMGT_NRT",
+      "related_version": "2",
+      "related_concept_id": "C1355615368-LANCEMODIS",
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement",
+      "evidence_source": "user_guide",
+      "evidence_doc": "ug",
+      "evidence_section": "VIIRS C2 375-m Active Fire User's Guide v1.2 §4.3 Near-real time fire data",
+      "evidence_quote": "users can obtain near-real time (NRT) VNP14IMG and VNP14 data generated by NASA's Land, Atmosphere Near real-time Capability for EOS (LANCE). The former is additionally distributed in GIS-friendly (e.g., ASCII, shapefile) formats.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "cmr_VJ114IMGT_NRT",
+          "section": "CMR record VJ114IMGT_NRT 2 Abstract",
+          "quote": "VJ114IMGT_NRT are available in the TXT format and for the HDF version see: VJ114IMG_NRT",
+          "verified": true
+        },
+        {
+          "doc": "cmr_target",
+          "section": "CMR record C1907902788-LANCEMODIS Abstract",
+          "quote": "Complementary ASCII files containing the short list of fire pixels detected are also available through LANCE FIRMS processing systems.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "mapping_note": "Mapped from the generic \"ASCII\" distribution; the child's own abstract names VJ114IMG_NRT. Inferred. The collection has 0 granules in CMR (see the VJ114IMGT_NRT run). Version 2 matched.",
+      "decision_procedure": "Step 1b Q1 yes: TXT conversion of the fire pixels on the LANCE archive -> downstream_product (CHILD).",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1355615368-LANCEMODIS",
+        "related_processing_level": "2",
+        "target_processing_level": "2",
+        "level_progression": {
+          "status": "valid",
+          "rule": "child level 2 >= target level 2"
+        },
+        "related_versions_in_cmr": [
+          "2"
+        ],
+        "version_compatible": true
+      }
+    },
+    {
+      "related_shortname": "VJ114_NRT",
+      "related_version": "2",
+      "related_concept_id": "C2888590350-LANCEMODIS",
+      "association_type": "RELATED",
+      "lineage_relationship": "related_to",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement",
+      "evidence_source": "user_guide",
+      "evidence_doc": "ug",
+      "evidence_section": "VIIRS C2 375-m Active Fire User's Guide v1.2 §1 Introduction",
+      "evidence_quote": "A complementary NASA VIIRS 750-m active fire product (\"VNP14\") is produced using an adaptation of the Collection-6",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "cmr_target",
+          "section": "CMR record C1907902788-LANCEMODIS Abstract",
+          "quote": "Those channels are used as input to the baseline active fire detection product",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "mapping_note": "Generic \"VNP14\" (750 m) mapped to the NOAA-20 NRT 750 m product VJ114_NRT. Inferred. Version 2 matched.",
+      "decision_procedure": "Step 1b Q1-Q5 no: the 750 m product uses a different algorithm (MODIS C6 adaptation, M-bands); neither is made from the other and they are separate runs. Q6: documented as the complementary product -> related_to (RELATED).",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2888590350-LANCEMODIS",
+        "related_processing_level": "2",
+        "target_processing_level": "2",
+        "level_progression": {
+          "status": "not_applicable",
+          "rule": "parent skill Step 6 checks level progression for parents and children only"
+        },
+        "related_versions_in_cmr": [
+          "2"
+        ],
+        "version_compatible": true
+      }
+    },
+    {
+      "related_shortname": "VJ214IMG_NRT",
+      "related_version": "2",
+      "related_concept_id": "C2837613056-LANCEMODIS",
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement",
+      "evidence_source": "user_guide",
+      "evidence_doc": "ug",
+      "evidence_section": "VIIRS C2 375-m Active Fire User's Guide v1.2 §1 Introduction",
+      "evidence_quote": "The 375-m VIIRS active fire product is generated independently for each VIIRS sensor and is designated \"VNP14IMG\", \"VJ114IMG\", and \"VJ214IMG\" in reference to the S-NPP, NOAA-20, and NOAA-21 platforms, respectively.",
+      "quote_verified": true,
+      "supporting_quotes": [],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "mapping_note": "The User Guide names VJ214IMG; the NRT stream VJ214IMG_NRT is inferred (NRT suffix). Version 2 matched.",
+      "decision_procedure": "Step 1b Q5 yes: the same 375 m algorithm run independently on the NOAA-21 VIIRS -> equivalent_product (RELATED).",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2837613056-LANCEMODIS",
+        "related_processing_level": "2",
+        "target_processing_level": "2",
+        "level_progression": {
+          "status": "not_applicable",
+          "rule": "parent skill Step 6 checks level progression for parents and children only"
+        },
+        "related_versions_in_cmr": [
+          "2"
+        ],
+        "version_compatible": true
+      }
+    },
+    {
+      "related_shortname": "VNP14IMG_NRT",
+      "related_version": "2",
+      "related_concept_id": "C1886251885-LANCEMODIS",
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement",
+      "evidence_source": "user_guide",
+      "evidence_doc": "ug",
+      "evidence_section": "VIIRS C2 375-m Active Fire User's Guide v1.2 §1 Introduction",
+      "evidence_quote": "The 375-m VIIRS active fire product is generated independently for each VIIRS sensor and is designated \"VNP14IMG\", \"VJ114IMG\", and \"VJ214IMG\" in reference to the S-NPP, NOAA-20, and NOAA-21 platforms, respectively.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "cmr_VNP14IMG_NRT",
+          "section": "CMR record VNP14IMG_NRT 2 Abstract",
+          "quote": "375 m",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "mapping_note": "The User Guide names VNP14IMG; the NRT stream VNP14IMG_NRT is inferred (NRT suffix). Version 2 matched.",
+      "decision_procedure": "Step 1b Q5 yes: the same 375 m algorithm run independently on the Suomi NPP VIIRS -> equivalent_product (RELATED).",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1886251885-LANCEMODIS",
+        "related_processing_level": "2",
+        "target_processing_level": "2",
+        "level_progression": {
+          "status": "not_applicable",
+          "rule": "parent skill Step 6 checks level progression for parents and children only"
+        },
+        "related_versions_in_cmr": [
+          "2"
+        ],
+        "version_compatible": true
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "related": "VJ114IMG 002 (C2734197957-LPCLOUD)",
+      "lineage_relationship": "version_of",
+      "reason": "standard_counterpart",
+      "detail": "Standard (science-quality) NOAA-20 375 m product, same algorithm, non-NRT inputs. Recorded as the corrected SCIENCE ASSOCIATED counterpart (replacing the existing association to the 750 m VJ114), not as a lineage row (one relationship per EntryId).",
+      "evidence_doc": "ug",
+      "evidence_quote": "Latency-insensitive applications demanding higher consistency (e.g., scientific studies) should favor the non-NRT VNP14IMG and VNP14 data stream",
+      "quote_verified": true
+    },
+    {
+      "related": "VJ114 002 (C2545310869-LPCLOUD)",
+      "lineage_relationship": null,
+      "reason": "wrong_existing_association",
+      "detail": "Standard 750 m product; the existing SCIENCE ASSOCIATED -> VJ114 points here. Its NRT counterpart VJ114_NRT is recorded instead (related_to).",
+      "evidence_doc": "atbd750",
+      "evidence_quote": "750 m Active Fire Detection and Characterization",
+      "quote_verified": true
+    },
+    {
+      "related": "Quarterly land-water mask; static land-water mask",
+      "lineage_relationship": "input_to",
+      "reason": "not_a_cmr_collection",
+      "detail": "Ancillary input with no CMR collection (rule 1c-4).",
+      "evidence_doc": "ug",
+      "evidence_quote": "a static land-water mask",
+      "quote_verified": true
+    },
+    {
+      "related": "VJ101 / L0 and the NRT L1B calibration chain",
+      "lineage_relationship": null,
+      "reason": "indirect_input_of_parent",
+      "detail": "Upstream of the L1B parents (rule 1c-1)."
+    },
+    {
+      "related": "VNP14IMGTDL_NRT, VJ214IMGTDL_NRT",
+      "lineage_relationship": "downstream_product",
+      "reason": "child_of_equivalent",
+      "detail": "Vector products of the S-NPP / NOAA-21 swath products, not of VJ114IMG_NRT."
+    },
+    {
+      "related": "MCD14DL 6.1NRT, MOD14 (MODIS active fire)",
+      "lineage_relationship": null,
+      "reason": "heritage_only",
+      "detail": "MODIS algorithm heritage; different instrument; no data flow.",
+      "evidence_doc": "ug",
+      "evidence_quote": "Building on the MODIS detection algorithm",
+      "quote_verified": true
+    },
+    {
+      "related": "VJ114IMGML (science-quality monthly fire locations)",
+      "lineage_relationship": "downstream_product",
+      "reason": "not_in_cmr",
+      "detail": "Made from the standard VJ114IMG, not from the NRT stream; no CMR collection.",
+      "evidence_doc": "faq",
+      "evidence_quote": "VJ114IMGML for NOAA-20",
+      "quote_verified": true
+    }
+  ],
+  "csv_validation": {
+    "valid": true,
+    "errors": []
+  }
+}

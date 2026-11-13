@@ -1,0 +1,9 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+VJ146A1_NRT,2,PARENT,VJ102DNB_NRT,2.1,MEDIUM,aggregated_from
+VJ146A1_NRT,2,INPUT,VJ102MOD_NRT,2.1,MEDIUM,component_of
+VJ146A1_NRT,2,INPUT,VJ103DNB_NRT,2.1,MEDIUM,input_to
+VJ146A1_NRT,2,INPUT,VJ103MOD_NRT,2.1,MEDIUM,input_to
+VJ146A1_NRT,2,CHILD,VJ146A2_NRT,2,MEDIUM,downstream_product
+VJ146A1_NRT,2,RELATED,VJ146A1G_NRT,2,MEDIUM,parallel_product
+VJ146A1_NRT,2,RELATED,VJ246A1_NRT,2,MEDIUM,equivalent_product
+VJ146A1_NRT,2,RELATED,VNP46A1_NRT,2,MEDIUM,equivalent_product

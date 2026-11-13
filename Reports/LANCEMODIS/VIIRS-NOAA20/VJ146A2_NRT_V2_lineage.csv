@@ -1,0 +1,4 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+VJ146A2_NRT,2,PARENT,VJ146A1_NRT,2,MEDIUM,derived_from
+VJ146A2_NRT,2,RELATED,VJ246A2_NRT,2,MEDIUM,equivalent_product
+VJ146A2_NRT,2,RELATED,VNP46A2_NRT,2,MEDIUM,equivalent_product

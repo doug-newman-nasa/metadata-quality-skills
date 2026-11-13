@@ -1,0 +1,294 @@
+{
+  "generated_at": "2026-11-12T21:22:01+00:00",
+  "target": {
+    "shortname": "VJ146A2_NRT",
+    "version": "2",
+    "concept_id": "C4193331158-LANCEMODIS",
+    "processing_level": "3",
+    "provider": "LANCEMODIS",
+    "collection_data_type": "NEAR_REAL_TIME",
+    "granules_in_cmr": {
+      "C2781438623-LANCEMODIS (VJ146A1_NRT)": 4032,
+      "C4193331158-LANCEMODIS (VJ146A2_NRT)": 3677,
+      "C2781431577-LANCEMODIS (VJ146A1G_NRT)": 11883,
+      "checked": "2026-11-12"
+    }
+  },
+  "atbd_search_depth": 1,
+  "version_choice_note": "Only one CMR record has ShortName VJ146A2_NRT (version 2). All rows matched at version 2.",
+  "cmr_state_note": "Records fetched live from CMR on 2026-11-12; see process/*.json. Confidence depends on CMR state.",
+  "confidence_note": "No HIGH rows: the User Guide names inputs with S-NPP standard ShortNames (VNP02DNB, VNP46A1, ...); NOAA-20 NRT ShortNames are inferred, and sibling / equivalent links come from CMR abstracts.",
+  "consistency_note": "Consistent with the VJ146A1G_NRT run (A1G <-> A1 parallel_product) and, for A1/A2, reciprocal of each other (A1 CHILD A2; A2 PARENT A1).",
+  "level_ranking_note": "Levels compared with rank 1A < 1B < 2 < 2G < 3.",
+  "source_documents": [
+    {
+      "id": "atbd_cmr_target",
+      "subject": "VJ146A2_NRT 2",
+      "kind": "atbd",
+      "subtype": "ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
+      "title": null,
+      "url": null,
+      "fetched": false,
+      "error": "No ATBD in RelatedUrls. The record links the Black Marble User Guide (Collection 2.0), which \"describes the theoretical basis for the algorithms\"; it was used as the ATBD-equivalent (decision tree: User Guide)."
+    },
+    {
+      "id": "ug",
+      "subject": "VNP46 / VJ146 Black Marble Collection 2",
+      "kind": "user_guide",
+      "subtype": "USER'S GUIDE",
+      "title": "Black Marble User Guide (Collection 2.0), October 2024 (PI Zhuosen Wang)",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/Document%20Archive/Science%20Data%20Product%20Documentation/Black-Marble_v2.0_UG_2024.pdf",
+      "fetched": true,
+      "note": "Linked from the target record. §4 Tables 1-2 give the A1 and A2 input files (S-NPP ShortNames); §5.2 describes VNP46A2/VJ146A2. Does not cover the NOAA-21 (VJ246) products."
+    },
+    {
+      "id": "cmr_target",
+      "subject": "VJ146A2_NRT 2",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORD",
+      "title": "CMR UMM-C record C4193331158-LANCEMODIS (revision 8, 2026-06-11T12:27:50.715Z)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C4193331158-LANCEMODIS.umm_json",
+      "fetched": true
+    },
+    {
+      "id": "cmr_related",
+      "subject": "candidate related collections",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORDS",
+      "title": "29 UMM-C records for 26 ShortNames (process/related_umm.json)",
+      "url": "https://cmr.earthdata.nasa.gov/search/collections.umm_json",
+      "fetched": true
+    },
+    {
+      "id": "validation_page",
+      "subject": "Black Marble project",
+      "kind": "other_doc",
+      "subtype": "VALIDATION CAMPAIGN DOCUMENTATION",
+      "title": "Earthdata Black Marble project page",
+      "url": "https://www.earthdata.nasa.gov/data/projects/black-marble?tempAccess=PQ81CJc0-wU8_bo0eHoDDsTUtmUPtqal-lCTOvYiCmU",
+      "fetched": false,
+      "note": "Linked with a \"?tempAccess=...\" token in the URL (looks like a preview link). Not fetched."
+    }
+  ],
+  "rows": [
+    {
+      "related_shortname": "VJ146A1_NRT",
+      "related_version": "2",
+      "related_concept_id": "C2781438623-LANCEMODIS",
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement",
+      "evidence_source": "user_guide",
+      "evidence_doc": "ug",
+      "evidence_section": "Black Marble User Guide C2.0 §4 Product generation, Table 2 (Black Marble VNP46A2 product input files)",
+      "evidence_quote": "VNP46A1 VIIRS/NPP TOA Daily Gridded Day Night Band Linear Lat Lon Grid Night",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "ug",
+          "section": "User Guide §4 (nighttime branch)",
+          "quote": "We begin with the at-sensor TOA nighttime radiance (VNP46A1/VJ146A1)",
+          "verified": true
+        },
+        {
+          "doc": "cmr_target",
+          "section": "CMR record C4193331158-LANCEMODIS Abstract",
+          "quote": "The second of the two Near Real Time (NRT)VIIRS DNB-based datasets is a daily moonlight- and atmosphere-corrected Nighttime Lights (NTL) product",
+          "verified": true
+        },
+        {
+          "doc": "cmr_VJ146A1_NRT",
+          "section": "CMR record VJ146A1_NRT 2 Abstract",
+          "quote": "The first of two Visible Infrared Imager Radiometer Suite (VIIRS) Day Night Band (DNB) based Near Real Time (NRT) datasets",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "mapping_note": "Table 2 names VNP46A1 (S-NPP standard); the NOAA-20 NRT counterpart is VJ146A1_NRT, which the two abstracts present as the \"first\" and \"second\" of the NRT DNB datasets. Inferred. Version 2 matched (C2781438623-LANCEMODIS).",
+      "decision_procedure": "Step 1b Q1 no. Q2 yes: T is made directly from X's data: the A1 at-sensor TOA DNB radiance is corrected for moonlight (lunar BRDF), atmosphere, snow, stray light and gap-filled -> derived_from (PARENT). PARENT vs INPUT: reprocessing A1 changes every NTL value.",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2781438623-LANCEMODIS",
+        "related_processing_level": "3",
+        "target_processing_level": "3",
+        "level_progression": {
+          "status": "valid",
+          "rule": "parent level 3 <= target level 3"
+        },
+        "related_versions_in_cmr": [
+          "2"
+        ],
+        "version_compatible": true
+      }
+    },
+    {
+      "related_shortname": "VJ246A2_NRT",
+      "related_version": "2",
+      "related_concept_id": "C4249684820-LANCEMODIS",
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source",
+      "evidence_source": "other_doc",
+      "evidence_doc": "cmr_VJ246A2_NRT",
+      "evidence_section": "CMR record VJ246A2_NRT 2 Abstract",
+      "evidence_quote": "moonlight",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "ug",
+          "section": "User Guide §1 Introduction",
+          "quote": "The VNP46/VJ146 product suite includes the daily at-sensor top of atmosphere (TOA) nighttime lights (NTL) product (VNP46A1/VJ146A1), daily moonlight-adjusted nighttime lights product (VNP46A2/VJ146A2)",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "mapping_note": "Platform naming (VNP/VJ1/VJ2); the User Guide documents the VNP46/VJ146 pair but not NOAA-21. Version 2 matched (C4249684820-LANCEMODIS).",
+      "decision_procedure": "Step 1b Q5 yes: the same Black Marble NRT product from the NOAA-21 VIIRS -> equivalent_product (RELATED).",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C4249684820-LANCEMODIS",
+        "related_processing_level": "3",
+        "target_processing_level": "3",
+        "level_progression": {
+          "status": "not_applicable",
+          "rule": "parent skill Step 6 checks level progression for parents and children only"
+        },
+        "related_versions_in_cmr": [
+          "2"
+        ],
+        "version_compatible": true
+      }
+    },
+    {
+      "related_shortname": "VNP46A2_NRT",
+      "related_version": "2",
+      "related_concept_id": "C3363944097-LANCEMODIS",
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source",
+      "evidence_source": "other_doc",
+      "evidence_doc": "cmr_VNP46A2_NRT",
+      "evidence_section": "CMR record VNP46A2_NRT 2 Abstract",
+      "evidence_quote": "moonlight",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "ug",
+          "section": "User Guide §1 Introduction",
+          "quote": "The VNP46/VJ146 product suite includes the daily at-sensor top of atmosphere (TOA) nighttime lights (NTL) product (VNP46A1/VJ146A1), daily moonlight-adjusted nighttime lights product (VNP46A2/VJ146A2)",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "mapping_note": "Platform naming (VNP/VJ1/VJ2); the User Guide documents the VNP46/VJ146 pair. Version 2 matched (C3363944097-LANCEMODIS).",
+      "decision_procedure": "Step 1b Q5 yes: the same Black Marble NRT product from the Suomi NPP VIIRS -> equivalent_product (RELATED).",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C3363944097-LANCEMODIS",
+        "related_processing_level": "3",
+        "target_processing_level": "3",
+        "level_progression": {
+          "status": "not_applicable",
+          "rule": "parent skill Step 6 checks level progression for parents and children only"
+        },
+        "related_versions_in_cmr": [
+          "2"
+        ],
+        "version_compatible": true
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "related": "VJ146A2 2 (C3370789118-LAADS)",
+      "lineage_relationship": "version_of",
+      "reason": "standard_counterpart",
+      "detail": "Standard (LAADS) NOAA-20 moonlight-adjusted NTL product. Recorded as the corrected SCIENCE ASSOCIATED counterpart (fixing the existing entry-ID-style EntryId), not as a lineage row.",
+      "evidence_doc": "ug",
+      "evidence_quote": "The VNP46/VJ146 product suite includes the daily at-sensor top of atmosphere (TOA) nighttime lights (NTL) product (VNP46A1/VJ146A1), daily moonlight-adjusted nighttime lights product (VNP46A2/VJ146A2)",
+      "quote_verified": true
+    },
+    {
+      "related": "VJ143LGDNBA1 / VNP43LGDNBA1 (DNB BRDF/Albedo model parameters, LLL grid)",
+      "lineage_relationship": "input_to",
+      "reason": "not_in_cmr",
+      "detail": "A2 input in Table 2 (Ross-Li lunar BRDF and albedo); no S-NPP or NOAA-20 collection in CMR.",
+      "evidence_doc": "ug",
+      "evidence_quote": "VNP43LGDNBA1 VIIRS/NPP DNB BRDF/Albedo Model Parameters Daily L3 Global LLL Grid",
+      "quote_verified": true
+    },
+    {
+      "related": "VJ1LG09GA / VNPLG09GA (DNB surface reflectance, LLL grid)",
+      "lineage_relationship": "input_to",
+      "reason": "not_in_cmr",
+      "detail": "A2 input in Table 2; no collection in CMR (VJ109GA_NRT is the standard sinusoidal-grid surface reflectance, a different product).",
+      "evidence_doc": "ug",
+      "evidence_quote": "VNPLG09GA VIIRS/NPP Surface Reflectance Daily L2G Global Linear Lat Lon Grid",
+      "quote_verified": true
+    },
+    {
+      "related": "VJ104LGA / VNP04LGA (aerosol optical thickness, LLL grid)",
+      "lineage_relationship": "input_to",
+      "reason": "not_in_cmr",
+      "detail": "A2 input in Table 2; no collection in CMR (AERDT_L2_VIIRS_NOAA20_NRT is a different swath aerosol product).",
+      "evidence_doc": "ug",
+      "evidence_quote": "VNP04LGA VIIRS/NPP Aerosols Optical Thickness Daily L2G Global Linear Lat Lon Grid",
+      "quote_verified": true
+    },
+    {
+      "related": "VJ110_NRT 2 (C2781269342-LANCEMODIS) (VIIRS snow cover)",
+      "lineage_relationship": "input_to",
+      "reason": "generic_reference",
+      "detail": "The day branch estimates snow flags \"using the VIIRS NDSI algorithm (VNP10)\", but VNP10 is not in the A2 input table; not recorded (precision over recall).",
+      "evidence_doc": "ug",
+      "evidence_quote": "Normalized Difference Snow Index (NDSI) algorithm (VNP10)",
+      "quote_verified": true
+    },
+    {
+      "related": "NCEP atmospheric profiles; VIIRS aerosol model / daytime AOD",
+      "lineage_relationship": "input_to",
+      "reason": "not_a_cmr_collection",
+      "detail": "Ancillary inputs of the atmospheric correction; no specific CMR collection named.",
+      "evidence_doc": "ug",
+      "evidence_quote": "atmospheric profiles obtained from the National Centers for Environmental Prediction (NCEP) model",
+      "quote_verified": true
+    },
+    {
+      "related": "VJ102DNB_NRT, VJ103DNB_NRT, VJ102MOD_NRT, VJ103MOD_NRT",
+      "lineage_relationship": null,
+      "reason": "indirect_input_of_parent",
+      "detail": "L1B inputs of the parent VJ146A1_NRT (rule 1c-1). Depth 2."
+    },
+    {
+      "related": "VJ146A1G_NRT",
+      "lineage_relationship": null,
+      "reason": "sibling_of_parent",
+      "detail": "Hourly variant of the parent; A2 uses the daily A1 (Table 2)."
+    },
+    {
+      "related": "VJ146A3 / VJ146A4 (monthly / yearly, LAADS)",
+      "lineage_relationship": "downstream_product",
+      "reason": "version_mismatch",
+      "detail": "Composites of the standard A1/A2; no NRT A3/A4 in CMR."
+    },
+    {
+      "related": "VJ146A2_2 (existing association EntryId)",
+      "lineage_relationship": null,
+      "reason": "wrong_field",
+      "detail": "CMR entry ID (ShortName_Version) of VJ146A2 version 2 (resolves as an entry ID, not as a ShortName), with Version \"2\" also given; the ShortName is VJ146A2."
+    }
+  ],
+  "csv_validation": {
+    "valid": true,
+    "errors": []
+  }
+}

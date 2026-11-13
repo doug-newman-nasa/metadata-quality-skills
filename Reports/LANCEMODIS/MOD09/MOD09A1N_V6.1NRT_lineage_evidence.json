@@ -1,0 +1,331 @@
+{
+  "generated_at": "2026-11-12T13:32:01+00:00",
+  "target": {
+    "shortname": "MOD09A1N",
+    "version": "6.1NRT",
+    "concept_id": "C2007661826-LANCEMODIS",
+    "processing_level": "3",
+    "provider": "LANCEMODIS",
+    "collection_data_type": "NEAR_REAL_TIME"
+  },
+  "atbd_search_depth": 1,
+  "version_choice_note": "Only one CMR record has ShortName MOD09A1N: 6.1NRT (C2007661826-LANCEMODIS). Related collections were matched at 6.1NRT where such a record exists (MOD09GA, MOD09Q1N); MOD09A1 has only the standard 061 version (substituted).",
+  "cmr_state_note": "Records fetched live from CMR on 2026-11-12; see process/*.json. Confidence depends on CMR state.",
+  "level_ranking_note": "MODIS levels are strings; level progression compared with rank 1A < 1B < 2 < 2G < 3.",
+  "source_documents": [
+    {
+      "id": "atbd_cmr_target",
+      "subject": "MOD09A1N 6.1NRT",
+      "kind": "atbd",
+      "subtype": "ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
+      "title": null,
+      "url": null,
+      "fetched": false,
+      "error": "The NRT record (C2007661826-LANCEMODIS) has no ATBD or User Guide in RelatedUrls (only the LANCE NRT home page, two GET DATA links and the LANCE MODAPS data-flow diagram). Per the parent skill decision tree, the documents linked from the standard counterpart MOD09A1 061 (C2343111356-LPCLOUD) were used: the same MOD_PR09A.exe compositing algorithm, and the target abstract repeats the MOD09A1 product description of the User Guide almost word for word."
+    },
+    {
+      "id": "atbd",
+      "subject": "MOD09 family",
+      "kind": "atbd",
+      "subtype": "ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
+      "title": "Atmospheric Correction Algorithm: Spectral Reflectances (MOD09), ATBD Version 4.0, April 1999 (E. F. Vermote, A. Vermeulen)",
+      "url": "https://lpdaac.usgs.gov/documents/305/MOD09_ATBD.pdf",
+      "fetched": true,
+      "note": "Linked from MOD09A1 061 (and MOD09GA 061). Byte-identical (sha256 0df984f2...) to modis.gsfc.nasa.gov atbd_mod08.pdf, i.e. the correct MOD09 ATBD (the LAADS MOD09 6.1 record links the MOD43 ATBD instead; see the MOD09 run). 1999 pre-launch document: describes the L3 8-day composite only briefly."
+    },
+    {
+      "id": "ug",
+      "subject": "MOD09 family, Collection 6.1",
+      "kind": "user_guide",
+      "subtype": "USER'S GUIDE",
+      "title": "MODIS Surface Reflectance User's Guide, Collection 6.1 (MOD09_User_Guide_V61.pdf)",
+      "url": "https://lpdaac.usgs.gov/documents/925/MOD09_User_Guide_V61.pdf",
+      "fetched": true,
+      "note": "Linked from MOD09A1 061; identical (sha256 33070e6c...) to the landweb copy. §2.4 and §3.1.5 describe MOD_PR09A.exe and MOD09A1."
+    },
+    {
+      "id": "lance",
+      "subject": "LANCE MODAPS",
+      "kind": "other_doc",
+      "subtype": "GENERAL DOCUMENTATION",
+      "title": "LANCE MODAPS Operational Data Flow Diagram (2026-04-16)",
+      "url": "https://earthdata.nasa.gov/s3fs-public/2026-04/LANCE_MODAPS_Operational_Data_Flow_Diagram_4.16.26.pdf?VersionId=auDDcXbLWd7lDM.IyBmsuVfguIP64vnr",
+      "fetched": true,
+      "note": "Linked from the NRT record. Covers L0 -> L1A/geolocation only; no MOD09A1N lineage statements."
+    },
+    {
+      "id": "home",
+      "subject": "LANCE MODIS NRT",
+      "kind": "other_doc",
+      "subtype": "HOME PAGE",
+      "title": "Earthdata: MODIS Near Real-Time data (product table)",
+      "url": "https://www.earthdata.nasa.gov/data/instruments/modis/near-real-time-data",
+      "fetched": true,
+      "note": "Product table only (\"L3 Daily Rolling 8-Day Surface Reflectance - 500m\"); no lineage statements."
+    },
+    {
+      "id": "cmr_target",
+      "subject": "MOD09A1N 6.1NRT",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORD",
+      "title": "CMR UMM-C record C2007661826-LANCEMODIS (revision 5, 2026-05-12T16:51:36.017Z)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2007661826-LANCEMODIS.umm_json",
+      "fetched": true
+    },
+    {
+      "id": "cmr_related",
+      "subject": "candidate related collections",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORDS",
+      "title": "17 UMM-C records for 13 ShortNames (process/related_umm.json)",
+      "url": "https://cmr.earthdata.nasa.gov/search/collections.umm_json",
+      "fetched": true
+    }
+  ],
+  "rows": [
+    {
+      "related_shortname": "MOD09GA",
+      "related_version": "6.1NRT",
+      "related_concept_id": "C2007661943-LANCEMODIS",
+      "association_type": "PARENT",
+      "lineage_relationship": "aggregated_from",
+      "confidence": "HIGH",
+      "confidence_rule": "HIGH rule: source, statement and CMR validation all strong",
+      "evidence_source": "user_guide",
+      "evidence_doc": "ug",
+      "evidence_section": "User Guide C6.1 Table 1: Inputs and outputs of MODIS surface reflectance programs (MOD_PR09A.exe row, collection 5 and up)",
+      "evidence_quote": "MOD_PR09A.exe MOD09GA 2GL 1,H MOD09A1 none 3 H 5 and up",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "ug",
+          "section": "User Guide §3.1.5 MOD09A1",
+          "quote": "It is a level-3 composite of 500 m resolution MOD09GA.",
+          "verified": true
+        },
+        {
+          "doc": "ug",
+          "section": "User Guide §2.4 Products of MOD_PR09A.exe -- level 3",
+          "quote": "As of collection 5, it is run on all MOD09GA and MOD09GQ files for that tile and 8-day period.",
+          "verified": true
+        },
+        {
+          "doc": "ug",
+          "section": "User Guide §2.4",
+          "quote": "The MOD09A1 outputs also contain a 500 m version of the 1 km State QA composited from all 8-day inputs.",
+          "verified": true
+        },
+        {
+          "doc": "atbd",
+          "section": "ATBD §3.2.4 Output product (L2G and L3 products)",
+          "quote": "The level 3 is a 8-day composite. The compositing technique suggested is based on the minimum-blue criterion that selects the clearest conditions over the period",
+          "verified": true
+        },
+        {
+          "doc": "cmr_target",
+          "section": "CMR record C2007661826-LANCEMODIS Abstract",
+          "quote": "Each MOD09A1N pixel contains the best possible L2G observation during an 8-day period",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "mapping_note": "MOD09GA is named exactly in the product table and §3.1.5. The documents describe the standard MOD09A1; MOD09A1N is its NRT rolling-8-day counterpart (target abstract repeats the §3.1.5 wording). The NRT parent MOD09GA 6.1NRT (C2007661943-LANCEMODIS) was used to match the target version.",
+      "decision_procedure": "Step 1b Q1 no. Q2 yes: T is made directly from X's data by temporal aggregation: MOD_PR09A.exe selects, per pixel and tile, the best MOD09GA observation in the 8-day window (compositing) -> aggregated_from (PARENT). PARENT vs INPUT: reprocessing MOD09GA changes every MOD09A1N reflectance value.",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2007661943-LANCEMODIS",
+        "related_processing_level": "2G",
+        "target_processing_level": "3",
+        "level_progression": {
+          "status": "valid",
+          "rule": "parent level 2G <= target level 3"
+        },
+        "related_versions_in_cmr": [
+          "061",
+          "6.1NRT"
+        ],
+        "version_compatible": true
+      }
+    },
+    {
+      "related_shortname": "MOD09A1",
+      "related_version": "061",
+      "related_concept_id": "C2343111356-LPCLOUD",
+      "association_type": "RELATED",
+      "lineage_relationship": "related_to",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = cmr_validation",
+      "evidence_source": "user_guide",
+      "evidence_doc": "ug",
+      "evidence_section": "User Guide §3.1.5 MOD09A1 (product description)",
+      "evidence_quote": "Each product pixel contains the best possible L2G observation during an 8-day period as selected on the basis of high observation coverage, low view angle, absence of clouds or cloud shadow, and aerosol loading.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "cmr_target",
+          "section": "CMR record C2007661826-LANCEMODIS Abstract",
+          "quote": "Each MOD09A1N pixel contains the best possible L2G observation during an 8-day period",
+          "verified": true
+        },
+        {
+          "doc": "cmr_MOD13A4N",
+          "section": "CMR record MOD13A4N 6.1NRT Abstract (note on NRT-only products)",
+          "quote": "access the science quality MxD09[A1/Q1] data and create the NDVI product of their own",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "mapping_note": "MOD09A1 is named; the relation to MOD09A1N rests on the near-verbatim reuse of its product description in the target abstract. No 6.1NRT version of MOD09A1 exists; the standard 061 (C2343111356-LPCLOUD) is used.",
+      "decision_procedure": "Step 1b Q1-Q3 no: neither is made from the other (both composite MOD09GA, standard vs NRT forward processing). Q4 no (different runs). Q5 no (same platform). Q6: the standard 8-day composite whose documentation and description T reuses -> related_to (RELATED). version_of was not used: the documents do not describe one as replacing or superseding the other.",
+      "version_status": "substituted",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2343111356-LPCLOUD",
+        "related_processing_level": "3",
+        "target_processing_level": "3",
+        "level_progression": {
+          "status": "not_applicable",
+          "rule": "parent skill Step 6 checks level progression for parents and children only"
+        },
+        "related_versions_in_cmr": [
+          "061"
+        ],
+        "version_compatible": false
+      }
+    },
+    {
+      "related_shortname": "MOD09Q1N",
+      "related_version": "6.1NRT",
+      "related_concept_id": "C2007659695-LANCEMODIS",
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement",
+      "evidence_source": "user_guide",
+      "evidence_doc": "ug",
+      "evidence_section": "User Guide §2.4 Products of MOD_PR09A.exe -- level 3",
+      "evidence_quote": "The observation with the highest score and the lowest view angle is selected for the MOD09A1 and MOD09Q1 outputs.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "ug",
+          "section": "User Guide §2.1",
+          "quote": "level 3, 8-day composited products (MOD09A1 and MOD09Q1, generated by PGE21's MOD_PR09A.exe program)",
+          "verified": true
+        },
+        {
+          "doc": "ug",
+          "section": "User Guide C6.1 Table 1: Inputs and outputs of MODIS surface reflectance programs (MOD_PR09A.exe rows)",
+          "quote": "MOD09GQ 2GL Q MOD09Q1",
+          "verified": true
+        },
+        {
+          "doc": "cmr_MOD09Q1N",
+          "section": "CMR record MOD09Q1N 6.1NRT Abstract",
+          "quote": "Each MOD09Q1N pixel contains the best possible L2G observation during an 8-day period",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "mapping_note": "The User Guide names the standard pair \"MOD09A1 and MOD09Q1\"; MOD09Q1N is the NRT counterpart of MOD09Q1 (LANCE \"N\" suffix naming; abstracts identical in structure). Inferred. Version 6.1NRT matched.",
+      "decision_procedure": "Step 1b Q1-Q3 no: neither product is made from the other (MOD09Q1N composites MOD09GQ, T composites MOD09GA). Q4 yes: both are outputs of the same MOD_PR09A.exe run, which selects the same best observation for both -> parallel_product (RELATED).",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2007659695-LANCEMODIS",
+        "related_processing_level": "3",
+        "target_processing_level": "3",
+        "level_progression": {
+          "status": "not_applicable",
+          "rule": "parent skill Step 6 checks level progression for parents and children only"
+        },
+        "related_versions_in_cmr": [
+          "6.1NRT"
+        ],
+        "version_compatible": true
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "related": "MOD09 6.1NRT (C2007657580-LANCEMODIS)",
+      "lineage_relationship": "derived_from",
+      "reason": "indirect_input_of_parent",
+      "detail": "Level 2 swath surface reflectance is the source of MOD09GA, not of MOD09A1N (rule 1c-1). Grandparent at depth 2.",
+      "evidence_doc": "atbd",
+      "evidence_quote": "A level 2G (daily) and a level 3 land (8-day) surface reflectance will be based upon the Level 2 data.",
+      "quote_verified": true
+    },
+    {
+      "related": "MOD09GQ 6.1NRT (C2007662107-LANCEMODIS)",
+      "lineage_relationship": "input_to",
+      "reason": "input_of_sibling",
+      "detail": "MOD_PR09A.exe reads MOD09GA and MOD09GQ in the same run, but Table 1 maps MOD09GQ (250 m) to MOD09Q1 only; the 500 m MOD09A1 output is made from MOD09GA. Not an input of T (precision over recall).",
+      "evidence_doc": "ug",
+      "evidence_quote": "MOD09GQ 2GL Q MOD09Q1",
+      "quote_verified": true
+    },
+    {
+      "related": "MOD09GST 6.1NRT (C2007659778-LANCEMODIS), MOD09GHK, MOD09GQK",
+      "lineage_relationship": "input_to",
+      "reason": "superseded_document_evidence",
+      "detail": "Inputs of MOD_PR09A.exe only up to Collection 4. From Collection 5 the 1 km State QA comes from MOD09GA. MOD09GHK/GQK also have no CMR record (rule 1c-4).",
+      "evidence_doc": "ug",
+      "evidence_quote": "Up to and including collection 4, it was run on all MOD09GHK, -GQK and -GST files for that tile and 8-day period.",
+      "quote_verified": true
+    },
+    {
+      "related": "MYD09A1N (Aqua NRT counterpart)",
+      "lineage_relationship": "equivalent_product",
+      "reason": "not_in_cmr",
+      "detail": "No MYD09A1N collection exists in CMR (all providers searched; LANCEMODIS has MYD09GA/GQ but no MYD 8-day composite). Rule 1c-4. Note: the target's own DIRECT DOWNLOAD link description names \"MYD09A1N\" by mistake.",
+      "evidence_doc": "cmr_target_urls",
+      "evidence_quote": "Direct access to the download site and directory hosting the MYD09A1N 6.1NRT data set.",
+      "quote_verified": true
+    },
+    {
+      "related": "MYD09A1 061 (C2343113743-LPCLOUD)",
+      "lineage_relationship": "equivalent_product",
+      "reason": "equivalent_of_related",
+      "detail": "Aqua equivalent of the standard MOD09A1, not of the NRT rolling product (no NRT version). Recorded on MOD09A1 instead; one hop away from T.",
+      "evidence_doc": "ug",
+      "evidence_quote": "All programs discussed in this document process either Terra- or Aqua-derived data.",
+      "quote_verified": true
+    },
+    {
+      "related": "MOD13A4N, MOD13Q4N 6.1NRT (C2007657679-LANCEMODIS, C2007658439-LANCEMODIS)",
+      "lineage_relationship": "downstream_product",
+      "reason": "insufficient_evidence",
+      "detail": "Likely CHILD candidates (NRT rolling-8-day vegetation indices at the same 500 m / 250 m grids), but no document says they are made from MOD09A1N/MOD09Q1N; their abstracts only point users to \"MxD09[A1/Q1]\" as an alternative. Omitted (rules 1c-2, 1c-6). Curator: confirm with LANCE and add as CHILD if correct.",
+      "evidence_doc": "cmr_MOD13A4N",
+      "evidence_quote": "access the science quality MxD09[A1/Q1] data and create the NDVI product of their own",
+      "quote_verified": true
+    },
+    {
+      "related": "MCD43A1N / MCD43A4N 6.1NRT",
+      "lineage_relationship": null,
+      "reason": "no_document_evidence",
+      "detail": "NRT BRDF/NBAR products made from 16 days of Terra+Aqua data; no document links them to MOD09A1N."
+    },
+    {
+      "related": "MOD09Q1 061 (LPCLOUD)",
+      "lineage_relationship": "parallel_product",
+      "reason": "sibling_of_related",
+      "detail": "Standard sibling of MOD09A1; its NRT counterpart MOD09Q1N is recorded instead."
+    },
+    {
+      "related": "MOD021KM / MOD02HKM / MOD02QKM, MOD03, MOD35_L2",
+      "lineage_relationship": null,
+      "reason": "indirect_input_of_parent",
+      "detail": "Inputs of MOD09 (depth 3); not inputs of MOD09A1N (rule 1c-1)."
+    }
+  ],
+  "csv_validation": {
+    "valid": true,
+    "errors": []
+  }
+}

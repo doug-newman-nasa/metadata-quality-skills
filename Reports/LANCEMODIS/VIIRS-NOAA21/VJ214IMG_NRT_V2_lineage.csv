@@ -1,0 +1,9 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+VJ214IMG_NRT,2,PARENT,VJ202IMG_NRT,2.1,MEDIUM,derived_from
+VJ214IMG_NRT,2,PARENT,VJ202MOD_NRT,2.1,MEDIUM,derived_from
+VJ214IMG_NRT,2,INPUT,VJ203IMG_NRT,2.1,MEDIUM,input_to
+VJ214IMG_NRT,2,INPUT,VJ203MOD_NRT,2.1,MEDIUM,input_to
+VJ214IMG_NRT,2,CHILD,VJ214IMGTDL_NRT,2,MEDIUM,downstream_product
+VJ214IMG_NRT,2,RELATED,VJ114IMG_NRT,2,MEDIUM,equivalent_product
+VJ214IMG_NRT,2,RELATED,VJ214_NRT,2,MEDIUM,related_to
+VJ214IMG_NRT,2,RELATED,VNP14IMG_NRT,2,MEDIUM,equivalent_product

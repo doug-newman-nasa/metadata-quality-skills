@@ -1,0 +1,12 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+MOD09,6.1NRT,PARENT,MOD021KM,6.1NRT,HIGH,derived_from
+MOD09,6.1NRT,PARENT,MOD02HKM,6.1NRT,HIGH,derived_from
+MOD09,6.1NRT,PARENT,MOD02QKM,6.1NRT,HIGH,derived_from
+MOD09,6.1NRT,INPUT,MOD03,6.1NRT,HIGH,input_to
+MOD09,6.1NRT,INPUT,MOD35_L2,6.1NRT,HIGH,input_to
+MOD09,6.1NRT,CHILD,MOD09GA,6.1NRT,MEDIUM,downstream_product
+MOD09,6.1NRT,CHILD,MOD09GQ,6.1NRT,MEDIUM,downstream_product
+MOD09,6.1NRT,CHILD,MOD09GST,6.1NRT,HIGH,downstream_product
+MOD09,6.1NRT,RELATED,MOD09CMA,6.1NRT,HIGH,related_to
+MOD09,6.1NRT,RELATED,MOD09CMG,6.1NRT,HIGH,related_to
+MOD09,6.1NRT,RELATED,MYD09,6.1NRT,MEDIUM,equivalent_product

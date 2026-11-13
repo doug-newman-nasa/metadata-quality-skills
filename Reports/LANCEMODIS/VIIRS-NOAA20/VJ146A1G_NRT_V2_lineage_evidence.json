@@ -1,0 +1,411 @@
+{
+  "generated_at": "2026-11-12T20:39:31+00:00",
+  "target": {
+    "shortname": "VJ146A1G_NRT",
+    "version": "2",
+    "concept_id": "C2781431577-LANCEMODIS",
+    "processing_level": "3",
+    "provider": "LANCEMODIS",
+    "collection_data_type": "NEAR_REAL_TIME",
+    "granules_in_cmr": {
+      "C2781431577-LANCEMODIS (VJ146A1G_NRT)": 11883,
+      "checked": "2026-11-12"
+    }
+  },
+  "atbd_search_depth": 1,
+  "version_choice_note": "Only one CMR record has ShortName VJ146A1G_NRT (version 2). The NRT L1B inputs exist only as version 2.1 (substituted).",
+  "cmr_state_note": "Records fetched live from CMR on 2026-11-12; see process/*.json. Confidence depends on CMR state.",
+  "confidence_note": "No HIGH rows: the User Guide names the S-NPP inputs (VNP02DNB, ...) and does not describe the hourly A1G product; NOAA-20 / NRT ShortNames are inferred, and the A1G-specific links come from CMR abstracts.",
+  "level_ranking_note": "Levels compared with rank 1A < 1B < 2 < 2G < 3.",
+  "source_documents": [
+    {
+      "id": "atbd_cmr_target",
+      "subject": "VJ146A1G_NRT 2",
+      "kind": "atbd",
+      "subtype": "ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
+      "title": null,
+      "url": null,
+      "fetched": false,
+      "error": "No ATBD in RelatedUrls. The record links the Black Marble User Guide (Collection 2.0), which \"describes the theoretical basis for the algorithms\"; it was used as the ATBD-equivalent (decision tree: User Guide)."
+    },
+    {
+      "id": "ug",
+      "subject": "VNP46 / VJ146 Black Marble Collection 2",
+      "kind": "user_guide",
+      "subtype": "USER'S GUIDE",
+      "title": "Black Marble User Guide (Collection 2.0), October 2024 (PI Zhuosen Wang)",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/Document%20Archive/Science%20Data%20Product%20Documentation/Black-Marble_v2.0_UG_2024.pdf",
+      "fetched": true,
+      "note": "Linked from the target record. Describes VNP46A1/VJ146A1 (daily); it does not mention the hourly granular \"A1G\" product or the NOAA-21 (VJ246) products."
+    },
+    {
+      "id": "cmr_target",
+      "subject": "VJ146A1G_NRT 2",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORD",
+      "title": "CMR UMM-C record C2781431577-LANCEMODIS (revision 8, 2026-05-01T14:07:43.664Z)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2781431577-LANCEMODIS.umm_json",
+      "fetched": true
+    },
+    {
+      "id": "cmr_related",
+      "subject": "candidate related collections",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORDS",
+      "title": "21 UMM-C records for 19 ShortNames (process/related_umm.json)",
+      "url": "https://cmr.earthdata.nasa.gov/search/collections.umm_json",
+      "fetched": true
+    },
+    {
+      "id": "validation_page",
+      "subject": "Black Marble project",
+      "kind": "other_doc",
+      "subtype": "VALIDATION CAMPAIGN DOCUMENTATION",
+      "title": "Earthdata Black Marble project page",
+      "url": "https://www.earthdata.nasa.gov/data/projects/black-marble?tempAccess=PQ81CJc0-wU8_bo0eHoDDsTUtmUPtqal-lCTOvYiCmU",
+      "fetched": false,
+      "note": "Linked with a \"?tempAccess=...\" token in the URL (looks like a preview link). Not fetched."
+    }
+  ],
+  "rows": [
+    {
+      "related_shortname": "VJ102DNB_NRT",
+      "related_version": "2.1",
+      "related_concept_id": "C2208780589-LANCEMODIS",
+      "association_type": "PARENT",
+      "lineage_relationship": "aggregated_from",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement, cmr_validation",
+      "evidence_source": "user_guide",
+      "evidence_doc": "ug",
+      "evidence_section": "Black Marble User Guide C2.0 §4 Product generation, Table 1 (Black Marble VNP46A1 product input files)",
+      "evidence_quote": "VNP02DNB VIIRS/NPP Day/Night Band 6-Min L1B Swath 750m (L1B DNB)",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "ug",
+          "section": "User Guide §3.3 Projection",
+          "quote": "The rationale behind the VIIRS DNB gridding approach is to select the nighttime observations from available 6-min swath granules",
+          "verified": true
+        },
+        {
+          "doc": "ug",
+          "section": "User Guide §4",
+          "quote": "Table 1 Black Marble VNP46A1 product input files",
+          "verified": true
+        },
+        {
+          "doc": "cmr_target",
+          "section": "CMR record C2781431577-LANCEMODIS Abstract",
+          "quote": "is same as VJ146A1_NRT except that this product is generated hourly, cumulative from start of day through the hour the file is generated for.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "mapping_note": "Table 1 names the S-NPP input VNP02DNB; for the NOAA-20 product the NRT counterpart is VJ102DNB_NRT (VNP -> VJ1 platform naming, NRT stream). Inferred. CMR has VJ102DNB_NRT only as version 2.1 (substituted).",
+      "decision_procedure": "Step 1b Q1 no. Q2 yes: T is made directly from X's data by spatial/temporal aggregation: high-quality nighttime DNB observations from the 6-minute L1B swaths are selected and gridded into 15 arc-second tiles, cumulatively from the start of the day -> aggregated_from (PARENT). PARENT vs INPUT: recalibrating the DNB changes every radiance.",
+      "version_status": "substituted",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2208780589-LANCEMODIS",
+        "related_processing_level": "1B",
+        "target_processing_level": "3",
+        "level_progression": {
+          "status": "valid",
+          "rule": "parent level 1B <= target level 3"
+        },
+        "related_versions_in_cmr": [
+          "2.1"
+        ],
+        "version_compatible": false
+      }
+    },
+    {
+      "related_shortname": "VJ102MOD_NRT",
+      "related_version": "2.1",
+      "related_concept_id": "C2208778455-LANCEMODIS",
+      "association_type": "INPUT",
+      "lineage_relationship": "component_of",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement, cmr_validation",
+      "evidence_source": "user_guide",
+      "evidence_doc": "ug",
+      "evidence_section": "Black Marble User Guide C2.0 §4 Product generation, Table 1 (Black Marble VNP46A1 product input files)",
+      "evidence_quote": "VNP02MOD VIIRS/NPP Moderate Resolution 6-Min L1B Swath 750m (L1B moderate bands)",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "cmr_target",
+          "section": "CMR record C2781431577-LANCEMODIS Abstract",
+          "quote": "VIIRS moderate-resolution bands M10, M11, M12, M13, M15, M16, and DNB",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "mapping_note": "Table 1 names the S-NPP input VNP02MOD; for the NOAA-20 product the NRT counterpart is VJ102MOD_NRT (VNP -> VJ1 platform naming, NRT stream). Inferred. CMR has VJ102MOD_NRT only as version 2.1 (substituted).",
+      "decision_procedure": "Step 1b Q2 no (the DNB radiance is not made from it). Q3 yes: the M10/M11 radiances and M12/M13/M15/M16 brightness temperatures and their quality flags are gridded alongside the DNB as separate layers of T -> component_of (INPUT).",
+      "version_status": "substituted",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2208778455-LANCEMODIS",
+        "related_processing_level": "1B",
+        "target_processing_level": "3",
+        "level_progression": {
+          "status": "not_applicable",
+          "rule": "parent skill Step 6 checks level progression for parents and children only"
+        },
+        "related_versions_in_cmr": [
+          "2.1"
+        ],
+        "version_compatible": false
+      }
+    },
+    {
+      "related_shortname": "VJ103DNB_NRT",
+      "related_version": "2.1",
+      "related_concept_id": "C2208784482-LANCEMODIS",
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement, cmr_validation",
+      "evidence_source": "user_guide",
+      "evidence_doc": "ug",
+      "evidence_section": "Black Marble User Guide C2.0 §4 Product generation, Table 1 (Black Marble VNP46A1 product input files)",
+      "evidence_quote": "VNP03DNB VIIRS DNB geolocation",
+      "quote_verified": true,
+      "supporting_quotes": [],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "mapping_note": "Table 1 names the S-NPP input VNP03DNB; for the NOAA-20 product the NRT counterpart is VJ103DNB_NRT (VNP -> VJ1 platform naming, NRT stream). Inferred. CMR has VJ103DNB_NRT only as version 2.1 (substituted).",
+      "decision_procedure": "Step 1b Q3 yes: DNB geolocation and sensor/solar/lunar angles are consumed for gridding, not reprocessed -> input_to (INPUT).",
+      "version_status": "substituted",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2208784482-LANCEMODIS",
+        "related_processing_level": "1B",
+        "target_processing_level": "3",
+        "level_progression": {
+          "status": "not_applicable",
+          "rule": "parent skill Step 6 checks level progression for parents and children only"
+        },
+        "related_versions_in_cmr": [
+          "2.1"
+        ],
+        "version_compatible": false
+      }
+    },
+    {
+      "related_shortname": "VJ103MOD_NRT",
+      "related_version": "2.1",
+      "related_concept_id": "C2208781576-LANCEMODIS",
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement, cmr_validation",
+      "evidence_source": "user_guide",
+      "evidence_doc": "ug",
+      "evidence_section": "Black Marble User Guide C2.0 §4 Product generation, Table 1 (Black Marble VNP46A1 product input files)",
+      "evidence_quote": "VNP03MOD VIIRS moderate bands geolocation",
+      "quote_verified": true,
+      "supporting_quotes": [],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "mapping_note": "Table 1 names the S-NPP input VNP03MOD; for the NOAA-20 product the NRT counterpart is VJ103MOD_NRT (VNP -> VJ1 platform naming, NRT stream). Inferred. CMR has VJ103MOD_NRT only as version 2.1 (substituted).",
+      "decision_procedure": "Step 1b Q3 yes: M-band geolocation is consumed to grid the M-band layers -> input_to (INPUT).",
+      "version_status": "substituted",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2208781576-LANCEMODIS",
+        "related_processing_level": "1B",
+        "target_processing_level": "3",
+        "level_progression": {
+          "status": "not_applicable",
+          "rule": "parent skill Step 6 checks level progression for parents and children only"
+        },
+        "related_versions_in_cmr": [
+          "2.1"
+        ],
+        "version_compatible": false
+      }
+    },
+    {
+      "related_shortname": "VJ146A1_NRT",
+      "related_version": "2",
+      "related_concept_id": "C2781438623-LANCEMODIS",
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source",
+      "evidence_source": "other_doc",
+      "evidence_doc": "cmr_target",
+      "evidence_section": "CMR record C2781431577-LANCEMODIS Abstract",
+      "evidence_quote": "is same as VJ146A1_NRT except that this product is generated hourly, cumulative from start of day through the hour the file is generated for.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "cmr_VJ146A1_NRT",
+          "section": "CMR record VJ146A1_NRT 2 Abstract",
+          "quote": "this product contains 26 Science Data Sets (SDS)",
+          "verified": true
+        },
+        {
+          "doc": "ug",
+          "section": "User Guide §5.1",
+          "quote": "VNP46A1/VJ146A1 product contains 26 SDS layers",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "mapping_note": "Named exactly in the target abstract (CMR, not the User Guide). Version 2 matched (C2781438623-LANCEMODIS).",
+      "decision_procedure": "Step 1b Q1-Q3 no: neither is made from the other (both grid the same L1B swaths). Q4 yes: same algorithm and contents, run hourly-cumulative (T) versus daily (X) -> parallel_product (RELATED).",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2781438623-LANCEMODIS",
+        "related_processing_level": "3",
+        "target_processing_level": "3",
+        "level_progression": {
+          "status": "not_applicable",
+          "rule": "parent skill Step 6 checks level progression for parents and children only"
+        },
+        "related_versions_in_cmr": [
+          "2"
+        ],
+        "version_compatible": true
+      }
+    },
+    {
+      "related_shortname": "VJ246A1G_NRT",
+      "related_version": "2",
+      "related_concept_id": "C4237279755-LANCEMODIS",
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source",
+      "evidence_source": "other_doc",
+      "evidence_doc": "cmr_VJ246A1G_NRT",
+      "evidence_section": "CMR record VJ246A1G_NRT 2 Abstract",
+      "evidence_quote": "except that this product is generated hourly, cumulative from start of day",
+      "quote_verified": true,
+      "supporting_quotes": [],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "mapping_note": "VJ1/VJ2 naming; the User Guide does not cover NOAA-21. Version 2 matched (C4237279755-LANCEMODIS).",
+      "decision_procedure": "Step 1b Q5 yes: the same hourly granular product from the NOAA-21 VIIRS -> equivalent_product (RELATED).",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C4237279755-LANCEMODIS",
+        "related_processing_level": "3",
+        "target_processing_level": "3",
+        "level_progression": {
+          "status": "not_applicable",
+          "rule": "parent skill Step 6 checks level progression for parents and children only"
+        },
+        "related_versions_in_cmr": [
+          "2"
+        ],
+        "version_compatible": true
+      }
+    },
+    {
+      "related_shortname": "VNP46A1G_NRT",
+      "related_version": "2",
+      "related_concept_id": "C2780764136-LANCEMODIS",
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source",
+      "evidence_source": "other_doc",
+      "evidence_doc": "cmr_VNP46A1G_NRT",
+      "evidence_section": "CMR record VNP46A1G_NRT 2 Abstract",
+      "evidence_quote": "is same as VNP46A1_NRT except that this product is generated hourly, cumulative from start of day",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "ug",
+          "section": "User Guide §1 Introduction",
+          "quote": "The VNP46/VJ146 product suite includes the daily at-sensor top of atmosphere (TOA) nighttime lights (NTL) product (VNP46A1/VJ146A1)",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "mapping_note": "VNP/VJ1 naming; the User Guide documents the VNP46/VJ146 pair. Version 2 matched (C2780764136-LANCEMODIS; a version 1 record also exists).",
+      "decision_procedure": "Step 1b Q5 yes: the same hourly granular product from the Suomi NPP VIIRS -> equivalent_product (RELATED).",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2780764136-LANCEMODIS",
+        "related_processing_level": "3",
+        "target_processing_level": "3",
+        "level_progression": {
+          "status": "not_applicable",
+          "rule": "parent skill Step 6 checks level progression for parents and children only"
+        },
+        "related_versions_in_cmr": [
+          "1",
+          "2"
+        ],
+        "version_compatible": true
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "related": "VJ146A1 2 (C3370752133-LAADS)",
+      "lineage_relationship": "version_of",
+      "reason": "standard_counterpart",
+      "detail": "Standard (LAADS) daily NOAA-20 product. Recorded as the corrected SCIENCE ASSOCIATED counterpart (replacing the unresolvable \"VNP46A1_1\"), not as a lineage row.",
+      "evidence_doc": "ug",
+      "evidence_quote": "The VNP46/VJ146 product suite includes the daily at-sensor top of atmosphere (TOA) nighttime lights (NTL) product (VNP46A1/VJ146A1)",
+      "quote_verified": true
+    },
+    {
+      "related": "VJ135_L2 / VJ135_L2_NRT (VIIRS cloud mask, NOAA-20); VNP35_L2",
+      "lineage_relationship": "input_to",
+      "reason": "not_in_cmr",
+      "detail": "Table 1 lists VNP35 (VIIRS cloud mask) as an input (the QF_Cloud_Mask layer). No VJ135/VNP35 collection exists in CMR. CLDMSK_L2_VIIRS_NOAA20(_NRT) is the Atmosphere SIPS continuity cloud mask, a different product; not mapped (precision over recall).",
+      "evidence_doc": "ug",
+      "evidence_quote": "VNP35 VIIRS cloud mask",
+      "quote_verified": true
+    },
+    {
+      "related": "NPP_DNBN, NPP DNBN angles, NPP PTDN (L2G DNB radiance, angles, pointers)",
+      "lineage_relationship": "component_of",
+      "reason": "not_in_cmr",
+      "detail": "Intermediate products (\"* Intermediate Products\" in Table 1); not CMR collections (rule 1c-4).",
+      "evidence_doc": "ug",
+      "evidence_quote": "VIIRS L2G DNB radiance",
+      "quote_verified": true
+    },
+    {
+      "related": "VJ146A2_NRT 2 (C4193331158-LANCEMODIS) and VJ146A2 / A3 / A4 (LAADS)",
+      "lineage_relationship": "downstream_product",
+      "reason": "child_of_sibling",
+      "detail": "Table 2 lists the daily VNP46A1 (not the hourly A1G) as the input of A2; A3/A4 composite A1/A2. Children of VJ146A1(_NRT), not of T.",
+      "evidence_doc": "ug",
+      "evidence_quote": "VNP46A1 VIIRS/NPP TOA Daily Gridded Day Night Band Linear Lat Lon Grid Night",
+      "quote_verified": true
+    },
+    {
+      "related": "VNP46A1_NRT, VJ246A1_NRT (daily NRT equivalents)",
+      "lineage_relationship": null,
+      "reason": "sibling_of_equivalent",
+      "detail": "Daily counterparts of the equivalents; one hop away from T."
+    },
+    {
+      "related": "VNP46A1_1 (existing association EntryId)",
+      "lineage_relationship": null,
+      "reason": "not_in_cmr",
+      "detail": "Looks like a CMR entry ID (ShortName_Version) of the retired S-NPP VNP46A1 version 1; neither a ShortName nor an entry ID search finds it. EntryId must be a ShortName, with Version separate."
+    }
+  ],
+  "csv_validation": {
+    "valid": true,
+    "errors": []
+  }
+}

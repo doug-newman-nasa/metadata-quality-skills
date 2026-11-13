@@ -1,0 +1,4 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+VJ214IMGTDL_NRT,2,PARENT,VJ214IMG_NRT,2,MEDIUM,derived_from
+VJ214IMGTDL_NRT,2,RELATED,VJ114IMGTDL_NRT,2,MEDIUM,equivalent_product
+VJ214IMGTDL_NRT,2,RELATED,VNP14IMGTDL_NRT,2,MEDIUM,equivalent_product

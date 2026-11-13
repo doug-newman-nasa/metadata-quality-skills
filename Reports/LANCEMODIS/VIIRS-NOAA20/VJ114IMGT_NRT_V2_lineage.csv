@@ -1,0 +1,3 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+VJ114IMGT_NRT,2,PARENT,VJ114IMG_NRT,2,MEDIUM,derived_from
+VJ114IMGT_NRT,2,RELATED,VJ114IMGTDL_NRT,2,MEDIUM,related_to

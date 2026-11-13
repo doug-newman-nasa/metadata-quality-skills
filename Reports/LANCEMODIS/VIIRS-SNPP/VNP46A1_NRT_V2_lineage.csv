@@ -1,0 +1,9 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+VNP46A1_NRT,2,PARENT,VNP02DNB_NRT,2,MEDIUM,aggregated_from
+VNP46A1_NRT,2,INPUT,VNP02MOD_NRT,2,MEDIUM,component_of
+VNP46A1_NRT,2,INPUT,VNP03DNB_NRT,2,MEDIUM,input_to
+VNP46A1_NRT,2,INPUT,VNP03MOD_NRT,2,MEDIUM,input_to
+VNP46A1_NRT,2,CHILD,VNP46A2_NRT,2,MEDIUM,downstream_product
+VNP46A1_NRT,2,RELATED,VJ146A1_NRT,2,MEDIUM,equivalent_product
+VNP46A1_NRT,2,RELATED,VJ246A1_NRT,2,MEDIUM,equivalent_product
+VNP46A1_NRT,2,RELATED,VNP46A1G_NRT,2,MEDIUM,parallel_product

@@ -1,0 +1,4 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+MOD09A1N,6.1NRT,PARENT,MOD09GA,6.1NRT,HIGH,aggregated_from
+MOD09A1N,6.1NRT,RELATED,MOD09A1,061,MEDIUM,related_to
+MOD09A1N,6.1NRT,RELATED,MOD09Q1N,6.1NRT,MEDIUM,parallel_product

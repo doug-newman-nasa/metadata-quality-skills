@@ -1,0 +1,403 @@
+{
+  "generated_at": "2026-11-12T17:12:50+00:00",
+  "target": {
+    "shortname": "MOD09GQ",
+    "version": "6.1NRT",
+    "concept_id": "C2007662107-LANCEMODIS",
+    "processing_level": "2G",
+    "provider": "LANCEMODIS",
+    "collection_data_type": "NEAR_REAL_TIME"
+  },
+  "atbd_search_depth": 1,
+  "version_choice_note": "Two CMR versions share this ShortName: 6.1NRT (C2007662107-LANCEMODIS, LANCE) and 061 (C2343115666-LPCLOUD, LP DAAC). The request targets the LANCEMODIS collection, so 6.1NRT is the subject; all related rows matched at 6.1NRT.",
+  "cmr_state_note": "Records fetched live from CMR on 2026-11-12; see process/*.json. Confidence depends on CMR state.",
+  "consistency_note": "Reciprocal of the MOD09GA run (MOD09GA -> MOD09GQ parallel_product) and mirrors its MOD09 PARENT row.",
+  "level_ranking_note": "MODIS levels are strings; level progression compared with rank 1A < 1B < 2 < 2G < 3.",
+  "source_documents": [
+    {
+      "id": "atbd_cmr_target",
+      "subject": "MOD09GQ 6.1NRT",
+      "kind": "atbd",
+      "subtype": "ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
+      "title": null,
+      "url": null,
+      "fetched": false,
+      "error": "The NRT record (C2007662107-LANCEMODIS) links no ATBD or User Guide (only the LANCE NRT home page, two GET DATA links and the LANCE data-flow diagram). Per the decision tree the documents of the standard MOD09GQ 061 (C2343115666-LPCLOUD) were used: same ShortName, same MOD_PR09G.exe algorithm; the C6.1 User Guide states no science-algorithm change."
+    },
+    {
+      "id": "atbd",
+      "subject": "MOD09 family",
+      "kind": "atbd",
+      "subtype": "ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
+      "title": "Atmospheric Correction Algorithm: Spectral Reflectances (MOD09), ATBD Version 4.0, April 1999 (E. F. Vermote, A. Vermeulen)",
+      "url": "https://lpdaac.usgs.gov/documents/305/MOD09_ATBD.pdf",
+      "fetched": true,
+      "note": "Linked from MOD09GQ 061; sha256 0df984f2... = the correct MOD09 ATBD. Mentions the L2G product in one sentence (§3.2.4)."
+    },
+    {
+      "id": "ug",
+      "subject": "MOD09 family, Collection 6.1",
+      "kind": "user_guide",
+      "subtype": "USER'S GUIDE",
+      "title": "MODIS Surface Reflectance User's Guide, Collection 6.1",
+      "url": "https://lpdaac.usgs.gov/documents/925/MOD09_User_Guide_V61.pdf",
+      "fetched": true,
+      "note": "Linked from MOD09GQ 061; sha256 33070e6c.... §2.1, §2.3, §2.5, §3.1.2 (Table 3), §3.1.4 and Table 1 describe MOD09GQ."
+    },
+    {
+      "id": "fs",
+      "subject": "MOD09GQ Collection 6.1",
+      "kind": "other_doc",
+      "subtype": "DATA PRODUCT SPECIFICATION (file specification)",
+      "title": "LAADS DAAC file specification MOD09GQ (C6.1)",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MOD09GQ",
+      "fetched": true,
+      "note": "Linked from MOD09GQ 061. Maps the two original 250 m L2G files (MOD09GQK, MODPTQKM) into MOD09GQ; describes the nesting under MOD09GA."
+    },
+    {
+      "id": "lance",
+      "subject": "LANCE MODAPS",
+      "kind": "other_doc",
+      "subtype": "GENERAL DOCUMENTATION",
+      "title": "LANCE MODAPS Operational Data Flow Diagram (2026-04-16)",
+      "url": "https://earthdata.nasa.gov/s3fs-public/2026-04/LANCE_MODAPS_Operational_Data_Flow_Diagram_4.16.26.pdf?VersionId=auDDcXbLWd7lDM.IyBmsuVfguIP64vnr",
+      "fetched": true,
+      "note": "Linked from the NRT record. Covers L0 -> L1A/geolocation only; no MOD09GQ lineage statements."
+    },
+    {
+      "id": "home",
+      "subject": "LANCE MODIS NRT",
+      "kind": "other_doc",
+      "subtype": "HOME PAGE",
+      "title": "Earthdata: MODIS Near Real-Time data (product table)",
+      "url": "https://www.earthdata.nasa.gov/data/instruments/modis/near-real-time-data",
+      "fetched": true,
+      "note": "Product table only (\"L2G Light Surface Reflectance - Daily 250m\"); no lineage statements."
+    },
+    {
+      "id": "cmr_target",
+      "subject": "MOD09GQ 6.1NRT",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORD",
+      "title": "CMR UMM-C record C2007662107-LANCEMODIS (revision 6, 2026-05-13T11:52:52.847Z)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2007662107-LANCEMODIS.umm_json",
+      "fetched": true
+    },
+    {
+      "id": "cmr_std",
+      "subject": "MOD09GQ 061",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORD",
+      "title": "CMR UMM-C record C2343115666-LPCLOUD",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2343115666-LPCLOUD.umm_json",
+      "fetched": true
+    },
+    {
+      "id": "cmr_related",
+      "subject": "candidate related collections",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORDS",
+      "title": "13 UMM-C records for 10 ShortNames (process/related_umm.json)",
+      "url": "https://cmr.earthdata.nasa.gov/search/collections.umm_json",
+      "fetched": true
+    }
+  ],
+  "rows": [
+    {
+      "related_shortname": "MOD09",
+      "related_version": "6.1NRT",
+      "related_concept_id": "C2007657580-LANCEMODIS",
+      "association_type": "PARENT",
+      "lineage_relationship": "aggregated_from",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement",
+      "evidence_source": "user_guide",
+      "evidence_doc": "ug",
+      "evidence_section": "User Guide §2.3 Products of MOD_PRMGR.exe -- level 2G",
+      "evidence_quote": "is run on all MOD09 level 2 granules that map to the tile for that day",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "ug",
+          "section": "User Guide §2.3",
+          "quote": "The level 2G output includes MOD09GHK (500 m surface reflectance and band quality data), MOD09GQK (250 m surface reflectance and band quality data), and MOD09GST (1 km State QA data).",
+          "verified": true
+        },
+        {
+          "doc": "ug",
+          "section": "User Guide §2.5 Products of MOD_PR09G.exe -- level 2G-lite",
+          "quote": "in the order it is read from level 2 files",
+          "verified": true
+        },
+        {
+          "doc": "atbd",
+          "section": "ATBD §3.2.4 Output product",
+          "quote": "A level 2G (daily) and a level 3 land (8-day) surface reflectance will be based upon the Level 2 data.",
+          "verified": true
+        },
+        {
+          "doc": "fs",
+          "section": "LAADS file specification MOD09GQ, introduction",
+          "quote": "file contains the restructured Level-2 (L2) Land Surface Reflectance data (observations) which intersects a geographic area, a tile, in the MODIS Land global Level-3 (L3) grid.",
+          "verified": true
+        },
+        {
+          "doc": "fs",
+          "section": "LAADS file specification MOD09GQ (mapping of original L2G files)",
+          "quote": "MOD09GQK -- all SDSs except orb_cov",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "mapping_note": "MOD09 is named as the input of MOD_PRMGR.exe, whose 250 m output MOD09GQK (not in CMR) is what MOD_PR09G.exe turns into MOD09GQ; one non-archived intermediate in between, so the statement criterion is treated as weak. Version 6.1NRT matched.",
+      "decision_procedure": "Step 1b Q1 no. Q2 yes: T is made from MOD09's data: MOD_PRMGR.exe (PGE12) maps all MOD09 L2 granules of a day onto each sinusoidal tile (multi-observation 250 m L2G, MOD09GQK), and MOD_PR09G.exe (PGE13) sorts and compacts those observations into MOD09GQ -> aggregated_from (PARENT). PARENT vs INPUT: reprocessing MOD09 changes every MOD09GQ reflectance. MOD09GQK is not in CMR; the link is recorded against MOD09 (curator judgment call, same as the MOD09GA run).",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2007657580-LANCEMODIS",
+        "related_processing_level": "2",
+        "target_processing_level": "2G",
+        "level_progression": {
+          "status": "valid",
+          "rule": "parent level 2 <= target level 2G"
+        },
+        "related_versions_in_cmr": [
+          "6.1",
+          "6.1NRT"
+        ],
+        "version_compatible": true
+      }
+    },
+    {
+      "related_shortname": "MOD09Q1N",
+      "related_version": "6.1NRT",
+      "related_concept_id": "C2007659695-LANCEMODIS",
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement",
+      "evidence_source": "user_guide",
+      "evidence_doc": "ug",
+      "evidence_section": "User Guide §3.1.4 MOD09Q1",
+      "evidence_quote": "It is a level 3 composite of MOD09GQ.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "ug",
+          "section": "User Guide C6.1 Table 1: Inputs and outputs of MODIS surface reflectance programs (MOD_PR09A.exe rows)",
+          "quote": "MOD09GQ 2GL Q MOD09Q1",
+          "verified": true
+        },
+        {
+          "doc": "ug",
+          "section": "User Guide §2.4 Products of MOD_PR09A.exe -- level 3",
+          "quote": "As of collection 5, it is run on all MOD09GA and MOD09GQ files for that tile and 8-day period.",
+          "verified": true
+        },
+        {
+          "doc": "cmr_MOD09Q1N",
+          "section": "CMR record MOD09Q1N 6.1NRT Abstract",
+          "quote": "Each MOD09Q1N pixel contains the best possible L2G observation during an 8-day period",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "mapping_note": "The User Guide names the standard MOD09Q1; MOD09Q1N is its NRT rolling-8-day counterpart. Inferred (LANCE \"N\" naming). Version 6.1NRT matched.",
+      "decision_procedure": "Step 1b Q1 yes: MOD_PR09A.exe composites MOD09GQ over 8 days into the 250 m L3 product; LANCE runs it daily on a rolling window -> downstream_product (CHILD).",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2007659695-LANCEMODIS",
+        "related_processing_level": "3",
+        "target_processing_level": "2G",
+        "level_progression": {
+          "status": "valid",
+          "rule": "child level 3 >= target level 2G"
+        },
+        "related_versions_in_cmr": [
+          "6.1NRT"
+        ],
+        "version_compatible": true
+      }
+    },
+    {
+      "related_shortname": "MOD09GA",
+      "related_version": "6.1NRT",
+      "related_concept_id": "C2007661943-LANCEMODIS",
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "confidence": "HIGH",
+      "confidence_rule": "HIGH rule: source, statement and CMR validation all strong",
+      "evidence_source": "user_guide",
+      "evidence_doc": "ug",
+      "evidence_section": "User Guide §2.1 MODIS surface reflectance data products",
+      "evidence_quote": "level 2G-Lite daily products (MOD09GA and MOD09GQ, generated by PGE13's MOD_PR09G.exe program)",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "ug",
+          "section": "User Guide §3.1.2 MOD09GQ",
+          "quote": "This product is meant to be used in conjunction with the MOD09GA where important quality and viewing geometry information",
+          "verified": true
+        },
+        {
+          "doc": "fs",
+          "section": "LAADS file specification MOD09GQ, introduction",
+          "quote": "This product is meant to be used in conjunction with the 500m product because the important quality and viewing geometry information is stored in that product.",
+          "verified": true
+        },
+        {
+          "doc": "fs",
+          "section": "LAADS file specification MOD09GQ, observation selection step 3",
+          "quote": "For the 250m product, the first criteria is that the 250m observation has to be from the same orbit as the 500m observation in the same layer.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "mapping_note": "Named exactly. Version 6.1NRT matched (C2007661943-LANCEMODIS).",
+      "decision_procedure": "Step 1b Q1-Q3 no: neither is made from the other (MOD09GQ from MOD09GQK, MOD09GA from MOD09GHK + MOD09GST). Q4 yes: both are outputs of the same MOD_PR09G.exe run; the 250 m observations are nested under, and chosen by orbit with, the 500 m MOD09GA observations -> parallel_product (RELATED).",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2007661943-LANCEMODIS",
+        "related_processing_level": "2G",
+        "target_processing_level": "2G",
+        "level_progression": {
+          "status": "not_applicable",
+          "rule": "parent skill Step 6 checks level progression for parents and children only"
+        },
+        "related_versions_in_cmr": [
+          "061",
+          "6.1NRT"
+        ],
+        "version_compatible": true
+      }
+    },
+    {
+      "related_shortname": "MYD09GQ",
+      "related_version": "6.1NRT",
+      "related_concept_id": "C2007650640-LANCEMODIS",
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement",
+      "evidence_source": "user_guide",
+      "evidence_doc": "ug",
+      "evidence_section": "User Guide §4.5 All I've seen in this document is \"MOD\", meaning Terra -- what about Aqua (\"MYD\")?",
+      "evidence_quote": "All programs discussed in this document process either Terra- or Aqua-derived data.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "ug",
+          "section": "User Guide §3.1.2 MOD09GQ (product heading)",
+          "quote": "MODIS Terra/Aqua Surface Reflectance Daily L2G Global 250 m",
+          "verified": true
+        },
+        {
+          "doc": "cmr_MYD09GQ",
+          "section": "CMR record MYD09GQ 6.1NRT Abstract",
+          "quote": "Low-level data are corrected for atmospheric gases and aerosols, yielding a level-2 basis for several higher-order gridded level-2 (L2G) and level-3 products",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "mapping_note": "Generic \"MYD\" / \"Terra/Aqua\" in the User Guide mapped to MYD09GQ (MOD/MYD naming). Inferred. Version 6.1NRT matched (C2007650640-LANCEMODIS).",
+      "decision_procedure": "Step 1b Q1-Q4 no (separate Aqua processing). Q5 yes: the same 250 m L2G-lite product and algorithm on Aqua MODIS -> equivalent_product (RELATED).",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C2007650640-LANCEMODIS",
+        "related_processing_level": "2G",
+        "target_processing_level": "2G",
+        "level_progression": {
+          "status": "not_applicable",
+          "rule": "parent skill Step 6 checks level progression for parents and children only"
+        },
+        "related_versions_in_cmr": [
+          "061",
+          "6.1NRT"
+        ],
+        "version_compatible": true
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "related": "MOD09GQ 061 (C2343115666-LPCLOUD)",
+      "lineage_relationship": "version_of",
+      "reason": "same_shortname",
+      "detail": "Standard (non-NRT) C6.1 MOD09GQ: same product and algorithm with definitive inputs. The skills forbid same-ShortName rows. The EXISTING association SCIENCE ASSOCIATED -> MOD09GQ (no Version) most likely means this record; keep it and add Version \"061\" and a Description (see metadata_associations.json proposed_edit_to_existing).",
+      "evidence_doc": "ug",
+      "evidence_quote": "This (C61) reprocessing does not contain any change to the science algorithm",
+      "quote_verified": true
+    },
+    {
+      "related": "MOD09GQK; pointer file MODPTQKM",
+      "lineage_relationship": "derived_from / component_of",
+      "reason": "not_in_cmr",
+      "detail": "Non-archived 250 m L2G intermediates written by MOD_PRMGR.exe and merged into MOD09GQ. No CMR record (rule 1c-4).",
+      "evidence_doc": "ug",
+      "evidence_quote": "These datasets were archived until collection 5, when they were superseded by level 2G-lite products",
+      "quote_verified": true
+    },
+    {
+      "related": "MOD09GST 6.1NRT (C2007659778-LANCEMODIS)",
+      "lineage_relationship": "component_of",
+      "reason": "input_of_sibling",
+      "detail": "Table 1 lists MOD09GST among the MOD_PR09G.exe inputs, but the MOD09GQ file spec maps only MOD09GQK and MODPTQKM into MOD09GQ; the 1 km State QA goes to MOD09GA. Not an input of T (precision over recall).",
+      "evidence_doc": "fs",
+      "evidence_quote": "This new format reduces the number of 250m L2G files from two files to one file per day for each tile.",
+      "quote_verified": true
+    },
+    {
+      "related": "MOD021KM, MOD02HKM, MOD02QKM, MOD03, MOD35_L2 (6.1NRT)",
+      "lineage_relationship": null,
+      "reason": "indirect_input_of_parent",
+      "detail": "Inputs of MOD_PR09.exe (MOD09); depth 2 for MOD09GQ (rule 1c-1).",
+      "evidence_doc": "ug",
+      "evidence_quote": "Table 1: Inputs and outputs of MODIS surface reflectance programs.",
+      "quote_verified": true
+    },
+    {
+      "related": "MOD09A1N 6.1NRT (C2007661826-LANCEMODIS)",
+      "lineage_relationship": "downstream_product",
+      "reason": "child_of_sibling",
+      "detail": "Table 1 maps MOD09GA (not MOD09GQ) to MOD09A1; MOD09A1N is a child of MOD09GA (see the MOD09GA run).",
+      "evidence_doc": "ug",
+      "evidence_quote": "MOD_PR09A.exe MOD09GA 2GL 1,H MOD09A1 none 3 H 5 and up",
+      "quote_verified": true
+    },
+    {
+      "related": "MOD09Q1 061 (C2343112831-LPCLOUD)",
+      "lineage_relationship": "downstream_product",
+      "reason": "version_mismatch",
+      "detail": "Standard 8-day composite, made from MOD09GQ 061, not from the NRT MOD09GQ. MOD09Q1N is recorded instead."
+    },
+    {
+      "related": "MOD13Q4N 6.1NRT (C2007658439-LANCEMODIS)",
+      "lineage_relationship": "downstream_product",
+      "reason": "no_document_evidence",
+      "detail": "NRT rolling 250 m vegetation index; its abstract points to MxD09Q1, not to MOD09GQ (see the MOD09A1N run)."
+    },
+    {
+      "related": "MCD43A4N 6.1NRT (C2130665247-LANCEMODIS)",
+      "lineage_relationship": null,
+      "reason": "no_document_evidence",
+      "detail": "NRT 500 m NBAR; no document links it to the 250 m MOD09GQ."
+    },
+    {
+      "related": "VNP09GA_NRT 2 (C2780105555-LANCEMODIS)",
+      "lineage_relationship": "equivalent_product",
+      "reason": "no_document_evidence",
+      "detail": "VIIRS analogue; different instrument and processing system; no MOD09 document links them."
+    }
+  ],
+  "csv_validation": {
+    "valid": true,
+    "errors": []
+  }
+}
