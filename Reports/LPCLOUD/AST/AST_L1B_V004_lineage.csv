@@ -1,0 +1,9 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+AST_L1B,004,PARENT,AST_L1A,004,HIGH,derived_from
+AST_L1B,004,CHILD,AST_07,004,LOW,downstream_product
+AST_L1B,004,CHILD,AST_07XT,004,MEDIUM,downstream_product
+AST_L1B,004,CHILD,AST_09,004,MEDIUM,downstream_product
+AST_L1B,004,CHILD,AST_09T,004,LOW,downstream_product
+AST_L1B,004,CHILD,AST_09XT,004,MEDIUM,downstream_product
+AST_L1B,004,RELATED,AST_L1BE,003,MEDIUM,related_to
+AST_L1B,004,RELATED,AST_L1T,004,MEDIUM,related_to

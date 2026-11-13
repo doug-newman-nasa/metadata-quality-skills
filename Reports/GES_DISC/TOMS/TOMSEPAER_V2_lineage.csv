@@ -1,0 +1,4 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+TOMSEPAER,2,RELATED,OMIAuraAER,1,MEDIUM,equivalent_product
+TOMSEPAER,2,RELATED,TOMSN7AER,2,HIGH,equivalent_product
+TOMSEPAER,2,RELATED,TROPOMAER,1,LOW,equivalent_product

@@ -1,0 +1,338 @@
+{
+  "generated_at": "2026-11-13T19:30:27+00:00",
+  "skills": [
+    "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0, Steps 1-7)",
+    "Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3)",
+    "Skills/Collection_Lineage_Generation_Skill.md (Step 1a-1d classification)"
+  ],
+  "target": {
+    "shortname": "AST_L1A",
+    "version": "004",
+    "concept_id": "C3306888985-LPCLOUD",
+    "processing_level": "1A",
+    "provider": "LPCLOUD",
+    "collection_data_type": "SCIENCE_QUALITY",
+    "revision_date": "2026-05-04T13:45:13.047Z"
+  },
+  "atbd_search_depth": 1,
+  "include_low_confidence": true,
+  "cmr_state_note": "Records fetched live from CMR on 2026-11-13; see process/*.json. Confidence depends on CMR state.",
+  "level_ranking_note": "ASTER levels are strings; level progression compared with rank 0 < 1A < 1B = 1T < 2 < 3.",
+  "source_classification_note": "CMR abstracts, the L1T Quick Reference Guide and product specifications count as other_doc (weak source). ATBDs and the V4 User Guide count as strong sources.",
+  "source_documents": [
+    {
+      "id": "l1_atbd",
+      "kind": "atbd",
+      "subtype": "ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
+      "title": "Algorithm Theoretical Basis Document for ASTER Level-1 Data Processing, Ver. 3.0 (ERSDAC, 1 Nov 1996)",
+      "url": "https://lpdaac.usgs.gov/documents/70/AST_L1_ATBD.pdf",
+      "linked_from": "AST_L1A, AST_L1B",
+      "fetched": true,
+      "sha256": "df8aa4abc5957003bc39105fb19d337249a2293f7c9cdefc7d978e36da191439"
+    },
+    {
+      "id": "l1t_atbd",
+      "kind": "atbd",
+      "subtype": "ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
+      "title": "AST_L1T Algorithm Theoretical Basis Document, USGS Open-File Report 2015-1171 (Meyer et al., 2015)",
+      "url": "https://lpdaac.usgs.gov/documents/1400/AST_L1T_ATBD_V1.pdf",
+      "linked_from": "AST_L1T",
+      "fetched": true,
+      "sha256": "ede86dfd4dabcf5dfd2e959bc54d6799616ce4cf4afa004ac9fae8ff40655729"
+    },
+    {
+      "id": "ug",
+      "kind": "user_guide",
+      "subtype": "USER'S GUIDE",
+      "title": "ASTER Version 4 Product User Guide, v1.1 (LP DAAC, Nov 2025)",
+      "url": "https://lpdaac.usgs.gov/documents/2265/ASTER_User_Guide_V4_pcP80n5.pdf",
+      "linked_from": "AST_L1A, AST_L1B, AST_L1T",
+      "fetched": true,
+      "sha256": "c01a1120ff22c185cb7f6d11a802e5387ad549395b2b0493a6f78b84002662d1"
+    },
+    {
+      "id": "qrg",
+      "kind": "other_doc",
+      "subtype": "GENERAL DOCUMENTATION",
+      "title": "AST_L1T Quick Reference Guide (v1.0 in footer; V2 in file name)",
+      "url": "https://lpdaac.usgs.gov/documents/1335/AST_L1T_Quick_Reference_Guide_V2.pdf",
+      "linked_from": "AST_L1T",
+      "fetched": true,
+      "sha256": "1816b5d28ee82006d0563f3af63c04e9e7fbe65a25df26ba467138780471f95c"
+    },
+    {
+      "id": "l1_spec",
+      "kind": "other_doc",
+      "subtype": "DATA PRODUCT SPECIFICATION",
+      "title": "ASTER Level-1 Data Product Specification",
+      "url": "https://lpdaac.usgs.gov/documents/175/ASTER_L1_Product_Specifications.pdf",
+      "linked_from": "AST_L1A, AST_L1B",
+      "fetched": true,
+      "sha256": "5591d909383ef64ab0d2fa20e1153bb80a7b4aeb98c0b3c3b5e716e261320ecd"
+    },
+    {
+      "id": "l1t_spec",
+      "kind": "other_doc",
+      "subtype": "DATA PRODUCT SPECIFICATION",
+      "title": "ASTER Level-1T Product Specification v1",
+      "url": "https://lpdaac.usgs.gov/documents/1401/ASTER_L1T_Product_Specification_v1.pdf",
+      "linked_from": "AST_L1T",
+      "fetched": true,
+      "sha256": "013bbc2ff417045786ee3a158deefdeabee0608bcee6de580c21881f48cecd8a"
+    },
+    {
+      "id": "l2_atbd",
+      "kind": "atbd",
+      "subtype": "ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
+      "title": "ATBD for ASTER Level 2B1 Surface Radiance and Level 2B5 Surface Reflectance (K. Thome)",
+      "url": "https://lpdaac.usgs.gov/documents/68/AST_07_ATBD.pdf",
+      "linked_from": "AST_07, AST_07XT, AST_09, AST_09XT, AST_09T (and, wrongly, AST_05, AST_08)",
+      "fetched": true,
+      "sha256": "7b8023c3be5cb8e4612d648287bd3a9bade5d462e73025063aa071aed8892827"
+    },
+    {
+      "id": "cmr:AST14DEM",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORD (abstract)",
+      "title": "CMR UMM-C record C3306855744-LPCLOUD (AST14DEM 004)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3306855744-LPCLOUD.umm_json",
+      "fetched": true
+    },
+    {
+      "id": "cmr:ASTGTM",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORD (abstract)",
+      "title": "CMR UMM-C record C1711961296-LPCLOUD (ASTGTM 003)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C1711961296-LPCLOUD.umm_json",
+      "fetched": true
+    },
+    {
+      "id": "cmr:AST_L1A",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORD (abstract)",
+      "title": "CMR UMM-C record C3306888985-LPCLOUD (AST_L1A 004)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3306888985-LPCLOUD.umm_json",
+      "fetched": true
+    },
+    {
+      "id": "cmr:AST_L1AE",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORD (abstract)",
+      "title": "CMR UMM-C record C179460405-LPDAAC_ECS (AST_L1AE 003)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C179460405-LPDAAC_ECS.umm_json",
+      "fetched": true
+    },
+    {
+      "id": "cmr:AST_L1T",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORD (abstract)",
+      "title": "CMR UMM-C record C3306888411-LPCLOUD (AST_L1T 004)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3306888411-LPCLOUD.umm_json",
+      "fetched": true
+    }
+  ],
+  "rows": [
+    {
+      "shortname": "AST_L1A",
+      "version": "004",
+      "depth": 1,
+      "related_shortname": "AST14DEM",
+      "related_version": "004",
+      "related_concept_id": "C3306855744-LPCLOUD",
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "other_doc",
+      "evidence_doc": "cmr:AST14DEM",
+      "evidence_section": "CMR abstract",
+      "evidence_quote": "is generated using bands 3N (nadir-viewing) and 3B (backward-viewing) of an ASTER [Level 1A](https://doi.org/10.5067/ASTER/AST_L1A.004) image",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "l1_atbd",
+          "section": "L1 ATBD §3.9 Geometric Coefficients Generations",
+          "quote": "Other parameters which are necessary for higher level product generations such as the Level-3 (the geocoded ortho images) data products and the Level-4 (DEM) data products are calculated or arranged in this module, and shall be appended to the Level-1A products.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "keyword_priority_note": "'is generated using bands 3N and 3B of an ASTER Level 1A image' (priority 1).",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "level": "3",
+        "target_level": "1A",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "decision_procedure": "Step 1b Q1 yes: AST14DEM is generated from AST_L1A VNIR bands 3N/3B -> downstream_product (CHILD).",
+      "mapping_note": "Only the AST14DEM CMR abstract names AST_L1A (other_doc). AST14DEM's linked ATBD returns the L1 ATBD, so no DEM ATBD could be read.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source"
+    },
+    {
+      "shortname": "AST_L1A",
+      "version": "004",
+      "depth": 1,
+      "related_shortname": "AST_L1B",
+      "related_version": "004",
+      "related_concept_id": "C3306888201-LPCLOUD",
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "atbd",
+      "evidence_doc": "l1t_atbd",
+      "evidence_section": "L1T ATBD Algorithm Description, ASTER Level 1B Algorithm",
+      "evidence_quote": "The ASTER Level 1B (AST_L1B) algorithm applies the radiometric calibration coefficients that are calculated and appended, but not applied to the distributed AST_L1A data product.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "l1_atbd",
+          "section": "L1 ATBD §3.12 Level-1B Processing",
+          "quote": "The Level-1A data product consists of the image data, the radiometric coefficients, the geometric correction coefficients and the auxiliary data. The Level-1B data products will be generated by using these data for the requested map projection and the resampling method.",
+          "verified": true
+        },
+        {
+          "doc": "l1_atbd",
+          "section": "L1 ATBD §3.8 Scene Cutting",
+          "quote": "This scene cutting is necessary for granularizing the Level-1A and the Level-1B data products.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "keyword_priority_note": "'applies the ... coefficients ... to the distributed AST_L1A data product' = a 'uses/based on' statement (priority 2).",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "level": "1B",
+        "target_level": "1A",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "decision_procedure": "Step 1b Q1 yes: AST_L1B is produced from AST_L1A (L1 ATBD §3.12; L1T ATBD 'ASTER Level 1B Algorithm') -> downstream_product (CHILD).",
+      "mapping_note": "The L1 ATBD (linked from both records) says 'Level-1A data product' / 'Level-1B data products' (generic; the mapping to the ShortNames is unambiguous for one instrument). The L1T ATBD names AST_L1B and AST_L1A explicitly; that verified ATBD statement sets the strong-statement criterion.",
+      "confidence": "HIGH",
+      "confidence_rule": "HIGH rule: source, statement and CMR validation all strong"
+    },
+    {
+      "shortname": "AST_L1A",
+      "version": "004",
+      "depth": 1,
+      "related_shortname": "AST_L1T",
+      "related_version": "004",
+      "related_concept_id": "C3306888411-LPCLOUD",
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "atbd",
+      "evidence_doc": "l1t_atbd",
+      "evidence_section": "L1T ATBD Overview",
+      "evidence_quote": "The AST_L1T product is GIS-ready data produced using a single resampling from the AST_L1A input scene.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "ug",
+          "section": "User Guide §8.2 Collection 2 Ground Control Points and Input DEMs",
+          "quote": "ASTER L1T processing begins with ASTER Level 1A input data and applies Landsat-derived geometric algorithms",
+          "verified": true
+        },
+        {
+          "doc": "cmr:AST_L1T",
+          "section": "CMR abstract",
+          "quote": "The AST_L1T is created from a single resampling of the corresponding ASTER L1A ([AST_L1A](https://doi.org/10.5067/ASTER/AST_L1A.004)) product.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "keyword_priority_note": "'produced using a single resampling from the AST_L1A input scene' = 'generated/derived from' (priority 1).",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "level": "1T",
+        "target_level": "1A",
+        "level_progression_valid": true,
+        "version_compatible": true
+      },
+      "decision_procedure": "Step 1b Q1 yes: AST_L1T is produced from AST_L1A by a single resampling -> downstream_product (CHILD).",
+      "confidence": "HIGH",
+      "confidence_rule": "HIGH rule: source, statement and CMR validation all strong"
+    },
+    {
+      "shortname": "AST_L1A",
+      "version": "004",
+      "depth": 1,
+      "related_shortname": "AST_L1AE",
+      "related_version": "003",
+      "related_concept_id": "C179460405-LPDAAC_ECS",
+      "association_type": "RELATED",
+      "lineage_relationship": "related_to",
+      "evidence_source": "other_doc",
+      "evidence_doc": "cmr:AST_L1AE",
+      "evidence_section": "CMR abstract",
+      "evidence_quote": "This data product is similar to the ([AST_L1A](http://doi.org/10.5067/ASTER/AST_L1A.003)) with a few notable exceptions.",
+      "quote_verified": true,
+      "supporting_quotes": [],
+      "named_explicitly": true,
+      "keyword_priority": 3,
+      "keyword_priority_note": "'similar to the AST_L1A' is a cross-reference, not a lineage keyword (priority 3).",
+      "version_status": "substituted",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "level": "1A",
+        "target_level": "1A",
+        "level_progression_valid": null,
+        "version_compatible": false
+      },
+      "decision_procedure": "Step 1b Q1-Q4 no (separate expedited processing stream, not made from AST_L1A). Q5 no (same platform/instrument, so not equivalent_product). Q6: documented cross-reference -> related_to (RELATED).",
+      "mapping_note": "AST_L1AE exists only as version 003 (LPDAAC_ECS); its abstract cites AST_L1A.003. related_version substituted.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source, statement, cmr_validation"
+    }
+  ],
+  "excluded": [
+    {
+      "related": "ASTER Level-0 (CCSDS L0 Production Data Sets from EDOS)",
+      "lineage_relationship": "derived_from",
+      "reason": "not_in_cmr",
+      "detail": "PARENT: derived_from (front-end processing: depacketize, demultiplex, stagger realignment, scene cutting). Not distributed as a CMR collection (rule 1c-4); not written.",
+      "evidence_doc": "l1_atbd",
+      "evidence_quote": "The Level-0 data which are sent from EDOS are packetized in the CCSDS format.",
+      "quote_verified": true
+    },
+    {
+      "related": "ASTER radiometric and geometric correction databases + Terra ancillary data",
+      "lineage_relationship": "coefficients computed and appended, not applied",
+      "reason": "not_in_cmr",
+      "detail": "SUPPORTING_INPUT: coefficients computed and appended, not applied. Not distributed as a CMR collection (rule 1c-4); not written.",
+      "evidence_doc": "l1_atbd",
+      "evidence_quote": "The radiometric correction coefficients correspond to the scene center shall be calculated and appended as a part of the Level-1A data product.",
+      "quote_verified": true
+    },
+    {
+      "related": "ASTGTM 003 (C1711961296-LPCLOUD)",
+      "lineage_relationship": "downstream_product",
+      "reason": "child_of_other_version",
+      "detail": "GDEM v3 (and ASTGTM_NC, ASTGTM_NUMNC, ASTWBD*) was built from AST_L1A version 003 scenes acquired 2000-2013, not from AST_L1A 004. Rule 1c-6 (precision over recall): not written.",
+      "evidence_doc": "cmr:ASTGTM",
+      "evidence_quote": "was created from the automated processing of the entire [ASTER Level 1A](https://doi.org/10.5067/ASTER/AST_L1A.003) archive",
+      "quote_verified": true
+    }
+  ],
+  "existing_metadata_associations": [
+    {
+      "existing": {
+        "Type": "DEPENDENT",
+        "EntryId": "AST_L1B",
+        "Description": "Radiometric values computed from the raw instrument counts"
+      },
+      "issues": [
+        "no Version (should be 004)",
+        "Type DEPENDENT is never assigned by the skills; the lineage is downstream_product -> CHILD"
+      ]
+    }
+  ],
+  "csv_validation": {
+    "valid": true,
+    "errors": []
+  }
+}

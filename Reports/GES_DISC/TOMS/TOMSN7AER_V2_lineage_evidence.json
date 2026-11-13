@@ -1,0 +1,303 @@
+{
+  "generated_at": "2026-11-13T19:49:11+00:00",
+  "skills": [
+    "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0, Steps 1-7)",
+    "Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3)",
+    "Skills/Collection_Lineage_Generation_Skill.md (Step 1a-1d classification)"
+  ],
+  "notebook": "TOMS_AER_lineage.ipynb",
+  "target": {
+    "shortname": "TOMSN7AER",
+    "version": "2",
+    "concept_id": "C1418718313-GES_DISC",
+    "processing_level": "2",
+    "provider": "GES_DISC",
+    "collection_data_type": null,
+    "platforms": [
+      "Nimbus-7"
+    ],
+    "revision_date": "2026-11-11T00:55:54.677Z",
+    "granules_in_cmr": 71940,
+    "temporal": {
+      "BeginningDateTime": "1978-11-02T00:35:03.000Z",
+      "EndingDateTime": "1993-05-06T21:45:14.000Z"
+    }
+  },
+  "atbd_search_depth": 1,
+  "include_low_confidence": true,
+  "atbd_note": "The record links no ATBD. Per the skill's decision tree the lineage uses CMR pattern search plus the linked README, which holds the algorithm description and product table and is treated as a user_guide (strong source).",
+  "cmr_state_note": "Records fetched live from CMR at 2026-11-13T19:49:11+00:00; see process/*.json. Confidence depends on CMR state.",
+  "level_ranking_note": "Levels compared with rank 0 < 1 < 2 < 3.",
+  "granule_metadata_note": "UMM-G granule records carry no InputGranules or PGEVersionClass; the HDF5 global attributes need an Earthdata Login (OPeNDAP returned 401) and were not read.",
+  "source_documents": [
+    {
+      "id": "readme",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "MEaSUREs README Document for the TOMSN7AER, TOMSEPAER and OMIAuraAER Aerosol Products (GES DISC, Nov 2018)",
+      "url": "https://measures.gesdisc.eosdis.nasa.gov/data/AER/TOMSEPAER.2/doc/README.MEaSUREs_Aerosols.pdf",
+      "linked_from": "TOMSEPAER, TOMSN7AER, OMIAuraAER",
+      "fetched": true,
+      "sha256": "d9e9fbf9547f10f58ae412b7a60883ea37204a7e07c3b2ef0e8f8b619af88cbb"
+    },
+    {
+      "id": "trop_readme",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "TROPOMAER README File, Version 1.1.1 (Oct 2021)",
+      "url": "https://measures.gesdisc.eosdis.nasa.gov/data/AER/TROPOMAER.1/doc/TropOMAER_README_C001_V1.1.1.pdf",
+      "linked_from": "TROPOMAER",
+      "fetched": true,
+      "sha256": "648a8d847425a4d6883e9f71eeb29f76be6b2302481200ce7839baf28f74c24c"
+    },
+    {
+      "id": "cmr:TOMSEPAER@2",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORD (abstract)",
+      "title": "CMR UMM-C record C1452994122-GES_DISC (revision 2026-11-11T00:55:22.290Z)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C1452994122-GES_DISC.umm_json",
+      "fetched": true
+    },
+    {
+      "id": "cmr:TOMSN7AER@2",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORD (abstract)",
+      "title": "CMR UMM-C record C1418718313-GES_DISC (revision 2026-11-11T00:55:54.677Z)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C1418718313-GES_DISC.umm_json",
+      "fetched": true
+    },
+    {
+      "id": "cmr:TROPOMAER@1",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORD (abstract)",
+      "title": "CMR UMM-C record C2152047233-GES_DISC (revision 2026-11-11T01:05:08.622Z)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2152047233-GES_DISC.umm_json",
+      "fetched": true
+    }
+  ],
+  "rows": [
+    {
+      "shortname": "TOMSN7AER",
+      "version": "2",
+      "depth": 1,
+      "related_shortname": "OMIAuraAER",
+      "related_version": "1",
+      "related_concept_id": "C1460503190-GES_DISC",
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "evidence_source": "user_guide",
+      "evidence_doc": "readme",
+      "evidence_section": "README §3 Dataset Organization",
+      "evidence_quote": "The TOMSN7AER, TOMSEPAER and OMIAuraAER products are Level 2 swath data files that follow a specific file naming convention and dataset organization.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "readme",
+          "section": "README title page",
+          "quote": "README Document for the TOMSN7AER, TOMSEPAER and OMIAuraAER Aerosol Products",
+          "verified": true
+        },
+        {
+          "doc": "readme",
+          "section": "README §1.1 MEaSUREs Near UV Aerosol Products",
+          "quote": "Although a common retrieval algorithm was applied to radiance observations by the sensors in Table 1, some algorithmic differences remain as discussed in Section 2 of this document.",
+          "verified": true
+        },
+        {
+          "doc": "readme",
+          "section": "README §2 Multi-Satellite Aerosol Algorithm",
+          "quote": "This section provides a brief description of the near UV aerosol retrieval algorithm applied to observations by the N7 and EP TOMS sensors, as well as the Aura-OMI instrument.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "keyword_priority_note": "README product table (Table 1) and §3 (priority 1).",
+      "version_status": "substituted",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GES_DISC",
+        "level": "2",
+        "target_level": "2",
+        "level_progression_valid": null,
+        "version_compatible": false,
+        "cmr_versions": [
+          "1"
+        ]
+      },
+      "decision_procedure": "Q5 yes: the same near-UV aerosol product (common algorithm) from Aura-OMI -> equivalent_product (RELATED).",
+      "mapping_note": "OMIAuraAER exists in CMR only as version 1 (related_version substituted).",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = cmr_validation"
+    },
+    {
+      "shortname": "TOMSN7AER",
+      "version": "2",
+      "depth": 1,
+      "related_shortname": "TOMSEPAER",
+      "related_version": "2",
+      "related_concept_id": "C1452994122-GES_DISC",
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "evidence_source": "user_guide",
+      "evidence_doc": "readme",
+      "evidence_section": "README §3 Dataset Organization",
+      "evidence_quote": "The TOMSN7AER, TOMSEPAER and OMIAuraAER products are Level 2 swath data files that follow a specific file naming convention and dataset organization.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "readme",
+          "section": "README title page",
+          "quote": "README Document for the TOMSN7AER, TOMSEPAER and OMIAuraAER Aerosol Products",
+          "verified": true
+        },
+        {
+          "doc": "readme",
+          "section": "README §1.1 MEaSUREs Near UV Aerosol Products",
+          "quote": "Although a common retrieval algorithm was applied to radiance observations by the sensors in Table 1, some algorithmic differences remain as discussed in Section 2 of this document.",
+          "verified": true
+        },
+        {
+          "doc": "readme",
+          "section": "README §2 Multi-Satellite Aerosol Algorithm",
+          "quote": "This section provides a brief description of the near UV aerosol retrieval algorithm applied to observations by the N7 and EP TOMS sensors, as well as the Aura-OMI instrument.",
+          "verified": true
+        },
+        {
+          "doc": "readme",
+          "section": "README §4.3 Datasets (science data group)",
+          "quote": "The first releases of the TOMSN7AER and TOMSEPAER products only contain cloud data, normalized radiance, reflectivity, residue and UV aerosol index in the science data group.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "keyword_priority_note": "Listed with the target in the README product table (Table 1) and §3 = product summary table (priority 1).",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GES_DISC",
+        "level": "2",
+        "target_level": "2",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "2"
+        ]
+      },
+      "decision_procedure": "Step 1b Q1-Q4 no (separate sensor record, neither made from the other). Q5 yes: the same MEaSUREs near-UV aerosol product from the other TOMS platform, made with the common retrieval algorithm -> equivalent_product (RELATED).",
+      "mapping_note": "The surface-albedo climatology for both TOMS algorithms was built from N7-TOMS scene reflectivity (README §2.1.1); that is a derived climatology, not TOMSN7AER granules, so it does not make TOMSN7AER an input.",
+      "confidence": "HIGH",
+      "confidence_rule": "HIGH rule: source, statement and CMR validation all strong"
+    },
+    {
+      "shortname": "TOMSN7AER",
+      "version": "2",
+      "depth": 1,
+      "related_shortname": "TROPOMAER",
+      "related_version": "1",
+      "related_concept_id": "C2152047233-GES_DISC",
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "evidence_source": "cmr_pattern",
+      "evidence_doc": "cmr:TROPOMAER@1",
+      "evidence_section": "TROPOMAER CMR abstract",
+      "evidence_quote": "As part of the NASA's Making Earth System Data Records for Use in Research Environments (MEaSUREs) program, this projects describes a multi-decadal Fundamental Climate Data Record (FCDR) of calibrated radiances as well as an Earth System Data Record (ESDR) of aerosol properties over the continents derived from a 32-year record of satellite near-UV observations by three sensors.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "trop_readme",
+          "section": "TROPOMAER README §1 Overview",
+          "quote": "The NASA TROPOMI aerosol inversion procedure (TROPOMAER, Torres et al., 2020) is a direct application of the OMI near UV aerosol algorithm (OMAERUV, Torres et al., 2007; 2013).",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": null,
+      "keyword_priority_note": null,
+      "version_status": "substituted",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GES_DISC",
+        "level": "2",
+        "target_level": "2",
+        "level_progression_valid": null,
+        "version_compatible": false,
+        "cmr_versions": [
+          "1"
+        ]
+      },
+      "decision_procedure": "Q5 (inferred): the same MEaSUREs AER project (data tree AER/, DOI 10.5067/MEASURES/AER/DATA204) applied to TROPOMI. No document names the TOMS products; the TROPOMAER README names only the OMI algorithm as heritage.",
+      "mapping_note": "Found by CMR/data-tree pattern; version 1 vs 2 (substituted).",
+      "confidence": "LOW",
+      "confidence_rule": "equivalent_product exception: naming/pattern only, version not matched"
+    }
+  ],
+  "excluded": [
+    {
+      "related": "N7-TOMS Level 1 calibrated near-UV radiances",
+      "lineage_relationship": "derived_from",
+      "reason": "not_in_cmr",
+      "detail": "The Nimbus-7 TOMS radiances the retrieval runs on. The README names no radiance collection, and CMR has no TOMS Level 0/1 collection (rule 1c-4); not written.",
+      "evidence_doc": "readme",
+      "evidence_quote": "Radiance observations at the wavelengths listed in Table 1 made by the Total Ozone Mapping Spectrometer (TOMS) sensors on the Nimbus 7 (N7) and Earth Probe (EP) satellites, along with the Ozone Monitoring Instrument (OMI) on the EOS-Aura spacecraft were used in this MEaSUREs NASA-funded project.",
+      "quote_verified": true
+    },
+    {
+      "related": "Surface albedo, CALIOP aerosol-layer-height and AIRS CO-index climatologies",
+      "lineage_relationship": "input_to",
+      "reason": "not_in_cmr",
+      "detail": "Ancillary climatologies built by the science team; not distributed as CMR collections (rule 1c-4).",
+      "evidence_doc": "readme",
+      "evidence_quote": "are used to account for surface effects in the algorithms applied to the two TOMS sensors. It was obtained using a multi-year record of scene reflectivity",
+      "quote_verified": true
+    },
+    {
+      "related": "AIRS3STD 006 (C1238517289-GES_DISC)",
+      "lineage_relationship": "input_to (of the CO climatology)",
+      "reason": "not_used_in_this_version",
+      "detail": "AIRS3STD V6 feeds only the CO-index climatology, which is used for aerosol type selection in the AOD/SSA retrieval. The TOMS version 2 products contain only cloud data, radiance, reflectivity, residue and UVAI (README §4.3), and the climatology, not AIRS3STD granules, is what the TOMS algorithm reads (rule 1c-1). Not written.",
+      "evidence_doc": "readme",
+      "evidence_quote": "As used in TOMS and OMI aerosol algorithms, the Version 6 AIRS3STD CO total column in molecules-cm-2 is reduced to a unit-less index (COI)",
+      "quote_verified": true
+    },
+    {
+      "related": "TOMSN7L2 008 (C1237114211-GES_DISC)",
+      "lineage_relationship": "related_to",
+      "reason": "no_documented_relationship",
+      "detail": "TOMS V8 Nimbus-7 ozone L2 (TOMSN7L2 008, and the TOMSN7L3daer L3 aerosol index) also report a UV aerosol index from the same radiances, but no document links them to the MEaSUREs product; the README cites only the Version 7 ozone algorithm as the origin of the aerosol index (rule 1c-2).",
+      "evidence_doc": "readme",
+      "evidence_quote": "In the upgrade to the TOMS Version 7 ozone retrieval algorithm, a spectral residual quantity, intended to test the validity of the LER spectral neutrality assumption was introduced.",
+      "quote_verified": true
+    }
+  ],
+  "existing_metadata_associations": [
+    {
+      "existing": {
+        "EntryId": "TOMSN7AER",
+        "Version": "2",
+        "Type": "SCIENCE ASSOCIATED"
+      },
+      "issues": [
+        "self-relation: the record associates with itself; carries no lineage (CSV skill: no self-relations)",
+        "SCIENCE ASSOCIATED is never assigned by the skills"
+      ]
+    }
+  ],
+  "recommended_metadata_associations": [
+    {
+      "Type": "RELATED",
+      "EntryId": "OMIAuraAER",
+      "Version": "1"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "TOMSEPAER",
+      "Version": "2"
+    }
+  ],
+  "csv_validation": {
+    "valid": true,
+    "errors": []
+  }
+}

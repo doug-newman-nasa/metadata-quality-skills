@@ -1,0 +1,3 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+AST_L1BE,003,PARENT,AST_L1AE,003,MEDIUM,derived_from
+AST_L1BE,003,RELATED,AST_L1B,004,MEDIUM,related_to

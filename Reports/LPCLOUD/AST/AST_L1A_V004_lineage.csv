@@ -1,0 +1,5 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+AST_L1A,004,CHILD,AST14DEM,004,MEDIUM,downstream_product
+AST_L1A,004,CHILD,AST_L1B,004,HIGH,downstream_product
+AST_L1A,004,CHILD,AST_L1T,004,HIGH,downstream_product
+AST_L1A,004,RELATED,AST_L1AE,003,MEDIUM,related_to
