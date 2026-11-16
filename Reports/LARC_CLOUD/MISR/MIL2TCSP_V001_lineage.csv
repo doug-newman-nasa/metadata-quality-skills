@@ -1,0 +1,10 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+MIL2TCSP,001,PARENT,MI1B2E,Unknown,MEDIUM,derived_from
+MIL2TCSP,001,INPUT,MIANCAGP,001,HIGH,input_to
+MIL2TCSP,001,INPUT,MIANCARP,002,MEDIUM,input_to
+MIL2TCSP,001,INPUT,MIB2GEOP,002,MEDIUM,input_to
+MIL2TCSP,001,CHILD,MI3MCMVN,002,MEDIUM,downstream_product
+MIL2TCSP,001,CHILD,MI3QCMVN,002,MEDIUM,downstream_product
+MIL2TCSP,001,CHILD,MI3YCMVN,002,MEDIUM,downstream_product
+MIL2TCSP,001,RELATED,MIL2TCCF,001,MEDIUM,related_to
+MIL2TCSP,001,RELATED,MIL2TCCL,003,MEDIUM,related_to

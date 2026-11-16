@@ -1,0 +1,6 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+MIRCCM,004,PARENT,MI1B2E,Unknown,MEDIUM,derived_from
+MIRCCM,004,PARENT,MI1B2T,Unknown,MEDIUM,derived_from
+MIRCCM,004,INPUT,MIB2GEOP,002,MEDIUM,input_to
+MIRCCM,004,RELATED,MIL2ASLS,003,MEDIUM,related_to
+MIRCCM,004,RELATED,MIRCCMF,002,MEDIUM,related_to

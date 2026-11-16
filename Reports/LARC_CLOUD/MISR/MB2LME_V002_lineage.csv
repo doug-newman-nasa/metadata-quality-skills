@@ -1,0 +1,5 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+MB2LME,002,PARENT,MIB1LM,002,HIGH,derived_from
+MB2LME,002,INPUT,MIANCAGP,001,MEDIUM,input_to
+MB2LME,002,INPUT,MIANCARP,002,MEDIUM,input_to
+MB2LME,002,RELATED,MB2LMT,002,MEDIUM,parallel_product

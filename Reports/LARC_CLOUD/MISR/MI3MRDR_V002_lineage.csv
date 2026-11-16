@@ -1,0 +1,3 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+MI3MRDR,002,PARENT,MI1B2E,004,MEDIUM,aggregated_from
+MI3MRDR,002,PARENT,MI1B2T,004,MEDIUM,aggregated_from

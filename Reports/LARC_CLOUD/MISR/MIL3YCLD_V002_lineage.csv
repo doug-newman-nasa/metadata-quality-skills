@@ -1,0 +1,2 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+MIL3YCLD,002,RELATED,MI3YCLDN,002,MEDIUM,parallel_product

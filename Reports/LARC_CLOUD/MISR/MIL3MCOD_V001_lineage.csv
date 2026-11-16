@@ -1,0 +1,2 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+MIL3MCOD,001,PARENT,MIL3DCOD,001,MEDIUM,aggregated_from

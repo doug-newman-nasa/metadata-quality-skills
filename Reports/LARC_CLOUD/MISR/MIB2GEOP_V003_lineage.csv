@@ -1,0 +1,2 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+MIB2GEOP,003,INPUT,MIANCAGP,001,MEDIUM,input_to
