@@ -1,0 +1,2 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+VBEMIB2E,003,PARENT,MI1B2E,003,MEDIUM,derived_from

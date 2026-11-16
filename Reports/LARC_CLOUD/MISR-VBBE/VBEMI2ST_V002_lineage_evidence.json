@@ -1,0 +1,469 @@
+{
+  "generated_at": "2026-11-16T20:30:13+00:00",
+  "skills": [
+    "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0, Steps 1-7)",
+    "Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3)",
+    "Skills/Collection_Lineage_Generation_Skill.md (Step 1a-1d classification)"
+  ],
+  "notebook": "MISR_VBBE_lineage.ipynb",
+  "target": {
+    "shortname": "VBEMI2ST",
+    "version": "002",
+    "concept_id": "C3417610727-LARC_CLOUD",
+    "processing_level": "2",
+    "provider": "LARC_CLOUD",
+    "collection_data_type": "SCIENCE_QUALITY",
+    "platforms": [
+      "Terra"
+    ],
+    "projects": [
+      "MISR"
+    ],
+    "revision_date": "2026-10-21T19:27:50.573Z",
+    "temporal": [
+      "2007-07-24",
+      "2007-11-30"
+    ]
+  },
+  "atbd_search_depth": 1,
+  "include_low_confidence": true,
+  "atbd_note": "The linked ATBD (MISR_ATBDs.pdf) is an index page; lineage from CMR titles/abstracts, the User's Guide VBBE section, the MISR Regional VBBE overview and a granule file-version comparison.",
+  "granule_check": {
+    "compared_with": "MIL2TCST",
+    "n_granules": 186,
+    "file_versions": [
+      [
+        "F08_0017",
+        186
+      ]
+    ],
+    "keys": 182,
+    "first_last": [
+      "MISR_STEREO_P130_O040408_F08_0017_1_VBE_b73-99.hdf",
+      "MISR_STEREO_P121_O042286_F08_0017_VBE_b73-99.hdf"
+    ],
+    "sample_keys": [
+      "O040408",
+      "O041413",
+      "O042286"
+    ],
+    "subset_by_key": {
+      "O040408": [
+        "F08_0017"
+      ],
+      "O041413": [
+        "F08_0017"
+      ],
+      "O042286": [
+        "F08_0017"
+      ]
+    },
+    "global": {
+      "002": {
+        "O040408": [
+          "F08_0017"
+        ],
+        "O041413": [
+          "F08_0017"
+        ],
+        "O042286": [
+          "F08_0017"
+        ]
+      }
+    },
+    "region_tag": [
+      "VBE_b73-99"
+    ],
+    "paths": [
+      "113",
+      "114",
+      "115",
+      "116",
+      "117",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "123",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "133",
+      "134",
+      "135",
+      "136"
+    ],
+    "exact_matches": {
+      "002": [
+        "O040408",
+        "O041413",
+        "O042286"
+      ]
+    }
+  },
+  "link_check": [
+    {
+      "url": "https://asdc.larc.nasa.gov/citing-data",
+      "status": 404
+    },
+    {
+      "url": "https://asdc.larc.nasa.gov/project/MISR",
+      "status": 404
+    },
+    {
+      "url": "https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA21927",
+      "status": 403
+    }
+  ],
+  "source_documents": [
+    {
+      "id": "atbd_index",
+      "kind": "atbd",
+      "title": "ATB Documents: MISR (index page; linked as ATBD)",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/MISR_ATBDs.pdf",
+      "sha256": "375542e99f04d41d6bd7452cffc39cd449299519ac555b70068ab356d940be61"
+    },
+    {
+      "id": "ov2",
+      "kind": "user_guide",
+      "title": "MISR Data User's Guide / product overview (USER'S GUIDE)",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/guide/misr_ov2.pdf",
+      "sha256": "aac4ba6c52b0cd6e9b4883a08bd0a7d040adbe9b0b5d792255c1e0d940fbcd3c"
+    },
+    {
+      "id": "idx",
+      "kind": "other_doc",
+      "title": "MISR Data Versioning Index",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/index.pdf",
+      "sha256": "f560b7bdc8807bc8aebdc628f273362ac9fe5e023375c65171ad2ea93527cb10"
+    },
+    {
+      "id": "pge1",
+      "kind": "other_doc",
+      "title": "MISR L1 versioning (PGE1): ESDT / file prefix table",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/pge1.pdf",
+      "sha256": "0f751d0fbdcbb6a337542695a99b4c2b5bef9d72b66f723e379bea2ae106b126"
+    },
+    {
+      "id": "pge7",
+      "kind": "other_doc",
+      "title": "MISR Geometric Parameters versioning (PGE7): ESDT / file prefix table",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/pge7.pdf",
+      "sha256": "da8285ce9fb208aa03c5151e54e135b9ca753425509604abb2c4466bf665002c"
+    },
+    {
+      "id": "pge8a",
+      "kind": "other_doc",
+      "title": "MISR TOA/Cloud Stereo versioning (PGE8a): ESDT / file prefix table",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/pge8a.pdf",
+      "sha256": "1dfccd8c427387ffaca68eea1a394aa58c479cbd2f16df4b2d115a553ce6c33f"
+    },
+    {
+      "id": "pge9",
+      "kind": "other_doc",
+      "title": "MISR Aerosol/Surface versioning (PGE9): ESDT / file prefix table",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/pge9.pdf",
+      "sha256": "cadc9ce7d68de3cd203658dc6845bc761a9d2ad9e92219a003049d709a0507be"
+    },
+    {
+      "id": "vbbe",
+      "kind": "other_doc",
+      "title": "MISR VBBE images and data table (GENERAL DOCUMENTATION)",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/field_campaign_imagery/vbbe.pdf",
+      "sha256": "cc924db963e07869317a7c24875c1c4a0f848e3dddaeac20aa7f3c6091e0ce65"
+    },
+    {
+      "id": "vbbe_cal",
+      "kind": "other_doc",
+      "title": "MISR acquisition calendar for VBBE (PROCESSING HISTORY)",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/vbbe/vbbe_calendar.pdf",
+      "sha256": "cbf1a65da1b7a30196198ece8d205410885feee8116d85522f3b753089da7895"
+    },
+    {
+      "id": "reg_over",
+      "kind": "other_doc",
+      "title": "MISR Regional VBBE Imagery Overview (GENERAL DOCUMENTATION)",
+      "url": "https://l0dup05.larc.nasa.gov/project/misr/field_campaign_imagery/vbbe/regional/overview.html",
+      "sha256": "b6df892a756364071cf0056aeaac046be0af99a7974d207aac6b7ca37df143f2"
+    }
+  ],
+  "rows": [
+    {
+      "shortname": "VBEMI2ST",
+      "version": "002",
+      "depth": 1,
+      "related_shortname": "MIL2TCST",
+      "related_version": "002",
+      "related_concept_id": "C2854335636-LARC_CLOUD",
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "evidence_source": "other_doc",
+      "evidence_doc": "cmr:granules",
+      "evidence_section": "CMR granule names: VBEMI2ST 002 vs MIL2TCST (['O040408', 'O041413', 'O042286'])",
+      "evidence_quote": "VBEMI2ST 002 files carry ['F08_0017']; MIL2TCST V002: ['F08_0017'] -> file-version series found in V['002'] (identical files at ['O040408', 'O041413', 'O042286'])",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "src": "cmrtitle:VBEMI2ST@002",
+          "section": "VBEMI2ST 002 CMR EntryTitle",
+          "quote": "subset for the VBBE region",
+          "verified": true
+        },
+        {
+          "src": "ov2",
+          "section": "User's Guide §2.6.8 VBBE",
+          "quote": "The Virtual Biomass Burning Experiment (VBBE) was an aerosol experiment which took place in south east Asia during August and September 2007.",
+          "verified": true
+        },
+        {
+          "src": "reg_over",
+          "section": "Regional VBBE Overview",
+          "quote": "More information about the Level 1 and Level 2 products subsetted for the VBBE campaign",
+          "verified": true
+        },
+        {
+          "src": "idx",
+          "section": "Versioning Index, Level 2",
+          "quote": "TOA/Cloud Stereo (MIL2TCST, MIL2TCSF)",
+          "verified": true
+        },
+        {
+          "src": "pge8a",
+          "section": "PGE8a ESDT / file-prefix table",
+          "quote": "Lists MIL2TCST, MISR_AM1_TC_STEREO",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "keyword_priority_note": "Title: '… subset for the VBBE region'; the product type maps to MIL2TCST (Versioning Index); granule file versions checked against CMR.",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "LARC_CLOUD",
+        "level": "2",
+        "target_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true,
+        "cmr_versions": [
+          "002"
+        ],
+        "temporal_overlap": true
+      },
+      "decision_procedure": "Q2 yes: T is X's data cut to the VBBE region (spatial subset) -> derived_from (PARENT).",
+      "mapping_note": "Source file-version series found in MIL2TCST V002.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source, statement"
+    }
+  ],
+  "excluded": [
+    {
+      "related": "MIB2GEOP (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "MIB2GEOP is an input of MIL2TCST, the product this subset is cut from, not of the subset (rule 1c-1)."
+    },
+    {
+      "related": "MI1B2T (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "MI1B2T is an input of MIL2TCST, the product this subset is cut from, not of the subset (rule 1c-1)."
+    },
+    {
+      "related": "MI1B2E (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "MI1B2E is an input of MIL2TCST, the product this subset is cut from, not of the subset (rule 1c-1)."
+    },
+    {
+      "related": "MIRCCM (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "MIRCCM is an input of MIL2TCST, the product this subset is cut from, not of the subset (rule 1c-1)."
+    },
+    {
+      "related": "MIANCARP (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "MIANCARP is an input of MIL2TCST, the product this subset is cut from, not of the subset (rule 1c-1)."
+    },
+    {
+      "related": "MIANCAGP (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "MIANCAGP is an input of MIL2TCST, the product this subset is cut from, not of the subset (rule 1c-1)."
+    },
+    {
+      "related": "MIANAZM (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_in_cmr",
+      "detail": "'MIANAZM' has no CMR record (rule 1c-4)."
+    },
+    {
+      "related": "MIANCSSC (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_in_cmr",
+      "detail": "'MIANCSSC' has no CMR record (rule 1c-4)."
+    },
+    {
+      "related": "MIANTASC (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "MIANTASC is an input of MIL2TCST, the product this subset is cut from, not of the subset (rule 1c-1)."
+    },
+    {
+      "related": "MIANLDBM (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_in_cmr",
+      "detail": "'MIANLDBM' has no CMR record (rule 1c-4)."
+    },
+    {
+      "related": "MICNFG (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_in_cmr",
+      "detail": "'MICNFG' has no CMR record (rule 1c-4)."
+    }
+  ],
+  "existing_metadata_associations": [
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Geometric parameters of sun and view angles",
+        "EntryId": "MIB2GEOP",
+        "Version": "2"
+      },
+      "issues": [
+        "MIB2GEOP is an input of MIL2TCST, the product this subset is cut from, not of the subset (rule 1c-1)."
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Terrain-projected Level 1B2 data",
+        "EntryId": "MI1B2T",
+        "Version": "2"
+      },
+      "issues": [
+        "MI1B2T is an input of MIL2TCST, the product this subset is cut from, not of the subset (rule 1c-1)."
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Ellipsoid-projected Level 1B2 data",
+        "EntryId": "MI1B2E",
+        "Version": "2"
+      },
+      "issues": [
+        "MI1B2E is an input of MIL2TCST, the product this subset is cut from, not of the subset (rule 1c-1)."
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Cloud Masks",
+        "EntryId": "MIRCCM",
+        "Version": "3"
+      },
+      "issues": [
+        "MIRCCM is an input of MIL2TCST, the product this subset is cut from, not of the subset (rule 1c-1)."
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "MISR radiometric and configuration parameters",
+        "EntryId": "MIANCARP",
+        "Version": "2"
+      },
+      "issues": [
+        "MIANCARP is an input of MIL2TCST, the product this subset is cut from, not of the subset (rule 1c-1)."
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Geographic data",
+        "EntryId": "MIANCAGP",
+        "Version": "1"
+      },
+      "issues": [
+        "MIANCAGP is an input of MIL2TCST, the product this subset is cut from, not of the subset (rule 1c-1)."
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "MISR Azimuthal Model Dataset",
+        "EntryId": "MIANAZM",
+        "Version": "2"
+      },
+      "issues": [
+        "'MIANAZM' has no CMR record (rule 1c-4)."
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "MISR Cloud Screening Surface Classification",
+        "EntryId": "MIANCSSC",
+        "Version": "2"
+      },
+      "issues": [
+        "'MIANCSSC' has no CMR record (rule 1c-4)."
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Atmosphere and surface climatology",
+        "EntryId": "MIANTASC",
+        "Version": "2"
+      },
+      "issues": [
+        "MIANTASC is an input of MIL2TCST, the product this subset is cut from, not of the subset (rule 1c-1)."
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Land surface biome",
+        "EntryId": "MIANLDBM",
+        "Version": "1"
+      },
+      "issues": [
+        "'MIANLDBM' has no CMR record (rule 1c-4)."
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Configuration file for PGE",
+        "EntryId": "MICNFG",
+        "Version": "2"
+      },
+      "issues": [
+        "'MICNFG' has no CMR record (rule 1c-4)."
+      ]
+    }
+  ],
+  "recommended_metadata_associations": [
+    {
+      "Type": "PARENT",
+      "EntryId": "MIL2TCST",
+      "Version": "002"
+    }
+  ],
+  "recommended_metadata_associations_note": "Replace the copied INPUT lists with this single PARENT. UMM-C 1.18.x field names (EntryId); under the proposed UMM-C 1.18.8, EntryId becomes ShortName and Version is required, so 'Unknown' needs a curator decision.",
+  "csv_validation": {
+    "valid": true,
+    "errors": []
+  }
+}
