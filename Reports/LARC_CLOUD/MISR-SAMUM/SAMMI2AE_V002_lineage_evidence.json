@@ -1,0 +1,459 @@
+{
+  "generated_at": "2026-11-16T19:35:50+00:00",
+  "skills": [
+    "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0, Steps 1-7)",
+    "Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3)",
+    "Skills/Collection_Lineage_Generation_Skill.md (Step 1a-1d classification)"
+  ],
+  "notebook": "MISR_SAMUM_lineage.ipynb",
+  "target": {
+    "shortname": "SAMMI2AE",
+    "version": "002",
+    "concept_id": "C3422083912-LARC_CLOUD",
+    "processing_level": "2",
+    "provider": "LARC_CLOUD",
+    "collection_data_type": "SCIENCE_QUALITY",
+    "platforms": [
+      "Terra"
+    ],
+    "projects": [
+      "MISR"
+    ],
+    "revision_date": "2026-10-21T19:22:40.307Z",
+    "temporal": [
+      "2006-05-12",
+      "2006-06-15"
+    ]
+  },
+  "atbd_search_depth": 1,
+  "include_low_confidence": true,
+  "atbd_note": "The linked ATBD (MISR_ATBDs.pdf) is an index page with no product lineage; lineage comes from the CMR abstract, the SAMUM Regional overview page, the User's Guide SAMUM section and a granule file-version comparison.",
+  "granule_check": {
+    "n_granules": 37,
+    "file_versions": [
+      [
+        "F09_0019",
+        37
+      ]
+    ],
+    "orbits": 37,
+    "subset_by_orbit": {
+      "034034": [
+        "F09_0019"
+      ],
+      "034311": [
+        "F09_0019"
+      ],
+      "034515": [
+        "F09_0019"
+      ]
+    },
+    "first_last": [
+      "MISR_AEROSOL_P200_O034034_F09_0019_SAM_b57-71.hdf",
+      "MISR_AEROSOL_P207_O034515_F09_0019_SAM_b57-71.hdf"
+    ],
+    "sample_orbits": [
+      "034034",
+      "034311",
+      "034515"
+    ],
+    "global": {
+      "002": {
+        "034034": [
+          "F09_0019",
+          "F12_0022"
+        ],
+        "034311": [
+          "F09_0019",
+          "F12_0022"
+        ],
+        "034515": [
+          "F09_0019",
+          "F12_0022"
+        ]
+      },
+      "003": {
+        "034034": [
+          "F13_0023"
+        ],
+        "034311": [
+          "F13_0023"
+        ],
+        "034515": [
+          "F13_0023"
+        ]
+      }
+    },
+    "all_blocks_57_71": true,
+    "paths": [
+      "194",
+      "195",
+      "196",
+      "197",
+      "198",
+      "199",
+      "200",
+      "201",
+      "202",
+      "203",
+      "204",
+      "205",
+      "206",
+      "207",
+      "208",
+      "209",
+      "210",
+      "211",
+      "212",
+      "213",
+      "214"
+    ],
+    "exact_orbit_matches": {
+      "002": [
+        "034034",
+        "034311",
+        "034515"
+      ],
+      "003": []
+    }
+  },
+  "link_check": [
+    {
+      "url": "https://asdc.larc.nasa.gov/citing-data",
+      "status": 404
+    },
+    {
+      "url": "https://asdc.larc.nasa.gov/project/MISR",
+      "status": 404
+    },
+    {
+      "url": "https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA21927",
+      "status": 403
+    }
+  ],
+  "source_documents": [
+    {
+      "id": "atbd_index",
+      "kind": "atbd",
+      "title": "ATB Documents: MISR (index page; linked as ATBD)",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/MISR_ATBDs.pdf",
+      "sha256": "375542e99f04d41d6bd7452cffc39cd449299519ac555b70068ab356d940be61"
+    },
+    {
+      "id": "ov2",
+      "kind": "user_guide",
+      "title": "MISR Data User's Guide / product overview (USER'S GUIDE)",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/guide/misr_ov2.pdf",
+      "sha256": "aac4ba6c52b0cd6e9b4883a08bd0a7d040adbe9b0b5d792255c1e0d940fbcd3c"
+    },
+    {
+      "id": "idx",
+      "kind": "other_doc",
+      "title": "MISR Data Versioning Index (PRODUCTION HISTORY)",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/index.pdf",
+      "sha256": "f560b7bdc8807bc8aebdc628f273362ac9fe5e023375c65171ad2ea93527cb10"
+    },
+    {
+      "id": "samum",
+      "kind": "other_doc",
+      "title": "MISR SAMUM Images (GENERAL DOCUMENTATION)",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/field_campaign_imagery/samum.pdf",
+      "sha256": "3e4a3120e1cb8250730249495d3144eeaa2729f893458dc2bad62657faa92098"
+    },
+    {
+      "id": "samum_ov",
+      "kind": "other_doc",
+      "title": "MISR Regional SAMUM Imagery Overview (GENERAL DOCUMENTATION)",
+      "url": "https://l0dup05.larc.nasa.gov/project/misr/field_campaign_imagery/samum/regional/overview.html",
+      "sha256": "e3f6c75512fd98b7487e45b5556b71b664d42b702fd06c7983b3078f088e7044"
+    }
+  ],
+  "rows": [
+    {
+      "shortname": "SAMMI2AE",
+      "version": "002",
+      "depth": 1,
+      "related_shortname": "MIL2ASAE",
+      "related_version": "002",
+      "related_concept_id": "C3417629474-LARC_CLOUD",
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "evidence_source": "other_doc",
+      "evidence_doc": "cmr:granules",
+      "evidence_section": "CMR granule names: SAMMI2AE 002 vs MIL2ASAE (orbits ['034034', '034311', '034515'])",
+      "evidence_quote": "SAMMI2AE files carry ['F09_0019']; MIL2ASAE V002: ['F09_0019', 'F12_0022']; V003: ['F13_0023'] -> identical file version found in MIL2ASAE V002 at all sampled orbits",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "src": "cmr:SAMMI2AE@002",
+          "section": "SAMMI2AE 002 CMR abstract",
+          "quote": "Level 2 Aerosol Product subset for the SAMUM region",
+          "verified": true
+        },
+        {
+          "src": "samum_ov",
+          "section": "MISR Regional SAMUM Imagery Overview, 'About this Web Site'",
+          "quote": "More information about the Level 1 and Level 2 products subsetted for the SAMUM campaign is available on the SAMUM Data Table",
+          "verified": true
+        },
+        {
+          "src": "ov2",
+          "section": "User's Guide §2.6.7 Saharan Mineral Dust Experiment (SAMUM)",
+          "quote": "This experiment took place in southern Morocco during May and June 2006.",
+          "verified": true
+        },
+        {
+          "src": "idx",
+          "section": "Versioning Index, Level 2",
+          "quote": "Aerosol (MIL2ASAE, MIL2ASAF) and Land Surface (MIL2ASLS, MIL2ASLF)",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "keyword_priority_note": "Abstract: 'Level 2 Aerosol Product subset for the SAMUM region'; the product type maps to MIL2ASAE (Versioning Index); granule file versions checked against CMR.",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "LARC_CLOUD",
+        "level": "2",
+        "target_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true,
+        "cmr_versions": [
+          "002",
+          "003"
+        ],
+        "temporal_overlap": true
+      },
+      "decision_procedure": "Q2 yes: T is X's data cut to the SAMUM blocks (spatial subset, no other processing) -> derived_from (PARENT).",
+      "mapping_note": "Source file version [['F09_0019', 37]] found in MIL2ASAE V002 at all sampled orbits.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source, statement"
+    }
+  ],
+  "excluded": [
+    {
+      "related": "MIB2GEOP (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "MIB2GEOP is an input of MIL2ASAE, the product this subset is cut from, not of the subset (rule 1c-1)."
+    },
+    {
+      "related": "MI1B2T (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "MI1B2T is an input of MIL2ASAE, the product this subset is cut from, not of the subset (rule 1c-1)."
+    },
+    {
+      "related": "MI1B2E (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "MI1B2E is an input of MIL2ASAE, the product this subset is cut from, not of the subset (rule 1c-1)."
+    },
+    {
+      "related": "MIRCCM (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "MIRCCM is an input of MIL2ASAE, the product this subset is cut from, not of the subset (rule 1c-1)."
+    },
+    {
+      "related": "MIANCARP (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "MIANCARP is an input of MIL2ASAE, the product this subset is cut from, not of the subset (rule 1c-1)."
+    },
+    {
+      "related": "MIANCAGP (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "MIANCAGP is an input of MIL2ASAE, the product this subset is cut from, not of the subset (rule 1c-1)."
+    },
+    {
+      "related": "MIANACP (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "MIANACP is an input of MIL2ASAE, the product this subset is cut from, not of the subset (rule 1c-1)."
+    },
+    {
+      "related": "MIANTASC (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "MIANTASC is an input of MIL2ASAE, the product this subset is cut from, not of the subset (rule 1c-1)."
+    },
+    {
+      "related": "MIANTOAC (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_in_cmr",
+      "detail": "'MIANTOAC' has no CMR record (rule 1c-4)."
+    },
+    {
+      "related": "MIANSMT (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_in_cmr",
+      "detail": "'MIANSMT' has no CMR record (rule 1c-4)."
+    },
+    {
+      "related": "MIANLDBM (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_in_cmr",
+      "detail": "'MIANLDBM' has no CMR record (rule 1c-4)."
+    },
+    {
+      "related": "MICNFG (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_in_cmr",
+      "detail": "'MICNFG' has no CMR record (rule 1c-4)."
+    }
+  ],
+  "existing_metadata_associations": [
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Geometric parameters of sun and view angles",
+        "EntryId": "MIB2GEOP",
+        "Version": "2"
+      },
+      "issues": [
+        "input of the global product MIL2ASAE, not of the subset (rule 1c-1)"
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Terrain-projected Level 1B2 data",
+        "EntryId": "MI1B2T",
+        "Version": "2"
+      },
+      "issues": [
+        "input of the global product MIL2ASAE, not of the subset (rule 1c-1)",
+        "Version '2' not in CMR (['003', '004'])"
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Ellipsoid-projected Level 1B2 data",
+        "EntryId": "MI1B2E",
+        "Version": "2"
+      },
+      "issues": [
+        "input of the global product MIL2ASAE, not of the subset (rule 1c-1)",
+        "Version '2' not in CMR (['003', '004'])"
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Cloud Masks",
+        "EntryId": "MIRCCM",
+        "Version": "3"
+      },
+      "issues": [
+        "input of the global product MIL2ASAE, not of the subset (rule 1c-1)",
+        "Version '3' not in CMR (['004'])"
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "MISR radiometric and configuration parameters",
+        "EntryId": "MIANCARP",
+        "Version": "2"
+      },
+      "issues": [
+        "input of the global product MIL2ASAE, not of the subset (rule 1c-1)"
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Geographic data",
+        "EntryId": "MIANCAGP",
+        "Version": "1"
+      },
+      "issues": [
+        "input of the global product MIL2ASAE, not of the subset (rule 1c-1)"
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Climatology",
+        "EntryId": "MIANACP",
+        "Version": "1"
+      },
+      "issues": [
+        "input of the global product MIL2ASAE, not of the subset (rule 1c-1)"
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Atmosphere and surface climatology",
+        "EntryId": "MIANTASC",
+        "Version": "2"
+      },
+      "issues": [
+        "input of the global product MIL2ASAE, not of the subset (rule 1c-1)"
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Tropical ocean atmosphere corrections",
+        "EntryId": "MIANTOAC",
+        "Version": "1"
+      },
+      "issues": [
+        "no CMR record"
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Radiative transfer information",
+        "EntryId": "MIANSMT",
+        "Version": "2"
+      },
+      "issues": [
+        "no CMR record"
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Land surface biome",
+        "EntryId": "MIANLDBM",
+        "Version": "1"
+      },
+      "issues": [
+        "no CMR record"
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Configuration file for PGE",
+        "EntryId": "MICNFG",
+        "Version": "2"
+      },
+      "issues": [
+        "no CMR record"
+      ]
+    }
+  ],
+  "recommended_metadata_associations": [
+    {
+      "Type": "PARENT",
+      "Description": "SAMMI2AE is a spatial subset of MIL2ASAE for the SAMUM campaign region (MISR blocks 57-71). Source: CMR abstract 'Level 2 Aerosol Product subset for the SAMUM region'; mapping to MIL2ASAE inferred from the product type (MISR Versioning Index) and confirmed by identical file versions in CMR granule names.",
+      "EntryId": "MIL2ASAE",
+      "Version": "002"
+    }
+  ],
+  "recommended_metadata_associations_note": "Replace the copied INPUT lists with this single PARENT (UMM-C 1.18.x field names).",
+  "csv_validation": {
+    "valid": true,
+    "errors": []
+  }
+}
