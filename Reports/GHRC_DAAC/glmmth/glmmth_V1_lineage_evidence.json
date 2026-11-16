@@ -1,0 +1,295 @@
+{
+  "generated_at": "2026-11-16T14:52:14+00:00",
+  "skills": [
+    "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0, Steps 1-7)",
+    "Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3)",
+    "Skills/Collection_Lineage_Generation_Skill.md (Step 1a-1d classification)"
+  ],
+  "notebook": "glmmth_lineage.ipynb",
+  "target": {
+    "shortname": "glmmth",
+    "version": "1",
+    "concept_id": "C3534731641-GHRC_DAAC",
+    "processing_level": "3",
+    "provider": "GHRC_DAAC",
+    "collection_data_type": null,
+    "collection_progress": "COMPLETE",
+    "platforms": [
+      "GOES-16",
+      "GOES-17",
+      "GOES-18",
+      "GOES-19"
+    ],
+    "instruments": [
+      "GLM"
+    ],
+    "revision_date": "2026-08-27T21:57:08.232Z",
+    "granules_in_cmr": 7,
+    "latest_granule": "GLMc_th_2025.nc",
+    "temporal": {
+      "BeginningDateTime": "2019-01-01T00:00:00.000Z",
+      "EndingDateTime": "2025-12-31T23:59:59.000Z"
+    }
+  },
+  "atbd_search_depth": 1,
+  "include_low_confidence": true,
+  "atbd_note": "The record links no ATBD (Priority 2). The User Guide and PI readme are the only product documents and are used as user guides; they fail the skill's ATBD validation (no algorithm section), but every row rests on a verified quote.",
+  "cmr_state_note": "Records fetched live from CMR at 2026-11-16T14:52:14+00:00; see process/*.json.",
+  "document_access_note": "The CMR RelatedUrls are GHRC browse-UI routes that return HTML; the files were fetched from https://d29dkgeibpazuv.cloudfront.net/pub.",
+  "no_parent_note": "glmmth has no CMR parent: its input (NOAA GOES-R GLM L2 group data) and the artifact-screening stroke data (ENTLN, GLD360, WWLLN) are not CMR collections.",
+  "doi_checks": {
+    "wwllnmth@1": {
+      "cited": "10.5067/WWLLN/DATA101",
+      "cited_in": "ug_related",
+      "cmr_doi": "10.5067/WWLLN/DATA101",
+      "match": true
+    },
+    "glmmth@1": {
+      "cited": "10.5067/GLM/DATA301",
+      "cited_in": "hth_related",
+      "cmr_doi": "10.5067/GLM/DATA301",
+      "match": true
+    }
+  },
+  "cross_references": {
+    "glmmth_guide_names_glmhth": false,
+    "glmhth_guide_names_glmmth": true
+  },
+  "browse_ui_link_check": {
+    "url": "https://ghrc.earthdata.nasa.gov/browseui/#pub/glmmth__1/docs/glmmth_dataset.pdf",
+    "content_type": "text/html",
+    "is_pdf": false,
+    "bytes": 805
+  },
+  "source_documents": [
+    {
+      "id": "ug",
+      "kind": "user_guide",
+      "subtype": "USER'S GUIDE",
+      "title": "GLM Combined Monthly Thunder Hour Data User Guide (created 2025-05-01)",
+      "url": "https://d29dkgeibpazuv.cloudfront.net/pub/glmmth__1/docs/glmmth_dataset.pdf",
+      "linked_from": "glmmth",
+      "fetched": true,
+      "sha256": "b75c07e857b079f935594b4b8d336064bee59fd65d4965a4814cc960812e09bc"
+    },
+    {
+      "id": "rm",
+      "kind": "user_guide",
+      "subtype": "PI DOCUMENTATION",
+      "title": "README: Combined GLM Monthly Thunder Hour Data (PI documentation)",
+      "url": "https://d29dkgeibpazuv.cloudfront.net/pub/glmmth__1/docs/GLM_combined_thunder_hour_readme.docx",
+      "linked_from": "glmmth",
+      "fetched": true,
+      "sha256": "4fe601a17b2a94fd0cfd2f9013ae8731148d9f652bf8c91af9a644dbbed1443c"
+    },
+    {
+      "id": "hth_ug",
+      "kind": "user_guide",
+      "subtype": "USER'S GUIDE",
+      "title": "GLM Combined Hourly Thunder Hour Data User Guide (companion product)",
+      "url": "https://d29dkgeibpazuv.cloudfront.net/pub/glmhth__1/docs/glmhth_dataset.pdf",
+      "linked_from": "glmhth",
+      "fetched": true,
+      "sha256": "2969802a446836dad1e91d0e7f850427b89a68b77cc6f27fefd823bdaf4626cc"
+    },
+    {
+      "id": "cmr:glmmth@1",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORD (abstract)",
+      "title": "CMR UMM-C record C3534731641-GHRC_DAAC",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3534731641-GHRC_DAAC.umm_json",
+      "fetched": true
+    },
+    {
+      "id": "cmr:wwllnmth@1",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORD (abstract)",
+      "title": "CMR UMM-C record C3301410475-GHRC_DAAC",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3301410475-GHRC_DAAC.umm_json",
+      "fetched": true
+    },
+    {
+      "id": "digangi2022",
+      "kind": "other_doc",
+      "subtype": "PUBLICATIONS",
+      "title": "DiGangi et al. 2022, Thunder Hours (BAMS)",
+      "url": "https://doi.org/10.1175/BAMS-D-20-0198.1",
+      "fetched": false,
+      "note": "Method reference; names no input collection."
+    }
+  ],
+  "rows": [
+    {
+      "shortname": "glmmth",
+      "version": "1",
+      "depth": 1,
+      "related_shortname": "glmhth",
+      "related_version": "1",
+      "related_concept_id": "C3894650367-GHRC_DAAC",
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "evidence_source": "user_guide",
+      "evidence_doc": "hth_ug",
+      "evidence_section": "glmhth User Guide, Related Data",
+      "evidence_quote": "Geostationary Lightning Mapper (GLM) Combined Monthly Thunder Hour data (https://dx.doi.org/10.5067/GLM/DATA301)",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "hth_ug",
+          "section": "glmhth User Guide, Algorithm",
+          "quote": "Network (ENTLN), Global Lightning Dataset (GLD360), and World Wide Lightning Location Network (WWLLN).",
+          "verified": true
+        },
+        {
+          "doc": "hth_ug",
+          "section": "glmhth User Guide, Data Characteristics",
+          "quote": "consists of daily files containing hourly maps of Thunder Hours.",
+          "verified": true
+        },
+        {
+          "doc": "rm",
+          "section": "PI readme",
+          "quote": "Following DiGangi et al. (2022), a thunder hour is assigned to any grid box within 15 km of two or more GLM group centroids during that hour.",
+          "verified": true
+        },
+        {
+          "doc": "ug",
+          "section": "User Guide, Notice",
+          "quote": "The GLM Combined Monthly Thunder Hours Data are one of several thunder hour datasets that GHRC will be archiving.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "keyword_priority_note": "The companion product's User Guide lists glmmth by DOI under 'Related Data' (product list = priority 1); Step 4 confirms the DOI.",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GHRC_DAAC",
+        "level": "3",
+        "target_level": "3",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "1"
+        ]
+      },
+      "decision_procedure": "Q1-Q2 no: neither document says glmmth is made from glmhth files. Q3 no. Q4 yes: both are written from the same artifact-filtered GLM group data with the same thunder-hour definition, one hourly and one monthly -> parallel_product (RELATED).",
+      "mapping_note": "A monthly sum of the hourly product is plausible ('Monthly summed thunder hours') but undocumented; kept RELATED (rule 1c-6). glmmth's own guide doesn't name glmhth.",
+      "confidence": "HIGH",
+      "confidence_rule": "HIGH rule: source, statement and CMR validation all strong"
+    },
+    {
+      "shortname": "glmmth",
+      "version": "1",
+      "depth": 1,
+      "related_shortname": "wwllnmth",
+      "related_version": "1",
+      "related_concept_id": "C3301410475-GHRC_DAAC",
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "evidence_source": "user_guide",
+      "evidence_doc": "ug",
+      "evidence_section": "User Guide, Related Data",
+      "evidence_quote": "World Wide Lightning Location Network (WWLLN) Monthly Thunder Hour data (https://dx.doi.org/10.5067/WWLLN/DATA101)",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "cmr:wwllnmth@1",
+          "section": "wwllnmth CMR abstract",
+          "quote": "Thunder hours are the number of hours in a given month during which at least two WWLLN strokes were observed within 15 km of each grid point.",
+          "verified": true
+        },
+        {
+          "doc": "ug",
+          "section": "User Guide, Notice",
+          "quote": "The GLM Combined Monthly Thunder Hours Data are one of several thunder hour datasets that GHRC will be archiving.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "keyword_priority_note": "glmmth's User Guide cites it by DOI under 'Related Data'; Step 4 confirms the DOI.",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GHRC_DAAC",
+        "level": "3",
+        "target_level": "3",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "1"
+        ]
+      },
+      "decision_procedure": "Q1-Q4 no (no data flows between them). Q5 yes: the same monthly thunder-hour product (0.05 deg, 15 km rule) from another lightning observing system (ground-based WWLLN) -> equivalent_product (RELATED).",
+      "mapping_note": "WWLLN strokes are also used to screen GLM artifacts, but that input is the WWLLN stroke data (not a CMR collection), not wwllnmth.",
+      "confidence": "HIGH",
+      "confidence_rule": "HIGH rule: source, statement and CMR validation all strong"
+    }
+  ],
+  "excluded": [
+    {
+      "related": "NOAA GOES-R GLM L2 LCFA group data (GOES-16/17/18/19)",
+      "lineage_relationship": "derived_from",
+      "reason": "not_in_cmr",
+      "detail": "The thunder hours are computed from GLM group centroids; the operational GLM L2 files (NOAA) have no CMR collection. GHRC's glmcierra (2017-2023 reprocessing) and glml1bflash (3-day 2021 subset) are not named and don't cover 2019-2025 (rule 1c-4).",
+      "evidence_doc": "rm",
+      "evidence_section": "PI readme, Basic information",
+      "evidence_quote": "The following processing is applied to the group data:",
+      "quote_verified": true
+    },
+    {
+      "related": "ENTLN, GLD360 and WWLLN stroke/pulse data",
+      "lineage_relationship": "input_to",
+      "reason": "not_in_cmr",
+      "detail": "Used to discard 'likely false' GLM groups; these ground-network datasets are not CMR collections (rule 1c-4).",
+      "evidence_doc": "rm",
+      "evidence_section": "PI readme, Artifact removal",
+      "evidence_quote": "GLM groups are matched with stroke or pulse observations from three major global ground-based lightning detection systems: Earth Networks Total Lightning Network (ENTLN), Global Lightning Dataset (GLD360), and World Wide Lightning Location Network (WWLLN).",
+      "quote_verified": true
+    },
+    {
+      "related": "isslisath, trmmlisath, comblisath (LIS annual thunder hours)",
+      "lineage_relationship": "related_to",
+      "reason": "no_documented_relationship",
+      "detail": "Other GHRC thunder-hour collections (annual, LIS); neither GLM guide names them (rule 1c-2).",
+      "evidence_doc": "ug",
+      "evidence_section": "User Guide, Notice",
+      "evidence_quote": "The GLM Combined Monthly Thunder Hours Data are one of several thunder hour datasets that GHRC will be archiving.",
+      "quote_verified": true
+    }
+  ],
+  "existing_metadata_associations": [
+    {
+      "existing": {
+        "Version": "3",
+        "EntryId": "glmmth"
+      },
+      "issues": [
+        "self-relation: the record associates with itself; carries no lineage (CSV skill: no self-relations)",
+        "no Type (required under the proposed UMM-C 1.18.8)",
+        "Version '3' doesn't match the record's own Version '1' (CMR has versions ['1'])"
+      ]
+    }
+  ],
+  "recommended_metadata_associations": [
+    {
+      "Type": "RELATED",
+      "EntryId": "glmhth",
+      "Version": "1"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "wwllnmth",
+      "Version": "1"
+    }
+  ],
+  "recommended_metadata_associations_note": "UMM-C 1.18.x field names (EntryId). Under the proposed UMM-C 1.18.8, EntryId becomes ShortName and Type, ShortName and Version are required; the current association lacks Type.",
+  "csv_validation": {
+    "valid": true,
+    "errors": []
+  }
+}
