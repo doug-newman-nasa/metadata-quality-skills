@@ -1,0 +1,456 @@
+{
+  "generated_at": "2026-11-16T20:05:30+00:00",
+  "skills": [
+    "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0, Steps 1-7)",
+    "Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3)",
+    "Skills/Collection_Lineage_Generation_Skill.md (Step 1a-1d classification)"
+  ],
+  "notebook": "MISR_UAE_lineage.ipynb",
+  "target": {
+    "shortname": "UAEMITCL",
+    "version": "003",
+    "concept_id": "C3417610439-LARC_CLOUD",
+    "processing_level": "2",
+    "provider": "LARC_CLOUD",
+    "collection_data_type": "SCIENCE_QUALITY",
+    "platforms": [
+      "Terra"
+    ],
+    "projects": [
+      "MISR"
+    ],
+    "revision_date": "2026-10-21T19:27:27.019Z",
+    "temporal": [
+      "2004-07-01",
+      "2006-10-05"
+    ]
+  },
+  "atbd_search_depth": 1,
+  "include_low_confidence": true,
+  "atbd_note": "The linked ATBD (MISR_ATBDs.pdf) is an index page; lineage from CMR titles/abstracts, the User's Guide UAE2 section, the MISR Regional UAE2 pages and a granule file-version comparison.",
+  "granule_check": {
+    "compared_with": "MIL2TCCL",
+    "n_granules": 1187,
+    "file_versions": [
+      [
+        "F03_0004",
+        76
+      ],
+      [
+        "F04_0005",
+        120
+      ],
+      [
+        "F04_0006",
+        279
+      ],
+      [
+        "F05_0007",
+        58
+      ],
+      [
+        "F05_0008",
+        115
+      ],
+      [
+        "F05_0009",
+        154
+      ],
+      [
+        "F06_0011",
+        385
+      ]
+    ],
+    "keys": 591,
+    "first_last": [
+      "MISR_CLASSIFIERS_P160_O024129_F05_0009_UAE_b68-74.hdf",
+      "MISR_CLASSIFIERS_P166_O036158_F06_0011_UAE_b68-74.hdf"
+    ],
+    "sample_keys": [
+      "O024129",
+      "O030114",
+      "O036158"
+    ],
+    "subset_by_key": {
+      "O024129": [
+        "F05_0009"
+      ],
+      "O030114": [
+        "F04_0006"
+      ],
+      "O036158": [
+        "F05_0009",
+        "F06_0011"
+      ]
+    },
+    "global": {
+      "003": {
+        "O024129": [
+          "F05_0009",
+          "F06_0011",
+          "F07_0012"
+        ],
+        "O030114": [
+          "F04_0006",
+          "F06_0011",
+          "F07_0012"
+        ],
+        "O036158": [
+          "F05_0009",
+          "F06_0011",
+          "F07_0012"
+        ]
+      }
+    },
+    "uae_tag": [
+      "UAE_b68-74"
+    ],
+    "paths": [
+      "155",
+      "156",
+      "157",
+      "158",
+      "159",
+      "160",
+      "161",
+      "162",
+      "163",
+      "164",
+      "165",
+      "166"
+    ],
+    "exact_matches": {
+      "003": [
+        "O024129",
+        "O030114",
+        "O036158"
+      ]
+    }
+  },
+  "link_check": [
+    {
+      "url": "https://asdc.larc.nasa.gov/citing-data",
+      "status": 404
+    },
+    {
+      "url": "https://asdc.larc.nasa.gov/project/MISR",
+      "status": 404
+    },
+    {
+      "url": "https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA21927",
+      "status": 403
+    }
+  ],
+  "source_documents": [
+    {
+      "id": "atbd_index",
+      "kind": "atbd",
+      "title": "ATB Documents: MISR (index page; linked as ATBD)",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/MISR_ATBDs.pdf",
+      "sha256": "375542e99f04d41d6bd7452cffc39cd449299519ac555b70068ab356d940be61"
+    },
+    {
+      "id": "ov2",
+      "kind": "user_guide",
+      "title": "MISR Data User's Guide / product overview (USER'S GUIDE)",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/guide/misr_ov2.pdf",
+      "sha256": "aac4ba6c52b0cd6e9b4883a08bd0a7d040adbe9b0b5d792255c1e0d940fbcd3c"
+    },
+    {
+      "id": "idx",
+      "kind": "other_doc",
+      "title": "MISR Data Versioning Index",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/index.pdf",
+      "sha256": "f560b7bdc8807bc8aebdc628f273362ac9fe5e023375c65171ad2ea93527cb10"
+    },
+    {
+      "id": "pge1",
+      "kind": "other_doc",
+      "title": "MISR L1 versioning (PGE1): ESDT / file prefix table",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/pge1.pdf",
+      "sha256": "0f751d0fbdcbb6a337542695a99b4c2b5bef9d72b66f723e379bea2ae106b126"
+    },
+    {
+      "id": "pge9",
+      "kind": "other_doc",
+      "title": "MISR Aerosol/Surface versioning (PGE9): ESDT / file prefix table",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/pge9.pdf",
+      "sha256": "cadc9ce7d68de3cd203658dc6845bc761a9d2ad9e92219a003049d709a0507be"
+    },
+    {
+      "id": "pge12a",
+      "kind": "other_doc",
+      "title": "MISR L3 radiance versioning (PGE12a)",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/pge12a.pdf",
+      "sha256": "22e797e1a9b2f98e90570ea328de524fcfd5aa91c629ffcf6ed1706e5b53174d"
+    },
+    {
+      "id": "pge12c",
+      "kind": "other_doc",
+      "title": "MISR L3 aerosol/land versioning (PGE12c)",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/pge12c.pdf",
+      "sha256": "dd3deb61a52cc47c7793a26222a3493dd986a8aeb6ca1938b0cc53777eb12216"
+    },
+    {
+      "id": "uae",
+      "kind": "other_doc",
+      "title": "MISR UAE2 images and data table (GENERAL DOCUMENTATION)",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/field_campaign_imagery/uae.pdf",
+      "sha256": "bde8c8975992defebca33417e3da17d261c12c2144aec190f68dcbf3c720519f"
+    },
+    {
+      "id": "uae_lm",
+      "kind": "other_doc",
+      "title": "UAE Local Mode Sites (GENERAL DOCUMENTATION)",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/gallery/field_campaigns/UAE/UAE_LM_sites.pdf",
+      "sha256": "ec1f0a5c9a803bc9bfc9ac949093e45a20cb01b3080f385b5f6cda7e117f0a26"
+    },
+    {
+      "id": "uae_cal",
+      "kind": "other_doc",
+      "title": "MISR acquisition calendar for UAE2 (PROCESSING HISTORY)",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/uae/uae_calendar.pdf",
+      "sha256": "4a56f652f33bfec667f83a2ae9d8a042b97be9cb9a5e5b68ddb8ff740663cfc3"
+    },
+    {
+      "id": "reg_over",
+      "kind": "other_doc",
+      "title": "MISR Regional UAE2 Imagery Overview (GENERAL DOCUMENTATION)",
+      "url": "https://l0dup05.larc.nasa.gov/project/misr/field_campaign_imagery/uae/regional/overview.html",
+      "sha256": "ec2ed1733ab55a7239b474305e689d76051b5b441bbc8e00e3ea5bdda76134a1"
+    },
+    {
+      "id": "reg_prod",
+      "kind": "other_doc",
+      "title": "MISR Regional UAE2 Products (linked from the Overview)",
+      "url": "https://l0dup05.larc.nasa.gov/project/misr/field_campaign_imagery/uae/regional/product.html",
+      "sha256": "0c9b7da336be59a8104c9faaa8298438b32ef0edd78a60849ffc1e8464e67ead"
+    }
+  ],
+  "rows": [
+    {
+      "shortname": "UAEMITCL",
+      "version": "003",
+      "depth": 1,
+      "related_shortname": "MIL2TCCL",
+      "related_version": "003",
+      "related_concept_id": "C2854336390-LARC_CLOUD",
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "evidence_source": "other_doc",
+      "evidence_doc": "cmr:granules",
+      "evidence_section": "CMR granule names: UAEMITCL 003 vs MIL2TCCL (['O024129', 'O030114', 'O036158'])",
+      "evidence_quote": "UAEMITCL 003 files carry ['F03_0004', 'F04_0005', 'F04_0006', 'F05_0007', 'F05_0008', 'F05_0009', 'F06_0011']; MIL2TCCL V003: ['F04_0006', 'F05_0009', 'F06_0011', 'F07_0012'] -> file-version series found in V['003'] (identical files at ['O024129', 'O030114', 'O036158'])",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "src": "cmrtitle:UAEMITCL@003",
+          "section": "UAEMITCL 003 CMR EntryTitle",
+          "quote": "subset for the UAE region",
+          "verified": true
+        },
+        {
+          "src": "ov2",
+          "section": "User's Guide §2.6.4 UAE2",
+          "quote": "defined the UAE region by the lat/lon coordinates 27N, 50E to 21N, 57E which corresponds to MISR Paths 155 - 166 and Blocks 68 - 74.",
+          "verified": true
+        },
+        {
+          "src": "idx",
+          "section": "Versioning Index, Level 2",
+          "quote": "TOA/Cloud Stereo (MIL2TCST, MIL2TCSF) TOA/Cloud Classifiers (MIL2TCCL, MIL2TCCF) TOA/Cloud Albedo (MIL2TCAL, MIL2TCAF) Radiometric Camera-by-camera Cloud Mask (MIRCCM, MIRCCMF)",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "keyword_priority_note": "Title: '… subset for the UAE region'; the product type maps to MIL2TCCL (Versioning Index); granule file versions checked against CMR.",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "LARC_CLOUD",
+        "level": "2",
+        "target_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": true,
+        "cmr_versions": [
+          "003"
+        ],
+        "temporal_overlap": true
+      },
+      "decision_procedure": "Q2 yes: T is X's data cut to the UAE region/sites (spatial subset) -> derived_from (PARENT).",
+      "mapping_note": "Source file-version series found in MIL2TCCL V003.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source, statement"
+    }
+  ],
+  "excluded": [
+    {
+      "related": "MIB2GEOP (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "MIB2GEOP is an input of MIL2TCCL, the product this subset is cut from, not of the subset (rule 1c-1)."
+    },
+    {
+      "related": "MI1B2T (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "MI1B2T is an input of MIL2TCCL, the product this subset is cut from, not of the subset (rule 1c-1)."
+    },
+    {
+      "related": "MI1B2E (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "MI1B2E is an input of MIL2TCCL, the product this subset is cut from, not of the subset (rule 1c-1)."
+    },
+    {
+      "related": "MIRCCM (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "MIRCCM is an input of MIL2TCCL, the product this subset is cut from, not of the subset (rule 1c-1)."
+    },
+    {
+      "related": "MIANCARP (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "MIANCARP is an input of MIL2TCCL, the product this subset is cut from, not of the subset (rule 1c-1)."
+    },
+    {
+      "related": "MIANCAGP (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "MIANCAGP is an input of MIL2TCCL, the product this subset is cut from, not of the subset (rule 1c-1)."
+    },
+    {
+      "related": "MIANTASC (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "MIANTASC is an input of MIL2TCCL, the product this subset is cut from, not of the subset (rule 1c-1)."
+    },
+    {
+      "related": "MIL2TCST (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "MIL2TCST is an input of MIL2TCCL, the product this subset is cut from, not of the subset (rule 1c-1)."
+    },
+    {
+      "related": "MICNFG (existing INPUT)",
+      "lineage_relationship": "input_to",
+      "reason": "not_in_cmr",
+      "detail": "'MICNFG' has no CMR record (rule 1c-4)."
+    }
+  ],
+  "existing_metadata_associations": [
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Geometric parameters of sun and view angles",
+        "EntryId": "MIB2GEOP",
+        "Version": "2"
+      },
+      "issues": [
+        "MIB2GEOP is an input of MIL2TCCL, the product this subset is cut from, not of the subset (rule 1c-1)."
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Terrain-projected Level 1B2 data",
+        "EntryId": "MI1B2T",
+        "Version": "2"
+      },
+      "issues": [
+        "MI1B2T is an input of MIL2TCCL, the product this subset is cut from, not of the subset (rule 1c-1)."
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Ellipsoid-projected Level 1B2 data",
+        "EntryId": "MI1B2E",
+        "Version": "2"
+      },
+      "issues": [
+        "MI1B2E is an input of MIL2TCCL, the product this subset is cut from, not of the subset (rule 1c-1)."
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Cloud Masks",
+        "EntryId": "MIRCCM",
+        "Version": "3"
+      },
+      "issues": [
+        "MIRCCM is an input of MIL2TCCL, the product this subset is cut from, not of the subset (rule 1c-1)."
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "MISR radiometric and configuration parameters",
+        "EntryId": "MIANCARP",
+        "Version": "2"
+      },
+      "issues": [
+        "MIANCARP is an input of MIL2TCCL, the product this subset is cut from, not of the subset (rule 1c-1)."
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Geographic data",
+        "EntryId": "MIANCAGP",
+        "Version": "1"
+      },
+      "issues": [
+        "MIANCAGP is an input of MIL2TCCL, the product this subset is cut from, not of the subset (rule 1c-1)."
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Atmosphere and surface climatology",
+        "EntryId": "MIANTASC",
+        "Version": "2"
+      },
+      "issues": [
+        "MIANTASC is an input of MIL2TCCL, the product this subset is cut from, not of the subset (rule 1c-1)."
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "MISR Stereo Product file",
+        "EntryId": "MIL2TCST",
+        "Version": "2"
+      },
+      "issues": [
+        "MIL2TCST is an input of MIL2TCCL, the product this subset is cut from, not of the subset (rule 1c-1)."
+      ]
+    },
+    {
+      "existing": {
+        "Type": "INPUT",
+        "Description": "Configuration file for PGE",
+        "EntryId": "MICNFG",
+        "Version": "2"
+      },
+      "issues": [
+        "'MICNFG' has no CMR record (rule 1c-4)."
+      ]
+    }
+  ],
+  "recommended_metadata_associations": [
+    {
+      "Type": "PARENT",
+      "EntryId": "MIL2TCCL",
+      "Version": "003"
+    }
+  ],
+  "recommended_metadata_associations_note": "Replace the copied INPUT lists with these rows. UMM-C 1.18.x field names (EntryId); under the proposed UMM-C 1.18.8, EntryId becomes ShortName and Version is required, so 'Unknown' needs a curator decision.",
+  "csv_validation": {
+    "valid": true,
+    "errors": []
+  }
+}

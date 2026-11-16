@@ -1,0 +1,2 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+UAEMITCL,003,PARENT,MIL2TCCL,003,MEDIUM,derived_from

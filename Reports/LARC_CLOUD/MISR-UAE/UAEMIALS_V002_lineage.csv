@@ -1,0 +1,2 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+UAEMIALS,002,PARENT,MIL2ASLS,002,MEDIUM,derived_from

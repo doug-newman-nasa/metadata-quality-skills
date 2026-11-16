@@ -1,0 +1,2 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+UAEMIB2T,002,PARENT,MI1B2T,Unknown,MEDIUM,derived_from

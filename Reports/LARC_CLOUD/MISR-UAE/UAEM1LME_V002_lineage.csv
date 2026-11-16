@@ -1,0 +1,2 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+UAEM1LME,002,PARENT,MB2LME,002,MEDIUM,derived_from
