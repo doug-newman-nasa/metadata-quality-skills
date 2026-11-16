@@ -1,0 +1,355 @@
+{
+  "generated_at": "2026-11-16T16:27:20+00:00",
+  "skills": [
+    "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0, Steps 1-7)",
+    "Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3)",
+    "Skills/Collection_Lineage_Generation_Skill.md (Step 1a-1d classification)"
+  ],
+  "notebook": "ATOST_lineage.ipynb",
+  "target": {
+    "shortname": "ATOST_ER2_MAS",
+    "version": "1",
+    "concept_id": "C3880547171-LARC_CLOUD",
+    "processing_level": "1B",
+    "provider": "LARC_CLOUD",
+    "collection_data_type": null,
+    "collection_progress": "COMPLETE",
+    "platforms": [
+      "NASA ER-2"
+    ],
+    "instruments": [
+      "MAS"
+    ],
+    "projects": [
+      "ATOST"
+    ],
+    "revision_date": "2026-10-09T19:07:59.864Z",
+    "granules_in_cmr": 164,
+    "temporal": {
+      "BeginningDateTime": "2003-11-06T00:00:00.000Z",
+      "EndingDateTime": "2003-12-17T23:59:59.000Z"
+    },
+    "flight_days": [
+      "2003-11-06",
+      "2003-11-13",
+      "2003-11-14",
+      "2003-11-17",
+      "2003-11-19",
+      "2003-11-28",
+      "2003-12-02",
+      "2003-12-03",
+      "2003-12-04",
+      "2003-12-05",
+      "2003-12-08",
+      "2003-12-09",
+      "2003-12-10",
+      "2003-12-11",
+      "2003-12-14",
+      "2003-12-17"
+    ]
+  },
+  "atbd_search_depth": 1,
+  "include_low_confidence": true,
+  "atbd_note": "The record links no ATBD, user guide, README or read software (Priority 2). Evidence: the CMR abstract, two linked campaign web pages, the sibling THORPEX README, and a file-by-file comparison with MASL1B.",
+  "cmr_state_note": "Records fetched live from CMR at 2026-11-16T16:27:20+00:00; see process/*.json.",
+  "masl1b_file_match": {
+    "atost_files": 164,
+    "atost_files_parsed": 164,
+    "masl1b_files_nov_dec_2003": 164,
+    "matched": 164,
+    "atost_only": [],
+    "masl1b_only": [],
+    "examples": [
+      [
+        "atost_mas_04613_01_20031106_1926_1928_v01.hdf",
+        "MASL1B_04613_01_20031106_1926_1928_V01.hdf"
+      ],
+      [
+        "atost_mas_04613_02_20031106_1929_1939_v01.hdf",
+        "MASL1B_04613_02_20031106_1929_1939_V01.hdf"
+      ],
+      [
+        "atost_mas_04613_03_20031106_1942_1952_v01.hdf",
+        "MASL1B_04613_03_20031106_1942_1952_V01.hdf"
+      ]
+    ],
+    "flights": [
+      "04613",
+      "04614",
+      "04615",
+      "04616",
+      "04617",
+      "04618",
+      "04619",
+      "04620",
+      "04621",
+      "04622",
+      "04623",
+      "04624",
+      "04625",
+      "04626",
+      "04627"
+    ]
+  },
+  "link_check": [
+    {
+      "url": "https://eosweb.larc.nasa.gov/project/mas/mas_atost_table",
+      "status": "unreachable",
+      "error": "URLError",
+      "type": "DATA SET LANDING PAGE",
+      "subtype": null
+    },
+    {
+      "url": "https://doi.org/10.5067/ASDC_DAAC/ATOST/0001",
+      "status": 200,
+      "final_url": "https://www.earthdata.nasa.gov/data/catalog/larc-cloud-atost-er2-mas-1",
+      "title": "Atlantic-THORpex Observing System Test | NASA Earthdata",
+      "type": "DATA SET LANDING PAGE",
+      "subtype": null
+    },
+    {
+      "url": "https://cloudsway2.larc.nasa.gov/bangor/",
+      "status": 200,
+      "final_url": "https://cloudsway2.larc.nasa.gov/bangor/",
+      "title": "NASA Langley ATReC & AIRS-II Satellite Page",
+      "type": "VIEW RELATED INFORMATION",
+      "subtype": "GENERAL DOCUMENTATION"
+    },
+    {
+      "url": "https://www-angler.larc.nasa.gov/thorpex/",
+      "status": 200,
+      "final_url": "https://www-angler.larc.nasa.gov/thorpex/",
+      "title": null,
+      "type": "PROJECT HOME PAGE",
+      "subtype": null
+    },
+    {
+      "url": "http://eosweb.larc.nasa.gov/project/atost/atost_table",
+      "status": "unreachable",
+      "error": "URLError",
+      "type": "CollectionCitations"
+    }
+  ],
+  "source_documents": [
+    {
+      "id": "atrec",
+      "kind": "other_doc",
+      "title": "NASA Langley ATReC & AIRS-II Satellite Page (linked as GENERAL DOCUMENTATION)",
+      "url": "https://cloudsway2.larc.nasa.gov/bangor/",
+      "fetched": true,
+      "sha256": "b61b30bfa3b8b84d7e04c3a482ccde78233c0314f6c855498788b82ed185cebf"
+    },
+    {
+      "id": "thorpex_home",
+      "kind": "other_doc",
+      "title": "THORPEX project home page (linked as PROJECT HOME PAGE; also linked by THORPEX_ER2_MAS)",
+      "url": "https://www-angler.larc.nasa.gov/thorpex/",
+      "fetched": true,
+      "sha256": "f50757e697815bb5c15a479edb9b756e540fddccab7c2714e97330ac7ad5e469"
+    },
+    {
+      "id": "thorpex_rm",
+      "kind": "other_doc",
+      "title": "Readme file for the THORPEX ER2 MAS Data Set (sibling documentation)",
+      "url": "https://asdc.larc.nasa.gov/documents/thorpex/readme/readme_thorpex_mas.txt",
+      "fetched": true,
+      "sha256": "b5878cc8736f3af55f21d03f3e90f1768234fb998e2d050447328724ec0edef9"
+    },
+    {
+      "id": "cmr:MASL1B@1",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORD and granule file names",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2799350215-LAADS.umm_json",
+      "fetched": true
+    }
+  ],
+  "rows": [
+    {
+      "shortname": "ATOST_ER2_MAS",
+      "version": "1",
+      "depth": 1,
+      "related_shortname": "MASL1B",
+      "related_version": "1",
+      "related_concept_id": "C2799350215-LAADS",
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "evidence_source": "other_doc",
+      "evidence_doc": "cmr:granules",
+      "evidence_section": "CMR granule file names (ATOST_ER2_MAS vs MASL1B, Nov-Dec 2003)",
+      "evidence_quote": "164 of 164 ATOST files have a MASL1B file with the same flight/track/date/time/version, e.g. atost_mas_04613_01_20031106_1926_1928_v01.hdf = MASL1B_04613_01_20031106_1926_1928_V01.hdf",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "cmrattr:MASL1B@1",
+          "section": "MASL1B CMR AdditionalAttributes (experiment list)",
+          "quote": "A-TOST experiment",
+          "verified": true
+        },
+        {
+          "doc": "cmr:MASL1B@1",
+          "section": "MASL1B CMR abstract",
+          "quote": "The MAS instrument has been deployed on multiple platforms for many field campaigns since its first mission in 1991",
+          "verified": true
+        },
+        {
+          "doc": "cmr:ATOST_ER2_MAS@1",
+          "section": "ATOST_ER2_MAS CMR abstract",
+          "quote": "ATOST_ER2_MAS is the MODIS Airborne Simulartor data taken aboard the NASA ER-2 aircraft for the ATOST campaign.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "keyword_priority_note": "Every ATOST file has an identically identified MASL1B file; MASL1B's experiment list names 'A-TOST experiment' (the campaign, not this ShortName).",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "LAADS",
+        "level": "1B",
+        "target_level": "1B",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "1"
+        ],
+        "temporal": {
+          "BeginningDateTime": "1993-01-11T00:00:00.000Z",
+          "EndingDateTime": "2007-08-10T00:00:00.000Z"
+        }
+      },
+      "decision_procedure": "Q1-Q3 no: neither collection is made from the other's files. Q4 yes: the same MAS L1B V01 files (same flight, track, time and version) from one MAS processing run, archived at LaRC ASDC and at LAADS -> parallel_product (RELATED).",
+      "mapping_note": "Duplicate archive of the same files; consider pointing users to one collection. Evidence is CMR metadata (other_doc), so confidence is capped at MEDIUM.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source, statement"
+    },
+    {
+      "shortname": "ATOST_ER2_MAS",
+      "version": "1",
+      "depth": 1,
+      "related_shortname": "THORPEX_ER2_MAS",
+      "related_version": "1",
+      "related_concept_id": "C3880797521-LARC_CLOUD",
+      "association_type": "RELATED",
+      "lineage_relationship": "related_to",
+      "evidence_source": "other_doc",
+      "evidence_doc": "thorpex_home",
+      "evidence_section": "THORPEX project home page",
+      "evidence_quote": "The 2003 Pacific THORPEX Observing System Test is the first in a series of Pacific and Atlantic observation campaigns in support of the WWRP/USRP THORPEX Program.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "thorpex_rm",
+          "section": "THORPEX ER2 MAS Readme (sample metadata)",
+          "quote": "GeographicArea = Nihau, Pacific Ocean",
+          "verified": true
+        },
+        {
+          "doc": "cmr:ATOST_ER2_MAS@1",
+          "section": "ATOST_ER2_MAS CMR abstract",
+          "quote": "Atlantic - THORpex Observing System Test (ATOST) is part of an international research program to accelerate improvements in the accuracy of 1 to 14 day weather forecasts.",
+          "verified": true
+        },
+        {
+          "doc": "thorpex_rm",
+          "section": "THORPEX ER2 MAS Readme §2.0 Data Set Description",
+          "quote": "The MODIS Airborne Simulator (MAS) is an airborne scanning spectrometer that acquires high spatial resolution imagery of cloud and surface features",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "keyword_priority_note": "The shared THORPEX home page names the Pacific/Atlantic campaign series (not the ShortName).",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "LARC_CLOUD",
+        "level": "1B",
+        "target_level": "1B",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "1"
+        ],
+        "temporal": {
+          "BeginningDateTime": "2003-01-31T00:00:00.000Z",
+          "EndingDateTime": "2003-04-10T23:59:59.999Z"
+        }
+      },
+      "decision_procedure": "Q1-Q5 no: a different MAS campaign (2003 Pacific THORPEX test), no data flows between them. Q6: documented campaign series -> related_to (RELATED).",
+      "mapping_note": "Both records link the same THORPEX project page; THORPEX_ER2_MAS is the Pacific test (Nihau, March 2003), ATOST the Atlantic one.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source, statement"
+    }
+  ],
+  "excluded": [
+    {
+      "related": "MAS (umbrella collection)",
+      "lineage_relationship": "derived_from",
+      "reason": "not_in_cmr",
+      "detail": "The record's existing association PARENT -> MAS v1 points to a collection that does not exist in CMR (rule 1c-4).",
+      "evidence_doc": "cmr:ATOST_ER2_MAS@1",
+      "evidence_section": "ATOST_ER2_MAS CMR abstract",
+      "evidence_quote": "ATOST_ER2_MAS is the MODIS Airborne Simulartor data taken aboard the NASA ER-2 aircraft for the ATOST campaign.",
+      "quote_verified": true
+    },
+    {
+      "related": "MAS raw data / MAS team calibration (NASA Ames)",
+      "lineage_relationship": "derived_from",
+      "reason": "not_in_cmr",
+      "detail": "Raw MAS counts and calibration inputs are not CMR collections, and no document describes ATOST's processing.",
+      "evidence_doc": "thorpex_rm",
+      "evidence_section": "THORPEX ER2 MAS Readme (file naming)",
+      "evidence_quote": "FFFFF - Flight Number TT - Track",
+      "quote_verified": true
+    },
+    {
+      "related": "ARESE_ER2_MAS and other Langley MAS campaign collections",
+      "lineage_relationship": "template_of",
+      "reason": "no_documented_relationship",
+      "detail": "ATOST links no read software or data-set document, so no shared template can be verified (unlike ARESE with SCAR-A/SCAR-B); rule 1c-2.",
+      "evidence_doc": "cmr:ATOST_ER2_MAS@1",
+      "evidence_section": "ATOST_ER2_MAS CMR abstract",
+      "evidence_quote": "The MODIS Airborne Simulator (MAS) is an airborne scanning spectrometer that acquires high spatial resolution imagery of cloud and surface features",
+      "quote_verified": true
+    },
+    {
+      "related": "ATReC satellite products (GOES, AIRS)",
+      "lineage_relationship": "related_to",
+      "reason": "no_documented_relationship",
+      "detail": "The linked ATReC page concerns satellite imagery for the campaign; it does not mention MAS or this collection.",
+      "evidence_doc": "atrec",
+      "evidence_section": "ATReC & AIRS-II page",
+      "evidence_quote": "The Atlantic-THORPEX Regional Campaign (ATReC) is being lead by EUCOS as a field campaign to make a significant contribution towards this common goal.",
+      "quote_verified": true
+    }
+  ],
+  "existing_metadata_associations": [
+    {
+      "existing": {
+        "EntryId": "MAS",
+        "Type": "PARENT",
+        "Version": "1"
+      },
+      "issues": [
+        "EntryId 'MAS' has no CMR record (Generation skill rule 1c-4: omit)"
+      ]
+    }
+  ],
+  "recommended_metadata_associations": [
+    {
+      "Type": "RELATED",
+      "EntryId": "MASL1B",
+      "Version": "1"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "THORPEX_ER2_MAS",
+      "Version": "1"
+    }
+  ],
+  "recommended_metadata_associations_note": "Replace PARENT -> MAS (no CMR record). UMM-C 1.18.x field names (EntryId); under the proposed UMM-C 1.18.8, EntryId becomes ShortName and Type, ShortName and Version are required.",
+  "csv_validation": {
+    "valid": true,
+    "errors": []
+  }
+}
