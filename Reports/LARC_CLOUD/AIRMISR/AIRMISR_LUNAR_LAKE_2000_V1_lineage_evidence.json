@@ -1,0 +1,1229 @@
+{
+  "generated_at": "2026-11-16T15:51:21+00:00",
+  "skills": [
+    "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0, Steps 1-7)",
+    "Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3)",
+    "Skills/Collection_Lineage_Generation_Skill.md (Step 1a-1d classification)"
+  ],
+  "notebook": "AIRMISR_lineage.ipynb",
+  "target": {
+    "shortname": "AIRMISR_LUNAR_LAKE_2000",
+    "version": "1",
+    "concept_id": "C3880545252-LARC_CLOUD",
+    "processing_level": "1B",
+    "provider": "LARC_CLOUD",
+    "collection_data_type": null,
+    "collection_progress": "COMPLETE",
+    "platforms": [
+      "NASA ER-2"
+    ],
+    "instruments": [
+      "AIRMISR"
+    ],
+    "projects": [
+      "AIRMISR"
+    ],
+    "revision_date": "2026-10-09T19:06:35.235Z",
+    "granules_in_cmr": 108,
+    "temporal": {
+      "BeginningDateTime": "2000-06-11T00:00:00.000Z",
+      "EndingDateTime": "2000-06-11T23:59:59.000Z"
+    }
+  },
+  "atbd_search_depth": 1,
+  "include_low_confidence": true,
+  "atbd_note": "The record links no ATBD (Priority 2). The campaign README is used as the user guide; the quality summary and the shared read-software note are other_doc.",
+  "cmr_state_note": "Records fetched live from CMR at 2026-11-16T15:51:21+00:00; see process/*.json.",
+  "no_parent_note": "No CMR parent: the L1B1 and L1B2 products are both files of this collection, made from raw AirMISR camera data and ER-2 navigation (not in CMR). The existing PARENT -> AIRMISR association points to a collection that doesn't exist.",
+  "shared_abstract_template": {
+    "AIRMISR_BARC_2001": true,
+    "AIRMISR_BARTLETT_2003": true,
+    "AIRMISR_CLAMS_2001": true,
+    "AIRMISR_HARVARD_2003": true,
+    "AIRMISR_HOWLAND_2003": true,
+    "AIRMISR_KONVEX": true,
+    "AIRMISR_LUNAR_LAKE_2000": true,
+    "AIRMISR_LUNAR_LAKE_2001": true,
+    "AIRMISR_MONTEREY_1999": true,
+    "AIRMISR_MORGAN_MONROE_2003": true,
+    "AIRMISR_ROGERS_LAKE_2001": true,
+    "AIRMISR_SAFARI": true,
+    "AIRMISR_SERC_2003": true,
+    "AIRMISR_SNOW_ICE_2001": true,
+    "AIRMISR_WISCONSIN_2000": true
+  },
+  "citation_link_check": [
+    {
+      "url": "http://eosweb.larc.nasa.gov/project/airmisr/airmisr_table",
+      "status": "unreachable",
+      "error": "URLError"
+    }
+  ],
+  "readme_link_check": {
+    "http://www-misr.jpl.nasa.gov/mission/air.html": {
+      "url": "http://www-misr.jpl.nasa.gov/mission/air.html",
+      "status": "unreachable",
+      "error": "URLError"
+    },
+    "https://misr.jpl.nasa.gov/Mission/airMISR/": {
+      "url": "https://misr.jpl.nasa.gov/Mission/airMISR/",
+      "status": 200,
+      "final_url": "https://misr.jpl.nasa.gov/Mission/airMISR/"
+    }
+  },
+  "source_documents": [
+    {
+      "id": "rm_k",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "AIRMISR_KONVEX Data Set Readme",
+      "url": "https://asdc.larc.nasa.gov/documents/airmisr/readme/readme_airmisr_konvex",
+      "linked_from": "AIRMISR_KONVEX",
+      "fetched": true,
+      "sha256": "25d24c0f4a3a8a9efc8878e0e76afbafbc023e68bb74f5652dec3aef12f21123"
+    },
+    {
+      "id": "rm_l",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "AIRMISR_LUNAR_LAKE_2000 Readme",
+      "url": "https://asdc.larc.nasa.gov/documents/airmisr/readme/readme_airmisr_lunar_lake_2000",
+      "linked_from": "AIRMISR_LUNAR_LAKE_2000",
+      "fetched": true,
+      "sha256": "3fea7feb1f0702e9e39f4349428465820af63c5525ffb7e26e8fc6327eaf163e"
+    },
+    {
+      "id": "qa_k",
+      "kind": "other_doc",
+      "subtype": "PRODUCT QUALITY ASSESSMENT",
+      "title": "AirMISR KONVEX Quality Summary (2000-04-28)",
+      "url": "https://asdc.larc.nasa.gov/documents/airmisr/quality_summaries/airmisr_konvex.pdf",
+      "linked_from": "AIRMISR_KONVEX",
+      "fetched": true,
+      "sha256": "6270ed78d70fc664323f6e20f8c1a081d533c9af0553929d0688fcdf0c84d47d"
+    },
+    {
+      "id": "qa_l",
+      "kind": "other_doc",
+      "subtype": "PRODUCT QUALITY ASSESSMENT",
+      "title": "AirMISR Lunar Lake 2000 Quality Summary",
+      "url": "https://asdc.larc.nasa.gov/documents/airmisr/quality_summaries/airmisr_lunar_lake_2000.pdf",
+      "linked_from": "AIRMISR_LUNAR_LAKE_2000",
+      "fetched": true,
+      "sha256": "0be92891aeaf3b32f1bae8ca019ee1ab21e028050a7f17f657c09fb90ee1be09"
+    },
+    {
+      "id": "rs",
+      "kind": "other_doc",
+      "subtype": "READ-ME",
+      "title": "AirMISR Read Software (shared by all AirMISR campaign collections)",
+      "url": "https://asdc.larc.nasa.gov/documents/airmisr/airmisr_read_software.pdf",
+      "linked_from": "AIRMISR_KONVEX, AIRMISR_LUNAR_LAKE_2000",
+      "fetched": true,
+      "sha256": "f6a52d3b8d2310ea01de32334a56f3ece46cc21015187d581a5e75769c80afb0"
+    }
+  ],
+  "rows": [
+    {
+      "shortname": "AIRMISR_LUNAR_LAKE_2000",
+      "version": "1",
+      "depth": 1,
+      "related_shortname": "AIRMISR_BARC_2001",
+      "related_version": "1",
+      "related_concept_id": "C3880544927-LARC_CLOUD",
+      "association_type": "RELATED",
+      "lineage_relationship": "template_of",
+      "evidence_source": "other_doc",
+      "evidence_doc": "rs",
+      "evidence_section": "AirMISR Read Software",
+      "evidence_quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for any of the earlier AirMISR data sets.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "rm_l",
+          "section": "README §1 Introduction",
+          "quote": "Each data file contains the Level 1B1 Radiometric product or the Level 1B2 Georectified radiance product from one of the 9 camera angles from one run of",
+          "verified": true
+        },
+        {
+          "doc": "cmr:AIRMISR_BARC_2001@1",
+          "section": "AIRMISR_BARC_2001 CMR abstract",
+          "quote": "AirMISR uses a single camera in a pivoting gimbal mount.",
+          "verified": true
+        },
+        {
+          "doc": "rs",
+          "section": "AirMISR Read Software",
+          "quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for the Howland 2003 data set.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "keyword_priority_note": "The shared read-software note covers 'any of the earlier AirMISR data sets' (generic); the sibling shares the abstract's instrument template.",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "LARC_CLOUD",
+        "level": "1B",
+        "target_level": "1B",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "1"
+        ],
+        "temporal": {
+          "BeginningDateTime": "2001-07-21T00:00:00.000Z",
+          "EndingDateTime": "2001-07-21T23:59:59.999Z"
+        },
+        "platforms": [
+          [
+            "NASA ER-2",
+            [
+              "AIRMISR"
+            ]
+          ]
+        ],
+        "same_instrument_platform": true
+      },
+      "decision_procedure": "Q1-Q5 no: another AirMISR campaign (different flight, no data flows between them), not another platform. Q6: same instrument, product definitions (L1B1/L1B2), file format and read software -> template_of (RELATED).",
+      "mapping_note": "Campaign sibling in the AirMISR series.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source, statement"
+    },
+    {
+      "shortname": "AIRMISR_LUNAR_LAKE_2000",
+      "version": "1",
+      "depth": 1,
+      "related_shortname": "AIRMISR_BARTLETT_2003",
+      "related_version": "1",
+      "related_concept_id": "C3880544977-LARC_CLOUD",
+      "association_type": "RELATED",
+      "lineage_relationship": "template_of",
+      "evidence_source": "other_doc",
+      "evidence_doc": "rs",
+      "evidence_section": "AirMISR Read Software",
+      "evidence_quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for any of the earlier AirMISR data sets.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "rm_l",
+          "section": "README §1 Introduction",
+          "quote": "Each data file contains the Level 1B1 Radiometric product or the Level 1B2 Georectified radiance product from one of the 9 camera angles from one run of",
+          "verified": true
+        },
+        {
+          "doc": "cmr:AIRMISR_BARTLETT_2003@1",
+          "section": "AIRMISR_BARTLETT_2003 CMR abstract",
+          "quote": "AirMISR uses a single camera in a pivoting gimbal mount.",
+          "verified": true
+        },
+        {
+          "doc": "rs",
+          "section": "AirMISR Read Software",
+          "quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for the Howland 2003 data set.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "keyword_priority_note": "The shared read-software note covers 'any of the earlier AirMISR data sets' (generic); the sibling shares the abstract's instrument template.",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "LARC_CLOUD",
+        "level": "1B",
+        "target_level": "1B",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "1"
+        ],
+        "temporal": {
+          "BeginningDateTime": "2003-08-24T00:00:00.000Z",
+          "EndingDateTime": "2003-08-24T23:59:59.999Z"
+        },
+        "platforms": [
+          [
+            "NASA ER-2",
+            [
+              "AIRMISR"
+            ]
+          ]
+        ],
+        "same_instrument_platform": true
+      },
+      "decision_procedure": "Q1-Q5 no: another AirMISR campaign (different flight, no data flows between them), not another platform. Q6: same instrument, product definitions (L1B1/L1B2), file format and read software -> template_of (RELATED).",
+      "mapping_note": "Campaign sibling in the AirMISR series.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source, statement"
+    },
+    {
+      "shortname": "AIRMISR_LUNAR_LAKE_2000",
+      "version": "1",
+      "depth": 1,
+      "related_shortname": "AIRMISR_CLAMS_2001",
+      "related_version": "1",
+      "related_concept_id": "C3880545055-LARC_CLOUD",
+      "association_type": "RELATED",
+      "lineage_relationship": "template_of",
+      "evidence_source": "other_doc",
+      "evidence_doc": "rs",
+      "evidence_section": "AirMISR Read Software",
+      "evidence_quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for any of the earlier AirMISR data sets.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "rm_l",
+          "section": "README §1 Introduction",
+          "quote": "Each data file contains the Level 1B1 Radiometric product or the Level 1B2 Georectified radiance product from one of the 9 camera angles from one run of",
+          "verified": true
+        },
+        {
+          "doc": "cmr:AIRMISR_CLAMS_2001@1",
+          "section": "AIRMISR_CLAMS_2001 CMR abstract",
+          "quote": "AirMISR uses a single camera in a pivoting gimbal mount.",
+          "verified": true
+        },
+        {
+          "doc": "rs",
+          "section": "AirMISR Read Software",
+          "quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for the Howland 2003 data set.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "keyword_priority_note": "The shared read-software note covers 'any of the earlier AirMISR data sets' (generic); the sibling shares the abstract's instrument template.",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "LARC_CLOUD",
+        "level": "1B",
+        "target_level": "1B",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "1"
+        ],
+        "temporal": {
+          "BeginningDateTime": "2001-07-12T00:00:00.000Z",
+          "EndingDateTime": "2001-08-02T23:59:59.999Z"
+        },
+        "platforms": [
+          [
+            "NASA ER-2",
+            [
+              "AIRMISR"
+            ]
+          ]
+        ],
+        "same_instrument_platform": true
+      },
+      "decision_procedure": "Q1-Q5 no: another AirMISR campaign (different flight, no data flows between them), not another platform. Q6: same instrument, product definitions (L1B1/L1B2), file format and read software -> template_of (RELATED).",
+      "mapping_note": "Campaign sibling in the AirMISR series.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source, statement"
+    },
+    {
+      "shortname": "AIRMISR_LUNAR_LAKE_2000",
+      "version": "1",
+      "depth": 1,
+      "related_shortname": "AIRMISR_HARVARD_2003",
+      "related_version": "1",
+      "related_concept_id": "C3880545121-LARC_CLOUD",
+      "association_type": "RELATED",
+      "lineage_relationship": "template_of",
+      "evidence_source": "other_doc",
+      "evidence_doc": "rs",
+      "evidence_section": "AirMISR Read Software",
+      "evidence_quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for any of the earlier AirMISR data sets.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "rm_l",
+          "section": "README §1 Introduction",
+          "quote": "Each data file contains the Level 1B1 Radiometric product or the Level 1B2 Georectified radiance product from one of the 9 camera angles from one run of",
+          "verified": true
+        },
+        {
+          "doc": "cmr:AIRMISR_HARVARD_2003@1",
+          "section": "AIRMISR_HARVARD_2003 CMR abstract",
+          "quote": "AirMISR uses a single camera in a pivoting gimbal mount.",
+          "verified": true
+        },
+        {
+          "doc": "rs",
+          "section": "AirMISR Read Software",
+          "quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for the Howland 2003 data set.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "keyword_priority_note": "The shared read-software note covers 'any of the earlier AirMISR data sets' (generic); the sibling shares the abstract's instrument template.",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "LARC_CLOUD",
+        "level": "1B",
+        "target_level": "1B",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "1"
+        ],
+        "temporal": {
+          "BeginningDateTime": "2003-08-24T00:00:00.000Z",
+          "EndingDateTime": "2003-08-24T23:59:59.999Z"
+        },
+        "platforms": [
+          [
+            "NASA ER-2",
+            [
+              "AIRMISR"
+            ]
+          ]
+        ],
+        "same_instrument_platform": true
+      },
+      "decision_procedure": "Q1-Q5 no: another AirMISR campaign (different flight, no data flows between them), not another platform. Q6: same instrument, product definitions (L1B1/L1B2), file format and read software -> template_of (RELATED).",
+      "mapping_note": "Campaign sibling in the AirMISR series.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source, statement"
+    },
+    {
+      "shortname": "AIRMISR_LUNAR_LAKE_2000",
+      "version": "1",
+      "depth": 1,
+      "related_shortname": "AIRMISR_HOWLAND_2003",
+      "related_version": "1",
+      "related_concept_id": "C3880545159-LARC_CLOUD",
+      "association_type": "RELATED",
+      "lineage_relationship": "template_of",
+      "evidence_source": "other_doc",
+      "evidence_doc": "rs",
+      "evidence_section": "AirMISR Read Software",
+      "evidence_quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for any of the earlier AirMISR data sets.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "rm_l",
+          "section": "README §1 Introduction",
+          "quote": "Each data file contains the Level 1B1 Radiometric product or the Level 1B2 Georectified radiance product from one of the 9 camera angles from one run of",
+          "verified": true
+        },
+        {
+          "doc": "cmr:AIRMISR_HOWLAND_2003@1",
+          "section": "AIRMISR_HOWLAND_2003 CMR abstract",
+          "quote": "AirMISR uses a single camera in a pivoting gimbal mount.",
+          "verified": true
+        },
+        {
+          "doc": "rs",
+          "section": "AirMISR Read Software",
+          "quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for the Howland 2003 data set.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "keyword_priority_note": "The shared read-software note covers 'any of the earlier AirMISR data sets' (generic); the sibling shares the abstract's instrument template.",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "LARC_CLOUD",
+        "level": "1B",
+        "target_level": "1B",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "1"
+        ],
+        "temporal": {
+          "BeginningDateTime": "2003-08-28T00:00:00.000Z",
+          "EndingDateTime": "2003-08-28T23:59:59.999Z"
+        },
+        "platforms": [
+          [
+            "NASA ER-2",
+            [
+              "AIRMISR"
+            ]
+          ]
+        ],
+        "same_instrument_platform": true
+      },
+      "decision_procedure": "Q1-Q5 no: another AirMISR campaign (different flight, no data flows between them), not another platform. Q6: same instrument, product definitions (L1B1/L1B2), file format and read software -> template_of (RELATED).",
+      "mapping_note": "Campaign sibling in the AirMISR series.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source, statement"
+    },
+    {
+      "shortname": "AIRMISR_LUNAR_LAKE_2000",
+      "version": "1",
+      "depth": 1,
+      "related_shortname": "AIRMISR_KONVEX",
+      "related_version": "1",
+      "related_concept_id": "C3880545201-LARC_CLOUD",
+      "association_type": "RELATED",
+      "lineage_relationship": "template_of",
+      "evidence_source": "other_doc",
+      "evidence_doc": "rs",
+      "evidence_section": "AirMISR Read Software",
+      "evidence_quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for any of the earlier AirMISR data sets.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "rm_l",
+          "section": "README §1 Introduction",
+          "quote": "Each data file contains the Level 1B1 Radiometric product or the Level 1B2 Georectified radiance product from one of the 9 camera angles from one run of",
+          "verified": true
+        },
+        {
+          "doc": "cmr:AIRMISR_KONVEX@1",
+          "section": "AIRMISR_KONVEX CMR abstract",
+          "quote": "AirMISR uses a single camera in a pivoting gimbal mount.",
+          "verified": true
+        },
+        {
+          "doc": "rs",
+          "section": "AirMISR Read Software",
+          "quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for the Howland 2003 data set.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "keyword_priority_note": "The shared read-software note covers 'any of the earlier AirMISR data sets' (generic); the sibling shares the abstract's instrument template.",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "LARC_CLOUD",
+        "level": "1B",
+        "target_level": "1B",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "1"
+        ],
+        "temporal": {
+          "BeginningDateTime": "1999-07-13T00:00:00.000Z",
+          "EndingDateTime": "1999-07-13T23:59:59.000Z"
+        },
+        "platforms": [
+          [
+            "NASA ER-2",
+            [
+              "AIRMISR"
+            ]
+          ]
+        ],
+        "same_instrument_platform": true
+      },
+      "decision_procedure": "Q1-Q5 no: another AirMISR campaign (different flight, no data flows between them), not another platform. Q6: same instrument, product definitions (L1B1/L1B2), file format and read software -> template_of (RELATED).",
+      "mapping_note": "Campaign sibling in the AirMISR series.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source, statement"
+    },
+    {
+      "shortname": "AIRMISR_LUNAR_LAKE_2000",
+      "version": "1",
+      "depth": 1,
+      "related_shortname": "AIRMISR_LUNAR_LAKE_2001",
+      "related_version": "1",
+      "related_concept_id": "C3880545448-LARC_CLOUD",
+      "association_type": "RELATED",
+      "lineage_relationship": "template_of",
+      "evidence_source": "other_doc",
+      "evidence_doc": "rs",
+      "evidence_section": "AirMISR Read Software",
+      "evidence_quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for any of the earlier AirMISR data sets.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "rm_l",
+          "section": "README §1 Introduction",
+          "quote": "Each data file contains the Level 1B1 Radiometric product or the Level 1B2 Georectified radiance product from one of the 9 camera angles from one run of",
+          "verified": true
+        },
+        {
+          "doc": "cmr:AIRMISR_LUNAR_LAKE_2001@1",
+          "section": "AIRMISR_LUNAR_LAKE_2001 CMR abstract",
+          "quote": "AirMISR uses a single camera in a pivoting gimbal mount.",
+          "verified": true
+        },
+        {
+          "doc": "rs",
+          "section": "AirMISR Read Software",
+          "quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for the Howland 2003 data set.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "keyword_priority_note": "The shared read-software note covers 'any of the earlier AirMISR data sets' (generic); the sibling shares the abstract's instrument template.",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "LARC_CLOUD",
+        "level": "1B",
+        "target_level": "1B",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "1"
+        ],
+        "temporal": {
+          "BeginningDateTime": "2001-06-30T00:00:00.000Z",
+          "EndingDateTime": "2001-06-30T23:59:59.999Z"
+        },
+        "platforms": [
+          [
+            "AIRCRAFT",
+            [
+              "AIRMISR"
+            ]
+          ],
+          [
+            "NASA ER-2",
+            [
+              "AIRMISR"
+            ]
+          ]
+        ],
+        "same_instrument_platform": false
+      },
+      "decision_procedure": "Q1-Q5 no: another AirMISR campaign (different flight, no data flows between them), not another platform. Q6: same instrument, product definitions (L1B1/L1B2), file format and read software -> template_of (RELATED).",
+      "mapping_note": "Campaign sibling in the AirMISR series.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source, statement"
+    },
+    {
+      "shortname": "AIRMISR_LUNAR_LAKE_2000",
+      "version": "1",
+      "depth": 1,
+      "related_shortname": "AIRMISR_MONTEREY_1999",
+      "related_version": "1",
+      "related_concept_id": "C3880545528-LARC_CLOUD",
+      "association_type": "RELATED",
+      "lineage_relationship": "template_of",
+      "evidence_source": "other_doc",
+      "evidence_doc": "rs",
+      "evidence_section": "AirMISR Read Software",
+      "evidence_quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for any of the earlier AirMISR data sets.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "rm_l",
+          "section": "README §1 Introduction",
+          "quote": "Each data file contains the Level 1B1 Radiometric product or the Level 1B2 Georectified radiance product from one of the 9 camera angles from one run of",
+          "verified": true
+        },
+        {
+          "doc": "cmr:AIRMISR_MONTEREY_1999@1",
+          "section": "AIRMISR_MONTEREY_1999 CMR abstract",
+          "quote": "AirMISR uses a single camera in a pivoting gimbal mount.",
+          "verified": true
+        },
+        {
+          "doc": "rs",
+          "section": "AirMISR Read Software",
+          "quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for the Howland 2003 data set.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "keyword_priority_note": "The shared read-software note covers 'any of the earlier AirMISR data sets' (generic); the sibling shares the abstract's instrument template.",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "LARC_CLOUD",
+        "level": "1B",
+        "target_level": "1B",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "1"
+        ],
+        "temporal": {
+          "BeginningDateTime": "1999-06-29T00:00:00.000Z",
+          "EndingDateTime": "1999-07-13T23:59:59.999Z"
+        },
+        "platforms": [
+          [
+            "AIRCRAFT",
+            [
+              "AIRMISR"
+            ]
+          ],
+          [
+            "NASA ER-2",
+            [
+              "AIRMISR"
+            ]
+          ]
+        ],
+        "same_instrument_platform": false
+      },
+      "decision_procedure": "Q1-Q5 no: another AirMISR campaign (different flight, no data flows between them), not another platform. Q6: same instrument, product definitions (L1B1/L1B2), file format and read software -> template_of (RELATED).",
+      "mapping_note": "Campaign sibling in the AirMISR series.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source, statement"
+    },
+    {
+      "shortname": "AIRMISR_LUNAR_LAKE_2000",
+      "version": "1",
+      "depth": 1,
+      "related_shortname": "AIRMISR_MORGAN_MONROE_2003",
+      "related_version": "1",
+      "related_concept_id": "C3880545549-LARC_CLOUD",
+      "association_type": "RELATED",
+      "lineage_relationship": "template_of",
+      "evidence_source": "other_doc",
+      "evidence_doc": "rs",
+      "evidence_section": "AirMISR Read Software",
+      "evidence_quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for any of the earlier AirMISR data sets.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "rm_l",
+          "section": "README §1 Introduction",
+          "quote": "Each data file contains the Level 1B1 Radiometric product or the Level 1B2 Georectified radiance product from one of the 9 camera angles from one run of",
+          "verified": true
+        },
+        {
+          "doc": "cmr:AIRMISR_MORGAN_MONROE_2003@1",
+          "section": "AIRMISR_MORGAN_MONROE_2003 CMR abstract",
+          "quote": "AirMISR uses a single camera in a pivoting gimbal mount.",
+          "verified": true
+        },
+        {
+          "doc": "rs",
+          "section": "AirMISR Read Software",
+          "quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for the Howland 2003 data set.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "keyword_priority_note": "The shared read-software note covers 'any of the earlier AirMISR data sets' (generic); the sibling shares the abstract's instrument template.",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "LARC_CLOUD",
+        "level": "1B",
+        "target_level": "1B",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "1"
+        ],
+        "temporal": {
+          "BeginningDateTime": "2003-08-19T00:00:00.000Z",
+          "EndingDateTime": "2003-08-19T23:59:59.999Z"
+        },
+        "platforms": [
+          [
+            "NASA ER-2",
+            [
+              "AIRMISR"
+            ]
+          ]
+        ],
+        "same_instrument_platform": true
+      },
+      "decision_procedure": "Q1-Q5 no: another AirMISR campaign (different flight, no data flows between them), not another platform. Q6: same instrument, product definitions (L1B1/L1B2), file format and read software -> template_of (RELATED).",
+      "mapping_note": "Campaign sibling in the AirMISR series.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source, statement"
+    },
+    {
+      "shortname": "AIRMISR_LUNAR_LAKE_2000",
+      "version": "1",
+      "depth": 1,
+      "related_shortname": "AIRMISR_ROGERS_LAKE_2001",
+      "related_version": "1",
+      "related_concept_id": "C3880545640-LARC_CLOUD",
+      "association_type": "RELATED",
+      "lineage_relationship": "template_of",
+      "evidence_source": "other_doc",
+      "evidence_doc": "rs",
+      "evidence_section": "AirMISR Read Software",
+      "evidence_quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for any of the earlier AirMISR data sets.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "rm_l",
+          "section": "README §1 Introduction",
+          "quote": "Each data file contains the Level 1B1 Radiometric product or the Level 1B2 Georectified radiance product from one of the 9 camera angles from one run of",
+          "verified": true
+        },
+        {
+          "doc": "cmr:AIRMISR_ROGERS_LAKE_2001@1",
+          "section": "AIRMISR_ROGERS_LAKE_2001 CMR abstract",
+          "quote": "AirMISR uses a single camera in a pivoting gimbal mount.",
+          "verified": true
+        },
+        {
+          "doc": "rs",
+          "section": "AirMISR Read Software",
+          "quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for the Howland 2003 data set.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "keyword_priority_note": "The shared read-software note covers 'any of the earlier AirMISR data sets' (generic); the sibling shares the abstract's instrument template.",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "LARC_CLOUD",
+        "level": "1B",
+        "target_level": "1B",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "1"
+        ],
+        "temporal": {
+          "BeginningDateTime": "2001-06-06T00:00:00.000Z",
+          "EndingDateTime": "2001-06-06T23:59:59.999Z"
+        },
+        "platforms": [
+          [
+            "C-130",
+            [
+              "NOT APPLICABLE"
+            ]
+          ],
+          [
+            "NASA ER-2",
+            [
+              "AIRMISR"
+            ]
+          ]
+        ],
+        "same_instrument_platform": false
+      },
+      "decision_procedure": "Q1-Q5 no: another AirMISR campaign (different flight, no data flows between them), not another platform. Q6: same instrument, product definitions (L1B1/L1B2), file format and read software -> template_of (RELATED).",
+      "mapping_note": "Campaign sibling in the AirMISR series.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source, statement"
+    },
+    {
+      "shortname": "AIRMISR_LUNAR_LAKE_2000",
+      "version": "1",
+      "depth": 1,
+      "related_shortname": "AIRMISR_SAFARI",
+      "related_version": "1",
+      "related_concept_id": "C3880545863-LARC_CLOUD",
+      "association_type": "RELATED",
+      "lineage_relationship": "template_of",
+      "evidence_source": "other_doc",
+      "evidence_doc": "rs",
+      "evidence_section": "AirMISR Read Software",
+      "evidence_quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for any of the earlier AirMISR data sets.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "rm_l",
+          "section": "README §1 Introduction",
+          "quote": "Each data file contains the Level 1B1 Radiometric product or the Level 1B2 Georectified radiance product from one of the 9 camera angles from one run of",
+          "verified": true
+        },
+        {
+          "doc": "cmr:AIRMISR_SAFARI@1",
+          "section": "AIRMISR_SAFARI CMR abstract",
+          "quote": "AirMISR uses a single camera in a pivoting gimbal mount.",
+          "verified": true
+        },
+        {
+          "doc": "rs",
+          "section": "AirMISR Read Software",
+          "quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for the Howland 2003 data set.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "keyword_priority_note": "The shared read-software note covers 'any of the earlier AirMISR data sets' (generic); the sibling shares the abstract's instrument template.",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "LARC_CLOUD",
+        "level": "1B",
+        "target_level": "1B",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "1"
+        ],
+        "temporal": {
+          "BeginningDateTime": "2000-09-06T00:00:00.000Z",
+          "EndingDateTime": "2000-09-14T23:59:59.999Z"
+        },
+        "platforms": [
+          [
+            "NASA ER-2",
+            [
+              "AIRMISR"
+            ]
+          ]
+        ],
+        "same_instrument_platform": true
+      },
+      "decision_procedure": "Q1-Q5 no: another AirMISR campaign (different flight, no data flows between them), not another platform. Q6: same instrument, product definitions (L1B1/L1B2), file format and read software -> template_of (RELATED).",
+      "mapping_note": "Campaign sibling in the AirMISR series.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source, statement"
+    },
+    {
+      "shortname": "AIRMISR_LUNAR_LAKE_2000",
+      "version": "1",
+      "depth": 1,
+      "related_shortname": "AIRMISR_SERC_2003",
+      "related_version": "1",
+      "related_concept_id": "C3880545829-LARC_CLOUD",
+      "association_type": "RELATED",
+      "lineage_relationship": "template_of",
+      "evidence_source": "other_doc",
+      "evidence_doc": "rs",
+      "evidence_section": "AirMISR Read Software",
+      "evidence_quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for any of the earlier AirMISR data sets.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "rm_l",
+          "section": "README §1 Introduction",
+          "quote": "Each data file contains the Level 1B1 Radiometric product or the Level 1B2 Georectified radiance product from one of the 9 camera angles from one run of",
+          "verified": true
+        },
+        {
+          "doc": "cmr:AIRMISR_SERC_2003@1",
+          "section": "AIRMISR_SERC_2003 CMR abstract",
+          "quote": "AirMISR uses a single camera in a pivoting gimbal mount.",
+          "verified": true
+        },
+        {
+          "doc": "rs",
+          "section": "AirMISR Read Software",
+          "quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for the Howland 2003 data set.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "keyword_priority_note": "The shared read-software note covers 'any of the earlier AirMISR data sets' (generic); the sibling shares the abstract's instrument template.",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "LARC_CLOUD",
+        "level": "1B",
+        "target_level": "1B",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "1"
+        ],
+        "temporal": {
+          "BeginningDateTime": "2003-08-20T00:00:00.000Z",
+          "EndingDateTime": "2003-08-20T23:59:59.999Z"
+        },
+        "platforms": [
+          [
+            "NASA ER-2",
+            [
+              "AIRMISR"
+            ]
+          ]
+        ],
+        "same_instrument_platform": true
+      },
+      "decision_procedure": "Q1-Q5 no: another AirMISR campaign (different flight, no data flows between them), not another platform. Q6: same instrument, product definitions (L1B1/L1B2), file format and read software -> template_of (RELATED).",
+      "mapping_note": "Campaign sibling in the AirMISR series.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source, statement"
+    },
+    {
+      "shortname": "AIRMISR_LUNAR_LAKE_2000",
+      "version": "1",
+      "depth": 1,
+      "related_shortname": "AIRMISR_SNOW_ICE_2001",
+      "related_version": "1",
+      "related_concept_id": "C3880545858-LARC_CLOUD",
+      "association_type": "RELATED",
+      "lineage_relationship": "template_of",
+      "evidence_source": "other_doc",
+      "evidence_doc": "rs",
+      "evidence_section": "AirMISR Read Software",
+      "evidence_quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for any of the earlier AirMISR data sets.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "rm_l",
+          "section": "README §1 Introduction",
+          "quote": "Each data file contains the Level 1B1 Radiometric product or the Level 1B2 Georectified radiance product from one of the 9 camera angles from one run of",
+          "verified": true
+        },
+        {
+          "doc": "cmr:AIRMISR_SNOW_ICE_2001@1",
+          "section": "AIRMISR_SNOW_ICE_2001 CMR abstract",
+          "quote": "AirMISR uses a single camera in a pivoting gimbal mount.",
+          "verified": true
+        },
+        {
+          "doc": "rs",
+          "section": "AirMISR Read Software",
+          "quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for the Howland 2003 data set.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "keyword_priority_note": "The shared read-software note covers 'any of the earlier AirMISR data sets' (generic); the sibling shares the abstract's instrument template.",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "LARC_CLOUD",
+        "level": "1B",
+        "target_level": "1B",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "1"
+        ],
+        "temporal": {
+          "BeginningDateTime": "2001-03-08T00:00:00.000Z",
+          "EndingDateTime": "2001-03-08T23:59:59.999Z"
+        },
+        "platforms": [
+          [
+            "NASA ER-2",
+            [
+              "AIRMISR"
+            ]
+          ]
+        ],
+        "same_instrument_platform": true
+      },
+      "decision_procedure": "Q1-Q5 no: another AirMISR campaign (different flight, no data flows between them), not another platform. Q6: same instrument, product definitions (L1B1/L1B2), file format and read software -> template_of (RELATED).",
+      "mapping_note": "Campaign sibling in the AirMISR series.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source, statement"
+    },
+    {
+      "shortname": "AIRMISR_LUNAR_LAKE_2000",
+      "version": "1",
+      "depth": 1,
+      "related_shortname": "AIRMISR_WISCONSIN_2000",
+      "related_version": "1",
+      "related_concept_id": "C3880545920-LARC_CLOUD",
+      "association_type": "RELATED",
+      "lineage_relationship": "template_of",
+      "evidence_source": "other_doc",
+      "evidence_doc": "rs",
+      "evidence_section": "AirMISR Read Software",
+      "evidence_quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for any of the earlier AirMISR data sets.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "rm_l",
+          "section": "README §1 Introduction",
+          "quote": "Each data file contains the Level 1B1 Radiometric product or the Level 1B2 Georectified radiance product from one of the 9 camera angles from one run of",
+          "verified": true
+        },
+        {
+          "doc": "cmr:AIRMISR_WISCONSIN_2000@1",
+          "section": "AIRMISR_WISCONSIN_2000 CMR abstract",
+          "quote": "AirMISR uses a single camera in a pivoting gimbal mount.",
+          "verified": true
+        },
+        {
+          "doc": "rs",
+          "section": "AirMISR Read Software",
+          "quote": "Installation and program execution instructions can be found in sections 5 through 7 of the Readme document for the Howland 2003 data set.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "keyword_priority_note": "The shared read-software note covers 'any of the earlier AirMISR data sets' (generic); the sibling shares the abstract's instrument template.",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "LARC_CLOUD",
+        "level": "1B",
+        "target_level": "1B",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "1"
+        ],
+        "temporal": {
+          "BeginningDateTime": "2000-03-03T00:00:00.000Z",
+          "EndingDateTime": "2000-03-03T23:59:59.999Z"
+        },
+        "platforms": [
+          [
+            "NASA ER-2",
+            [
+              "AIRMISR"
+            ]
+          ]
+        ],
+        "same_instrument_platform": true
+      },
+      "decision_procedure": "Q1-Q5 no: another AirMISR campaign (different flight, no data flows between them), not another platform. Q6: same instrument, product definitions (L1B1/L1B2), file format and read software -> template_of (RELATED).",
+      "mapping_note": "Campaign sibling in the AirMISR series.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source, statement"
+    }
+  ],
+  "excluded": [
+    {
+      "related": "AIRMISR (umbrella collection)",
+      "lineage_relationship": "derived_from",
+      "reason": "not_in_cmr",
+      "detail": "The record's existing association PARENT -> AIRMISR v1 points to a collection that does not exist in CMR (rule 1c-4).",
+      "evidence_doc": "rm_l",
+      "evidence_section": "README §1 Introduction",
+      "evidence_quote": "Each data file contains the Level 1B1 Radiometric product or the Level 1B2 Georectified radiance product from one of the 9 camera angles from one run of",
+      "quote_verified": true
+    },
+    {
+      "related": "AirMISR raw camera output (Level 0/1A) and ER-2 attitude/position",
+      "lineage_relationship": "derived_from",
+      "reason": "not_in_cmr",
+      "detail": "The L1B1 radiances are the cameras' digital output scaled to radiance; the raw data and aircraft navigation are not CMR collections.",
+      "evidence_doc": "rm_l",
+      "evidence_section": "README §2 Data Description",
+      "evidence_quote": "The Level 1 Radiometric product contains data that have been scaled to convert the digital output of the cameras to radiances and have been conditioned to remove instrument-dependent effects.",
+      "quote_verified": true
+    },
+    {
+      "related": "USGS 1:24000 topographic maps (ground control points) and terrain elevation",
+      "lineage_relationship": "input_to",
+      "reason": "not_in_cmr",
+      "detail": "Geolocation references for the georectification; not CMR collections.",
+      "evidence_doc": "rm_l",
+      "evidence_section": "README §2.1.2 Geometric Data Quality",
+      "evidence_quote": "to remove static errors in the camera pointing and airplane position.",
+      "quote_verified": true
+    },
+    {
+      "related": "MISR (Terra) Level 1B collections (MI1B1, MI1B2E, MI1B2T)",
+      "lineage_relationship": "related_to",
+      "reason": "ambiguous_rule_1c-3",
+      "detail": "AirMISR shares MISR's calibration procedures and supports MISR calibration/cross-comparison, but no MISR collection is named.",
+      "evidence_doc": "rm_l",
+      "evidence_section": "README §2 Instrument Description",
+      "evidence_quote": "a useful feature in utilizing the instrument as part of the MISR calibration.",
+      "quote_verified": true
+    }
+  ],
+  "existing_metadata_associations": [
+    {
+      "existing": {
+        "EntryId": "AIRMISR",
+        "Type": "PARENT",
+        "Version": "1"
+      },
+      "issues": [
+        "EntryId 'AIRMISR' has no CMR record (Generation skill rule 1c-4: omit)"
+      ]
+    }
+  ],
+  "recommended_metadata_associations": [
+    {
+      "Type": "RELATED",
+      "EntryId": "AIRMISR_BARC_2001",
+      "Version": "1"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "AIRMISR_BARTLETT_2003",
+      "Version": "1"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "AIRMISR_CLAMS_2001",
+      "Version": "1"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "AIRMISR_HARVARD_2003",
+      "Version": "1"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "AIRMISR_HOWLAND_2003",
+      "Version": "1"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "AIRMISR_KONVEX",
+      "Version": "1"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "AIRMISR_LUNAR_LAKE_2001",
+      "Version": "1"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "AIRMISR_MONTEREY_1999",
+      "Version": "1"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "AIRMISR_MORGAN_MONROE_2003",
+      "Version": "1"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "AIRMISR_ROGERS_LAKE_2001",
+      "Version": "1"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "AIRMISR_SAFARI",
+      "Version": "1"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "AIRMISR_SERC_2003",
+      "Version": "1"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "AIRMISR_SNOW_ICE_2001",
+      "Version": "1"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "AIRMISR_WISCONSIN_2000",
+      "Version": "1"
+    }
+  ],
+  "recommended_metadata_associations_note": "Replace PARENT -> AIRMISR (no CMR record). UMM-C 1.18.x field names (EntryId); under the proposed UMM-C 1.18.8, EntryId becomes ShortName and Type, ShortName and Version are required.",
+  "csv_validation": {
+    "valid": true,
+    "errors": []
+  }
+}
