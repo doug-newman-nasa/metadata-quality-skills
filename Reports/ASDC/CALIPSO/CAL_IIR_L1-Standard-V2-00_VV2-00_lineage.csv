@@ -1,0 +1,4 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+CAL_IIR_L1-Standard-V2-00,V2-00,CHILD,CAL_IIR_L2_Track-Standard-V4-51,V4-51,MEDIUM,downstream_product
+CAL_IIR_L1-Standard-V2-00,V2-00,RELATED,CAL_IIR_L1-Standard-V2-01,V2-01,MEDIUM,version_of
+CAL_IIR_L1-Standard-V2-00,V2-00,RELATED,CAL_IIR_L1-Standard-V3-00,V3-00,MEDIUM,version_of

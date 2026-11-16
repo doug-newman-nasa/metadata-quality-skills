@@ -1,0 +1,2 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+CAR_ARMCAS_BRDF,2,RELATED,CAR_ARMCAS_L1C,1,MEDIUM,parallel_product

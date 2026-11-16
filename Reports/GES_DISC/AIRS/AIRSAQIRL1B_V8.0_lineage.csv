@@ -1,0 +1,3 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+AIRSAQIRL1B,8.0,RELATED,AIRIBRAD,005,MEDIUM,version_of
+AIRSAQIRL1B,8.0,RELATED,AIRSAQIRL1B_NRT,8.0,MEDIUM,related_to

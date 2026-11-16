@@ -1,0 +1,283 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-13T21:22:48+00:00",
+  "suite": "LHASA_suite (3 collections; see LHASA_suite_lineage_evidence.json)",
+  "parameters": {
+    "collection_short_name": "Global_Landslide_Exposure_Maps",
+    "collection_version": "1.0",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 1,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "Global_Landslide_Exposure_Maps",
+    "version": "1.0",
+    "concept_id": "C2670410720-GES_DISC",
+    "revision_id": 14,
+    "entry_title": "IMERG and LHASA Global Landslide Exposure Maps 1.0",
+    "processing_level": "4",
+    "temporal": [
+      {
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2001-01-01T00:00:00.000Z",
+            "EndingDateTime": "2017-01-01T23:59:59.999Z"
+          }
+        ],
+        "EndsAtPresentFlag": true
+      }
+    ],
+    "existing_metadata_associations": [
+      {
+        "EntryId": "Global_Landslide_Exposure_Maps",
+        "Version": "1.0"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [],
+    "decision_tree_branch": "[2] NO: no ATBD in related_urls; the README and the publications it cites are the primary sources"
+  },
+  "source_documents": [
+    {
+      "key": "nhess_2020",
+      "title": "Emberson, Kirschbaum & Stanley (2020) New global characterisation of landslide exposure, NHESS 20:3413-3424",
+      "url": "https://nhess.copernicus.org/articles/20/3413/2020/nhess-20-3413-2020.pdf",
+      "evidence_source": "other_doc",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "readme_exposure",
+      "title": "README Document for Global Landslide Exposure Maps, Ver. 1.0 (GES DISC, 2023)",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Community/LHASA_IMERG/README.GlobalLandslideExposureMaps.1.0.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": false,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": false,
+        "VALID": false
+      }
+    },
+    {
+      "key": "readme_v11",
+      "title": "README Document for the Global Landslide Nowcast from LHASA, version 1.1 (GES DISC, 2022)",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Community/LHASA/README.Global_Landslide_Nowcast.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "readme_exposure",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Community/LHASA_IMERG/README.GlobalLandslideExposureMaps.1.0.pdf",
+      "status": "ok",
+      "pages": 8,
+      "text_chars": 6516
+    },
+    {
+      "key": "readme_v11",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Community/LHASA/README.Global_Landslide_Nowcast.pdf",
+      "status": "ok",
+      "pages": 11,
+      "text_chars": 10168
+    },
+    {
+      "key": "readme_v200",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Community/LHASA/README.Global_Landslide_Nowcast_2.0.0.pdf",
+      "status": "ok",
+      "pages": 14,
+      "text_chars": 14990
+    },
+    {
+      "key": "atbd_v2",
+      "url": "https://www.frontiersin.org/articles/10.3389/feart.2021.640043/pdf",
+      "status": "ok",
+      "pages": 15,
+      "text_chars": 80665
+    },
+    {
+      "key": "nhess_2020",
+      "url": "https://nhess.copernicus.org/articles/20/3413/2020/nhess-20-3413-2020.pdf",
+      "status": "ok",
+      "pages": 12,
+      "text_chars": 55495
+    },
+    {
+      "key": "ef_2018",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/2017EF000715",
+      "status": "FAILED: 403 Client Error: Forbidden for url: https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/2017EF000715"
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "Global_Landslide_Exposure_Maps",
+      "version": "1.0",
+      "level": "4"
+    },
+    "primary_parents": [
+      "Global_Landslide_Nowcast 1.1"
+    ],
+    "supporting_parents": [],
+    "derived_children": [],
+    "related": []
+  },
+  "relationships": [
+    {
+      "shortname": "Global_Landslide_Exposure_Maps",
+      "version": "1.0",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "aggregated_from",
+      "related_shortname": "Global_Landslide_Nowcast",
+      "related_version": "1.1",
+      "version_status": "matched",
+      "version_basis": "stated_in_evidence",
+      "version_stated": "1.1",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement",
+      "evidence_source": "other_doc",
+      "evidence_document": "Emberson, Kirschbaum & Stanley (2020) New global characterisation of landslide exposure, NHESS 20:3413-3424",
+      "evidence_url": "https://nhess.copernicus.org/articles/20/3413/2020/nhess-20-3413-2020.pdf",
+      "evidence_section": "§3 Methods (combining hazard with exposure)",
+      "evidence_page": 4,
+      "evidence_quote": "we have multiplied the raster map of infrastructure or road density by the nowcast density raster (i.e. raster showing total days exposed to land- slide hazard) for each full year in the IMERG archive (2000– 2018) and taken the mean value and standard deviation.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "Emberson, Kirschbaum & Stanley (2020) New global characterisation of landslide exposure, NHESS 20:3413-3424",
+          "quote": "We term this revised model “LHASA 1.1”.",
+          "verified": true
+        },
+        {
+          "document": "README Document for Global Landslide Exposure Maps, Ver. 1.0 (GES DISC, 2023)",
+          "quote": "The data are the results associated with the research paper ‘New global characterisation of landslide exposure’ [Emberson et al. 2020].",
+          "verified": true
+        },
+        {
+          "document": "README Document for Global Landslide Exposure Maps, Ver. 1.0 (GES DISC, 2023)",
+          "quote": "Nowcasts are the output of the NASA LHASA model.",
+          "verified": true
+        },
+        {
+          "document": "README Document for the Global Landslide Nowcast from LHASA, version 1.1 (GES DISC, 2022)",
+          "quote": "The first described the overall modeling approach, and the second describes the changes from version 1.0 to version 1.1",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2 (aggregation): the hazard raster is the annual nowcast count of LHASA 1.1, averaged over the IMERG years; the exposure rasters multiply it by population, road and infrastructure density. \"LHASA 1.1\" mapped to Global_Landslide_Nowcast 1.1 (the 1.1 README cites the same paper for the 1.0→1.1 changes).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "1.1",
+          "2.0.0"
+        ],
+        "concept_id": "C2036912694-GES_DISC",
+        "related_level": "4",
+        "level_progression_valid": true,
+        "level_check": "parent L4 <= target L4",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "granule_level_check": {
+    "collection": "Global_Landslide_Exposure_Maps|1.0",
+    "granules": 8,
+    "sample": "Global_Landslide_Exposure_Maps.1.0:Pop_exp_stdev.tif",
+    "sample_time": {
+      "RangeDateTime": {
+        "BeginningDateTime": "2001-01-01T00:00:00.000Z",
+        "EndingDateTime": "2017-01-01T00:00:00.000Z"
+      }
+    },
+    "with_InputGranules": 0
+  },
+  "existing_associations_check": [
+    {
+      "collection": "Global_Landslide_Exposure_Maps|1.0",
+      "Type": null,
+      "EntryId": "Global_Landslide_Exposure_Maps",
+      "Version": "1.0",
+      "self_reference": true
+    }
+  ],
+  "metadata_findings": [
+    "The only MetadataAssociation points to the record itself (Global_Landslide_Exposure_Maps 1.0) and has no Type; it should be removed or replaced with the lineage below.",
+    "The DATA SET LANDING PAGE (https://www.earthdata.nasa.gov/data/catalog/ges-disc-sndraqil3cmccp-2) is the landing page of an unrelated dataset.",
+    "No ATBD in RelatedUrls.",
+    "Platforms is ['MODELS'] only; the input missions (GPM) are not recorded.",
+    "TemporalExtents ends 2017-01-01 but sets EndsAtPresentFlag = true; the product is a fixed multi-year average.",
+    "The Abstract calls the rasters a 16-year average (2001–2016); the NHESS paper averages \"each full year in the IMERG archive (2000– 2018)\" and reports exposure \"from 2001 to 2019\". The averaging period should be confirmed.",
+    "The record has no association to Global_Landslide_Nowcast 1.1, the LHASA run whose nowcasts it aggregates."
+  ],
+  "excluded": [
+    {
+      "candidate": "IMERG (run/time step unspecified) for Global_Landslide_Nowcast 1.1",
+      "reason": "ambiguous",
+      "detail": "NHESS names \"IMERG (version 6B)\" only; Early, Late and Final runs at 30-min and daily steps all exist (rules 1c-3, 1c-6)."
+    },
+    {
+      "candidate": "GPM_3IMERGHHE for Global_Landslide_Nowcast 2.0.0",
+      "reason": "conflicting_evidence",
+      "detail": "ATBD text says \"IMERG Early Product … 30 min\"; its dataset citation names the Late daily product, which is written."
+    },
+    {
+      "candidate": "CIESIN_SEDAC_GPWv4_APDENS_WPP_2015_R10 / _R11 for Global_Landslide_Exposure_Maps",
+      "reason": "ambiguous",
+      "detail": "NHESS: \"Gridded Population of the World version 4 ... adjusted to the UN WPP Population Density for 2015\"; the revision is not stated."
+    },
+    {
+      "candidate": "Global_Landslide_Nowcast 1.1 <-> 2.0.0",
+      "reason": "same_shortname",
+      "detail": "Other versions of the target are never listed (Generation Skill 1a, version_of); a row would be a self-relation."
+    },
+    {
+      "candidate": "Landslide susceptibility map (Stanley & Kirschbaum 2017), Hansen forest loss, GRIP roads, OpenStreetMap, Viewfinder Panoramas DEM, GEM active faults, GLiM",
+      "reason": "not_in_cmr",
+      "detail": "Static inputs named in NHESS and the ATBD; no CMR collection."
+    },
+    {
+      "candidate": "Global Landslide Catalog and other training/validation inventories",
+      "reason": "not_an_input",
+      "detail": "Used to train and evaluate LHASA 2.0, not to run it; the GLC has no CMR record."
+    },
+    {
+      "candidate": "HMA2_LHI, HMA_LS_Cat (NSIDC)",
+      "reason": "no_documented_relationship",
+      "detail": "Separate High Mountain Asia products."
+    },
+    {
+      "candidate": "Kirschbaum & Stanley (2018), Earth's Future",
+      "reason": "not_readable",
+      "detail": "Publisher returned HTTP 403."
+    }
+  ],
+  "csv": {
+    "path": "Reports/GES_DISC/LHASA/Global_Landslide_Exposure_Maps_V1.0_lineage.csv",
+    "rows": 1,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-13T19:54:41+00:00",
+  "suite": "AIRS_suite (39 collections; see AIRS_suite_lineage_evidence.json)",
+  "parameters": {
+    "collection_short_name": "AIRSIL3MSOLR",
+    "collection_version": "6.1",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 2,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "AIRSIL3MSOLR",
+    "version": "6.1",
+    "concept_id": "C1697372449-GES_DISC",
+    "revision_id": 25,
+    "entry_title": "Aqua AIRS Level 3 Spectral Outgoing Longwave Radiation (OLR) Monthly",
+    "processing_level": "3",
+    "temporal": [
+      {
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2002-08-31T00:00:00.000Z"
+          }
+        ],
+        "EndsAtPresentFlag": true
+      }
+    ],
+    "granules_in_cmr": 244,
+    "existing_metadata_associations": [
+      {
+        "EntryId": "AIRSIL3MSOLR",
+        "Version": "6.1",
+        "Type": "SCIENCE ASSOCIATED"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [
+      {
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/AIRSIL3MSOLR.v6.1.ATBD.pdf",
+        "priority": 1,
+        "source": "official_ATBD_designation",
+        "description": "ATBD Documentation"
+      }
+    ],
+    "decision_tree_branch": "[1] YES: ATBD in related_urls is the primary source",
+    "other_documentation": [
+      {
+        "subtype": "READ-ME",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/AIRSIL3MSOLR.v6.1.README.pdf"
+      }
+    ]
+  },
+  "source_documents": {
+    "linked_from_record": [
+      {
+        "key": "olr_readme",
+        "title": "Aqua AIRS Huang Spectral OLR Level-3 Product User Guide (V6.1)",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/AIRSIL3MSOLR.v6.1.README.pdf",
+        "evidence_source": "user_guide",
+        "validation": {
+          "document_accessible": true,
+          "contains_algorithm_section": true,
+          "mentions_input_data": true,
+          "mentions_parent_collection": true,
+          "contains_processing_algorithm": true,
+          "VALID": true
+        }
+      },
+      {
+        "key": "olr_atbd",
+        "title": "Aqua AIRS Huang Spectral OLR ATBD (AIRS data V6.1)",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/AIRSIL3MSOLR.v6.1.ATBD.pdf",
+        "evidence_source": "atbd",
+        "validation": {
+          "document_accessible": true,
+          "contains_algorithm_section": true,
+          "mentions_input_data": true,
+          "mentions_parent_collection": true,
+          "contains_processing_algorithm": true,
+          "VALID": true
+        }
+      }
+    ],
+    "used_as_evidence": [
+      {
+        "key": "olr_readme",
+        "title": "Aqua AIRS Huang Spectral OLR Level-3 Product User Guide (V6.1)",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/AIRSIL3MSOLR.v6.1.README.pdf",
+        "evidence_source": "user_guide",
+        "validation": {
+          "document_accessible": true,
+          "contains_algorithm_section": true,
+          "mentions_input_data": true,
+          "mentions_parent_collection": true,
+          "contains_processing_algorithm": true,
+          "VALID": true
+        }
+      }
+    ]
+  },
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "AIRSIL3MSOLR",
+      "version": "6.1",
+      "level": "3"
+    },
+    "primary_parents": [
+      "AIRIBRAD 005"
+    ],
+    "supporting_parents": [],
+    "derived_children": [],
+    "related": []
+  },
+  "relationships": [
+    {
+      "shortname": "AIRSIL3MSOLR",
+      "version": "6.1",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "AIRIBRAD",
+      "related_version": "005",
+      "version_status": "matched",
+      "version_basis": "stated_in_evidence",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "Aqua AIRS Huang Spectral OLR Level-3 Product User Guide (V6.1)",
+      "evidence_url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/AIRSIL3MSOLR.v6.1.README.pdf",
+      "evidence_section": "§1.2 (product background); §2.2 Level-2 Algorithm Background",
+      "evidence_page": 6,
+      "evidence_quote": "This product was produced using version 5 of the AIRS Level-1B product, AIRIBRAD_005",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "Aqua AIRS Huang Spectral OLR Level-3 Product User Guide (V6.1)",
+          "quote": "Spectral flux at each AIRS channel can then be estimated by applying the spectral anisotropic distribution model to the actual AIRS L1b radiance.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "rationale": "Decision step 2: spectral fluxes are computed from the L1B radiances with spectral ADMs, then gridded monthly.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1243477369-GES_DISC",
+        "related_level": "1B",
+        "level_progression_valid": true,
+        "level_check": "parent L1 <= target L3",
+        "version_compatible": true,
+        "temporal_consistent": true,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "granule_level_check": {
+    "collection": "AIRSIL3MSOLR|6.1",
+    "granules_in_cmr": 244,
+    "sampled": 2,
+    "sample_granule": "AIRSIL3MSOLR.6.1:AIRS.AQUA.AIRS.20221201.M01.L3_SpecOLR.std.v06_01_00.M.230416142456.nc",
+    "with_InputGranules": 0
+  },
+  "existing_associations_check": [
+    {
+      "collection": "AIRSIL3MSOLR|6.1",
+      "Type": "SCIENCE ASSOCIATED",
+      "EntryId": "AIRSIL3MSOLR",
+      "Version": "6.1",
+      "self_reference": true,
+      "found_in_cmr": true
+    }
+  ],
+  "metadata_findings": [
+    "The only MetadataAssociation is SCIENCE ASSOCIATED to the record itself (AIRSIL3MSOLR 6.1): a self-relation, which should be removed.",
+    "No PARENT, INPUT, CHILD or RELATED associations; this run proposes 1 PARENT.",
+    "The Abstract says the OLR is \"derived from the AIRS version 6 data\"; the product User Guide says it was produced from the V5 L1B radiances (AIRIBRAD_005), with CERES SSF scene types."
+  ],
+  "excluded": [
+    {
+      "name": "AIRS, AMSU-A, HSB and VIS/NIR Level 1A",
+      "role": "PARENT of every L1B product (V5 and V8)",
+      "reason": "not a CMR collection (rule 1c-4): \"Level 0 and Level 1A data sets are not publicly archived\" (Overview Figure 13)"
+    },
+    {
+      "name": "AIRAACAL",
+      "role": "optional dynamic input to AIRABRAD (README.AIRABRAD §1.4)",
+      "reason": "no CMR record"
+    },
+    {
+      "name": "Definitive / predicted ephemeris and attitude",
+      "role": "input to L1B and NRT L1B",
+      "reason": "not a CMR collection (rule 1c-4)"
+    },
+    {
+      "name": "AVN / GFS forecast fields",
+      "role": "surface-pressure guess for L2; SST in AIRXBCAL",
+      "reason": "not identified as a CMR collection in the documents"
+    },
+    {
+      "name": "CERES SSF (Aqua)",
+      "role": "scene-type input to AIRSIL3MSOLR",
+      "reason": "ambiguous: CMR has CER_SSF_Aqua-FM3-MODIS and -FM4-MODIS (Edition4A) and the documents name neither edition nor instrument (rules 1c-3, 1c-6)"
+    },
+    {
+      "name": "AIRVBRAD_NRT",
+      "role": "possible VIS/NIR input to the NRT L2 products",
+      "reason": "the documents do not say which VIS input the NRT L2 uses (rule 1c-6)"
+    },
+    {
+      "name": "AIRXAMAP",
+      "role": "granule-location maps listed as a related data set in the L1C guide and NRT table",
+      "reason": "not a lineage relationship"
+    },
+    {
+      "name": "V006 L2 (AIRS2RET/SUP/CCF, AIRX2RET/SUP, AIRI2CCF, AIRH2RET/SUP/CCF 006)",
+      "role": "CHILD of AIRIBRAD/AIRABRAD/AIRHBRAD",
+      "reason": "documented (\"Since the Version 6 algorithm continues to use Version 5 radiance data\", README V6), but the CSV allows one row per related ShortName and the V7 version of each is written"
+    },
+    {
+      "name": "V006 L3, 8-day L3, V005 CO2, AIRS–CloudSat/MLS/MODIS matchups",
+      "role": "CMR pattern matches (Step 7)",
+      "reason": "their derivation from a suite member is not stated in the fetched documents (rule 1c-2)"
+    }
+  ],
+  "csv": {
+    "path": "Reports/GES_DISC/AIRS/AIRSIL3MSOLR_V6.1_lineage.csv",
+    "rows": 1,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  }
+}

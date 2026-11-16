@@ -1,0 +1,616 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-16T16:54:06+00:00",
+  "parameters": {
+    "use_atbd_priority": true,
+    "atbd_search_depth": 1,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "collections": [
+    {
+      "short_name": "CLAMS_CERES_CHESLIGHT_SONDE",
+      "version": "1",
+      "concept_id": "C3880593267-LARC_CLOUD",
+      "rows": 0,
+      "csv": "Reports/ASDC/CLAMS/CLAMS_CERES_CHESLIGHT_SONDE_V1_lineage.csv",
+      "json": "Reports/ASDC/CLAMS/CLAMS_CERES_CHESLIGHT_SONDE_V1_lineage_evidence.json"
+    },
+    {
+      "short_name": "CLAMS_ER2_MAS",
+      "version": "1",
+      "concept_id": "C3880593293-LARC_CLOUD",
+      "rows": 0,
+      "csv": "Reports/ASDC/CLAMS/CLAMS_ER2_MAS_V1_lineage.csv",
+      "json": "Reports/ASDC/CLAMS/CLAMS_ER2_MAS_V1_lineage_evidence.json"
+    },
+    {
+      "short_name": "CLAMS_MODIS_L2_AEROSOL_PRODUCTS",
+      "version": "1",
+      "concept_id": "C3880593388-LARC_CLOUD",
+      "rows": 1,
+      "csv": "Reports/ASDC/CLAMS/CLAMS_MODIS_L2_AEROSOL_PRODUCTS_V1_lineage.csv",
+      "json": "Reports/ASDC/CLAMS/CLAMS_MODIS_L2_AEROSOL_PRODUCTS_V1_lineage_evidence.json"
+    }
+  ],
+  "source_documents": [
+    {
+      "key": "readme_mas",
+      "title": "Readme file for the CLAMS ER2 MAS Data Set (June 2002)",
+      "url": "https://asdc.larc.nasa.gov/documents/clams/readme/readme_clams_mas.txt",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "paper",
+      "title": "Smith, W. L., Jr., et al., 2005: EOS Terra Aerosol and Radiative Flux Validation: An Overview of the CLAMS Experiment. J. Atmos. Sci., 62, 903-918 (journal HTML full text)",
+      "url": "https://journals.ametsoc.org/view/journals/atsc/62/4/jas3398.1.xml",
+      "evidence_source": "other_doc",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "crave",
+      "title": "CRAVE project home page (linked as PROJECT HOME PAGE)",
+      "url": "https://science.larc.nasa.gov/CRAVE/",
+      "evidence_source": "other_doc",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": false,
+        "mentions_input_data": false,
+        "mentions_parent_collection": false,
+        "contains_processing_algorithm": false,
+        "VALID": false
+      }
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "readme_mas",
+      "url": "https://asdc.larc.nasa.gov/documents/clams/readme/readme_clams_mas.txt",
+      "status": "ok",
+      "kind": "text",
+      "text_chars": 32085
+    },
+    {
+      "key": "paper_pdf",
+      "url": "https://journals.ametsoc.org/doi/pdf/10.1175/JAS3398.1",
+      "status": "FAILED: not a PDF (text/html;charset=UTF-8)"
+    },
+    {
+      "key": "paper",
+      "url": "https://journals.ametsoc.org/view/journals/atsc/62/4/jas3398.1.xml",
+      "status": "ok",
+      "kind": "html",
+      "text_chars": 144065
+    },
+    {
+      "key": "crave",
+      "url": "https://science.larc.nasa.gov/CRAVE/",
+      "status": "ok",
+      "kind": "html",
+      "text_chars": 9975
+    }
+  ],
+  "evidence": [
+    {
+      "id": "modis_subset",
+      "document": "CMR abstract: CLAMS_MODIS_L2_AEROSOL_PRODUCTS 1",
+      "section": "Abstract",
+      "pdf_page": null,
+      "quote": "The Moderate Resolution Imaging Spectroradiometer (MODIS) aerosol data products give the ambient aerosol optical thickness over the oceans and over a portion of the continents.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "CMR abstract: CLAMS_MODIS_L2_AEROSOL_PRODUCTS 1",
+          "quote": "cover the time period from July 10, 2001 (Julian day 191) to August 2, 2001 (Julian day 214) over the spatial region nomally from -106 degree longitude to -42 degree longitude",
+          "verified": true
+        },
+        {
+          "document": "CMR granule names: CLAMS_MODIS_L2_AEROSOL_PRODUCTS 1 (24 granules)",
+          "quote": "CLAMS_MODIS_MODO4_L2_A2001191.zip",
+          "verified": true
+        },
+        {
+          "document": "Smith, W. L., Jr., et al., 2005: EOS Terra Aerosol and Radiative Flux Validation: An Overview of the CLAMS Experiment. J. Atmos. Sci., 62, 903-918 (journal HTML full text)",
+          "quote": "The MODIS aerosol retrieval and data products are discussed in detail by Remer et al.",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "a": "CLAMS_MODIS_L2_AEROSOL_PRODUCTS 1",
+      "rel": "derived_from",
+      "b": "MOD04_L2 6.1",
+      "ev": "modis_subset",
+      "named": false,
+      "prio": 1,
+      "why": "Decision step 2: the collection is Terra MODIS Level 2 aerosol data (MOD04_L2 granules, \"MODO4\" in the file names) subset to the CLAMS period and region; PARENT. Generic \"MODIS aerosol data products\" mapped to MOD04_L2 by instrument (MODIS), platform (Terra) and level (L2). The 2001 subset predates Collection 6.1, the only MOD04_L2 version in CMR.",
+      "stated": false,
+      "fixed_version": null
+    }
+  ],
+  "relationships": [
+    {
+      "shortname": "CLAMS_MODIS_L2_AEROSOL_PRODUCTS",
+      "version": "1",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "MOD04_L2",
+      "related_version": "6.1",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement, cmr",
+      "evidence_source": "other_doc",
+      "evidence_document": "CMR abstract: CLAMS_MODIS_L2_AEROSOL_PRODUCTS 1",
+      "evidence_url": "https://cmr.earthdata.nasa.gov/search/concepts/C3880593388-LARC_CLOUD.umm_json",
+      "evidence_section": "Abstract",
+      "evidence_page": null,
+      "evidence_quote": "The Moderate Resolution Imaging Spectroradiometer (MODIS) aerosol data products give the ambient aerosol optical thickness over the oceans and over a portion of the continents.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "CMR abstract: CLAMS_MODIS_L2_AEROSOL_PRODUCTS 1",
+          "quote": "cover the time period from July 10, 2001 (Julian day 191) to August 2, 2001 (Julian day 214) over the spatial region nomally from -106 degree longitude to -42 degree longitude",
+          "verified": true
+        },
+        {
+          "document": "CMR granule names: CLAMS_MODIS_L2_AEROSOL_PRODUCTS 1 (24 granules)",
+          "quote": "CLAMS_MODIS_MODO4_L2_A2001191.zip",
+          "verified": true
+        },
+        {
+          "document": "Smith, W. L., Jr., et al., 2005: EOS Terra Aerosol and Radiative Flux Validation: An Overview of the CLAMS Experiment. J. Atmos. Sci., 62, 903-918 (journal HTML full text)",
+          "quote": "The MODIS aerosol retrieval and data products are discussed in detail by Remer et al.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: the collection is Terra MODIS Level 2 aerosol data (MOD04_L2 granules, \"MODO4\" in the file names) subset to the CLAMS period and region; PARENT. Generic \"MODIS aerosol data products\" mapped to MOD04_L2 by instrument (MODIS), platform (Terra) and level (L2). The 2001 subset predates Collection 6.1, the only MOD04_L2 version in CMR.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "6.1",
+          "6.1NRT"
+        ],
+        "concept_id": "C1443533440-LAADS",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "parent L2 <= target L3",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "step7_candidates": [
+    {
+      "short_name": "CLAMS_CERES_CHESLIGHT_SONDE",
+      "version": "1",
+      "concept_id": "C3880593267-LARC_CLOUD",
+      "entry_title": "CLAMS Chesapeake Lighthouse Vaisala RS-80 Radiosonde",
+      "level": "1B",
+      "begin": "2001-07-10",
+      "end": "2001-08-02",
+      "in_suite": true
+    },
+    {
+      "short_name": "CLAMS_CV580_CAR",
+      "version": "1",
+      "concept_id": "C3880593280-LARC_CLOUD",
+      "entry_title": "CLAMS CV-580 Cloud Absorption Radiometer (CAR)",
+      "level": "1B",
+      "begin": "2001-07-10",
+      "end": "2001-08-02",
+      "in_suite": false
+    },
+    {
+      "short_name": "CLAMS_ER2_MAS",
+      "version": "1",
+      "concept_id": "C3880593293-LARC_CLOUD",
+      "entry_title": "CLAMS ER-2 Moderate Resolution Imaging Spectrometer (MODIS) Airborne Simulator (MAS)",
+      "level": "1B",
+      "begin": "2001-06-29",
+      "end": "2001-08-02",
+      "in_suite": true
+    },
+    {
+      "short_name": "CLAMS_MODIS_L2_AEROSOL_PRODUCTS",
+      "version": "1",
+      "concept_id": "C3880593388-LARC_CLOUD",
+      "entry_title": "CLAMS MODIS L2 Aerosols",
+      "level": "3",
+      "begin": "2001-07-10",
+      "end": "2001-08-02",
+      "in_suite": true
+    },
+    {
+      "short_name": "CLAMS_UWASH_CONVAIR_DATA",
+      "version": "1",
+      "concept_id": "C3880593432-LARC_CLOUD",
+      "entry_title": "CLAMS-Chesapeake Lighthouse and Aircraft Measurements for Satellites Un. Washington Convair-580 aircraft measurements",
+      "level": "3",
+      "begin": "2001-07-10",
+      "end": "2001-08-02",
+      "in_suite": false
+    },
+    {
+      "short_name": "MOD04_L2",
+      "version": "6.1, 6.1NRT",
+      "concept_id": "C1443533440-LAADS, C1426436561-LANCEMODIS",
+      "entry_title": null,
+      "level": null,
+      "begin": null,
+      "end": null,
+      "in_suite": false
+    },
+    {
+      "short_name": "MOD021KM",
+      "version": "6.1, 6.1NRT, 7",
+      "concept_id": "C1378227407-LAADS, C3861664481-LAADS, C1426414410-LANCEMODIS",
+      "entry_title": null,
+      "level": null,
+      "begin": null,
+      "end": null,
+      "in_suite": false
+    },
+    {
+      "short_name": "MOD03",
+      "version": "6.1, 6.1NRT, 7",
+      "concept_id": "C1379767668-LAADS, C3860159104-LAADS, C1426422512-LANCEMODIS",
+      "entry_title": null,
+      "level": null,
+      "begin": null,
+      "end": null,
+      "in_suite": false
+    },
+    {
+      "short_name": "MOD35_L2",
+      "version": "6.1, 6.1NRT",
+      "concept_id": "C1443561895-LAADS, C1426517890-LANCEMODIS",
+      "entry_title": null,
+      "level": null,
+      "begin": null,
+      "end": null,
+      "in_suite": false
+    },
+    {
+      "short_name": "CLAMS",
+      "version": "(not in CMR)",
+      "concept_id": null,
+      "entry_title": null,
+      "level": null,
+      "begin": null,
+      "end": null,
+      "in_suite": false
+    },
+    {
+      "short_name": "MAS",
+      "version": "(not in CMR)",
+      "concept_id": null,
+      "entry_title": null,
+      "level": null,
+      "begin": null,
+      "end": null,
+      "in_suite": false
+    },
+    {
+      "short_name": "MAS_L1B",
+      "version": "(not in CMR)",
+      "concept_id": null,
+      "entry_title": null,
+      "level": null,
+      "begin": null,
+      "end": null,
+      "in_suite": false
+    }
+  ],
+  "granule_level_check": [
+    {
+      "collection": "CLAMS_CERES_CHESLIGHT_SONDE|1",
+      "granules": 61,
+      "sample": "CLAMS_CERES_CHESLIGHT_SONDE_200107101200.txt",
+      "sample_time": {
+        "RangeDateTime": {
+          "BeginningDateTime": "2001-07-10T11:01:00.000Z",
+          "EndingDateTime": "2001-07-10T12:54:30.000Z"
+        }
+      },
+      "with_InputGranules": 0
+    },
+    {
+      "collection": "CLAMS_ER2_MAS|1",
+      "granules": 163,
+      "sample": "CLAMS_MASL1B_01093_01_20010629_1557_1624_V02.hdf",
+      "sample_time": {
+        "RangeDateTime": {
+          "BeginningDateTime": "2001-06-29T15:57:55.000Z",
+          "EndingDateTime": "2001-06-29T16:24:40.000Z"
+        }
+      },
+      "with_InputGranules": 0
+    },
+    {
+      "collection": "CLAMS_MODIS_L2_AEROSOL_PRODUCTS|1",
+      "granules": 24,
+      "sample": "CLAMS_MODIS_MODO4_L2_A2001191.zip",
+      "sample_time": {
+        "RangeDateTime": {
+          "BeginningDateTime": "2001-07-10T00:00:00.000Z",
+          "EndingDateTime": "2001-07-10T00:00:00.000Z"
+        }
+      },
+      "with_InputGranules": 0
+    }
+  ],
+  "existing_associations_check": [
+    {
+      "collection": "CLAMS_CERES_CHESLIGHT_SONDE|1",
+      "Type": "PARENT",
+      "EntryId": "CLAMS",
+      "Version": "0",
+      "self_reference": false
+    },
+    {
+      "collection": "CLAMS_ER2_MAS|1",
+      "Type": "PARENT",
+      "EntryId": "MAS",
+      "Version": "1",
+      "self_reference": false
+    },
+    {
+      "collection": "CLAMS_ER2_MAS|1",
+      "Type": "PARENT",
+      "EntryId": "CLAMS",
+      "Version": "1",
+      "self_reference": false
+    },
+    {
+      "collection": "CLAMS_MODIS_L2_AEROSOL_PRODUCTS|1",
+      "Type": "PARENT",
+      "EntryId": "CLAMS",
+      "Version": "0",
+      "self_reference": false
+    }
+  ],
+  "existing_associations_review": [
+    {
+      "collection": "CLAMS_CERES_CHESLIGHT_SONDE",
+      "Type": "PARENT",
+      "EntryId": "CLAMS",
+      "Version": "0",
+      "resolves_in_cmr": false,
+      "versions_in_cmr": []
+    },
+    {
+      "collection": "CLAMS_ER2_MAS",
+      "Type": "PARENT",
+      "EntryId": "MAS",
+      "Version": "1",
+      "resolves_in_cmr": false,
+      "versions_in_cmr": []
+    },
+    {
+      "collection": "CLAMS_ER2_MAS",
+      "Type": "PARENT",
+      "EntryId": "CLAMS",
+      "Version": "1",
+      "resolves_in_cmr": false,
+      "versions_in_cmr": []
+    },
+    {
+      "collection": "CLAMS_MODIS_L2_AEROSOL_PRODUCTS",
+      "Type": "PARENT",
+      "EntryId": "CLAMS",
+      "Version": "0",
+      "resolves_in_cmr": false,
+      "versions_in_cmr": []
+    }
+  ],
+  "link_check": {
+    "https://asdc.larc.nasa.gov/project/CLAMS": 404,
+    "https://asdc.larc.nasa.gov/citing-data": 404,
+    "https://journals.ametsoc.org/doi/pdf/10.1175/JAS3398.1": 200,
+    "https://www.malvernpanalytical.com/en/products/measurement-type/ground-truthing/index.html": 200,
+    "https://science.larc.nasa.gov/CRAVE/": 200,
+    "https://mas.arc.nasa.gov/data/deploy_html/CLAMS_home.html": "ConnectTimeout",
+    "https://ceres.larc.nasa.gov/": 200,
+    "https://car.gsfc.nasa.gov/": 404,
+    "https://modis.gsfc.nasa.gov/": "ConnectionError",
+    "https://earthobservatory.nasa.gov/features/DelicateBalance/balance2.php": 200,
+    "https://earthobservatory.nasa.gov/images/2654/aqua-ceres-first-light": 200,
+    "https://earthobservatory.nasa.gov/images/563/ceres-detects-earths-heat-and-energy": 200,
+    "https://earthobservatory.nasa.gov/images/535/ceres-first-light-images": 200,
+    "https://earthobservatory.nasa.gov/images/36518/ceres-global-cloud-fraction": 200,
+    "https://earthobservatory.nasa.gov/features/Iris/iris3.php": 200,
+    "https://earthobservatory.nasa.gov/images/600/first-monthly-ceres-global-longwave-and-shortwave-radiation": 200,
+    "https://earthobservatory.nasa.gov/global-maps/CERES_NETFLUX_M": 200,
+    "https://earthobservatory.nasa.gov/features/Observing/obs_5.php": 200,
+    "https://earthobservatory.nasa.gov/features/AM1/terra_animations.php": 200,
+    "https://earthobservatory.nasa.gov/images/84930/the-arctic-is-absorbing-more-sunlight": 200,
+    "https://earthobservatory.nasa.gov/features/Water/page4.php": 200,
+    "https://earthobservatory.nasa.gov/images/2984/tropical-cloud-systems-and-ceres": 200,
+    "https://asdc.larc.nasa.gov/documents/clams/read_software/clams_mas_read_idl.pro": 200,
+    "https://asdc.larc.nasa.gov/documents/clams/read_software/clams_mas_read.c": 200,
+    "https://asdc.larc.nasa.gov/documents/clams/readme/readme_clams_mas.txt": 200,
+    "https://asdc.larc.nasa.gov/project/MAS": 404,
+    "https://mas.arc.nasa.gov/data/srf/ARC-Jun95/msr0695.ph": "ConnectTimeout"
+  },
+  "excluded_evidence": [
+    {
+      "id": "sonde_launch",
+      "document": "Smith, W. L., Jr., et al., 2005: EOS Terra Aerosol and Radiative Flux Validation: An Overview of the CLAMS Experiment. J. Atmos. Sci., 62, 903-918 (journal HTML full text)",
+      "section": "3. Surface measurements (Chesapeake Lighthouse)",
+      "quote": "Vaisalla radiosondes were launched at 0000 and 1200 UTC daily and during the aircraft operations.",
+      "quote_verified": true
+    },
+    {
+      "id": "cove",
+      "document": "Smith, W. L., Jr., et al., 2005: EOS Terra Aerosol and Radiative Flux Validation: An Overview of the CLAMS Experiment. J. Atmos. Sci., 62, 903-918 (journal HTML full text)",
+      "section": "3. Surface measurements",
+      "quote": "the site of an ongoing CERES Ocean Validation Experiment (COVE) where well-calibrated radiative fluxes and Aerosol Robotic Network (AERONET) aerosol properties have been measured since 1999.",
+      "quote_verified": true
+    },
+    {
+      "id": "mas_calibration",
+      "document": "Readme file for the CLAMS ER2 MAS Data Set (June 2002)",
+      "section": "2.2 Data Quality",
+      "quote": "Note that spectral response curves used for processing raw MAS instrument counts to calibrated radiances were \"atmospherically corrected\" and smoothed.",
+      "quote_verified": true
+    },
+    {
+      "id": "mas_purpose",
+      "document": "Readme file for the CLAMS ER2 MAS Data Set (June 2002)",
+      "section": "2.0 Data Set Description",
+      "quote": "Data acquired by the MAS are helping to define, develop, and test algorithms for the Moderate Resolution Imaging Spectroradiometer (MODIS)",
+      "quote_verified": true
+    },
+    {
+      "id": "campaign_validation",
+      "document": "Smith, W. L., Jr., et al., 2005: EOS Terra Aerosol and Radiative Flux Validation: An Overview of the CLAMS Experiment. J. Atmos. Sci., 62, 903-918 (journal HTML full text)",
+      "section": "Abstract",
+      "quote": "field campaign was conducted from 10 July to 2 August 2001 to validate several Terra data products",
+      "quote_verified": true
+    },
+    {
+      "id": "readme_netcdf",
+      "document": "Readme file for the CLAMS ER2 MAS Data Set (June 2002)",
+      "section": "1.0 Introduction",
+      "quote": "The data files are written in netCDF (Common Data Format).",
+      "quote_verified": true
+    },
+    {
+      "id": "readme_v01",
+      "document": "Readme file for the CLAMS ER2 MAS Data Set (June 2002)",
+      "section": "3.0 Format and Packaging",
+      "quote": "This above example is for a Level 1B file on flight 01141 track 18 on September 24,2001 with a starting time of 00:10 and an ending time of 00:37 with a version 01.",
+      "quote_verified": true
+    }
+  ],
+  "metadata_findings": {
+    "suite": [
+      "All 4 existing MetadataAssociations are PARENT links to 'CLAMS' (versions 0 and 1) or 'MAS', which are not CMR collections.",
+      "4 linked pages return an HTTP error, including the ASDC project page (GENERAL DOCUMENTATION) on all three records; 3 could not be reached from this environment.",
+      "All three records carry the same block of campaign-level links (CRAVE home page, CERES and MODIS home pages, car.gsfc.nasa.gov, a vendor page), several of which are unrelated or dead.",
+      "No granule fills InputGranules (expected only for the MODIS subset)."
+    ],
+    "by_collection": {
+      "CLAMS_CERES_CHESLIGHT_SONDE|1": [
+        "MetadataAssociation PARENT → 'CLAMS' version 0 does not resolve to a CMR collection (versions in CMR: none).",
+        "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/project/CLAMS",
+        "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/citing-data",
+        "Linked page could not be reached from this environment (ConnectTimeout; may be network-specific): https://mas.arc.nasa.gov/data/deploy_html/CLAMS_home.html",
+        "Linked page returns HTTP 404: https://car.gsfc.nasa.gov/",
+        "Linked page could not be reached from this environment (ConnectionError; may be network-specific): https://modis.gsfc.nasa.gov/",
+        "PROJECT HOME PAGE points to CRAVE (a different campaign); the page never mentions CLAMS.",
+        "A MICRO ARTICLE link points to a commercial instrument vendor page (malvernpanalytical.com), unrelated to this collection.",
+        "No ATBD in RelatedUrls (none expected for campaign data); the linked overview paper PDF URL does not return a PDF (HTTP 403 or an HTML page, depending on the client); the HTML full text is available.",
+        "ProcessingLevel is '1B' with the description 'L1B data processed to instrument units: Calibrated from Level 0 raw radiance.', which does not describe radiosonde soundings.",
+        "13 Earth Observatory CERES/Terra image pages and the CERES/MODIS home pages are linked as PUBLICATIONS / PROJECT HOME PAGE; none documents the radiosonde data. There is no README or data description."
+      ],
+      "CLAMS_ER2_MAS|1": [
+        "MetadataAssociation PARENT → 'MAS' version 1 does not resolve to a CMR collection (versions in CMR: none).",
+        "MetadataAssociation PARENT → 'CLAMS' version 1 does not resolve to a CMR collection (versions in CMR: none).",
+        "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/project/CLAMS",
+        "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/citing-data",
+        "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/project/MAS",
+        "Linked page could not be reached from this environment (ConnectTimeout; may be network-specific): https://mas.arc.nasa.gov/data/deploy_html/CLAMS_home.html",
+        "Linked page returns HTTP 404: https://car.gsfc.nasa.gov/",
+        "Linked page could not be reached from this environment (ConnectTimeout; may be network-specific): https://mas.arc.nasa.gov/data/srf/ARC-Jun95/msr0695.ph",
+        "Linked page could not be reached from this environment (ConnectionError; may be network-specific): https://modis.gsfc.nasa.gov/",
+        "PROJECT HOME PAGE points to CRAVE (a different campaign); the page never mentions CLAMS.",
+        "Duplicate RelatedUrls: ['https://science.larc.nasa.gov/CRAVE/'].",
+        "A MICRO ARTICLE link points to a commercial instrument vendor page (malvernpanalytical.com), unrelated to this collection.",
+        "No ATBD in RelatedUrls (none expected for campaign data); the linked overview paper PDF URL does not return a PDF (HTTP 403 or an HTML page, depending on the client); the HTML full text is available.",
+        "The README says the files \"are written in netCDF\" and are \"version 01\" (example dated September 24, 2001, after CLAMS); the granules are HDF files named …_V02.hdf.",
+        "The README links (asapdata.arc.nasa.gov, ltpwww.gsfc.nasa.gov, cimss.ssec.wisc.edu/~gumley) are retired.",
+        "The 'MAS' PARENT association names the instrument, not a collection."
+      ],
+      "CLAMS_MODIS_L2_AEROSOL_PRODUCTS|1": [
+        "MetadataAssociation PARENT → 'CLAMS' version 0 does not resolve to a CMR collection (versions in CMR: none).",
+        "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/project/CLAMS",
+        "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/citing-data",
+        "Linked page could not be reached from this environment (ConnectTimeout; may be network-specific): https://mas.arc.nasa.gov/data/deploy_html/CLAMS_home.html",
+        "Linked page returns HTTP 404: https://car.gsfc.nasa.gov/",
+        "Linked page could not be reached from this environment (ConnectionError; may be network-specific): https://modis.gsfc.nasa.gov/",
+        "PROJECT HOME PAGE points to CRAVE (a different campaign); the page never mentions CLAMS.",
+        "A MICRO ARTICLE link points to a commercial instrument vendor page (malvernpanalytical.com), unrelated to this collection.",
+        "No ATBD in RelatedUrls (none expected for campaign data); the linked overview paper PDF URL does not return a PDF (HTTP 403 or an HTML page, depending on the client); the HTML full text is available.",
+        "ProcessingLevel is '3', but the abstract and title describe Level 2 granules (MOD04_L2).",
+        "The granule names spell MOD04 with a letter O (\"MODO4\"); the abstract calls the product \"MODIS_CLAMS_L2_AEROSOL_PRODUCTS\" and has \"nomally\" and mis-encoded characters (\"10??10\", \"??m\", \"??55-degree\").",
+        "Neither the record nor any document states which MODIS collection (C3/C4) the subset was taken from; CMR now holds MOD04_L2 6.1 only.",
+        "No PARENT association to MOD04_L2 is recorded."
+      ]
+    }
+  },
+  "excluded": [
+    {
+      "candidate": "MOD021KM, MOD03, MOD35_L2 (inputs of MOD04_L2)",
+      "reason": "indirect",
+      "detail": "Inputs of the parent are not inputs of the subset (Generation skill rule 1c-1)."
+    },
+    {
+      "candidate": "Raw MAS counts / MAS Level 1A",
+      "reason": "not_in_cmr",
+      "evidence": "mas_calibration",
+      "detail": "MAS L1B is calibrated from raw instrument counts, which are not a CMR collection."
+    },
+    {
+      "candidate": "Raw radiosonde telemetry",
+      "reason": "not_in_cmr",
+      "evidence": "sonde_launch",
+      "detail": "The soundings are primary in situ observations."
+    },
+    {
+      "candidate": "Terra MODIS (any product) for CLAMS_ER2_MAS",
+      "reason": "no_lineage_relationship",
+      "evidence": "mas_purpose",
+      "detail": "MAS simulates MODIS for algorithm development; no data dependency."
+    },
+    {
+      "candidate": "CLAMS_CV580_CAR, CLAMS_UWASH_CONVAIR_DATA and the three targets with each other",
+      "reason": "no_lineage_relationship",
+      "evidence": "campaign_validation",
+      "detail": "Same campaign, independent measurements used together for validation."
+    },
+    {
+      "candidate": "'CLAMS' (versions 0, 1) and 'MAS' (version 1)",
+      "reason": "not_in_cmr",
+      "detail": "Targets of the existing PARENT associations."
+    },
+    {
+      "candidate": "COVE / AERONET / CERES products at the Chesapeake Lighthouse",
+      "reason": "no_lineage_relationship",
+      "evidence": "cove",
+      "detail": "Co-located measurements, not inputs to the soundings."
+    }
+  ],
+  "csv": {
+    "path": "Reports/ASDC/CLAMS/CLAMS_suite_lineage.csv",
+    "rows": 1,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  }
+}

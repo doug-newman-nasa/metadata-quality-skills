@@ -1,0 +1,305 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-16T17:50:07+00:00",
+  "related_records": {
+    "FLASH_TISA_NOAA20": {
+      "version": "Version1A",
+      "concept_id": "C3880607739-LARC_CLOUD"
+    },
+    "CER_SSF_NOAA20-FM6-VIIRS": {
+      "version": "Edition1C",
+      "concept_id": "C3880506472-LARC_CLOUD"
+    }
+  },
+  "parameters": {
+    "collection_short_name": "FLASH_SSF_NOAA20-FM6-VIIRS",
+    "collection_version": "Version1B",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 1,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "FLASH_SSF_NOAA20-FM6-VIIRS",
+    "version": "Version1B",
+    "concept_id": "C3880607359-LARC_CLOUD",
+    "revision_id": 10,
+    "entry_title": "Fast Longwave And SHortwave Fluxes (FLASHflux) NOAA-20 Clouds and Radiative Swath (SSF) Version1B",
+    "processing_level": "2",
+    "temporal": [
+      {
+        "EndsAtPresentFlag": true,
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2023-10-01T00:00:00.000Z"
+          }
+        ]
+      }
+    ],
+    "existing_metadata_associations": [
+      {
+        "EntryId": "FLASH_SSF_NOAA20-FM6-VIIRS",
+        "Type": "RELATED",
+        "Version": "Version1A"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [],
+    "decision_tree_branch": "[2] NO: no ATBD in related_urls; the FLASHFlux SSF Data Quality Summary (Terra/Aqua Version4A), the CERES SSF Data Products Catalog and the CMR records are the primary sources"
+  },
+  "source_documents": [
+    {
+      "key": "cmr_inputs:FLASH_TISA_NOAA20",
+      "title": "CMR granule InputGranules: FLASH_TISA_NOAA20 Version1A (earliest and latest 5 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3880607739-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_record:FLASH_SSF_NOAA20-FM6-VIIRS|Version1B",
+      "title": "CMR abstract: FLASH_SSF_NOAA20-FM6-VIIRS Version1B",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3880607359-LARC_CLOUD.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_record:FLASH_TISA_NOAA20",
+      "title": "CMR abstract: FLASH_TISA_NOAA20 Version1A",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3880607739-LARC_CLOUD.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "dqs_ff4a",
+      "title": "CERES FLASHFlux Terra/Aqua SSF Version4A Data Quality Summary V1 (Sept 2023)",
+      "url": "https://ceres.larc.nasa.gov/documents/DQ_summaries/Versioned/CER_FLASHFlux_SSF_Terra-Aqua_Ver4A_DQS_V01.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "dqs_ff4a",
+      "url": "https://ceres.larc.nasa.gov/documents/DQ_summaries/Versioned/CER_FLASHFlux_SSF_Terra-Aqua_Ver4A_DQS_V01.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 56208
+    },
+    {
+      "key": "dpc_ssf",
+      "url": "https://asdc.larc.nasa.gov/documents/ceres/readme/DPC_SSF_R4V1.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 25769
+    },
+    {
+      "key": "tisa_dqs",
+      "url": "https://ceres.larc.nasa.gov/documents/DQ_summaries/FFv3C_TISA_DQS.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 24418
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "FLASH_SSF_NOAA20-FM6-VIIRS",
+      "version": "Version1B",
+      "level": "2"
+    },
+    "primary_parents": [],
+    "supporting_parents": [],
+    "derived_children": [
+      "FLASH_TISA_NOAA20 Version1A"
+    ],
+    "related": [
+      "CER_SSF_NOAA20-FM6-VIIRS Edition1C"
+    ]
+  },
+  "relationships": [
+    {
+      "shortname": "FLASH_SSF_NOAA20-FM6-VIIRS",
+      "version": "Version1B",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "FLASH_TISA_NOAA20",
+      "related_version": "Version1A",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "stated_in_evidence",
+      "version_stated": "Version1A",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source",
+      "evidence_source": "other_doc",
+      "evidence_document": "CMR abstract: FLASH_TISA_NOAA20 Version1A",
+      "evidence_url": "https://cmr.earthdata.nasa.gov/search/concepts/C3880607739-LARC_CLOUD.umm_json",
+      "evidence_section": "Abstract",
+      "evidence_page": null,
+      "evidence_quote": "NOAA-20 FLASHFlux Single Scanner Footprint (SSF) globally gridded TOA and parameterized surface radiative fluxes for applied science uses.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "CMR granule InputGranules: FLASH_TISA_NOAA20 Version1A (earliest and latest 5 granules)",
+          "quote": "FLASH_SSF1deg-HR_NOAA20-FM6-VIIRS_Version1B",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 1: FLASH_TISA_NOAA20 grids the NOAA-20 FLASHFlux SSF (through the internal hourly SSF1deg-HR files, which cite Version1B); CHILD of this collection. Version1A is the only TISA version in CMR.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "Version1A"
+        ],
+        "concept_id": "C3880607739-LARC_CLOUD",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "level_check": "child L3 >= target L2",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "FLASH_SSF_NOAA20-FM6-VIIRS",
+      "version": "Version1B",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "template_of",
+      "related_shortname": "CER_SSF_NOAA20-FM6-VIIRS",
+      "related_version": "Edition1C",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "CERES FLASHFlux Terra/Aqua SSF Version4A Data Quality Summary V1 (Sept 2023)",
+      "evidence_url": "https://ceres.larc.nasa.gov/documents/DQ_summaries/Versioned/CER_FLASHFlux_SSF_Terra-Aqua_Ver4A_DQS_V01.pdf",
+      "evidence_section": "1.1 FLASHFlux Processing Flowchart",
+      "evidence_page": 8,
+      "evidence_quote": "The MOA, Clouds, and Inversion production codes are delivered to the FLASHFlux working group by the various CERES working groups responsible for these subsystems.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "CERES FLASHFlux Terra/Aqua SSF Version4A Data Quality Summary V1 (Sept 2023)",
+          "quote": "Most of the data production for SSF products follows CERES with a key exception in the Inversion stage.",
+          "verified": true
+        },
+        {
+          "document": "CERES FLASHFlux Terra/Aqua SSF Version4A Data Quality Summary V1 (Sept 2023)",
+          "quote": "A full list of parameters on the SSF is contained in the SSF section of the CERES Data Products Catalog",
+          "verified": true
+        },
+        {
+          "document": "CMR abstract: FLASH_SSF_NOAA20-FM6-VIIRS Version1B",
+          "quote": "The FLASHFlux data product is a rapid-release product based on the algorithms developed for and data collected by the CERES project.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Decision step 6: FLASHFlux SSF is produced with the CERES SSF production codes and parameter list, with no data dependency on the CERES SSF; the DQS describes Terra/Aqua, and the NOAA-20 counterpart is inferred; RELATED.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "Edition1C"
+        ],
+        "concept_id": "C3880506472-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "granule_level_check": {
+    "collection": "FLASH_SSF_NOAA20-FM6-VIIRS|Version1B",
+    "granules": 28966,
+    "sample": "FLASH_SSF_NOAA20-FM6-VIIRS_Version1B_405400.2023100114.nc",
+    "sample_time": {
+      "RangeDateTime": {
+        "BeginningDateTime": "2023-10-01T14:00:00+00:00",
+        "EndingDateTime": "2023-10-01T14:59:59.999+00:00"
+      }
+    },
+    "with_InputGranules": 5
+  },
+  "existing_associations_check": [
+    {
+      "collection": "FLASH_SSF_NOAA20-FM6-VIIRS|Version1B",
+      "Type": "RELATED",
+      "EntryId": "FLASH_SSF_NOAA20-FM6-VIIRS",
+      "Version": "Version1A",
+      "self_reference": false
+    }
+  ],
+  "metadata_findings": [
+    "MetadataAssociation RELATED → FLASH_SSF_NOAA20-FM6-VIIRS Version1A does not resolve (versions in CMR: ['Version1B']); it names another version of the same ShortName, which the lineage skills never list.",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/project/CERES",
+    "The DOI in the DATA SET LANDING PAGE URL misspells NOAA20 as \"NOOA20\": https://doi.org/10.5067/NOOA20/CERES/FLASH_SSF_FM6_VIIRS_L2.V1B",
+    "Granule attribute identifier_product_doi = '10.5067/NOAA20/CERES/SSF-FM6_L2.001A' is the DOI of the climate-quality CER_SSF_NOAA20-FM6-VIIRS (Edition1A), not of this FLASHFlux collection.",
+    "InputGranules list 115 internal file paths (FLASHFlux intermediates, calibration coefficient files, static ADM tables, MOA files); none is a CMR granule.",
+    "The linked Data Quality Summary is for Terra/Aqua MODIS Version4A and the Data Products Catalog is the 2004 CERES SSF R4V1; no NOAA-20 / VIIRS Version1B document is linked or listed on the CERES documentation page.",
+    "The abstract still says \"CERES is currently producing world-class climate data products derived from measurements taken aboard NASA's Terra and Aqua spacecraft\", and names GEOS-IT while the Version4A DQS describes GEOS FP-IT 5.12.4.",
+    "No association to FLASH_TISA_NOAA20 (its downstream product) or to CER_SSF_NOAA20-FM6-VIIRS; the TISA record has no associations either.",
+    "The GET RELATED VISUALIZATION (WORLDVIEW) link points to the CERES project logo image."
+  ],
+  "excluded": [
+    {
+      "candidate": "CER_BDS_NOAA20-FM6 Edition1",
+      "reason": "not_an_input",
+      "evidence": "baseline1qc",
+      "detail": "FLASHFlux uses the Baseline1-QC radiances with nominal calibration (SCCD/SCCN coefficients), not the CERES BDS."
+    },
+    {
+      "candidate": "VJ102MOD / VJ103MOD (NOAA-20 VIIRS L1B)",
+      "reason": "ambiguous",
+      "evidence": "viirs; imager_subset",
+      "detail": "A CERES-prepared imager subset is used; product and version not named."
+    },
+    {
+      "candidate": "GEOS-IT (GEOS 5.29.4) meteorology and ozone",
+      "reason": "not_in_cmr",
+      "evidence": "geos_it; moa_granule"
+    },
+    {
+      "candidate": "AFWA snow/ice maps, SIBI maps, MODIS C5 aerosol climatology, CERES ADMs, SCCD/SCCN, FLASHFlux intermediate files",
+      "reason": "not_in_cmr",
+      "evidence": "afwa; aerosol_clim; adm"
+    },
+    {
+      "candidate": "FLASH_SSF_NOAA20-FM6-VIIRS Version1A",
+      "reason": "same_product",
+      "detail": "Same ShortName (and not in CMR)."
+    },
+    {
+      "candidate": "FLASHFlux Terra/Aqua SSF Version4A",
+      "reason": "not_in_cmr",
+      "detail": "The equivalent products on other platforms are not CMR collections."
+    }
+  ],
+  "csv": {
+    "path": "Reports/ASDC/FLASHFlux/FLASH_SSF_NOAA20-FM6-VIIRS_VVersion1B_lineage.csv",
+    "rows": 2,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "existing_associations_review": [],
+  "broken_links": {
+    "https://asdc.larc.nasa.gov/project/CERES": 404
+  }
+}

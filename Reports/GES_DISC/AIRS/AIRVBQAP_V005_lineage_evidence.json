@@ -1,0 +1,311 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-13T19:54:41+00:00",
+  "suite": "AIRS_suite (39 collections; see AIRS_suite_lineage_evidence.json)",
+  "parameters": {
+    "collection_short_name": "AIRVBQAP",
+    "collection_version": "005",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 2,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "AIRVBQAP",
+    "version": "005",
+    "concept_id": "C1243477372-GES_DISC",
+    "revision_id": 36,
+    "entry_title": "AIRS/Aqua L1B Visible/Near Infrared (VIS/NIR) quality assurance subset V005 (AIRVBQAP)",
+    "processing_level": "1B",
+    "temporal": [
+      {
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2002-08-30T00:00:00.000Z"
+          }
+        ],
+        "EndsAtPresentFlag": true
+      }
+    ],
+    "granules_in_cmr": 1182133,
+    "existing_metadata_associations": [
+      {
+        "EntryId": "AIRVBQAP",
+        "Version": "005",
+        "Type": "SCIENCE ASSOCIATED"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [
+      {
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/AIRS/3.3_ScienceDataProductDocumentation/3.3.4_ProductGenerationAlgorithms/AIRS_L1B_ATBD_Part_2.pdf",
+        "priority": 1,
+        "source": "official_ATBD_designation",
+        "description": "ATBD documentation"
+      }
+    ],
+    "decision_tree_branch": "[1] YES: ATBD in related_urls is the primary source",
+    "other_documentation": [
+      {
+        "subtype": "VIEW RELATED INFORMATION",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/AIRS_Documentation.pdf"
+      },
+      {
+        "subtype": "READ-ME",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/AIRS/3.3_ScienceDataProductDocumentation/3.3.4_ProductGenerationAlgorithms/README.AIRVBRAD.pdf"
+      },
+      {
+        "subtype": "GENERAL DOCUMENTATION",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/AIRS/3.7_ScienceDataProductValidation/V5_CalVal_Status_Summary.pdf"
+      }
+    ]
+  },
+  "source_documents": {
+    "linked_from_record": [
+      {
+        "key": "airs_doc_index",
+        "title": "AIRS Documentation (GES DISC document index)",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/AIRS_Documentation.pdf",
+        "evidence_source": "other_doc",
+        "validation": {
+          "document_accessible": true,
+          "contains_algorithm_section": true,
+          "mentions_input_data": true,
+          "mentions_parent_collection": true,
+          "contains_processing_algorithm": true,
+          "VALID": true
+        }
+      },
+      {
+        "key": "readme_airvbrad",
+        "title": "README: AIRS L1B V5 VIS/NIR products (AIRVBRAD, AIRVBQAP and NRT)",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/AIRS/3.3_ScienceDataProductDocumentation/3.3.4_ProductGenerationAlgorithms/README.AIRVBRAD.pdf",
+        "evidence_source": "user_guide",
+        "validation": {
+          "document_accessible": true,
+          "contains_algorithm_section": true,
+          "mentions_input_data": true,
+          "mentions_parent_collection": true,
+          "contains_processing_algorithm": true,
+          "VALID": true
+        }
+      },
+      {
+        "key": "v5_calval",
+        "title": "AIRS V5 Calibration/Validation Status Summary",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/AIRS/3.7_ScienceDataProductValidation/V5_CalVal_Status_Summary.pdf",
+        "evidence_source": "other_doc",
+        "validation": {
+          "document_accessible": true,
+          "contains_algorithm_section": true,
+          "mentions_input_data": true,
+          "mentions_parent_collection": true,
+          "contains_processing_algorithm": true,
+          "VALID": true
+        }
+      },
+      {
+        "key": "l1b_vis_atbd",
+        "title": "AIRS L1B ATBD Part 2: Visible/Near-Infrared Channels",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/AIRS/3.3_ScienceDataProductDocumentation/3.3.4_ProductGenerationAlgorithms/AIRS_L1B_ATBD_Part_2.pdf",
+        "evidence_source": "atbd",
+        "validation": {
+          "document_accessible": true,
+          "contains_algorithm_section": true,
+          "mentions_input_data": true,
+          "mentions_parent_collection": true,
+          "contains_processing_algorithm": true,
+          "VALID": true
+        }
+      }
+    ],
+    "used_as_evidence": [
+      {
+        "key": "readme_airvbrad",
+        "title": "README: AIRS L1B V5 VIS/NIR products (AIRVBRAD, AIRVBQAP and NRT)",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/AIRS/3.3_ScienceDataProductDocumentation/3.3.4_ProductGenerationAlgorithms/README.AIRVBRAD.pdf",
+        "evidence_source": "user_guide",
+        "validation": {
+          "document_accessible": true,
+          "contains_algorithm_section": true,
+          "mentions_input_data": true,
+          "mentions_parent_collection": true,
+          "contains_processing_algorithm": true,
+          "VALID": true
+        }
+      }
+    ]
+  },
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "AIRVBQAP",
+      "version": "005",
+      "level": "1B"
+    },
+    "primary_parents": [],
+    "supporting_parents": [],
+    "derived_children": [],
+    "related": [
+      "AIRVBQAP_NRT 005",
+      "AIRVBRAD 005"
+    ]
+  },
+  "relationships": [
+    {
+      "shortname": "AIRVBQAP",
+      "version": "005",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "related_to",
+      "related_shortname": "AIRVBQAP_NRT",
+      "related_version": "005",
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "README: AIRS L1B V5 VIS/NIR products (AIRVBRAD, AIRVBQAP and NRT)",
+      "evidence_url": "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/AIRS/3.3_ScienceDataProductDocumentation/3.3.4_ProductGenerationAlgorithms/README.AIRVBRAD.pdf",
+      "evidence_section": "§1.1 Brief background; §1.4 Brief background on algorithm",
+      "evidence_page": 5,
+      "evidence_quote": "AIRVBRAD_NRT and AIRVBQAP_NRT (Near Real Time) products are also available within ~3 hours of observations globally",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "README: AIRS L1B V5 VIS/NIR products (AIRVBRAD, AIRVBQAP and NRT)",
+          "quote": "Level 1B NRT products are produced by the same core science algorithms as in the regular science data production",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "rationale": "Decision step 6: the NRT product is made by the same core algorithm with predicted ephemeris and without adjacent granules; it is a separate, lower-latency run, so neither parallel_product (same run) nor equivalent_product (other platform).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1233768983-GES_DISC",
+        "related_level": "1B",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "AIRVBQAP",
+      "version": "005",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "related_shortname": "AIRVBRAD",
+      "related_version": "005",
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "README: AIRS L1B V5 VIS/NIR products (AIRVBRAD, AIRVBQAP and NRT)",
+      "evidence_url": "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/AIRS/3.3_ScienceDataProductDocumentation/3.3.4_ProductGenerationAlgorithms/README.AIRVBRAD.pdf",
+      "evidence_section": "§1.1 Brief background",
+      "evidence_page": 5,
+      "evidence_quote": "The corresponding AIRVBQAP subset files exclude radiances and other large fields to deliver only Quality Assurance (QA) parameters in a compact format.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "README: AIRS L1B V5 VIS/NIR products (AIRVBRAD, AIRVBQAP and NRT)",
+          "quote": "Each Level 1B PGE generates 240 granules of Level 1B standard products.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 4: the QA subset is written by the same L1B VIS/NIR PGE run as AIRVBRAD (radiances excluded).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1243477373-GES_DISC",
+        "related_level": "1B",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "granule_level_check": {
+    "collection": "AIRVBQAP|005",
+    "granules_in_cmr": 1182133,
+    "sampled": 2,
+    "sample_granule": "AIRVBQAP.005:AIRS.2026.11.13.072.L1B.VIS_QaSub.v5.0.0.0.G26317140229.hdf",
+    "with_InputGranules": 0
+  },
+  "existing_associations_check": [
+    {
+      "collection": "AIRVBQAP|005",
+      "Type": "SCIENCE ASSOCIATED",
+      "EntryId": "AIRVBQAP",
+      "Version": "005",
+      "self_reference": true,
+      "found_in_cmr": true
+    }
+  ],
+  "metadata_findings": [
+    "The only MetadataAssociation is SCIENCE ASSOCIATED to the record itself (AIRVBQAP 005): a self-relation, which should be removed.",
+    "No PARENT, INPUT, CHILD or RELATED associations; this run proposes 2 RELATED."
+  ],
+  "excluded": [
+    {
+      "name": "AIRS, AMSU-A, HSB and VIS/NIR Level 1A",
+      "role": "PARENT of every L1B product (V5 and V8)",
+      "reason": "not a CMR collection (rule 1c-4): \"Level 0 and Level 1A data sets are not publicly archived\" (Overview Figure 13)"
+    },
+    {
+      "name": "AIRAACAL",
+      "role": "optional dynamic input to AIRABRAD (README.AIRABRAD §1.4)",
+      "reason": "no CMR record"
+    },
+    {
+      "name": "Definitive / predicted ephemeris and attitude",
+      "role": "input to L1B and NRT L1B",
+      "reason": "not a CMR collection (rule 1c-4)"
+    },
+    {
+      "name": "AVN / GFS forecast fields",
+      "role": "surface-pressure guess for L2; SST in AIRXBCAL",
+      "reason": "not identified as a CMR collection in the documents"
+    },
+    {
+      "name": "CERES SSF (Aqua)",
+      "role": "scene-type input to AIRSIL3MSOLR",
+      "reason": "ambiguous: CMR has CER_SSF_Aqua-FM3-MODIS and -FM4-MODIS (Edition4A) and the documents name neither edition nor instrument (rules 1c-3, 1c-6)"
+    },
+    {
+      "name": "AIRVBRAD_NRT",
+      "role": "possible VIS/NIR input to the NRT L2 products",
+      "reason": "the documents do not say which VIS input the NRT L2 uses (rule 1c-6)"
+    },
+    {
+      "name": "AIRXAMAP",
+      "role": "granule-location maps listed as a related data set in the L1C guide and NRT table",
+      "reason": "not a lineage relationship"
+    },
+    {
+      "name": "V006 L2 (AIRS2RET/SUP/CCF, AIRX2RET/SUP, AIRI2CCF, AIRH2RET/SUP/CCF 006)",
+      "role": "CHILD of AIRIBRAD/AIRABRAD/AIRHBRAD",
+      "reason": "documented (\"Since the Version 6 algorithm continues to use Version 5 radiance data\", README V6), but the CSV allows one row per related ShortName and the V7 version of each is written"
+    },
+    {
+      "name": "V006 L3, 8-day L3, V005 CO2, AIRS–CloudSat/MLS/MODIS matchups",
+      "role": "CMR pattern matches (Step 7)",
+      "reason": "their derivation from a suite member is not stated in the fetched documents (rule 1c-2)"
+    }
+  ],
+  "csv": {
+    "path": "Reports/GES_DISC/AIRS/AIRVBQAP_V005_lineage.csv",
+    "rows": 2,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  }
+}

@@ -1,0 +1,612 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-13T22:02:01+00:00",
+  "related_records": {
+    "OML1BRVG": {
+      "version": "004",
+      "concept_id": "C2045794916-GES_DISC"
+    },
+    "OML1BRUG": {
+      "version": "004",
+      "concept_id": "C2045794784-GES_DISC"
+    },
+    "OMVANC": {
+      "version": "004",
+      "concept_id": "C2556149060-GES_DISC"
+    },
+    "OMGLER": {
+      "version": "004",
+      "concept_id": "C3336146473-GES_DISC"
+    },
+    "GOME_MINDS_NO2": {
+      "version": "1.1",
+      "concept_id": "C2539362687-GES_DISC"
+    },
+    "TROPOMI_MINDS_NO2": {
+      "version": "1.1",
+      "concept_id": "C2263977000-GES_DISC"
+    },
+    "TOMSN7AER": {
+      "version": "2",
+      "concept_id": "C1418718313-GES_DISC"
+    },
+    "TOMSEPAER": {
+      "version": "2",
+      "concept_id": "C1452994122-GES_DISC"
+    },
+    "OMAERUV": {
+      "version": "004",
+      "concept_id": "C4181303860-OMINRT"
+    }
+  },
+  "parameters": {
+    "collection_short_name": "OMI_MINDS_NO2",
+    "collection_version": "2",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 1,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "OMI_MINDS_NO2",
+    "version": "2",
+    "concept_id": "C4128585682-GES_DISC",
+    "revision_id": 7,
+    "entry_title": "OMI/Aura NO2 Tropospheric, Stratospheric and Total Columns MINDS 1-Orbit L2 Swath 13 km x 24 km V2 (OMI_MINDS_NO2) ",
+    "processing_level": "2",
+    "temporal": [
+      {
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2004-10-01T00:03:05.000Z"
+          }
+        ],
+        "EndsAtPresentFlag": true
+      }
+    ],
+    "existing_metadata_associations": [
+      {
+        "EntryId": "OMI_MINDS_NO2",
+        "Version": "2",
+        "Type": "SCIENCE ASSOCIATED"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [],
+    "decision_tree_branch": "[2] NO: no ATBD in related_urls; the MEaSUREs README of the product family is the primary source"
+  },
+  "source_documents": [
+    {
+      "key": "cmr_record:OMI_MINDS_NO2|2",
+      "title": "CMR abstract: OMI_MINDS_NO2 2",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C4128585682-GES_DISC.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_record:OML1BRVG",
+      "title": "CMR abstract: OML1BRVG 004",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2045794916-GES_DISC.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_record:OMVANC",
+      "title": "CMR abstract: OMVANC 004",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2556149060-GES_DISC.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "readme_minds",
+      "title": "Product Specification and README Document for MINDS NO2, Versions 2.0 (OMI) and 1.1 (GOME and TROPOMI) (GES DISC)",
+      "url": "https://measures.gesdisc.eosdis.nasa.gov/data/MINDS/OMI_MINDS_NO2.2/doc/README.MEaSUREs_MINDS_NO2.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "readme_minds",
+      "url": "https://measures.gesdisc.eosdis.nasa.gov/data/MINDS/OMI_MINDS_NO2.2/doc/README.MEaSUREs_MINDS_NO2.pdf",
+      "status": "ok",
+      "pages": 42,
+      "text_chars": 72148
+    },
+    {
+      "key": "readme_aer",
+      "url": "https://measures.gesdisc.eosdis.nasa.gov/data/AER/OMIAuraAER.1/doc/README.MEaSUREs_Aerosols.pdf",
+      "status": "ok",
+      "pages": 20,
+      "text_chars": 38271
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "OMI_MINDS_NO2",
+      "version": "2",
+      "level": "2"
+    },
+    "primary_parents": [
+      "OML1BRVG 004"
+    ],
+    "supporting_parents": [
+      "NISE 5",
+      "OMGLER 004",
+      "OML1BIRR 004",
+      "OMVANC 004"
+    ],
+    "derived_children": [],
+    "related": [
+      "GOME_MINDS_NO2 1.1",
+      "OMNO2 004",
+      "TROPOMI_MINDS_NO2 1.1"
+    ]
+  },
+  "relationships": [
+    {
+      "shortname": "OMI_MINDS_NO2",
+      "version": "2",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "OML1BRVG",
+      "related_version": "004",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "Product Specification and README Document for MINDS NO2, Versions 2.0 (OMI) and 1.1 (GOME and TROPOMI) (GES DISC)",
+      "evidence_url": "https://measures.gesdisc.eosdis.nasa.gov/data/MINDS/OMI_MINDS_NO2.2/doc/README.MEaSUREs_MINDS_NO2.pdf",
+      "evidence_section": "§2.3.1 L2 and L2G Data Fields (SlantColumnAmountNO2Raw)",
+      "evidence_page": 13,
+      "evidence_quote": "This is calculated from the measured Earthshine radiance and solar irradiance using an advanced Differential Optical Absorption Spectroscopy (DOAS) fitting algorithm",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "Product Specification and README Document for MINDS NO2, Versions 2.0 (OMI) and 1.1 (GOME and TROPOMI) (GES DISC)",
+          "quote": "In case of OMI, an anomaly began to appear in the Level 1B radiances in certain cross-track FOVs",
+          "verified": true
+        },
+        {
+          "document": "Product Specification and README Document for MINDS NO2, Versions 2.0 (OMI) and 1.1 (GOME and TROPOMI) (GES DISC)",
+          "quote": "FoV75Area The mean area (in square km) of the 75% Field of View (i.e., overlapping) ground pixels (from OMVANC).",
+          "verified": true
+        },
+        {
+          "document": "CMR abstract: OMVANC 004",
+          "quote": "The Primary Ancillary Data Geo-Colocated to OMI/Aura VIS 1-Orbit L2 Swath 13x24km (OMVANC)",
+          "verified": true
+        },
+        {
+          "document": "CMR abstract: OML1BRVG 004",
+          "quote": "contains geolocated Earth view spectral radiances from the VIS detectors in the wavelength range of 349 to 504 nm",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Decision step 2: the NO2 slant columns are DOAS fits of the OMI L1B earthshine radiances; PARENT. Generic \"Level 1B radiances\" mapped to OML1BRVG: NO2 is fitted in the visible, and the pixel geometry comes from OMVANC, which is co-located with the VIS swath. The L1B collection version is not stated.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "003",
+          "004"
+        ],
+        "concept_id": "C2045794916-GES_DISC",
+        "related_level": "1B",
+        "level_progression_valid": true,
+        "level_check": "parent L1 <= target L2",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "OMI_MINDS_NO2",
+      "version": "2",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "NISE",
+      "related_version": "5",
+      "fixed_version": [
+        "5",
+        "NISE version numbers are unrelated to MINDS versions; the current NISE version is used, as versions 2-5 together span the OMI record"
+      ],
+      "version_status": "substituted",
+      "version_basis": "NISE version numbers are unrelated to MINDS versions; the current NISE version is used, as versions 2-5 together span the OMI record (the Step 2 rule would give 2)",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "Product Specification and README Document for MINDS NO2, Versions 2.0 (OMI) and 1.1 (GOME and TROPOMI) (GES DISC)",
+      "evidence_url": "https://measures.gesdisc.eosdis.nasa.gov/data/MINDS/OMI_MINDS_NO2.2/doc/README.MEaSUREs_MINDS_NO2.pdf",
+      "evidence_section": "§2.3.1 L2 and L2G Data Fields (SnowIceFlags)",
+      "evidence_page": 14,
+      "evidence_quote": "The snow-ice flag values are determined from the Near-real-time Ice and Snow Extent (NISE) and the Interactive Multisensor Snow and Ice Mapping System (IMS) database, and are used consistently in the GLER, cloud, and NO2 algorithms.",
+      "quote_verified": true,
+      "supporting": [],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "rationale": "Decision step 3: NISE sets the snow-ice flags; ancillary; INPUT. The NISE version is not stated; versions 2–5 together span the OMI record.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "concept_id": "C3177837670-NSIDC_CPRD",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "level_check": "not applicable (INPUT)",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "OMI_MINDS_NO2",
+      "version": "2",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "OMGLER",
+      "related_version": "004",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "Product Specification and README Document for MINDS NO2, Versions 2.0 (OMI) and 1.1 (GOME and TROPOMI) (GES DISC)",
+      "evidence_url": "https://measures.gesdisc.eosdis.nasa.gov/data/MINDS/OMI_MINDS_NO2.2/doc/README.MEaSUREs_MINDS_NO2.pdf",
+      "evidence_section": "Appendix A.7 Ancillary Variables",
+      "evidence_page": 23,
+      "evidence_quote": "TerrainHeight The pixel-averaged terrain height (in m) for the ground pixel (from OMGLER).",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "Product Specification and README Document for MINDS NO2, Versions 2.0 (OMI) and 1.1 (GOME and TROPOMI) (GES DISC)",
+          "quote": "Use of a daily and satellite field of view (FOV) specific geometry-dependent surface Lambertian Equivalent Reflectivity (GLER) product in both NO 2 and cloud retrievals.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "rationale": "Decision step 3: terrain height, terrain pressure and GLER surface reflectivity are taken from OMGLER; ancillary; INPUT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "003",
+          "004"
+        ],
+        "concept_id": "C3336146473-GES_DISC",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (INPUT)",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "OMI_MINDS_NO2",
+      "version": "2",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "OML1BIRR",
+      "related_version": "004",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "Product Specification and README Document for MINDS NO2, Versions 2.0 (OMI) and 1.1 (GOME and TROPOMI) (GES DISC)",
+      "evidence_url": "https://measures.gesdisc.eosdis.nasa.gov/data/MINDS/OMI_MINDS_NO2.2/doc/README.MEaSUREs_MINDS_NO2.pdf",
+      "evidence_section": "§2.3.1 L2 and L2G Data Fields (SlantColumnAmountNO2Raw)",
+      "evidence_page": 13,
+      "evidence_quote": "This is calculated from the measured Earthshine radiance and solar irradiance using an advanced Differential Optical Absorption Spectroscopy (DOAS) fitting algorithm",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "Product Specification and README Document for MINDS NO2, Versions 2.0 (OMI) and 1.1 (GOME and TROPOMI) (GES DISC)",
+          "quote": "In case of OMI, an anomaly began to appear in the Level 1B radiances in certain cross-track FOVs",
+          "verified": true
+        },
+        {
+          "document": "Product Specification and README Document for MINDS NO2, Versions 2.0 (OMI) and 1.1 (GOME and TROPOMI) (GES DISC)",
+          "quote": "FoV75Area The mean area (in square km) of the 75% Field of View (i.e., overlapping) ground pixels (from OMVANC).",
+          "verified": true
+        },
+        {
+          "document": "CMR abstract: OMVANC 004",
+          "quote": "The Primary Ancillary Data Geo-Colocated to OMI/Aura VIS 1-Orbit L2 Swath 13x24km (OMVANC)",
+          "verified": true
+        },
+        {
+          "document": "CMR abstract: OML1BRVG 004",
+          "quote": "contains geolocated Earth view spectral radiances from the VIS detectors in the wavelength range of 349 to 504 nm",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Decision step 3: the solar irradiance is the reference spectrum of the DOAS fit; INPUT. Generic \"solar irradiance\" mapped to OML1BIRR.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "003",
+          "004"
+        ],
+        "concept_id": "C2045794731-GES_DISC",
+        "related_level": "1B",
+        "level_progression_valid": true,
+        "level_check": "not applicable (INPUT)",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "OMI_MINDS_NO2",
+      "version": "2",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "OMVANC",
+      "related_version": "004",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "Product Specification and README Document for MINDS NO2, Versions 2.0 (OMI) and 1.1 (GOME and TROPOMI) (GES DISC)",
+      "evidence_url": "https://measures.gesdisc.eosdis.nasa.gov/data/MINDS/OMI_MINDS_NO2.2/doc/README.MEaSUREs_MINDS_NO2.pdf",
+      "evidence_section": "Appendix A.6 Geolocation Variables",
+      "evidence_page": 21,
+      "evidence_quote": "FoV75Area The mean area (in square km) of the 75% Field of View (i.e., overlapping) ground pixels (from OMVANC).",
+      "quote_verified": true,
+      "supporting": [],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "rationale": "Decision step 3: FoV75 pixel area and corner coordinates are taken from OMVANC; ancillary; INPUT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "004"
+        ],
+        "concept_id": "C2556149060-GES_DISC",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (INPUT)",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "OMI_MINDS_NO2",
+      "version": "2",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "related_shortname": "GOME_MINDS_NO2",
+      "related_version": "1.1",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "Product Specification and README Document for MINDS NO2, Versions 2.0 (OMI) and 1.1 (GOME and TROPOMI) (GES DISC)",
+      "evidence_url": "https://measures.gesdisc.eosdis.nasa.gov/data/MINDS/OMI_MINDS_NO2.2/doc/README.MEaSUREs_MINDS_NO2.pdf",
+      "evidence_section": "§1.2 NO2 Retrieval Method; §1.4 Data Citation",
+      "evidence_page": 7,
+      "evidence_quote": "Our approach consists of applying our carefully validated NO 2, cloud, and geometry-dependent surface reflectivity retrieval algorithms as described in Lamsal et al., [2021] consistently to all MINDS instruments.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "Product Specification and README Document for MINDS NO2, Versions 2.0 (OMI) and 1.1 (GOME and TROPOMI) (GES DISC)",
+          "quote": "This document provides a summary of versions 2.0 (OMI) and 1.1 (GOME and TROPOMI) of the",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 5: the same MINDS NO2 product from GOME/ERS-2.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "1.1"
+        ],
+        "concept_id": "C2539362687-GES_DISC",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "OMI_MINDS_NO2",
+      "version": "2",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "template_of",
+      "related_shortname": "OMNO2",
+      "related_version": "004",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "Product Specification and README Document for MINDS NO2, Versions 2.0 (OMI) and 1.1 (GOME and TROPOMI) (GES DISC)",
+      "evidence_url": "https://measures.gesdisc.eosdis.nasa.gov/data/MINDS/OMI_MINDS_NO2.2/doc/README.MEaSUREs_MINDS_NO2.pdf",
+      "evidence_section": "§1.2 NO2 Retrieval Method",
+      "evidence_page": 7,
+      "evidence_quote": "in contrast to our current algorithm (v5) discussed in Lamsal et al (2021), GOME and TROPOMI retrievals (v1.1) are based on FRESCO cloud algorithm",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "Product Specification and README Document for MINDS NO2, Versions 2.0 (OMI) and 1.1 (GOME and TROPOMI) (GES DISC)",
+          "quote": "Ozone Monitoring Instrument (OMI) Aura nitrogen dioxide standard product version 4.0 with improved surface and cloud treatments",
+          "verified": true
+        },
+        {
+          "document": "CMR abstract: OMI_MINDS_NO2 2",
+          "quote": "The objective of the project Is to adapt Ozone Monitoring Instrument (OMI) operational algorithms to other satellite instruments",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Decision step 6: MINDS v2 follows the OMI standard NO2 algorithm (\"our current algorithm (v5)\", Lamsal et al. 2021); shared template, no data dependency. Generic reference mapped to OMNO2 (004 is Version 5.0).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "003",
+          "004"
+        ],
+        "concept_id": "C3333494968-GES_DISC",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "OMI_MINDS_NO2",
+      "version": "2",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "related_shortname": "TROPOMI_MINDS_NO2",
+      "related_version": "1.1",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "Product Specification and README Document for MINDS NO2, Versions 2.0 (OMI) and 1.1 (GOME and TROPOMI) (GES DISC)",
+      "evidence_url": "https://measures.gesdisc.eosdis.nasa.gov/data/MINDS/OMI_MINDS_NO2.2/doc/README.MEaSUREs_MINDS_NO2.pdf",
+      "evidence_section": "§1.2 NO2 Retrieval Method; §1.4 Data Citation",
+      "evidence_page": 7,
+      "evidence_quote": "Our approach consists of applying our carefully validated NO 2, cloud, and geometry-dependent surface reflectivity retrieval algorithms as described in Lamsal et al., [2021] consistently to all MINDS instruments.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "Product Specification and README Document for MINDS NO2, Versions 2.0 (OMI) and 1.1 (GOME and TROPOMI) (GES DISC)",
+          "quote": "This document provides a summary of versions 2.0 (OMI) and 1.1 (GOME and TROPOMI) of the",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 5: the same MINDS NO2 product from TROPOMI/S5P.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "1.1"
+        ],
+        "concept_id": "C2263977000-GES_DISC",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "granule_level_check": {
+    "collection": "OMI_MINDS_NO2|2",
+    "granules": 110015,
+    "sample": "OMI_MINDS_NO2.2:OMI-Aura_L2-OMI_MINDS_NO2_2004m1001t0025-o001132_v02-00-2026m0514t050615.nc",
+    "sample_time": {
+      "RangeDateTime": {
+        "BeginningDateTime": "2004-10-01T00:25:13.000Z",
+        "EndingDateTime": "2004-10-01T01:20:00.000Z"
+      }
+    },
+    "with_InputGranules": 0
+  },
+  "existing_associations_check": [
+    {
+      "collection": "OMI_MINDS_NO2|2",
+      "Type": "SCIENCE ASSOCIATED",
+      "EntryId": "OMI_MINDS_NO2",
+      "Version": "2",
+      "self_reference": true
+    }
+  ],
+  "metadata_findings": [
+    "The only MetadataAssociation is SCIENCE ASSOCIATED to the record itself (OMI_MINDS_NO2 2): a self-relation, which should be removed or replaced with the lineage below.",
+    "The DATA SET LANDING PAGE (https://www.earthdata.nasa.gov/data/catalog/ges-disc-haqes-na-pm25-oc-census-1) is the landing page of an unrelated dataset.",
+    "No ATBD in RelatedUrls; the only document is the shared MEaSUREs README.",
+    "The Abstract is the MINDS project description in the future tense (\"will develop ...\"); it does not describe this product (and gives GOME as 1996-2011, while GOME_MINDS_NO2 covers 1995-2003).",
+    "The README does not name the OMI L1B collection or version used; the files carry an InputPointer attribute, but CMR granule metadata has no InputGranules.",
+    "The gridded products OMI_MINDS_NO2d and OMI_MINDS_NO2G remain at version 1.1 (made from OMI_MINDS_NO2 1.1, no longer in CMR); there are no gridded products of version 2.",
+    "Cloud fields come from \"OMCDO2N, an internal product\" that is not available in CMR."
+  ],
+  "excluded": [
+    {
+      "candidate": "OMCDO2N (O2-O2 clouds)",
+      "reason": "not_in_cmr",
+      "detail": "README: \"an internal product\"."
+    },
+    {
+      "candidate": "MERRA-2 (tropopause pressure), IMS snow/ice",
+      "reason": "ambiguous / not_in_cmr",
+      "detail": "Named generically; IMS has no CMR collection."
+    },
+    {
+      "candidate": "OML1BRUG for OMIAuraAER",
+      "reason": "ambiguous",
+      "detail": "354 nm lies in both the UV-2 (307–383 nm) and VIS (349–504 nm) channels; the README does not say which is used."
+    },
+    {
+      "candidate": "CHILD rows OMI_MINDS_NO2 2 -> OMI_MINDS_NO2d / OMI_MINDS_NO2G 1.1",
+      "reason": "version mismatch",
+      "detail": "The gridded products were made from L2 version 1.1, not 2."
+    },
+    {
+      "candidate": "OMNO2d, OMNO2G, OMAERUVd, OMAERUVG",
+      "reason": "not lineage",
+      "detail": "Operational gridded analogues; no data dependency."
+    },
+    {
+      "candidate": "CALIOP and GOCART layer-height climatologies, TOMS/OMI surface-albedo climatology, AIRS CO climatology",
+      "reason": "not_in_cmr",
+      "detail": "Derived climatologies."
+    }
+  ],
+  "csv": {
+    "path": "Reports/GES_DISC/MEaSUREs_OMI/OMI_MINDS_NO2_V2_lineage.csv",
+    "rows": 8,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  }
+}

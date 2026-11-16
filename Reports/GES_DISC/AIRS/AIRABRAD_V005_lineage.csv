@@ -1,0 +1,11 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+AIRABRAD,005,CHILD,AIRH2CCF,7.0,HIGH,downstream_product
+AIRABRAD,005,CHILD,AIRH2RET,7.0,HIGH,downstream_product
+AIRABRAD,005,CHILD,AIRH2SUP,7.0,HIGH,downstream_product
+AIRABRAD,005,CHILD,AIRI2CCF,7.0,HIGH,downstream_product
+AIRABRAD,005,CHILD,AIRX2RET,7.0,HIGH,downstream_product
+AIRABRAD,005,CHILD,AIRX2SUP,7.0,HIGH,downstream_product
+AIRABRAD,005,CHILD,AIRXBCAL,005,MEDIUM,downstream_product
+AIRABRAD,005,CHILD,SNDRAQIML2CCPCCR,2,MEDIUM,downstream_product
+AIRABRAD,005,CHILD,SNDRAQIML2CCPRET,2,MEDIUM,downstream_product
+AIRABRAD,005,RELATED,AIRABRAD_NRT,005,HIGH,related_to

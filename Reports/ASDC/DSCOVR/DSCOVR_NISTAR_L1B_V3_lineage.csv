@@ -1,0 +1,3 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+DSCOVR_NISTAR_L1B,3,PARENT,DSCOVR_NISTAR_L1A,3,HIGH,derived_from
+DSCOVR_NISTAR_L1B,3,CHILD,DSCOVR_NISTAR_L1B_FILTERED,3,HIGH,downstream_product

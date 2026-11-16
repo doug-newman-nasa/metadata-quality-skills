@@ -1,0 +1,303 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-13T19:54:41+00:00",
+  "suite": "AIRS_suite (39 collections; see AIRS_suite_lineage_evidence.json)",
+  "parameters": {
+    "collection_short_name": "AIRG2SSD_IRonly",
+    "collection_version": "7.0",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 2,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "AIRG2SSD_IRonly",
+    "version": "7.0",
+    "concept_id": "C1702050366-GES_DISC",
+    "revision_id": 25,
+    "entry_title": "AIRS/Aqua L2G Precipitation Estimate (AIRS-only) V7.0",
+    "processing_level": "2G",
+    "temporal": [
+      {
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2002-08-30T00:00:00.000Z"
+          }
+        ],
+        "EndsAtPresentFlag": true
+      }
+    ],
+    "granules_in_cmr": 8749,
+    "existing_metadata_associations": [
+      {
+        "EntryId": "AIRG2SSD_IRonly",
+        "Version": "7.0",
+        "Type": "SCIENCE ASSOCIATED"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [
+      {
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/AIRS/3.3_ScienceDataProductDocumentation/3.3.4_ProductGenerationAlgorithms/20070301_L2_ATBD_signed.pdf",
+        "priority": 1,
+        "source": "official_ATBD_designation",
+        "description": "ATBD"
+      }
+    ],
+    "decision_tree_branch": "[1] YES: ATBD in related_urls is the primary source",
+    "other_documentation": [
+      {
+        "subtype": "VIEW RELATED INFORMATION",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/AIRS_Documentation.pdf"
+      },
+      {
+        "subtype": "READ-ME",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/AIRS/3.3_ScienceDataProductDocumentation/3.3.4_ProductGenerationAlgorithms/README.AIRS_V6.pdf"
+      }
+    ]
+  },
+  "source_documents": {
+    "linked_from_record": [
+      {
+        "key": "airs_doc_index",
+        "title": "AIRS Documentation (GES DISC document index)",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/AIRS_Documentation.pdf",
+        "evidence_source": "other_doc",
+        "validation": {
+          "document_accessible": true,
+          "contains_algorithm_section": true,
+          "mentions_input_data": true,
+          "mentions_parent_collection": true,
+          "contains_processing_algorithm": true,
+          "VALID": true
+        }
+      },
+      {
+        "key": "readme_v6",
+        "title": "README: AIRS Version 6 Standard Products",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/AIRS/3.3_ScienceDataProductDocumentation/3.3.4_ProductGenerationAlgorithms/README.AIRS_V6.pdf",
+        "evidence_source": "user_guide",
+        "validation": {
+          "document_accessible": true,
+          "contains_algorithm_section": true,
+          "mentions_input_data": true,
+          "mentions_parent_collection": true,
+          "contains_processing_algorithm": true,
+          "VALID": true
+        }
+      },
+      {
+        "key": "l2_atbd_2007",
+        "title": "AIRS Level 2 ATBD (signed 2007-03-01)",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/AIRS/3.3_ScienceDataProductDocumentation/3.3.4_ProductGenerationAlgorithms/20070301_L2_ATBD_signed.pdf",
+        "evidence_source": "atbd",
+        "validation": {
+          "document_accessible": true,
+          "contains_algorithm_section": true,
+          "mentions_input_data": true,
+          "mentions_parent_collection": true,
+          "contains_processing_algorithm": true,
+          "VALID": true
+        }
+      }
+    ],
+    "used_as_evidence": [
+      {
+        "key": "airs_overview",
+        "title": "Overview of the AIRS Mission: Instruments, Processing Algorithms, Products, and Documentation",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/Overview_of_the_AIRS_Mission.pdf",
+        "evidence_source": "user_guide",
+        "validation": {
+          "document_accessible": true,
+          "contains_algorithm_section": true,
+          "mentions_input_data": true,
+          "mentions_parent_collection": true,
+          "contains_processing_algorithm": true,
+          "VALID": true
+        }
+      },
+      {
+        "key": "cmr_record:AIRG2SSD_IRonly|7.0",
+        "title": "CMR abstract: AIRG2SSD_IRonly 7.0",
+        "url": "https://cmr.earthdata.nasa.gov/search/concepts/C1702050366-GES_DISC.umm_json",
+        "evidence_source": "other_doc",
+        "validation": null
+      }
+    ]
+  },
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "AIRG2SSD_IRonly",
+      "version": "7.0",
+      "level": "2G"
+    },
+    "primary_parents": [
+      "AIRS2SUP 7.0"
+    ],
+    "supporting_parents": [],
+    "derived_children": [],
+    "related": [
+      "AIRG2SSD 006"
+    ]
+  },
+  "relationships": [
+    {
+      "shortname": "AIRG2SSD_IRonly",
+      "version": "7.0",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "aggregated_from",
+      "related_shortname": "AIRS2SUP",
+      "related_version": "7.0",
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "Overview of the AIRS Mission: Instruments, Processing Algorithms, Products, and Documentation",
+      "evidence_url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/Overview_of_the_AIRS_Mission.pdf",
+      "evidence_section": "Appendix A: Aqua AIRS Level 2G Precipitation Estimate",
+      "evidence_page": 40,
+      "evidence_quote": "The precipitation estimate from the AIRS Level 2 Support product is combined into one daily “Level 2G” global grid with dimensions (24x1440x720).",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "CMR abstract: AIRG2SSD_IRonly 7.0",
+          "quote": "This precipitation estimate from AIRS IR only is using a TOVS-like algorithm",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2 (aggregation): as for V006, from the V7 AIRS-only L2 support product.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1701805630-GES_DISC",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "parent L2 <= target L2",
+        "version_compatible": true,
+        "temporal_consistent": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "AIRG2SSD_IRonly",
+      "version": "7.0",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "related_to",
+      "related_shortname": "AIRG2SSD",
+      "related_version": "006",
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "Overview of the AIRS Mission: Instruments, Processing Algorithms, Products, and Documentation",
+      "evidence_url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/Overview_of_the_AIRS_Mission.pdf",
+      "evidence_section": "Appendix A: Aqua AIRS Level 2G Precipitation Estimate",
+      "evidence_page": 40,
+      "evidence_quote": "The short name is “AIRG2SSD” and the filename string is “L2G.Precip_Est.”",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "CMR abstract: AIRG2SSD_IRonly 7.0",
+          "quote": "This precipitation estimate from AIRS IR only is using a TOVS-like algorithm",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 3,
+      "rationale": "Decision step 6: as for V006 (AIRG2SSD exists only as V006).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1243477375-GES_DISC",
+        "related_level": "2G",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "granule_level_check": {
+    "collection": "AIRG2SSD_IRonly|7.0",
+    "granules_in_cmr": 8749,
+    "sampled": 2,
+    "sample_granule": "AIRG2SSD_IRonly.7.0:AIRS.2026.11.11.L2G.Precip_Est_IR.v1.1.0.G26316224806.hdf",
+    "with_InputGranules": 0
+  },
+  "existing_associations_check": [
+    {
+      "collection": "AIRG2SSD_IRonly|7.0",
+      "Type": "SCIENCE ASSOCIATED",
+      "EntryId": "AIRG2SSD_IRonly",
+      "Version": "7.0",
+      "self_reference": true,
+      "found_in_cmr": true
+    }
+  ],
+  "metadata_findings": [
+    "The only MetadataAssociation is SCIENCE ASSOCIATED to the record itself (AIRG2SSD_IRonly 7.0): a self-relation, which should be removed.",
+    "No PARENT, INPUT, CHILD or RELATED associations; this run proposes 1 PARENT, 1 RELATED.",
+    "The linked ATBD (AIRS L2 ATBD, 2007) and README (V6) predate V7; the V7 description is in the Overview."
+  ],
+  "excluded": [
+    {
+      "name": "AIRS, AMSU-A, HSB and VIS/NIR Level 1A",
+      "role": "PARENT of every L1B product (V5 and V8)",
+      "reason": "not a CMR collection (rule 1c-4): \"Level 0 and Level 1A data sets are not publicly archived\" (Overview Figure 13)"
+    },
+    {
+      "name": "AIRAACAL",
+      "role": "optional dynamic input to AIRABRAD (README.AIRABRAD §1.4)",
+      "reason": "no CMR record"
+    },
+    {
+      "name": "Definitive / predicted ephemeris and attitude",
+      "role": "input to L1B and NRT L1B",
+      "reason": "not a CMR collection (rule 1c-4)"
+    },
+    {
+      "name": "AVN / GFS forecast fields",
+      "role": "surface-pressure guess for L2; SST in AIRXBCAL",
+      "reason": "not identified as a CMR collection in the documents"
+    },
+    {
+      "name": "CERES SSF (Aqua)",
+      "role": "scene-type input to AIRSIL3MSOLR",
+      "reason": "ambiguous: CMR has CER_SSF_Aqua-FM3-MODIS and -FM4-MODIS (Edition4A) and the documents name neither edition nor instrument (rules 1c-3, 1c-6)"
+    },
+    {
+      "name": "AIRVBRAD_NRT",
+      "role": "possible VIS/NIR input to the NRT L2 products",
+      "reason": "the documents do not say which VIS input the NRT L2 uses (rule 1c-6)"
+    },
+    {
+      "name": "AIRXAMAP",
+      "role": "granule-location maps listed as a related data set in the L1C guide and NRT table",
+      "reason": "not a lineage relationship"
+    },
+    {
+      "name": "V006 L2 (AIRS2RET/SUP/CCF, AIRX2RET/SUP, AIRI2CCF, AIRH2RET/SUP/CCF 006)",
+      "role": "CHILD of AIRIBRAD/AIRABRAD/AIRHBRAD",
+      "reason": "documented (\"Since the Version 6 algorithm continues to use Version 5 radiance data\", README V6), but the CSV allows one row per related ShortName and the V7 version of each is written"
+    },
+    {
+      "name": "V006 L3, 8-day L3, V005 CO2, AIRS–CloudSat/MLS/MODIS matchups",
+      "role": "CMR pattern matches (Step 7)",
+      "reason": "their derivation from a suite member is not stated in the fetched documents (rule 1c-2)"
+    }
+  ],
+  "csv": {
+    "path": "Reports/GES_DISC/AIRS/AIRG2SSD_IRonly_V7.0_lineage.csv",
+    "rows": 2,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  }
+}

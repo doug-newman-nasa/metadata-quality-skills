@@ -1,0 +1,9 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+TOVSAMNE,02,RELATED,TOVSAMNA,02,MEDIUM,equivalent_product
+TOVSAMNE,02,RELATED,TOVSAMNC,02,MEDIUM,equivalent_product
+TOVSAMNE,02,RELATED,TOVSAMND,02,MEDIUM,equivalent_product
+TOVSAMNE,02,RELATED,TOVSAMNF,02,MEDIUM,equivalent_product
+TOVSAMNE,02,RELATED,TOVSAMNG,02,MEDIUM,equivalent_product
+TOVSAMNE,02,RELATED,TOVSAMNH,02,MEDIUM,equivalent_product
+TOVSAMNE,02,RELATED,TOVSAMNJ,02,MEDIUM,equivalent_product
+TOVSAMNE,02,RELATED,TOVSAMTN,02,MEDIUM,equivalent_product

@@ -1,0 +1,7 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+OMIAuraAER,1,PARENT,OML1BRVG,004,MEDIUM,derived_from
+OMIAuraAER,1,INPUT,AIRS3STD,006,HIGH,input_to
+OMIAuraAER,1,RELATED,OMAERUV,004,MEDIUM,template_of
+OMIAuraAER,1,RELATED,OMTO3,004,MEDIUM,related_to
+OMIAuraAER,1,RELATED,TOMSEPAER,2,MEDIUM,equivalent_product
+OMIAuraAER,1,RELATED,TOMSN7AER,2,MEDIUM,equivalent_product

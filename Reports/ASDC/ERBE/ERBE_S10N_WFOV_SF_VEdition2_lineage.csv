@@ -1,0 +1,4 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+ERBE_S10N_WFOV_SF,Edition2,PARENT,ERBE_S7_NAT,1,MEDIUM,aggregated_from
+ERBE_S10N_WFOV_SF,Edition2,RELATED,ERBE_S10N_WFOV_NF,Edition2,MEDIUM,parallel_product
+ERBE_S10N_WFOV_SF,Edition2,RELATED,ERBE_S10N_WFV_SF_NAT,1,MEDIUM,version_of

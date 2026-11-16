@@ -1,0 +1,3 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+AIRIBQAP,005,RELATED,AIRIBQAP_NRT,005,HIGH,related_to
+AIRIBQAP,005,RELATED,AIRIBRAD,005,HIGH,parallel_product

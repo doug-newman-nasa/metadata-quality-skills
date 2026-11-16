@@ -1,0 +1,5 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+CAL_LID_L3_Stratospheric_APro-Standard-V2-00,V2-00,PARENT,CAL_LID_L1-Standard-V5-00,V5-00,HIGH,aggregated_from
+CAL_LID_L3_Stratospheric_APro-Standard-V2-00,V2-00,INPUT,CAL_LID_L2_05kmMLay-Standard-V5-00,V5-00,HIGH,input_to
+CAL_LID_L3_Stratospheric_APro-Standard-V2-00,V2-00,INPUT,CAL_LID_L2_PSCMask-Standard-V3-00,V3-00,HIGH,input_to
+CAL_LID_L3_Stratospheric_APro-Standard-V2-00,V2-00,RELATED,CAL_LID_L3_Stratospheric_APro-Standard-V1-01,V1-01,MEDIUM,version_of

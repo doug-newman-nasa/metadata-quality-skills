@@ -1,0 +1,4 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+CAL_IIR_L2_Swath-Standard-V5-00,V5-00,PARENT,CAL_IIR_L2_Track-Standard-V5-00,V5-00,MEDIUM,derived_from
+CAL_IIR_L2_Swath-Standard-V5-00,V5-00,INPUT,CAL_IIR_L1-Standard-V3-00,V3-00,HIGH,input_to
+CAL_IIR_L2_Swath-Standard-V5-00,V5-00,RELATED,CAL_IIR_L2_Swath-Standard-V4-51,V4-51,MEDIUM,version_of

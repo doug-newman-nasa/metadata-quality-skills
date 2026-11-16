@@ -1,0 +1,3 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+AIRG2SSD_IRonly,006,PARENT,AIRS2SUP,006,MEDIUM,aggregated_from
+AIRG2SSD_IRonly,006,RELATED,AIRG2SSD,006,MEDIUM,related_to

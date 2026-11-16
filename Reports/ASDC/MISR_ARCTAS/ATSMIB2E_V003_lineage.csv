@@ -1,0 +1,3 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+ATSMIB2E,003,PARENT,MI1B2E,003,MEDIUM,derived_from
+ATSMIB2E,003,RELATED,ATSMIB2T,003,MEDIUM,parallel_product

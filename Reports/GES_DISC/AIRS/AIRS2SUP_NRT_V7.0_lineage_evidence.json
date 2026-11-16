@@ -1,0 +1,407 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-13T19:54:41+00:00",
+  "suite": "AIRS_suite (39 collections; see AIRS_suite_lineage_evidence.json)",
+  "parameters": {
+    "collection_short_name": "AIRS2SUP_NRT",
+    "collection_version": "7.0",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 2,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "AIRS2SUP_NRT",
+    "version": "7.0",
+    "concept_id": "C1701805636-GES_DISC",
+    "revision_id": 31,
+    "entry_title": "Aqua/AIRS L2 Near Real Time (NRT) Support Retrieval (AIRS-only) V7.0",
+    "processing_level": "2",
+    "temporal": [
+      {
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2002-08-30T00:00:00.000Z"
+          }
+        ],
+        "EndsAtPresentFlag": true
+      }
+    ],
+    "granules_in_cmr": 1665,
+    "existing_metadata_associations": [
+      {
+        "EntryId": "AIRS2SUP_NRT",
+        "Version": "7.0",
+        "Type": "SCIENCE ASSOCIATED"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [],
+    "decision_tree_branch": "[2] NO: no ATBD in related_urls; the product User's Guide / README is the primary source",
+    "other_documentation": [
+      {
+        "subtype": "VIEW RELATED INFORMATION",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/AIRS_Documentation.pdf"
+      },
+      {
+        "subtype": "READ-ME",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/Overview_of_the_AIRS_Mission.pdf"
+      },
+      {
+        "subtype": "USER'S GUIDE",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/V7_L2_Product_User_Guide.pdf"
+      }
+    ]
+  },
+  "source_documents": {
+    "linked_from_record": [
+      {
+        "key": "airs_doc_index",
+        "title": "AIRS Documentation (GES DISC document index)",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/AIRS_Documentation.pdf",
+        "evidence_source": "other_doc",
+        "validation": {
+          "document_accessible": true,
+          "contains_algorithm_section": true,
+          "mentions_input_data": true,
+          "mentions_parent_collection": true,
+          "contains_processing_algorithm": true,
+          "VALID": true
+        }
+      },
+      {
+        "key": "airs_overview",
+        "title": "Overview of the AIRS Mission: Instruments, Processing Algorithms, Products, and Documentation",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/Overview_of_the_AIRS_Mission.pdf",
+        "evidence_source": "user_guide",
+        "validation": {
+          "document_accessible": true,
+          "contains_algorithm_section": true,
+          "mentions_input_data": true,
+          "mentions_parent_collection": true,
+          "contains_processing_algorithm": true,
+          "VALID": true
+        }
+      },
+      {
+        "key": "l2_v7_guide",
+        "title": "AIRS/AMSU/HSB Version 7 Level 2 Product User Guide",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/V7_L2_Product_User_Guide.pdf",
+        "evidence_source": "user_guide",
+        "validation": {
+          "document_accessible": true,
+          "contains_algorithm_section": true,
+          "mentions_input_data": true,
+          "mentions_parent_collection": true,
+          "contains_processing_algorithm": true,
+          "VALID": true
+        }
+      },
+      {
+        "key": "nrt_memo",
+        "title": "AIRS Near Real Time (NRT) data products memo (V6)",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/AIRS/3.3_ScienceDataProductDocumentation/3.3.5_ProductQuality/nrt_memo_v6.pdf",
+        "evidence_source": "other_doc",
+        "validation": {
+          "document_accessible": true,
+          "contains_algorithm_section": true,
+          "mentions_input_data": true,
+          "mentions_parent_collection": true,
+          "contains_processing_algorithm": true,
+          "VALID": true
+        }
+      }
+    ],
+    "used_as_evidence": [
+      {
+        "key": "airs_overview",
+        "title": "Overview of the AIRS Mission: Instruments, Processing Algorithms, Products, and Documentation",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/Overview_of_the_AIRS_Mission.pdf",
+        "evidence_source": "user_guide",
+        "validation": {
+          "document_accessible": true,
+          "contains_algorithm_section": true,
+          "mentions_input_data": true,
+          "mentions_parent_collection": true,
+          "contains_processing_algorithm": true,
+          "VALID": true
+        }
+      },
+      {
+        "key": "l2_v7_guide",
+        "title": "AIRS/AMSU/HSB Version 7 Level 2 Product User Guide",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/V7_L2_Product_User_Guide.pdf",
+        "evidence_source": "user_guide",
+        "validation": {
+          "document_accessible": true,
+          "contains_algorithm_section": true,
+          "mentions_input_data": true,
+          "mentions_parent_collection": true,
+          "contains_processing_algorithm": true,
+          "VALID": true
+        }
+      }
+    ]
+  },
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "AIRS2SUP_NRT",
+      "version": "7.0",
+      "level": "2"
+    },
+    "primary_parents": [
+      "AIRIBRAD_NRT 005"
+    ],
+    "supporting_parents": [],
+    "derived_children": [],
+    "related": [
+      "AIRS2CCF_NRT 7.0",
+      "AIRS2RET_NRT 7.0",
+      "AIRS2SUP 7.0"
+    ]
+  },
+  "relationships": [
+    {
+      "shortname": "AIRS2SUP_NRT",
+      "version": "7.0",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "AIRIBRAD_NRT",
+      "related_version": "005",
+      "version_status": "matched",
+      "version_basis": "stated_in_evidence",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "Overview of the AIRS Mission: Instruments, Processing Algorithms, Products, and Documentation",
+      "evidence_url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/Overview_of_the_AIRS_Mission.pdf",
+      "evidence_section": "Appendix A: AIRS Near Real Time Products",
+      "evidence_page": 39,
+      "evidence_quote": "the NRT processing proceeds whether or not the previous or subsequent Level 1B granules are present or whether the forecast surface pressure is present.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "Overview of the AIRS Mission: Instruments, Processing Algorithms, Products, and Documentation",
+          "quote": "The AIRS NRT products are only produced for the AIRS-Only flavor",
+          "verified": true
+        },
+        {
+          "document": "AIRS/AMSU/HSB Version 7 Level 2 Product User Guide",
+          "quote": "Since the V7 L2 products are still based on the V5 L1B product",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Decision step 2: NRT L2 runs on the NRT L1B granules. Generic \"Level 1B granules\" mapped to AIRIBRAD_NRT (AIRS-only flavor; V5 radiances).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1233768982-GES_DISC",
+        "related_level": "1B",
+        "level_progression_valid": true,
+        "level_check": "parent L1 <= target L2",
+        "version_compatible": true,
+        "temporal_consistent": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "AIRS2SUP_NRT",
+      "version": "7.0",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "related_shortname": "AIRS2CCF_NRT",
+      "related_version": "7.0",
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "Overview of the AIRS Mission: Instruments, Processing Algorithms, Products, and Documentation",
+      "evidence_url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/Overview_of_the_AIRS_Mission.pdf",
+      "evidence_section": "Appendix A: AIRS Near Real Time Products (table)",
+      "evidence_page": 39,
+      "evidence_quote": "AIRS2RET_NRT RetStd Level-2 retrieval product created using AIRS IR AIRS2SUP_NRT RetSup Level-2 retrieval support product created using AIRS IR AIRS2CCF_NRT CC Level-2 cloud cleared radiance product created using AIRS IR",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "Overview of the AIRS Mission: Instruments, Processing Algorithms, Products, and Documentation",
+          "quote": "The AIRS NRT products are only produced for the AIRS-Only flavor",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 4: the NRT standard, support and cloud-cleared files come from one NRT L2 retrieval run.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1701805606-GES_DISC",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "AIRS2SUP_NRT",
+      "version": "7.0",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "related_shortname": "AIRS2RET_NRT",
+      "related_version": "7.0",
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "Overview of the AIRS Mission: Instruments, Processing Algorithms, Products, and Documentation",
+      "evidence_url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/Overview_of_the_AIRS_Mission.pdf",
+      "evidence_section": "Appendix A: AIRS Near Real Time Products (table)",
+      "evidence_page": 39,
+      "evidence_quote": "AIRS2RET_NRT RetStd Level-2 retrieval product created using AIRS IR AIRS2SUP_NRT RetSup Level-2 retrieval support product created using AIRS IR AIRS2CCF_NRT CC Level-2 cloud cleared radiance product created using AIRS IR",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "Overview of the AIRS Mission: Instruments, Processing Algorithms, Products, and Documentation",
+          "quote": "The AIRS NRT products are only produced for the AIRS-Only flavor",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 4: the NRT standard, support and cloud-cleared files come from one NRT L2 retrieval run.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1701805625-GES_DISC",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "AIRS2SUP_NRT",
+      "version": "7.0",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "related_to",
+      "related_shortname": "AIRS2SUP",
+      "related_version": "7.0",
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "Overview of the AIRS Mission: Instruments, Processing Algorithms, Products, and Documentation",
+      "evidence_url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/Overview_of_the_AIRS_Mission.pdf",
+      "evidence_section": "Appendix A: AIRS Near Real Time Products",
+      "evidence_page": 39,
+      "evidence_quote": "AIRS2SUP_NRT RetSup Level-2 retrieval support product created using AIRS IR",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "Overview of the AIRS Mission: Instruments, Processing Algorithms, Products, and Documentation",
+          "quote": "AIRS NRT products are produced by the same core science algorithms as in the routine science data production, but using predicted ephemeris in place of definitive ephemeris",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "rationale": "Decision step 6: NRT counterpart produced by the same core algorithm (separate, lower-latency run).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1701805630-GES_DISC",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "granule_level_check": {
+    "collection": "AIRS2SUP_NRT|7.0",
+    "granules_in_cmr": 1665,
+    "sampled": 2,
+    "sample_granule": "AIRS2SUP_NRT.7.0:AIRS.2026.11.13.185.L2.RetSup_IR.v7.0.9.3.R26317143912.hdf",
+    "with_InputGranules": 0
+  },
+  "existing_associations_check": [
+    {
+      "collection": "AIRS2SUP_NRT|7.0",
+      "Type": "SCIENCE ASSOCIATED",
+      "EntryId": "AIRS2SUP_NRT",
+      "Version": "7.0",
+      "self_reference": true,
+      "found_in_cmr": true
+    }
+  ],
+  "metadata_findings": [
+    "The only MetadataAssociation is SCIENCE ASSOCIATED to the record itself (AIRS2SUP_NRT 7.0): a self-relation, which should be removed.",
+    "No PARENT, INPUT, CHILD or RELATED associations; this run proposes 1 PARENT, 3 RELATED.",
+    "No ATBD in RelatedUrls (decision branch [2]); the AIRS L2 ATBD could be linked alongside the User's Guide.",
+    "TemporalExtents begin 2002-08-30, but NRT products are a 7-day rolling archive and its input AIRIBRAD_NRT begins 2015-12-15."
+  ],
+  "excluded": [
+    {
+      "name": "AIRS, AMSU-A, HSB and VIS/NIR Level 1A",
+      "role": "PARENT of every L1B product (V5 and V8)",
+      "reason": "not a CMR collection (rule 1c-4): \"Level 0 and Level 1A data sets are not publicly archived\" (Overview Figure 13)"
+    },
+    {
+      "name": "AIRAACAL",
+      "role": "optional dynamic input to AIRABRAD (README.AIRABRAD §1.4)",
+      "reason": "no CMR record"
+    },
+    {
+      "name": "Definitive / predicted ephemeris and attitude",
+      "role": "input to L1B and NRT L1B",
+      "reason": "not a CMR collection (rule 1c-4)"
+    },
+    {
+      "name": "AVN / GFS forecast fields",
+      "role": "surface-pressure guess for L2; SST in AIRXBCAL",
+      "reason": "not identified as a CMR collection in the documents"
+    },
+    {
+      "name": "CERES SSF (Aqua)",
+      "role": "scene-type input to AIRSIL3MSOLR",
+      "reason": "ambiguous: CMR has CER_SSF_Aqua-FM3-MODIS and -FM4-MODIS (Edition4A) and the documents name neither edition nor instrument (rules 1c-3, 1c-6)"
+    },
+    {
+      "name": "AIRVBRAD_NRT",
+      "role": "possible VIS/NIR input to the NRT L2 products",
+      "reason": "the documents do not say which VIS input the NRT L2 uses (rule 1c-6)"
+    },
+    {
+      "name": "AIRXAMAP",
+      "role": "granule-location maps listed as a related data set in the L1C guide and NRT table",
+      "reason": "not a lineage relationship"
+    },
+    {
+      "name": "V006 L2 (AIRS2RET/SUP/CCF, AIRX2RET/SUP, AIRI2CCF, AIRH2RET/SUP/CCF 006)",
+      "role": "CHILD of AIRIBRAD/AIRABRAD/AIRHBRAD",
+      "reason": "documented (\"Since the Version 6 algorithm continues to use Version 5 radiance data\", README V6), but the CSV allows one row per related ShortName and the V7 version of each is written"
+    },
+    {
+      "name": "V006 L3, 8-day L3, V005 CO2, AIRS–CloudSat/MLS/MODIS matchups",
+      "role": "CMR pattern matches (Step 7)",
+      "reason": "their derivation from a suite member is not stated in the fetched documents (rule 1c-2)"
+    }
+  ],
+  "csv": {
+    "path": "Reports/GES_DISC/AIRS/AIRS2SUP_NRT_V7.0_lineage.csv",
+    "rows": 4,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  }
+}

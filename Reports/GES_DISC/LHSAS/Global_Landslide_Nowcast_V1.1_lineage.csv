@@ -1,0 +1,2 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+Global_Landslide_Nowcast,1.1,CHILD,Global_Landslide_Exposure_Maps,1.0,MEDIUM,downstream_product

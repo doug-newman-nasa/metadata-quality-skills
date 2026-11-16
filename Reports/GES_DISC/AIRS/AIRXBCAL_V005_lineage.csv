@@ -1,0 +1,4 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+AIRXBCAL,005,INPUT,AIRABRAD,005,MEDIUM,component_of
+AIRXBCAL,005,INPUT,AIRIBRAD,005,MEDIUM,component_of
+AIRXBCAL,005,INPUT,AIRVBRAD,005,MEDIUM,component_of

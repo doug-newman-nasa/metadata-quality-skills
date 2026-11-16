@@ -1,0 +1,4 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+AIRHBRAD,005,CHILD,AIRH2CCF,7.0,HIGH,downstream_product
+AIRHBRAD,005,CHILD,AIRH2RET,7.0,HIGH,downstream_product
+AIRHBRAD,005,CHILD,AIRH2SUP,7.0,HIGH,downstream_product

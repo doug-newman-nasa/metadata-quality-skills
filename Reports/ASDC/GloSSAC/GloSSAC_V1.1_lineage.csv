@@ -1,0 +1,7 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+GloSSAC,1.1,PARENT,SAGE2_AEROSOL_O3_NO2_H2O_BINARY,V7.0,MEDIUM,aggregated_from
+GloSSAC,1.1,INPUT,CAL_LID_L1-Standard-V4-51,V4-51,MEDIUM,component_of
+GloSSAC,1.1,INPUT,SAGE_I_AEROSOL_O3_NO2_BINARY,V1,MEDIUM,component_of
+GloSSAC,1.1,INPUT,SAM2_AERO_PRF_NAT,1,MEDIUM,component_of
+GloSSAC,1.1,INPUT,UARCL3AT,009,MEDIUM,component_of
+GloSSAC,1.1,INPUT,UARHA2FN,019,MEDIUM,component_of

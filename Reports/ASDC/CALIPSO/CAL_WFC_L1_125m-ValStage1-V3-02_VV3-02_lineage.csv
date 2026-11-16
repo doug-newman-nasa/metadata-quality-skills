@@ -1,0 +1,5 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+CAL_WFC_L1_125m-ValStage1-V3-02,V3-02,RELATED,CAL_WFC_L1_125m-Standard-V4-00,V4-00,MEDIUM,version_of
+CAL_WFC_L1_125m-ValStage1-V3-02,V3-02,RELATED,CAL_WFC_L1_125m-ValStage1-V3-01,V3-01,MEDIUM,version_of
+CAL_WFC_L1_125m-ValStage1-V3-02,V3-02,RELATED,CAL_WFC_L1_1Km-ValStage1-V3-02,V3-02,MEDIUM,parallel_product
+CAL_WFC_L1_125m-ValStage1-V3-02,V3-02,RELATED,CAL_WFC_L1_IIR-ValStage1-V3-02,V3-02,MEDIUM,parallel_product

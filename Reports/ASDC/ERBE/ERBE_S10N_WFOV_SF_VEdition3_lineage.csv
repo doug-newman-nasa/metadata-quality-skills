@@ -1,0 +1,5 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+ERBE_S10N_WFOV_SF,Edition3,RELATED,ERBE_S10N_WFOV_NF,Edition3,MEDIUM,parallel_product
+ERBE_S10N_WFOV_SF,Edition3,RELATED,ERBE_S10N_WFOV_SF_ERBS_AreaAverageTimeSeries,Edition4,HIGH,version_of
+ERBE_S10N_WFOV_SF,Edition3,RELATED,ERBE_S10N_WFOV_SF_ERBS_Regional,Edition4,HIGH,version_of
+ERBE_S10N_WFOV_SF,Edition3,RELATED,ERBE_S7_NAT,1,MEDIUM,related_to

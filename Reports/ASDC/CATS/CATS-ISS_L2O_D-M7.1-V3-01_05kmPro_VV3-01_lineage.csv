@@ -1,0 +1,4 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+CATS-ISS_L2O_D-M7.1-V3-01_05kmPro,V3-01,PARENT,CATS-ISS_L1B_D-M7.1-V3-00,V3-00,MEDIUM,derived_from
+CATS-ISS_L2O_D-M7.1-V3-01_05kmPro,V3-01,RELATED,CATS-ISS_L2O_D-M7.1-V3-01_05kmLay,V3-01,MEDIUM,parallel_product
+CATS-ISS_L2O_D-M7.1-V3-01_05kmPro,V3-01,RELATED,CATS-ISS_L2O_N-M7.1-V3-01_05kmPro,V3-01,MEDIUM,parallel_product

@@ -1,0 +1,7 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+CAL_LID_L2_PSCMask-Standard-V4-00,V4-00,PARENT,CAL_LID_L1-Standard-V5-00,V5-00,HIGH,derived_from
+CAL_LID_L2_PSCMask-Standard-V4-00,V4-00,INPUT,M2I1NXASM,5.12.4,MEDIUM,input_to
+CAL_LID_L2_PSCMask-Standard-V4-00,V4-00,INPUT,M2I3NVASM,5.12.4,MEDIUM,input_to
+CAL_LID_L2_PSCMask-Standard-V4-00,V4-00,INPUT,ML2H2O,006,MEDIUM,input_to
+CAL_LID_L2_PSCMask-Standard-V4-00,V4-00,INPUT,ML2HNO3,006,MEDIUM,input_to
+CAL_LID_L2_PSCMask-Standard-V4-00,V4-00,RELATED,CAL_LID_L2_PSCMask-Standard-V3-00,V3-00,HIGH,version_of

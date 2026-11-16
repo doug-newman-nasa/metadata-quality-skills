@@ -1,0 +1,619 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-13T22:15:54+00:00",
+  "related_records": {
+    "TOVSBMND": {
+      "version": "01",
+      "concept_id": "C1274625686-GES_DISC"
+    },
+    "TOVSBMNG": {
+      "version": "01",
+      "concept_id": "C1274625687-GES_DISC"
+    },
+    "TOVS_717": {
+      "version": "1",
+      "concept_id": "C2788393402-ORNL_CLOUD"
+    },
+    "NSIDC-0027": {
+      "version": "1",
+      "concept_id": "C1386246923-NSIDCV0"
+    }
+  },
+  "parameters": {
+    "collection_short_name": "TOVSAMNJ",
+    "collection_version": "02",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 1,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "TOVSAMNJ",
+    "version": "02",
+    "concept_id": "C1548834235-GES_DISC",
+    "revision_id": 24,
+    "entry_title": "TOVS GLA MONTHLY GRIDS from NOAA-14 02 (TOVSAMNJ) ",
+    "processing_level": "3",
+    "temporal": [
+      {
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "1995-02-01T00:00:00.000Z",
+            "EndingDateTime": "2004-12-31T23:59:59.999Z"
+          }
+        ],
+        "EndsAtPresentFlag": false
+      }
+    ],
+    "existing_metadata_associations": [
+      {
+        "EntryId": "TOVSAMNJ",
+        "Version": "02",
+        "Type": "SCIENCE ASSOCIATED",
+        "Description": "NASA TOVS Pathfinder Path-A"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [],
+    "decision_tree_branch": "[2] NO: no ATBD in related_urls; the TOVS Pathfinder Path-A User's Guide and README are the primary sources"
+  },
+  "source_documents": [
+    {
+      "key": "ornl_717",
+      "title": "SAFARI 2000 TOVS Surface and Atmospheric Parameters, 1-Deg, 1999-2001 (ORNL DAAC guide for TOVS_717)",
+      "url": "https://data.ornldaac.earthdata.nasa.gov/public/safari2k/remote_sensing/TOVS/comp/tovs_pentad_atmosphere_doc.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "readme",
+      "title": "README Document for TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset (GES DISC, 2018)",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/TOVS/README.TOVS.Pathfinder.PathA.v2.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "guide",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/TOVS/User.Guide.TOVS.Pathfinder.PathA.v2.pdf",
+      "status": "ok",
+      "pages": 41,
+      "text_chars": 83518
+    },
+    {
+      "key": "readme",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/TOVS/README.TOVS.Pathfinder.PathA.v2.pdf",
+      "status": "ok",
+      "pages": 35,
+      "text_chars": 70188
+    },
+    {
+      "key": "ornl_717",
+      "url": "https://data.ornldaac.earthdata.nasa.gov/public/safari2k/remote_sensing/TOVS/comp/tovs_pentad_atmosphere_doc.pdf",
+      "status": "ok",
+      "pages": 7,
+      "text_chars": 10171
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "TOVSAMNJ",
+      "version": "02",
+      "level": "3"
+    },
+    "primary_parents": [],
+    "supporting_parents": [],
+    "derived_children": [],
+    "related": [
+      "TOVSAMNA 02",
+      "TOVSAMNC 02",
+      "TOVSAMND 02",
+      "TOVSAMNE 02",
+      "TOVSAMNF 02",
+      "TOVSAMNG 02",
+      "TOVSAMNH 02",
+      "TOVSAMTN 02",
+      "TOVS_717 1"
+    ],
+    "upstream_not_in_cmr": "TOVS Pathfinder Path-A Level 2 retrievals <- HIRS2/MSU Level 1b, GLA GCM forecast, in situ data"
+  },
+  "relationships": [
+    {
+      "shortname": "TOVSAMNJ",
+      "version": "02",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "related_shortname": "TOVSAMNA",
+      "related_version": "02",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "README Document for TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset (GES DISC, 2018)",
+      "evidence_url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/TOVS/README.TOVS.Pathfinder.PathA.v2.pdf",
+      "evidence_section": "§1.0 Introduction; §1.1 Table 1",
+      "evidence_page": 7,
+      "evidence_quote": "The TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset consists of temperature, moisture, and clouds products generated from a consistently processed retrieval system using the NOAA polar orbiting satellites TIROS-N through NOAA-14.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "README Document for TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset (GES DISC, 2018)",
+          "quote": "Instrument Launch Date Path-A L3 processed dates Orbit observing local time from launch through end of processing",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 5: the same Path-A monthly product from another platform (NOAA-6 / NOAA-14); generic platform list, mapped by ShortName.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "02"
+        ],
+        "concept_id": "C1548834212-GES_DISC",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TOVSAMNJ",
+      "version": "02",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "related_shortname": "TOVSAMNC",
+      "related_version": "02",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "README Document for TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset (GES DISC, 2018)",
+      "evidence_url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/TOVS/README.TOVS.Pathfinder.PathA.v2.pdf",
+      "evidence_section": "§1.0 Introduction; §1.1 Table 1",
+      "evidence_page": 7,
+      "evidence_quote": "The TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset consists of temperature, moisture, and clouds products generated from a consistently processed retrieval system using the NOAA polar orbiting satellites TIROS-N through NOAA-14.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "README Document for TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset (GES DISC, 2018)",
+          "quote": "Instrument Launch Date Path-A L3 processed dates Orbit observing local time from launch through end of processing",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 5: the same Path-A monthly product from another platform (NOAA-7 / NOAA-14); generic platform list, mapped by ShortName.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "02"
+        ],
+        "concept_id": "C1548834216-GES_DISC",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TOVSAMNJ",
+      "version": "02",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "related_shortname": "TOVSAMND",
+      "related_version": "02",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "README Document for TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset (GES DISC, 2018)",
+      "evidence_url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/TOVS/README.TOVS.Pathfinder.PathA.v2.pdf",
+      "evidence_section": "§1.0 Introduction; §1.1 Table 1",
+      "evidence_page": 7,
+      "evidence_quote": "The TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset consists of temperature, moisture, and clouds products generated from a consistently processed retrieval system using the NOAA polar orbiting satellites TIROS-N through NOAA-14.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "README Document for TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset (GES DISC, 2018)",
+          "quote": "Instrument Launch Date Path-A L3 processed dates Orbit observing local time from launch through end of processing",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 5: the same Path-A monthly product from another platform (NOAA-12 / NOAA-14); generic platform list, mapped by ShortName.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "01",
+          "02"
+        ],
+        "concept_id": "C1548834220-GES_DISC",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TOVSAMNJ",
+      "version": "02",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "related_shortname": "TOVSAMNE",
+      "related_version": "02",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "README Document for TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset (GES DISC, 2018)",
+      "evidence_url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/TOVS/README.TOVS.Pathfinder.PathA.v2.pdf",
+      "evidence_section": "§1.0 Introduction; §1.1 Table 1",
+      "evidence_page": 7,
+      "evidence_quote": "The TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset consists of temperature, moisture, and clouds products generated from a consistently processed retrieval system using the NOAA polar orbiting satellites TIROS-N through NOAA-14.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "README Document for TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset (GES DISC, 2018)",
+          "quote": "Instrument Launch Date Path-A L3 processed dates Orbit observing local time from launch through end of processing",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 5: the same Path-A monthly product from another platform (NOAA-8 / NOAA-14); generic platform list, mapped by ShortName.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "02"
+        ],
+        "concept_id": "C1548834222-GES_DISC",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TOVSAMNJ",
+      "version": "02",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "related_shortname": "TOVSAMNF",
+      "related_version": "02",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "README Document for TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset (GES DISC, 2018)",
+      "evidence_url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/TOVS/README.TOVS.Pathfinder.PathA.v2.pdf",
+      "evidence_section": "§1.0 Introduction; §1.1 Table 1",
+      "evidence_page": 7,
+      "evidence_quote": "The TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset consists of temperature, moisture, and clouds products generated from a consistently processed retrieval system using the NOAA polar orbiting satellites TIROS-N through NOAA-14.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "README Document for TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset (GES DISC, 2018)",
+          "quote": "Instrument Launch Date Path-A L3 processed dates Orbit observing local time from launch through end of processing",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 5: the same Path-A monthly product from another platform (NOAA-9 / NOAA-14); generic platform list, mapped by ShortName.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "01",
+          "02"
+        ],
+        "concept_id": "C1548834224-GES_DISC",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TOVSAMNJ",
+      "version": "02",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "related_shortname": "TOVSAMNG",
+      "related_version": "02",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "README Document for TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset (GES DISC, 2018)",
+      "evidence_url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/TOVS/README.TOVS.Pathfinder.PathA.v2.pdf",
+      "evidence_section": "§1.0 Introduction; §1.1 Table 1",
+      "evidence_page": 7,
+      "evidence_quote": "The TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset consists of temperature, moisture, and clouds products generated from a consistently processed retrieval system using the NOAA polar orbiting satellites TIROS-N through NOAA-14.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "README Document for TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset (GES DISC, 2018)",
+          "quote": "Instrument Launch Date Path-A L3 processed dates Orbit observing local time from launch through end of processing",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 5: the same Path-A monthly product from another platform (NOAA-10 / NOAA-14); generic platform list, mapped by ShortName.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "01",
+          "02"
+        ],
+        "concept_id": "C1548834225-GES_DISC",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TOVSAMNJ",
+      "version": "02",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "related_shortname": "TOVSAMNH",
+      "related_version": "02",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "README Document for TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset (GES DISC, 2018)",
+      "evidence_url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/TOVS/README.TOVS.Pathfinder.PathA.v2.pdf",
+      "evidence_section": "§1.0 Introduction; §1.1 Table 1",
+      "evidence_page": 7,
+      "evidence_quote": "The TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset consists of temperature, moisture, and clouds products generated from a consistently processed retrieval system using the NOAA polar orbiting satellites TIROS-N through NOAA-14.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "README Document for TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset (GES DISC, 2018)",
+          "quote": "Instrument Launch Date Path-A L3 processed dates Orbit observing local time from launch through end of processing",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 5: the same Path-A monthly product from another platform (NOAA-11 / NOAA-14); generic platform list, mapped by ShortName.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "01",
+          "02"
+        ],
+        "concept_id": "C1548834228-GES_DISC",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TOVSAMNJ",
+      "version": "02",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "related_shortname": "TOVSAMTN",
+      "related_version": "02",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "README Document for TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset (GES DISC, 2018)",
+      "evidence_url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/TOVS/README.TOVS.Pathfinder.PathA.v2.pdf",
+      "evidence_section": "§1.0 Introduction; §1.1 Table 1",
+      "evidence_page": 7,
+      "evidence_quote": "The TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset consists of temperature, moisture, and clouds products generated from a consistently processed retrieval system using the NOAA polar orbiting satellites TIROS-N through NOAA-14.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "README Document for TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset (GES DISC, 2018)",
+          "quote": "Instrument Launch Date Path-A L3 processed dates Orbit observing local time from launch through end of processing",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 5: the same Path-A monthly product from another platform (TIROS-N / NOAA-14); generic platform list, mapped by ShortName.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "01",
+          "02"
+        ],
+        "concept_id": "C1548834200-GES_DISC",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TOVSAMNJ",
+      "version": "02",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "related_to",
+      "related_shortname": "TOVS_717",
+      "related_version": "1",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "SAFARI 2000 TOVS Surface and Atmospheric Parameters, 1-Deg, 1999-2001 (ORNL DAAC guide for TOVS_717)",
+      "evidence_url": "https://data.ornldaac.earthdata.nasa.gov/public/safari2k/remote_sensing/TOVS/comp/tovs_pentad_atmosphere_doc.pdf",
+      "evidence_section": "Abstract; The TOVS Pathfinder Data Set",
+      "evidence_page": 1,
+      "evidence_quote": "The data were extracted from 1 degree x 1 degree global fields, with data from each satellite's local AM and PM orbits provided separately.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "SAFARI 2000 TOVS Surface and Atmospheric Parameters, 1-Deg, 1999-2001 (ORNL DAAC guide for TOVS_717)",
+          "quote": "geophysical parameters derived from the TOVS Pathfinder data set",
+          "verified": true
+        },
+        {
+          "document": "README Document for TIROS Operational Vertical Sounder (TOVS) Pathfinder Path-A Dataset (GES DISC, 2018)",
+          "quote": "NOAA-14 December 20, 1994 February 1995 and April 1995 - December 2004",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "rationale": "Decision step 6: TOVS_717 holds SAFARI 2000 pentads extracted from the Path-A global fields; for 1999-2001 only NOAA-14 was processed. Sibling extract of the same Path-A run, not made from the monthly grids.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "1"
+        ],
+        "concept_id": "C2788393402-ORNL_CLOUD",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "granule_level_check": {
+    "collection": "TOVSAMNJ|02",
+    "granules": 119,
+    "sample": "TOVSAMNJ.02:TOVS.PathA.L3.NOAA14.nj.en12n14.Feb.1995.V2.nc",
+    "sample_time": {
+      "RangeDateTime": {
+        "BeginningDateTime": "1995-02-01T00:00:00.000Z",
+        "EndingDateTime": "1995-02-28T23:59:59.000Z"
+      }
+    },
+    "with_InputGranules": 0
+  },
+  "existing_associations_check": [
+    {
+      "collection": "TOVSAMNJ|02",
+      "Type": "SCIENCE ASSOCIATED",
+      "EntryId": "TOVSAMNJ",
+      "Version": "02",
+      "self_reference": true
+    }
+  ],
+  "metadata_findings": [
+    "The only MetadataAssociation is SCIENCE ASSOCIATED to the record itself (TOVSAMNJ 02): a self-relation, which should be removed or replaced with the lineage below.",
+    "The DATA SET LANDING PAGE (https://www.earthdata.nasa.gov/data/catalog/ges-disc-sndrsniml2chtccrn-1) is the landing page of an unrelated dataset.",
+    "The Abstract describes the analysis cycle as a \"2nd order General Circulation Model (Takacs et al., 1994)\", a 6-hour window and an Optimal Interpolation analysis; the README and User's Guide describe a 4th order GCM (Kalnay et al, 1983), a three-hour window and a successive correction (SCM) analysis.",
+    "A PublicationReference title is truncated: 'haracteristics of the TOVS Pathfinder Path A Dataset'.",
+    "No ATBD linked; the lineage inputs (Path-A Level 2, HIRS2/MSU Level 1b) are not CMR collections, so no PARENT or INPUT can be recorded."
+  ],
+  "excluded": [
+    {
+      "candidate": "TOVS Pathfinder Path-A Level 2 retrievals",
+      "reason": "not_in_cmr",
+      "detail": "The Level 2 data were quality controlled and gridded into a Level 3 product using a simple binning and averaging technique."
+    },
+    {
+      "candidate": "HIRS2 / MSU Level 1b (NOAA)",
+      "reason": "not_in_cmr",
+      "detail": "Input of the Level 2 retrieval; no Pathfinder-era Level 1b collection in CMR (NCEI HIRS/MSU CDRs are later reprocessings not cited)."
+    },
+    {
+      "candidate": "GLA GCM forecast, radiosonde and ship reports, Reynolds SST climatology",
+      "reason": "not_in_cmr",
+      "detail": "Level 2 inputs and the SSTAnom reference."
+    },
+    {
+      "candidate": "TOVSAM* version 01",
+      "reason": "same_shortname",
+      "detail": "Other versions of the target are never listed."
+    },
+    {
+      "candidate": "TOVSAD*, TOVSA5*, TOVSBD*, TOVSB5* (version 01)",
+      "reason": "no_documented_relationship",
+      "detail": "Not mentioned in the version 02 documents."
+    },
+    {
+      "candidate": "NSIDC-0027 (Path-P)",
+      "reason": "not lineage",
+      "detail": "Polar product from the Path-B algorithm."
+    }
+  ],
+  "csv": {
+    "path": "Reports/GES_DISC/TOVS/TOVSAMNJ_V02_lineage.csv",
+    "rows": 9,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "temporal_check": {
+    "collection": "TOVSAMNJ",
+    "record": "1995-02..2004-12",
+    "readme_table1": "1995-02..2004-12",
+    "consistent": true
+  }
+}

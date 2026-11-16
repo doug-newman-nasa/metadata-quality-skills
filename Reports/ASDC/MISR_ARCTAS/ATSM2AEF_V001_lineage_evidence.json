@@ -1,0 +1,527 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-16T18:18:17+00:00",
+  "related_records": {},
+  "parameters": {
+    "collection_short_name": "ATSM2AEF",
+    "collection_version": "001",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 1,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "ATSM2AEF",
+    "version": "001",
+    "concept_id": "C3417608766-LARC_CLOUD",
+    "revision_id": 16,
+    "entry_title": "MISR L2 FIRSTLOOK Aerosol Product subset for the ARCTAS region V001",
+    "processing_level": "2",
+    "temporal": [
+      {
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2008-04-02T00:00:00.000Z",
+            "EndingDateTime": "2008-07-24T23:59:59.000Z"
+          }
+        ],
+        "PrecisionOfSeconds": 0,
+        "EndsAtPresentFlag": false
+      }
+    ],
+    "existing_metadata_associations": [
+      {
+        "Type": "INPUT",
+        "Description": "Geometric parameters of sun and view angles",
+        "EntryId": "MIB2GEOP",
+        "Version": "2"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Terrain-projected Level 1B2 data",
+        "EntryId": "MI1B2T",
+        "Version": "3"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Ellipsoid-projected Level 1B2 data",
+        "EntryId": "MI1B2E",
+        "Version": "3"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Cloud Masks",
+        "EntryId": "MIRCCMF",
+        "Version": "1"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "MISR radiometric and configuration parameters",
+        "EntryId": "MIANCARP",
+        "Version": "2"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Geographic data",
+        "EntryId": "MIANCAGP",
+        "Version": "1"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Climatology",
+        "EntryId": "MIANACP",
+        "Version": "1"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Atmosphere and surface climatology",
+        "EntryId": "MIANTASC",
+        "Version": "2"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Tropical ocean atmosphere corrections",
+        "EntryId": "MIANTOAC",
+        "Version": "1"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Radiative transfer information",
+        "EntryId": "MIANSMT",
+        "Version": "2"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Land surface biome",
+        "EntryId": "MIANLDBM",
+        "Version": "1"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Configuration file for PGE",
+        "EntryId": "MICNFG",
+        "Version": "2"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [
+      {
+        "url": "https://asdc.larc.nasa.gov/documents/misr/MISR_ATBDs.pdf",
+        "priority": 1,
+        "source": "official_ATBD_designation",
+        "description": "NASA EOS ATB Documents: MISR"
+      }
+    ],
+    "decision_tree_branch": "[1] YES: ATBD in related_urls is the primary source"
+  },
+  "source_documents": [
+    {
+      "key": "cmr_global",
+      "title": "CMR granule names of the global MISR products for orbit O044103",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:ATSM2AEF|001",
+      "title": "CMR granule InputGranules: ATSM2AEF 001 (earliest and latest 50 of 27 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3417608766-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:ATSM2LSF|001",
+      "title": "CMR granule InputGranules: ATSM2LSF 001 (earliest and latest 50 of 26 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3417608836-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_record:ATSM2AEF|001",
+      "title": "CMR abstract: ATSM2AEF 001",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3417608766-LARC_CLOUD.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "naming",
+      "title": "MISR File Naming and Versioning Conventions",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/file_descriptions.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": false,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": false,
+        "VALID": false
+      }
+    },
+    {
+      "key": "vindex",
+      "title": "MISR Data Versioning Index",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/index.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": false,
+        "mentions_input_data": false,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": false,
+        "VALID": false
+      }
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "naming",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/file_descriptions.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 3330
+    },
+    {
+      "key": "vindex",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/index.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 1407
+    },
+    {
+      "key": "sdpg",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/guide/MISR_Science_Data_Product_Guide.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 84443
+    },
+    {
+      "key": "arctas",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/field_campaign_imagery/arctas.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 5732
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "ATSM2AEF",
+      "version": "001",
+      "level": "2"
+    },
+    "primary_parents": [
+      "MIL2ASAF 002"
+    ],
+    "supporting_parents": [],
+    "derived_children": [],
+    "related": [
+      "ATSM2LSF 001",
+      "MIL2ASAE 002"
+    ]
+  },
+  "relationships": [
+    {
+      "shortname": "ATSM2AEF",
+      "version": "001",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "MIL2ASAF",
+      "related_version": "002",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement, cmr",
+      "evidence_source": "other_doc",
+      "evidence_document": "CMR abstract: ATSM2AEF 001",
+      "evidence_url": "https://cmr.earthdata.nasa.gov/search/concepts/C3417608766-LARC_CLOUD.umm_json",
+      "evidence_section": "Abstract",
+      "evidence_page": null,
+      "evidence_quote": "Level 2 FIRSTLOOK Aerosol Product subset for the ARCTAS region version 1 data product.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "CMR granule InputGranules: ATSM2AEF 001 (earliest and latest 50 of 27 granules)",
+          "quote": "MISR_AEROSOL_FIRSTLOOK_P068_O044103_F12_0022_ATS_b32-38.hdf",
+          "verified": true
+        },
+        {
+          "document": "MISR Data Versioning Index",
+          "quote": "Aerosol (MIL2ASAE, MIL2ASAF)",
+          "verified": true
+        },
+        {
+          "document": "CMR granule names of the global MISR products for orbit O044103",
+          "quote": "MIL2ASAF 002 orbit O044103: (none)",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: the collection is the global MISR Level 2 FIRSTLOOK Aerosol (MIL2ASAF) product cut to the ARCTAS blocks 32–38 (same path/orbit/camera/version in the file names); PARENT. The FIRSTLOOK version used (v001, F12_0022) is not in CMR; MIL2ASAF 002 (F13_0023) starts in 2017.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "002"
+        ],
+        "concept_id": "C2873769608-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "parent L2 <= target L2",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "ATSM2AEF",
+      "version": "001",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "related_shortname": "ATSM2LSF",
+      "related_version": "001",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "MISR File Naming and Versioning Conventions",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/misr/version/file_descriptions.pdf",
+      "evidence_section": "MISR File Naming and Versioning Conventions",
+      "evidence_page": 1,
+      "evidence_quote": "Hence, if a program creates more than one type of product file, each product file it creates will share the same version number history.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "CMR granule InputGranules: ATSM2AEF 001 (earliest and latest 50 of 27 granules)",
+          "quote": "_F12_0022_ATS_b32-38.hdf",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: ATSM2LSF 001 (earliest and latest 50 of 26 granules)",
+          "quote": "_F07_0022_ATS_b32-38.hdf",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 4: the aerosol and land surface products are written by the same Level 2 aerosol/surface PGE and share the version number 0022.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "001"
+        ],
+        "concept_id": "C3417608836-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "ATSM2AEF",
+      "version": "001",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "related_to",
+      "related_shortname": "MIL2ASAE",
+      "related_version": "002",
+      "fixed_version": [
+        "002",
+        "MIL2ASAE V002 holds the F12_0022 files for these orbits (Step 2 would give 003)"
+      ],
+      "version_status": "substituted",
+      "version_basis": "MIL2ASAE V002 holds the F12_0022 files for these orbits (Step 2 would give 003) (the Step 2 rule would give 003)",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "MISR Data Versioning Index",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/misr/version/index.pdf",
+      "evidence_section": "Level 2 Aerosol/Surface and TOA/Cloud Products",
+      "evidence_page": 1,
+      "evidence_quote": "Aerosol (MIL2ASAE, MIL2ASAF)",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "CMR granule names of the global MISR products for orbit O044103",
+          "quote": "MISR_AM1_AS_AEROSOL_P068_O044103_F12_0022.hdf",
+          "verified": true
+        },
+        {
+          "document": "CMR abstract: ATSM2AEF 001",
+          "quote": "FIRSTLOOK processing uses the new time dependence of the Atmospheric and Surface Climatology (TASC) from the same month/previous year.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "rationale": "Decision step 6: the standard Level 2 Aerosol product (final ancillary inputs) from the same software version (F12_0022) covers the same orbits; RELATED.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "002",
+          "003"
+        ],
+        "concept_id": "C3417629474-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "granule_level_check": {
+    "collection": "ATSM2AEF|001",
+    "granules": 27,
+    "sample": "MISR_AEROSOL_FIRSTLOOK_P068_O044103_F12_0022_ATS_b32-38.hdf",
+    "sample_time": {
+      "RangeDateTime": {
+        "BeginningDateTime": "2008-04-02T21:21:37.722Z",
+        "EndingDateTime": "2008-04-02T21:24:03.764Z"
+      }
+    },
+    "with_InputGranules": 0
+  },
+  "existing_associations_check": [
+    {
+      "collection": "ATSM2AEF|001",
+      "Type": "INPUT",
+      "EntryId": "MIB2GEOP",
+      "Version": "2",
+      "self_reference": false
+    },
+    {
+      "collection": "ATSM2AEF|001",
+      "Type": "INPUT",
+      "EntryId": "MI1B2T",
+      "Version": "3",
+      "self_reference": false
+    },
+    {
+      "collection": "ATSM2AEF|001",
+      "Type": "INPUT",
+      "EntryId": "MI1B2E",
+      "Version": "3",
+      "self_reference": false
+    },
+    {
+      "collection": "ATSM2AEF|001",
+      "Type": "INPUT",
+      "EntryId": "MIRCCMF",
+      "Version": "1",
+      "self_reference": false
+    },
+    {
+      "collection": "ATSM2AEF|001",
+      "Type": "INPUT",
+      "EntryId": "MIANCARP",
+      "Version": "2",
+      "self_reference": false
+    },
+    {
+      "collection": "ATSM2AEF|001",
+      "Type": "INPUT",
+      "EntryId": "MIANCAGP",
+      "Version": "1",
+      "self_reference": false
+    },
+    {
+      "collection": "ATSM2AEF|001",
+      "Type": "INPUT",
+      "EntryId": "MIANACP",
+      "Version": "1",
+      "self_reference": false
+    },
+    {
+      "collection": "ATSM2AEF|001",
+      "Type": "INPUT",
+      "EntryId": "MIANTASC",
+      "Version": "2",
+      "self_reference": false
+    },
+    {
+      "collection": "ATSM2AEF|001",
+      "Type": "INPUT",
+      "EntryId": "MIANTOAC",
+      "Version": "1",
+      "self_reference": false
+    },
+    {
+      "collection": "ATSM2AEF|001",
+      "Type": "INPUT",
+      "EntryId": "MIANSMT",
+      "Version": "2",
+      "self_reference": false
+    },
+    {
+      "collection": "ATSM2AEF|001",
+      "Type": "INPUT",
+      "EntryId": "MIANLDBM",
+      "Version": "1",
+      "self_reference": false
+    },
+    {
+      "collection": "ATSM2AEF|001",
+      "Type": "INPUT",
+      "EntryId": "MICNFG",
+      "Version": "2",
+      "self_reference": false
+    }
+  ],
+  "metadata_findings": [
+    "12 existing INPUT associations copy the inputs of the global product (e.g. MIB2GEOP, MI1B2T, MI1B2E, MIRCCMF, …); by rule 1c-1 they are not inputs of the subset, whose only parent is MIL2ASAF.",
+    "8 associations write the Version without the leading zeros CMR uses, so they do not resolve: MIB2GEOP '2' (CMR: ['002', '003']), MI1B2T '3' (CMR: ['003', '004']), MI1B2E '3' (CMR: ['003', '004']), MIRCCMF '1' (CMR: ['001', '002']), MIANCARP '2' (CMR: ['002']), MIANCAGP '1' (CMR: ['001']), MIANACP '1' (CMR: ['001']), MIANTASC '2' (CMR: ['002']).",
+    "4 associations name ShortNames that are not CMR collections: MIANTOAC, MIANSMT, MIANLDBM, MICNFG.",
+    "No association to the global product it was cut from (MIL2ASAF).",
+    "Linked page returns HTTP 403: https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA21927",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/project/MISR",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/project/MISR/ATSM2AEF_001",
+    "No document describes the ARCTAS subsets (block range, orbit selection); the linked documents describe the global MISR products and the ARCTAS imagery.",
+    "The FIRSTLOOK version these files were cut from (v001; F12_0022 / F07_0022) is no longer in CMR; MIL2ASAF/MIL2ASLF 002 hold only F13_0023/F08_0023 files from 2017 although their TemporalExtents start in 1999."
+  ],
+  "excluded": [
+    {
+      "candidate": "Inputs of the global products (MI1B1, MIRCCMF, MIANTASC, MIANCARP, MIANCAGP, MIANACP, … and the global L1B2/GEO for the L2 subsets)",
+      "reason": "indirect",
+      "detail": "Rule 1c-1: the subsets were cut from finished global files."
+    },
+    {
+      "candidate": "ATSMIB2E / ATSMIB2T / ATSMIGEO as inputs of ATSM2AEF / ATSM2LSF / ATSM2STF",
+      "reason": "indirect",
+      "detail": "The L2 subsets were not produced from the L1B2 subsets."
+    },
+    {
+      "candidate": "MIL2ASAF / MIL2ASLF version 001",
+      "reason": "not_in_cmr",
+      "evidence": "fl_v002_start",
+      "detail": "The version actually subset; CMR holds 002 only."
+    },
+    {
+      "candidate": "Later versions of the parents (MI1B2E/T 004, MIB2GEOP 003, MIL2ASAE/ASLS 003, MIL2TCST)",
+      "reason": "no_lineage_relationship",
+      "detail": "Reprocessings or standard products not used for these files."
+    }
+  ],
+  "csv": {
+    "path": "Reports/ASDC/MISR_ARCTAS/ATSM2AEF_V001_lineage.csv",
+    "rows": 3,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "existing_associations_review": [],
+  "broken_links": {
+    "https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA21927": 403,
+    "https://asdc.larc.nasa.gov/project/MISR": 404,
+    "https://asdc.larc.nasa.gov/project/MISR/ATSM2AEF_001": 404
+  }
+}

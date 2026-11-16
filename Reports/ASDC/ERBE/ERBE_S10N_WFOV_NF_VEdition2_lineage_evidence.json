@@ -1,0 +1,449 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-16T17:41:44+00:00",
+  "related_records": {
+    "ERBE_S7_NAT": {
+      "version": "1",
+      "concept_id": "C3880596470-LARC_CLOUD"
+    },
+    "ERBE_S10N_WFV_NF_NAT": {
+      "version": "1",
+      "concept_id": "C3880595831-LARC_CLOUD"
+    },
+    "ERBE_S10N_WFV_SF_NAT": {
+      "version": "1",
+      "concept_id": "C3880595971-LARC_CLOUD"
+    }
+  },
+  "parameters": {
+    "collection_short_name": "ERBE_S10N_WFOV_NF",
+    "collection_version": "Edition2",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 1,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "ERBE_S10N_WFOV_NF",
+    "version": "Edition2",
+    "concept_id": "C3880595853-LARC_CLOUD",
+    "revision_id": 10,
+    "entry_title": "Earth Radiation Budget Experiment (ERBE) S-10N (Nonscanner-only) Wide Field of View (WFOV) Numerical Filter (NF) Radiant Flux and Albedo Edition 2 in Native Format",
+    "processing_level": "3",
+    "temporal": [
+      {
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "1984-11-01T00:00:00.000000Z",
+            "EndingDateTime": "1999-09-30T23:59:59.999999Z"
+          }
+        ]
+      }
+    ],
+    "existing_metadata_associations": [
+      {
+        "Description": "Succeeding version",
+        "EntryId": "ERBE_S10N_WFOV_NF",
+        "Type": "CHILD",
+        "Version": "Edition3"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [],
+    "decision_tree_branch": "[2] NO: no ATBD in related_urls; the ERBE S-10N data set document and the edition Data Quality Summaries are the primary sources"
+  },
+  "source_documents": [
+    {
+      "key": "project",
+      "title": "ERBE project guide (data products and data sets)",
+      "url": "https://asdc.larc.nasa.gov/documents/erbe/guide/erbe_project.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "qs_ed2",
+      "title": "ERBE S10N_WFOV ERBS Edition2 Data Quality Summary",
+      "url": "https://asdc.larc.nasa.gov/documents/erbe/quality_summaries/s10n_wfov/erbe_s10n_wfov_nf_sf_erbs_edition2.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "qs_ed3",
+      "title": "ERBE S10N_WFOV ERBS Edition3 Data Quality Summary",
+      "url": "https://asdc.larc.nasa.gov/documents/erbe/quality_summaries/s10n_wfov/erbe_s10n_wfov_nf_sf_erbs_edition3.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "s10n_guide",
+      "title": "ERBE Earth Radiant Fluxes and Albedo for Month Nonscanner (S-10N) Data Set Document",
+      "url": "https://asdc.larc.nasa.gov/documents/erbe/guide/erbe_s10n.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "s10n_guide",
+      "url": "https://asdc.larc.nasa.gov/documents/erbe/guide/erbe_s10n.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 86587
+    },
+    {
+      "key": "project",
+      "url": "https://asdc.larc.nasa.gov/documents/erbe/guide/erbe_project.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 81811
+    },
+    {
+      "key": "overview",
+      "url": "https://asdc.larc.nasa.gov/documents/erbe/readme/erbe_overview.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 7109
+    },
+    {
+      "key": "qs_ed2",
+      "url": "https://asdc.larc.nasa.gov/documents/erbe/quality_summaries/s10n_wfov/erbe_s10n_wfov_nf_sf_erbs_edition2.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 24609
+    },
+    {
+      "key": "qs_ed3",
+      "url": "https://asdc.larc.nasa.gov/documents/erbe/quality_summaries/s10n_wfov/erbe_s10n_wfov_nf_sf_erbs_edition3.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 25231
+    },
+    {
+      "key": "readme_ed2",
+      "url": "https://asdc.larc.nasa.gov/documents/erbe/readme/readme_erbe_s10n_wfov_nf_edition2.txt",
+      "status": "ok",
+      "kind": "text",
+      "text_chars": 152189
+    },
+    {
+      "key": "readme_ed3",
+      "url": "https://asdc.larc.nasa.gov/documents/erbe/readme/readme_erbe_s10n_wfov_nf_edition3.txt",
+      "status": "ok",
+      "kind": "text",
+      "text_chars": 13562
+    },
+    {
+      "key": "notice",
+      "url": "https://asdc.larc.nasa.gov/documents/erbe/readme/readme_erbe_s10n_wfv_nf_nat_dmonotice1.txt",
+      "status": "ok",
+      "kind": "text",
+      "text_chars": 2479
+    },
+    {
+      "key": "dqs4",
+      "url": "https://asdc.larc.nasa.gov/documents/measures/quality_summaries/ERBE-Measures_DQS.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 50917
+    },
+    {
+      "key": "dqs41",
+      "url": "https://asdc.larc.nasa.gov/documents/measures/quality_summaries/ERBS_Ed4.1_DQS.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 12538
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "ERBE_S10N_WFOV_NF",
+      "version": "Edition2",
+      "level": "3"
+    },
+    "primary_parents": [
+      "ERBE_S7_NAT 1"
+    ],
+    "supporting_parents": [],
+    "derived_children": [],
+    "related": [
+      "ERBE_S10N_WFOV_SF Edition2",
+      "ERBE_S10N_WFV_NF_NAT 1"
+    ]
+  },
+  "relationships": [
+    {
+      "shortname": "ERBE_S10N_WFOV_NF",
+      "version": "Edition2",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "aggregated_from",
+      "related_shortname": "ERBE_S7_NAT",
+      "related_version": "1",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "ERBE S10N_WFOV ERBS Edition2 Data Quality Summary",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/erbe/quality_summaries/s10n_wfov/erbe_s10n_wfov_nf_sf_erbs_edition2.pdf",
+      "evidence_section": "Nature of Data Product",
+      "evidence_page": 1,
+      "evidence_quote": "Instantaneous TOA fluxes from the ERBE/ERBS S7 product have been spatially",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "ERBE Earth Radiant Fluxes and Albedo for Month Nonscanner (S-10N) Data Set Document",
+          "quote": "An archival product, called the S-7, is produced at this point to retain detailed time histories of estimates of the radiant fluxes at the TOA.",
+          "verified": true
+        },
+        {
+          "document": "ERBE project guide (data products and data sets)",
+          "quote": "The S-7 contains 4-second averaged nonscanner measurements and 32-second estimates of the longwave and shortwave flux at the top of",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2 (aggregation): the S7 instantaneous nonscanner TOA fluxes are averaged on the 5° numerical filter grid and in time; PARENT. CMR holds only the original S7 (version 1).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "1"
+        ],
+        "concept_id": "C3880596470-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "parent L2 <= target L3",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "ERBE_S10N_WFOV_NF",
+      "version": "Edition2",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "related_shortname": "ERBE_S10N_WFOV_SF",
+      "related_version": "Edition2",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "ERBE Earth Radiant Fluxes and Albedo for Month Nonscanner (S-10N) Data Set Document",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/erbe/guide/erbe_s10n.pdf",
+      "evidence_section": "Summary of Parameters",
+      "evidence_page": 2,
+      "evidence_quote": "The S-10N consists of two disk files per month, one for WFOV numerical filter and one for WFOV shape factor.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "ERBE S10N_WFOV ERBS Edition3 Data Quality Summary",
+          "quote": "Instantaneous TOA fluxes have been spatially averaged on 5° and 10° equal-angle grids using numerical filter and shape factor techniques, respectively.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 4: the Edition2 numerical filter and shape factor files are produced together each month.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "Edition2",
+          "Edition3"
+        ],
+        "concept_id": "C3880596015-LARC_CLOUD",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "ERBE_S10N_WFOV_NF",
+      "version": "Edition2",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "version_of",
+      "related_shortname": "ERBE_S10N_WFV_NF_NAT",
+      "related_version": "1",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "ERBE S10N_WFOV ERBS Edition2 Data Quality Summary",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/erbe/quality_summaries/s10n_wfov/erbe_s10n_wfov_nf_sf_erbs_edition2.pdf",
+      "evidence_section": "Algorithm Changes Between Edition2 and Original Release",
+      "evidence_page": 2,
+      "evidence_quote": "The major differences between Edition2 and the original release are in the treatment of monthly mean fluxes",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "ERBE S10N_WFOV ERBS Edition2 Data Quality Summary",
+          "quote": "While the original release of the ERBE S10N_WFOV ERBS monthly mean dataset covered data between November 1984 to November 1995",
+          "verified": true
+        },
+        {
+          "document": "ERBE project guide (data products and data sets)",
+          "quote": "ERBE_S10N_WFV_NF_NAT",
+          "verified": true
+        },
+        {
+          "document": "ERBE project guide (data products and data sets)",
+          "quote": "ERBE_S10N_WFV_SF_NAT",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Decision step 6: Edition2 reprocesses the original S10N release (ERBE_S10N_WFV_*_NAT, Nov 1984 – Nov 1995); mapping of \"the original release\" to the NAT collection inferred from the project guide.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "1"
+        ],
+        "concept_id": "C3880595831-LARC_CLOUD",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "granule_level_check": {
+    "collection": "ERBE_S10N_WFOV_NF|Edition2",
+    "granules": 172,
+    "sample": "ERBE_S10N_WFOV_NF_ERBS_Edition2.198411",
+    "sample_time": {
+      "RangeDateTime": {
+        "BeginningDateTime": "1984-11-01T00:00:00.000Z",
+        "EndingDateTime": "1984-11-30T00:00:00.000Z"
+      }
+    },
+    "with_InputGranules": 0
+  },
+  "existing_associations_check": [
+    {
+      "collection": "ERBE_S10N_WFOV_NF|Edition2",
+      "Type": "CHILD",
+      "EntryId": "ERBE_S10N_WFOV_NF",
+      "Version": "Edition3",
+      "self_reference": false
+    }
+  ],
+  "metadata_findings": [
+    "MetadataAssociation CHILD ('Succeeding version') → ERBE_S10N_WFOV_NF Edition3 is another version of the same product; the lineage skills never list it.",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/project/ERBE",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/citing-data",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/project/GEWEX-RFA",
+    "No ATBD in RelatedUrls.",
+    "No association to ERBE_S7_NAT (the instantaneous-flux source) or to the original release ERBE_S10N_WFV_*_NAT.",
+    "The ANOMALIES link is the original-release (S-10N/S-4N/S-4GN, 1999) data-month notice; the Edition-specific READMEs only describe the read software."
+  ],
+  "excluded": [
+    {
+      "candidate": "Edition2 ↔ Edition3, Edition4 ↔ Edition4.1 (same ShortName)",
+      "reason": "same_product",
+      "detail": "Never listed (Generation skill 1a)."
+    },
+    {
+      "candidate": "ERBE S10N WFOV Edition3_Rev1",
+      "reason": "not_in_cmr",
+      "evidence": "rev1"
+    },
+    {
+      "candidate": "SORCE TSI (SOR3TSID / SOR3TSI6)",
+      "reason": "ambiguous",
+      "evidence": "sorce",
+      "detail": "Product and version not named."
+    },
+    {
+      "candidate": "ISCCP (unfiltering)",
+      "reason": "ambiguous",
+      "evidence": "isccp",
+      "detail": "ISCCP product (D1, DX, …) not named."
+    },
+    {
+      "candidate": "CERES-TRMM (LW calibration transfer)",
+      "reason": "ambiguous",
+      "evidence": "trmm",
+      "detail": "CERES TRMM product not named."
+    },
+    {
+      "candidate": "GEWEX SRB Release 4 beta (Edition4.1 filled global series)",
+      "reason": "not_in_cmr",
+      "evidence": "gewex",
+      "detail": "A beta version; CMR holds Rel4-IP / Rel4_1-IP collections."
+    },
+    {
+      "candidate": "ERBS nonscanner telemetry and calibration data",
+      "reason": "not_in_cmr",
+      "evidence": "telemetry"
+    },
+    {
+      "candidate": "ERBE MFOV nonscanner products",
+      "reason": "not_an_input",
+      "evidence": "mfov",
+      "detail": "Edition2 removed the use of MFOV data."
+    },
+    {
+      "candidate": "ERBE_S8_NAT, ERBE_TSI_ERBS_NAT, S-4/S-4G/S-9/S-10 products",
+      "reason": "no_documented_relationship",
+      "detail": "Siblings or upstream of the original processing only."
+    }
+  ],
+  "csv": {
+    "path": "Reports/ASDC/ERBE/ERBE_S10N_WFOV_NF_VEdition2_lineage.csv",
+    "rows": 3,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "existing_associations_review": [],
+  "broken_links": {
+    "https://asdc.larc.nasa.gov/project/ERBE": 404,
+    "https://asdc.larc.nasa.gov/citing-data": 404,
+    "https://asdc.larc.nasa.gov/project/GEWEX-RFA": 404
+  }
+}

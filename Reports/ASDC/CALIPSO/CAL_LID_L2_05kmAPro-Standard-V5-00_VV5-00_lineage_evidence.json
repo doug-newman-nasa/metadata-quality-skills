@@ -1,0 +1,1016 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-16T16:30:48+00:00",
+  "related_records": {},
+  "parameters": {
+    "collection_short_name": "CAL_LID_L2_05kmAPro-Standard-V5-00",
+    "collection_version": "V5-00",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 1,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "CAL_LID_L2_05kmAPro-Standard-V5-00",
+    "version": "V5-00",
+    "concept_id": "C3551627908-LARC_CLOUD",
+    "revision_id": 18,
+    "entry_title": "CALIPSO Lidar Level 2 Aerosol Profile, V5-00",
+    "processing_level": "2",
+    "temporal": [
+      {
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2006-06-12T00:53:43.000Z",
+            "EndingDateTime": "2023-06-30T22:32:44.999Z"
+          }
+        ],
+        "EndsAtPresentFlag": false
+      }
+    ],
+    "existing_metadata_associations": [
+      {
+        "Type": "PARENT",
+        "EntryId": "CAL_LID_L2_05kmAPro-Standard-V4-21",
+        "Description": "Preceding version",
+        "Version": "V4-21"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [],
+    "decision_tree_branch": "[2] NO: no ATBD in related_urls; the CALIPSO Data Products Catalog and the product's Data Description and Quality Summary are the primary sources"
+  },
+  "source_documents": [
+    {
+      "key": "dpc",
+      "title": "CALIPSO Data Products Catalog, PC-SCI-503 Release 5.00 (Oct 2025)",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/CALIPSO_DPC_Rev5x00.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "faq",
+      "title": "CALIPSO Data Users Guide: FAQ",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/user_guides/CALIPSO_Data_Users_Guide_FAQ_mod2.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "qs_lay",
+      "title": "Data Description and Quality Summary: Lidar Level 2 Layer products (V5.00)",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_lay_v5-00_desc_qs_mod2.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "qs_pro",
+      "title": "Data Description and Quality Summary: Lidar Level 2 Profile products (V5.00)",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_pro_v5-00_desc_qs.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "qs_trop",
+      "title": "Data Description and Quality Summary: Lidar Level 3 Tropospheric Aerosol (V5.00)",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l3_tropoaero_V5-00_desc_qs.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "qs_vfm",
+      "title": "Data Description and Quality Summary: Lidar Level 2 Vertical Feature Mask (V5.00)",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_vfm_v5-00_desc_qs_mod2.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "dpc",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/CALIPSO_DPC_Rev5x00.pdf",
+      "status": "ok",
+      "pages": 220,
+      "text_chars": 424229
+    },
+    {
+      "key": "faq",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/user_guides/CALIPSO_Data_Users_Guide_FAQ_mod2.pdf",
+      "status": "ok",
+      "pages": 63,
+      "text_chars": 191825
+    },
+    {
+      "key": "qs_l1",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l1_V5-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 67,
+      "text_chars": 192119
+    },
+    {
+      "key": "qs_lay",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_lay_v5-00_desc_qs_mod2.pdf",
+      "status": "ok",
+      "pages": 123,
+      "text_chars": 396412
+    },
+    {
+      "key": "qs_pro",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_pro_v5-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 92,
+      "text_chars": 280174
+    },
+    {
+      "key": "qs_vfm",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_vfm_v5-00_desc_qs_mod2.pdf",
+      "status": "ok",
+      "pages": 72,
+      "text_chars": 217433
+    },
+    {
+      "key": "qs_psc3",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_pscmask_v3-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 24,
+      "text_chars": 68316
+    },
+    {
+      "key": "qs_psc4",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_pscmask_v4-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 28,
+      "text_chars": 63233
+    },
+    {
+      "key": "atbd_psc4",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/ATBD/CAL_L2_PSCMask_V4_ATBD.pdf",
+      "status": "ok",
+      "pages": 31,
+      "text_chars": 51089
+    },
+    {
+      "key": "qs_trop",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l3_tropoaero_V5-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 48,
+      "text_chars": 130254
+    },
+    {
+      "key": "qs_strat",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l3_strataero_V2-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 22,
+      "text_chars": 52839
+    },
+    {
+      "key": "qs_ice",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l3_icecloud_V2-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 27,
+      "text_chars": 66464
+    },
+    {
+      "key": "qs_cop",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l3_cloud-occur_v2-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 37,
+      "text_chars": 85985
+    },
+    {
+      "key": "qs_gewex",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l3_gewexcloud_V2-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 47,
+      "text_chars": 123192
+    },
+    {
+      "key": "qs_iir_trk",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_iir_l2_v5-00_track_desc_qs_mod2.pdf",
+      "status": "ok",
+      "pages": 52,
+      "text_chars": 140216
+    },
+    {
+      "key": "qs_iir_swt",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_iir_l2_v5-00_swath_desc_qs.pdf",
+      "status": "ok",
+      "pages": 35,
+      "text_chars": 86832
+    },
+    {
+      "key": "qs_iir_l3",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_iir_l3_gewexcloud_V2-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 24,
+      "text_chars": 61832
+    },
+    {
+      "key": "qs_wfc",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/WFC_L1BScansProducts_3-01.pdf",
+      "status": "ok",
+      "pages": 7,
+      "text_chars": 21063
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "CAL_LID_L2_05kmAPro-Standard-V5-00",
+      "version": "V5-00",
+      "level": "2"
+    },
+    "primary_parents": [
+      "CAL_LID_L1-Standard-V5-00 V5-00"
+    ],
+    "supporting_parents": [
+      "M2I1NXASM 5.12.4",
+      "M2I3NVASM 5.12.4"
+    ],
+    "derived_children": [
+      "CAL_LID_L3_Tropospheric_APro_AllSky-Standard-V5-00 V5-00",
+      "CAL_LID_L3_Tropospheric_APro_CloudFree-Standard-V5-00 V5-00",
+      "CAL_LID_L3_Tropospheric_APro_CloudySkyOpaque-Standard-V5-00 V5-00",
+      "CAL_LID_L3_Tropospheric_APro_CloudySkyTransparent-Standard-V5-00 V5-00"
+    ],
+    "related": [
+      "CAL_LID_L2_01kmCLay-Standard-V5-00 V5-00",
+      "CAL_LID_L2_05kmALay-Standard-V5-00 V5-00",
+      "CAL_LID_L2_05kmAPro-Standard-V4-51 V4-51",
+      "CAL_LID_L2_05kmCLay-Standard-V5-00 V5-00",
+      "CAL_LID_L2_05kmCPro-Standard-V5-00 V5-00",
+      "CAL_LID_L2_05kmMLay-Standard-V5-00 V5-00",
+      "CAL_LID_L2_333mMLay-Standard-V5-00 V5-00",
+      "CAL_LID_L2_VFM-Standard-V5-00 V5-00"
+    ]
+  },
+  "relationships": [
+    {
+      "shortname": "CAL_LID_L2_05kmAPro-Standard-V5-00",
+      "version": "V5-00",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "CAL_LID_L1-Standard-V5-00",
+      "related_version": "V5-00",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "CALIPSO Data Users Guide: FAQ",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/calipso/user_guides/CALIPSO_Data_Users_Guide_FAQ_mod2.pdf",
+      "evidence_section": "Lidar Level 2 products",
+      "evidence_page": 15,
+      "evidence_quote": "The level 2 (L2) analyses of the CALIOP lidar backscatter data begins with an attempt to locate all coherent “features” - i.e., clouds and aerosol layers - in each granule of the L1B data.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "Data Description and Quality Summary: Lidar Level 2 Layer products (V5.00)",
+          "quote": "the Lidar Level 1 Production Date Time field reports the file creation time and date for the CALIOP Level 1 Lidar data file that provided the source data used in the Level 2 analyses.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Decision step 2: the L2 analysis detects and retrieves features in each L1B granule; 05kmAPro is an output of that analysis; PARENT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "V5-00"
+        ],
+        "concept_id": "C3292851686-LARC_CLOUD",
+        "related_level": "1B",
+        "level_progression_valid": true,
+        "level_check": "parent L1 <= target L2",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "CAL_LID_L2_05kmAPro-Standard-V5-00",
+      "version": "V5-00",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "M2I1NXASM",
+      "related_version": "5.12.4",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "Data Description and Quality Summary: Lidar Level 2 Layer products (V5.00)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_lay_v5-00_desc_qs_mod2.pdf",
+      "evidence_section": "Metadata: GMAO_Files_Used",
+      "evidence_page": 74,
+      "evidence_quote": "Lists the four MERRA-2 meteorological data files used to create the level 2 data files for this granule.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "CALIPSO Data Users Guide: FAQ",
+          "quote": "Also included in the profile products are the MERRA-2 meteorological data",
+          "verified": true
+        },
+        {
+          "document": "CALIPSO Data Products Catalog, PC-SCI-503 Release 5.00 (Oct 2025)",
+          "quote": "All final versions of the CALIPSO data products use MERRA-2",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Decision step 3: MERRA-2 meteorology (four files per granule) used in the L2 analyses; ancillary; INPUT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "5.12.4"
+        ],
+        "concept_id": "C1276812820-GES_DISC",
+        "related_level": "4",
+        "level_progression_valid": true,
+        "level_check": "not applicable (INPUT)",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "CAL_LID_L2_05kmAPro-Standard-V5-00",
+      "version": "V5-00",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "M2I3NVASM",
+      "related_version": "5.12.4",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "Data Description and Quality Summary: Lidar Level 2 Layer products (V5.00)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_lay_v5-00_desc_qs_mod2.pdf",
+      "evidence_section": "Metadata: GMAO_Files_Used",
+      "evidence_page": 74,
+      "evidence_quote": "Lists the four MERRA-2 meteorological data files used to create the level 2 data files for this granule.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "CALIPSO Data Users Guide: FAQ",
+          "quote": "Also included in the profile products are the MERRA-2 meteorological data",
+          "verified": true
+        },
+        {
+          "document": "CALIPSO Data Products Catalog, PC-SCI-503 Release 5.00 (Oct 2025)",
+          "quote": "All final versions of the CALIPSO data products use MERRA-2",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Decision step 3: MERRA-2 meteorology (four files per granule) used in the L2 analyses; ancillary; INPUT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "5.12.4"
+        ],
+        "concept_id": "C1276812900-GES_DISC",
+        "related_level": "4",
+        "level_progression_valid": true,
+        "level_check": "not applicable (INPUT)",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "CAL_LID_L2_05kmAPro-Standard-V5-00",
+      "version": "V5-00",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "CAL_LID_L3_Tropospheric_APro_AllSky-Standard-V5-00",
+      "related_version": "V5-00",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": "V5-00",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "Data Description and Quality Summary: Lidar Level 3 Tropospheric Aerosol (V5.00)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l3_tropoaero_V5-00_desc_qs.pdf",
+      "evidence_section": "Introduction",
+      "evidence_page": 3,
+      "evidence_quote": "All level 3 parameters in the version 5.0 release are derived from the version 5.0 CALIOP level 2 aerosol profile product and are quality screened prior to averaging.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "CALIPSO Data Products Catalog, PC-SCI-503 Release 5.00 (Oct 2025)",
+          "quote": "All level 3 parameters are derived from the CALIPSO level 2 5 km aerosol profile products.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2 (aggregation): monthly gridded means of the V5.0 L2 5 km aerosol profiles, screened by sky condition; PARENT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "V5-00"
+        ],
+        "concept_id": "C3964849274-LARC_CLOUD",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "level_check": "child L3 >= target L2",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "CAL_LID_L2_05kmAPro-Standard-V5-00",
+      "version": "V5-00",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "CAL_LID_L3_Tropospheric_APro_CloudFree-Standard-V5-00",
+      "related_version": "V5-00",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": "V5-00",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "Data Description and Quality Summary: Lidar Level 3 Tropospheric Aerosol (V5.00)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l3_tropoaero_V5-00_desc_qs.pdf",
+      "evidence_section": "Introduction",
+      "evidence_page": 3,
+      "evidence_quote": "All level 3 parameters in the version 5.0 release are derived from the version 5.0 CALIOP level 2 aerosol profile product and are quality screened prior to averaging.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "CALIPSO Data Products Catalog, PC-SCI-503 Release 5.00 (Oct 2025)",
+          "quote": "All level 3 parameters are derived from the CALIPSO level 2 5 km aerosol profile products.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2 (aggregation): monthly gridded means of the V5.0 L2 5 km aerosol profiles, screened by sky condition; PARENT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "V5-00"
+        ],
+        "concept_id": "C3964849262-LARC_CLOUD",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "level_check": "child L3 >= target L2",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "CAL_LID_L2_05kmAPro-Standard-V5-00",
+      "version": "V5-00",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "CAL_LID_L3_Tropospheric_APro_CloudySkyOpaque-Standard-V5-00",
+      "related_version": "V5-00",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": "V5-00",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "Data Description and Quality Summary: Lidar Level 3 Tropospheric Aerosol (V5.00)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l3_tropoaero_V5-00_desc_qs.pdf",
+      "evidence_section": "Introduction",
+      "evidence_page": 3,
+      "evidence_quote": "All level 3 parameters in the version 5.0 release are derived from the version 5.0 CALIOP level 2 aerosol profile product and are quality screened prior to averaging.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "CALIPSO Data Products Catalog, PC-SCI-503 Release 5.00 (Oct 2025)",
+          "quote": "All level 3 parameters are derived from the CALIPSO level 2 5 km aerosol profile products.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2 (aggregation): monthly gridded means of the V5.0 L2 5 km aerosol profiles, screened by sky condition; PARENT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "V5-00"
+        ],
+        "concept_id": "C3964849249-LARC_CLOUD",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "level_check": "child L3 >= target L2",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "CAL_LID_L2_05kmAPro-Standard-V5-00",
+      "version": "V5-00",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "CAL_LID_L3_Tropospheric_APro_CloudySkyTransparent-Standard-V5-00",
+      "related_version": "V5-00",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": "V5-00",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "Data Description and Quality Summary: Lidar Level 3 Tropospheric Aerosol (V5.00)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l3_tropoaero_V5-00_desc_qs.pdf",
+      "evidence_section": "Introduction",
+      "evidence_page": 3,
+      "evidence_quote": "All level 3 parameters in the version 5.0 release are derived from the version 5.0 CALIOP level 2 aerosol profile product and are quality screened prior to averaging.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "CALIPSO Data Products Catalog, PC-SCI-503 Release 5.00 (Oct 2025)",
+          "quote": "All level 3 parameters are derived from the CALIPSO level 2 5 km aerosol profile products.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2 (aggregation): monthly gridded means of the V5.0 L2 5 km aerosol profiles, screened by sky condition; PARENT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "V5-00"
+        ],
+        "concept_id": "C3964849275-LARC_CLOUD",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "level_check": "child L3 >= target L2",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "CAL_LID_L2_05kmAPro-Standard-V5-00",
+      "version": "V5-00",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "related_shortname": "CAL_LID_L2_01kmCLay-Standard-V5-00",
+      "related_version": "V5-00",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "Data Description and Quality Summary: Lidar Level 2 Profile products (V5.00)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_pro_v5-00_desc_qs.pdf",
+      "evidence_section": "Introduction",
+      "evidence_page": 3,
+      "evidence_quote": "The layer optical depths are derived from the same retrievals used to compute the extinction profiles in the profile products.",
+      "quote_verified": true,
+      "supporting": [],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 4: 05kmAPro and 01kmCLay are outputs of the same V5.00 L2 analysis run.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "V5-00"
+        ],
+        "concept_id": "C3463063995-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "CAL_LID_L2_05kmAPro-Standard-V5-00",
+      "version": "V5-00",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "related_shortname": "CAL_LID_L2_05kmALay-Standard-V5-00",
+      "related_version": "V5-00",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "Data Description and Quality Summary: Lidar Level 2 Profile products (V5.00)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_pro_v5-00_desc_qs.pdf",
+      "evidence_section": "Introduction",
+      "evidence_page": 3,
+      "evidence_quote": "The layer optical depths are derived from the same retrievals used to compute the extinction profiles in the profile products.",
+      "quote_verified": true,
+      "supporting": [],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 4: 05kmAPro and 05kmALay are outputs of the same V5.00 L2 analysis run.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "V5-00"
+        ],
+        "concept_id": "C3463063987-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "CAL_LID_L2_05kmAPro-Standard-V5-00",
+      "version": "V5-00",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "version_of",
+      "related_shortname": "CAL_LID_L2_05kmAPro-Standard-V4-51",
+      "related_version": "V4-51",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "Data Description and Quality Summary: Lidar Level 2 Vertical Feature Mask (V5.00)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_vfm_v5-00_desc_qs_mod2.pdf",
+      "evidence_section": "Data Quality Statement for the V5.00 release",
+      "evidence_page": 26,
+      "evidence_quote": "The magnitude and effects of these changes are frequently illustrated with comparisons to the previous release of the version 4.51 (V4.51) data products.",
+      "quote_verified": true,
+      "supporting": [],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Decision step 6: the V4.51 05kmAPro is the previous release of this product.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "V4-51"
+        ],
+        "concept_id": "C3880521383-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "CAL_LID_L2_05kmAPro-Standard-V5-00",
+      "version": "V5-00",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "related_shortname": "CAL_LID_L2_05kmCLay-Standard-V5-00",
+      "related_version": "V5-00",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "Data Description and Quality Summary: Lidar Level 2 Profile products (V5.00)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_pro_v5-00_desc_qs.pdf",
+      "evidence_section": "Introduction",
+      "evidence_page": 3,
+      "evidence_quote": "The layer optical depths are derived from the same retrievals used to compute the extinction profiles in the profile products.",
+      "quote_verified": true,
+      "supporting": [],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 4: 05kmAPro and 05kmCLay are outputs of the same V5.00 L2 analysis run.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "V5-00"
+        ],
+        "concept_id": "C3463063986-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "CAL_LID_L2_05kmAPro-Standard-V5-00",
+      "version": "V5-00",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "related_shortname": "CAL_LID_L2_05kmCPro-Standard-V5-00",
+      "related_version": "V5-00",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "Data Description and Quality Summary: Lidar Level 2 Profile products (V5.00)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_pro_v5-00_desc_qs.pdf",
+      "evidence_section": "Introduction",
+      "evidence_page": 3,
+      "evidence_quote": "The layer optical depths are derived from the same retrievals used to compute the extinction profiles in the profile products.",
+      "quote_verified": true,
+      "supporting": [],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 4: 05kmAPro and 05kmCPro are outputs of the same V5.00 L2 analysis run.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "V5-00"
+        ],
+        "concept_id": "C3551627896-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "CAL_LID_L2_05kmAPro-Standard-V5-00",
+      "version": "V5-00",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "related_shortname": "CAL_LID_L2_05kmMLay-Standard-V5-00",
+      "related_version": "V5-00",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "Data Description and Quality Summary: Lidar Level 2 Profile products (V5.00)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_pro_v5-00_desc_qs.pdf",
+      "evidence_section": "Introduction",
+      "evidence_page": 3,
+      "evidence_quote": "The layer optical depths are derived from the same retrievals used to compute the extinction profiles in the profile products.",
+      "quote_verified": true,
+      "supporting": [],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 4: 05kmAPro and 05kmMLay are outputs of the same V5.00 L2 analysis run.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "V5-00"
+        ],
+        "concept_id": "C3551627920-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "CAL_LID_L2_05kmAPro-Standard-V5-00",
+      "version": "V5-00",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "related_shortname": "CAL_LID_L2_333mMLay-Standard-V5-00",
+      "related_version": "V5-00",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "Data Description and Quality Summary: Lidar Level 2 Profile products (V5.00)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_pro_v5-00_desc_qs.pdf",
+      "evidence_section": "Introduction",
+      "evidence_page": 3,
+      "evidence_quote": "The layer optical depths are derived from the same retrievals used to compute the extinction profiles in the profile products.",
+      "quote_verified": true,
+      "supporting": [],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 4: 05kmAPro and 333mMLay are outputs of the same V5.00 L2 analysis run.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "V5-00"
+        ],
+        "concept_id": "C3551627915-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "CAL_LID_L2_05kmAPro-Standard-V5-00",
+      "version": "V5-00",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "related_shortname": "CAL_LID_L2_VFM-Standard-V5-00",
+      "related_version": "V5-00",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "Data Description and Quality Summary: Lidar Level 2 Vertical Feature Mask (V5.00)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_vfm_v5-00_desc_qs_mod2.pdf",
+      "evidence_section": "Introduction",
+      "evidence_page": 3,
+      "evidence_quote": "for all features identified in the L1b data by the L2 data analysis algorithms.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "CALIPSO Data Users Guide: FAQ",
+          "quote": "The vertical feature mask (VFM) data product describes the vertical and horizontal distribution of all cloud and aerosol layers detected by CALIOP",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 4: VFM and 05kmAPro are outputs of the same V5.00 L2 analysis run.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "V5-00"
+        ],
+        "concept_id": "C3463064020-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "granule_level_check": {
+    "collection": "CAL_LID_L2_05kmAPro-Standard-V5-00|V5-00",
+    "granules": 161930,
+    "sample": "CAL_LID_L2_05kmAPro-Standard-V5-00.2006-06-12T00-53-43ZN.hdf",
+    "sample_time": {
+      "RangeDateTime": {
+        "BeginningDateTime": "2006-06-12T00:53:43+00:00",
+        "EndingDateTime": "2006-06-12T01:40:18+00:00"
+      }
+    },
+    "with_InputGranules": 0
+  },
+  "existing_associations_check": [
+    {
+      "collection": "CAL_LID_L2_05kmAPro-Standard-V5-00|V5-00",
+      "Type": "PARENT",
+      "EntryId": "CAL_LID_L2_05kmAPro-Standard-V4-21",
+      "Version": "V4-21",
+      "self_reference": false
+    }
+  ],
+  "metadata_findings": [
+    "MetadataAssociation PARENT → 'CAL_LID_L2_05kmAPro-Standard-V4-21' V4-21 does not resolve to a CMR collection.",
+    "Linked document returns 404: https://asdc.larc.nasa.gov/citing-data",
+    "Linked document returns 404: https://asdc.larc.nasa.gov/project/CALIPSO",
+    "No ATBD in RelatedUrls."
+  ],
+  "excluded": [
+    {
+      "candidate": "Raw IIR and WFC Level 0 telemetry; lidar L0 binaries",
+      "reason": "not_in_cmr",
+      "detail": "Not publicly orderable (DPC 3.0); only the lidar L0 HDF translation is a CMR collection."
+    },
+    {
+      "candidate": "GEOS-5 FP-IT CALIPSO subsets (DFPITI3NXASMCAL, DFPITI3NVASMCAL)",
+      "reason": "not_in_cmr",
+      "detail": "Used by older releases."
+    },
+    {
+      "candidate": "CloudSat DEM, IGBP surface types, AFWA/CERES snow and ice maps",
+      "reason": "not_in_cmr",
+      "detail": "Static or remapped ancillaries."
+    },
+    {
+      "candidate": "AMSR wind speeds (ODCOD correction)",
+      "reason": "ambiguous",
+      "detail": "The AMSR product is not named."
+    },
+    {
+      "candidate": "MODIS AOD",
+      "reason": "not_an_input",
+      "detail": "Used offline to build V5 lidar-ratio maps, not per granule."
+    },
+    {
+      "candidate": "Aura MLS v2 Derived Meteorological Products (PSC Mask)",
+      "reason": "not_in_cmr",
+      "detail": "Not a CMR collection."
+    },
+    {
+      "candidate": "Lidar L2 V4.10/V4.20/V4.21, PSC V1.00/V1.10, IIR L2 V4.20",
+      "reason": "not_in_cmr",
+      "detail": "Inputs of the older L3 releases (Trop V4.20/V4.21, Strat V1.01)."
+    },
+    {
+      "candidate": "CAL_LID_L15-Standard-V1-00/V1-01",
+      "reason": "ambiguous",
+      "detail": "Uses \"standard version 4 level 1 and level 2 data\"; the minor version is not stated."
+    },
+    {
+      "candidate": "CAL_MERRA2_ext_05km_V4-5, CAL_MODIS_DTDB_ext_05km_V4-5, CAL_ODCOD_ext_05km_V4-5, CAL_LID_L2_MLay_Diagnostic-Beta-V5-00",
+      "reason": "no_documented_relationship",
+      "detail": "Not described in the fetched documents (beta / external-collaboration products)."
+    }
+  ],
+  "csv": {
+    "path": "Reports/ASDC/CALIPSO/CAL_LID_L2_05kmAPro-Standard-V5-00_VV5-00_lineage.csv",
+    "rows": 15,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "existing_associations_review": [
+    {
+      "collection": "CAL_LID_L2_05kmAPro-Standard-V5-00",
+      "Type": "PARENT",
+      "EntryId": "CAL_LID_L2_05kmAPro-Standard-V4-21",
+      "Version": "V4-21",
+      "resolves_in_cmr": false,
+      "same_product_family": true,
+      "proposed_here": null
+    }
+  ],
+  "broken_links": {
+    "https://asdc.larc.nasa.gov/citing-data": 404,
+    "https://asdc.larc.nasa.gov/project/CALIPSO": 404
+  }
+}

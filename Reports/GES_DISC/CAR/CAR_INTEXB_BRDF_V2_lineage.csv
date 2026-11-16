@@ -1,0 +1,2 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+CAR_INTEXB_BRDF,2,RELATED,CAR_INTEXB_L1C,1,MEDIUM,parallel_product

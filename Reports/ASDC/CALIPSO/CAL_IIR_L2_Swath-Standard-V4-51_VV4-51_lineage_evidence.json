@@ -1,0 +1,419 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-16T16:30:48+00:00",
+  "related_records": {},
+  "parameters": {
+    "collection_short_name": "CAL_IIR_L2_Swath-Standard-V4-51",
+    "collection_version": "V4-51",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 1,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "CAL_IIR_L2_Swath-Standard-V4-51",
+    "version": "V4-51",
+    "concept_id": "C3880518673-LARC_CLOUD",
+    "revision_id": 7,
+    "entry_title": "CALIPSO Infrared Imaging Radiometer (IIR) Level 2 Swath, V4-51",
+    "processing_level": "2",
+    "temporal": [
+      {
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2006-06-12T00:53:43.000Z",
+            "EndingDateTime": "2023-06-30T22:32:44.000Z"
+          }
+        ],
+        "EndsAtPresentFlag": false
+      }
+    ],
+    "existing_metadata_associations": [
+      {
+        "Description": "Preceding version",
+        "EntryId": "CAL_IIR_L2_Swath-Standard-V4-20",
+        "Type": "PARENT",
+        "Version": "V4-20"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [],
+    "decision_tree_branch": "[2] NO: no ATBD in related_urls; the CALIPSO Data Products Catalog and the product's Data Description and Quality Summary are the primary sources"
+  },
+  "source_documents": [
+    {
+      "key": "qs_iir_swt",
+      "title": "Data Description and Quality Summary: IIR Level 2 Swath (V5.00)",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_iir_l2_v5-00_swath_desc_qs.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "qs_iir_trk",
+      "title": "Data Description and Quality Summary: IIR Level 2 Track (V5.00)",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_iir_l2_v5-00_track_desc_qs_mod2.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "dpc",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/CALIPSO_DPC_Rev5x00.pdf",
+      "status": "ok",
+      "pages": 220,
+      "text_chars": 424229
+    },
+    {
+      "key": "faq",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/user_guides/CALIPSO_Data_Users_Guide_FAQ_mod2.pdf",
+      "status": "ok",
+      "pages": 63,
+      "text_chars": 191825
+    },
+    {
+      "key": "qs_l1",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l1_V5-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 67,
+      "text_chars": 192119
+    },
+    {
+      "key": "qs_lay",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_lay_v5-00_desc_qs_mod2.pdf",
+      "status": "ok",
+      "pages": 123,
+      "text_chars": 396412
+    },
+    {
+      "key": "qs_pro",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_pro_v5-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 92,
+      "text_chars": 280174
+    },
+    {
+      "key": "qs_vfm",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_vfm_v5-00_desc_qs_mod2.pdf",
+      "status": "ok",
+      "pages": 72,
+      "text_chars": 217433
+    },
+    {
+      "key": "qs_psc3",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_pscmask_v3-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 24,
+      "text_chars": 68316
+    },
+    {
+      "key": "qs_psc4",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_pscmask_v4-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 28,
+      "text_chars": 63233
+    },
+    {
+      "key": "atbd_psc4",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/ATBD/CAL_L2_PSCMask_V4_ATBD.pdf",
+      "status": "ok",
+      "pages": 31,
+      "text_chars": 51089
+    },
+    {
+      "key": "qs_trop",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l3_tropoaero_V5-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 48,
+      "text_chars": 130254
+    },
+    {
+      "key": "qs_strat",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l3_strataero_V2-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 22,
+      "text_chars": 52839
+    },
+    {
+      "key": "qs_ice",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l3_icecloud_V2-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 27,
+      "text_chars": 66464
+    },
+    {
+      "key": "qs_cop",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l3_cloud-occur_v2-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 37,
+      "text_chars": 85985
+    },
+    {
+      "key": "qs_gewex",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l3_gewexcloud_V2-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 47,
+      "text_chars": 123192
+    },
+    {
+      "key": "qs_iir_trk",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_iir_l2_v5-00_track_desc_qs_mod2.pdf",
+      "status": "ok",
+      "pages": 52,
+      "text_chars": 140216
+    },
+    {
+      "key": "qs_iir_swt",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_iir_l2_v5-00_swath_desc_qs.pdf",
+      "status": "ok",
+      "pages": 35,
+      "text_chars": 86832
+    },
+    {
+      "key": "qs_iir_l3",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_iir_l3_gewexcloud_V2-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 24,
+      "text_chars": 61832
+    },
+    {
+      "key": "qs_wfc",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/WFC_L1BScansProducts_3-01.pdf",
+      "status": "ok",
+      "pages": 7,
+      "text_chars": 21063
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "CAL_IIR_L2_Swath-Standard-V4-51",
+      "version": "V4-51",
+      "level": "2"
+    },
+    "primary_parents": [
+      "CAL_IIR_L2_Track-Standard-V4-51 V4-51"
+    ],
+    "supporting_parents": [],
+    "derived_children": [],
+    "related": [
+      "CAL_IIR_L2_Swath-Standard-V5-00 V5-00"
+    ]
+  },
+  "relationships": [
+    {
+      "shortname": "CAL_IIR_L2_Swath-Standard-V4-51",
+      "version": "V4-51",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "CAL_IIR_L2_Track-Standard-V4-51",
+      "related_version": "V4-51",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "Data Description and Quality Summary: IIR Level 2 Swath (V5.00)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_iir_l2_v5-00_swath_desc_qs.pdf",
+      "evidence_section": "Introduction",
+      "evidence_page": 3,
+      "evidence_quote": "For pixels outside the track, the retrievals originate from the most similar neighboring track pixel.",
+      "quote_verified": true,
+      "supporting": [],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Decision step 2: swath retrievals are propagated from the IIR L2 Track product (same V4 algorithm); PARENT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "V4-51"
+        ],
+        "concept_id": "C3880518924-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "parent L2 <= target L2",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "CAL_IIR_L2_Swath-Standard-V4-51",
+      "version": "V4-51",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "version_of",
+      "related_shortname": "CAL_IIR_L2_Swath-Standard-V5-00",
+      "related_version": "V5-00",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "Data Description and Quality Summary: IIR Level 2 Track (V5.00)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_iir_l2_v5-00_track_desc_qs_mod2.pdf",
+      "evidence_section": "Data Quality Statement for V4.51",
+      "evidence_page": 46,
+      "evidence_quote": "The same V4 algorithm was used to generate these new V4.51 data products and the previous V4.2 data products.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "Data Description and Quality Summary: IIR Level 2 Track (V5.00)",
+          "quote": "The IIR level 2 Version 5.00 (V5) algorithm uses the new Version 3.00 IIR level 1B products",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Decision step 6: V4.51 is the previous release of the IIR L2 Swath product.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "V5-00"
+        ],
+        "concept_id": "C3964849224-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "granule_level_check": {
+    "collection": "CAL_IIR_L2_Swath-Standard-V4-51|V4-51",
+    "granules": 159554,
+    "sample": "CAL_IIR_L2_Swath-Standard-V4-51.2006-06-12T00-53-43ZN.hdf",
+    "sample_time": {
+      "RangeDateTime": {
+        "BeginningDateTime": "2006-06-12T00:53:43+00:00",
+        "EndingDateTime": "2006-06-12T01:40:18+00:00"
+      }
+    },
+    "with_InputGranules": 0
+  },
+  "existing_associations_check": [
+    {
+      "collection": "CAL_IIR_L2_Swath-Standard-V4-51|V4-51",
+      "Type": "PARENT",
+      "EntryId": "CAL_IIR_L2_Swath-Standard-V4-20",
+      "Version": "V4-20",
+      "self_reference": false
+    }
+  ],
+  "metadata_findings": [
+    "MetadataAssociation PARENT → 'CAL_IIR_L2_Swath-Standard-V4-20' V4-20 does not resolve to a CMR collection.",
+    "Linked document returns 404: https://asdc.larc.nasa.gov/project/CALIPSO",
+    "Linked document returns 404: https://www-calipso.larc.nasa.gov/products/CALIPSO_DPC_Rev4x96.pdf",
+    "Linked document returns 404: https://www-calipso.larc.nasa.gov/resources/calipso_users_guide/qs/cal_iir_l2_trackswath_v4-51_qs.php",
+    "Linked document returns 404: https://www-calipso.larc.nasa.gov/resources/calipso_users_guide/data_desc/cal_iir_l2_swath_v4-51_desc.php",
+    "Linked document returns 404: https://asdc.larc.nasa.gov/citing-data",
+    "Linked document returns 404: https://www-calipso.larc.nasa.gov/resources/publications.php",
+    "Linked document returns 404: https://www-calipso.larc.nasa.gov/tools/data_avail/",
+    "Linked document returns 404: https://www-calipso.larc.nasa.gov/resources/calipso_users_guide/browse/index.php",
+    "Linked document returns 404: https://www-calipso.larc.nasa.gov/resources/project_documentation.php",
+    "Linked document returns 404: https://www-calipso.larc.nasa.gov/resources/calipso_users_guide/",
+    "Linked document returns 404: https://www-calipso.larc.nasa.gov/resources/calipso_users_guide/faq.php",
+    "Linked document returns 404: https://www-calipso.larc.nasa.gov/products/inventory.php",
+    "No ATBD in RelatedUrls."
+  ],
+  "excluded": [
+    {
+      "candidate": "Raw IIR and WFC Level 0 telemetry; lidar L0 binaries",
+      "reason": "not_in_cmr",
+      "detail": "Not publicly orderable (DPC 3.0); only the lidar L0 HDF translation is a CMR collection."
+    },
+    {
+      "candidate": "GEOS-5 FP-IT CALIPSO subsets (DFPITI3NXASMCAL, DFPITI3NVASMCAL)",
+      "reason": "not_in_cmr",
+      "detail": "Used by older releases."
+    },
+    {
+      "candidate": "CloudSat DEM, IGBP surface types, AFWA/CERES snow and ice maps",
+      "reason": "not_in_cmr",
+      "detail": "Static or remapped ancillaries."
+    },
+    {
+      "candidate": "AMSR wind speeds (ODCOD correction)",
+      "reason": "ambiguous",
+      "detail": "The AMSR product is not named."
+    },
+    {
+      "candidate": "MODIS AOD",
+      "reason": "not_an_input",
+      "detail": "Used offline to build V5 lidar-ratio maps, not per granule."
+    },
+    {
+      "candidate": "Aura MLS v2 Derived Meteorological Products (PSC Mask)",
+      "reason": "not_in_cmr",
+      "detail": "Not a CMR collection."
+    },
+    {
+      "candidate": "Lidar L2 V4.10/V4.20/V4.21, PSC V1.00/V1.10, IIR L2 V4.20",
+      "reason": "not_in_cmr",
+      "detail": "Inputs of the older L3 releases (Trop V4.20/V4.21, Strat V1.01)."
+    },
+    {
+      "candidate": "CAL_LID_L15-Standard-V1-00/V1-01",
+      "reason": "ambiguous",
+      "detail": "Uses \"standard version 4 level 1 and level 2 data\"; the minor version is not stated."
+    },
+    {
+      "candidate": "CAL_MERRA2_ext_05km_V4-5, CAL_MODIS_DTDB_ext_05km_V4-5, CAL_ODCOD_ext_05km_V4-5, CAL_LID_L2_MLay_Diagnostic-Beta-V5-00",
+      "reason": "no_documented_relationship",
+      "detail": "Not described in the fetched documents (beta / external-collaboration products)."
+    }
+  ],
+  "csv": {
+    "path": "Reports/ASDC/CALIPSO/CAL_IIR_L2_Swath-Standard-V4-51_VV4-51_lineage.csv",
+    "rows": 2,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "existing_associations_review": [
+    {
+      "collection": "CAL_IIR_L2_Swath-Standard-V4-51",
+      "Type": "PARENT",
+      "EntryId": "CAL_IIR_L2_Swath-Standard-V4-20",
+      "Version": "V4-20",
+      "resolves_in_cmr": false,
+      "same_product_family": true,
+      "proposed_here": null
+    }
+  ],
+  "broken_links": {
+    "https://asdc.larc.nasa.gov/project/CALIPSO": 404,
+    "https://www-calipso.larc.nasa.gov/products/CALIPSO_DPC_Rev4x96.pdf": 404,
+    "https://www-calipso.larc.nasa.gov/resources/calipso_users_guide/qs/cal_iir_l2_trackswath_v4-51_qs.php": 404,
+    "https://www-calipso.larc.nasa.gov/resources/calipso_users_guide/data_desc/cal_iir_l2_swath_v4-51_desc.php": 404,
+    "https://asdc.larc.nasa.gov/citing-data": 404,
+    "https://www-calipso.larc.nasa.gov/resources/publications.php": 404,
+    "https://www-calipso.larc.nasa.gov/tools/data_avail/": 404,
+    "https://www-calipso.larc.nasa.gov/resources/calipso_users_guide/browse/index.php": 404,
+    "https://www-calipso.larc.nasa.gov/resources/project_documentation.php": 404,
+    "https://www-calipso.larc.nasa.gov/resources/calipso_users_guide/": 404,
+    "https://www-calipso.larc.nasa.gov/resources/calipso_users_guide/faq.php": 404,
+    "https://www-calipso.larc.nasa.gov/products/inventory.php": 404
+  }
+}

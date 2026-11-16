@@ -1,0 +1,9 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+AIRX2RET,7.0,PARENT,AIRABRAD,005,HIGH,derived_from
+AIRX2RET,7.0,PARENT,AIRIBRAD,005,HIGH,derived_from
+AIRX2RET,7.0,INPUT,AIRVBRAD,005,HIGH,input_to
+AIRX2RET,7.0,CHILD,AIRX3STD,7.0,MEDIUM,downstream_product
+AIRX2RET,7.0,RELATED,AIRH2RET,7.0,HIGH,equivalent_product
+AIRX2RET,7.0,RELATED,AIRI2CCF,7.0,HIGH,parallel_product
+AIRX2RET,7.0,RELATED,AIRS2RET,7.0,HIGH,equivalent_product
+AIRX2RET,7.0,RELATED,AIRX2SUP,7.0,HIGH,parallel_product

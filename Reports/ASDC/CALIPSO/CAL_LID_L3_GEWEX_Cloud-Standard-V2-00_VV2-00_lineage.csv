@@ -1,0 +1,3 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+CAL_LID_L3_GEWEX_Cloud-Standard-V2-00,V2-00,PARENT,CAL_LID_L2_05kmMLay-Standard-V5-00,V5-00,HIGH,aggregated_from
+CAL_LID_L3_GEWEX_Cloud-Standard-V2-00,V2-00,RELATED,CAL_LID_L3_GEWEX_Cloud-Standard-V1-00,V1-00,MEDIUM,version_of

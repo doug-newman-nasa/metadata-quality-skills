@@ -1,0 +1,568 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-13T19:54:41+00:00",
+  "suite": "AIRS_suite (39 collections; see AIRS_suite_lineage_evidence.json)",
+  "parameters": {
+    "collection_short_name": "AIRH2CCF",
+    "collection_version": "7.0",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 2,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "AIRH2CCF",
+    "version": "7.0",
+    "concept_id": "C1701805614-GES_DISC",
+    "revision_id": 32,
+    "entry_title": "Aqua/AIRS L2 Cloud-Cleared Infrared Radiances (AIRS+AMSU+HSB) V7.0",
+    "processing_level": "2",
+    "temporal": [
+      {
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2002-08-30T00:00:00.000Z",
+            "EndingDateTime": "2003-02-06T23:59:59.999Z"
+          }
+        ],
+        "EndsAtPresentFlag": false
+      }
+    ],
+    "granules_in_cmr": 37141,
+    "existing_metadata_associations": [
+      {
+        "EntryId": "AIRH2CCF",
+        "Version": "7.0",
+        "Type": "SCIENCE ASSOCIATED"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [],
+    "decision_tree_branch": "[2] NO: no ATBD in related_urls; the product User's Guide / README is the primary source",
+    "other_documentation": [
+      {
+        "subtype": "VIEW RELATED INFORMATION",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/AIRS_Documentation.pdf"
+      },
+      {
+        "subtype": "READ-ME",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/Overview_of_the_AIRS_Mission.pdf"
+      },
+      {
+        "subtype": "USER'S GUIDE",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/V7_L2_Product_User_Guide.pdf"
+      }
+    ]
+  },
+  "source_documents": {
+    "linked_from_record": [
+      {
+        "key": "airs_doc_index",
+        "title": "AIRS Documentation (GES DISC document index)",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/AIRS_Documentation.pdf",
+        "evidence_source": "other_doc",
+        "validation": {
+          "document_accessible": true,
+          "contains_algorithm_section": true,
+          "mentions_input_data": true,
+          "mentions_parent_collection": true,
+          "contains_processing_algorithm": true,
+          "VALID": true
+        }
+      },
+      {
+        "key": "airs_overview",
+        "title": "Overview of the AIRS Mission: Instruments, Processing Algorithms, Products, and Documentation",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/Overview_of_the_AIRS_Mission.pdf",
+        "evidence_source": "user_guide",
+        "validation": {
+          "document_accessible": true,
+          "contains_algorithm_section": true,
+          "mentions_input_data": true,
+          "mentions_parent_collection": true,
+          "contains_processing_algorithm": true,
+          "VALID": true
+        }
+      },
+      {
+        "key": "l2_v7_guide",
+        "title": "AIRS/AMSU/HSB Version 7 Level 2 Product User Guide",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/V7_L2_Product_User_Guide.pdf",
+        "evidence_source": "user_guide",
+        "validation": {
+          "document_accessible": true,
+          "contains_algorithm_section": true,
+          "mentions_input_data": true,
+          "mentions_parent_collection": true,
+          "contains_processing_algorithm": true,
+          "VALID": true
+        }
+      }
+    ],
+    "used_as_evidence": [
+      {
+        "key": "airs_overview",
+        "title": "Overview of the AIRS Mission: Instruments, Processing Algorithms, Products, and Documentation",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/Overview_of_the_AIRS_Mission.pdf",
+        "evidence_source": "user_guide",
+        "validation": {
+          "document_accessible": true,
+          "contains_algorithm_section": true,
+          "mentions_input_data": true,
+          "mentions_parent_collection": true,
+          "contains_processing_algorithm": true,
+          "VALID": true
+        }
+      },
+      {
+        "key": "l2_v7_guide",
+        "title": "AIRS/AMSU/HSB Version 7 Level 2 Product User Guide",
+        "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/V7_L2_Product_User_Guide.pdf",
+        "evidence_source": "user_guide",
+        "validation": {
+          "document_accessible": true,
+          "contains_algorithm_section": true,
+          "mentions_input_data": true,
+          "mentions_parent_collection": true,
+          "contains_processing_algorithm": true,
+          "VALID": true
+        }
+      }
+    ]
+  },
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "AIRH2CCF",
+      "version": "7.0",
+      "level": "2"
+    },
+    "primary_parents": [
+      "AIRIBRAD 005"
+    ],
+    "supporting_parents": [
+      "AIRABRAD 005",
+      "AIRHBRAD 005",
+      "AIRVBRAD 005"
+    ],
+    "derived_children": [],
+    "related": [
+      "AIRH2RET 7.0",
+      "AIRH2SUP 7.0",
+      "AIRI2CCF 7.0",
+      "AIRS2CCF 7.0"
+    ]
+  },
+  "relationships": [
+    {
+      "shortname": "AIRH2CCF",
+      "version": "7.0",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "AIRIBRAD",
+      "related_version": "005",
+      "version_status": "matched",
+      "version_basis": "stated_in_evidence",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "Overview of the AIRS Mission: Instruments, Processing Algorithms, Products, and Documentation",
+      "evidence_url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/Overview_of_the_AIRS_Mission.pdf",
+      "evidence_section": "Figure 14 (a) AIRS-team V7 data flow",
+      "evidence_page": 26,
+      "evidence_quote": "Calibrated, geolocated AIRS infrared radiances. File name: AIRIBRAD Input Level 1B Data: Calibrated, Geolocated Radiances Calibrated, geolocated AMSU radiances. File name: AIRABRAD Calibrated, geolocated HSB radiances File name: AIRHBRAD Calibrated, geolocated AIRS Vis/NIR radiances. File name: AIRVBRAD",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "AIRS/AMSU/HSB Version 7 Level 2 Product User Guide",
+          "quote": "Since the V7 L2 products are still based on the V5 L1B product",
+          "verified": true
+        },
+        {
+          "document": "Overview of the AIRS Mission: Instruments, Processing Algorithms, Products, and Documentation",
+          "quote": "Level 1C is produced from Level 1B, but is not currently used in producing the Level 2 products.",
+          "verified": true
+        },
+        {
+          "document": "AIRS/AMSU/HSB Version 7 Level 2 Product User Guide",
+          "quote": "NumNoVis 32-bit integer Number of retrieval profiles for which no AIRS-V/NIR input data is used",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "rationale": "Decision step 2: the cloud-cleared radiances are the AIRS IR radiances with the cloud signal removed; PARENT. (AIRS+AMSU+HSB flavor; V7 L2 User Guide §1.1)",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1243477369-GES_DISC",
+        "related_level": "1B",
+        "level_progression_valid": true,
+        "level_check": "parent L1 <= target L2",
+        "version_compatible": true,
+        "temporal_consistent": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "AIRH2CCF",
+      "version": "7.0",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "AIRABRAD",
+      "related_version": "005",
+      "version_status": "matched",
+      "version_basis": "stated_in_evidence",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "Overview of the AIRS Mission: Instruments, Processing Algorithms, Products, and Documentation",
+      "evidence_url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/Overview_of_the_AIRS_Mission.pdf",
+      "evidence_section": "Figure 14 (a) AIRS-team V7 data flow",
+      "evidence_page": 26,
+      "evidence_quote": "Calibrated, geolocated AIRS infrared radiances. File name: AIRIBRAD Input Level 1B Data: Calibrated, Geolocated Radiances Calibrated, geolocated AMSU radiances. File name: AIRABRAD Calibrated, geolocated HSB radiances File name: AIRHBRAD Calibrated, geolocated AIRS Vis/NIR radiances. File name: AIRVBRAD",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "AIRS/AMSU/HSB Version 7 Level 2 Product User Guide",
+          "quote": "Since the V7 L2 products are still based on the V5 L1B product",
+          "verified": true
+        },
+        {
+          "document": "Overview of the AIRS Mission: Instruments, Processing Algorithms, Products, and Documentation",
+          "quote": "Level 1C is produced from Level 1B, but is not currently used in producing the Level 2 products.",
+          "verified": true
+        },
+        {
+          "document": "AIRS/AMSU/HSB Version 7 Level 2 Product User Guide",
+          "quote": "NumNoVis 32-bit integer Number of retrieval profiles for which no AIRS-V/NIR input data is used",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "rationale": "Decision step 3: AIRABRAD constrains the retrieval state used for cloud clearing, but the CCRs are AIRS IR radiances, not microwave data; INPUT. (AIRS+AMSU+HSB flavor; V7 L2 User Guide §1.1)",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1243477366-GES_DISC",
+        "related_level": "1B",
+        "level_progression_valid": true,
+        "level_check": "not applicable (INPUT)",
+        "version_compatible": true,
+        "temporal_consistent": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "AIRH2CCF",
+      "version": "7.0",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "AIRHBRAD",
+      "related_version": "005",
+      "version_status": "matched",
+      "version_basis": "stated_in_evidence",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "Overview of the AIRS Mission: Instruments, Processing Algorithms, Products, and Documentation",
+      "evidence_url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/Overview_of_the_AIRS_Mission.pdf",
+      "evidence_section": "Figure 14 (a) AIRS-team V7 data flow",
+      "evidence_page": 26,
+      "evidence_quote": "Calibrated, geolocated AIRS infrared radiances. File name: AIRIBRAD Input Level 1B Data: Calibrated, Geolocated Radiances Calibrated, geolocated AMSU radiances. File name: AIRABRAD Calibrated, geolocated HSB radiances File name: AIRHBRAD Calibrated, geolocated AIRS Vis/NIR radiances. File name: AIRVBRAD",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "AIRS/AMSU/HSB Version 7 Level 2 Product User Guide",
+          "quote": "Since the V7 L2 products are still based on the V5 L1B product",
+          "verified": true
+        },
+        {
+          "document": "Overview of the AIRS Mission: Instruments, Processing Algorithms, Products, and Documentation",
+          "quote": "Level 1C is produced from Level 1B, but is not currently used in producing the Level 2 products.",
+          "verified": true
+        },
+        {
+          "document": "AIRS/AMSU/HSB Version 7 Level 2 Product User Guide",
+          "quote": "NumNoVis 32-bit integer Number of retrieval profiles for which no AIRS-V/NIR input data is used",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "rationale": "Decision step 3: AIRHBRAD constrains the retrieval state used for cloud clearing, but the CCRs are AIRS IR radiances, not microwave data; INPUT. (AIRS+AMSU+HSB flavor; V7 L2 User Guide §1.1)",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1243477367-GES_DISC",
+        "related_level": "1B",
+        "level_progression_valid": true,
+        "level_check": "not applicable (INPUT)",
+        "version_compatible": true,
+        "temporal_consistent": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "AIRH2CCF",
+      "version": "7.0",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "AIRVBRAD",
+      "related_version": "005",
+      "version_status": "matched",
+      "version_basis": "stated_in_evidence",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "Overview of the AIRS Mission: Instruments, Processing Algorithms, Products, and Documentation",
+      "evidence_url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/Overview_of_the_AIRS_Mission.pdf",
+      "evidence_section": "Figure 14 (a) AIRS-team V7 data flow",
+      "evidence_page": 26,
+      "evidence_quote": "Calibrated, geolocated AIRS infrared radiances. File name: AIRIBRAD Input Level 1B Data: Calibrated, Geolocated Radiances Calibrated, geolocated AMSU radiances. File name: AIRABRAD Calibrated, geolocated HSB radiances File name: AIRHBRAD Calibrated, geolocated AIRS Vis/NIR radiances. File name: AIRVBRAD",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "AIRS/AMSU/HSB Version 7 Level 2 Product User Guide",
+          "quote": "Since the V7 L2 products are still based on the V5 L1B product",
+          "verified": true
+        },
+        {
+          "document": "Overview of the AIRS Mission: Instruments, Processing Algorithms, Products, and Documentation",
+          "quote": "Level 1C is produced from Level 1B, but is not currently used in producing the Level 2 products.",
+          "verified": true
+        },
+        {
+          "document": "AIRS/AMSU/HSB Version 7 Level 2 Product User Guide",
+          "quote": "NumNoVis 32-bit integer Number of retrieval profiles for which no AIRS-V/NIR input data is used",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "rationale": "Decision step 3: VIS/NIR L1B is an input to the L2 retrieval (Figure 14; the L2 files count retrieval profiles made without VIS/NIR input) but is not carried into the products; INPUT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1243477373-GES_DISC",
+        "related_level": "1B",
+        "level_progression_valid": true,
+        "level_check": "not applicable (INPUT)",
+        "version_compatible": true,
+        "temporal_consistent": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "AIRH2CCF",
+      "version": "7.0",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "related_shortname": "AIRH2RET",
+      "related_version": "7.0",
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "AIRS/AMSU/HSB Version 7 Level 2 Product User Guide",
+      "evidence_url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/V7_L2_Product_User_Guide.pdf",
+      "evidence_section": "§1.1 (product shortnames)",
+      "evidence_page": 10,
+      "evidence_quote": "Level 2 Standard Product files resulting from the retrieval using AIRS infrared, AMSU microwave and HSB microwave radiances (AMSU+HSB+AIRS) have shortname “AIRH2RET”. The corresponding shortnames for the Level 2 Support Product and Level 2 Cloud Cleared Product are “AIRH2SUP” and “AIRH2CCF”.",
+      "quote_verified": true,
+      "supporting": [],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 4: standard, support and cloud-cleared files are written by the same L2 retrieval run.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1701805647-GES_DISC",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "AIRH2CCF",
+      "version": "7.0",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "related_shortname": "AIRH2SUP",
+      "related_version": "7.0",
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "AIRS/AMSU/HSB Version 7 Level 2 Product User Guide",
+      "evidence_url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/V7_L2_Product_User_Guide.pdf",
+      "evidence_section": "§1.1 (product shortnames)",
+      "evidence_page": 10,
+      "evidence_quote": "Level 2 Standard Product files resulting from the retrieval using AIRS infrared, AMSU microwave and HSB microwave radiances (AMSU+HSB+AIRS) have shortname “AIRH2RET”. The corresponding shortnames for the Level 2 Support Product and Level 2 Cloud Cleared Product are “AIRH2SUP” and “AIRH2CCF”.",
+      "quote_verified": true,
+      "supporting": [],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 4: standard, support and cloud-cleared files are written by the same L2 retrieval run.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1701828239-GES_DISC",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "AIRH2CCF",
+      "version": "7.0",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "related_shortname": "AIRI2CCF",
+      "related_version": "7.0",
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "Overview of the AIRS Mission: Instruments, Processing Algorithms, Products, and Documentation",
+      "evidence_url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/Overview_of_the_AIRS_Mission.pdf",
+      "evidence_section": "Table 4. AIRS-suite Level 2 products, Short Names, and granule sizes",
+      "evidence_page": 28,
+      "evidence_quote": "AIRS-team Cloud-cleared radiances AIRH2CCF AIRI2CCF AIRS2CCF 14 MB",
+      "quote_verified": true,
+      "supporting": [],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 5: the same L2 product from another instrument combination (same algorithm).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1701805611-GES_DISC",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "AIRH2CCF",
+      "version": "7.0",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "related_shortname": "AIRS2CCF",
+      "related_version": "7.0",
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "Overview of the AIRS Mission: Instruments, Processing Algorithms, Products, and Documentation",
+      "evidence_url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/AIRS/Overview_of_the_AIRS_Mission.pdf",
+      "evidence_section": "Table 4. AIRS-suite Level 2 products, Short Names, and granule sizes",
+      "evidence_page": 28,
+      "evidence_quote": "AIRS-team Cloud-cleared radiances AIRH2CCF AIRI2CCF AIRS2CCF 14 MB",
+      "quote_verified": true,
+      "supporting": [],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 5: the same L2 product from another instrument combination (same algorithm).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "concept_id": "C1701805601-GES_DISC",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "granule_level_check": {
+    "collection": "AIRH2CCF|7.0",
+    "granules_in_cmr": 37141,
+    "sampled": 2,
+    "sample_granule": "AIRH2CCF.7.0:AIRS.2003.02.05.240.L2.CC_H.v7.0.1.0.G20197132138.hdf",
+    "with_InputGranules": 0
+  },
+  "existing_associations_check": [
+    {
+      "collection": "AIRH2CCF|7.0",
+      "Type": "SCIENCE ASSOCIATED",
+      "EntryId": "AIRH2CCF",
+      "Version": "7.0",
+      "self_reference": true,
+      "found_in_cmr": true
+    }
+  ],
+  "metadata_findings": [
+    "The only MetadataAssociation is SCIENCE ASSOCIATED to the record itself (AIRH2CCF 7.0): a self-relation, which should be removed.",
+    "No PARENT, INPUT, CHILD or RELATED associations; this run proposes 1 PARENT, 3 INPUT, 4 RELATED.",
+    "No ATBD in RelatedUrls (decision branch [2]); the AIRS L2 ATBD could be linked alongside the User's Guide."
+  ],
+  "excluded": [
+    {
+      "name": "AIRS, AMSU-A, HSB and VIS/NIR Level 1A",
+      "role": "PARENT of every L1B product (V5 and V8)",
+      "reason": "not a CMR collection (rule 1c-4): \"Level 0 and Level 1A data sets are not publicly archived\" (Overview Figure 13)"
+    },
+    {
+      "name": "AIRAACAL",
+      "role": "optional dynamic input to AIRABRAD (README.AIRABRAD §1.4)",
+      "reason": "no CMR record"
+    },
+    {
+      "name": "Definitive / predicted ephemeris and attitude",
+      "role": "input to L1B and NRT L1B",
+      "reason": "not a CMR collection (rule 1c-4)"
+    },
+    {
+      "name": "AVN / GFS forecast fields",
+      "role": "surface-pressure guess for L2; SST in AIRXBCAL",
+      "reason": "not identified as a CMR collection in the documents"
+    },
+    {
+      "name": "CERES SSF (Aqua)",
+      "role": "scene-type input to AIRSIL3MSOLR",
+      "reason": "ambiguous: CMR has CER_SSF_Aqua-FM3-MODIS and -FM4-MODIS (Edition4A) and the documents name neither edition nor instrument (rules 1c-3, 1c-6)"
+    },
+    {
+      "name": "AIRVBRAD_NRT",
+      "role": "possible VIS/NIR input to the NRT L2 products",
+      "reason": "the documents do not say which VIS input the NRT L2 uses (rule 1c-6)"
+    },
+    {
+      "name": "AIRXAMAP",
+      "role": "granule-location maps listed as a related data set in the L1C guide and NRT table",
+      "reason": "not a lineage relationship"
+    },
+    {
+      "name": "V006 L2 (AIRS2RET/SUP/CCF, AIRX2RET/SUP, AIRI2CCF, AIRH2RET/SUP/CCF 006)",
+      "role": "CHILD of AIRIBRAD/AIRABRAD/AIRHBRAD",
+      "reason": "documented (\"Since the Version 6 algorithm continues to use Version 5 radiance data\", README V6), but the CSV allows one row per related ShortName and the V7 version of each is written"
+    },
+    {
+      "name": "V006 L3, 8-day L3, V005 CO2, AIRS–CloudSat/MLS/MODIS matchups",
+      "role": "CMR pattern matches (Step 7)",
+      "reason": "their derivation from a suite member is not stated in the fetched documents (rule 1c-2)"
+    }
+  ],
+  "csv": {
+    "path": "Reports/GES_DISC/AIRS/AIRH2CCF_V7.0_lineage.csv",
+    "rows": 8,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  }
+}

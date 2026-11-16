@@ -1,0 +1,4 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+DSCOVR_EPIC_L2_CLOUD,03,PARENT,DSCOVR_EPIC_L1B,4,MEDIUM,derived_from
+DSCOVR_EPIC_L2_CLOUD,03,CHILD,DSCOVR_EPIC_L2_CLOUDFRACTION,01,MEDIUM,downstream_product
+DSCOVR_EPIC_L2_CLOUD,03,CHILD,DSCOVR_EPIC_L2_TO3,03,MEDIUM,downstream_product

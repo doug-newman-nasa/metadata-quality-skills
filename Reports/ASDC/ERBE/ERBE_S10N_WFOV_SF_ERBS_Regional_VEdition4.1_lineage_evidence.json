@@ -1,0 +1,343 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-16T17:41:44+00:00",
+  "related_records": {
+    "ERBE_S7_NAT": {
+      "version": "1",
+      "concept_id": "C3880596470-LARC_CLOUD"
+    },
+    "ERBE_S10N_WFV_NF_NAT": {
+      "version": "1",
+      "concept_id": "C3880595831-LARC_CLOUD"
+    },
+    "ERBE_S10N_WFV_SF_NAT": {
+      "version": "1",
+      "concept_id": "C3880595971-LARC_CLOUD"
+    }
+  },
+  "parameters": {
+    "collection_short_name": "ERBE_S10N_WFOV_SF_ERBS_Regional",
+    "collection_version": "Edition4.1",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 1,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "ERBE_S10N_WFOV_SF_ERBS_Regional",
+    "version": "Edition4.1",
+    "concept_id": "C3880596840-LARC_CLOUD",
+    "revision_id": 9,
+    "entry_title": "Earth Radiation Budget through Earth Radiation Budget Satellite Wide-field-of-view Nonscanner Observations Edition 4.1",
+    "processing_level": "3",
+    "temporal": [
+      {
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "1985-01-01T00:00:00.000Z",
+            "EndingDateTime": "1999-12-31T23:59:59.000Z"
+          }
+        ],
+        "EndsAtPresentFlag": false
+      }
+    ],
+    "existing_metadata_associations": [
+      {
+        "Description": "Preceding version",
+        "EntryId": "ERBE_S10N_WFOV_SF_ERBS_Regional",
+        "Type": "PARENT",
+        "Version": "Edition4"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [],
+    "decision_tree_branch": "[2] NO: no ATBD in related_urls; the ERBE S-10N data set document and the edition Data Quality Summaries are the primary sources"
+  },
+  "source_documents": [
+    {
+      "key": "dqs41",
+      "title": "ERBS S10n Edition4.1 Data Quality Summary (Sept 2020)",
+      "url": "https://asdc.larc.nasa.gov/documents/measures/quality_summaries/ERBS_Ed4.1_DQS.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "s10n_guide",
+      "url": "https://asdc.larc.nasa.gov/documents/erbe/guide/erbe_s10n.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 86587
+    },
+    {
+      "key": "project",
+      "url": "https://asdc.larc.nasa.gov/documents/erbe/guide/erbe_project.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 81811
+    },
+    {
+      "key": "overview",
+      "url": "https://asdc.larc.nasa.gov/documents/erbe/readme/erbe_overview.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 7109
+    },
+    {
+      "key": "qs_ed2",
+      "url": "https://asdc.larc.nasa.gov/documents/erbe/quality_summaries/s10n_wfov/erbe_s10n_wfov_nf_sf_erbs_edition2.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 24609
+    },
+    {
+      "key": "qs_ed3",
+      "url": "https://asdc.larc.nasa.gov/documents/erbe/quality_summaries/s10n_wfov/erbe_s10n_wfov_nf_sf_erbs_edition3.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 25231
+    },
+    {
+      "key": "readme_ed2",
+      "url": "https://asdc.larc.nasa.gov/documents/erbe/readme/readme_erbe_s10n_wfov_nf_edition2.txt",
+      "status": "ok",
+      "kind": "text",
+      "text_chars": 152189
+    },
+    {
+      "key": "readme_ed3",
+      "url": "https://asdc.larc.nasa.gov/documents/erbe/readme/readme_erbe_s10n_wfov_nf_edition3.txt",
+      "status": "ok",
+      "kind": "text",
+      "text_chars": 13562
+    },
+    {
+      "key": "notice",
+      "url": "https://asdc.larc.nasa.gov/documents/erbe/readme/readme_erbe_s10n_wfv_nf_nat_dmonotice1.txt",
+      "status": "ok",
+      "kind": "text",
+      "text_chars": 2479
+    },
+    {
+      "key": "dqs4",
+      "url": "https://asdc.larc.nasa.gov/documents/measures/quality_summaries/ERBE-Measures_DQS.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 50917
+    },
+    {
+      "key": "dqs41",
+      "url": "https://asdc.larc.nasa.gov/documents/measures/quality_summaries/ERBS_Ed4.1_DQS.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 12538
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "ERBE_S10N_WFOV_SF_ERBS_Regional",
+      "version": "Edition4.1",
+      "level": "3"
+    },
+    "primary_parents": [],
+    "supporting_parents": [
+      "CERES_EBAF-TOA Edition4.2.1"
+    ],
+    "derived_children": [],
+    "related": [
+      "ERBE_S10N_WFOV_SF_ERBS_AreaAverageTimeSeries Edition4.1"
+    ]
+  },
+  "relationships": [
+    {
+      "shortname": "ERBE_S10N_WFOV_SF_ERBS_Regional",
+      "version": "Edition4.1",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "CERES_EBAF-TOA",
+      "related_version": "Edition4.2.1",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "ERBS S10n Edition4.1 Data Quality Summary (Sept 2020)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/measures/quality_summaries/ERBS_Ed4.1_DQS.pdf",
+      "evidence_section": "2.0 Processing update in Current Edition",
+      "evidence_page": 2,
+      "evidence_quote": "Updated ERBS WFOV longwave (LW) and shortwave (SW) offsets to CERES EBAF4.1",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "ERBS S10n Edition4.1 Data Quality Summary (Sept 2020)",
+          "quote": "The ERBS S10n Edition4.1 data provides an incremental update to the original Edition4 dataset",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "rationale": "Decision step 3: Edition4.1 updates the LW and SW offsets to CERES EBAF4.1; INPUT. CMR holds EBAF-TOA Edition4.2.1 only.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "Edition4.2.1"
+        ],
+        "concept_id": "C3880497643-LARC_CLOUD",
+        "related_level": "4",
+        "level_progression_valid": true,
+        "level_check": "not applicable (INPUT)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "ERBE_S10N_WFOV_SF_ERBS_Regional",
+      "version": "Edition4.1",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "related_shortname": "ERBE_S10N_WFOV_SF_ERBS_AreaAverageTimeSeries",
+      "related_version": "Edition4.1",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "ERBS S10n Edition4.1 Data Quality Summary (Sept 2020)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/measures/quality_summaries/ERBS_Ed4.1_DQS.pdf",
+      "evidence_section": "1.0 Nature of ERBS S10n data product",
+      "evidence_page": 2,
+      "evidence_quote": "The Edition4.1 contains both regional data and large area mean (LAM) time series.",
+      "quote_verified": true,
+      "supporting": [],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 4: regional files and large-area-mean time series are parts of the same Edition4.1 product.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "Edition4",
+          "Edition4.1"
+        ],
+        "concept_id": "C3880595360-LARC_CLOUD",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "granule_level_check": {
+    "collection": "ERBE_S10N_WFOV_SF_ERBS_Regional|Edition4.1",
+    "granules": 45,
+    "sample": "ERBE_S10N_WFOV_SF_ERBS_Regional_Edition4.1.72Day_1985.nc",
+    "sample_time": {
+      "RangeDateTime": {
+        "BeginningDateTime": "1985-01-01T00:00:00+00:00",
+        "EndingDateTime": "1985-01-01T23:59:59+00:00"
+      }
+    },
+    "with_InputGranules": 0
+  },
+  "existing_associations_check": [
+    {
+      "collection": "ERBE_S10N_WFOV_SF_ERBS_Regional|Edition4.1",
+      "Type": "PARENT",
+      "EntryId": "ERBE_S10N_WFOV_SF_ERBS_Regional",
+      "Version": "Edition4",
+      "self_reference": false
+    }
+  ],
+  "metadata_findings": [
+    "MetadataAssociation PARENT ('Preceding version') → ERBE_S10N_WFOV_SF_ERBS_Regional Edition4 is another version of the same product; the lineage skills never list it.",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/project/ERBE%20MEaSUREs",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/citing-data",
+    "Duplicate RelatedUrls: ['https://asdc.larc.nasa.gov/project/ERBE%20MEaSUREs'].",
+    "No ATBD in RelatedUrls.",
+    "The abstract is proposal text (\"The proposed project … This project proposes to produce level 3 surface irradiance products\") rather than a product description.",
+    "It has no association to AreaAverageTimeSeries Edition4.1 (the companion time series), although the reverse exists.",
+    "No association to CERES_EBAF-TOA, to which the calibration is tied.",
+    "The instrument is named 'ERBE WFOV Nonscanner' here but 'ERBE' in the Edition2/3 records."
+  ],
+  "excluded": [
+    {
+      "candidate": "Edition2 ↔ Edition3, Edition4 ↔ Edition4.1 (same ShortName)",
+      "reason": "same_product",
+      "detail": "Never listed (Generation skill 1a)."
+    },
+    {
+      "candidate": "ERBE S10N WFOV Edition3_Rev1",
+      "reason": "not_in_cmr",
+      "evidence": "rev1"
+    },
+    {
+      "candidate": "SORCE TSI (SOR3TSID / SOR3TSI6)",
+      "reason": "ambiguous",
+      "evidence": "sorce",
+      "detail": "Product and version not named."
+    },
+    {
+      "candidate": "ISCCP (unfiltering)",
+      "reason": "ambiguous",
+      "evidence": "isccp",
+      "detail": "ISCCP product (D1, DX, …) not named."
+    },
+    {
+      "candidate": "CERES-TRMM (LW calibration transfer)",
+      "reason": "ambiguous",
+      "evidence": "trmm",
+      "detail": "CERES TRMM product not named."
+    },
+    {
+      "candidate": "GEWEX SRB Release 4 beta (Edition4.1 filled global series)",
+      "reason": "not_in_cmr",
+      "evidence": "gewex",
+      "detail": "A beta version; CMR holds Rel4-IP / Rel4_1-IP collections."
+    },
+    {
+      "candidate": "ERBS nonscanner telemetry and calibration data",
+      "reason": "not_in_cmr",
+      "evidence": "telemetry"
+    },
+    {
+      "candidate": "ERBE MFOV nonscanner products",
+      "reason": "not_an_input",
+      "evidence": "mfov",
+      "detail": "Edition2 removed the use of MFOV data."
+    },
+    {
+      "candidate": "ERBE_S8_NAT, ERBE_TSI_ERBS_NAT, S-4/S-4G/S-9/S-10 products",
+      "reason": "no_documented_relationship",
+      "detail": "Siblings or upstream of the original processing only."
+    }
+  ],
+  "csv": {
+    "path": "Reports/ASDC/ERBE/ERBE_S10N_WFOV_SF_ERBS_Regional_VEdition4.1_lineage.csv",
+    "rows": 2,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "existing_associations_review": [],
+  "broken_links": {
+    "https://asdc.larc.nasa.gov/project/ERBE%20MEaSUREs": 404,
+    "https://asdc.larc.nasa.gov/citing-data": 404
+  }
+}
