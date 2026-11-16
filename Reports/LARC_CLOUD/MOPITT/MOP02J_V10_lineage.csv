@@ -1,0 +1,6 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+MOP02J,10,INPUT,MOD35_L2,6.1,MEDIUM,input_to
+MOP02J,10,CHILD,MOP03J,10,MEDIUM,downstream_product
+MOP02J,10,CHILD,MOP03JM,10,MEDIUM,downstream_product
+MOP02J,10,RELATED,MOP02N,10,HIGH,parallel_product
+MOP02J,10,RELATED,MOP02T,10,HIGH,parallel_product

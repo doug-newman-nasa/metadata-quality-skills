@@ -1,0 +1,2 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+MOP03TM,10,PARENT,MOP02T,10,MEDIUM,aggregated_from
