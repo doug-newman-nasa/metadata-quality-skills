@@ -1,0 +1,596 @@
+{
+  "generated_at": "2026-11-16T13:36:10+00:00",
+  "skills": [
+    "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0, Steps 1-7)",
+    "Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3)",
+    "Skills/Collection_Lineage_Generation_Skill.md (Step 1a-1d classification)"
+  ],
+  "notebook": "SNDR_lineage_batch3.ipynb",
+  "target": {
+    "shortname": "SNDRJ1IML3SMCCP",
+    "version": "2",
+    "concept_id": "C1692982099-GES_DISC",
+    "processing_level": "3",
+    "provider": "GES_DISC",
+    "collection_data_type": "SCIENCE_QUALITY",
+    "collection_progress": "ACTIVE",
+    "platforms": [
+      "NOAA-20"
+    ],
+    "instruments": [
+      "ATMS",
+      "CrIS"
+    ],
+    "revision_date": "2026-11-11T00:45:21.799Z",
+    "granules_in_cmr": 102,
+    "latest_granule": "SNDRJ1IML3SMCCP.2:SNDR.J1.CRIMSS.20260801.M01.L3_CLIMCAPS_QCS.std.v02_53.G.261028190758.nc",
+    "pge_version": "SNDR.J1.CR",
+    "temporal": {
+      "BeginningDateTime": "2018-02-01T00:00:00.000Z"
+    }
+  },
+  "atbd_search_depth": 1,
+  "include_low_confidence": true,
+  "atbd_note": "The record links an ATBD (Priority 1 path); the linked User Guides/READMEs are also used (strong source).",
+  "cmr_state_note": "Records fetched live from CMR at 2026-11-16T13:36:10+00:00; see process/b3_*.json. Confidence depends on CMR state.",
+  "level_ranking_note": "Levels compared by major level, then sublevel (A < B < C); a bare '1' matches any Level 1 sublevel.",
+  "version_note": "related_version follows CSV skill Step 2, except that a version named in the documents but absent from CMR gives 'Unknown' (status document_version_not_in_cmr); recommended associations then omit Version (Generation skill rule 4).",
+  "doi_checks": {
+    "M2I3NVASM@5.12.4": {
+      "cited": "10.5067/WWQSXQ8IVFW8",
+      "cited_in": "ccp_merra",
+      "cmr_doi": "10.5067/WWQSXQ8IVFW8",
+      "match": true
+    },
+    "SNDRSNIML2CCPCCRN@2": {
+      "cited": "10.5067/CNG0ST72533Z",
+      "cited_in": "ccp21_tab_doi",
+      "cmr_doi": "10.5067/CNG0ST72533Z",
+      "match": true
+    },
+    "SNDRSNIML2CCPCCR@2": {
+      "cited": "10.5067/ATJX1J10VOMU",
+      "cited_in": "ccp21_tab_doi",
+      "cmr_doi": "10.5067/ATJX1J10VOMU",
+      "match": true
+    }
+  },
+  "source_documents": [
+    {
+      "id": "ccp_readme",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "Sounder SIPS CLIMCAPS Level-2 Products User Guide, V2",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/CLIMCAPS.V2.README.pdf",
+      "linked_from": "SNDRJ1IML2CCP*, SNDRSNIML2CCPCCR(N)",
+      "fetched": true,
+      "sha256": "07ec3c80b24942d38837acbaaea6b0db59f4e819e6bd7b81b4abd5762068e890"
+    },
+    {
+      "id": "ccp_atbd",
+      "kind": "atbd",
+      "subtype": "ATBD",
+      "title": "Smith & Barnet 2020, CLIMCAPS (CLIMCAPS ATBD; also served as CLIMCAPS.V1.ATBD.pdf)",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/CLIMCAPS.V2.ATBD.pdf",
+      "linked_from": "CLIMCAPS L2/L3",
+      "fetched": true,
+      "sha256": "e24e6ce23daf01bb5ccc4ddc1227cfd9a24e1b541942141a654a9795244082b6"
+    },
+    {
+      "id": "ccp21_readme",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "Sounder SIPS CLIMCAPS Level-2 Products User Guide, V2.1",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/CLIMCAPS.V2.1.README.pdf",
+      "linked_from": "SNDRJ1IML2CPS",
+      "fetched": true,
+      "sha256": "ecc2c1bc9d33b28ce73b013bca570a43031fa93cbf4484fb19ada4138eac29f3"
+    },
+    {
+      "id": "ccp_map",
+      "kind": "other_doc",
+      "subtype": "PRODUCT USAGE",
+      "title": "NASA CLIMCAPS Level-2 V2 to V2.1 Data Field Mapping",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/L2_CLIMCAPS_V2.to.V2.1_Mapping.pdf",
+      "linked_from": "SNDRJ1IML2CPS, SNDRJ1IML2PLEVCPS",
+      "fetched": true,
+      "sha256": "f6f50eb1b9c31b3b031d6752cf9ef13e143634789f09c31b742b8e8b17e7e1db"
+    },
+    {
+      "id": "plev_readme",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "PLEV CPS Level-2 Products User Guide, V2.1",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/CLIMCAPS.PLEV.CPS.L2.V2.1.README.pdf",
+      "linked_from": "SNDRJ1IML2PLEVCPS",
+      "fetched": true,
+      "sha256": "7f36bf234eabe12df87b3d4e7fddc0fe4c25191be0d7d7136e165d7f5f8e2cf4"
+    },
+    {
+      "id": "plev_atbd",
+      "kind": "atbd",
+      "subtype": "ATBD",
+      "title": "ATBD for the PLEVS CPS Post Processor, v1.0",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/CLIMCAPS.PLEV.CPS.V2.1.ATBD.pdf",
+      "linked_from": "SNDRJ1IML2PLEVCPS",
+      "fetched": true,
+      "sha256": "72feaf9e0920bbd2aa82c0fbb6175a61af1b5710d6a8467e96bf4a3ef2dff163"
+    },
+    {
+      "id": "l3_readme",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "Sounder SIPS CLIMCAPS Level-3 Products User Guide, V2",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/CLIMCAPS.L3.V2.README.pdf",
+      "linked_from": "SNDRJ1IML3*",
+      "fetched": true,
+      "sha256": "ffbf37d1e282488da6b442a3959f01e438698d2757b5966fa75e3fd106e1bf75"
+    },
+    {
+      "id": "rms_readme",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "RAMSES II Level-2 Products User Guide, V3",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/RAMSESII.L2.V3.README.pdf",
+      "linked_from": "SNDRJ1ML2RMS, SNDRJ1ML2RMSSUP",
+      "fetched": true,
+      "sha256": "8387c0a7ec2b1f276b4d7fa83be274549c4c496b1ba4c34747ad806ad4381bf3"
+    },
+    {
+      "id": "rms_atbd",
+      "kind": "atbd",
+      "subtype": "ATBD",
+      "title": "RAMSES II ATBD, V1 (no precipitation)",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/RAMSESII-ATBD-V1.noprecip.pdf",
+      "linked_from": "SNDRJ1ML2RMS*, SNDRJ1ML3*RMS",
+      "fetched": true,
+      "sha256": "2292557abf2866e775bf55090925e7f2b1f2d22aea4b36e0154aa6476f0d554d"
+    },
+    {
+      "id": "rms3_readme",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "RAMSES II Level-3 Products User Guide, V3",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/RAMSES.v3.L3.README.pdf",
+      "linked_from": "SNDRJ1ML3DRMS, SNDRJ1ML3MRMS",
+      "fetched": true,
+      "sha256": "08a386050d253fe087a7f55bebc37c53b074555e9c27e279f64c5af40dc0a483"
+    },
+    {
+      "id": "cfsp_readme",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "Sounder SIPS ClimFiSP Level-3 Products User Guide, V2 (2026-09-02)",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/ClimFiSP.V2.README_20260902.pdf",
+      "linked_from": "SNDR*IL3S*CFSP",
+      "fetched": true,
+      "sha256": "a6cf2fd6a9bcfaa563958a54e8e662e55106fe8721631b1f3e0b63aefbdde460"
+    },
+    {
+      "id": "cfsp_atbd",
+      "kind": "atbd",
+      "subtype": "ATBD",
+      "title": "ClimFiSP V2 ATBD (spectral fingerprinting)",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/ClimFiSP.V2.ATBD.pdf",
+      "linked_from": "SNDR*IL3S*CFSP",
+      "fetched": true,
+      "sha256": "8607000702d9b38e78d07b54370ac6ba72cb6f1a762025d58d3479b9d360535c"
+    },
+    {
+      "id": "cal_rm",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "NASA Aqua AIRS and SNPP CrIS Calibration Subset User Guide, V2",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/SNDRSNIL1BCALSUBSUMN_2.README.pdf",
+      "linked_from": "SNDRSNIL1BCALSUB*N",
+      "fetched": true,
+      "sha256": "ff3addb3265bb1d0e265e92362d2a42b458fe90864dc32dab85a913cbd4b606c"
+    },
+    {
+      "id": "cal_atbd",
+      "kind": "atbd",
+      "subtype": "ATBD",
+      "title": "CalSub ATBD, AIRS and CrIS SNPP (2023-02-10)",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/ATBD_CalSub_AIRS.CrIS.SNPP.20230210.pdf",
+      "linked_from": "SNDRSNIL1BCALSUB*N",
+      "fetched": true,
+      "sha256": "fe8da3d70078ae4ac1eca6633ecab1b7b192b5f87b4205f39f1fc449f971ecec"
+    },
+    {
+      "id": "j2_ug",
+      "kind": "user_guide",
+      "subtype": "USER'S GUIDE",
+      "title": "NASA JPSS-2 CrIS Level 1B Beta Product Users' Guide, Version 3 Rev B",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/SNDRJ2CrISL1B.v3.README.pdf",
+      "linked_from": "SNDRJ2CrISL1B 3",
+      "fetched": true,
+      "sha256": "a1bb9f0c82f2983ccd38799b5c15be3baf62d766961083df1bb14c1e92ad7d67"
+    },
+    {
+      "id": "j2_atbd",
+      "kind": "atbd",
+      "subtype": "ATBD",
+      "title": "NASA CrIS L1B Delta ATBD, V3.0",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/JPSS-1/CrIS_L1B_DeltaATBD_V3.0.pdf",
+      "linked_from": "SNDRJ2CrISL1B 3",
+      "fetched": true,
+      "sha256": "9df464d8b81cc49f3a9bc4a223b0eb148e41d981e5f5b567f2b0bd5554cfc692"
+    },
+    {
+      "id": "j2img_ug",
+      "kind": "user_guide",
+      "subtype": "USER'S GUIDE",
+      "title": "NASA JPSS-2 CrIS IMG / IMG_COL Beta Product Users' Guide, V3 (child documentation)",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/README.beta.SNDRJ2CrISL1BIMGC.v3.0.pdf",
+      "linked_from": "SNDRJ2CrISL1BIMG* (children)",
+      "fetched": true,
+      "sha256": "6966f4e94341efde2df0c2f8a1ab63fe7ac1bd86b2649962db5a473554235798"
+    },
+    {
+      "id": "nh3_rm",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "ESSPA-NH3 Level-2 Products User Guide, V1.0",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/README.SNDRSNIL2ESPNH3.V1.0.pdf",
+      "linked_from": "SNDRSNIL2ESPNH3 1",
+      "fetched": true,
+      "sha256": "9ba22d98477947dd105e3acd94b1b75fe81ae3c683d0bd5255d12a6baa8f82ef"
+    },
+    {
+      "id": "nh3_atbd",
+      "kind": "atbd",
+      "subtype": "ATBD",
+      "title": "ESSPA-NH3 ATBD, V1.0",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/ATBD.SNDRSNIL2ESPNH3.V1.0.pdf",
+      "linked_from": "SNDRSNIL2ESPNH3 1",
+      "fetched": true,
+      "sha256": "39b758ef28e504891b0f46da8ce7d47d3b19065e930d059e11e4cdae0251871f"
+    }
+  ],
+  "rows": [
+    {
+      "shortname": "SNDRJ1IML3SMCCP",
+      "version": "2",
+      "depth": 1,
+      "related_shortname": "SNDRJ1IML3SDCCP",
+      "related_version": "2",
+      "related_concept_id": "C1692982096-GES_DISC",
+      "association_type": "PARENT",
+      "lineage_relationship": "aggregated_from",
+      "evidence_source": "user_guide",
+      "evidence_doc": "l3_readme",
+      "evidence_section": "CLIMCAPS L3 User Guide §2.1",
+      "evidence_quote": "Monthly Level-3 products are summaries of the data from the 28-31 daily Level-3 products in a calendar month.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "l3_readme",
+          "section": "CLIMCAPS L3 User Guide §2.3",
+          "quote": "The mean value from each day is weighted equally, not according to the number of observations contributing, in order to maximize representativeness.",
+          "verified": true
+        },
+        {
+          "doc": "l3_readme",
+          "section": "CLIMCAPS L3 User Guide §2.3",
+          "quote": "QCS products maximize yield of each individual species and level by collecting all cases where the corresponding *_qc value is 0 (best) or 1 (good).",
+          "verified": true
+        },
+        {
+          "doc": "l3_readme",
+          "section": "CLIMCAPS L3 User Guide §1 product/DOI table",
+          "quote": "Product/DOI table lists SNDRJ1IML3CDCCP, SNDRJ1IML3CMCCP, SNDRJ1IML3SMCCP, SNDRAQIML3CDCCP, SNDRAQIML3CMCCP, SNDRAQIML3SDCCP, SNDRAQIML3SMCCP, SNDRAQIL3CDCCP, SNDRAQIL3CMCCP, SNDRAQIL3SDCCP, SNDRAQIL3SMCCP, SNDRSNIML3CDCCP, SNDRSNIML3CDCCPN, SNDRSNIML3CMCCP, SNDRSNIML3CMCCPN, SNDRSNIML3SDCCP, SNDRSNIML3SDCCPN, SNDRSNIML3SMCCP, SNDRSNIML3SMCCPN",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "keyword_priority_note": "Explicit aggregation statement; the daily ShortName is in the L3 product table.",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GES_DISC",
+        "level": "3",
+        "target_level": "3",
+        "level_progression_valid": true,
+        "version_compatible": true,
+        "cmr_versions": [
+          "2"
+        ]
+      },
+      "decision_procedure": "Q2 yes, by temporal aggregation: the monthly summarises the 28-31 daily products of the same QC type -> aggregated_from (PARENT).",
+      "mapping_note": "",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement"
+    },
+    {
+      "shortname": "SNDRJ1IML3SMCCP",
+      "version": "2",
+      "depth": 1,
+      "related_shortname": "SNDRAQIL3SMCCP",
+      "related_version": "2",
+      "related_concept_id": "C1693440803-GES_DISC",
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "evidence_source": "user_guide",
+      "evidence_doc": "l3_readme",
+      "evidence_section": "CLIMCAPS L3 User Guide §1 product/DOI table",
+      "evidence_quote": "Product/DOI table lists SNDRJ1IML3CDCCP, SNDRJ1IML3CMCCP, SNDRJ1IML3SMCCP, SNDRAQIML3CDCCP, SNDRAQIML3CMCCP, SNDRAQIML3SDCCP, SNDRAQIML3SMCCP, SNDRAQIL3CDCCP, SNDRAQIL3CMCCP, SNDRAQIL3SDCCP, SNDRAQIL3SMCCP, SNDRSNIML3CDCCP, SNDRSNIML3CDCCPN, SNDRSNIML3CMCCP, SNDRSNIML3CMCCPN, SNDRSNIML3SDCCP, SNDRSNIML3SDCCPN, SNDRSNIML3SMCCP, SNDRSNIML3SMCCPN",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "l3_readme",
+          "section": "CLIMCAPS L3 User Guide §2.0",
+          "quote": "Level-2 products are created from the Level-1B observations using CLIMCAPS. The results are then collected into 1-day and 1-month gridded Level-3 files.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "keyword_priority_note": "Listed with the target in the CLIMCAPS Level-3 monthly product/DOI table (product summary table = priority 1).",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GES_DISC",
+        "level": "3",
+        "target_level": "3",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "2"
+        ]
+      },
+      "decision_procedure": "Q1-Q4 no. Q5 yes: the same CLIMCAPS Level-3 monthly product from Aqua AIRS IR-only -> equivalent_product (RELATED).",
+      "mapping_note": "",
+      "confidence": "HIGH",
+      "confidence_rule": "HIGH rule: source, statement and CMR validation all strong"
+    },
+    {
+      "shortname": "SNDRJ1IML3SMCCP",
+      "version": "2",
+      "depth": 1,
+      "related_shortname": "SNDRAQIML3SMCCP",
+      "related_version": "2",
+      "related_concept_id": "C1693440838-GES_DISC",
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "evidence_source": "user_guide",
+      "evidence_doc": "l3_readme",
+      "evidence_section": "CLIMCAPS L3 User Guide §1 product/DOI table",
+      "evidence_quote": "Product/DOI table lists SNDRJ1IML3CDCCP, SNDRJ1IML3CMCCP, SNDRJ1IML3SMCCP, SNDRAQIML3CDCCP, SNDRAQIML3CMCCP, SNDRAQIML3SDCCP, SNDRAQIML3SMCCP, SNDRAQIL3CDCCP, SNDRAQIL3CMCCP, SNDRAQIL3SDCCP, SNDRAQIL3SMCCP, SNDRSNIML3CDCCP, SNDRSNIML3CDCCPN, SNDRSNIML3CMCCP, SNDRSNIML3CMCCPN, SNDRSNIML3SDCCP, SNDRSNIML3SDCCPN, SNDRSNIML3SMCCP, SNDRSNIML3SMCCPN",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "l3_readme",
+          "section": "CLIMCAPS L3 User Guide §2.0",
+          "quote": "Level-2 products are created from the Level-1B observations using CLIMCAPS. The results are then collected into 1-day and 1-month gridded Level-3 files.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "keyword_priority_note": "Listed with the target in the CLIMCAPS Level-3 monthly product/DOI table (product summary table = priority 1).",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GES_DISC",
+        "level": "3",
+        "target_level": "3",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "2"
+        ]
+      },
+      "decision_procedure": "Q1-Q4 no. Q5 yes: the same CLIMCAPS Level-3 monthly product from Aqua AIRS + AMSU-A -> equivalent_product (RELATED).",
+      "mapping_note": "",
+      "confidence": "HIGH",
+      "confidence_rule": "HIGH rule: source, statement and CMR validation all strong"
+    },
+    {
+      "shortname": "SNDRJ1IML3SMCCP",
+      "version": "2",
+      "depth": 1,
+      "related_shortname": "SNDRJ1IML3CMCCP",
+      "related_version": "2",
+      "related_concept_id": "C1692982095-GES_DISC",
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "evidence_source": "user_guide",
+      "evidence_doc": "l3_readme",
+      "evidence_section": "CLIMCAPS L3 User Guide §1 product/DOI table",
+      "evidence_quote": "Product/DOI table lists SNDRJ1IML3CDCCP, SNDRJ1IML3CMCCP, SNDRJ1IML3SMCCP, SNDRAQIML3CDCCP, SNDRAQIML3CMCCP, SNDRAQIML3SDCCP, SNDRAQIML3SMCCP, SNDRAQIL3CDCCP, SNDRAQIL3CMCCP, SNDRAQIL3SDCCP, SNDRAQIL3SMCCP, SNDRSNIML3CDCCP, SNDRSNIML3CDCCPN, SNDRSNIML3CMCCP, SNDRSNIML3CMCCPN, SNDRSNIML3SDCCP, SNDRSNIML3SDCCPN, SNDRSNIML3SMCCP, SNDRSNIML3SMCCPN",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "l3_readme",
+          "section": "CLIMCAPS L3 User Guide §2.1",
+          "quote": "Monthly Level-3 products are summaries of the data from the 28-31 daily Level-3 products in a calendar month.",
+          "verified": true
+        },
+        {
+          "doc": "l3_readme",
+          "section": "CLIMCAPS L3 User Guide §2.3",
+          "quote": "QCS products maximize yield of each individual species and level by collecting all cases where the corresponding *_qc value is 0 (best) or 1 (good).",
+          "verified": true
+        },
+        {
+          "doc": "l3_readme",
+          "section": "CLIMCAPS L3 User Guide §2.3",
+          "quote": "QCC products ensure analyses will be consistent across levels and species",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "keyword_priority_note": "Both listed in the L3 product table.",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GES_DISC",
+        "level": "3",
+        "target_level": "3",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "2"
+        ]
+      },
+      "decision_procedure": "Q4 yes: the other QC type's monthly made by the same monthly algorithm -> parallel_product (RELATED).",
+      "mapping_note": "",
+      "confidence": "HIGH",
+      "confidence_rule": "HIGH rule: source, statement and CMR validation all strong"
+    },
+    {
+      "shortname": "SNDRJ1IML3SMCCP",
+      "version": "2",
+      "depth": 1,
+      "related_shortname": "SNDRSNIML3SMCCP",
+      "related_version": "2",
+      "related_concept_id": "C1692982089-GES_DISC",
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "evidence_source": "user_guide",
+      "evidence_doc": "l3_readme",
+      "evidence_section": "CLIMCAPS L3 User Guide §1 product/DOI table",
+      "evidence_quote": "Product/DOI table lists SNDRJ1IML3CDCCP, SNDRJ1IML3CMCCP, SNDRJ1IML3SMCCP, SNDRAQIML3CDCCP, SNDRAQIML3CMCCP, SNDRAQIML3SDCCP, SNDRAQIML3SMCCP, SNDRAQIL3CDCCP, SNDRAQIL3CMCCP, SNDRAQIL3SDCCP, SNDRAQIL3SMCCP, SNDRSNIML3CDCCP, SNDRSNIML3CDCCPN, SNDRSNIML3CMCCP, SNDRSNIML3CMCCPN, SNDRSNIML3SDCCP, SNDRSNIML3SDCCPN, SNDRSNIML3SMCCP, SNDRSNIML3SMCCPN",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "l3_readme",
+          "section": "CLIMCAPS L3 User Guide §2.0",
+          "quote": "Level-2 products are created from the Level-1B observations using CLIMCAPS. The results are then collected into 1-day and 1-month gridded Level-3 files.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "keyword_priority_note": "Listed with the target in the CLIMCAPS Level-3 monthly product/DOI table (product summary table = priority 1).",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GES_DISC",
+        "level": "3",
+        "target_level": "3",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "2"
+        ]
+      },
+      "decision_procedure": "Q1-Q4 no. Q5 yes: the same CLIMCAPS Level-3 monthly product from S-NPP CrIMSS, FSR -> equivalent_product (RELATED).",
+      "mapping_note": "",
+      "confidence": "HIGH",
+      "confidence_rule": "HIGH rule: source, statement and CMR validation all strong"
+    },
+    {
+      "shortname": "SNDRJ1IML3SMCCP",
+      "version": "2",
+      "depth": 1,
+      "related_shortname": "SNDRSNIML3SMCCPN",
+      "related_version": "2",
+      "related_concept_id": "C1692982082-GES_DISC",
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "evidence_source": "user_guide",
+      "evidence_doc": "l3_readme",
+      "evidence_section": "CLIMCAPS L3 User Guide §1 product/DOI table",
+      "evidence_quote": "Product/DOI table lists SNDRJ1IML3CDCCP, SNDRJ1IML3CMCCP, SNDRJ1IML3SMCCP, SNDRAQIML3CDCCP, SNDRAQIML3CMCCP, SNDRAQIML3SDCCP, SNDRAQIML3SMCCP, SNDRAQIL3CDCCP, SNDRAQIL3CMCCP, SNDRAQIL3SDCCP, SNDRAQIL3SMCCP, SNDRSNIML3CDCCP, SNDRSNIML3CDCCPN, SNDRSNIML3CMCCP, SNDRSNIML3CMCCPN, SNDRSNIML3SDCCP, SNDRSNIML3SDCCPN, SNDRSNIML3SMCCP, SNDRSNIML3SMCCPN",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "l3_readme",
+          "section": "CLIMCAPS L3 User Guide §2.0",
+          "quote": "Level-2 products are created from the Level-1B observations using CLIMCAPS. The results are then collected into 1-day and 1-month gridded Level-3 files.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "keyword_priority_note": "Listed with the target in the CLIMCAPS Level-3 monthly product/DOI table (product summary table = priority 1).",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GES_DISC",
+        "level": "3",
+        "target_level": "3",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "2"
+        ]
+      },
+      "decision_procedure": "Q1-Q4 no. Q5 yes: the same CLIMCAPS Level-3 monthly product from S-NPP CrIMSS, NSR -> equivalent_product (RELATED).",
+      "mapping_note": "",
+      "confidence": "HIGH",
+      "confidence_rule": "HIGH rule: source, statement and CMR validation all strong"
+    }
+  ],
+  "excluded": [
+    {
+      "related": "SNDRJ1IML2CCPRET",
+      "lineage_relationship": "aggregated_from (of the daily L3)",
+      "reason": "indirect_rule_1c-1",
+      "detail": "The monthly is made from the daily L3, not from Level-2.",
+      "evidence_doc": "l3_readme",
+      "evidence_section": "CLIMCAPS L3 User Guide §2.1",
+      "evidence_quote": "Monthly Level-3 products are summaries of the data from the 28-31 daily Level-3 products in a calendar month.",
+      "quote_verified": true
+    }
+  ],
+  "existing_metadata_associations": [
+    {
+      "existing": {
+        "EntryId": "SNDRJ1IML3SMCCP",
+        "Version": "2",
+        "Type": "SCIENCE ASSOCIATED"
+      },
+      "issues": [
+        "self-relation: the record associates with itself; carries no lineage (CSV skill: no self-relations)",
+        "SCIENCE ASSOCIATED is never assigned by the skills"
+      ]
+    }
+  ],
+  "recommended_metadata_associations": [
+    {
+      "Type": "PARENT",
+      "EntryId": "SNDRJ1IML3SDCCP",
+      "Version": "2"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "SNDRAQIL3SMCCP",
+      "Version": "2"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "SNDRAQIML3SMCCP",
+      "Version": "2"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "SNDRJ1IML3CMCCP",
+      "Version": "2"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "SNDRSNIML3SMCCP",
+      "Version": "2"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "SNDRSNIML3SMCCPN",
+      "Version": "2"
+    }
+  ],
+  "recommended_metadata_associations_note": "UMM-C 1.18.x field names (EntryId). Under the proposed UMM-C 1.18.8, EntryId becomes ShortName and Version is required, so rows with an Unknown version need a curator decision.",
+  "csv_validation": {
+    "valid": true,
+    "errors": []
+  }
+}

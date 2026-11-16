@@ -1,0 +1,649 @@
+{
+  "generated_at": "2026-11-16T13:20:50+00:00",
+  "skills": [
+    "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0, Steps 1-7)",
+    "Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3)",
+    "Skills/Collection_Lineage_Generation_Skill.md (Step 1a-1d classification)"
+  ],
+  "notebook": "SNDR_lineage_batch2.ipynb",
+  "target": {
+    "shortname": "SNDRJ1ATMSL1B",
+    "version": "2",
+    "concept_id": "C1442068433-GES_DISC",
+    "processing_level": "1B",
+    "provider": "GES_DISC",
+    "collection_data_type": "SCIENCE_QUALITY",
+    "collection_progress": "ACTIVE",
+    "platforms": [
+      "NOAA-20"
+    ],
+    "instruments": [
+      "ATMS"
+    ],
+    "revision_date": "2026-11-11T00:44:49.797Z",
+    "granules_in_cmr": 779959,
+    "latest_granule": "SNDRJ1ATMSL1B.2:SNDR.J1.ATMS.20261116T0142.m06.g018.L1B.std.v02_11.G.261116072407.nc",
+    "pge_version": "v02.11.03",
+    "temporal": {
+      "BeginningDateTime": "2017-11-29T00:00:00.000Z"
+    }
+  },
+  "atbd_search_depth": 1,
+  "include_low_confidence": true,
+  "atbd_note": "The record links an ATBD (Priority 1 path); the linked User Guides/READMEs are also used (strong source).",
+  "cmr_state_note": "Records fetched live from CMR at 2026-11-16T13:20:50+00:00; see process/b2_*.json. Confidence depends on CMR state.",
+  "level_ranking_note": "Levels compared by major level, then sublevel (A < B < C); a bare '1' matches any Level 1 sublevel.",
+  "version_note": "related_version follows CSV skill Step 2 (subject version if present, else latest non-NRT = 'substituted'). document_version records a version the documents name.",
+  "doi_checks": {
+    "M2I3NVASM@5.12.4": {
+      "cited": "10.5067/WWQSXQ8IVFW8",
+      "cited_in": "ccp_merra",
+      "cmr_doi": "10.5067/WWQSXQ8IVFW8",
+      "match": true
+    },
+    "SNPPCrISL1B@3": {
+      "cited": "10.5067/ZCRSHBM5HB23",
+      "cited_in": "cris3_tab_fsr",
+      "cmr_doi": "10.5067/ZCRSHBM5HB23",
+      "match": true
+    },
+    "SNPPCrISL1BNSR@3": {
+      "cited": "10.5067/OZZPDWENP2NC",
+      "cited_in": "cris3_tab_nsr",
+      "cmr_doi": "10.5067/OZZPDWENP2NC",
+      "match": true
+    },
+    "SNDRJ1CrISL1B@3": {
+      "cited": "10.5067/LVEKYTNSRNKP",
+      "cited_in": "cris3_tab_j1",
+      "cmr_doi": "10.5067/LVEKYTNSRNKP",
+      "match": true
+    },
+    "SNPPATMSL1B@3": {
+      "cited": "10.5067/FCXKUUE9VCLN",
+      "cited_in": "atms3_tab",
+      "cmr_doi": "10.5067/FCXKUUE9VCLN",
+      "match": true
+    },
+    "SNDRJ1ATMSL1B@3": {
+      "cited": "10.5067/MUNII2DHSSY3",
+      "cited_in": "atms3_tab",
+      "cmr_doi": "10.5067/MUNII2DHSSY3",
+      "match": true
+    }
+  },
+  "source_documents": [
+    {
+      "id": "atms2_rm",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "Sounder SIPS ATMS Level 1B Product User Guide, V2 (2019-08-12)",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/JPSS-1/SNDRJ1ATMSL1B.2.Readme.12AUG2019.pdf",
+      "linked_from": "SNDRJ1ATMSL1B 2",
+      "fetched": true,
+      "sha256": "b35633f3f5af14c1f03cffab18a7aa3daec44f7e7677608a60bba93ede11acbf"
+    },
+    {
+      "id": "atms3_ug",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "Sounder SIPS ATMS Level 1B Product User Guide, V3.15",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/ATMS_V3_L1B_Product_User_Guide.pdf",
+      "linked_from": "SNDRJ1ATMSL1B 3",
+      "fetched": true,
+      "sha256": "aef033bde92c14995b313c546093e58101943f326ad8fba779e39c82cba5de15"
+    },
+    {
+      "id": "atms_atbd",
+      "kind": "atbd",
+      "subtype": "ATBD",
+      "title": "NASA ATMS L1B ATBD (JPL review)",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/SNPP_Sounder/3.3_ScienceDataProductDocumentation/3.3.4_ProductGenerationAlgorithms/ATMS_NASA_ATBD_JPL_Review.pdf",
+      "linked_from": "SNDRJ1ATMSL1B 2, 3",
+      "fetched": true,
+      "sha256": "20c8ee1ed00e96b7559f63446e31c12946b1d100e23e6069e673c4e0ad2ba12f"
+    },
+    {
+      "id": "cris2_ug",
+      "kind": "user_guide",
+      "subtype": "USER'S GUIDE",
+      "title": "NASA CrIS Level 1B Product Users' Guide, V2.11",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/JPSS-1/NASA_CrIS_L1B_Product_Users_Guide_V2.11.pdf",
+      "linked_from": "SNDRJ1CrISL1B 2",
+      "fetched": true,
+      "sha256": "64fbe47eebdc88c387eedbd79b07d8bbc99b6fcc1ec331c1d6ffbc7910128590"
+    },
+    {
+      "id": "cris3_ug",
+      "kind": "user_guide",
+      "subtype": "USER'S GUIDE",
+      "title": "NASA CrIS Level 1B Product Users' Guide, Version 3 Rev C",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/NASA_CrIS_L1B_Product_Users_Guide_v3RevC.pdf",
+      "linked_from": "SNDRJ1CrISL1B 3",
+      "fetched": true,
+      "sha256": "70f14fefe6f91800e7ce19851e86b74522f2900d4c90d034ff141ba0680d67a7"
+    },
+    {
+      "id": "cris2_atbd",
+      "kind": "atbd",
+      "subtype": "ATBD",
+      "title": "NASA CrIS L1B Delta ATBD, V2.1",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/JPSS-1/CrIS_L1B_DeltaATBD_V2.1.pdf",
+      "linked_from": "SNDRJ1CrISL1B 2",
+      "fetched": true,
+      "sha256": "75360f5b1079c9fc2f1b261fba62348eceec33999012310ca5df2267e5e09f30"
+    },
+    {
+      "id": "cris3_atbd",
+      "kind": "atbd",
+      "subtype": "ATBD",
+      "title": "NASA CrIS L1B Delta ATBD, V3.0",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/JPSS-1/CrIS_L1B_DeltaATBD_V3.0.pdf",
+      "linked_from": "SNDRJ1CrISL1B 3",
+      "fetched": true,
+      "sha256": "9df464d8b81cc49f3a9bc4a223b0eb148e41d981e5f5b567f2b0bd5554cfc692"
+    },
+    {
+      "id": "pca_rm",
+      "kind": "user_guide",
+      "subtype": "USER'S GUIDE",
+      "title": "README file for sample CrIS PCA/RED data (beta, 2024-05-09)",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/README.beta.SNDRJ1CrISL1BPCARED_v3.0.pdf",
+      "linked_from": "SNDRJ1CrISL1BPCARED 3.0",
+      "fetched": true,
+      "sha256": "c235f308de553b64b5427437c0f5e7b4356ac03e4655051cd766a63462ae3d8a"
+    },
+    {
+      "id": "cal_rm",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "NASA Aqua AIRS and SNPP CrIS Calibration Subset User Guide, V2",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/SNDRAQIML1BCALSUBSUM_2.README.pdf",
+      "linked_from": "SNDRAQIML1BCALSUBSUM, SNDRAQIML1CCALSUBRND",
+      "fetched": true,
+      "sha256": "ff3addb3265bb1d0e265e92362d2a42b458fe90864dc32dab85a913cbd4b606c"
+    },
+    {
+      "id": "cal_atbd",
+      "kind": "atbd",
+      "subtype": "ATBD",
+      "title": "CalSub ATBD, AIRS and CrIS SNPP (2023-02-10)",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/ATBD_CalSub_AIRS.CrIS.SNPP.20230210.pdf",
+      "linked_from": "SNDRAQIML1BCALSUBSUM, SNDRAQIML1CCALSUBRND",
+      "fetched": true,
+      "sha256": "fe8da3d70078ae4ac1eca6633ecab1b7b192b5f87b4205f39f1fc449f971ecec"
+    },
+    {
+      "id": "ccp_readme",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "Sounder SIPS CLIMCAPS Level-2 Products User Guide, V2",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/CLIMCAPS.V2.README.pdf",
+      "linked_from": "SNDRAQIML2CCPCCR, SNDRAQIML2CCPRET",
+      "fetched": true,
+      "sha256": "07ec3c80b24942d38837acbaaea6b0db59f4e819e6bd7b81b4abd5762068e890"
+    },
+    {
+      "id": "ccp_atbd",
+      "kind": "atbd",
+      "subtype": "ATBD",
+      "title": "Smith & Barnet 2020, CLIMCAPS (CLIMCAPS ATBD)",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/CLIMCAPS.V2.ATBD.pdf",
+      "linked_from": "CLIMCAPS L2/L3",
+      "fetched": true,
+      "sha256": "e24e6ce23daf01bb5ccc4ddc1227cfd9a24e1b541942141a654a9795244082b6"
+    },
+    {
+      "id": "ccp21_readme",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "Sounder SIPS CLIMCAPS Level-2 Products User Guide, V2.1",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/CLIMCAPS.V2.1.README.pdf",
+      "linked_from": "SNDRAQIML2CPS",
+      "fetched": true,
+      "sha256": "ecc2c1bc9d33b28ce73b013bca570a43031fa93cbf4484fb19ada4138eac29f3"
+    },
+    {
+      "id": "ccp_map",
+      "kind": "other_doc",
+      "subtype": "PRODUCT USAGE",
+      "title": "NASA CLIMCAPS Level-2 V2 to V2.1 Data Field Mapping",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/L2_CLIMCAPS_V2.to.V2.1_Mapping.pdf",
+      "linked_from": "SNDRAQIML2CPS, SNDRAQIML2PLEVCPS",
+      "fetched": true,
+      "sha256": "f6f50eb1b9c31b3b031d6752cf9ef13e143634789f09c31b742b8e8b17e7e1db"
+    },
+    {
+      "id": "plev_readme",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "PLEV CPS Level-2 Products User Guide, V2.1",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/CLIMCAPS.PLEV.CPS.L2.V2.1.README.pdf",
+      "linked_from": "SNDRAQIML2PLEVCPS",
+      "fetched": true,
+      "sha256": "7f36bf234eabe12df87b3d4e7fddc0fe4c25191be0d7d7136e165d7f5f8e2cf4"
+    },
+    {
+      "id": "plev_atbd",
+      "kind": "atbd",
+      "subtype": "ATBD",
+      "title": "ATBD for the PLEVS CPS Post Processor, v1.0",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/CLIMCAPS.PLEV.CPS.V2.1.ATBD.pdf",
+      "linked_from": "SNDRAQIML2PLEVCPS",
+      "fetched": true,
+      "sha256": "72feaf9e0920bbd2aa82c0fbb6175a61af1b5710d6a8467e96bf4a3ef2dff163"
+    },
+    {
+      "id": "l3_readme",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "Sounder SIPS CLIMCAPS Level-3 Products User Guide, V2",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/CLIMCAPS.L3.V2.README.pdf",
+      "linked_from": "SNDRAQIML3*, SNDRAQIL3SMCCP",
+      "fetched": true,
+      "sha256": "ffbf37d1e282488da6b442a3959f01e438698d2757b5966fa75e3fd106e1bf75"
+    },
+    {
+      "id": "cfsp_readme",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "Sounder SIPS ClimFiSP Level-3 Products User Guide, V2 (2026-09-02)",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/ClimFiSP.V2.README_20260902.pdf",
+      "linked_from": "SNDRAQIL3SDCFSP, SNDRAQIL3SMCFSP",
+      "fetched": true,
+      "sha256": "a6cf2fd6a9bcfaa563958a54e8e662e55106fe8721631b1f3e0b63aefbdde460"
+    },
+    {
+      "id": "cfsp_atbd",
+      "kind": "atbd",
+      "subtype": "ATBD",
+      "title": "ClimFiSP V2 ATBD (spectral fingerprinting)",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/ClimFiSP.V2.ATBD.pdf",
+      "linked_from": "SNDRAQIL3SDCFSP, SNDRAQIL3SMCFSP",
+      "fetched": true,
+      "sha256": "8607000702d9b38e78d07b54370ac6ba72cb6f1a762025d58d3479b9d360535c"
+    },
+    {
+      "id": "chirp_readme",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "CHIRP Level 1 README, V2 (child documentation)",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/README.CHIRP.L1.V2.pdf",
+      "linked_from": "SNDR13CHRP1* (children of CrIS L1B)",
+      "fetched": true,
+      "sha256": "babb4b5932fe332f65f2444464afb054301a1669f7d25765cef2501258af1784"
+    },
+    {
+      "id": "rms_readme",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "RAMSES II Level-2 Products User Guide, V3 (child documentation)",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/RAMSESII.L2.V3.README.pdf",
+      "linked_from": "SNDRJ1ML2RMS* (children of ATMS L1B)",
+      "fetched": true,
+      "sha256": "8387c0a7ec2b1f276b4d7fa83be274549c4c496b1ba4c34747ad806ad4381bf3"
+    },
+    {
+      "id": "img_ug",
+      "kind": "user_guide",
+      "subtype": "USER'S GUIDE",
+      "title": "NASA CrIS IMG / IMG_COL Product Users' Guide, V2 Rev C (child documentation)",
+      "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Sounder/NASA_CrIS_L1B_IMG_Product_Users_Guide_v2revC.pdf",
+      "linked_from": "SNDRJ1CrISL1BIMG* (children of CrIS L1B)",
+      "fetched": true,
+      "sha256": "0ca1184610aab3e44534c2667113d844149e8cc61ccc23e831840dfae631c5b0"
+    }
+  ],
+  "rows": [
+    {
+      "shortname": "SNDRJ1ATMSL1B",
+      "version": "2",
+      "depth": 1,
+      "related_shortname": "SNDRJ1IML2CCPCCR",
+      "related_version": "2",
+      "related_concept_id": "C1692982092-GES_DISC",
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "user_guide",
+      "evidence_doc": "plev_readme",
+      "evidence_section": "PLEV CPS User Guide §2.0",
+      "evidence_quote": "uses version 2 of ATMS and CrIS Level-1B as their primary inputs",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "ccp_readme",
+          "section": "CLIMCAPS V2 User Guide §1 product/DOI table",
+          "quote": "Product/DOI table lists SNDRJ1IML2CCPRET, SNDRJ1IML2CCPCCR",
+          "verified": true
+        },
+        {
+          "doc": "plev_readme",
+          "section": "PLEV CPS User Guide §2.0",
+          "quote": "The version 2.1 PLEV CPS uses CLIMCAPS V2 products for SNPP and JPSS-1.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "keyword_priority_note": "Explicit version statement ('uses version 2 of ATMS and CrIS Level-1B as their primary inputs'), but the L1B is named generically; the child ShortName is in the CLIMCAPS product table.",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GES_DISC",
+        "level": "2",
+        "target_level": "1B",
+        "level_progression_valid": true,
+        "version_compatible": true,
+        "cmr_versions": [
+          "2"
+        ]
+      },
+      "decision_procedure": "Q1 yes: CLIMCAPS NOAA-20 retrieves from ATMS L1B V2 -> downstream_product (CHILD).",
+      "mapping_note": "'ATMS and CrIS Level-1B' mapped to the NOAA-20 L1B ShortName (inferred). The V2.1 products (CPS, PLEV) use CLIMCAPS V2 inputs ('The version 2.1 PLEV CPS uses CLIMCAPS V2 products for SNPP and JPSS-1').",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement"
+    },
+    {
+      "shortname": "SNDRJ1ATMSL1B",
+      "version": "2",
+      "depth": 1,
+      "related_shortname": "SNDRJ1IML2CCPRET",
+      "related_version": "2",
+      "related_concept_id": "C1692982090-GES_DISC",
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "user_guide",
+      "evidence_doc": "plev_readme",
+      "evidence_section": "PLEV CPS User Guide §2.0",
+      "evidence_quote": "uses version 2 of ATMS and CrIS Level-1B as their primary inputs",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "ccp_readme",
+          "section": "CLIMCAPS V2 User Guide §1 product/DOI table",
+          "quote": "Product/DOI table lists SNDRJ1IML2CCPRET, SNDRJ1IML2CCPCCR",
+          "verified": true
+        },
+        {
+          "doc": "plev_readme",
+          "section": "PLEV CPS User Guide §2.0",
+          "quote": "The version 2.1 PLEV CPS uses CLIMCAPS V2 products for SNPP and JPSS-1.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "keyword_priority_note": "Explicit version statement ('uses version 2 of ATMS and CrIS Level-1B as their primary inputs'), but the L1B is named generically; the child ShortName is in the CLIMCAPS product table.",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GES_DISC",
+        "level": "2",
+        "target_level": "1B",
+        "level_progression_valid": true,
+        "version_compatible": true,
+        "cmr_versions": [
+          "2"
+        ]
+      },
+      "decision_procedure": "Q1 yes: CLIMCAPS NOAA-20 retrieves from ATMS L1B V2 -> downstream_product (CHILD).",
+      "mapping_note": "'ATMS and CrIS Level-1B' mapped to the NOAA-20 L1B ShortName (inferred). The V2.1 products (CPS, PLEV) use CLIMCAPS V2 inputs ('The version 2.1 PLEV CPS uses CLIMCAPS V2 products for SNPP and JPSS-1').",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement"
+    },
+    {
+      "shortname": "SNDRJ1ATMSL1B",
+      "version": "2",
+      "depth": 1,
+      "related_shortname": "SNDRJ1IML2CPS",
+      "related_version": "2.1",
+      "related_concept_id": "C2790945504-GES_DISC",
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "user_guide",
+      "evidence_doc": "plev_readme",
+      "evidence_section": "PLEV CPS User Guide §2.0",
+      "evidence_quote": "uses version 2 of ATMS and CrIS Level-1B as their primary inputs",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "ccp21_readme",
+          "section": "CLIMCAPS V2.1 User Guide §1 product/DOI table",
+          "quote": "Product/DOI table lists SNDRJ1IML2CPS",
+          "verified": true
+        },
+        {
+          "doc": "plev_readme",
+          "section": "PLEV CPS User Guide §2.0",
+          "quote": "The version 2.1 PLEV CPS uses CLIMCAPS V2 products for SNPP and JPSS-1.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "keyword_priority_note": "Explicit version statement ('uses version 2 of ATMS and CrIS Level-1B as their primary inputs'), but the L1B is named generically; the child ShortName is in the CLIMCAPS product table.",
+      "version_status": "substituted",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GES_DISC",
+        "level": "2",
+        "target_level": "1B",
+        "level_progression_valid": true,
+        "version_compatible": false,
+        "cmr_versions": [
+          "2.1"
+        ]
+      },
+      "decision_procedure": "Q1 yes: CLIMCAPS NOAA-20 retrieves from ATMS L1B V2 -> downstream_product (CHILD).",
+      "mapping_note": "'ATMS and CrIS Level-1B' mapped to the NOAA-20 L1B ShortName (inferred). The V2.1 products (CPS, PLEV) use CLIMCAPS V2 inputs ('The version 2.1 PLEV CPS uses CLIMCAPS V2 products for SNPP and JPSS-1').",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement, cmr_validation"
+    },
+    {
+      "shortname": "SNDRJ1ATMSL1B",
+      "version": "2",
+      "depth": 1,
+      "related_shortname": "SNDRJ1IML2PLEVCPS",
+      "related_version": "2.1",
+      "related_concept_id": "C2791421549-GES_DISC",
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "evidence_source": "user_guide",
+      "evidence_doc": "plev_readme",
+      "evidence_section": "PLEV CPS User Guide §2.0",
+      "evidence_quote": "uses version 2 of ATMS and CrIS Level-1B as their primary inputs",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "plev_readme",
+          "section": "PLEV CPS User Guide §1 product/DOI table",
+          "quote": "Product/DOI table lists SNDRJ1IML2PLEVCPS",
+          "verified": true
+        },
+        {
+          "doc": "plev_readme",
+          "section": "PLEV CPS User Guide §2.0",
+          "quote": "The version 2.1 PLEV CPS uses CLIMCAPS V2 products for SNPP and JPSS-1.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "keyword_priority_note": "Explicit version statement ('uses version 2 of ATMS and CrIS Level-1B as their primary inputs'), but the L1B is named generically; the child ShortName is in the CLIMCAPS product table.",
+      "version_status": "substituted",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GES_DISC",
+        "level": "2",
+        "target_level": "1B",
+        "level_progression_valid": true,
+        "version_compatible": false,
+        "cmr_versions": [
+          "2.1"
+        ]
+      },
+      "decision_procedure": "Q1 yes: CLIMCAPS NOAA-20 retrieves from ATMS L1B V2 -> downstream_product (CHILD).",
+      "mapping_note": "'ATMS and CrIS Level-1B' mapped to the NOAA-20 L1B ShortName (inferred). The V2.1 products (CPS, PLEV) use CLIMCAPS V2 inputs ('The version 2.1 PLEV CPS uses CLIMCAPS V2 products for SNPP and JPSS-1').",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement, cmr_validation"
+    },
+    {
+      "shortname": "SNDRJ1ATMSL1B",
+      "version": "2",
+      "depth": 1,
+      "related_shortname": "SNDRJ1CrISL1B",
+      "related_version": "2",
+      "related_concept_id": "C1442068434-GES_DISC",
+      "association_type": "RELATED",
+      "lineage_relationship": "template_of",
+      "evidence_source": "user_guide",
+      "evidence_doc": "atms2_rm",
+      "evidence_section": "ATMS L1B User Guide V2 §3",
+      "evidence_quote": "The ATMS L1B files, similar to the CrIS L1B files, are in Network Common Data Form,",
+      "quote_verified": true,
+      "supporting_quotes": [],
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "keyword_priority_note": "Shared-format statement naming 'the CrIS L1B files' generically.",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GES_DISC",
+        "level": "1B",
+        "target_level": "1B",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "2",
+          "3"
+        ]
+      },
+      "decision_procedure": "Q1-Q5 no (no data dependency; different instrument and product). Q6: shared file format and granulation -> template_of (RELATED).",
+      "mapping_note": "'the CrIS L1B files' mapped to the NOAA-20 CrIS L1B of the same version (inferred). The CrIS V3 guide states the format and granulation 'are common with the ... ATMS L1B product'.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement"
+    },
+    {
+      "shortname": "SNDRJ1ATMSL1B",
+      "version": "2",
+      "depth": 1,
+      "related_shortname": "SNPPATMSL1B",
+      "related_version": "2",
+      "related_concept_id": "C1442068516-GES_DISC",
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "evidence_source": "user_guide",
+      "evidence_doc": "atms2_rm",
+      "evidence_section": "ATMS L1B User Guide V2 §1 (ECS ShortNames)",
+      "evidence_quote": "Product/DOI table lists SNPPATMSL1B, SNDRJ1ATMSL1B",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "atms2_rm",
+          "section": "ATMS L1B User Guide V2 §2.2 Algorithm Background",
+          "quote": "The Sounder SIPS ATMS L1B data products are a product of processing NASA Level 0 data through Level 1A/Geolocation and Level 1B.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "keyword_priority_note": "Listed with the target in the ATMS L1B User Guide ShortName table.",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GES_DISC",
+        "level": "1B",
+        "target_level": "1B",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "2",
+          "3"
+        ]
+      },
+      "decision_procedure": "Q1-Q4 no. Q5 yes: the same Sounder SIPS ATMS L1B product from S-NPP -> equivalent_product (RELATED).",
+      "mapping_note": "",
+      "confidence": "HIGH",
+      "confidence_rule": "HIGH rule: source, statement and CMR validation all strong"
+    }
+  ],
+  "excluded": [
+    {
+      "related": "EDOS Level 0 (NOAA-20 ATMS)",
+      "lineage_relationship": "derived_from",
+      "reason": "not_in_cmr",
+      "detail": "The L1B is processed from EDOS Level 0 through an internal Level 1A/geolocation step; CMR has no NOAA-20 Level 0 or 1A collection for this instrument (rule 1c-4).",
+      "evidence_doc": "atms2_rm",
+      "evidence_section": "ATMS L1B User Guide V2 §2.2 Algorithm Background",
+      "evidence_quote": "The Sounder SIPS ATMS L1B data products are a product of processing NASA Level 0 data through Level 1A/Geolocation and Level 1B.",
+      "quote_verified": true
+    },
+    {
+      "related": "SNDRJ1ATMSL1B 3",
+      "lineage_relationship": "version_of",
+      "reason": "same_shortname",
+      "detail": "Another version of the target itself; the skills never list other versions of T (Generation skill 1a, version_of).",
+      "evidence_doc": "atms3_ug",
+      "evidence_section": "ATMS L1B User Guide V3 §1.7 What's different/new in Version 3",
+      "evidence_quote": "What is new in version 3.15:",
+      "quote_verified": true
+    }
+  ],
+  "existing_metadata_associations": [
+    {
+      "existing": {
+        "EntryId": "SNDRJ1ATMSL1B",
+        "Version": "02",
+        "Type": "SCIENCE ASSOCIATED"
+      },
+      "issues": [
+        "self-relation: the record associates with itself; carries no lineage (CSV skill: no self-relations)",
+        "Version '02' doesn't match the record's own Version '2'",
+        "SCIENCE ASSOCIATED is never assigned by the skills"
+      ]
+    }
+  ],
+  "recommended_metadata_associations": [
+    {
+      "Type": "CHILD",
+      "EntryId": "SNDRJ1IML2CCPCCR",
+      "Version": "2"
+    },
+    {
+      "Type": "CHILD",
+      "EntryId": "SNDRJ1IML2CCPRET",
+      "Version": "2"
+    },
+    {
+      "Type": "CHILD",
+      "EntryId": "SNDRJ1IML2CPS",
+      "Version": "2.1"
+    },
+    {
+      "Type": "CHILD",
+      "EntryId": "SNDRJ1IML2PLEVCPS",
+      "Version": "2.1"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "SNDRJ1CrISL1B",
+      "Version": "2"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "SNPPATMSL1B",
+      "Version": "2"
+    }
+  ],
+  "recommended_metadata_associations_note": "UMM-C 1.18.x field names (EntryId). Under the proposed UMM-C 1.18.8, EntryId becomes ShortName and Type, ShortName and Version are required.",
+  "csv_validation": {
+    "valid": true,
+    "errors": []
+  }
+}

@@ -1,0 +1,3 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+SNDRAQIL2JSFRET,2,PARENT,AIRIBRAD,005,MEDIUM,derived_from
+SNDRAQIL2JSFRET,2,INPUT,MYD06_L2,6.1,MEDIUM,input_to

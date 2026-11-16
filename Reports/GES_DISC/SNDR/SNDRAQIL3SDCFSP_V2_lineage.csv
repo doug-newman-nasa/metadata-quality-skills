@@ -1,0 +1,6 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+SNDRAQIL3SDCFSP,2,PARENT,SNDR13CHRP1,2,MEDIUM,derived_from
+SNDRAQIL3SDCFSP,2,PARENT,SNDR13CHRP1AQCal,2,MEDIUM,derived_from
+SNDRAQIL3SDCFSP,2,CHILD,SNDRAQIL3SMCFSP,2,HIGH,downstream_product
+SNDRAQIL3SDCFSP,2,RELATED,SNDRJ1IL3SDCFSP,2,HIGH,equivalent_product
+SNDRAQIL3SDCFSP,2,RELATED,SNDRSNIL3SDCFSP,2,HIGH,equivalent_product

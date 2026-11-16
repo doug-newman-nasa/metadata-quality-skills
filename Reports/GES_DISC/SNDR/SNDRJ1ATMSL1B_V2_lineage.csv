@@ -1,0 +1,7 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+SNDRJ1ATMSL1B,2,CHILD,SNDRJ1IML2CCPCCR,2,MEDIUM,downstream_product
+SNDRJ1ATMSL1B,2,CHILD,SNDRJ1IML2CCPRET,2,MEDIUM,downstream_product
+SNDRJ1ATMSL1B,2,CHILD,SNDRJ1IML2CPS,2.1,MEDIUM,downstream_product
+SNDRJ1ATMSL1B,2,CHILD,SNDRJ1IML2PLEVCPS,2.1,MEDIUM,downstream_product
+SNDRJ1ATMSL1B,2,RELATED,SNDRJ1CrISL1B,2,MEDIUM,template_of
+SNDRJ1ATMSL1B,2,RELATED,SNPPATMSL1B,2,HIGH,equivalent_product

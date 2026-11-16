@@ -1,0 +1,4 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+SNDRJ1ML3DRMS,3,PARENT,SNDRJ1ML2RMS,3,MEDIUM,aggregated_from
+SNDRJ1ML3DRMS,3,CHILD,SNDRJ1ML3MRMS,3,HIGH,downstream_product
+SNDRJ1ML3DRMS,3,RELATED,SNDRSNML3DRMS,3,HIGH,equivalent_product

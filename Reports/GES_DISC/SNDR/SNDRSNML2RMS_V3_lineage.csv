@@ -1,0 +1,5 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+SNDRSNML2RMS,3,PARENT,SNPPATMSL1B,3,MEDIUM,derived_from
+SNDRSNML2RMS,3,CHILD,SNDRSNML3DRMS,3,HIGH,downstream_product
+SNDRSNML2RMS,3,RELATED,SNDRJ1ML2RMS,3,HIGH,equivalent_product
+SNDRSNML2RMS,3,RELATED,SNDRSNML2RMSSUP,3,HIGH,parallel_product

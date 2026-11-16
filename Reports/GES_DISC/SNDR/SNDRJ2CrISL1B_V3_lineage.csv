@@ -1,0 +1,6 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+SNDRJ2CrISL1B,3,CHILD,SNDRJ2CrISL1BIMG,3.0,MEDIUM,downstream_product
+SNDRJ2CrISL1B,3,CHILD,SNDRJ2CrISL1BIMGC,3.0,MEDIUM,downstream_product
+SNDRJ2CrISL1B,3,RELATED,SNDRJ1CrISL1B,3,MEDIUM,equivalent_product
+SNDRJ2CrISL1B,3,RELATED,SNPPCrISL1B,3,MEDIUM,equivalent_product
+SNDRJ2CrISL1B,3,RELATED,SNPPCrISL1BNSR,3,MEDIUM,equivalent_product

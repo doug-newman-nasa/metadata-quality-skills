@@ -1,0 +1,6 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+SNDR13CHRP1AQCal,2,PARENT,AIRICRAD,6.7,MEDIUM,derived_from
+SNDR13CHRP1AQCal,2,CHILD,SNDRAQIL3SDCFSP,2,MEDIUM,downstream_product
+SNDR13CHRP1AQCal,2,RELATED,SNDR13CHRP1,2,MEDIUM,parallel_product
+SNDR13CHRP1AQCal,2,RELATED,SNDR13CHRP1J1Cal,2,MEDIUM,equivalent_product
+SNDR13CHRP1AQCal,2,RELATED,SNDR13CHRP1SNCal,2,MEDIUM,equivalent_product

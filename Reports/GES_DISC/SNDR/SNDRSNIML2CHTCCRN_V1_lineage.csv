@@ -1,0 +1,5 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+SNDRSNIML2CHTCCRN,1,PARENT,SNPPCrISL1BNSR,Unknown,MEDIUM,derived_from
+SNDRSNIML2CHTCCRN,1,INPUT,SNPPATMSL1B,Unknown,MEDIUM,input_to
+SNDRSNIML2CHTCCRN,1,RELATED,SNDRSNIML2CCPCCRN,Unknown,MEDIUM,related_to
+SNDRSNIML2CHTCCRN,1,RELATED,SNDRSNIML2CHTRETN,1,HIGH,parallel_product

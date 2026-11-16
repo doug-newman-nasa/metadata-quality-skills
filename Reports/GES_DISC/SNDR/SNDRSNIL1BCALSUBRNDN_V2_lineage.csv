@@ -1,0 +1,4 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+SNDRSNIL1BCALSUBRNDN,2,PARENT,SNPPCrISL1BNSR,2,MEDIUM,derived_from
+SNDRSNIL1BCALSUBRNDN,2,RELATED,SNDRAQIML1CCALSUBRND,2,HIGH,equivalent_product
+SNDRSNIL1BCALSUBRNDN,2,RELATED,SNDRSNIL1BCALSUBSUMN,2,HIGH,parallel_product
