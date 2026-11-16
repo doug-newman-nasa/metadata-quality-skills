@@ -1,0 +1,3 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+IXBMI2LS,002,PARENT,MIL2ASLS,002,MEDIUM,derived_from
+IXBMI2LS,002,RELATED,IXBMI2AE,002,MEDIUM,parallel_product

@@ -1,0 +1,2 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+TL1BL,5,CHILD,TL2HDOL,006,MEDIUM,downstream_product

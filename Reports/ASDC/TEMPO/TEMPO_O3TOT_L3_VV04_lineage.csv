@@ -1,0 +1,2 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+TEMPO_O3TOT_L3,V04,PARENT,TEMPO_O3TOT_L2,V04,HIGH,aggregated_from

@@ -1,0 +1,3 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+TL3CH4M,6,PARENT,TL2CH4N,8,MEDIUM,aggregated_from
+TL3CH4M,6,RELATED,TL3CH4D,6,MEDIUM,parallel_product

@@ -1,0 +1,493 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-16T20:14:52+00:00",
+  "related_records": {
+    "g3at": {
+      "version": "004",
+      "concept_id": "C3215261216-LARC_CLOUD"
+    },
+    "g3atb": {
+      "version": "004",
+      "concept_id": "C3215261312-LARC_CLOUD"
+    }
+  },
+  "parameters": {
+    "collection_short_name": "g3asspb",
+    "collection_version": "004",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 1,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "g3asspb",
+    "version": "004",
+    "concept_id": "C3215261129-LARC_CLOUD",
+    "revision_id": 30,
+    "entry_title": "SAGE III Meteor-3M L2 Solar Event Species Profiles (Native) V004",
+    "processing_level": "2",
+    "temporal": [
+      {
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2001-12-10T00:00:00.000Z",
+            "EndingDateTime": "2005-11-13T00:00:00.000Z"
+          }
+        ],
+        "PrecisionOfSeconds": 6,
+        "EndsAtPresentFlag": false
+      }
+    ],
+    "existing_metadata_associations": [
+      {
+        "Type": "SCIENCE ASSOCIATED",
+        "Description": "This is the SAGE III Level 1B solar transmission file containing 85 profiles from zero to 100 km in 0.5 km intervals that are used in inversion algorithms to extract the measured species associated with the transmission wavelengths.",
+        "EntryId": "g3atb",
+        "Version": "4"
+      },
+      {
+        "Type": "SCIENCE ASSOCIATED",
+        "Description": "The weekly data processing report containing information that might be useful in gaining insight into the processing of these data.",
+        "EntryId": "g3arep",
+        "Version": "4"
+      },
+      {
+        "Type": "SCIENCE ASSOCIATED",
+        "Description": "The weekly quality assurance report containing information that might be useful in gaining insight into the quality of these data.",
+        "EntryId": "g3arepqa",
+        "Version": "4"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [
+      {
+        "url": "https://asdc.larc.nasa.gov/documents/sage3/ATBDs/Solar_and_Lunar_Algorithm.pdf",
+        "priority": 1,
+        "source": "official_ATBD_designation",
+        "description": "NASA EOS ATB Documents: SAGE III"
+      }
+    ],
+    "decision_tree_branch": "[1] YES: ATBD in related_urls is the primary source"
+  },
+  "source_documents": [
+    {
+      "key": "cloud",
+      "title": "SAGE III ATBD: Cloud Data Products",
+      "url": "https://asdc.larc.nasa.gov/documents/sage3/ATBDs/Cloud_Data_Products.pdf",
+      "evidence_source": "atbd",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "cmr_record:g3acld|004",
+      "title": "CMR abstract: g3acld 004",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3449081101-LARC_CLOUD.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "dpug3",
+      "title": "SAGE III (Meteor-3M) Data Products User's Guide",
+      "url": "https://asdc.larc.nasa.gov/documents/sage3/guide/Data_Product_User_Guide.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "trans",
+      "title": "SAGE III ATBD: Transmission Level 1B Products",
+      "url": "https://asdc.larc.nasa.gov/documents/sage3/ATBDs/Transmission_Level_1B_Products.pdf",
+      "evidence_source": "atbd",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "trans",
+      "url": "https://asdc.larc.nasa.gov/documents/sage3/ATBDs/Transmission_Level_1B_Products.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 123867
+    },
+    {
+      "key": "slalg",
+      "url": "https://asdc.larc.nasa.gov/documents/sage3/ATBDs/Solar_and_Lunar_Algorithm.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 179133
+    },
+    {
+      "key": "cloud",
+      "url": "https://asdc.larc.nasa.gov/documents/sage3/ATBDs/Cloud_Data_Products.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 187973
+    },
+    {
+      "key": "dpug3",
+      "url": "https://asdc.larc.nasa.gov/documents/sage3/guide/Data_Product_User_Guide.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 248189
+    },
+    {
+      "key": "project3",
+      "url": "https://asdc.larc.nasa.gov/documents/sage3/guide/sage3_project.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 6658
+    },
+    {
+      "key": "qs3",
+      "url": "https://asdc.larc.nasa.gov/documents/sage3/quality_summaries/sage3_quality_summary_v3.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 2777
+    },
+    {
+      "key": "dpug53",
+      "url": "https://asdc.larc.nasa.gov/documents/sageiii-iss/guide/DPUG_G3B_v05.30.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 102435
+    },
+    {
+      "key": "rn53",
+      "url": "https://asdc.larc.nasa.gov/documents/sageiii-iss/guide/ReleaseNotes_G3B_v05.30.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 10998
+    },
+    {
+      "key": "dpug6",
+      "url": "https://asdc.larc.nasa.gov/documents/sageiii-iss/guide/data_product_users_guide_6.0.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 68053
+    },
+    {
+      "key": "rn6",
+      "url": "https://asdc.larc.nasa.gov/documents/sageiii-iss/guide/release_notes_6.0.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 9242
+    },
+    {
+      "key": "rnx",
+      "url": "https://asdc.larc.nasa.gov/documents/sageiii-iss/guide/release_notes_6.0_expedited.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 1340
+    },
+    {
+      "key": "aer",
+      "url": "https://asdc.larc.nasa.gov/documents/sageiii-iss/readme/Readme_SAGEIII_L2_AER_AUX_v1.0.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 12609
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "g3asspb",
+      "version": "004",
+      "level": "2"
+    },
+    "primary_parents": [
+      "g3atb 004"
+    ],
+    "supporting_parents": [],
+    "derived_children": [
+      "g3acldb 004"
+    ],
+    "related": [
+      "g3assp 004"
+    ]
+  },
+  "relationships": [
+    {
+      "shortname": "g3asspb",
+      "version": "004",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "g3atb",
+      "related_version": "004",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "atbd",
+      "evidence_document": "SAGE III ATBD: Transmission Level 1B Products",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/sage3/ATBDs/Transmission_Level_1B_Products.pdf",
+      "evidence_section": "1.0 Introduction",
+      "evidence_page": 4,
+      "evidence_quote": "The SAGE III level 1B1 transmission data products will be the input data for the processing to produce the SAGE III solar occultation level 2 data products.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "SAGE III (Meteor-3M) Data Products User's Guide",
+          "quote": "produced from the Level 1B Transmission profiles",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: the native-format solar Level 2 species are retrieved from the Level 1B transmission profiles (native format); PARENT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "004"
+        ],
+        "concept_id": "C3215261312-LARC_CLOUD",
+        "related_level": "1B",
+        "level_progression_valid": true,
+        "level_check": "parent L1 <= target L2",
+        "version_compatible": true,
+        "existing_association_in_target": "SCIENCE ASSOCIATED"
+      }
+    },
+    {
+      "shortname": "g3asspb",
+      "version": "004",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "g3acldb",
+      "related_version": "004",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "atbd",
+      "evidence_document": "SAGE III ATBD: Cloud Data Products",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/sage3/ATBDs/Cloud_Data_Products.pdf",
+      "evidence_section": "3.2 Input data",
+      "evidence_page": 41,
+      "evidence_quote": "The input data needed for the determination of cloud presence in each event will consist of vertical profiles of aerosol extinction, together with their estimated errors, at wavelengths of 525 nm, 1020 nm, and 1550 nm.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "SAGE III ATBD: Cloud Data Products",
+          "quote": "This document covers the algorithm from the accessing of the input aerosol data products to the output of the cloud presence profiles and the associated error assessment.",
+          "verified": true
+        },
+        {
+          "document": "CMR abstract: g3acld 004",
+          "quote": "It is a monthly compilation of polar cloud presence from SAGE III coincident with solar event granules",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: cloud presence (native format) is determined from the solar aerosol extinction profiles; PARENT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "004"
+        ],
+        "concept_id": "C3449082507-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "child L2 >= target L2",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "g3asspb",
+      "version": "004",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "related_shortname": "g3assp",
+      "related_version": "004",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "SAGE III (Meteor-3M) Data Products User's Guide",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/sage3/guide/Data_Product_User_Guide.pdf",
+      "evidence_section": "Data format",
+      "evidence_page": 12,
+      "evidence_quote": "and format for the HDF-EOS and binary Level 1B and Level 2 data products.",
+      "quote_verified": true,
+      "supporting": [],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 4: the same product in HDF-EOS and native binary format.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "004"
+        ],
+        "concept_id": "C3215264962-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "granule_level_check": {
+    "collection": "g3asspb|004",
+    "granules": 30947,
+    "sample": "g3a.sspb.00107820v04.00",
+    "sample_time": {
+      "SingleDateTime": "2002-02-27T11:32:11.000Z"
+    },
+    "with_InputGranules": 0
+  },
+  "existing_associations_check": [
+    {
+      "collection": "g3asspb|004",
+      "Type": "SCIENCE ASSOCIATED",
+      "EntryId": "g3atb",
+      "Version": "4",
+      "self_reference": false
+    },
+    {
+      "collection": "g3asspb|004",
+      "Type": "SCIENCE ASSOCIATED",
+      "EntryId": "g3arep",
+      "Version": "4",
+      "self_reference": false
+    },
+    {
+      "collection": "g3asspb|004",
+      "Type": "SCIENCE ASSOCIATED",
+      "EntryId": "g3arepqa",
+      "Version": "4",
+      "self_reference": false
+    }
+  ],
+  "metadata_findings": [
+    "MetadataAssociation SCIENCE ASSOCIATED → g3atb version '4' does not resolve: CMR uses '004' (leading-zero format).",
+    "The documented relationship to g3atb is PARENT (derived_from), not SCIENCE ASSOCIATED, at version 004.",
+    "MetadataAssociation SCIENCE ASSOCIATED → g3arep 4: ShortName not in CMR.",
+    "MetadataAssociation SCIENCE ASSOCIATED → g3arepqa 4: ShortName not in CMR.",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/project/SAGE%20III-ISS",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/citing-data",
+    "The linked documents predate this version: the ATBDs are from 2002, the Data Products User's Guide is v1.5 (July 2004) and the Data Quality Summary covers Version 3."
+  ],
+  "excluded": [
+    {
+      "candidate": "Lunar Level 1B transmission (M3M and ISS)",
+      "reason": "not_in_cmr",
+      "evidence": "lunar_l1b",
+      "detail": "No lunar L1B product is produced."
+    },
+    {
+      "candidate": "MERRA-2 (ISS temperature and pressure)",
+      "reason": "ambiguous",
+      "evidence": "merra2",
+      "detail": "The MERRA-2 collection (M2I3NVASM, M2I3NPASM, M2I6NVANA, …) is not named."
+    },
+    {
+      "candidate": "GEOS-IT (expedited temperature and pressure)",
+      "reason": "ambiguous",
+      "evidence": "geosit",
+      "detail": "The GEOS-IT collection is not named."
+    },
+    {
+      "candidate": "NCEP analyses and GRAM 95 climatology (Meteor-3M)",
+      "reason": "not_in_cmr",
+      "evidence": "ncep"
+    },
+    {
+      "candidate": "ISS DMP gyro / ephemeris data",
+      "reason": "not_in_cmr",
+      "evidence": "dmp"
+    },
+    {
+      "candidate": "g3arep, g3arepqa, g3arepc, g3arepqc (SCIENCE ASSOCIATED in the M3M records)",
+      "reason": "not_in_cmr"
+    },
+    {
+      "candidate": "SAGE III Level 0 / Level 1A",
+      "reason": "not_in_cmr"
+    },
+    {
+      "candidate": "Other versions of the same ShortName (53 ↔ 6)",
+      "reason": "same_product"
+    }
+  ],
+  "csv": {
+    "path": "Reports/ASDC/SAGE_III/g3asspb_V004_lineage.csv",
+    "rows": 3,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "existing_associations_review": [
+    {
+      "collection": "g3asspb|004",
+      "Type": "SCIENCE ASSOCIATED",
+      "Description": "This is the SAGE III Level 1B solar transmission file containing 85 profiles from zero to 100 km in 0.5 km intervals that are used in inversion algorithms to extract the measured species associated with the transmission wavelengths.",
+      "EntryId": "g3atb",
+      "Version": "4",
+      "resolves_in_cmr": false,
+      "versions_in_cmr": [
+        "004"
+      ],
+      "same_shortname": false,
+      "proposed_here": "PARENT/derived_from"
+    },
+    {
+      "collection": "g3asspb|004",
+      "Type": "SCIENCE ASSOCIATED",
+      "Description": "The weekly data processing report containing information that might be useful in gaining insight into the processing of these data.",
+      "EntryId": "g3arep",
+      "Version": "4",
+      "resolves_in_cmr": false,
+      "versions_in_cmr": [],
+      "same_shortname": false,
+      "proposed_here": null
+    },
+    {
+      "collection": "g3asspb|004",
+      "Type": "SCIENCE ASSOCIATED",
+      "Description": "The weekly quality assurance report containing information that might be useful in gaining insight into the quality of these data.",
+      "EntryId": "g3arepqa",
+      "Version": "4",
+      "resolves_in_cmr": false,
+      "versions_in_cmr": [],
+      "same_shortname": false,
+      "proposed_here": null
+    }
+  ],
+  "broken_links": {
+    "https://asdc.larc.nasa.gov/project/SAGE%20III-ISS": 404,
+    "https://asdc.larc.nasa.gov/citing-data": 404
+  }
+}

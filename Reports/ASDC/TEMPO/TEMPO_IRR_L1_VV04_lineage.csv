@@ -1,0 +1,13 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+TEMPO_IRR_L1,V04,INPUT,TEMPO_Auxiliary,V01,MEDIUM,input_to
+TEMPO_IRR_L1,V04,INPUT,TEMPO_DRK_L1,V04,HIGH,input_to
+TEMPO_IRR_L1,V04,CHILD,TEMPO_CLDO4_L2,V04,HIGH,downstream_product
+TEMPO_IRR_L1,V04,CHILD,TEMPO_CLDO4_L2_NRT,V02,HIGH,downstream_product
+TEMPO_IRR_L1,V04,CHILD,TEMPO_NO2_L2,V04,HIGH,downstream_product
+TEMPO_IRR_L1,V04,CHILD,TEMPO_NO2_L2_NRT,V02,HIGH,downstream_product
+TEMPO_IRR_L1,V04,CHILD,TEMPO_O3PROF_L2,V04,HIGH,downstream_product
+TEMPO_IRR_L1,V04,CHILD,TEMPO_O3TOT_L2,V04,HIGH,downstream_product
+TEMPO_IRR_L1,V04,CHILD,TEMPO_RADT_L1,V04,HIGH,downstream_product
+TEMPO_IRR_L1,V04,CHILD,TEMPO_RAD_L1,V04,HIGH,downstream_product
+TEMPO_IRR_L1,V04,CHILD,TEMPO_RAD_L1_NRT,V02,HIGH,downstream_product
+TEMPO_IRR_L1,V04,RELATED,TEMPO_IRRR_L1,V04,HIGH,template_of

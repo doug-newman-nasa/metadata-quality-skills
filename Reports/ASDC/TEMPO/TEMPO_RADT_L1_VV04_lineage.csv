@@ -1,0 +1,6 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+TEMPO_RADT_L1,V04,INPUT,MCD12Q1,061,MEDIUM,input_to
+TEMPO_RADT_L1,V04,INPUT,TEMPO_Auxiliary,V01,MEDIUM,input_to
+TEMPO_RADT_L1,V04,INPUT,TEMPO_DRK_L1,V04,HIGH,input_to
+TEMPO_RADT_L1,V04,INPUT,TEMPO_IRR_L1,V04,HIGH,input_to
+TEMPO_RADT_L1,V04,RELATED,TEMPO_RAD_L1,V04,MEDIUM,related_to

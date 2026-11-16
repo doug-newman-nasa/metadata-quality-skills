@@ -1,0 +1,7 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+TL2H2ON,8,PARENT,TL1BN,6,MEDIUM,derived_from
+TL2H2ON,8,CHILD,TL2H2OLN,7,MEDIUM,downstream_product
+TL2H2ON,8,CHILD,TL2HDOLN,7,MEDIUM,downstream_product
+TL2H2ON,8,CHILD,TL3H2OD,6,MEDIUM,downstream_product
+TL2H2ON,8,CHILD,TL3H2OM,6,MEDIUM,downstream_product
+TL2H2ON,8,RELATED,TL2ANC,8,MEDIUM,parallel_product

@@ -1,0 +1,5 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+TEMPO_HCHO_L2,V03,PARENT,TEMPO_RAD_L1,V03,HIGH,derived_from
+TEMPO_HCHO_L2,V03,INPUT,TEMPO_Auxiliary,V01,MEDIUM,input_to
+TEMPO_HCHO_L2,V03,INPUT,TEMPO_CLDO4_L2,V03,HIGH,input_to
+TEMPO_HCHO_L2,V03,CHILD,TEMPO_HCHO_L3,V03,HIGH,downstream_product

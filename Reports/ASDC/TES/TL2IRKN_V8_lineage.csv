@@ -1,0 +1,3 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+TL2IRKN,8,PARENT,TL1BN,6,MEDIUM,derived_from
+TL2IRKN,8,RELATED,TL2ANC,8,MEDIUM,parallel_product

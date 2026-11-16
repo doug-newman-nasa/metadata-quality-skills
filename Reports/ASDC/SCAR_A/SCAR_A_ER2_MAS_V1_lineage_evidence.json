@@ -1,0 +1,169 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-16T19:41:48+00:00",
+  "related_records": {},
+  "parameters": {
+    "collection_short_name": "SCAR_A_ER2_MAS",
+    "collection_version": "1",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 1,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "SCAR_A_ER2_MAS",
+    "version": "1",
+    "concept_id": "C3880795271-LARC_CLOUD",
+    "revision_id": 7,
+    "entry_title": "Sulfates, Clouds and Radiation America NASA ER-2 Moderate Resolution Imaging Spectrometer (MODIS) Airborne Simulator (MAS) Data",
+    "processing_level": "1B",
+    "temporal": [
+      {
+        "EndsAtPresentFlag": false,
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "1993-07-12T00:00:00.000Z",
+            "EndingDateTime": "1993-07-29T23:59:59.999Z"
+          }
+        ]
+      }
+    ],
+    "existing_metadata_associations": [
+      {
+        "EntryId": "MAS",
+        "Type": "PARENT",
+        "Version": "0"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [],
+    "decision_tree_branch": "[2] NO: no ATBD in related_urls; the SCAR-A MAS data set document, the SCAR project guide and the README are the primary sources"
+  },
+  "source_documents": [],
+  "fetch_log": [
+    {
+      "key": "dataset",
+      "url": "https://asdc.larc.nasa.gov/documents/scara/guide/base_scar_a_er2_mas_dataset.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 10062
+    },
+    {
+      "key": "project",
+      "url": "https://asdc.larc.nasa.gov/documents/scara/guide/scar_project.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 5309
+    },
+    {
+      "key": "readme",
+      "url": "https://asdc.larc.nasa.gov/documents/scara/readme/scar_a_er2_mas.readme",
+      "status": "ok",
+      "kind": "text",
+      "text_chars": 22695
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "SCAR_A_ER2_MAS",
+      "version": "1",
+      "level": "1B"
+    },
+    "primary_parents": [],
+    "supporting_parents": [],
+    "derived_children": [],
+    "related": []
+  },
+  "relationships": [],
+  "granule_level_check": {
+    "collection": "SCAR_A_ER2_MAS|1",
+    "granules": 126,
+    "sample": "scara_mas_930712.003",
+    "sample_time": {
+      "RangeDateTime": {
+        "BeginningDateTime": "1993-07-12T00:00:00+00:00",
+        "EndingDateTime": "1993-07-12T00:00:00+00:00"
+      }
+    },
+    "with_InputGranules": 0
+  },
+  "existing_associations_check": [
+    {
+      "collection": "SCAR_A_ER2_MAS|1",
+      "Type": "PARENT",
+      "EntryId": "MAS",
+      "Version": "0",
+      "self_reference": false
+    }
+  ],
+  "metadata_findings": [
+    "MetadataAssociation PARENT → 'MAS' version 0 does not resolve to a CMR collection (versions in CMR: none); 'MAS' is the instrument name.",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/citing-data",
+    "Linked page could not be reached from this environment (ConnectTimeout): https://mas.arc.nasa.gov/reference.html",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/project/MAS",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/project/SCAR_A",
+    "Linked page could not be reached from this environment (ConnectTimeout): https://mas.arc.nasa.gov/",
+    "Linked page could not be reached from this environment (ConnectTimeout): https://mas.arc.nasa.gov/data/srf/ARC-Jun95/msr0695.ph",
+    "The data set document gives no processing information: sections 3, 5, 6, 9 and 10 read \"Information not available at this time\", and the Instrument and Calibration sections refer to the \"MAS User's Guide\", which is not linked.",
+    "The README sample output (global attributes) shows CalibrationVersion \"SCAR-B King 1.0\" and CreationDate 1996, i.e. it was taken from a SCAR-B file, not a SCAR-A one.",
+    "The README describes the files as netCDF read with HDF libraries; the abstract and data set document say HDF/netCDF. The granules (e.g. scara_mas_930712.003) have no file extension.",
+    "The title and abstract call MAS the \"Moderate Resolution Imaging Spectrometer (MODIS) Airborne Simulator\" (MODIS is a Spectroradiometer) and contain typos (\"Airbourne\", \"the the\", \"was was\").",
+    "ProcessingLevel 1B is described as 'Calibrated from Level 0 raw radiance', but no Level 0 collection or calibration version is identified.",
+    "MASL1B 1 at LAADS claims 1993–2007 coverage but has no granules for the SCAR-A period; the SCAR-A MAS data are not part of it.",
+    "No ATBD in RelatedUrls."
+  ],
+  "excluded": [
+    {
+      "candidate": "Raw MAS Level 0 counts",
+      "reason": "not_in_cmr",
+      "evidence": "see_guide"
+    },
+    {
+      "candidate": "MASL1B 1 / MASL2CLD 1 (LAADS)",
+      "reason": "no_data_overlap",
+      "detail": "No granules in 12–29 July 1993."
+    },
+    {
+      "candidate": "Other ER-2 MAS campaign collections and BOREAS / SAFARI MAS sets",
+      "reason": "no_lineage_relationship"
+    },
+    {
+      "candidate": "'MAS' version 0 (existing PARENT association)",
+      "reason": "not_in_cmr"
+    },
+    {
+      "candidate": "Terra / Aqua MODIS products",
+      "reason": "no_lineage_relationship",
+      "evidence": "simulator",
+      "detail": "MAS simulates MODIS; no data dependency."
+    }
+  ],
+  "csv": {
+    "path": "Reports/ASDC/SCAR_A/SCAR_A_ER2_MAS_V1_lineage.csv",
+    "rows": 0,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "existing_associations_review": [
+    {
+      "collection": "SCAR_A_ER2_MAS",
+      "Type": "PARENT",
+      "EntryId": "MAS",
+      "Version": "0",
+      "resolves_in_cmr": false,
+      "versions_in_cmr": []
+    }
+  ],
+  "broken_links": {
+    "https://asdc.larc.nasa.gov/citing-data": 404,
+    "https://mas.arc.nasa.gov/reference.html": "ConnectTimeout",
+    "https://asdc.larc.nasa.gov/project/MAS": 404,
+    "https://asdc.larc.nasa.gov/project/SCAR_A": 404,
+    "https://mas.arc.nasa.gov/": "ConnectTimeout",
+    "https://mas.arc.nasa.gov/data/srf/ARC-Jun95/msr0695.ph": "ConnectTimeout"
+  }
+}

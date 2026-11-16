@@ -1,0 +1,3 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+TEMPO_NO2_L3,V04,PARENT,TEMPO_NO2_L2,V04,HIGH,aggregated_from
+TEMPO_NO2_L3,V04,RELATED,TEMPO_NO2_L3_NRT,V02,MEDIUM,related_to

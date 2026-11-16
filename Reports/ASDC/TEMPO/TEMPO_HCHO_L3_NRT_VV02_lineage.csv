@@ -1,0 +1,3 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+TEMPO_HCHO_L3_NRT,V02,PARENT,TEMPO_HCHO_L2_NRT,V02,HIGH,aggregated_from
+TEMPO_HCHO_L3_NRT,V02,RELATED,TEMPO_HCHO_L3,V04,MEDIUM,related_to

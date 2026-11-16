@@ -1,0 +1,2 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+IXBMI2ST,002,PARENT,MIL2TCST,002,MEDIUM,derived_from

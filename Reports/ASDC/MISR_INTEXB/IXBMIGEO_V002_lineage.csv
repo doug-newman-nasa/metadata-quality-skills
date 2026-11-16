@@ -1,0 +1,2 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+IXBMIGEO,002,PARENT,MIB2GEOP,002,MEDIUM,derived_from

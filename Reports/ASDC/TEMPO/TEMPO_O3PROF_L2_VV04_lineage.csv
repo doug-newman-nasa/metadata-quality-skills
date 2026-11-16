@@ -1,0 +1,6 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+TEMPO_O3PROF_L2,V04,PARENT,TEMPO_RAD_L1,V04,HIGH,derived_from
+TEMPO_O3PROF_L2,V04,INPUT,TEMPO_Auxiliary,V01,MEDIUM,input_to
+TEMPO_O3PROF_L2,V04,INPUT,TEMPO_CLDO4_L2,V04,HIGH,input_to
+TEMPO_O3PROF_L2,V04,INPUT,TEMPO_IRR_L1,V04,HIGH,input_to
+TEMPO_O3PROF_L2,V04,CHILD,TEMPO_O3PROF_L3,V04,HIGH,downstream_product

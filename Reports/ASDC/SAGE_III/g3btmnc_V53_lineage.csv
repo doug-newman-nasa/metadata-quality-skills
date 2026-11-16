@@ -1,0 +1,2 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+g3btmnc,53,PARENT,g3bt,53,MEDIUM,aggregated_from

@@ -1,0 +1,4 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+PREFIRE_SAT1_0-BUS-TLM,R01,CHILD,PREFIRE_SAT1_1A-RAD,R01,HIGH,downstream_product
+PREFIRE_SAT1_0-BUS-TLM,R01,CHILD,PREFIRE_SAT1_1B-RAD,R01,HIGH,downstream_product
+PREFIRE_SAT1_0-BUS-TLM,R01,RELATED,PREFIRE_SAT2_0-BUS-TLM,R01,MEDIUM,equivalent_product

@@ -1,0 +1,4 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+TL2PANN,8,PARENT,TL1BN,6,MEDIUM,derived_from
+TL2PANN,8,CHILD,TL2PANLN,7,MEDIUM,downstream_product
+TL2PANN,8,RELATED,TL2ANC,8,MEDIUM,parallel_product

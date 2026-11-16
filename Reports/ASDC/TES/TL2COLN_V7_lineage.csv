@@ -1,0 +1,2 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+TL2COLN,7,PARENT,TL2CON,8,MEDIUM,derived_from

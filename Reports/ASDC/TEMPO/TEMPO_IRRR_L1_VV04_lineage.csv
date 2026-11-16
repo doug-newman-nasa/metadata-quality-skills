@@ -1,0 +1,4 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+TEMPO_IRRR_L1,V04,INPUT,TEMPO_Auxiliary,V01,MEDIUM,input_to
+TEMPO_IRRR_L1,V04,INPUT,TEMPO_DRK_L1,V04,HIGH,input_to
+TEMPO_IRRR_L1,V04,RELATED,TEMPO_IRR_L1,V04,HIGH,template_of

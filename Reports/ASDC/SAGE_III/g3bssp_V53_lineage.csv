@@ -1,0 +1,4 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+g3bssp,53,PARENT,g3bt,53,HIGH,derived_from
+g3bssp,53,CHILD,g3bsmnc,53,HIGH,downstream_product
+g3bssp,53,RELATED,g3bsspb,53,MEDIUM,parallel_product

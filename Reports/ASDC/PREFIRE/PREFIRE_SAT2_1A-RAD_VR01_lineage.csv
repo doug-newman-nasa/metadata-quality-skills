@@ -1,0 +1,5 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+PREFIRE_SAT2_1A-RAD,R01,PARENT,PREFIRE_SAT2_0-PAYLOAD-TLM,R01,HIGH,derived_from
+PREFIRE_SAT2_1A-RAD,R01,INPUT,PREFIRE_SAT2_0-BUS-TLM,R01,HIGH,input_to
+PREFIRE_SAT2_1A-RAD,R01,CHILD,PREFIRE_SAT2_1B-RAD,R01,HIGH,downstream_product
+PREFIRE_SAT2_1A-RAD,R01,RELATED,PREFIRE_SAT1_1A-RAD,R01,MEDIUM,equivalent_product

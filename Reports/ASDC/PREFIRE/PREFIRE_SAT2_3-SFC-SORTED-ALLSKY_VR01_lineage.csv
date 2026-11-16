@@ -1,0 +1,4 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+PREFIRE_SAT2_3-SFC-SORTED-ALLSKY,R01,PARENT,PREFIRE_SAT2_2B-SFC,R01,HIGH,aggregated_from
+PREFIRE_SAT2_3-SFC-SORTED-ALLSKY,R01,INPUT,PREFIRE_SAT2_AUX-SAT,R01,HIGH,input_to
+PREFIRE_SAT2_3-SFC-SORTED-ALLSKY,R01,RELATED,PREFIRE_SAT1_3-SFC-SORTED-ALLSKY,R01,MEDIUM,equivalent_product

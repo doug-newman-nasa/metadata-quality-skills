@@ -1,0 +1,7 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+TEMPO_DRK_L1,V04,INPUT,TEMPO_Auxiliary,V01,MEDIUM,input_to
+TEMPO_DRK_L1,V04,CHILD,TEMPO_IRRR_L1,V04,HIGH,downstream_product
+TEMPO_DRK_L1,V04,CHILD,TEMPO_IRR_L1,V04,HIGH,downstream_product
+TEMPO_DRK_L1,V04,CHILD,TEMPO_RADT_L1,V04,HIGH,downstream_product
+TEMPO_DRK_L1,V04,CHILD,TEMPO_RAD_L1,V04,HIGH,downstream_product
+TEMPO_DRK_L1,V04,CHILD,TEMPO_RAD_L1_NRT,V02,HIGH,downstream_product
