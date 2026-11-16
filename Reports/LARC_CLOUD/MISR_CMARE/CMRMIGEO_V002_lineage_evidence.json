@@ -1,0 +1,261 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-16T18:33:37+00:00",
+  "related_records": {},
+  "parameters": {
+    "collection_short_name": "CMRMIGEO",
+    "collection_version": "002",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 1,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "CMRMIGEO",
+    "version": "002",
+    "concept_id": "C3422083610-LARC_CLOUD",
+    "revision_id": 20,
+    "entry_title": "MISR L2 Geometric Parameters subset for the C-MARE Region V002",
+    "processing_level": "1B",
+    "temporal": [
+      {
+        "PrecisionOfSeconds": 0,
+        "EndsAtPresentFlag": false,
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2004-09-20T00:00:00.000Z",
+            "EndingDateTime": "2014-10-23T23:59:59.000Z"
+          }
+        ]
+      }
+    ],
+    "existing_metadata_associations": [
+      {
+        "Type": "INPUT",
+        "Description": "Geographic Data on the Orbital Path",
+        "EntryId": "MIANCAGP",
+        "Version": "1"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Camera Geometric Model",
+        "EntryId": "MISANCGM",
+        "Version": "2"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Conformation Constants",
+        "EntryId": "MICNFG",
+        "Version": "2"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [
+      {
+        "url": "https://asdc.larc.nasa.gov/documents/misr/MISR_ATBDs.pdf",
+        "priority": 1,
+        "source": "official_ATBD_designation",
+        "description": "NASA EOS ATB Documents: MISR"
+      }
+    ],
+    "decision_tree_branch": "[1] YES: ATBD in related_urls is the primary source"
+  },
+  "source_documents": [
+    {
+      "key": "cmr_global",
+      "title": "CMR granule names of the global MISR products for orbit O025325",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:CMRMIGEO|002",
+      "title": "CMR granule InputGranules: CMRMIGEO 002 (earliest and latest 50 of 2 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3422083610-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_record:CMRMIGEO|002",
+      "title": "CMR abstract: CMRMIGEO 002",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3422083610-LARC_CLOUD.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "naming",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/file_descriptions.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 3330
+    },
+    {
+      "key": "vindex",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/index.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 1407
+    },
+    {
+      "key": "sdpg",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/guide/MISR_Science_Data_Product_Guide.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 84443
+    },
+    {
+      "key": "pge9",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/pge9.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 21019
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "CMRMIGEO",
+      "version": "002",
+      "level": "1B"
+    },
+    "primary_parents": [
+      "MIB2GEOP 002"
+    ],
+    "supporting_parents": [],
+    "derived_children": [],
+    "related": []
+  },
+  "relationships": [
+    {
+      "shortname": "CMRMIGEO",
+      "version": "002",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "MIB2GEOP",
+      "related_version": "002",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement",
+      "evidence_source": "other_doc",
+      "evidence_document": "CMR abstract: CMRMIGEO 002",
+      "evidence_url": "https://cmr.earthdata.nasa.gov/search/concepts/C3422083610-LARC_CLOUD.umm_json",
+      "evidence_section": "Abstract",
+      "evidence_page": null,
+      "evidence_quote": "Level 2 Geometric Parameters subset for the C-MARE Region version 2.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "CMR granule InputGranules: CMRMIGEO 002 (earliest and latest 50 of 2 granules)",
+          "quote": "MISR_GMP_P190_O025325_F03_0012_CMR_b62.hdf",
+          "verified": true
+        },
+        {
+          "document": "CMR granule names of the global MISR products for orbit O025325",
+          "quote": "MISR_AM1_GP_GMP_P190_O025325_F03_0013.hdf",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: the collection is the global MISR Geometric Parameters (MIB2GEOP) product cut to the C-MARE block 62 (same path/orbit/version string in the file names); PARENT. The subset file version (F03_0012) has since been replaced in MIB2GEOP 002 by reprocessed files.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "002",
+          "003"
+        ],
+        "concept_id": "C3257326645-LARC_CLOUD",
+        "related_level": "1B",
+        "level_progression_valid": true,
+        "level_check": "parent L1 <= target L1",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "granule_level_check": {
+    "collection": "CMRMIGEO|002",
+    "granules": 2,
+    "sample": "MISR_GMP_P190_O025325_F03_0012_CMR_b62.hdf",
+    "sample_time": {
+      "RangeDateTime": {
+        "BeginningDateTime": "2004-09-21T09:46:02.000Z",
+        "EndingDateTime": "2004-09-21T10:42:50.000Z"
+      }
+    },
+    "with_InputGranules": 0
+  },
+  "existing_associations_check": [
+    {
+      "collection": "CMRMIGEO|002",
+      "Type": "INPUT",
+      "EntryId": "MIANCAGP",
+      "Version": "1",
+      "self_reference": false
+    },
+    {
+      "collection": "CMRMIGEO|002",
+      "Type": "INPUT",
+      "EntryId": "MISANCGM",
+      "Version": "2",
+      "self_reference": false
+    },
+    {
+      "collection": "CMRMIGEO|002",
+      "Type": "INPUT",
+      "EntryId": "MICNFG",
+      "Version": "2",
+      "self_reference": false
+    }
+  ],
+  "metadata_findings": [
+    "3 existing associations (3 INPUT, 0 PARENT) copy the inputs of the global product (e.g. MIANCAGP, MISANCGM, MICNFG, …); by rule 1c-1 they are not inputs of the subset, whose only parent is MIB2GEOP.",
+    "1 associations write the Version without the leading zeros CMR uses, so they do not resolve: MIANCAGP '1' (CMR: ['001']).",
+    "2 associations name ShortNames that are not CMR collections: MICNFG, MISANCGM.",
+    "No association to the global product it was cut from (MIB2GEOP).",
+    "Linked page returns HTTP 403: https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA21927",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/project/MISR",
+    "No document describes the C-MARE subsets (block range, orbit selection); the linked documents describe the global MISR products.",
+    "The global file version that was subset (F03_0012) is no longer in its parent collection; the parent now holds later reprocessed versions of the same orbits.",
+    "The title and abstract call it \"Level 2 Geometric Parameters\", but ProcessingLevel is 1B (MIB2GEOP is a Level 1B2 product); EndingDateTime is 2014-10-23 (the data end 2004-10-23).",
+    "Projects lists only 'MISR'; the C-MARE campaign (CMARE_2004 theme) is not recorded as a project."
+  ],
+  "excluded": [
+    {
+      "candidate": "Inputs of the global products (MI1B2E/T, MIB2GEOP for the L2 subsets, MIRCCM, MIANTASC, MIANCARP, MIANCAGP, MIANACP, MIANAZM, MIANCSSC, …)",
+      "reason": "indirect",
+      "detail": "Rule 1c-1: the subsets were cut from finished global files."
+    },
+    {
+      "candidate": "CMRMIGEO / CMRMITST as inputs of CMRMIAAE / CMRMIALS",
+      "reason": "indirect",
+      "detail": "The L2 subsets were not produced from the other subsets."
+    },
+    {
+      "candidate": "Later versions of the parents (MIL2ASAE/ASLS 003, MIL2TCSP)",
+      "reason": "no_lineage_relationship",
+      "evidence": "reprocessed",
+      "detail": "Reprocessings or successor products not used for these files."
+    }
+  ],
+  "csv": {
+    "path": "Reports/LARC_CLOUD/MISR_CMARE/CMRMIGEO_V002_lineage.csv",
+    "rows": 1,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "existing_associations_review": [],
+  "broken_links": {
+    "https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA21927": 403,
+    "https://asdc.larc.nasa.gov/project/MISR": 404
+  }
+}

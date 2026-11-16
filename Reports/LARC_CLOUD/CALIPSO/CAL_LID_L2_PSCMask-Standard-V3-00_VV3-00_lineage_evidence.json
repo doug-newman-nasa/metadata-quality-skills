@@ -1,0 +1,664 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-16T16:30:48+00:00",
+  "related_records": {},
+  "parameters": {
+    "collection_short_name": "CAL_LID_L2_PSCMask-Standard-V3-00",
+    "collection_version": "V3-00",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 1,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "CAL_LID_L2_PSCMask-Standard-V3-00",
+    "version": "V3-00",
+    "concept_id": "C3551627684-LARC_CLOUD",
+    "revision_id": 30,
+    "entry_title": "CALIPSO Lidar Level 2 Polar Stratospheric Cloud (PSC), V3-00",
+    "processing_level": "2",
+    "temporal": [
+      {
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2006-06-12T01:23:00.000Z",
+            "EndingDateTime": "2023-06-30T21:36:00.000Z"
+          }
+        ],
+        "EndsAtPresentFlag": false
+      }
+    ],
+    "existing_metadata_associations": [
+      {
+        "Type": "PARENT",
+        "EntryId": "CAL_LID_L2_PSCMask-Standard-V2-00",
+        "Description": "Preceding version",
+        "Version": "V2-00"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [],
+    "decision_tree_branch": "[2] NO: no ATBD in related_urls; the CALIPSO Data Products Catalog and the product's Data Description and Quality Summary are the primary sources"
+  },
+  "source_documents": [
+    {
+      "key": "qs_psc3",
+      "title": "Data Description and Quality Summary: Lidar Level 2 PSC Mask (V3.00)",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_pscmask_v3-00_desc_qs.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "qs_psc4",
+      "title": "Data Description and Quality Summary: Lidar Level 2 PSC Mask (V4.00)",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_pscmask_v4-00_desc_qs.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "qs_strat",
+      "title": "Data Description and Quality Summary: Lidar Level 3 Stratospheric Aerosol (V2.00)",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l3_strataero_V2-00_desc_qs.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "dpc",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/CALIPSO_DPC_Rev5x00.pdf",
+      "status": "ok",
+      "pages": 220,
+      "text_chars": 424229
+    },
+    {
+      "key": "faq",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/user_guides/CALIPSO_Data_Users_Guide_FAQ_mod2.pdf",
+      "status": "ok",
+      "pages": 63,
+      "text_chars": 191825
+    },
+    {
+      "key": "qs_l1",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l1_V5-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 67,
+      "text_chars": 192119
+    },
+    {
+      "key": "qs_lay",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_lay_v5-00_desc_qs_mod2.pdf",
+      "status": "ok",
+      "pages": 123,
+      "text_chars": 396412
+    },
+    {
+      "key": "qs_pro",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_pro_v5-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 92,
+      "text_chars": 280174
+    },
+    {
+      "key": "qs_vfm",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_vfm_v5-00_desc_qs_mod2.pdf",
+      "status": "ok",
+      "pages": 72,
+      "text_chars": 217433
+    },
+    {
+      "key": "qs_psc3",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_pscmask_v3-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 24,
+      "text_chars": 68316
+    },
+    {
+      "key": "qs_psc4",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_pscmask_v4-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 28,
+      "text_chars": 63233
+    },
+    {
+      "key": "atbd_psc4",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/ATBD/CAL_L2_PSCMask_V4_ATBD.pdf",
+      "status": "ok",
+      "pages": 31,
+      "text_chars": 51089
+    },
+    {
+      "key": "qs_trop",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l3_tropoaero_V5-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 48,
+      "text_chars": 130254
+    },
+    {
+      "key": "qs_strat",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l3_strataero_V2-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 22,
+      "text_chars": 52839
+    },
+    {
+      "key": "qs_ice",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l3_icecloud_V2-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 27,
+      "text_chars": 66464
+    },
+    {
+      "key": "qs_cop",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l3_cloud-occur_v2-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 37,
+      "text_chars": 85985
+    },
+    {
+      "key": "qs_gewex",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l3_gewexcloud_V2-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 47,
+      "text_chars": 123192
+    },
+    {
+      "key": "qs_iir_trk",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_iir_l2_v5-00_track_desc_qs_mod2.pdf",
+      "status": "ok",
+      "pages": 52,
+      "text_chars": 140216
+    },
+    {
+      "key": "qs_iir_swt",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_iir_l2_v5-00_swath_desc_qs.pdf",
+      "status": "ok",
+      "pages": 35,
+      "text_chars": 86832
+    },
+    {
+      "key": "qs_iir_l3",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_iir_l3_gewexcloud_V2-00_desc_qs.pdf",
+      "status": "ok",
+      "pages": 24,
+      "text_chars": 61832
+    },
+    {
+      "key": "qs_wfc",
+      "url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/WFC_L1BScansProducts_3-01.pdf",
+      "status": "ok",
+      "pages": 7,
+      "text_chars": 21063
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "CAL_LID_L2_PSCMask-Standard-V3-00",
+      "version": "V3-00",
+      "level": "2"
+    },
+    "primary_parents": [
+      "CAL_LID_L1-Standard-V4-51 V4-51"
+    ],
+    "supporting_parents": [
+      "M2I1NXASM 5.12.4",
+      "M2I3NVASM 5.12.4",
+      "ML2H2O 006",
+      "ML2HNO3 006"
+    ],
+    "derived_children": [
+      "CAL_LID_L3_Stratospheric_APro-Standard-V2-00 V2-00"
+    ],
+    "related": [
+      "CAL_LID_L2_PSCMask-Standard-V2-00 V2-00",
+      "CAL_LID_L2_PSCMask-Standard-V4-00 V4-00"
+    ]
+  },
+  "relationships": [
+    {
+      "shortname": "CAL_LID_L2_PSCMask-Standard-V3-00",
+      "version": "V3-00",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "CAL_LID_L1-Standard-V4-51",
+      "related_version": "V4-51",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "stated_in_evidence",
+      "version_stated": "V4-51",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "Data Description and Quality Summary: Lidar Level 2 PSC Mask (V3.00)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_pscmask_v3-00_desc_qs.pdf",
+      "evidence_section": "Data Quality Statement for Version 3.00",
+      "evidence_page": 18,
+      "evidence_quote": "The CALIPSO Lidar Level 2 Polar Stratospheric Cloud (PSC) Product Version 3.00 is based on analyses of the Version 4.51 lidar level 1B (L1B) data product.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "Data Description and Quality Summary: Lidar Level 2 PSC Mask (V3.00)",
+          "quote": "derived from nighttime only CALIPSO Lidar Level 1B data products.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "rationale": "Decision step 2: PSC detection on nighttime V4.51 L1B attenuated backscatter; PARENT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "V4-51"
+        ],
+        "concept_id": "C3880519157-LARC_CLOUD",
+        "related_level": "1B",
+        "level_progression_valid": true,
+        "level_check": "parent L1 <= target L2",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "CAL_LID_L2_PSCMask-Standard-V3-00",
+      "version": "V3-00",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "M2I1NXASM",
+      "related_version": "5.12.4",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "Data Description and Quality Summary: Lidar Level 2 PSC Mask (V3.00)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_pscmask_v3-00_desc_qs.pdf",
+      "evidence_section": "Temperature",
+      "evidence_page": 8,
+      "evidence_quote": "Temperature values are interpolated from the ancillary meteorological data provided by the MERRA-2.",
+      "quote_verified": true,
+      "supporting": [],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Decision step 3: MERRA-2 temperature and pressure profiles; ancillary; INPUT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "5.12.4"
+        ],
+        "concept_id": "C1276812820-GES_DISC",
+        "related_level": "4",
+        "level_progression_valid": true,
+        "level_check": "not applicable (INPUT)",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "CAL_LID_L2_PSCMask-Standard-V3-00",
+      "version": "V3-00",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "M2I3NVASM",
+      "related_version": "5.12.4",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "Data Description and Quality Summary: Lidar Level 2 PSC Mask (V3.00)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_pscmask_v3-00_desc_qs.pdf",
+      "evidence_section": "Temperature",
+      "evidence_page": 8,
+      "evidence_quote": "Temperature values are interpolated from the ancillary meteorological data provided by the MERRA-2.",
+      "quote_verified": true,
+      "supporting": [],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Decision step 3: MERRA-2 temperature and pressure profiles; ancillary; INPUT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "5.12.4"
+        ],
+        "concept_id": "C1276812900-GES_DISC",
+        "related_level": "4",
+        "level_progression_valid": true,
+        "level_check": "not applicable (INPUT)",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "CAL_LID_L2_PSCMask-Standard-V3-00",
+      "version": "V3-00",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "ML2H2O",
+      "related_version": "006",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt (stated version 004 is not in CMR)",
+      "version_stated": "004",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "Data Description and Quality Summary: Lidar Level 2 PSC Mask (V3.00)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_pscmask_v3-00_desc_qs.pdf",
+      "evidence_section": "H2O_Mixing_Ratio",
+      "evidence_page": 17,
+      "evidence_quote": "MLS/Aura Level 2 V4 H2O (https://disc.gsfc.nasa.gov/datasets/ML2H2O_004/summary) data product.",
+      "quote_verified": true,
+      "supporting": [],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "rationale": "Decision step 3: Aura MLS L2 V4 H2O profiles used for PSC composition; INPUT. CMR now holds V005/V006 only.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "005",
+          "006"
+        ],
+        "concept_id": "C3127197733-GES_DISC",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (INPUT)",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "CAL_LID_L2_PSCMask-Standard-V3-00",
+      "version": "V3-00",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "ML2HNO3",
+      "related_version": "006",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt (stated version 004 is not in CMR)",
+      "version_stated": "004",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "Data Description and Quality Summary: Lidar Level 2 PSC Mask (V3.00)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_pscmask_v3-00_desc_qs.pdf",
+      "evidence_section": "HNO3_Mixing_Ratio",
+      "evidence_page": 17,
+      "evidence_quote": "derived from the publicly available MLS/Aura Level 2 V4 HNO3(https://disc.gsfc.nasa.gov/datasets/ML2HNO3_004/summary) data product.",
+      "quote_verified": true,
+      "supporting": [],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "rationale": "Decision step 3: Aura MLS L2 V4 HNO3 profiles, interpolated to the CALIOP track, are used for PSC composition; INPUT. CMR now holds V005/V006 only.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "005",
+          "006"
+        ],
+        "concept_id": "C3127197968-GES_DISC",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (INPUT)",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "CAL_LID_L2_PSCMask-Standard-V3-00",
+      "version": "V3-00",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "CAL_LID_L3_Stratospheric_APro-Standard-V2-00",
+      "related_version": "V2-00",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "stated_in_evidence",
+      "version_stated": "V2-00",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "Data Description and Quality Summary: Lidar Level 3 Stratospheric Aerosol (V2.00)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l3_strataero_V2-00_desc_qs.pdf",
+      "evidence_section": "Data release table",
+      "evidence_page": 17,
+      "evidence_quote": "October 2025 2.00 June 13, 2006 to June 30, 2023 Standard V5.00 Level 1B, V5.00 Level 2 5km MLay, V3.00 Level 2 PSC Mask",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "Data Description and Quality Summary: Lidar Level 3 Stratospheric Aerosol (V2.00)",
+          "quote": "Profiles are derived from level 1B attenuated backscatter coefficients",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 3: V3.00 PSC Mask used to remove polar stratospheric clouds; INPUT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "V2-00"
+        ],
+        "concept_id": "C3964849308-LARC_CLOUD",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "level_check": "child L3 >= target L2",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "CAL_LID_L2_PSCMask-Standard-V3-00",
+      "version": "V3-00",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "version_of",
+      "related_shortname": "CAL_LID_L2_PSCMask-Standard-V2-00",
+      "related_version": "V2-00",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "Data Description and Quality Summary: Lidar Level 2 PSC Mask (V3.00)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_pscmask_v3-00_desc_qs.pdf",
+      "evidence_section": "Data Quality Statement for Version 3.00",
+      "evidence_page": 18,
+      "evidence_quote": "The CALIPSO Lidar Level 2 Polar Stratospheric Cloud (PSC) Product Version 3.00 is based on analyses of the Version 4.51 lidar level 1B (L1B) data product.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "Data Description and Quality Summary: Lidar Level 2 PSC Mask (V3.00)",
+          "quote": "derived from nighttime only CALIPSO Lidar Level 1B data products.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "rationale": "Decision step 6: V2.00 is the previous PSC Mask release.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "V2-00"
+        ],
+        "concept_id": "C3880522788-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": "PARENT"
+      }
+    },
+    {
+      "shortname": "CAL_LID_L2_PSCMask-Standard-V3-00",
+      "version": "V3-00",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "version_of",
+      "related_shortname": "CAL_LID_L2_PSCMask-Standard-V4-00",
+      "related_version": "V4-00",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "stated_in_evidence",
+      "version_stated": "V4-00",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "Data Description and Quality Summary: Lidar Level 2 PSC Mask (V4.00)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/calipso/quality_summaries/cal_lid_l2_pscmask_v4-00_desc_qs.pdf",
+      "evidence_section": "Data Quality Statement for Version 4.00",
+      "evidence_page": 15,
+      "evidence_quote": "The CALIPSO Lidar Level 2 Polar Stratospheric Cloud (PSC) Product Version 4.00 is based on the Version 5.00 lidar Level 1B (L1B) data product and builds upon the Version 3.00 PSC product",
+      "quote_verified": true,
+      "supporting": [],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "rationale": "Decision step 6: V4.00 \"builds upon the Version 3.00 PSC product\".",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "V4-00"
+        ],
+        "concept_id": "C4322561414-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "granule_level_check": {
+    "collection": "CAL_LID_L2_PSCMask-Standard-V3-00|V3-00",
+    "granules": 4855,
+    "sample": "CAL_LID_L2_PSCMask-Standard-V3-00.2006-06-12T00-00-00ZN.hdf",
+    "sample_time": {
+      "RangeDateTime": {
+        "BeginningDateTime": "2006-06-12T01:23:31.200+00:00",
+        "EndingDateTime": "2006-06-13T00:44:38.400+00:00"
+      }
+    },
+    "with_InputGranules": 0
+  },
+  "existing_associations_check": [
+    {
+      "collection": "CAL_LID_L2_PSCMask-Standard-V3-00|V3-00",
+      "Type": "PARENT",
+      "EntryId": "CAL_LID_L2_PSCMask-Standard-V2-00",
+      "Version": "V2-00",
+      "self_reference": false
+    }
+  ],
+  "metadata_findings": [
+    "MetadataAssociation PARENT → CAL_LID_L2_PSCMask-Standard-V2-00 is another release of the same product; by the lineage definitions it is RELATED (version_of).",
+    "Linked document returns 404: https://asdc.larc.nasa.gov/citing-data",
+    "Linked document returns 404: https://asdc.larc.nasa.gov/project/CALIPSO",
+    "No ATBD in RelatedUrls.",
+    "The MLS inputs are cited as Level 2 V4 (ML2HNO3_004, ML2H2O_004), which CMR no longer holds (V005/V006 only)."
+  ],
+  "excluded": [
+    {
+      "candidate": "Raw IIR and WFC Level 0 telemetry; lidar L0 binaries",
+      "reason": "not_in_cmr",
+      "detail": "Not publicly orderable (DPC 3.0); only the lidar L0 HDF translation is a CMR collection."
+    },
+    {
+      "candidate": "GEOS-5 FP-IT CALIPSO subsets (DFPITI3NXASMCAL, DFPITI3NVASMCAL)",
+      "reason": "not_in_cmr",
+      "detail": "Used by older releases."
+    },
+    {
+      "candidate": "CloudSat DEM, IGBP surface types, AFWA/CERES snow and ice maps",
+      "reason": "not_in_cmr",
+      "detail": "Static or remapped ancillaries."
+    },
+    {
+      "candidate": "AMSR wind speeds (ODCOD correction)",
+      "reason": "ambiguous",
+      "detail": "The AMSR product is not named."
+    },
+    {
+      "candidate": "MODIS AOD",
+      "reason": "not_an_input",
+      "detail": "Used offline to build V5 lidar-ratio maps, not per granule."
+    },
+    {
+      "candidate": "Aura MLS v2 Derived Meteorological Products (PSC Mask)",
+      "reason": "not_in_cmr",
+      "detail": "Not a CMR collection."
+    },
+    {
+      "candidate": "Lidar L2 V4.10/V4.20/V4.21, PSC V1.00/V1.10, IIR L2 V4.20",
+      "reason": "not_in_cmr",
+      "detail": "Inputs of the older L3 releases (Trop V4.20/V4.21, Strat V1.01)."
+    },
+    {
+      "candidate": "CAL_LID_L15-Standard-V1-00/V1-01",
+      "reason": "ambiguous",
+      "detail": "Uses \"standard version 4 level 1 and level 2 data\"; the minor version is not stated."
+    },
+    {
+      "candidate": "CAL_MERRA2_ext_05km_V4-5, CAL_MODIS_DTDB_ext_05km_V4-5, CAL_ODCOD_ext_05km_V4-5, CAL_LID_L2_MLay_Diagnostic-Beta-V5-00",
+      "reason": "no_documented_relationship",
+      "detail": "Not described in the fetched documents (beta / external-collaboration products)."
+    }
+  ],
+  "csv": {
+    "path": "Reports/LARC_CLOUD/CALIPSO/CAL_LID_L2_PSCMask-Standard-V3-00_VV3-00_lineage.csv",
+    "rows": 8,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "existing_associations_review": [
+    {
+      "collection": "CAL_LID_L2_PSCMask-Standard-V3-00",
+      "Type": "PARENT",
+      "EntryId": "CAL_LID_L2_PSCMask-Standard-V2-00",
+      "Version": "V2-00",
+      "resolves_in_cmr": true,
+      "same_product_family": true,
+      "proposed_here": "RELATED/version_of"
+    }
+  ],
+  "broken_links": {
+    "https://asdc.larc.nasa.gov/citing-data": 404,
+    "https://asdc.larc.nasa.gov/project/CALIPSO": 404
+  }
+}

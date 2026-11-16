@@ -1,0 +1,391 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-16T18:40:30+00:00",
+  "related_records": {},
+  "parameters": {
+    "collection_short_name": "GOMIB2T",
+    "collection_version": "003",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 1,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "GOMIB2T",
+    "version": "003",
+    "concept_id": "C3417609355-LARC_CLOUD",
+    "revision_id": 17,
+    "entry_title": "MISR Level 1B2 Terrain Product subset for the GoMACCS region V003",
+    "processing_level": "1B",
+    "temporal": [
+      {
+        "PrecisionOfSeconds": 0,
+        "EndsAtPresentFlag": false,
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2006-07-30T16:36:08.530Z",
+            "EndingDateTime": "2006-10-16T17:49:35.096Z"
+          }
+        ]
+      }
+    ],
+    "existing_metadata_associations": [
+      {
+        "Type": "INPUT",
+        "Description": "Level 1B1 data",
+        "EntryId": "MI1B1",
+        "Version": "2"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Instrument characterization, pre-flight calibration, in-flight calibration data, and configuration parameters",
+        "EntryId": "MIANCARP",
+        "Version": "2"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Geographic Parameters",
+        "EntryId": "MIANCAGP",
+        "Version": "1"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Configuration parameters for PGEs",
+        "EntryId": "MICNFG",
+        "Version": "2"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "MISR Level 1B2 Terrain Data (Preliminary)",
+        "EntryId": "MI1B2TP",
+        "Version": "1"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "MISR Level 1B2 co-registration and georectification Correction Dataset",
+        "EntryId": "MIB2CORR",
+        "Version": "1"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [
+      {
+        "url": "https://asdc.larc.nasa.gov/documents/misr/MISR_ATBDs.pdf",
+        "priority": 1,
+        "source": "official_ATBD_designation",
+        "description": "NASA EOS ATB Documents: MISR"
+      }
+    ],
+    "decision_tree_branch": "[1] YES: ATBD in related_urls is the primary source"
+  },
+  "source_documents": [
+    {
+      "key": "cmr_global",
+      "title": "CMR granule names of the global MISR products for orbits O035188 and O036324 (nadir camera for L1B2)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:GOMIB2T|003",
+      "title": "CMR granule InputGranules: GOMIB2T 003 (earliest and latest 50 of 725 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3417609355-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_record:GOMIB2E|003",
+      "title": "CMR abstract: GOMIB2E 003",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3417609305-LARC_CLOUD.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_record:GOMIB2T|003",
+      "title": "CMR abstract: GOMIB2T 003",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3417609355-LARC_CLOUD.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "naming",
+      "title": "MISR File Naming and Versioning Conventions",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/file_descriptions.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": false,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": false,
+        "VALID": false
+      }
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "naming",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/file_descriptions.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 3330
+    },
+    {
+      "key": "vindex",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/index.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 1407
+    },
+    {
+      "key": "sdpg",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/guide/MISR_Science_Data_Product_Guide.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 84443
+    },
+    {
+      "key": "gomaccs",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/field_campaign_imagery/gomaccs.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 20080
+    },
+    {
+      "key": "lm_sites",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/gallery/field_campaigns/GoMACCS/gomaccs_lm_sites.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 180
+    },
+    {
+      "key": "pge9",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/pge9.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 21019
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "GOMIB2T",
+      "version": "003",
+      "level": "1B"
+    },
+    "primary_parents": [
+      "MI1B2T 003"
+    ],
+    "supporting_parents": [],
+    "derived_children": [],
+    "related": [
+      "GOMIB2E 003"
+    ]
+  },
+  "relationships": [
+    {
+      "shortname": "GOMIB2T",
+      "version": "003",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "MI1B2T",
+      "related_version": "003",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement",
+      "evidence_source": "other_doc",
+      "evidence_document": "CMR abstract: GOMIB2T 003",
+      "evidence_url": "https://cmr.earthdata.nasa.gov/search/concepts/C3417609355-LARC_CLOUD.umm_json",
+      "evidence_section": "Abstract",
+      "evidence_page": null,
+      "evidence_quote": "Level 1B2 Terrain Product subset for the GoMACCS region version 3.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "CMR granule InputGranules: GOMIB2T 003 (earliest and latest 50 of 725 granules)",
+          "quote": "MISR_TERRAIN_GM_P024_O035188_",
+          "verified": true
+        },
+        {
+          "document": "CMR granule names of the global MISR products for orbits O035188 and O036324 (nadir camera for L1B2)",
+          "quote": "MISR_AM1_GRP_TERRAIN_GM_P024_O035188_AN_F03_0024.hdf",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: the collection is the global MISR Level 1B2 Terrain (MI1B2T) product cut to the GoMACCS blocks 64–72 (same path/orbit/camera/version in the file names; all source files are in the parent); PARENT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "003",
+          "004"
+        ],
+        "concept_id": "C3257326624-LARC_CLOUD",
+        "related_level": "1B",
+        "level_progression_valid": true,
+        "level_check": "parent L1 <= target L1",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "GOMIB2T",
+      "version": "003",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "related_shortname": "GOMIB2E",
+      "related_version": "003",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "MISR File Naming and Versioning Conventions",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/misr/version/file_descriptions.pdf",
+      "evidence_section": "MISR File Naming and Versioning Conventions",
+      "evidence_page": 1,
+      "evidence_quote": "Hence, if a program creates more than one type of product file, each product file it creates will share the same version number history.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "CMR abstract: GOMIB2E 003",
+          "quote": "geometrically corrected by PGE22",
+          "verified": true
+        },
+        {
+          "document": "CMR abstract: GOMIB2T 003",
+          "quote": "geometrically corrected by PGE22",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 4: the Ellipsoid and Terrain radiances are written by the same L1B2 PGE (PGE22) and share one version string (F03_0024).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "003"
+        ],
+        "concept_id": "C3417609305-LARC_CLOUD",
+        "related_level": "1B",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "granule_level_check": {
+    "collection": "GOMIB2T|003",
+    "granules": 725,
+    "sample": "MISR_TERRAIN_GM_P024_O035188_CF_F03_0024_GOM_b64-72.hdf",
+    "sample_time": {
+      "RangeDateTime": {
+        "BeginningDateTime": "2006-07-30T16:36:08.530Z",
+        "EndingDateTime": "2006-07-30T17:25:35.530Z"
+      }
+    },
+    "with_InputGranules": 0
+  },
+  "existing_associations_check": [
+    {
+      "collection": "GOMIB2T|003",
+      "Type": "INPUT",
+      "EntryId": "MI1B1",
+      "Version": "2",
+      "self_reference": false
+    },
+    {
+      "collection": "GOMIB2T|003",
+      "Type": "INPUT",
+      "EntryId": "MIANCARP",
+      "Version": "2",
+      "self_reference": false
+    },
+    {
+      "collection": "GOMIB2T|003",
+      "Type": "INPUT",
+      "EntryId": "MIANCAGP",
+      "Version": "1",
+      "self_reference": false
+    },
+    {
+      "collection": "GOMIB2T|003",
+      "Type": "INPUT",
+      "EntryId": "MICNFG",
+      "Version": "2",
+      "self_reference": false
+    },
+    {
+      "collection": "GOMIB2T|003",
+      "Type": "INPUT",
+      "EntryId": "MI1B2TP",
+      "Version": "1",
+      "self_reference": false
+    },
+    {
+      "collection": "GOMIB2T|003",
+      "Type": "INPUT",
+      "EntryId": "MIB2CORR",
+      "Version": "1",
+      "self_reference": false
+    }
+  ],
+  "metadata_findings": [
+    "6 existing INPUT associations copy the inputs of the global product (e.g. MI1B1, MIANCARP, MIANCAGP, MICNFG, …); by rule 1c-1 they are not inputs of the subset, whose only parent is MI1B2T.",
+    "3 associations write the Version without the leading zeros CMR uses, so they do not resolve: MI1B1 '2' (CMR: ['002']), MIANCARP '2' (CMR: ['002']), MIANCAGP '1' (CMR: ['001']).",
+    "3 associations name ShortNames that are not CMR collections: MI1B2TP, MIB2CORR, MICNFG.",
+    "No association to the global product it was cut from (MI1B2T).",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/citing-data",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/project/MISR",
+    "Linked page returns HTTP 403: https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA21927",
+    "No document describes how the GoMACCS subsets were made (block range, orbit selection); the linked GoMACCS documents are an image gallery, a site list and a calendar.",
+    "Projects lists only 'MISR'; the GoMACCS campaign is not recorded as a project."
+  ],
+  "excluded": [
+    {
+      "candidate": "Inputs of the global products (MI1B1, MIRCCM, MIANTASC, MIANCARP, MIANCAGP, MIANACP, MIANAZM, MIANCSSC, … and the global L1B2/GEO for the L2 subsets)",
+      "reason": "indirect",
+      "detail": "Rule 1c-1: the subsets were cut from finished global files."
+    },
+    {
+      "candidate": "GOMIB2E / GOMIB2T / GOMIGEO as inputs of GOMI2AE / GOMI2LS / GOMI2ST",
+      "reason": "indirect",
+      "detail": "The L2 subsets were not produced from the L1B2 subsets."
+    },
+    {
+      "candidate": "MISR Local Mode L1B2 (MB2LME / MB2LMT) for the GoMACCS sites",
+      "reason": "no_lineage_relationship",
+      "evidence": "local_mode",
+      "detail": "The subsets are Global Mode files."
+    },
+    {
+      "candidate": "Later reprocessings (…_F03_2025 files; MIL2ASAE …_F12_0022; MIL2ASAE/ASLS 003)",
+      "reason": "no_lineage_relationship",
+      "detail": "Not the source of these files."
+    }
+  ],
+  "csv": {
+    "path": "Reports/LARC_CLOUD/MISR_GoMACCS/GOMIB2T_V003_lineage.csv",
+    "rows": 2,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "existing_associations_review": [],
+  "broken_links": {
+    "https://asdc.larc.nasa.gov/citing-data": 404,
+    "https://asdc.larc.nasa.gov/project/MISR": 404,
+    "https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA21927": 403
+  }
+}

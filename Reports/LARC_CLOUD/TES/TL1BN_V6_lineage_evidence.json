@@ -1,0 +1,1403 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-16T19:12:04+00:00",
+  "related_records": {
+    "TL2HNO3L": {
+      "version": "006",
+      "concept_id": "C3215610646-LARC_CLOUD"
+    }
+  },
+  "parameters": {
+    "collection_short_name": "TL1BN",
+    "collection_version": "6",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 1,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "TL1BN",
+    "version": "6",
+    "concept_id": "C3215606854-LARC_CLOUD",
+    "revision_id": 18,
+    "entry_title": "TES/Aura L1B Spectra Nadir V006",
+    "processing_level": "1B",
+    "temporal": [
+      {
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2004-08-22T00:00:00.000Z",
+            "EndingDateTime": "2018-01-22T23:59:59.000Z"
+          }
+        ],
+        "EndsAtPresentFlag": false
+      }
+    ],
+    "existing_metadata_associations": [
+      {
+        "Type": "PARENT",
+        "Description": "Preceding version",
+        "EntryId": "TL1BN",
+        "Version": "5"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [
+      {
+        "url": "https://asdc.larc.nasa.gov/documents/tes/TES_ATBDs.pdf",
+        "priority": 1,
+        "source": "official_ATBD_designation",
+        "description": "NASA EOS ATB Documents: TES"
+      }
+    ],
+    "decision_tree_branch": "[1] YES: ATBD in related_urls is the primary source"
+  },
+  "source_documents": [
+    {
+      "key": "cmr_inputs:TL1BN|6",
+      "title": "CMR granule InputGranules: TL1BN 6 (earliest and latest 50 of 16539 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3215606854-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:TL2ANC|8",
+      "title": "CMR granule InputGranules: TL2ANC 8 (earliest and latest 50 of 1072 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3215606908-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:TL2ATMTN|8",
+      "title": "CMR granule InputGranules: TL2ATMTN 8 (earliest and latest 50 of 1072 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3215607408-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:TL2CH4N|8",
+      "title": "CMR granule InputGranules: TL2CH4N 8 (earliest and latest 50 of 1072 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3215607680-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:TL2CO2N|8",
+      "title": "CMR granule InputGranules: TL2CO2N 8 (earliest and latest 50 of 1072 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3215608147-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:TL2CON|8",
+      "title": "CMR granule InputGranules: TL2CON 8 (earliest and latest 50 of 1063 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3215608680-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:TL2FORN|8",
+      "title": "CMR granule InputGranules: TL2FORN 8 (earliest and latest 50 of 1072 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3215608825-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:TL2H2ON|8",
+      "title": "CMR granule InputGranules: TL2H2ON 8 (earliest and latest 50 of 1072 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3215609728-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:TL2HDON|8",
+      "title": "CMR granule InputGranules: TL2HDON 8 (earliest and latest 50 of 1072 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3215610473-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:TL2IRKN|8",
+      "title": "CMR granule InputGranules: TL2IRKN 8 (earliest and latest 50 of 1072 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3215610730-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:TL2MTLN|8",
+      "title": "CMR granule InputGranules: TL2MTLN 8 (earliest and latest 50 of 1072 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3215610810-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:TL2N2ON|8",
+      "title": "CMR granule InputGranules: TL2N2ON 8 (earliest and latest 50 of 1072 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3215610863-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:TL2NH3N|8",
+      "title": "CMR granule InputGranules: TL2NH3N 8 (earliest and latest 50 of 994 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3215611334-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:TL2O3N|8",
+      "title": "CMR granule InputGranules: TL2O3N 8 (earliest and latest 50 of 1072 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3215611853-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:TL2OCSN|8",
+      "title": "CMR granule InputGranules: TL2OCSN 8 (earliest and latest 50 of 1063 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3215612183-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:TL2PANN|8",
+      "title": "CMR granule InputGranules: TL2PANN 8 (earliest and latest 50 of 1072 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3215612510-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:TL2SUM|8",
+      "title": "CMR granule InputGranules: TL2SUM 8 (earliest and latest 50 of 1072 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3215612597-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:TL2SUP|8",
+      "title": "CMR granule InputGranules: TL2SUP 8 (earliest and latest 50 of 1072 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3215612620-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "proj",
+      "title": "TES project guide",
+      "url": "https://asdc.larc.nasa.gov/documents/tes/guide/tes_project.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "v8ug",
+      "title": "TES Data User's Guide V8.0 (March 2020)",
+      "url": "https://asdc.larc.nasa.gov/documents/tes/guide/TESDataUsersGuideV8_0_March_27_2020_FV-8_rh.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "atbd_index",
+      "url": "https://asdc.larc.nasa.gov/documents/tes/TES_ATBDs.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 426
+    },
+    {
+      "key": "v8ug",
+      "url": "https://asdc.larc.nasa.gov/documents/tes/guide/TESDataUsersGuideV8_0_March_27_2020_FV-8_rh.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 232560
+    },
+    {
+      "key": "vr8",
+      "url": "https://asdc.larc.nasa.gov/documents/tes/readme/TES_Validation_Report_v8_Final.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 207650
+    },
+    {
+      "key": "proj",
+      "url": "https://asdc.larc.nasa.gov/documents/tes/guide/tes_project.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 18603
+    },
+    {
+      "key": "dq8",
+      "url": "https://asdc.larc.nasa.gov/documents/tes/quality_summaries/L2_Products_Data_Quality_V008.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 33529
+    },
+    {
+      "key": "lite",
+      "url": "https://asdc.larc.nasa.gov/documents/tes/guide/TES_Lite_Products_Users_Guide.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 12991
+    },
+    {
+      "key": "l3ug",
+      "url": "https://asdc.larc.nasa.gov/documents/tes/guide/TES_L3_Data_Users_Guide.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 12735
+    },
+    {
+      "key": "l3alg",
+      "url": "https://asdc.larc.nasa.gov/documents/tes/guide/TES_L3_alg_req_prod.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 69395
+    },
+    {
+      "key": "l3qs",
+      "url": "https://asdc.larc.nasa.gov/documents/tes/quality_summaries/L3_products.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 1793
+    },
+    {
+      "key": "l3hist",
+      "url": "https://asdc.larc.nasa.gov/documents/tes/readme/level_3.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 1795
+    },
+    {
+      "key": "l2hist",
+      "url": "https://asdc.larc.nasa.gov/documents/tes/readme/level_2_std.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 7861
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "TL1BN",
+      "version": "6",
+      "level": "1B"
+    },
+    "primary_parents": [],
+    "supporting_parents": [],
+    "derived_children": [
+      "TL2ANC 8",
+      "TL2ATMTN 8",
+      "TL2CH4N 8",
+      "TL2CO2N 8",
+      "TL2CON 8",
+      "TL2FORN 8",
+      "TL2H2ON 8",
+      "TL2HDON 8",
+      "TL2IRKN 8",
+      "TL2MTLN 8",
+      "TL2N2ON 8",
+      "TL2NH3N 8",
+      "TL2O3N 8",
+      "TL2OCSN 8",
+      "TL2PANN 8",
+      "TL2SUM 8",
+      "TL2SUP 8"
+    ],
+    "related": []
+  },
+  "relationships": [
+    {
+      "shortname": "TL1BN",
+      "version": "6",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "TL2ANC",
+      "related_version": "8",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "TES project guide",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/tes/guide/tes_project.pdf",
+      "evidence_section": "Data processing levels",
+      "evidence_page": 3,
+      "evidence_quote": "At Level 2, vertical concentration profiles of the selected species are extracted from the spectra using a forward model based on a physical-chemical model of the expected atmospheric state, followed by a retrieval with appropriately constrained optimal estimation techniques.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "For example, any radiometric systematic errors (e.g. calibration) not addressed in the L1B radiances will propagate as errors into the retrieved atmospheric parameters",
+          "verified": true
+        },
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "Version 8 (V008) has the same standard TES products as Version 6, including TES Level 1B (L1B) radiances, ozone, carbon monoxide, atmospheric temperature",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL2ANC 8 (earliest and latest 50 of 1072 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL1BN 6 (earliest and latest 50 of 16539 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: L2 Nadir retrievals from the TES L1B Nadir spectra of the same Global Survey run (matching run IDs); PARENT. L1B version inferred (V6 is the only TL1BN in CMR).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "8"
+        ],
+        "concept_id": "C3215606908-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "child L2 >= target L1",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TL1BN",
+      "version": "6",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "TL2ATMTN",
+      "related_version": "8",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "TES project guide",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/tes/guide/tes_project.pdf",
+      "evidence_section": "Data processing levels",
+      "evidence_page": 3,
+      "evidence_quote": "At Level 2, vertical concentration profiles of the selected species are extracted from the spectra using a forward model based on a physical-chemical model of the expected atmospheric state, followed by a retrieval with appropriately constrained optimal estimation techniques.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "For example, any radiometric systematic errors (e.g. calibration) not addressed in the L1B radiances will propagate as errors into the retrieved atmospheric parameters",
+          "verified": true
+        },
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "Version 8 (V008) has the same standard TES products as Version 6, including TES Level 1B (L1B) radiances, ozone, carbon monoxide, atmospheric temperature",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL2ATMTN 8 (earliest and latest 50 of 1072 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL1BN 6 (earliest and latest 50 of 16539 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: L2 Nadir retrievals from the TES L1B Nadir spectra of the same Global Survey run (matching run IDs); PARENT. L1B version inferred (V6 is the only TL1BN in CMR).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "8"
+        ],
+        "concept_id": "C3215607408-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "child L2 >= target L1",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TL1BN",
+      "version": "6",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "TL2CH4N",
+      "related_version": "8",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "TES project guide",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/tes/guide/tes_project.pdf",
+      "evidence_section": "Data processing levels",
+      "evidence_page": 3,
+      "evidence_quote": "At Level 2, vertical concentration profiles of the selected species are extracted from the spectra using a forward model based on a physical-chemical model of the expected atmospheric state, followed by a retrieval with appropriately constrained optimal estimation techniques.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "For example, any radiometric systematic errors (e.g. calibration) not addressed in the L1B radiances will propagate as errors into the retrieved atmospheric parameters",
+          "verified": true
+        },
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "Version 8 (V008) has the same standard TES products as Version 6, including TES Level 1B (L1B) radiances, ozone, carbon monoxide, atmospheric temperature",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL2CH4N 8 (earliest and latest 50 of 1072 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL1BN 6 (earliest and latest 50 of 16539 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: L2 Nadir retrievals from the TES L1B Nadir spectra of the same Global Survey run (matching run IDs); PARENT. L1B version inferred (V6 is the only TL1BN in CMR).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "8"
+        ],
+        "concept_id": "C3215607680-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "child L2 >= target L1",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TL1BN",
+      "version": "6",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "TL2CO2N",
+      "related_version": "8",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "TES project guide",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/tes/guide/tes_project.pdf",
+      "evidence_section": "Data processing levels",
+      "evidence_page": 3,
+      "evidence_quote": "At Level 2, vertical concentration profiles of the selected species are extracted from the spectra using a forward model based on a physical-chemical model of the expected atmospheric state, followed by a retrieval with appropriately constrained optimal estimation techniques.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "For example, any radiometric systematic errors (e.g. calibration) not addressed in the L1B radiances will propagate as errors into the retrieved atmospheric parameters",
+          "verified": true
+        },
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "Version 8 (V008) has the same standard TES products as Version 6, including TES Level 1B (L1B) radiances, ozone, carbon monoxide, atmospheric temperature",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL2CO2N 8 (earliest and latest 50 of 1072 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL1BN 6 (earliest and latest 50 of 16539 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: L2 Nadir retrievals from the TES L1B Nadir spectra of the same Global Survey run (matching run IDs); PARENT. L1B version inferred (V6 is the only TL1BN in CMR).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "8"
+        ],
+        "concept_id": "C3215608147-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "child L2 >= target L1",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TL1BN",
+      "version": "6",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "TL2CON",
+      "related_version": "8",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "TES project guide",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/tes/guide/tes_project.pdf",
+      "evidence_section": "Data processing levels",
+      "evidence_page": 3,
+      "evidence_quote": "At Level 2, vertical concentration profiles of the selected species are extracted from the spectra using a forward model based on a physical-chemical model of the expected atmospheric state, followed by a retrieval with appropriately constrained optimal estimation techniques.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "For example, any radiometric systematic errors (e.g. calibration) not addressed in the L1B radiances will propagate as errors into the retrieved atmospheric parameters",
+          "verified": true
+        },
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "Version 8 (V008) has the same standard TES products as Version 6, including TES Level 1B (L1B) radiances, ozone, carbon monoxide, atmospheric temperature",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL2CON 8 (earliest and latest 50 of 1063 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL1BN 6 (earliest and latest 50 of 16539 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: L2 Nadir retrievals from the TES L1B Nadir spectra of the same Global Survey run (matching run IDs); PARENT. L1B version inferred (V6 is the only TL1BN in CMR).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "8"
+        ],
+        "concept_id": "C3215608680-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "child L2 >= target L1",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TL1BN",
+      "version": "6",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "TL2FORN",
+      "related_version": "8",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "TES project guide",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/tes/guide/tes_project.pdf",
+      "evidence_section": "Data processing levels",
+      "evidence_page": 3,
+      "evidence_quote": "At Level 2, vertical concentration profiles of the selected species are extracted from the spectra using a forward model based on a physical-chemical model of the expected atmospheric state, followed by a retrieval with appropriately constrained optimal estimation techniques.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "For example, any radiometric systematic errors (e.g. calibration) not addressed in the L1B radiances will propagate as errors into the retrieved atmospheric parameters",
+          "verified": true
+        },
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "Version 8 (V008) has the same standard TES products as Version 6, including TES Level 1B (L1B) radiances, ozone, carbon monoxide, atmospheric temperature",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL2FORN 8 (earliest and latest 50 of 1072 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL1BN 6 (earliest and latest 50 of 16539 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: L2 Nadir retrievals from the TES L1B Nadir spectra of the same Global Survey run (matching run IDs); PARENT. L1B version inferred (V6 is the only TL1BN in CMR).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "8"
+        ],
+        "concept_id": "C3215608825-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "child L2 >= target L1",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TL1BN",
+      "version": "6",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "TL2H2ON",
+      "related_version": "8",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "TES project guide",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/tes/guide/tes_project.pdf",
+      "evidence_section": "Data processing levels",
+      "evidence_page": 3,
+      "evidence_quote": "At Level 2, vertical concentration profiles of the selected species are extracted from the spectra using a forward model based on a physical-chemical model of the expected atmospheric state, followed by a retrieval with appropriately constrained optimal estimation techniques.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "For example, any radiometric systematic errors (e.g. calibration) not addressed in the L1B radiances will propagate as errors into the retrieved atmospheric parameters",
+          "verified": true
+        },
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "Version 8 (V008) has the same standard TES products as Version 6, including TES Level 1B (L1B) radiances, ozone, carbon monoxide, atmospheric temperature",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL2H2ON 8 (earliest and latest 50 of 1072 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL1BN 6 (earliest and latest 50 of 16539 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: L2 Nadir retrievals from the TES L1B Nadir spectra of the same Global Survey run (matching run IDs); PARENT. L1B version inferred (V6 is the only TL1BN in CMR).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "8"
+        ],
+        "concept_id": "C3215609728-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "child L2 >= target L1",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TL1BN",
+      "version": "6",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "TL2HDON",
+      "related_version": "8",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "TES project guide",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/tes/guide/tes_project.pdf",
+      "evidence_section": "Data processing levels",
+      "evidence_page": 3,
+      "evidence_quote": "At Level 2, vertical concentration profiles of the selected species are extracted from the spectra using a forward model based on a physical-chemical model of the expected atmospheric state, followed by a retrieval with appropriately constrained optimal estimation techniques.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "For example, any radiometric systematic errors (e.g. calibration) not addressed in the L1B radiances will propagate as errors into the retrieved atmospheric parameters",
+          "verified": true
+        },
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "Version 8 (V008) has the same standard TES products as Version 6, including TES Level 1B (L1B) radiances, ozone, carbon monoxide, atmospheric temperature",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL2HDON 8 (earliest and latest 50 of 1072 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL1BN 6 (earliest and latest 50 of 16539 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: L2 Nadir retrievals from the TES L1B Nadir spectra of the same Global Survey run (matching run IDs); PARENT. L1B version inferred (V6 is the only TL1BN in CMR).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "8"
+        ],
+        "concept_id": "C3215610473-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "child L2 >= target L1",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TL1BN",
+      "version": "6",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "TL2IRKN",
+      "related_version": "8",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "TES project guide",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/tes/guide/tes_project.pdf",
+      "evidence_section": "Data processing levels",
+      "evidence_page": 3,
+      "evidence_quote": "At Level 2, vertical concentration profiles of the selected species are extracted from the spectra using a forward model based on a physical-chemical model of the expected atmospheric state, followed by a retrieval with appropriately constrained optimal estimation techniques.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "For example, any radiometric systematic errors (e.g. calibration) not addressed in the L1B radiances will propagate as errors into the retrieved atmospheric parameters",
+          "verified": true
+        },
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "Version 8 (V008) has the same standard TES products as Version 6, including TES Level 1B (L1B) radiances, ozone, carbon monoxide, atmospheric temperature",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL2IRKN 8 (earliest and latest 50 of 1072 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL1BN 6 (earliest and latest 50 of 16539 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: L2 Nadir retrievals from the TES L1B Nadir spectra of the same Global Survey run (matching run IDs); PARENT. L1B version inferred (V6 is the only TL1BN in CMR).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "8"
+        ],
+        "concept_id": "C3215610730-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "child L2 >= target L1",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TL1BN",
+      "version": "6",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "TL2MTLN",
+      "related_version": "8",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "TES project guide",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/tes/guide/tes_project.pdf",
+      "evidence_section": "Data processing levels",
+      "evidence_page": 3,
+      "evidence_quote": "At Level 2, vertical concentration profiles of the selected species are extracted from the spectra using a forward model based on a physical-chemical model of the expected atmospheric state, followed by a retrieval with appropriately constrained optimal estimation techniques.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "For example, any radiometric systematic errors (e.g. calibration) not addressed in the L1B radiances will propagate as errors into the retrieved atmospheric parameters",
+          "verified": true
+        },
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "Version 8 (V008) has the same standard TES products as Version 6, including TES Level 1B (L1B) radiances, ozone, carbon monoxide, atmospheric temperature",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL2MTLN 8 (earliest and latest 50 of 1072 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL1BN 6 (earliest and latest 50 of 16539 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: L2 Nadir retrievals from the TES L1B Nadir spectra of the same Global Survey run (matching run IDs); PARENT. L1B version inferred (V6 is the only TL1BN in CMR).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "8"
+        ],
+        "concept_id": "C3215610810-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "child L2 >= target L1",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TL1BN",
+      "version": "6",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "TL2N2ON",
+      "related_version": "8",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "TES project guide",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/tes/guide/tes_project.pdf",
+      "evidence_section": "Data processing levels",
+      "evidence_page": 3,
+      "evidence_quote": "At Level 2, vertical concentration profiles of the selected species are extracted from the spectra using a forward model based on a physical-chemical model of the expected atmospheric state, followed by a retrieval with appropriately constrained optimal estimation techniques.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "For example, any radiometric systematic errors (e.g. calibration) not addressed in the L1B radiances will propagate as errors into the retrieved atmospheric parameters",
+          "verified": true
+        },
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "Version 8 (V008) has the same standard TES products as Version 6, including TES Level 1B (L1B) radiances, ozone, carbon monoxide, atmospheric temperature",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL2N2ON 8 (earliest and latest 50 of 1072 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL1BN 6 (earliest and latest 50 of 16539 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: L2 Nadir retrievals from the TES L1B Nadir spectra of the same Global Survey run (matching run IDs); PARENT. L1B version inferred (V6 is the only TL1BN in CMR).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "8"
+        ],
+        "concept_id": "C3215610863-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "child L2 >= target L1",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TL1BN",
+      "version": "6",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "TL2NH3N",
+      "related_version": "8",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "TES project guide",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/tes/guide/tes_project.pdf",
+      "evidence_section": "Data processing levels",
+      "evidence_page": 3,
+      "evidence_quote": "At Level 2, vertical concentration profiles of the selected species are extracted from the spectra using a forward model based on a physical-chemical model of the expected atmospheric state, followed by a retrieval with appropriately constrained optimal estimation techniques.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "For example, any radiometric systematic errors (e.g. calibration) not addressed in the L1B radiances will propagate as errors into the retrieved atmospheric parameters",
+          "verified": true
+        },
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "Version 8 (V008) has the same standard TES products as Version 6, including TES Level 1B (L1B) radiances, ozone, carbon monoxide, atmospheric temperature",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL2NH3N 8 (earliest and latest 50 of 994 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL1BN 6 (earliest and latest 50 of 16539 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: L2 Nadir retrievals from the TES L1B Nadir spectra of the same Global Survey run (matching run IDs); PARENT. L1B version inferred (V6 is the only TL1BN in CMR).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "8"
+        ],
+        "concept_id": "C3215611334-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "child L2 >= target L1",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TL1BN",
+      "version": "6",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "TL2O3N",
+      "related_version": "8",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "TES project guide",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/tes/guide/tes_project.pdf",
+      "evidence_section": "Data processing levels",
+      "evidence_page": 3,
+      "evidence_quote": "At Level 2, vertical concentration profiles of the selected species are extracted from the spectra using a forward model based on a physical-chemical model of the expected atmospheric state, followed by a retrieval with appropriately constrained optimal estimation techniques.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "For example, any radiometric systematic errors (e.g. calibration) not addressed in the L1B radiances will propagate as errors into the retrieved atmospheric parameters",
+          "verified": true
+        },
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "Version 8 (V008) has the same standard TES products as Version 6, including TES Level 1B (L1B) radiances, ozone, carbon monoxide, atmospheric temperature",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL2O3N 8 (earliest and latest 50 of 1072 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL1BN 6 (earliest and latest 50 of 16539 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: L2 Nadir retrievals from the TES L1B Nadir spectra of the same Global Survey run (matching run IDs); PARENT. L1B version inferred (V6 is the only TL1BN in CMR).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "8"
+        ],
+        "concept_id": "C3215611853-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "child L2 >= target L1",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TL1BN",
+      "version": "6",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "TL2OCSN",
+      "related_version": "8",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "TES project guide",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/tes/guide/tes_project.pdf",
+      "evidence_section": "Data processing levels",
+      "evidence_page": 3,
+      "evidence_quote": "At Level 2, vertical concentration profiles of the selected species are extracted from the spectra using a forward model based on a physical-chemical model of the expected atmospheric state, followed by a retrieval with appropriately constrained optimal estimation techniques.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "For example, any radiometric systematic errors (e.g. calibration) not addressed in the L1B radiances will propagate as errors into the retrieved atmospheric parameters",
+          "verified": true
+        },
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "Version 8 (V008) has the same standard TES products as Version 6, including TES Level 1B (L1B) radiances, ozone, carbon monoxide, atmospheric temperature",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL2OCSN 8 (earliest and latest 50 of 1063 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL1BN 6 (earliest and latest 50 of 16539 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: L2 Nadir retrievals from the TES L1B Nadir spectra of the same Global Survey run (matching run IDs); PARENT. L1B version inferred (V6 is the only TL1BN in CMR).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "8"
+        ],
+        "concept_id": "C3215612183-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "child L2 >= target L1",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TL1BN",
+      "version": "6",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "TL2PANN",
+      "related_version": "8",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "TES project guide",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/tes/guide/tes_project.pdf",
+      "evidence_section": "Data processing levels",
+      "evidence_page": 3,
+      "evidence_quote": "At Level 2, vertical concentration profiles of the selected species are extracted from the spectra using a forward model based on a physical-chemical model of the expected atmospheric state, followed by a retrieval with appropriately constrained optimal estimation techniques.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "For example, any radiometric systematic errors (e.g. calibration) not addressed in the L1B radiances will propagate as errors into the retrieved atmospheric parameters",
+          "verified": true
+        },
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "Version 8 (V008) has the same standard TES products as Version 6, including TES Level 1B (L1B) radiances, ozone, carbon monoxide, atmospheric temperature",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL2PANN 8 (earliest and latest 50 of 1072 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL1BN 6 (earliest and latest 50 of 16539 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: L2 Nadir retrievals from the TES L1B Nadir spectra of the same Global Survey run (matching run IDs); PARENT. L1B version inferred (V6 is the only TL1BN in CMR).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "8"
+        ],
+        "concept_id": "C3215612510-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "child L2 >= target L1",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TL1BN",
+      "version": "6",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "TL2SUM",
+      "related_version": "8",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "TES project guide",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/tes/guide/tes_project.pdf",
+      "evidence_section": "Data processing levels",
+      "evidence_page": 3,
+      "evidence_quote": "At Level 2, vertical concentration profiles of the selected species are extracted from the spectra using a forward model based on a physical-chemical model of the expected atmospheric state, followed by a retrieval with appropriately constrained optimal estimation techniques.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "For example, any radiometric systematic errors (e.g. calibration) not addressed in the L1B radiances will propagate as errors into the retrieved atmospheric parameters",
+          "verified": true
+        },
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "Version 8 (V008) has the same standard TES products as Version 6, including TES Level 1B (L1B) radiances, ozone, carbon monoxide, atmospheric temperature",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL2SUM 8 (earliest and latest 50 of 1072 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL1BN 6 (earliest and latest 50 of 16539 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: L2 Nadir retrievals from the TES L1B Nadir spectra of the same Global Survey run (matching run IDs); PARENT. L1B version inferred (V6 is the only TL1BN in CMR).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "8"
+        ],
+        "concept_id": "C3215612597-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "child L2 >= target L1",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TL1BN",
+      "version": "6",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "TL2SUP",
+      "related_version": "8",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "TES project guide",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/tes/guide/tes_project.pdf",
+      "evidence_section": "Data processing levels",
+      "evidence_page": 3,
+      "evidence_quote": "At Level 2, vertical concentration profiles of the selected species are extracted from the spectra using a forward model based on a physical-chemical model of the expected atmospheric state, followed by a retrieval with appropriately constrained optimal estimation techniques.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "For example, any radiometric systematic errors (e.g. calibration) not addressed in the L1B radiances will propagate as errors into the retrieved atmospheric parameters",
+          "verified": true
+        },
+        {
+          "document": "TES Data User's Guide V8.0 (March 2020)",
+          "quote": "Version 8 (V008) has the same standard TES products as Version 6, including TES Level 1B (L1B) radiances, ozone, carbon monoxide, atmospheric temperature",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL2SUP 8 (earliest and latest 50 of 1072 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TL1BN 6 (earliest and latest 50 of 16539 granules)",
+          "quote": "r0000033082",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: L2 Nadir retrievals from the TES L1B Nadir spectra of the same Global Survey run (matching run IDs); PARENT. L1B version inferred (V6 is the only TL1BN in CMR).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "8"
+        ],
+        "concept_id": "C3215612620-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "child L2 >= target L1",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "granule_level_check": {
+    "collection": "TL1BN|6",
+    "granules": 16539,
+    "sample": "TES-Aura_L1B-Nadir_FP1A_r0000002026-o00558_F04_07.h5",
+    "sample_time": {
+      "RangeDateTime": {
+        "BeginningDateTime": "2004-08-22T16:07:21.979Z",
+        "EndingDateTime": "2004-08-22T17:44:22.050Z"
+      }
+    },
+    "with_InputGranules": 0
+  },
+  "existing_associations_check": [
+    {
+      "collection": "TL1BN|6",
+      "Type": "PARENT",
+      "EntryId": "TL1BN",
+      "Version": "5",
+      "self_reference": false
+    }
+  ],
+  "metadata_findings": [
+    "MetadataAssociation PARENT → TL1BN version 5 does not resolve (versions in CMR: ['6']); it is another version of the same ShortName, typed PARENT.",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/citing-data",
+    "The linked ATBD index (TES_ATBDs.pdf) points to the L1B and L2 ATBDs, which return ['404'].",
+    "No association to the collections it is made from or feeds (L1B → L2 → Lite / L3)."
+  ],
+  "excluded": [
+    {
+      "candidate": "GMAO GEOS-5.12.4 (a priori / initial guess for temperature and water vapour)",
+      "reason": "not_in_cmr",
+      "evidence": "gmao"
+    },
+    {
+      "candidate": "MOZART-4 (CO a priori), CarbonTracker CT2011oi and NCEP (CO2 Lite)",
+      "reason": "not_in_cmr",
+      "evidence": "mozart"
+    },
+    {
+      "candidate": "Retrieval-step dependencies between species within one L2 run",
+      "reason": "same_run",
+      "evidence": "steps",
+      "detail": "Recorded as parallel_product via the Ancillary file."
+    },
+    {
+      "candidate": "TML2CO / TML2COS inputs (TES L1B/L2 V005, MLS L1/L2 3.3)",
+      "reason": "not_in_cmr",
+      "evidence": "tesmls",
+      "detail": "Only the abstract describes the inputs; the versions used are not in CMR."
+    },
+    {
+      "candidate": "L2 SO products for L3",
+      "reason": "not_an_input",
+      "evidence": "gs_only"
+    },
+    {
+      "candidate": "Full pairwise siblings among the 17 products of one L2 run, and among L3 / Lite species",
+      "reason": "omitted",
+      "detail": "Each L2 product is linked to the run's Ancillary file instead."
+    },
+    {
+      "candidate": "TES Level 0 / L1A",
+      "reason": "not_in_cmr"
+    }
+  ],
+  "csv": {
+    "path": "Reports/LARC_CLOUD/TES/TL1BN_V6_lineage.csv",
+    "rows": 17,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "existing_associations_review": [],
+  "broken_links": {
+    "https://asdc.larc.nasa.gov/citing-data": 404
+  }
+}

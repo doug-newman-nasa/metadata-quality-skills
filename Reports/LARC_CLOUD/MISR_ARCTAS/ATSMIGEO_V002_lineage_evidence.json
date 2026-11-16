@@ -1,0 +1,265 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-16T18:18:17+00:00",
+  "related_records": {},
+  "parameters": {
+    "collection_short_name": "ATSMIGEO",
+    "collection_version": "002",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 1,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "ATSMIGEO",
+    "version": "002",
+    "concept_id": "C3417609127-LARC_CLOUD",
+    "revision_id": 19,
+    "entry_title": "MISR Geometric Parameters subset for the ARCTAS region V002",
+    "processing_level": "1B",
+    "temporal": [
+      {
+        "PrecisionOfSeconds": 0,
+        "EndsAtPresentFlag": false,
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2008-04-02T00:00:00.000Z",
+            "EndingDateTime": "2008-07-24T23:59:59.000Z"
+          }
+        ]
+      }
+    ],
+    "existing_metadata_associations": [
+      {
+        "Type": "INPUT",
+        "Description": "Geographic Data on the Orbital Path",
+        "EntryId": "MIANCAGP",
+        "Version": "1"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Camera Geometric Model",
+        "EntryId": "MISANCGM",
+        "Version": "2"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Conformation Constants",
+        "EntryId": "MICNFG",
+        "Version": "2"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [
+      {
+        "url": "https://asdc.larc.nasa.gov/documents/misr/MISR_ATBDs.pdf",
+        "priority": 1,
+        "source": "official_ATBD_designation",
+        "description": "NASA EOS ATB Documents: MISR"
+      }
+    ],
+    "decision_tree_branch": "[1] YES: ATBD in related_urls is the primary source"
+  },
+  "source_documents": [
+    {
+      "key": "cmr_global",
+      "title": "CMR granule names of the global MISR products for orbit O044103",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:ATSMIGEO|002",
+      "title": "CMR granule InputGranules: ATSMIGEO 002 (earliest and latest 50 of 28 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3417609127-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_record:ATSMIGEO|002",
+      "title": "CMR abstract: ATSMIGEO 002",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3417609127-LARC_CLOUD.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "naming",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/file_descriptions.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 3330
+    },
+    {
+      "key": "vindex",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/index.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 1407
+    },
+    {
+      "key": "sdpg",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/guide/MISR_Science_Data_Product_Guide.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 84443
+    },
+    {
+      "key": "arctas",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/field_campaign_imagery/arctas.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 5732
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "ATSMIGEO",
+      "version": "002",
+      "level": "1B"
+    },
+    "primary_parents": [
+      "MIB2GEOP 002"
+    ],
+    "supporting_parents": [],
+    "derived_children": [],
+    "related": []
+  },
+  "relationships": [
+    {
+      "shortname": "ATSMIGEO",
+      "version": "002",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "MIB2GEOP",
+      "related_version": "002",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement",
+      "evidence_source": "other_doc",
+      "evidence_document": "CMR abstract: ATSMIGEO 002",
+      "evidence_url": "https://cmr.earthdata.nasa.gov/search/concepts/C3417609127-LARC_CLOUD.umm_json",
+      "evidence_section": "Abstract",
+      "evidence_page": null,
+      "evidence_quote": "Geometric Parameters subset for the ARCTAS region version 2.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "CMR granule InputGranules: ATSMIGEO 002 (earliest and latest 50 of 28 granules)",
+          "quote": "MISR_GMP_P068_O044103_F03_0013_ATS_b32-38.hdf",
+          "verified": true
+        },
+        {
+          "document": "CMR granule names of the global MISR products for orbit O044103",
+          "quote": "MISR_AM1_GP_GMP_P068_O044103_F03_0013.hdf",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: the collection is the global MISR Geometric Parameters (MIB2GEOP) product cut to the ARCTAS blocks 32–38 (same path/orbit/camera/version in the file names); PARENT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "002",
+          "003"
+        ],
+        "concept_id": "C3257326645-LARC_CLOUD",
+        "related_level": "1B",
+        "level_progression_valid": true,
+        "level_check": "parent L1 <= target L1",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "granule_level_check": {
+    "collection": "ATSMIGEO|002",
+    "granules": 28,
+    "sample": "MISR_GMP_P068_O044103_F03_0013_ATS_b32-38.hdf",
+    "sample_time": {
+      "RangeDateTime": {
+        "BeginningDateTime": "2008-04-02T21:10:55.000Z",
+        "EndingDateTime": "2008-04-02T22:07:52.000Z"
+      }
+    },
+    "with_InputGranules": 0
+  },
+  "existing_associations_check": [
+    {
+      "collection": "ATSMIGEO|002",
+      "Type": "INPUT",
+      "EntryId": "MIANCAGP",
+      "Version": "1",
+      "self_reference": false
+    },
+    {
+      "collection": "ATSMIGEO|002",
+      "Type": "INPUT",
+      "EntryId": "MISANCGM",
+      "Version": "2",
+      "self_reference": false
+    },
+    {
+      "collection": "ATSMIGEO|002",
+      "Type": "INPUT",
+      "EntryId": "MICNFG",
+      "Version": "2",
+      "self_reference": false
+    }
+  ],
+  "metadata_findings": [
+    "3 existing INPUT associations copy the inputs of the global product (e.g. MIANCAGP, MISANCGM, MICNFG, …); by rule 1c-1 they are not inputs of the subset, whose only parent is MIB2GEOP.",
+    "1 associations write the Version without the leading zeros CMR uses, so they do not resolve: MIANCAGP '1' (CMR: ['001']).",
+    "2 associations name ShortNames that are not CMR collections: MISANCGM, MICNFG.",
+    "No association to the global product it was cut from (MIB2GEOP).",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/citing-data",
+    "Linked page returns HTTP 403: https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA21927",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/project/MISR",
+    "No document describes the ARCTAS subsets (block range, orbit selection); the linked documents describe the global MISR products and the ARCTAS imagery."
+  ],
+  "excluded": [
+    {
+      "candidate": "Inputs of the global products (MI1B1, MIRCCMF, MIANTASC, MIANCARP, MIANCAGP, MIANACP, … and the global L1B2/GEO for the L2 subsets)",
+      "reason": "indirect",
+      "detail": "Rule 1c-1: the subsets were cut from finished global files."
+    },
+    {
+      "candidate": "ATSMIB2E / ATSMIB2T / ATSMIGEO as inputs of ATSM2AEF / ATSM2LSF / ATSM2STF",
+      "reason": "indirect",
+      "detail": "The L2 subsets were not produced from the L1B2 subsets."
+    },
+    {
+      "candidate": "MIL2ASAF / MIL2ASLF version 001",
+      "reason": "not_in_cmr",
+      "evidence": "fl_v002_start",
+      "detail": "The version actually subset; CMR holds 002 only."
+    },
+    {
+      "candidate": "Later versions of the parents (MI1B2E/T 004, MIB2GEOP 003, MIL2ASAE/ASLS 003, MIL2TCST)",
+      "reason": "no_lineage_relationship",
+      "detail": "Reprocessings or standard products not used for these files."
+    }
+  ],
+  "csv": {
+    "path": "Reports/LARC_CLOUD/MISR_ARCTAS/ATSMIGEO_V002_lineage.csv",
+    "rows": 1,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "existing_associations_review": [],
+  "broken_links": {
+    "https://asdc.larc.nasa.gov/citing-data": 404,
+    "https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA21927": 403,
+    "https://asdc.larc.nasa.gov/project/MISR": 404
+  }
+}

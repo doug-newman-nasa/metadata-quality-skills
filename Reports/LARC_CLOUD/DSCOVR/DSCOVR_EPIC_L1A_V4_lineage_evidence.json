@@ -1,0 +1,530 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-16T17:15:40+00:00",
+  "related_records": {
+    "DSCOVR_EPIC_L4_TrO3": {
+      "version": "01",
+      "concept_id": "C3860110217-LARC_CLOUD"
+    }
+  },
+  "parameters": {
+    "collection_short_name": "DSCOVR_EPIC_L1A",
+    "collection_version": "4",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 1,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "DSCOVR_EPIC_L1A",
+    "version": "4",
+    "concept_id": "C4025357027-LARC_CLOUD",
+    "revision_id": 5,
+    "entry_title": "DSCOVR EPIC Level 1A Version 4",
+    "processing_level": "1A",
+    "temporal": [
+      {
+        "EndsAtPresentFlag": true,
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2015-06-13T00:00:00.000Z"
+          }
+        ]
+      }
+    ],
+    "existing_metadata_associations": [
+      {
+        "Description": "Preceding version",
+        "EntryId": "DSCOVR_EPIC_L1A",
+        "Type": "PARENT",
+        "Version": "3"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [
+      {
+        "url": "https://asdc.larc.nasa.gov/documents/dscovr/EPIC_Data_Format_Control_Book_2025-12-19.pdf",
+        "priority": 1,
+        "source": "official_ATBD_designation",
+        "description": "Earth Polychromatic Imaging Camera (EPIC) Data Format Control Book Specification, Version 4, September 15, 2025"
+      }
+    ],
+    "decision_tree_branch": "[1] YES: ATBD in related_urls is the primary source"
+  },
+  "source_documents": [
+    {
+      "key": "cmr_inputs:DSCOVR_EPIC_L1A_LUNAR|V1",
+      "title": "CMR granule InputGranules: DSCOVR_EPIC_L1A_LUNAR V1 (earliest and latest 50 of 462 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C4025357001-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:DSCOVR_EPIC_L1A|4",
+      "title": "CMR granule InputGranules: DSCOVR_EPIC_L1A 4 (earliest and latest 50 of 56447 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C4025357027-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "dfcb4",
+      "title": "EPIC Data Format Control Book, Version 4 (Sept 2025)",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/EPIC_Data_Format_Control_Book_2025-12-19.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": false,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "geo4",
+      "title": "EPIC Geolocation algorithm document (Revision 7, Sept 2025)",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/EPIC_Geolocation_2025-09-16.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "geoq4",
+      "title": "EPIC Geolocation Quality, Product Version 04 (Sept 2025)",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/EPIC_Geolocation_quality_2025-09-18.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": false,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "dfcb4",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/EPIC_Data_Format_Control_Book_2025-12-19.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 83994
+    },
+    {
+      "key": "dfcb3",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/DSCOVR_EPIC_Data_Format_Control_Book_V03.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 81712
+    },
+    {
+      "key": "geo4",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/EPIC_Geolocation_2025-09-16.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 73575
+    },
+    {
+      "key": "geo3",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/DSCOVR_EPIC_Geolocation_V03.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 72688
+    },
+    {
+      "key": "geoq4",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/EPIC_Geolocation_quality_2025-09-18.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 4356
+    },
+    {
+      "key": "l0l1a4",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/DSCOVR_EPIC_L0L1a_Processor_Version2.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 19535
+    },
+    {
+      "key": "overview",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/DSCOVR_overview_2016-06-29.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 24179
+    },
+    {
+      "key": "nistar_dfcb3",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/DSCOVR_NISTAR_Data_Format_Control_Book_V3.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 163958
+    },
+    {
+      "key": "nistar_qr3",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/DSCOVR_NISTAR_Data_Quality_Report_V3.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 45546
+    },
+    {
+      "key": "nistar_proc2",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/DSCOVR_NISTAR_Processing_V02.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 13431
+    },
+    {
+      "key": "aer_guide",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/guides/EPIC_UV_Aerosol_v04_README_Final.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 58458
+    },
+    {
+      "key": "to3_guide",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/guides/EPICTO3UserGuide_updateJan2026.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 44121
+    },
+    {
+      "key": "so2_summary",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/EPICSO2_L2_summary_final.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 1555
+    },
+    {
+      "key": "cloud_desc",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/EPICCloudProductDescription_Nov2017_1.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 3792
+    },
+    {
+      "key": "maiac_guide",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/guides/EPIC_MAIAC_UserGuide_v5.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 36957
+    },
+    {
+      "key": "vesdr_sdrg2",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/DSCOVR_VESDR_SDRG_02.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 47381
+    },
+    {
+      "key": "par_guide",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/guides/DSCOVR_EPIC_Ocean_Product_user_guide.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 16399
+    },
+    {
+      "key": "tco_doc",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/EPIC_TCO_product_documentation.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 8360
+    },
+    {
+      "key": "web_o3",
+      "url": "https://epic.gsfc.nasa.gov/science/products/o3",
+      "status": "ok",
+      "kind": "html",
+      "text_chars": 3733
+    },
+    {
+      "key": "web_so2",
+      "url": "https://epic.gsfc.nasa.gov/science/products/so2",
+      "status": "ok",
+      "kind": "html",
+      "text_chars": 7692
+    },
+    {
+      "key": "web_veg",
+      "url": "https://epic.gsfc.nasa.gov/science/products/vegetable",
+      "status": "ok",
+      "kind": "html",
+      "text_chars": 6081
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "DSCOVR_EPIC_L1A",
+      "version": "4",
+      "level": "1A"
+    },
+    "primary_parents": [],
+    "supporting_parents": [],
+    "derived_children": [
+      "DSCOVR_EPIC_L1B 4"
+    ],
+    "related": [
+      "DSCOVR_EPIC_L1A_LUNAR V1",
+      "DSCOVR_EPIC_L1A_MISC V1"
+    ]
+  },
+  "relationships": [
+    {
+      "shortname": "DSCOVR_EPIC_L1A",
+      "version": "4",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "DSCOVR_EPIC_L1B",
+      "related_version": "4",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "EPIC Data Format Control Book, Version 4 (Sept 2025)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/dscovr/EPIC_Data_Format_Control_Book_2025-12-19.pdf",
+      "evidence_section": "3.x L1B data product",
+      "evidence_page": 24,
+      "evidence_quote": "The EPIC L1B contains the same 10 calibrated image bands as its corresponding L1A, however the products have been georectified to match a common grid.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "EPIC Geolocation algorithm document (Revision 7, Sept 2025)",
+          "quote": "Input - The image, latitude, longitude datasets, as well as viewing metadata read from the L1A file.",
+          "verified": true
+        },
+        {
+          "document": "EPIC Geolocation Quality, Product Version 04 (Sept 2025)",
+          "quote": "This version of the geolocation has some minor fixes over the previous version.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: L1B applies the geolocation to the L1A images and regrids them; PARENT. Same-version pairing (file naming, matched v4 documents).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "3",
+          "4"
+        ],
+        "concept_id": "C4025357058-LARC_CLOUD",
+        "related_level": "1B",
+        "level_progression_valid": true,
+        "level_check": "child L1 >= target L1",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "DSCOVR_EPIC_L1A",
+      "version": "4",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "related_shortname": "DSCOVR_EPIC_L1A_LUNAR",
+      "related_version": "V1",
+      "fixed_version": [
+        "4",
+        "LUNAR granules use EPIC_CalFile_v26.txt, like L1A v4"
+      ],
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "EPIC Geolocation Quality, Product Version 04 (Sept 2025)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/dscovr/EPIC_Geolocation_quality_2025-09-18.pdf",
+      "evidence_section": "Lunar images",
+      "evidence_page": 5,
+      "evidence_quote": "The Moon is occasionally imaged for calibration purposes. In these situations, the geolocation will run and produce an L1A dataset. No L1B will be produced.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "EPIC Data Format Control Book, Version 4 (Sept 2025)",
+          "quote": "The images are primarily of the full sun-lit Earth, with the exception of designated days instrument calibration activity will produce lunar and star field images instead of Earth images.",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: DSCOVR_EPIC_L1A_LUNAR V1 (earliest and latest 50 of 462 granules)",
+          "quote": "EPIC_CalFile_v26.txt",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: DSCOVR_EPIC_L1A 4 (earliest and latest 50 of 56447 granules)",
+          "quote": "EPIC_CalFile_v26.txt",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 4: lunar calibration images are processed by the same L1A processor and geolocation; no L1B is made. Paired with L1A 4 by calibration file (v26).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "V1"
+        ],
+        "concept_id": "C4025357001-LARC_CLOUD",
+        "related_level": "1A",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "DSCOVR_EPIC_L1A",
+      "version": "4",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "related_shortname": "DSCOVR_EPIC_L1A_MISC",
+      "related_version": "V1",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "EPIC Geolocation Quality, Product Version 04 (Sept 2025)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/dscovr/EPIC_Geolocation_quality_2025-09-18.pdf",
+      "evidence_section": "Dark space images",
+      "evidence_page": 5,
+      "evidence_quote": "In this situation, an L1A will be produced with the appropriate metadata indicating a dark space image.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "EPIC Data Format Control Book, Version 4 (Sept 2025)",
+          "quote": "The images are primarily of the full sun-lit Earth, with the exception of designated days instrument calibration activity will produce lunar and star field images instead of Earth images.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 4: special-scene L1A files come from the same L1A processing as the Earth images.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "V1"
+        ],
+        "concept_id": "C3866447285-LARC_CLOUD",
+        "related_level": "1A",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "granule_level_check": {
+    "collection": "DSCOVR_EPIC_L1A|4",
+    "granules": 56447,
+    "sample": "epic_1a_20150613110250_04.h5",
+    "sample_time": {
+      "RangeDateTime": {
+        "BeginningDateTime": "2015-06-13T11:00:36+00:00",
+        "EndingDateTime": "2015-06-13T11:04:38+00:00"
+      }
+    },
+    "with_InputGranules": 5
+  },
+  "existing_associations_check": [
+    {
+      "collection": "DSCOVR_EPIC_L1A|4",
+      "Type": "PARENT",
+      "EntryId": "DSCOVR_EPIC_L1A",
+      "Version": "3",
+      "self_reference": false
+    }
+  ],
+  "metadata_findings": [
+    "MetadataAssociation PARENT ('Preceding version') → DSCOVR_EPIC_L1A 3 is another version of the same product; the lineage skills never list it.",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/project/DSCOVR",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/citing-data",
+    "The record links the EPIC Data Format Control Book (a format specification) with Subtype ATBD."
+  ],
+  "excluded": [
+    {
+      "candidate": "EPIC and NISTAR Level 0",
+      "reason": "not_in_cmr",
+      "evidence": "level0; nistar_l0"
+    },
+    {
+      "candidate": "EPIC calibration files (EPIC_CalFile_vX.txt), ephemerides, attitude, EGM2008, GIBS MODIS/VIIRS reference imagery",
+      "reason": "not_in_cmr",
+      "evidence": "calfile"
+    },
+    {
+      "candidate": "GEOS-5 forecast profiles (CLOUD)",
+      "reason": "not_in_cmr",
+      "evidence": "geos5_cloud"
+    },
+    {
+      "candidate": "MERRA-2 (TrO3_highres ozone fields; PAR wind, pressure, water vapour, cloud, aerosol)",
+      "reason": "ambiguous",
+      "evidence": "merra2_tco; par_to3",
+      "detail": "No collection is named; several MERRA-2 collections carry these fields (e.g. M2I3NVASM / M2I3NPASM for ozone)."
+    },
+    {
+      "candidate": "CERES SatCORPS GEO/LEO cloud retrievals (COMPOSITE)",
+      "reason": "ambiguous",
+      "evidence": "satcorps",
+      "detail": "CER_GEO_Ed4_* collections exist, but the versions and the LEO inputs are not identified; the direct input is an internal 5-km composite."
+    },
+    {
+      "candidate": "MCD12Q1 v051 (VESDR biome maps)",
+      "reason": "indirect",
+      "evidence": "mcd12_vesdr",
+      "detail": "Static ancillary maps derived from MCD12Q1 v051, which CMR no longer holds (061 only)."
+    },
+    {
+      "candidate": "AERONET climatology (MAIAC), OMI SSA dataset and CALIOP climatology (AER), OMI cloud climatology (TO3)",
+      "reason": "not_in_cmr"
+    },
+    {
+      "candidate": "EPIC L1B for VESDR, MAIAC-DAILY, CLOUDFRACTION and TrO3_highres",
+      "reason": "indirect",
+      "detail": "Inputs of their parents (rule 1c-1)."
+    },
+    {
+      "candidate": "DSCOVR_NISTAR_L2_FLX 01",
+      "reason": "no_documented_relationship",
+      "evidence": "nistar_no_epic",
+      "detail": "Not described by the NISTAR documents; the CMR abstract does not name NISTAR L1B."
+    },
+    {
+      "candidate": "Other versions of the same ShortName (L1A 3↔4, L1B 3↔4, AER 03, PAR 01, …)",
+      "reason": "same_product",
+      "detail": "Never listed (Generation skill 1a)."
+    }
+  ],
+  "csv": {
+    "path": "Reports/LARC_CLOUD/DSCOVR/DSCOVR_EPIC_L1A_V4_lineage.csv",
+    "rows": 3,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "existing_associations_review": [],
+  "l1b_versions_cited_by_granules": {
+    "none": 100
+  },
+  "broken_links": {
+    "https://asdc.larc.nasa.gov/project/DSCOVR": 404,
+    "https://asdc.larc.nasa.gov/citing-data": 404
+  }
+}

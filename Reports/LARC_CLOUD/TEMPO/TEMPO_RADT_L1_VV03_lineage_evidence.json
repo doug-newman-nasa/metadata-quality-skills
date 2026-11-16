@@ -1,0 +1,524 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-16T19:28:27+00:00",
+  "related_records": {
+    "TEMPO_Auxiliary": {
+      "version": "V01",
+      "concept_id": "C4190789193-LARC_CLOUD"
+    }
+  },
+  "parameters": {
+    "collection_short_name": "TEMPO_RADT_L1",
+    "collection_version": "V03",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 1,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "TEMPO_RADT_L1",
+    "version": "V03",
+    "concept_id": "C2930766795-LARC_CLOUD",
+    "revision_id": 35,
+    "entry_title": "TEMPO geolocated Earth radiances twilight V03 (PROVISIONAL)",
+    "processing_level": "1B",
+    "temporal": [
+      {
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2023-09-27T00:00:00.000Z",
+            "EndingDateTime": "2025-11-28T23:59:00.000Z"
+          }
+        ],
+        "EndsAtPresentFlag": false,
+        "TemporalResolution": {
+          "Value": 6,
+          "Unit": "Minute"
+        }
+      }
+    ],
+    "existing_metadata_associations": [
+      {
+        "Type": "PARENT",
+        "EntryId": "TEMPO_RADT_L1",
+        "Description": "Preceding version",
+        "Version": "V02"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [],
+    "decision_tree_branch": "[2] NO: no ATBD in related_urls; the TEMPO user guides (Level 1, Level 2/3, O3TOT, O3PROF, NRT supplement) are the primary sources"
+  },
+  "source_documents": [
+    {
+      "key": "cmr_inputs:TEMPO_RADT_L1|V03",
+      "title": "CMR granule InputGranules: TEMPO_RADT_L1 V03 (earliest and latest 50 of 4103 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C2930766795-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_record:TEMPO_Auxiliary",
+      "title": "CMR abstract: TEMPO_Auxiliary V01",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C4190789193-LARC_CLOUD.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "l01",
+      "title": "TEMPO Level 0-1 ATBD (Version 3)",
+      "url": "https://asdc.larc.nasa.gov/documents/tempo/ATBD_TEMPO_v3_L0-1.pdf",
+      "evidence_source": "atbd",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "l1ug",
+      "title": "TEMPO Level 1 User's Guide V3.0",
+      "url": "https://asdc.larc.nasa.gov/documents/tempo/guide/TEMPO_Level-1_user_guide_V3.0.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "l23",
+      "title": "TEMPO Level 2/3 trace gas and clouds User's Guide V2.1",
+      "url": "https://asdc.larc.nasa.gov/documents/tempo/guide/TEMPO_Level-2-3_trace_gas_clouds_user_guide_V2.1.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "nrt",
+      "title": "TEMPO NRT User's Guide supplement V1.0",
+      "url": "https://asdc.larc.nasa.gov/documents/tempo/guide/TEMPO_NRT_user_guide_supplement_V1.0.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "l01",
+      "url": "https://asdc.larc.nasa.gov/documents/tempo/ATBD_TEMPO_v3_L0-1.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 116164
+    },
+    {
+      "key": "cld",
+      "url": "https://asdc.larc.nasa.gov/documents/tempo/ATBD_TEMPO_v3_O2_Cloud_Product.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 95795
+    },
+    {
+      "key": "no2",
+      "url": "https://asdc.larc.nasa.gov/documents/tempo/ATBD_TEMPO_NO2.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 129421
+    },
+    {
+      "key": "hcho_atbd",
+      "url": "https://asdc.larc.nasa.gov/documents/tempo/ATBD_TEMPO_CH2O.pdf",
+      "status": "FAILED: 404 Client Error: Not Found for url: https://asdc.larc.nasa.gov/documents/tempo/ATBD_TEMPO_CH2O.pdf"
+    },
+    {
+      "key": "o3talg",
+      "url": "https://asdc.larc.nasa.gov/documents/tempo/V2.2_TEMPO_O3TOT_Algorithm_description.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 26911
+    },
+    {
+      "key": "l1ug",
+      "url": "https://asdc.larc.nasa.gov/documents/tempo/guide/TEMPO_Level-1_user_guide_V3.0.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 45093
+    },
+    {
+      "key": "l23",
+      "url": "https://asdc.larc.nasa.gov/documents/tempo/guide/TEMPO_Level-2-3_trace_gas_clouds_user_guide_V2.1.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 95685
+    },
+    {
+      "key": "o3t",
+      "url": "https://asdc.larc.nasa.gov/documents/tempo/guide/V2.3_User_guide_O3TOT.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 31457
+    },
+    {
+      "key": "o3p",
+      "url": "https://asdc.larc.nasa.gov/documents/tempo/guide/V2.1_User_guide_O3PROF.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 35262
+    },
+    {
+      "key": "nrt",
+      "url": "https://asdc.larc.nasa.gov/documents/tempo/guide/TEMPO_NRT_user_guide_supplement_V1.0.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 29474
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "TEMPO_RADT_L1",
+      "version": "V03",
+      "level": "1B"
+    },
+    "primary_parents": [],
+    "supporting_parents": [
+      "MCD12Q1 061",
+      "TEMPO_Auxiliary V01",
+      "TEMPO_DRK_L1 V03",
+      "TEMPO_IRR_L1 V03"
+    ],
+    "derived_children": [],
+    "related": [
+      "TEMPO_RAD_L1 V03"
+    ]
+  },
+  "relationships": [
+    {
+      "shortname": "TEMPO_RADT_L1",
+      "version": "V03",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "MCD12Q1",
+      "related_version": "061",
+      "fixed_version": [
+        "061",
+        "the ATBD says the Version 5 land cover was replaced by Version 6.1"
+      ],
+      "version_status": "substituted",
+      "version_basis": "the ATBD says the Version 5 land cover was replaced by Version 6.1 (the Step 2 rule would give 061)",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: cmr",
+      "evidence_source": "atbd",
+      "evidence_document": "TEMPO Level 0-1 ATBD (Version 3)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/tempo/ATBD_TEMPO_v3_L0-1.pdf",
+      "evidence_section": "Geolocation ancillary data",
+      "evidence_page": 65,
+      "evidence_quote": "MCD12Q1 Version 5 data used for the land cover assignment have now been replaced with",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "TEMPO Level 0-1 ATBD (Version 3)",
+          "quote": "Spectroradiometer (MODIS) Land Cover Type Product (MCD12Q1) Version 5 (Friedl et al.,",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "rationale": "Decision step 3: MODIS land cover assigned to each L1 pixel (Version 5 replaced by Version 6.1); INPUT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "061"
+        ],
+        "concept_id": "C2484079608-LPCLOUD",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "level_check": "not applicable (INPUT)",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TEMPO_RADT_L1",
+      "version": "V03",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "TEMPO_Auxiliary",
+      "related_version": "V01",
+      "fixed_version": null,
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement, cmr",
+      "evidence_source": "other_doc",
+      "evidence_document": "CMR abstract: TEMPO_Auxiliary V01",
+      "evidence_url": "https://cmr.earthdata.nasa.gov/search/concepts/C4190789193-LARC_CLOUD.umm_json",
+      "evidence_section": "Abstract",
+      "evidence_page": null,
+      "evidence_quote": "used in the TEMPO Science Data Processing Center (SDPC) pipeline to create the TEMPO standard and near-real time data products.",
+      "quote_verified": true,
+      "supporting": [],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Decision step 3: the SDPC reference data (solar spectra, cross sections, surface reflectance, DEM, climatologies, calibration) used to create the standard and NRT products; INPUT (CMR abstract).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "V01"
+        ],
+        "concept_id": "C4190789193-LARC_CLOUD",
+        "related_level": "NA",
+        "level_progression_valid": true,
+        "level_check": "not applicable (INPUT)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TEMPO_RADT_L1",
+      "version": "V03",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "TEMPO_DRK_L1",
+      "related_version": "V03",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": "V03",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "TEMPO Level 1 User's Guide V3.0",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/tempo/guide/TEMPO_Level-1_user_guide_V3.0.pdf",
+      "evidence_section": "2 Level 1 processing",
+      "evidence_page": 6,
+      "evidence_quote": "The DRK processing ends at this stage, while the others are processed further to derive the number of photons",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "TEMPO Level 1 User's Guide V3.0",
+          "quote": "January 2026 minor update: Dark current correction for the RAD and IRR(R) products has been slightly improved by updating the approach to sampling the focal plane array (FPA) strap temperature.",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: TEMPO_RADT_L1 V03 (earliest and latest 50 of 4103 granules)",
+          "quote": "TEMPO_DRK_L1_V03_",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "rationale": "Decision step 3: dark-current correction of the radiance measurements; INPUT. Version named by the granule InputGranules.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "V03",
+          "V04"
+        ],
+        "concept_id": "C2930729926-LARC_CLOUD",
+        "related_level": "1A",
+        "level_progression_valid": true,
+        "level_check": "not applicable (INPUT)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TEMPO_RADT_L1",
+      "version": "V03",
+      "depth": 1,
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "related_shortname": "TEMPO_IRR_L1",
+      "related_version": "V03",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": "V03",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "TEMPO NRT User's Guide supplement V1.0",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/tempo/guide/TEMPO_NRT_user_guide_supplement_V1.0.pdf",
+      "evidence_section": "Level 1 NRT",
+      "evidence_page": 9,
+      "evidence_quote": "provided by wavelength calibration of the latest solar irradiance measurement",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "CMR granule InputGranules: TEMPO_RADT_L1 V03 (earliest and latest 50 of 4103 granules)",
+          "quote": "TEMPO_IRR_L1_V03_",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "rationale": "Decision step 3: wavelengths from the latest solar irradiance measurement initialise the radiance wavelength calibration; INPUT. Version named by the granule InputGranules.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "V03",
+          "V04"
+        ],
+        "concept_id": "C2930757598-LARC_CLOUD",
+        "related_level": "1B",
+        "level_progression_valid": true,
+        "level_check": "not applicable (INPUT)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "TEMPO_RADT_L1",
+      "version": "V03",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "related_to",
+      "related_shortname": "TEMPO_RAD_L1",
+      "related_version": "V03",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "TEMPO Level 1 User's Guide V3.0",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/tempo/guide/TEMPO_Level-1_user_guide_V3.0.pdf",
+      "evidence_section": "2 Level 1 data types",
+      "evidence_page": 6,
+      "evidence_quote": "Geolocated Earth radiances data also has two types: nominal (RAD) and twilight (RADT), with the latter aiming to capture city lights, nightglow and aurorae, moonlit clouds, gas flares, and lightning.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "TEMPO Level 2/3 trace gas and clouds User's Guide V2.1",
+          "quote": "Level 2 trace gas and cloud products may begin with scan numbers higher than one (e.g., at S002) if twilight measurements (for city lights) were made.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 3,
+      "rationale": "Decision step 6: twilight and nominal radiances from the same Level 0-1 processor; RADT feeds no L2; RELATED.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "V03",
+          "V04"
+        ],
+        "concept_id": "C2930759336-LARC_CLOUD",
+        "related_level": "1B",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "granule_level_check": {
+    "collection": "TEMPO_RADT_L1|V03",
+    "granules": 4103,
+    "sample": "TEMPO_RADT_L1_V03_20230927T100339Z_S001G01.nc",
+    "sample_time": {
+      "RangeDateTime": {
+        "BeginningDateTime": "2023-09-27T10:03:39+00:00",
+        "EndingDateTime": "2023-09-27T10:20:41+00:00"
+      }
+    },
+    "with_InputGranules": 5
+  },
+  "existing_associations_check": [
+    {
+      "collection": "TEMPO_RADT_L1|V03",
+      "Type": "PARENT",
+      "EntryId": "TEMPO_RADT_L1",
+      "Version": "V02",
+      "self_reference": false
+    }
+  ],
+  "metadata_findings": [
+    "MetadataAssociation PARENT ('Preceding version') → TEMPO_RADT_L1 V02 does not resolve (versions in CMR: ['V03', 'V04']).",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/citing-data",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/project/TEMPO",
+    "No association records the processing inputs that every granule lists in InputGranules.",
+    "Its InputGranules include IRR_L1, but the Level 1 documents describe the irradiance only as a wavelength-calibration initialisation (RADT \"does not involve spectral calibration\")."
+  ],
+  "excluded": [
+    {
+      "candidate": "TEMPO Level 0 (RAD, RADT, IRR, IRRR, DRK, HK, SMC, IRU)",
+      "reason": "not_in_cmr",
+      "detail": "Named in every L1 granule's InputGranules."
+    },
+    {
+      "candidate": "GEOS-CF v2 forecast / analysis",
+      "reason": "not_in_cmr",
+      "evidence": "geoscf",
+      "detail": "CMR \"GEOS-CF Products\" v1 (NCCS) has no granules and is not v2."
+    },
+    {
+      "candidate": "OMCLDRR climatology (O3TOT/O3PROF fallback)",
+      "reason": "fallback_only",
+      "evidence": "omcldrr"
+    },
+    {
+      "candidate": "TOMS climatology (O3TOT)",
+      "reason": "not_in_cmr",
+      "evidence": "toms"
+    },
+    {
+      "candidate": "VIIRS Black Marble monthly composite (RADT geolocation)",
+      "reason": "ambiguous",
+      "evidence": "viirs",
+      "detail": "The product is not named."
+    },
+    {
+      "candidate": "IMS snow/ice V1.3, GMTED2010 elevation",
+      "reason": "not_in_cmr"
+    },
+    {
+      "candidate": "TEMPO_Auxiliary for L3 products",
+      "reason": "not_an_input",
+      "detail": "L3 gridding uses only the L2 granules."
+    },
+    {
+      "candidate": "Other versions of the same ShortName (V03 ↔ V04)",
+      "reason": "same_product"
+    }
+  ],
+  "csv": {
+    "path": "Reports/LARC_CLOUD/TEMPO/TEMPO_RADT_L1_VV03_lineage.csv",
+    "rows": 5,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "existing_associations_review": [],
+  "broken_links": {
+    "https://asdc.larc.nasa.gov/citing-data": 404,
+    "https://asdc.larc.nasa.gov/project/TEMPO": 404
+  }
+}

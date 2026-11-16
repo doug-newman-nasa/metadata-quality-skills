@@ -1,0 +1,496 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-16T18:55:50+00:00",
+  "related_records": {},
+  "parameters": {
+    "collection_short_name": "IXBMI2AE",
+    "collection_version": "002",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 1,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "IXBMI2AE",
+    "version": "002",
+    "concept_id": "C3422083722-LARC_CLOUD",
+    "revision_id": 18,
+    "entry_title": "MISR L2 Aerosol Product subset for the INTEX-B region V002",
+    "processing_level": "2",
+    "temporal": [
+      {
+        "PrecisionOfSeconds": 0,
+        "EndsAtPresentFlag": false,
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2006-02-28T00:00:00.000Z",
+            "EndingDateTime": "2006-04-03T23:59:59.000Z"
+          }
+        ]
+      }
+    ],
+    "existing_metadata_associations": [
+      {
+        "Type": "INPUT",
+        "Description": "Geometric parameters of sun and view angles",
+        "EntryId": "MIB2GEOP",
+        "Version": "2"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Terrain-projected Level 1B2 data",
+        "EntryId": "MI1B2T",
+        "Version": "2"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Ellipsoid-projected Level 1B2 data",
+        "EntryId": "MI1B2E",
+        "Version": "2"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Cloud Masks",
+        "EntryId": "MIRCCM",
+        "Version": "3"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "MISR radiometric and configuration parameters",
+        "EntryId": "MIANCARP",
+        "Version": "2"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Geographic data",
+        "EntryId": "MIANCAGP",
+        "Version": "1"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Climatology",
+        "EntryId": "MIANACP",
+        "Version": "1"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Atmosphere and surface climatology",
+        "EntryId": "MIANTASC",
+        "Version": "2"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Tropical ocean atmosphere corrections",
+        "EntryId": "MIANTOAC",
+        "Version": "1"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Radiative transfer information",
+        "EntryId": "MIANSMT",
+        "Version": "2"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Land surface biome",
+        "EntryId": "MIANLDBM",
+        "Version": "1"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Configuration file for PGE",
+        "EntryId": "MICNFG",
+        "Version": "2"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [
+      {
+        "url": "https://asdc.larc.nasa.gov/documents/misr/MISR_ATBDs.pdf",
+        "priority": 1,
+        "source": "official_ATBD_designation",
+        "description": "NASA EOS ATB Documents: MISR"
+      }
+    ],
+    "decision_tree_branch": "[1] YES: ATBD in related_urls is the primary source"
+  },
+  "source_documents": [
+    {
+      "key": "cmr_global",
+      "title": "CMR granule names of the global MISR products for orbits O032974 and O032989 (nadir camera for L1B2)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:IXBMI2AE|002",
+      "title": "CMR granule InputGranules: IXBMI2AE 002 (earliest and latest 50 of 34 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3422083722-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:IXBMI2LS|002",
+      "title": "CMR granule InputGranules: IXBMI2LS 002 (earliest and latest 50 of 34 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3422083724-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_record:IXBMI2AE|002",
+      "title": "CMR abstract: IXBMI2AE 002",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3422083722-LARC_CLOUD.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "naming",
+      "title": "MISR File Naming and Versioning Conventions",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/file_descriptions.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": false,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": false,
+        "VALID": false
+      }
+    },
+    {
+      "key": "pge9",
+      "title": "MISR Level 2 Aerosol and Land Versioning (PGE9 production history)",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/pge9.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "vindex",
+      "title": "MISR Data Versioning Index",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/index.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": false,
+        "mentions_input_data": false,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": false,
+        "VALID": false
+      }
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "naming",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/file_descriptions.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 3330
+    },
+    {
+      "key": "vindex",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/index.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 1407
+    },
+    {
+      "key": "sdpg",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/guide/MISR_Science_Data_Product_Guide.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 84443
+    },
+    {
+      "key": "intexb",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/field_campaign_imagery/intexb.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 7717
+    },
+    {
+      "key": "pge9",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/pge9.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 21019
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "IXBMI2AE",
+      "version": "002",
+      "level": "2"
+    },
+    "primary_parents": [
+      "MIL2ASAE 002"
+    ],
+    "supporting_parents": [],
+    "derived_children": [],
+    "related": [
+      "IXBMI2LS 002"
+    ]
+  },
+  "relationships": [
+    {
+      "shortname": "IXBMI2AE",
+      "version": "002",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "MIL2ASAE",
+      "related_version": "002",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement",
+      "evidence_source": "other_doc",
+      "evidence_document": "CMR abstract: IXBMI2AE 002",
+      "evidence_url": "https://cmr.earthdata.nasa.gov/search/concepts/C3422083722-LARC_CLOUD.umm_json",
+      "evidence_section": "Abstract",
+      "evidence_page": null,
+      "evidence_quote": "MISR Level 2 Aerosol Product containing aerosol optical depth and particle type, with associated atmospheric data for the INTEXB_2006 theme.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "CMR granule InputGranules: IXBMI2AE 002 (earliest and latest 50 of 34 granules)",
+          "quote": "MISR_AEROSOL_P016_O032974_F09_0019_IXB_b64-77.hdf",
+          "verified": true
+        },
+        {
+          "document": "CMR granule names of the global MISR products for orbits O032974 and O032989 (nadir camera for L1B2)",
+          "quote": "MISR_AM1_AS_AEROSOL_P016_O032974_F09_0019.hdf",
+          "verified": true
+        },
+        {
+          "document": "MISR Data Versioning Index",
+          "quote": "Aerosol (MIL2ASAE, MIL2ASAF)",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: the collection is the global MISR Level 2 Aerosol (MIL2ASAE) product cut to the INTEX-B blocks 64–77 (same path/orbit/camera/version in the file names; the source files are in the parent); PARENT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "002",
+          "003"
+        ],
+        "concept_id": "C3417629474-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "parent L2 <= target L2",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "IXBMI2AE",
+      "version": "002",
+      "depth": 1,
+      "association_type": "RELATED",
+      "lineage_relationship": "parallel_product",
+      "related_shortname": "IXBMI2LS",
+      "related_version": "002",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "MISR File Naming and Versioning Conventions",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/misr/version/file_descriptions.pdf",
+      "evidence_section": "MISR File Naming and Versioning Conventions",
+      "evidence_page": 1,
+      "evidence_quote": "Hence, if a program creates more than one type of product file, each product file it creates will share the same version number history.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "MISR Level 2 Aerosol and Land Versioning (PGE9 production history)",
+          "quote": "MISR Level 2 Aerosol and Land Versioning",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: IXBMI2AE 002 (earliest and latest 50 of 34 granules)",
+          "quote": "_F09_0019_IXB_b64-77.hdf",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: IXBMI2LS 002 (earliest and latest 50 of 34 granules)",
+          "quote": "_F06_0019_IXB_b64-77.hdf",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 4: the aerosol and land surface products are written by the same Level 2 aerosol/surface PGE (both version 0019).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "002"
+        ],
+        "concept_id": "C3422083724-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "not applicable (RELATED)",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "granule_level_check": {
+    "collection": "IXBMI2AE|002",
+    "granules": 34,
+    "sample": "MISR_AEROSOL_P016_O032974_F09_0019_IXB_b64-77.hdf",
+    "sample_time": {
+      "RangeDateTime": {
+        "BeginningDateTime": "2006-02-28T16:10:33.770Z",
+        "EndingDateTime": "2006-02-28T16:15:25.508Z"
+      }
+    },
+    "with_InputGranules": 0
+  },
+  "existing_associations_check": [
+    {
+      "collection": "IXBMI2AE|002",
+      "Type": "INPUT",
+      "EntryId": "MIB2GEOP",
+      "Version": "2",
+      "self_reference": false
+    },
+    {
+      "collection": "IXBMI2AE|002",
+      "Type": "INPUT",
+      "EntryId": "MI1B2T",
+      "Version": "2",
+      "self_reference": false
+    },
+    {
+      "collection": "IXBMI2AE|002",
+      "Type": "INPUT",
+      "EntryId": "MI1B2E",
+      "Version": "2",
+      "self_reference": false
+    },
+    {
+      "collection": "IXBMI2AE|002",
+      "Type": "INPUT",
+      "EntryId": "MIRCCM",
+      "Version": "3",
+      "self_reference": false
+    },
+    {
+      "collection": "IXBMI2AE|002",
+      "Type": "INPUT",
+      "EntryId": "MIANCARP",
+      "Version": "2",
+      "self_reference": false
+    },
+    {
+      "collection": "IXBMI2AE|002",
+      "Type": "INPUT",
+      "EntryId": "MIANCAGP",
+      "Version": "1",
+      "self_reference": false
+    },
+    {
+      "collection": "IXBMI2AE|002",
+      "Type": "INPUT",
+      "EntryId": "MIANACP",
+      "Version": "1",
+      "self_reference": false
+    },
+    {
+      "collection": "IXBMI2AE|002",
+      "Type": "INPUT",
+      "EntryId": "MIANTASC",
+      "Version": "2",
+      "self_reference": false
+    },
+    {
+      "collection": "IXBMI2AE|002",
+      "Type": "INPUT",
+      "EntryId": "MIANTOAC",
+      "Version": "1",
+      "self_reference": false
+    },
+    {
+      "collection": "IXBMI2AE|002",
+      "Type": "INPUT",
+      "EntryId": "MIANSMT",
+      "Version": "2",
+      "self_reference": false
+    },
+    {
+      "collection": "IXBMI2AE|002",
+      "Type": "INPUT",
+      "EntryId": "MIANLDBM",
+      "Version": "1",
+      "self_reference": false
+    },
+    {
+      "collection": "IXBMI2AE|002",
+      "Type": "INPUT",
+      "EntryId": "MICNFG",
+      "Version": "2",
+      "self_reference": false
+    }
+  ],
+  "metadata_findings": [
+    "12 existing INPUT associations copy the inputs of the global product (e.g. MIB2GEOP, MI1B2T, MI1B2E, MIRCCM, …); by rule 1c-1 they are not inputs of the subset, whose only parent is MIL2ASAE.",
+    "3 associations give a version that CMR does not hold for that ShortName: MI1B2T '2' (CMR: ['003', '004']), MI1B2E '2' (CMR: ['003', '004']), MIRCCM '3' (CMR: ['004']).",
+    "5 associations write the Version without the leading zeros CMR uses, so they do not resolve: MIB2GEOP '2' (CMR: ['002', '003']), MIANCARP '2' (CMR: ['002']), MIANCAGP '1' (CMR: ['001']), MIANACP '1' (CMR: ['001']), MIANTASC '2' (CMR: ['002']).",
+    "4 associations name ShortNames that are not CMR collections: MIANLDBM, MIANSMT, MIANTOAC, MICNFG.",
+    "No association to the global product it was cut from (MIL2ASAE).",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/citing-data",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/project/MISR",
+    "Linked page returns HTTP 403: https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA21927",
+    "No document describes how the INTEX-B subsets were made (block range, orbit selection); the only INTEX-B document is an image gallery.",
+    "The abstract is a single sentence that does not say the collection is a subset or name the INTEX-B region; only the title does.",
+    "Projects lists 'INTEXB' and 'MISR'; the link to the INTEX-B campaign is otherwise only in the title."
+  ],
+  "excluded": [
+    {
+      "candidate": "Inputs of the global products (MI1B1, MIRCCM, MIANTASC, MIANCARP, MIANCAGP, MIANACP, MIANAZM, MIANCSSC, … and the global L1B2/GEO for the L2 subsets)",
+      "reason": "indirect",
+      "detail": "Rule 1c-1: the subsets were cut from finished global files."
+    },
+    {
+      "candidate": "IXBMIB2E / IXBMIB2T / IXBMIGEO as inputs of IXBMI2AE / IXBMI2LS / IXBMI2ST",
+      "reason": "indirect",
+      "detail": "The L2 subsets were not produced from the L1B2 subsets."
+    },
+    {
+      "candidate": "Later reprocessings (…_F03_2025 files; MIL2ASAE …_F12_0022; MIL2ASAE/ASLS 003)",
+      "reason": "no_lineage_relationship",
+      "detail": "Not the source of these files."
+    }
+  ],
+  "csv": {
+    "path": "Reports/LARC_CLOUD/MISR_INTEXB/IXBMI2AE_V002_lineage.csv",
+    "rows": 2,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "existing_associations_review": [],
+  "broken_links": {
+    "https://asdc.larc.nasa.gov/citing-data": 404,
+    "https://asdc.larc.nasa.gov/project/MISR": 404,
+    "https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA21927": 403
+  }
+}

@@ -1,0 +1,766 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-16T17:15:40+00:00",
+  "related_records": {
+    "DSCOVR_EPIC_L4_TrO3": {
+      "version": "01",
+      "concept_id": "C3860110217-LARC_CLOUD"
+    }
+  },
+  "parameters": {
+    "collection_short_name": "DSCOVR_EPIC_L1B",
+    "collection_version": "3",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 1,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "DSCOVR_EPIC_L1B",
+    "version": "3",
+    "concept_id": "C3860110022-LARC_CLOUD",
+    "revision_id": 8,
+    "entry_title": "DSCOVR EPIC Level 1B Version 3",
+    "processing_level": "1B",
+    "temporal": [
+      {
+        "EndsAtPresentFlag": true,
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2015-06-13T00:00:00Z"
+          }
+        ]
+      }
+    ],
+    "existing_metadata_associations": [
+      {
+        "Description": "Preceding version",
+        "EntryId": "DSCOVR_EPIC_L1B",
+        "Type": "PARENT",
+        "Version": "2"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [],
+    "decision_tree_branch": "[2] NO: no ATBD in related_urls; the product's user guide / algorithm documents, the EPIC web pages and the CMR records are the primary sources"
+  },
+  "source_documents": [
+    {
+      "key": "cmr_inputs:DSCOVR_EPIC_L2_COMPOSITE|02",
+      "title": "CMR granule InputGranules: DSCOVR_EPIC_L2_COMPOSITE 02 (earliest and latest 50 of 42315 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3860110047-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:DSCOVR_EPIC_L3_PAR|02",
+      "title": "CMR granule InputGranules: DSCOVR_EPIC_L3_PAR 02 (earliest and latest 50 of 3492 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3861596582-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_record:DSCOVR_EPIC_L2_COMPOSITE|02",
+      "title": "CMR abstract: DSCOVR_EPIC_L2_COMPOSITE 02",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3860110047-LARC_CLOUD.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_version:DSCOVR_EPIC_L2_MAIAC|02",
+      "title": "CMR VersionDescription: DSCOVR_EPIC_L2_MAIAC 02",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2722461669-LARC_CLOUD.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_version:DSCOVR_EPIC_L2_O3SO2AI|03",
+      "title": "CMR VersionDescription: DSCOVR_EPIC_L2_O3SO2AI 03",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3861596525-LARC_CLOUD.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "dfcb3",
+      "title": "EPIC Data Format Control Book (V03)",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/DSCOVR_EPIC_Data_Format_Control_Book_V03.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": false,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "geo3",
+      "title": "EPIC Geolocation algorithm document (V03)",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/DSCOVR_EPIC_Geolocation_V03.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "maiac_guide",
+      "title": "EPIC MAIAC User Guide v5",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/guides/EPIC_MAIAC_UserGuide_v5.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "par_guide",
+      "title": "EPIC Ocean (surface PAR) Product User Guide",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/guides/DSCOVR_EPIC_Ocean_Product_user_guide.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "so2_summary",
+      "title": "EPIC SO2 L2 algorithm summary",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/EPICSO2_L2_summary_final.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "to3_guide",
+      "title": "EPIC Total Ozone (TO3) User Guide (Jan 2026 update)",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/guides/EPICTO3UserGuide_updateJan2026.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    },
+    {
+      "key": "web_so2",
+      "title": "EPIC science page: SO2",
+      "url": "https://epic.gsfc.nasa.gov/science/products/so2",
+      "evidence_source": "other_doc",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": true,
+        "mentions_input_data": true,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": true,
+        "VALID": true
+      }
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "dfcb4",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/EPIC_Data_Format_Control_Book_2025-12-19.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 83994
+    },
+    {
+      "key": "dfcb3",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/DSCOVR_EPIC_Data_Format_Control_Book_V03.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 81712
+    },
+    {
+      "key": "geo4",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/EPIC_Geolocation_2025-09-16.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 73575
+    },
+    {
+      "key": "geo3",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/DSCOVR_EPIC_Geolocation_V03.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 72688
+    },
+    {
+      "key": "geoq4",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/EPIC_Geolocation_quality_2025-09-18.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 4356
+    },
+    {
+      "key": "l0l1a4",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/DSCOVR_EPIC_L0L1a_Processor_Version2.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 19535
+    },
+    {
+      "key": "overview",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/DSCOVR_overview_2016-06-29.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 24179
+    },
+    {
+      "key": "nistar_dfcb3",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/DSCOVR_NISTAR_Data_Format_Control_Book_V3.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 163958
+    },
+    {
+      "key": "nistar_qr3",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/DSCOVR_NISTAR_Data_Quality_Report_V3.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 45546
+    },
+    {
+      "key": "nistar_proc2",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/DSCOVR_NISTAR_Processing_V02.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 13431
+    },
+    {
+      "key": "aer_guide",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/guides/EPIC_UV_Aerosol_v04_README_Final.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 58458
+    },
+    {
+      "key": "to3_guide",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/guides/EPICTO3UserGuide_updateJan2026.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 44121
+    },
+    {
+      "key": "so2_summary",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/EPICSO2_L2_summary_final.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 1555
+    },
+    {
+      "key": "cloud_desc",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/EPICCloudProductDescription_Nov2017_1.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 3792
+    },
+    {
+      "key": "maiac_guide",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/guides/EPIC_MAIAC_UserGuide_v5.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 36957
+    },
+    {
+      "key": "vesdr_sdrg2",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/DSCOVR_VESDR_SDRG_02.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 47381
+    },
+    {
+      "key": "par_guide",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/guides/DSCOVR_EPIC_Ocean_Product_user_guide.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 16399
+    },
+    {
+      "key": "tco_doc",
+      "url": "https://asdc.larc.nasa.gov/documents/dscovr/EPIC_TCO_product_documentation.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 8360
+    },
+    {
+      "key": "web_o3",
+      "url": "https://epic.gsfc.nasa.gov/science/products/o3",
+      "status": "ok",
+      "kind": "html",
+      "text_chars": 3733
+    },
+    {
+      "key": "web_so2",
+      "url": "https://epic.gsfc.nasa.gov/science/products/so2",
+      "status": "ok",
+      "kind": "html",
+      "text_chars": 7692
+    },
+    {
+      "key": "web_veg",
+      "url": "https://epic.gsfc.nasa.gov/science/products/vegetable",
+      "status": "ok",
+      "kind": "html",
+      "text_chars": 6081
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "DSCOVR_EPIC_L1B",
+      "version": "3",
+      "level": "1B"
+    },
+    "primary_parents": [
+      "DSCOVR_EPIC_L1A 3"
+    ],
+    "supporting_parents": [],
+    "derived_children": [
+      "DSCOVR_EPIC_L2_COMPOSITE 02",
+      "DSCOVR_EPIC_L2_MAIAC 02",
+      "DSCOVR_EPIC_L2_O3SO2AI 03",
+      "DSCOVR_EPIC_L2_SO2 02",
+      "DSCOVR_EPIC_L2_TO3 03",
+      "DSCOVR_EPIC_L3_PAR 02"
+    ],
+    "related": []
+  },
+  "relationships": [
+    {
+      "shortname": "DSCOVR_EPIC_L1B",
+      "version": "3",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "DSCOVR_EPIC_L1A",
+      "related_version": "3",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "EPIC Data Format Control Book (V03)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/dscovr/DSCOVR_EPIC_Data_Format_Control_Book_V03.pdf",
+      "evidence_section": "3.x L1B data product",
+      "evidence_page": 23,
+      "evidence_quote": "The EPIC L1B contains the same 10 calibrated image bands as its corresponding L1A, however the products have been georectified to match a common grid.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "EPIC Geolocation algorithm document (V03)",
+          "quote": "Input - The image, latitude, longitude datasets, as well as viewing metadata read from the L1A file.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: L1B applies the geolocation to the L1A images and regrids them; PARENT. Same-version pairing (file naming, matched V03 documents).",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "3",
+          "4"
+        ],
+        "concept_id": "C3860018968-LARC_CLOUD",
+        "related_level": "1A",
+        "level_progression_valid": true,
+        "level_check": "parent L1 <= target L1",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "DSCOVR_EPIC_L1B",
+      "version": "3",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "DSCOVR_EPIC_L2_COMPOSITE",
+      "related_version": "02",
+      "fixed_version": [
+        "3",
+        "the sampled granules cite epic_1b_*_03.h5 inputs"
+      ],
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement, cmr",
+      "evidence_source": "other_doc",
+      "evidence_document": "CMR granule InputGranules: DSCOVR_EPIC_L2_COMPOSITE 02 (earliest and latest 50 of 42315 granules)",
+      "evidence_url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3860110047-LARC_CLOUD",
+      "evidence_section": "Granule InputGranules (no document)",
+      "evidence_page": null,
+      "evidence_quote": "DSCOVR_EPIC_L2_COMPOSITE_02_20240131T215400Z.nc <- COMPOSITE_2024.031.2154.nc, epic_1b_202401312154**_03.h5",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "CMR abstract: DSCOVR_EPIC_L2_COMPOSITE 02",
+          "quote": "The global composite data are then remapped into the EPIC FOV by convolving the high-resolution cloud properties with the EPIC point spread function (PSF)",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "rationale": "Decision step 3: the LEO/GEO cloud composite is remapped to the EPIC field of view and time; each granule lists an EPIC L1B file (granules only); INPUT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "02"
+        ],
+        "concept_id": "C3860110047-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "child L2 >= target L1",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "DSCOVR_EPIC_L1B",
+      "version": "3",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "DSCOVR_EPIC_L2_MAIAC",
+      "related_version": "02",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "stated_in_evidence",
+      "version_stated": "02",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "EPIC MAIAC User Guide v5",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/dscovr/guides/EPIC_MAIAC_UserGuide_v5.pdf",
+      "evidence_section": "Processing overview",
+      "evidence_page": 3,
+      "evidence_quote": "The standard processing starts with gridding EPIC’s geolocated and calibrated level 1B (L1B) data to 10 km resolution using Zonal Sinusoidal Projection (ZSP)",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "EPIC MAIAC User Guide v5",
+          "quote": "Here V1=02 and V2=03 are versions of the MAIAC product and of L1B top of atmosphere (TOA) reflectance data, respectively.",
+          "verified": true
+        },
+        {
+          "document": "CMR VersionDescription: DSCOVR_EPIC_L2_MAIAC 02",
+          "quote": "Version 2 with EPIC L1B v03 input",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: MAIAC grids and corrects the EPIC L1B reflectances; L1B version 03 stated; PARENT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "02"
+        ],
+        "concept_id": "C2722461669-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "child L2 >= target L1",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "DSCOVR_EPIC_L1B",
+      "version": "3",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "DSCOVR_EPIC_L2_O3SO2AI",
+      "related_version": "03",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "stated_in_evidence",
+      "version_stated": "03",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source",
+      "evidence_source": "other_doc",
+      "evidence_document": "CMR VersionDescription: DSCOVR_EPIC_L2_O3SO2AI 03",
+      "evidence_url": "https://cmr.earthdata.nasa.gov/search/concepts/C3861596525-LARC_CLOUD.umm_json",
+      "evidence_section": "VersionDescription (no document; the abstract describes a cloud algorithm proposal)",
+      "evidence_page": null,
+      "evidence_quote": "Version 03 software with epic 1b v03 input.",
+      "quote_verified": true,
+      "supporting": [],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "rationale": "Decision step 2: VersionDescription \"Version 03 software with epic 1b v03 input\"; no document; PARENT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "03"
+        ],
+        "concept_id": "C3861596525-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "child L2 >= target L1",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "DSCOVR_EPIC_L1B",
+      "version": "3",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "DSCOVR_EPIC_L2_SO2",
+      "related_version": "02",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "stated_in_evidence",
+      "version_stated": "02",
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement",
+      "evidence_source": "user_guide",
+      "evidence_document": "EPIC SO2 L2 algorithm summary",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/dscovr/EPICSO2_L2_summary_final.pdf",
+      "evidence_section": "Algorithm summary",
+      "evidence_page": 1,
+      "evidence_quote": "The algorithm uses four EPIC UV channels (centered at 317nm, 325nm, 340 nm, 388nm) to iteratively retrieve vertical column amounts of sulfur dioxide",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "EPIC science page: SO2",
+          "quote": "DSCOVR EPIC Level 2 Sulfur dioxide (SO2) Product with EPIC Version 3 Input Version 2",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: SO2 retrieved from four EPIC UV channels (L1B); \"EPIC Version 3 Input\" (web page); PARENT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "02"
+        ],
+        "concept_id": "C3866106184-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "child L2 >= target L1",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "DSCOVR_EPIC_L1B",
+      "version": "3",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "DSCOVR_EPIC_L2_TO3",
+      "related_version": "03",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "stated_in_evidence",
+      "version_stated": "03",
+      "confidence": "HIGH",
+      "confidence_rule": "strong source, statement and CMR validation",
+      "evidence_source": "user_guide",
+      "evidence_document": "EPIC Total Ozone (TO3) User Guide (Jan 2026 update)",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/dscovr/guides/EPICTO3UserGuide_updateJan2026.pdf",
+      "evidence_section": "Version 03 processing",
+      "evidence_page": 13,
+      "evidence_quote": "The version 03 total ozone retrieval algorithm is used. The input is from version 03 EPIC L1b file.",
+      "quote_verified": true,
+      "supporting": [],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: total ozone retrieved from EPIC L1B UV radiances; version 03 input stated; PARENT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "03"
+        ],
+        "concept_id": "C3861596547-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "child L2 >= target L1",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    },
+    {
+      "shortname": "DSCOVR_EPIC_L1B",
+      "version": "3",
+      "depth": 1,
+      "association_type": "CHILD",
+      "lineage_relationship": "downstream_product",
+      "related_shortname": "DSCOVR_EPIC_L3_PAR",
+      "related_version": "02",
+      "fixed_version": [
+        "3",
+        "the sampled granules cite epic_1b_*_03.h5 inputs"
+      ],
+      "version_status": "substituted",
+      "version_basis": "latest_non_nrt",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: statement, cmr",
+      "evidence_source": "user_guide",
+      "evidence_document": "EPIC Ocean (surface PAR) Product User Guide",
+      "evidence_url": "https://asdc.larc.nasa.gov/documents/dscovr/guides/DSCOVR_EPIC_Ocean_Product_user_guide.pdf",
+      "evidence_section": "Method",
+      "evidence_page": 2,
+      "evidence_quote": "The reflected irradiance is estimated from EPIC Level 1b radiance data, while transmission through the atmosphere is modeled.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "EPIC Ocean (surface PAR) Product User Guide",
+          "quote": "The individual estimates are then remapped and weight-averaged using the cosine of the Sun zenith angle.",
+          "verified": true
+        },
+        {
+          "document": "CMR granule InputGranules: DSCOVR_EPIC_L3_PAR 02 (earliest and latest 50 of 3492 granules)",
+          "quote": "DSCOVR_EPIC_L3_PAR_02_20150613_18km.h5 <- epic_1b_20150613_03.h5",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2 (aggregation): daily mean PAR from up to 13 EPIC L1B observations, remapped and weight-averaged; PARENT.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "01",
+          "02"
+        ],
+        "concept_id": "C3861596582-LARC_CLOUD",
+        "related_level": "3",
+        "level_progression_valid": true,
+        "level_check": "child L3 >= target L1",
+        "version_compatible": false,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "granule_level_check": {
+    "collection": "DSCOVR_EPIC_L1B|3",
+    "granules": 50613,
+    "sample": "epic_1b_20150613110250_03.h5",
+    "sample_time": {
+      "RangeDateTime": {
+        "BeginningDateTime": "2015-06-13T11:00:36+00:00",
+        "EndingDateTime": "2015-06-13T11:04:38+00:00"
+      }
+    },
+    "with_InputGranules": 0
+  },
+  "existing_associations_check": [
+    {
+      "collection": "DSCOVR_EPIC_L1B|3",
+      "Type": "PARENT",
+      "EntryId": "DSCOVR_EPIC_L1B",
+      "Version": "2",
+      "self_reference": false
+    }
+  ],
+  "metadata_findings": [
+    "MetadataAssociation PARENT ('Preceding version') → DSCOVR_EPIC_L1B version 2 does not resolve to a CMR collection (versions in CMR: ['3', '4']).",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/project/DSCOVR",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/citing-data"
+  ],
+  "excluded": [
+    {
+      "candidate": "EPIC and NISTAR Level 0",
+      "reason": "not_in_cmr",
+      "evidence": "level0; nistar_l0"
+    },
+    {
+      "candidate": "EPIC calibration files (EPIC_CalFile_vX.txt), ephemerides, attitude, EGM2008, GIBS MODIS/VIIRS reference imagery",
+      "reason": "not_in_cmr",
+      "evidence": "calfile"
+    },
+    {
+      "candidate": "GEOS-5 forecast profiles (CLOUD)",
+      "reason": "not_in_cmr",
+      "evidence": "geos5_cloud"
+    },
+    {
+      "candidate": "MERRA-2 (TrO3_highres ozone fields; PAR wind, pressure, water vapour, cloud, aerosol)",
+      "reason": "ambiguous",
+      "evidence": "merra2_tco; par_to3",
+      "detail": "No collection is named; several MERRA-2 collections carry these fields (e.g. M2I3NVASM / M2I3NPASM for ozone)."
+    },
+    {
+      "candidate": "CERES SatCORPS GEO/LEO cloud retrievals (COMPOSITE)",
+      "reason": "ambiguous",
+      "evidence": "satcorps",
+      "detail": "CER_GEO_Ed4_* collections exist, but the versions and the LEO inputs are not identified; the direct input is an internal 5-km composite."
+    },
+    {
+      "candidate": "MCD12Q1 v051 (VESDR biome maps)",
+      "reason": "indirect",
+      "evidence": "mcd12_vesdr",
+      "detail": "Static ancillary maps derived from MCD12Q1 v051, which CMR no longer holds (061 only)."
+    },
+    {
+      "candidate": "AERONET climatology (MAIAC), OMI SSA dataset and CALIOP climatology (AER), OMI cloud climatology (TO3)",
+      "reason": "not_in_cmr"
+    },
+    {
+      "candidate": "EPIC L1B for VESDR, MAIAC-DAILY, CLOUDFRACTION and TrO3_highres",
+      "reason": "indirect",
+      "detail": "Inputs of their parents (rule 1c-1)."
+    },
+    {
+      "candidate": "DSCOVR_NISTAR_L2_FLX 01",
+      "reason": "no_documented_relationship",
+      "evidence": "nistar_no_epic",
+      "detail": "Not described by the NISTAR documents; the CMR abstract does not name NISTAR L1B."
+    },
+    {
+      "candidate": "Other versions of the same ShortName (L1A 3↔4, L1B 3↔4, AER 03, PAR 01, …)",
+      "reason": "same_product",
+      "detail": "Never listed (Generation skill 1a)."
+    }
+  ],
+  "csv": {
+    "path": "Reports/LARC_CLOUD/DSCOVR/DSCOVR_EPIC_L1B_V3_lineage.csv",
+    "rows": 7,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "existing_associations_review": [],
+  "l1b_versions_cited_by_granules": {
+    "none": 100
+  },
+  "broken_links": {
+    "https://asdc.larc.nasa.gov/project/DSCOVR": 404,
+    "https://asdc.larc.nasa.gov/citing-data": 404
+  }
+}

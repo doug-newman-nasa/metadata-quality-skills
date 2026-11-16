@@ -1,0 +1,382 @@
+{
+  "skill": "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0), output per Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3) and Skills/Collection_Lineage_Generation_Skill.md Step 1",
+  "generated": "2026-11-16T18:33:37+00:00",
+  "related_records": {},
+  "parameters": {
+    "collection_short_name": "CMRMITST",
+    "collection_version": "002",
+    "use_atbd_priority": true,
+    "atbd_search_depth": 1,
+    "validate_against_cmr": true,
+    "extract_processing_details": true,
+    "include_low_confidence": true
+  },
+  "target": {
+    "short_name": "CMRMITST",
+    "version": "002",
+    "concept_id": "C3422083715-LARC_CLOUD",
+    "revision_id": 20,
+    "entry_title": "MISR L2 TOA/Cloud Stereo Product subset for the C-MARE Region V002",
+    "processing_level": "2",
+    "temporal": [
+      {
+        "PrecisionOfSeconds": 0,
+        "EndsAtPresentFlag": false,
+        "RangeDateTimes": [
+          {
+            "BeginningDateTime": "2004-09-20T00:00:00.000Z",
+            "EndingDateTime": "2004-10-23T23:59:59.000Z"
+          }
+        ]
+      }
+    ],
+    "existing_metadata_associations": [
+      {
+        "Type": "INPUT",
+        "Description": "Geometric parameters of sun and view angles",
+        "EntryId": "MIB2GEOP",
+        "Version": "2"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Terrain-projected Level 1B2 data",
+        "EntryId": "MI1B2T",
+        "Version": "2"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Ellipsoid-projected Level 1B2 data",
+        "EntryId": "MI1B2E",
+        "Version": "2"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Cloud Masks",
+        "EntryId": "MIRCCM",
+        "Version": "3"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "MISR radiometric and configuration parameters",
+        "EntryId": "MIANCARP",
+        "Version": "2"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Geographic data",
+        "EntryId": "MIANCAGP",
+        "Version": "1"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "MISR Azimuthal Model Dataset",
+        "EntryId": "MIANAZM",
+        "Version": "2"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "MISR Cloud Screening Surface Classification",
+        "EntryId": "MIANCSSC",
+        "Version": "2"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Atmosphere and surface climatology",
+        "EntryId": "MIANTASC",
+        "Version": "2"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Land surface biome",
+        "EntryId": "MIANLDBM",
+        "Version": "1"
+      },
+      {
+        "Type": "INPUT",
+        "Description": "Configuration file for PGE",
+        "EntryId": "MICNFG",
+        "Version": "2"
+      }
+    ]
+  },
+  "atbd_search": {
+    "atbd_candidates": [
+      {
+        "url": "https://asdc.larc.nasa.gov/documents/misr/MISR_ATBDs.pdf",
+        "priority": 1,
+        "source": "official_ATBD_designation",
+        "description": "NASA EOS ATB Documents: MISR"
+      }
+    ],
+    "decision_tree_branch": "[1] YES: ATBD in related_urls is the primary source"
+  },
+  "source_documents": [
+    {
+      "key": "cmr_global",
+      "title": "CMR granule names of the global MISR products for orbit O025325",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_inputs:CMRMITST|002",
+      "title": "CMR granule InputGranules: CMRMITST 002 (earliest and latest 50 of 5 granules)",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3422083715-LARC_CLOUD",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "cmr_record:CMRMITST|002",
+      "title": "CMR abstract: CMRMITST 002",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3422083715-LARC_CLOUD.umm_json",
+      "evidence_source": "other_doc",
+      "validation": null
+    },
+    {
+      "key": "vindex",
+      "title": "MISR Data Versioning Index",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/index.pdf",
+      "evidence_source": "user_guide",
+      "validation": {
+        "document_accessible": true,
+        "contains_algorithm_section": false,
+        "mentions_input_data": false,
+        "mentions_parent_collection": true,
+        "contains_processing_algorithm": false,
+        "VALID": false
+      }
+    }
+  ],
+  "fetch_log": [
+    {
+      "key": "naming",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/file_descriptions.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 3330
+    },
+    {
+      "key": "vindex",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/index.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 1407
+    },
+    {
+      "key": "sdpg",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/guide/MISR_Science_Data_Product_Guide.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 84443
+    },
+    {
+      "key": "pge9",
+      "url": "https://asdc.larc.nasa.gov/documents/misr/version/pge9.pdf",
+      "status": "ok",
+      "kind": "pdf",
+      "text_chars": 21019
+    }
+  ],
+  "lineage_graph": {
+    "target_collection": {
+      "short_name": "CMRMITST",
+      "version": "002",
+      "level": "2"
+    },
+    "primary_parents": [
+      "MIL2TCST 002"
+    ],
+    "supporting_parents": [],
+    "derived_children": [],
+    "related": []
+  },
+  "relationships": [
+    {
+      "shortname": "CMRMITST",
+      "version": "002",
+      "depth": 1,
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "related_shortname": "MIL2TCST",
+      "related_version": "002",
+      "fixed_version": null,
+      "version_status": "matched",
+      "version_basis": "subject_version",
+      "version_stated": null,
+      "confidence": "MEDIUM",
+      "confidence_rule": "document-supported; weak criteria: source, statement",
+      "evidence_source": "other_doc",
+      "evidence_document": "CMR abstract: CMRMITST 002",
+      "evidence_url": "https://cmr.earthdata.nasa.gov/search/concepts/C3422083715-LARC_CLOUD.umm_json",
+      "evidence_section": "Abstract",
+      "evidence_page": null,
+      "evidence_quote": "Level 2 TOA/Cloud Stereo Product subset.",
+      "quote_verified": true,
+      "supporting": [
+        {
+          "document": "CMR granule InputGranules: CMRMITST 002 (earliest and latest 50 of 5 granules)",
+          "quote": "MISR_STEREO_P190_O025325_F07_0011_CMR_b62.hdf",
+          "verified": true
+        },
+        {
+          "document": "CMR granule names of the global MISR products for orbit O025325",
+          "quote": "MISR_AM1_TC_STEREO_P190_O025325_F07_0011.hdf",
+          "verified": true
+        },
+        {
+          "document": "MISR Data Versioning Index",
+          "quote": "TOA/Cloud Stereo (MIL2TCST, MIL2TCSF)",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 1,
+      "rationale": "Decision step 2: the collection is the global MISR Level 2 TOA/Cloud Stereo (MIL2TCST) product cut to the C-MARE block 62 (same path/orbit/version string in the file names); PARENT. The same file (F07_0011) is still in MIL2TCST 002.",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "versions_in_cmr": [
+          "002"
+        ],
+        "concept_id": "C2854335636-LARC_CLOUD",
+        "related_level": "2",
+        "level_progression_valid": true,
+        "level_check": "parent L2 <= target L2",
+        "version_compatible": true,
+        "existing_association_in_target": null
+      }
+    }
+  ],
+  "granule_level_check": {
+    "collection": "CMRMITST|002",
+    "granules": 5,
+    "sample": "MISR_STEREO_P190_O025325_F07_0011_CMR_b62.hdf",
+    "sample_time": {
+      "RangeDateTime": {
+        "BeginningDateTime": "2004-09-21T10:05:27.612Z",
+        "EndingDateTime": "2004-09-21T10:05:49.612Z"
+      }
+    },
+    "with_InputGranules": 0
+  },
+  "existing_associations_check": [
+    {
+      "collection": "CMRMITST|002",
+      "Type": "INPUT",
+      "EntryId": "MIB2GEOP",
+      "Version": "2",
+      "self_reference": false
+    },
+    {
+      "collection": "CMRMITST|002",
+      "Type": "INPUT",
+      "EntryId": "MI1B2T",
+      "Version": "2",
+      "self_reference": false
+    },
+    {
+      "collection": "CMRMITST|002",
+      "Type": "INPUT",
+      "EntryId": "MI1B2E",
+      "Version": "2",
+      "self_reference": false
+    },
+    {
+      "collection": "CMRMITST|002",
+      "Type": "INPUT",
+      "EntryId": "MIRCCM",
+      "Version": "3",
+      "self_reference": false
+    },
+    {
+      "collection": "CMRMITST|002",
+      "Type": "INPUT",
+      "EntryId": "MIANCARP",
+      "Version": "2",
+      "self_reference": false
+    },
+    {
+      "collection": "CMRMITST|002",
+      "Type": "INPUT",
+      "EntryId": "MIANCAGP",
+      "Version": "1",
+      "self_reference": false
+    },
+    {
+      "collection": "CMRMITST|002",
+      "Type": "INPUT",
+      "EntryId": "MIANAZM",
+      "Version": "2",
+      "self_reference": false
+    },
+    {
+      "collection": "CMRMITST|002",
+      "Type": "INPUT",
+      "EntryId": "MIANCSSC",
+      "Version": "2",
+      "self_reference": false
+    },
+    {
+      "collection": "CMRMITST|002",
+      "Type": "INPUT",
+      "EntryId": "MIANTASC",
+      "Version": "2",
+      "self_reference": false
+    },
+    {
+      "collection": "CMRMITST|002",
+      "Type": "INPUT",
+      "EntryId": "MIANLDBM",
+      "Version": "1",
+      "self_reference": false
+    },
+    {
+      "collection": "CMRMITST|002",
+      "Type": "INPUT",
+      "EntryId": "MICNFG",
+      "Version": "2",
+      "self_reference": false
+    }
+  ],
+  "metadata_findings": [
+    "11 existing associations (11 INPUT, 0 PARENT) copy the inputs of the global product (e.g. MIB2GEOP, MI1B2T, MI1B2E, MIRCCM, …); by rule 1c-1 they are not inputs of the subset, whose only parent is MIL2TCST.",
+    "3 associations give a version that CMR does not hold for that ShortName: MI1B2T '2' (CMR: ['003', '004']), MI1B2E '2' (CMR: ['003', '004']), MIRCCM '3' (CMR: ['004']).",
+    "4 associations write the Version without the leading zeros CMR uses, so they do not resolve: MIB2GEOP '2' (CMR: ['002', '003']), MIANCARP '2' (CMR: ['002']), MIANCAGP '1' (CMR: ['001']), MIANTASC '2' (CMR: ['002']).",
+    "4 associations name ShortNames that are not CMR collections: MIANAZM, MIANCSSC, MIANLDBM, MICNFG.",
+    "No association to the global product it was cut from (MIL2TCST).",
+    "Linked page returns HTTP 404: https://asdc.larc.nasa.gov/project/MISR",
+    "Linked page returns HTTP 403: https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA21927",
+    "No document describes the C-MARE subsets (block range, orbit selection); the linked documents describe the global MISR products.",
+    "Projects lists only 'MISR'; the C-MARE campaign (CMARE_2004 theme) is not recorded as a project."
+  ],
+  "excluded": [
+    {
+      "candidate": "Inputs of the global products (MI1B2E/T, MIB2GEOP for the L2 subsets, MIRCCM, MIANTASC, MIANCARP, MIANCAGP, MIANACP, MIANAZM, MIANCSSC, …)",
+      "reason": "indirect",
+      "detail": "Rule 1c-1: the subsets were cut from finished global files."
+    },
+    {
+      "candidate": "CMRMIGEO / CMRMITST as inputs of CMRMIAAE / CMRMIALS",
+      "reason": "indirect",
+      "detail": "The L2 subsets were not produced from the other subsets."
+    },
+    {
+      "candidate": "Later versions of the parents (MIL2ASAE/ASLS 003, MIL2TCSP)",
+      "reason": "no_lineage_relationship",
+      "evidence": "reprocessed",
+      "detail": "Reprocessings or successor products not used for these files."
+    }
+  ],
+  "csv": {
+    "path": "Reports/LARC_CLOUD/MISR_CMARE/CMRMITST_V002_lineage.csv",
+    "rows": 1,
+    "validation": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "existing_associations_review": [],
+  "broken_links": {
+    "https://asdc.larc.nasa.gov/project/MISR": 404,
+    "https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA21927": 403
+  }
+}
