@@ -1,0 +1,4 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+TROPOMI_MINDS_NO2,1.1,PARENT,S5P_L2__NO2____HiR,2,MEDIUM,derived_from
+TROPOMI_MINDS_NO2,1.1,RELATED,GOME_MINDS_NO2,1.1,HIGH,equivalent_product
+TROPOMI_MINDS_NO2,1.1,RELATED,OMI_MINDS_NO2,2,MEDIUM,equivalent_product

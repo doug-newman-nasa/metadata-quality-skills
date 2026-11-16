@@ -1,0 +1,463 @@
+{
+  "generated_at": "2026-11-16T14:09:57+00:00",
+  "skills": [
+    "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0, Steps 1-7)",
+    "Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3)",
+    "Skills/Collection_Lineage_Generation_Skill.md (Step 1a-1d classification)"
+  ],
+  "notebook": "TROPOMI_lineage.ipynb",
+  "target": {
+    "shortname": "TROPOMAER",
+    "version": "1",
+    "concept_id": "C2152047233-GES_DISC",
+    "processing_level": "2",
+    "provider": "GES_DISC",
+    "collection_data_type": "SCIENCE_QUALITY",
+    "collection_progress": "ACTIVE",
+    "platforms": [
+      "Sentinel-5P"
+    ],
+    "instruments": [
+      "TROPOMI"
+    ],
+    "revision_date": "2026-11-11T01:05:08.622Z",
+    "granules_in_cmr": 43849,
+    "latest_granule": "TROPOMAER.1:TROPOMI-Sentinel-5P_L2-TROPOMAER_2026m1114t121423-o47090_v01-2026m1116t030018.nc",
+    "pge_version": "PROCESSORV",
+    "temporal": {
+      "BeginningDateTime": "2018-04-30T00:41:24.000Z"
+    }
+  },
+  "atbd_search_depth": 1,
+  "include_low_confidence": true,
+  "atbd_note": "The record links no ATBD. Per the skill's decision tree the lineage uses CMR search plus the linked README, which holds the algorithm description and input list and is treated as a user_guide (strong source).",
+  "cmr_state_note": "Records fetched live from CMR at 2026-11-16T14:09:57+00:00; see process/*.json. Confidence depends on CMR state.",
+  "level_ranking_note": "Levels compared by major level, then sublevel; a bare '1' matches any Level 1 sublevel.",
+  "version_note": "related_version follows CSV skill Step 2, except that a version named in the documents is used when it exists in CMR (status document_version, weak), or written as 'Unknown' when it doesn't.",
+  "granule_metadata_note": "Granule records were sampled (Step 1); InputGranules is absent.",
+  "landing_page_check": {
+    "url": "https://www.earthdata.nasa.gov/data/catalog/ges-disc-trmm-1b11-7",
+    "resolved": "https://www.earthdata.nasa.gov/data/catalog/ges-disc-trmm-1b11-7",
+    "title": "TRMM Microwave Imager Calibrated Radiances L1B 1.5 hours V7 (TRMM_1B11) | NASA Earthdata"
+  },
+  "doi_checks": {
+    "GOME_MINDS_NO2@1.1": {
+      "cited": "10.5067/MEASURES/MINDS/DATA202",
+      "cmr_doi": "10.5067/MEASURES/MINDS/DATA202",
+      "match": true
+    },
+    "OMI_MINDS_NO2@2": {
+      "cited": "10.5067/MEASURES/MINDS/DATA205",
+      "cmr_doi": "10.5067/MEASURES/MINDS/DATA205",
+      "match": true
+    }
+  },
+  "source_documents": [
+    {
+      "id": "aer_rm",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "TROPOMAER README File, Version 1.1.1 (Oct 2021)",
+      "url": "https://measures.gesdisc.eosdis.nasa.gov/data/AER/TROPOMAER.1/doc/TropOMAER_README_C001_V1.1.1.pdf",
+      "linked_from": "TROPOMAER",
+      "fetched": true,
+      "sha256": "648a8d847425a4d6883e9f71eeb29f76be6b2302481200ce7839baf28f74c24c"
+    },
+    {
+      "id": "no2_rm",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "MEaSUREs MINDS NO2 README, versions 2.0 (OMI) and 1.1 (GOME and TROPOMI) (updated June 2026)",
+      "url": "https://measures.gesdisc.eosdis.nasa.gov/data/MINDS/TROPOMI_MINDS_NO2.1.1/doc/README.MEaSUREs_MINDS_NO2.pdf",
+      "linked_from": "TROPOMI_MINDS_NO2, OMI_MINDS_NO2, GOME_MINDS_NO2",
+      "fetched": true,
+      "sha256": "f1f6aa934bdfb55a40e59722478dbedf3ac98fe0fd4a5942c37247ccb38e2da4"
+    },
+    {
+      "id": "cmr:TROPOMAER@1",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORD (abstract)",
+      "title": "CMR UMM-C record C2152047233-GES_DISC (revision 2026-11-11T01:05:08.622Z)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2152047233-GES_DISC.umm_json",
+      "fetched": true
+    },
+    {
+      "id": "cmr:TROPOMI_MINDS_NO2@1.1",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORD (abstract)",
+      "title": "CMR UMM-C record C2263977000-GES_DISC (revision 2026-11-11T01:05:10.742Z)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2263977000-GES_DISC.umm_json",
+      "fetched": true
+    }
+  ],
+  "rows": [
+    {
+      "shortname": "TROPOMAER",
+      "version": "1",
+      "depth": 1,
+      "related_shortname": "S5P_L1B_RA_BD3_HiR",
+      "related_version": "2",
+      "related_concept_id": "C2086575700-GES_DISC",
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "evidence_source": "user_guide",
+      "evidence_doc": "aer_rm",
+      "evidence_section": "TROPOMAER README §2.1",
+      "evidence_quote": "Radiance and irradiance measurements at 354 and 388 nm in the UVIS detector from L1b BAND3 product (version 01) are fed to the aerosol algorithm.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "aer_rm",
+          "section": "TROPOMAER README §2.1 Retrieval approach",
+          "quote": "TROPOMAER ingests TROPOMI level1b (L1b) radiance and irradiance data along with associated viewing geometry and other relevant ancillary information.",
+          "verified": true
+        },
+        {
+          "doc": "aer_rm",
+          "section": "TROPOMAER README §1",
+          "quote": "As in OMAERUV, the TROPOMAER algorithm uses top of the atmosphere (TOA) radiance measurements at 354 nm and 388 nm.",
+          "verified": true
+        },
+        {
+          "doc": "cmr:TROPOMAER@1",
+          "section": "TROPOMAER CMR abstract",
+          "quote": "Data since July 19, 2022 (orbit 24688) has been processed with the most recent calibrated L1B radiance data (version 2.0.1). Data prior to July 19, 2022, data was processed with version 2.0.0 L1B radiances.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "keyword_priority_note": "Explicit input statement, generic: 'L1b BAND3 product'.",
+      "version_status": "document_version",
+      "document_version": "2",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GES_DISC",
+        "level": "1B",
+        "target_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": false,
+        "cmr_versions": [
+          "2",
+          "3"
+        ]
+      },
+      "decision_procedure": "Q2 yes: AOD, SSA and UVAI are retrieved from the TROPOMI band-3 radiances at 354/388 nm (X's data carried forward) -> derived_from (PARENT).",
+      "mapping_note": "'L1b BAND3 product' mapped to S5P_L1B_RA_BD3_HiR, the only TROPOMI band-3 radiance collection in CMR (inferred). The README says 'version 01'; the CMR abstract says L1B 'version 2.0.0' / '2.0.1', which belong to the CMR V2 collection, so V2 is used.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement, cmr_validation"
+    },
+    {
+      "shortname": "TROPOMAER",
+      "version": "1",
+      "depth": 1,
+      "related_shortname": "AIRS3STD",
+      "related_version": "006",
+      "related_concept_id": "C1238517289-GES_DISC",
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "evidence_source": "user_guide",
+      "evidence_doc": "aer_rm",
+      "evidence_section": "TROPOMAER README §2.1.3 Real Time AIRS Carbon Monoxide (CO)",
+      "evidence_quote": "The AIRS/Aqua L3 Daily Standard Physical Retrieval V006 CO product (AIRS3STD) is used in the aerosol algorithm to aid in the identification of carbonaceous aerosols.",
+      "quote_verified": true,
+      "supporting_quotes": [],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "keyword_priority_note": "The README names the ShortName and version (V006) in an input statement.",
+      "version_status": "document_version",
+      "document_version": "006",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GES_DISC",
+        "level": "3",
+        "target_level": "2",
+        "level_progression_valid": null,
+        "version_compatible": false,
+        "cmr_versions": [
+          "006",
+          "7.0"
+        ]
+      },
+      "decision_procedure": "Q3 yes: the AIRS CO total column, reduced to a CO index, aids aerosol-type identification -> input_to (INPUT).",
+      "mapping_note": "The README section title says 'Real Time AIRS', but the product named is the standard AIRS3STD V006.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = cmr_validation"
+    },
+    {
+      "shortname": "TROPOMAER",
+      "version": "1",
+      "depth": 1,
+      "related_shortname": "S5P_L1B_IR_UVN",
+      "related_version": "2",
+      "related_concept_id": "C2086465652-GES_DISC",
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "evidence_source": "user_guide",
+      "evidence_doc": "aer_rm",
+      "evidence_section": "TROPOMAER README §2.1",
+      "evidence_quote": "Radiance and irradiance measurements at 354 and 388 nm in the UVIS detector from L1b BAND3 product (version 01) are fed to the aerosol algorithm.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "aer_rm",
+          "section": "TROPOMAER README §2.1 Retrieval approach",
+          "quote": "TROPOMAER ingests TROPOMI level1b (L1b) radiance and irradiance data along with associated viewing geometry and other relevant ancillary information.",
+          "verified": true
+        },
+        {
+          "doc": "cmr:TROPOMAER@1",
+          "section": "TROPOMAER CMR abstract",
+          "quote": "Data since July 19, 2022 (orbit 24688) has been processed with the most recent calibrated L1B radiance data (version 2.0.1). Data prior to July 19, 2022, data was processed with version 2.0.0 L1B radiances.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "keyword_priority_note": "Explicit input statement, generic: 'irradiance measurements ... from L1b'.",
+      "version_status": "document_version",
+      "document_version": "2",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GES_DISC",
+        "level": "1B",
+        "target_level": "2",
+        "level_progression_valid": null,
+        "version_compatible": false,
+        "cmr_versions": [
+          "2",
+          "3"
+        ]
+      },
+      "decision_procedure": "Q2 no: the solar irradiance is not the observed scene. Q3 yes: it normalises the radiances to reflectance -> input_to (INPUT). PARENT vs INPUT test: TROPOMAER is not irradiance data carried forward.",
+      "mapping_note": "'irradiance ... L1b' for the UVIS detector (band 3) mapped to the UV-VIS-NIR irradiance product S5P_L1B_IR_UVN (inferred); version 2 as for the radiances.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement, cmr_validation"
+    },
+    {
+      "shortname": "TROPOMAER",
+      "version": "1",
+      "depth": 1,
+      "related_shortname": "OMAERUV",
+      "related_version": "004",
+      "related_concept_id": "C3185856256-GES_DISC",
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "evidence_source": "user_guide",
+      "evidence_doc": "aer_rm",
+      "evidence_section": "TROPOMAER README §1",
+      "evidence_quote": "The NASA TROPOMI aerosol inversion procedure (TROPOMAER, Torres et al., 2020) is a direct application of the OMI near UV aerosol algorithm (OMAERUV, Torres et al., 2007; 2013).",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "aer_rm",
+          "section": "TROPOMAER README §1",
+          "quote": "As in OMAERUV, the TROPOMAER algorithm uses top of the atmosphere (TOA) radiance measurements at 354 nm and 388 nm.",
+          "verified": true
+        },
+        {
+          "doc": "aer_rm",
+          "section": "TROPOMAER README §1",
+          "quote": "The choice of wavelengths ensures continuity of the long-term record started with the OMI heritage product.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 2,
+      "keyword_priority_note": "The README names OMAERUV as the algorithm TROPOMAER directly applies.",
+      "version_status": "substituted",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GES_DISC",
+        "level": "2",
+        "target_level": "2",
+        "level_progression_valid": null,
+        "version_compatible": false,
+        "cmr_versions": [
+          "003",
+          "004"
+        ]
+      },
+      "decision_procedure": "Q1-Q4 no (no data flows between them). Q5 yes: the same near-UV aerosol algorithm and product from OMI -> equivalent_product (RELATED).",
+      "mapping_note": "The README names no OMAERUV version; CMR's latest standard version is used (substituted).",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = cmr_validation"
+    },
+    {
+      "shortname": "TROPOMAER",
+      "version": "1",
+      "depth": 1,
+      "related_shortname": "OMIAuraAER",
+      "related_version": "1",
+      "related_concept_id": "C1460503190-GES_DISC",
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "evidence_source": "cmr_pattern",
+      "evidence_doc": "cmr:TROPOMAER@1",
+      "evidence_section": "TROPOMAER CMR abstract",
+      "evidence_quote": "derived from a 32-year record of satellite near-UV observations by three sensors.",
+      "quote_verified": true,
+      "supporting_quotes": [],
+      "named_explicitly": false,
+      "keyword_priority": null,
+      "keyword_priority_note": null,
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GES_DISC",
+        "level": "2",
+        "target_level": "2",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "1"
+        ]
+      },
+      "decision_procedure": "Q5 (inferred): the MEaSUREs OMI near-UV aerosol product of the same project (DOI series 10.5067/MEASURES/AER/DATA20x, shared abstract). The TROPOMAER README doesn't name it.",
+      "mapping_note": "Naming/project pattern only; reciprocal of the TOMS run, where OMIAuraAER is named in the TOMS README.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "equivalent_product exception: naming/pattern only, version matched"
+    },
+    {
+      "shortname": "TROPOMAER",
+      "version": "1",
+      "depth": 1,
+      "related_shortname": "TOMSEPAER",
+      "related_version": "2",
+      "related_concept_id": "C1452994122-GES_DISC",
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "evidence_source": "cmr_pattern",
+      "evidence_doc": "cmr:TROPOMAER@1",
+      "evidence_section": "TROPOMAER CMR abstract",
+      "evidence_quote": "derived from a 32-year record of satellite near-UV observations by three sensors.",
+      "quote_verified": true,
+      "supporting_quotes": [],
+      "named_explicitly": false,
+      "keyword_priority": null,
+      "keyword_priority_note": null,
+      "version_status": "substituted",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GES_DISC",
+        "level": "2",
+        "target_level": "2",
+        "level_progression_valid": null,
+        "version_compatible": false,
+        "cmr_versions": [
+          "2"
+        ]
+      },
+      "decision_procedure": "Q5 (inferred): the MEaSUREs near-UV aerosol product from TOMS, same project and DOI series; not named in the TROPOMAER README.",
+      "mapping_note": "Naming/project pattern only. Reciprocal of the TOMS run (TOMS* -> TROPOMAER, LOW).",
+      "confidence": "LOW",
+      "confidence_rule": "equivalent_product exception: naming/pattern only, version not matched"
+    },
+    {
+      "shortname": "TROPOMAER",
+      "version": "1",
+      "depth": 1,
+      "related_shortname": "TOMSN7AER",
+      "related_version": "2",
+      "related_concept_id": "C1418718313-GES_DISC",
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "evidence_source": "cmr_pattern",
+      "evidence_doc": "cmr:TROPOMAER@1",
+      "evidence_section": "TROPOMAER CMR abstract",
+      "evidence_quote": "derived from a 32-year record of satellite near-UV observations by three sensors.",
+      "quote_verified": true,
+      "supporting_quotes": [],
+      "named_explicitly": false,
+      "keyword_priority": null,
+      "keyword_priority_note": null,
+      "version_status": "substituted",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GES_DISC",
+        "level": "2",
+        "target_level": "2",
+        "level_progression_valid": null,
+        "version_compatible": false,
+        "cmr_versions": [
+          "2"
+        ]
+      },
+      "decision_procedure": "Q5 (inferred): the MEaSUREs near-UV aerosol product from TOMS, same project and DOI series; not named in the TROPOMAER README.",
+      "mapping_note": "Naming/project pattern only. Reciprocal of the TOMS run (TOMS* -> TROPOMAER, LOW).",
+      "confidence": "LOW",
+      "confidence_rule": "equivalent_product exception: naming/pattern only, version not matched"
+    }
+  ],
+  "excluded": [
+    {
+      "related": "Surface-albedo (OMI scene reflectivity) and CALIOP aerosol-layer-height climatologies",
+      "lineage_relationship": "input_to",
+      "reason": "not_in_cmr",
+      "detail": "Science-team climatologies ('available from the PI upon request'); not CMR collections (rule 1c-4).",
+      "evidence_doc": "aer_rm",
+      "evidence_section": "TROPOMAER README §2.1.1 Surface Albedo",
+      "evidence_quote": "A global climatological data set of Lambertian surface reflectivity (RSFC) at 354 and 388 nm is used in TROPOMAER.",
+      "quote_verified": true
+    },
+    {
+      "related": "S5P_L2__AER_AI_HiR",
+      "lineage_relationship": "related_to",
+      "reason": "no_documented_relationship",
+      "detail": "The Copernicus UV aerosol index is mentioned only as an ESA-distributed product; the README documents no relationship (rule 1c-2).",
+      "evidence_doc": "aer_rm",
+      "evidence_section": "TROPOMAER README §1",
+      "evidence_quote": "All S5P TROPOMI L1b data and L2 files for trace gas products, UV aerosol index and Oxygen-A band aerosol layer height, are currently generated by the Copernicus Sentinel project",
+      "quote_verified": true
+    }
+  ],
+  "existing_metadata_associations": [
+    {
+      "existing": {
+        "EntryId": "TROPOMAER",
+        "Version": "1",
+        "Type": "SCIENCE ASSOCIATED"
+      },
+      "issues": [
+        "self-relation: the record associates with itself; carries no lineage (CSV skill: no self-relations)",
+        "SCIENCE ASSOCIATED is never assigned by the skills"
+      ]
+    }
+  ],
+  "recommended_metadata_associations": [
+    {
+      "Type": "PARENT",
+      "EntryId": "S5P_L1B_RA_BD3_HiR",
+      "Version": "2"
+    },
+    {
+      "Type": "INPUT",
+      "EntryId": "AIRS3STD",
+      "Version": "006"
+    },
+    {
+      "Type": "INPUT",
+      "EntryId": "S5P_L1B_IR_UVN",
+      "Version": "2"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "OMAERUV",
+      "Version": "004"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "OMIAuraAER",
+      "Version": "1"
+    }
+  ],
+  "recommended_metadata_associations_note": "UMM-C 1.18.x field names (EntryId). Under the proposed UMM-C 1.18.8, EntryId becomes ShortName and Type, ShortName and Version are required.",
+  "csv_validation": {
+    "valid": true,
+    "errors": []
+  }
+}

@@ -1,0 +1,342 @@
+{
+  "generated_at": "2026-11-16T14:09:57+00:00",
+  "skills": [
+    "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0, Steps 1-7)",
+    "Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3)",
+    "Skills/Collection_Lineage_Generation_Skill.md (Step 1a-1d classification)"
+  ],
+  "notebook": "TROPOMI_lineage.ipynb",
+  "target": {
+    "shortname": "TROPOMI_MINDS_NO2",
+    "version": "1.1",
+    "concept_id": "C2263977000-GES_DISC",
+    "processing_level": "2",
+    "provider": "GES_DISC",
+    "collection_data_type": "SCIENCE_QUALITY",
+    "collection_progress": "ACTIVE",
+    "platforms": [
+      "Sentinel-5P"
+    ],
+    "instruments": [
+      "TROPOMI"
+    ],
+    "revision_date": "2026-11-11T01:05:10.742Z",
+    "granules_in_cmr": 18726,
+    "latest_granule": "TROPOMI_MINDS_NO2.1.1:TROPOMI-S5P_L2-TROPOMI_MINDS_NO2_2021m1231t230509-o21857_v01-01-2022m0508t095154.nc",
+    "pge_version": "1.1.1",
+    "temporal": {
+      "BeginningDateTime": "2018-05-01T00:22:27.000Z"
+    }
+  },
+  "atbd_search_depth": 1,
+  "include_low_confidence": true,
+  "atbd_note": "The record links no ATBD. Per the skill's decision tree the lineage uses CMR search plus the linked README, which holds the algorithm description and input list and is treated as a user_guide (strong source).",
+  "cmr_state_note": "Records fetched live from CMR at 2026-11-16T14:09:57+00:00; see process/*.json. Confidence depends on CMR state.",
+  "level_ranking_note": "Levels compared by major level, then sublevel; a bare '1' matches any Level 1 sublevel.",
+  "version_note": "related_version follows CSV skill Step 2, except that a version named in the documents is used when it exists in CMR (status document_version, weak), or written as 'Unknown' when it doesn't.",
+  "granule_metadata_note": "Granule records were sampled (Step 1); InputGranules is absent.",
+  "landing_page_check": {
+    "url": "https://www.earthdata.nasa.gov/data/catalog/ges-disc-trmm-1b21-7",
+    "resolved": "https://www.earthdata.nasa.gov/data/catalog/ges-disc-trmm-1b21-7",
+    "title": "TRMM Precipitation Radar Power and Reflectivity L1B 1.5 hours V7 (TRMM_1B21) | NASA Earthdata"
+  },
+  "doi_checks": {
+    "GOME_MINDS_NO2@1.1": {
+      "cited": "10.5067/MEASURES/MINDS/DATA202",
+      "cmr_doi": "10.5067/MEASURES/MINDS/DATA202",
+      "match": true
+    },
+    "OMI_MINDS_NO2@2": {
+      "cited": "10.5067/MEASURES/MINDS/DATA205",
+      "cmr_doi": "10.5067/MEASURES/MINDS/DATA205",
+      "match": true
+    }
+  },
+  "source_documents": [
+    {
+      "id": "aer_rm",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "TROPOMAER README File, Version 1.1.1 (Oct 2021)",
+      "url": "https://measures.gesdisc.eosdis.nasa.gov/data/AER/TROPOMAER.1/doc/TropOMAER_README_C001_V1.1.1.pdf",
+      "linked_from": "TROPOMAER",
+      "fetched": true,
+      "sha256": "648a8d847425a4d6883e9f71eeb29f76be6b2302481200ce7839baf28f74c24c"
+    },
+    {
+      "id": "no2_rm",
+      "kind": "user_guide",
+      "subtype": "READ-ME",
+      "title": "MEaSUREs MINDS NO2 README, versions 2.0 (OMI) and 1.1 (GOME and TROPOMI) (updated June 2026)",
+      "url": "https://measures.gesdisc.eosdis.nasa.gov/data/MINDS/TROPOMI_MINDS_NO2.1.1/doc/README.MEaSUREs_MINDS_NO2.pdf",
+      "linked_from": "TROPOMI_MINDS_NO2, OMI_MINDS_NO2, GOME_MINDS_NO2",
+      "fetched": true,
+      "sha256": "f1f6aa934bdfb55a40e59722478dbedf3ac98fe0fd4a5942c37247ccb38e2da4"
+    },
+    {
+      "id": "cmr:TROPOMAER@1",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORD (abstract)",
+      "title": "CMR UMM-C record C2152047233-GES_DISC (revision 2026-11-11T01:05:08.622Z)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2152047233-GES_DISC.umm_json",
+      "fetched": true
+    },
+    {
+      "id": "cmr:TROPOMI_MINDS_NO2@1.1",
+      "kind": "other_doc",
+      "subtype": "CMR COLLECTION RECORD (abstract)",
+      "title": "CMR UMM-C record C2263977000-GES_DISC (revision 2026-11-11T01:05:10.742Z)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C2263977000-GES_DISC.umm_json",
+      "fetched": true
+    }
+  ],
+  "rows": [
+    {
+      "shortname": "TROPOMI_MINDS_NO2",
+      "version": "1.1",
+      "depth": 1,
+      "related_shortname": "S5P_L2__NO2____HiR",
+      "related_version": "2",
+      "related_concept_id": "C2089270961-GES_DISC",
+      "association_type": "PARENT",
+      "lineage_relationship": "derived_from",
+      "evidence_source": "user_guide",
+      "evidence_doc": "no2_rm",
+      "evidence_section": "MINDS NO2 README §1.4 Algorithm",
+      "evidence_quote": "In addition, and TROPOMI NO2 SCD data are taken from the operational ESA/KNMI product, version 2.3.1.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "no2_rm",
+          "section": "MINDS NO2 README §1.4",
+          "quote": "Our approach consists of applying our carefully validated NO2, cloud, and geometry-dependent surface reflectivity retrieval algorithms as described in Lamsal et al., [2021] consistently to all MINDS instruments.",
+          "verified": true
+        },
+        {
+          "doc": "no2_rm",
+          "section": "MINDS NO2 README §1.4",
+          "quote": "GOME and TROPOMI retrievals (v1.1) are based on FRESCO cloud algorithm, but are adjusted for GLER.",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 2,
+      "keyword_priority_note": "Explicit input statement, generic: 'the operational ESA/KNMI product, version 2.3.1'.",
+      "version_status": "document_version",
+      "document_version": "2",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GES_DISC",
+        "level": "2",
+        "target_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": false,
+        "cmr_versions": [
+          "2",
+          "3"
+        ]
+      },
+      "decision_procedure": "Q2 yes: MINDS takes the TROPOMI NO2 slant columns and recomputes the air-mass factors, cloud and stratosphere-troposphere separation (X's data carried forward and reprocessed) -> derived_from (PARENT).",
+      "mapping_note": "'the operational ESA/KNMI product' (TROPOMI NO2) mapped to S5P_L2__NO2____HiR (inferred). Processor version 2.3.1 is in the CMR V2 collection (inferred from the 2.x processor series; the CMR record doesn't list processor versions).",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement, cmr_validation"
+    },
+    {
+      "shortname": "TROPOMI_MINDS_NO2",
+      "version": "1.1",
+      "depth": 1,
+      "related_shortname": "GOME_MINDS_NO2",
+      "related_version": "1.1",
+      "related_concept_id": "C2539362687-GES_DISC",
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "evidence_source": "user_guide",
+      "evidence_doc": "no2_rm",
+      "evidence_section": "MINDS NO2 README §1.6 Data citations",
+      "evidence_quote": "GOME_MINDS_NO2: Lok N. Lamsal, Nickolay A. Krotkov, Sergey V. Marchenko, Joanna Joiner,",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "no2_rm",
+          "section": "MINDS NO2 README §1.6 Data citations",
+          "quote": "DOI: 10.5067/MEASURES/MINDS/DATA202.",
+          "verified": true
+        },
+        {
+          "doc": "no2_rm",
+          "section": "MINDS NO2 README §1.4",
+          "quote": "Our approach consists of applying our carefully validated NO2, cloud, and geometry-dependent surface reflectivity retrieval algorithms as described in Lamsal et al., [2021] consistently to all MINDS instruments.",
+          "verified": true
+        },
+        {
+          "doc": "no2_rm",
+          "section": "MINDS NO2 README §1.3 Dataset Description",
+          "quote": "MINDS_NO2, v1.1 (GOME and TROPOMI) and v2.0 (OMI)",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "keyword_priority_note": "Named with its DOI in the README's data citations (product list = priority 1); Step 4 confirms the DOI.",
+      "version_status": "matched",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GES_DISC",
+        "level": "2",
+        "target_level": "2",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "1.1"
+        ]
+      },
+      "decision_procedure": "Q1-Q4 no. Q5 yes: the same MINDS NO2 algorithm and L2 product from GOME/ERS-2 -> equivalent_product (RELATED).",
+      "mapping_note": "",
+      "confidence": "HIGH",
+      "confidence_rule": "HIGH rule: source, statement and CMR validation all strong"
+    },
+    {
+      "shortname": "TROPOMI_MINDS_NO2",
+      "version": "1.1",
+      "depth": 1,
+      "related_shortname": "OMI_MINDS_NO2",
+      "related_version": "2",
+      "related_concept_id": "C4128585682-GES_DISC",
+      "association_type": "RELATED",
+      "lineage_relationship": "equivalent_product",
+      "evidence_source": "user_guide",
+      "evidence_doc": "no2_rm",
+      "evidence_section": "MINDS NO2 README §1.6 Data citations",
+      "evidence_quote": "OMI_MINDS_NO2: Nickolay A. Krotkov, Lok N. Lamsal, Sergey V. Marchenko, Eric Bucsela,",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "no2_rm",
+          "section": "MINDS NO2 README §1.6 Data citations",
+          "quote": "DOI: 10.5067/MEASURES/MINDS/DATA205.",
+          "verified": true
+        },
+        {
+          "doc": "no2_rm",
+          "section": "MINDS NO2 README §1.4",
+          "quote": "Our approach consists of applying our carefully validated NO2, cloud, and geometry-dependent surface reflectivity retrieval algorithms as described in Lamsal et al., [2021] consistently to all MINDS instruments.",
+          "verified": true
+        },
+        {
+          "doc": "no2_rm",
+          "section": "MINDS NO2 README §1.3 Dataset Description",
+          "quote": "MINDS_NO2, v1.1 (GOME and TROPOMI) and v2.0 (OMI)",
+          "verified": true
+        }
+      ],
+      "named_explicitly": true,
+      "keyword_priority": 1,
+      "keyword_priority_note": "Named with its DOI in the README's data citations; Step 4 confirms the DOI.",
+      "version_status": "substituted",
+      "document_version": null,
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "GES_DISC",
+        "level": "2",
+        "target_level": "2",
+        "level_progression_valid": null,
+        "version_compatible": false,
+        "cmr_versions": [
+          "2"
+        ]
+      },
+      "decision_procedure": "Q5 yes: the same MINDS NO2 L2 product from OMI/Aura (version 2.0) -> equivalent_product (RELATED).",
+      "mapping_note": "OMI MINDS is version 2 (v2.0), TROPOMI 1.1 (substituted).",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = cmr_validation"
+    }
+  ],
+  "excluded": [
+    {
+      "related": "OMI_MINDS_NO2d, OMI_MINDS_NO2G",
+      "lineage_relationship": "related_to",
+      "reason": "indirect_rule_1c-1",
+      "detail": "OMI-only gridded products made from OMI_MINDS_NO2; no TROPOMI MINDS L2G/L3 exists in CMR.",
+      "evidence_doc": "no2_rm",
+      "evidence_section": "MINDS NO2 README §2",
+      "evidence_quote": "A L3 product is created by mapping a day's worth of L2 data (usually 14 or 15 orbits) into a regular 0.25-deg latitude by 0.25-deg longitude grid",
+      "quote_verified": true
+    },
+    {
+      "related": "TROPOMI GLER (MODIS BRDF-based)",
+      "lineage_relationship": "input_to",
+      "reason": "not_in_cmr",
+      "detail": "The geometry-dependent LER for TROPOMI isn't a CMR collection (CMR holds OMGLER for OMI only).",
+      "evidence_doc": "no2_rm",
+      "evidence_section": "MINDS NO2 README §1.4",
+      "evidence_quote": "The GLER data are derived by coupling the atmosphere with the MODIS surface bidirectional reflectance distribution function (BRDF) data for land",
+      "quote_verified": true
+    },
+    {
+      "related": "MERRA-2 terrain pressure",
+      "lineage_relationship": "input_to",
+      "reason": "ambiguous_rule_1c-3",
+      "detail": "No MERRA-2 collection, version or DOI is named.",
+      "evidence_doc": "no2_rm",
+      "evidence_section": "MINDS NO2 README §1.4",
+      "evidence_quote": "Use of a more accurate terrain pressure calculated using satellite ground pixel-averaged terrain height and MERRA-2 terrain pressure.",
+      "quote_verified": true
+    },
+    {
+      "related": "DEM (2 arcmin) and model a-priori NO2 profiles",
+      "lineage_relationship": "input_to",
+      "reason": "not_in_cmr",
+      "detail": "Ancillary model/terrain data, not CMR collections.",
+      "evidence_doc": "no2_rm",
+      "evidence_section": "MINDS NO2 README §1.4",
+      "evidence_quote": "Use of improved high resolution (0.25o x 0.25o) model-based daily a priori NO2 profile shapes sampled at overpass times with updated year-specific emissions.",
+      "quote_verified": true
+    },
+    {
+      "related": "FRESCO cloud product",
+      "lineage_relationship": "input_to",
+      "reason": "ambiguous_rule_1c-3",
+      "detail": "'based on FRESCO cloud algorithm, but adjusted for GLER': the cloud input isn't identified as a separate collection (FRESCO clouds are carried in the S5P NO2 product).",
+      "evidence_doc": "no2_rm",
+      "evidence_section": "MINDS NO2 README §1.4",
+      "evidence_quote": "GOME and TROPOMI retrievals (v1.1) are based on FRESCO cloud algorithm, but are adjusted for GLER.",
+      "quote_verified": true
+    }
+  ],
+  "existing_metadata_associations": [
+    {
+      "existing": {
+        "EntryId": "TROPOMI_MINDS_NO2",
+        "Version": "1.1",
+        "Type": "SCIENCE ASSOCIATED"
+      },
+      "issues": [
+        "self-relation: the record associates with itself; carries no lineage (CSV skill: no self-relations)",
+        "SCIENCE ASSOCIATED is never assigned by the skills"
+      ]
+    }
+  ],
+  "recommended_metadata_associations": [
+    {
+      "Type": "PARENT",
+      "EntryId": "S5P_L2__NO2____HiR",
+      "Version": "2"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "GOME_MINDS_NO2",
+      "Version": "1.1"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "OMI_MINDS_NO2",
+      "Version": "2"
+    }
+  ],
+  "recommended_metadata_associations_note": "UMM-C 1.18.x field names (EntryId). Under the proposed UMM-C 1.18.8, EntryId becomes ShortName and Type, ShortName and Version are required.",
+  "csv_validation": {
+    "valid": true,
+    "errors": []
+  }
+}
