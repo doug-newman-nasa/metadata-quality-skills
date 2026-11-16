@@ -1,0 +1,2 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+RICMIB2E,002,PARENT,MI1B2E,Unknown,MEDIUM,derived_from
