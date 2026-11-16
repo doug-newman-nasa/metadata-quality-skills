@@ -1,0 +1,3 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+CER_SSF1deg-Day_NPP-VIIRS,Edition2A,PARENT,CER_SSF_NPP-FM5-VIIRS,Edition2A,MEDIUM,derived_from
+CER_SSF1deg-Day_NPP-VIIRS,Edition2A,CHILD,CER_SSF1deg-Month_NPP-VIIRS,Edition2A,HIGH,downstream_product

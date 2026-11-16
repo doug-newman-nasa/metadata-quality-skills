@@ -1,0 +1,2 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+CER_ES4_Aqua-Xtrk,Edition4,PARENT,CER_ES9_Aqua-Xtrk,Edition4,HIGH,derived_from

@@ -1,0 +1,4 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+CER_SSF1deg-Month_NOAA20-VIIRS,Edition1C,PARENT,CER_SSF1deg-Day_NOAA20-VIIRS,Edition1C,HIGH,derived_from
+CER_SSF1deg-Month_NOAA20-VIIRS,Edition1C,CHILD,CERES_EBAF,Edition4.2.1,MEDIUM,downstream_product
+CER_SSF1deg-Month_NOAA20-VIIRS,Edition1C,CHILD,CERES_EBAF-TOA,Edition4.2.1,MEDIUM,downstream_product

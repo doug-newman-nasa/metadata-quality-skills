@@ -1,0 +1,380 @@
+{
+  "generated_at": "2026-11-16T17:24:50+00:00",
+  "skills": [
+    "Skills/Collection_Lineage_via_ATBD_Skill.md (v2.0, Steps 1-7)",
+    "Skills/Collection_Lineage_CSV_Export_Skill.md (v1.3)",
+    "Skills/Collection_Lineage_Generation_Skill.md (Step 1a-1d classification)"
+  ],
+  "notebook": "CERES_GEO_lineage_batch2.ipynb",
+  "target": {
+    "shortname": "CER_GEO_Ed4_MET10_NH",
+    "version": "V01",
+    "concept_id": "C3880513923-LARC_CLOUD",
+    "processing_level": "2",
+    "provider": "LARC_CLOUD",
+    "collection_data_type": null,
+    "collection_progress": "COMPLETE",
+    "platforms": [
+      "METEOSAT-10"
+    ],
+    "instruments": [
+      "SEVIRI"
+    ],
+    "revision_date": "2026-10-09T19:18:08.519Z",
+    "granules_in_cmr": 17853,
+    "temporal": {
+      "BeginningDateTime": "2013-01-21T00:00:00.000000Z",
+      "EndingDateTime": "2017-02-28T23:59:59.999999Z"
+    },
+    "version_note": null
+  },
+  "atbd_search_depth": 1,
+  "include_low_confidence": true,
+  "atbd_note": "No product ATBD; the linked 'ATBD' (if any) is the CERES subsystem ATBD index page. Evidence: SYN1deg Ed4A DQS, CldTypHist guide/DQS, CERES input-data-source pages and CMR abstracts.",
+  "cmr_state_note": "Records fetched live from CMR at 2026-11-16T17:24:50+00:00; see process/cmr_all_CER.json.",
+  "version_note": "INPUT rows use the only CMR version of the SYN1deg/CldTypHist product (substituted); which GEO version the products read is not documented.",
+  "link_check": [
+    {
+      "url": "https://asdc.larc.nasa.gov/citing-data",
+      "status": 404
+    },
+    {
+      "url": "https://asdc.larc.nasa.gov/project/CERES",
+      "status": 404
+    },
+    {
+      "url": "https://asdc.larc.nasa.gov/tools-and-services",
+      "status": 404
+    }
+  ],
+  "source_documents": [
+    {
+      "id": "atbd_index",
+      "kind": "atbd",
+      "title": "ATB Documents: CERES (index page; linked as ATBD)",
+      "url": "https://asdc.larc.nasa.gov/documents/ceres/CERES_ATBDs.pdf",
+      "fetched": true,
+      "sha256": "0b6dcb2beef2037d4fef4f19dec4f3e54a7fea4f3183148746fb3b6b1d4abf9d"
+    },
+    {
+      "id": "gpi",
+      "kind": "other_doc",
+      "title": "CERES General Product Info / Input Data Sources",
+      "url": "https://ceres.larc.nasa.gov/data/general-product-info/",
+      "fetched": true,
+      "sha256": "349299ec419b4f76f1b97f098a2ddeb6bea00015a90dadd42bb61ca560e22a1d"
+    },
+    {
+      "id": "geo_dom",
+      "kind": "other_doc",
+      "title": "CERES GEO Domain Sources (last updated 2020-09-09)",
+      "url": "https://ceres.larc.nasa.gov/data/general-product-info/ceres-geo-domain-sources/",
+      "fetched": true,
+      "sha256": "b5251d544c31d8b4e7d1f46e1f6f603647a0821918ce7c77b54e88e1f7858d3c"
+    },
+    {
+      "id": "dqs_syn",
+      "kind": "other_doc",
+      "title": "CERES SYN1deg Edition4A Data Quality Summary (5/8/2025)",
+      "url": "https://ceres.larc.nasa.gov/documents/DQ_summaries/CERES_SYN1deg_Ed4A_DQS.pdf",
+      "fetched": true,
+      "sha256": "133a629c62727ca2ba8f848c56d917406962850e92d10530ce4c33692090b7a1"
+    },
+    {
+      "id": "g_cth",
+      "kind": "user_guide",
+      "title": "CERES CldTypHist product guide (USER'S GUIDE of the CldTypHist records)",
+      "url": "https://asdc.larc.nasa.gov/documents/ceres/guide/cer_cldtyphist.pdf",
+      "fetched": true,
+      "sha256": "060c052faa3c0d06592aaf3dfed6a2562dfd4c81a052c882271a95f2eb2a3f85"
+    },
+    {
+      "id": "dqs_cth",
+      "kind": "other_doc",
+      "title": "CERES CldTypHist Edition4A Data Quality Summary (6/1/2017)",
+      "url": "https://asdc.larc.nasa.gov/documents/ceres/quality_summaries/CERES_CldTypHist_Ed4A_DQS.pdf",
+      "fetched": true,
+      "sha256": "afae28374d7e096a757e8cab62608d2e220c40c839b508c458b15c5f9e70db4b"
+    },
+    {
+      "id": "dpc_geo",
+      "kind": "other_doc",
+      "title": "CERES Data Products Catalog: GEO (R3V2)",
+      "url": "https://ceres.larc.nasa.gov/documents/DPC/DPC_current/pdfs/DPC_GEO_R3V2.pdf",
+      "fetched": true,
+      "sha256": "3a2d1030dc371e77ca5569602e072206fd6c043a98c1d85b4f8bd878c45f7c11"
+    }
+  ],
+  "rows": [
+    {
+      "shortname": "CER_GEO_Ed4_MET10_NH",
+      "version": "V01",
+      "depth": 1,
+      "related_shortname": "CER_CldTypHist_GEO-MODIS",
+      "related_version": "Edition4A",
+      "related_concept_id": "C3880508247-LARC_CLOUD",
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "evidence_source": "user_guide",
+      "evidence_doc": "g_cth",
+      "evidence_section": "CldTypHist product guide, Data Set Description",
+      "evidence_quote": "Input to the CldTypHist Gridding Subsystem is the Single Scanner Footprint TOA/Surface Fluxes and Clouds (SSF) archival data product and gridded geostationary (GGEO) intermediate product.",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "cmr:CER_CldTypHist_GEO-MODIS@Edition4A",
+          "section": "CldTypHist_GEO-MODIS Edition4A CMR abstract",
+          "quote": "The CldTypHist product combines cloud properties from Terra-MODIS (10:30 AM local equator crossing time LECT), Aqua-MODIS (1:30 PM LECT), and geostationary satellites (GEO) to provide the most diurnally complete product.",
+          "verified": true
+        },
+        {
+          "doc": "geo_dom",
+          "section": "CERES GEO Domain Sources table (Greenwich)",
+          "quote": "Met-10 01/2013 to present",
+          "verified": true
+        },
+        {
+          "doc": "dqs_syn",
+          "section": "SYN1deg Ed4A DQS §1.1.2",
+          "quote": "The Meteosat 8-10 and Himawari-8 are retrieved from multiple channels (M-ch)",
+          "verified": true
+        },
+        {
+          "doc": "dqs_cth",
+          "section": "CldTypHist Ed4A DQS §2 (GEO data gaps)",
+          "quote": "Met-8 and Met-9 were used as backups, when Met-10 was undergoing de-icing of its IR channels.",
+          "verified": true
+        },
+        {
+          "doc": "gpi",
+          "section": "CERES Input Data Sources",
+          "quote": "Cloud properties for MODIS and GEO: NASA-LaRC (Minnis) MODIS and GEO cloud property retrievals",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "keyword_priority_note": "CldTypHist guide: input is the 'gridded geostationary (GGEO) intermediate product'; the satellite is named in dqs_cth, dqs_syn, geo_dom. No ShortName or version named.",
+      "version_status": "substituted",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "LARC_CLOUD",
+        "level": "3",
+        "target_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": false,
+        "cmr_versions": [
+          "Edition4A"
+        ],
+        "temporal_overlap": true
+      },
+      "decision_procedure": "Q3 yes: this satellite's GEO Ed4 retrievals feed the product's GEO gridding (diurnal sampling) -> input_to (INPUT).",
+      "mapping_note": "Via the non-archived GGEO gridded intermediate. Period overlap ('2013-01-21', '2017-02-28') vs ('2000-03-01', '2026-11-16'). The GEO version read by the product is not documented; other versions of this ShortName cover overlapping periods.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = statement, cmr_validation"
+    },
+    {
+      "shortname": "CER_GEO_Ed4_MET10_NH",
+      "version": "V01",
+      "depth": 1,
+      "related_shortname": "CER_SYN1deg-1Hour_Terra-Aqua-NOAA20",
+      "related_version": "Edition4B",
+      "related_concept_id": "C3181056140-LARC_CLOUD",
+      "association_type": "INPUT",
+      "lineage_relationship": "input_to",
+      "evidence_source": "other_doc",
+      "evidence_doc": "dqs_syn",
+      "evidence_section": "SYN1deg Ed4A DQS §1.1.1",
+      "evidence_quote": "the GEO pixel-level clouds and radiances, which are contained in the CERES individual hourly GEO image products, are instantaneously averaged into 1",
+      "quote_verified": true,
+      "supporting_quotes": [
+        {
+          "doc": "cmr:CER_SYN1deg-1Hour_Terra-Aqua-NOAA20@Edition4B",
+          "section": "SYN1deg-1Hour Edition4B CMR abstract",
+          "quote": "The CERES SYN1deg products use 1-hourly radiances and cloud property data from geostationary (GEO) imagers to model variability between CERES observations accurately.",
+          "verified": true
+        },
+        {
+          "doc": "geo_dom",
+          "section": "CERES GEO Domain Sources table (Greenwich)",
+          "quote": "Met-10 01/2013 to present",
+          "verified": true
+        },
+        {
+          "doc": "dqs_syn",
+          "section": "SYN1deg Ed4A DQS §1.1.2",
+          "quote": "The Meteosat 8-10 and Himawari-8 are retrieved from multiple channels (M-ch)",
+          "verified": true
+        },
+        {
+          "doc": "dqs_cth",
+          "section": "CldTypHist Ed4A DQS §2 (GEO data gaps)",
+          "quote": "Met-8 and Met-9 were used as backups, when Met-10 was undergoing de-icing of its IR channels.",
+          "verified": true
+        },
+        {
+          "doc": "gpi",
+          "section": "CERES Input Data Sources",
+          "quote": "Cloud properties for MODIS and GEO: NASA-LaRC (Minnis) MODIS and GEO cloud property retrievals",
+          "verified": true
+        }
+      ],
+      "named_explicitly": false,
+      "keyword_priority": 3,
+      "keyword_priority_note": "SYN1deg DQS: the 'CERES individual hourly GEO image products' are gridded into SYN1deg; the satellite is named in dqs_cth, dqs_syn, geo_dom. No ShortName or version named.",
+      "version_status": "substituted",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "LARC_CLOUD",
+        "level": "3",
+        "target_level": "2",
+        "level_progression_valid": true,
+        "version_compatible": false,
+        "cmr_versions": [
+          "Edition4B"
+        ],
+        "temporal_overlap": true
+      },
+      "decision_procedure": "Q3 yes: this satellite's GEO Ed4 retrievals feed the product's GEO gridding (diurnal sampling) -> input_to (INPUT).",
+      "mapping_note": "Via the non-archived GEO1deg-Hour gridded intermediate. Period overlap ('2013-01-21', '2017-02-28') vs ('2000-03-01', '2026-11-16'). The GEO version read by the product is not documented; other versions of this ShortName cover overlapping periods.",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source, statement, cmr_validation"
+    },
+    {
+      "shortname": "CER_GEO_Ed4_MET10_NH",
+      "version": "V01",
+      "depth": 1,
+      "related_shortname": "CER_GEO_Ed4_MET10_SH",
+      "related_version": "V01",
+      "related_concept_id": "C3880513951-LARC_CLOUD",
+      "association_type": "RELATED",
+      "lineage_relationship": "related_to",
+      "evidence_source": "other_doc",
+      "evidence_doc": "cmr:CER_GEO_Ed4_MET10_SH@V01",
+      "evidence_section": "CER_GEO_Ed4_MET10_SH V01 CMR abstract",
+      "evidence_quote": "over the Southern Hemisphere (SH)",
+      "quote_verified": true,
+      "supporting_quotes": [],
+      "named_explicitly": true,
+      "keyword_priority": 3,
+      "keyword_priority_note": "Other hemisphere of the same MET10 retrieval, same version V01 (named in its own CMR record).",
+      "version_status": "matched",
+      "cmr_validation": {
+        "found_in_cmr": true,
+        "provider": "LARC_CLOUD",
+        "level": "2",
+        "target_level": "2",
+        "level_progression_valid": null,
+        "version_compatible": true,
+        "cmr_versions": [
+          "V01",
+          "V01.2",
+          "V01.4"
+        ],
+        "temporal_overlap": true
+      },
+      "decision_procedure": "Q1-Q5 no: no data flows between the hemisphere files. Q6: same satellite, algorithm and version, other hemisphere -> related_to (RELATED).",
+      "mapping_note": "CER_GEO_Ed4_MET10_SH V01 covers ('2013-01-21', '2017-02-28').",
+      "confidence": "MEDIUM",
+      "confidence_rule": "MEDIUM rule: document-supported; weak criteria = source, statement"
+    }
+  ],
+  "excluded": [
+    {
+      "related": "CER_SYN1deg-Day_Terra-Aqua-NOAA20",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "CER_SYN1deg-Day_Terra-Aqua-NOAA20 is made from SYN1deg-1Hour (SYN1deg guide, batch 3); GEO data reach it only through 1Hour (rule 1c-1). Corrected after batch 3.",
+      "evidence_doc": "cmr:CER_SYN1deg-Day_Terra-Aqua-NOAA20@Edition4B",
+      "evidence_section": "SYN1deg-Day Edition4B CMR abstract",
+      "evidence_quote": "The CERES SYN1deg products use 1-hourly radiances and cloud property data from GEO imagers to more accurately model variability between CERES observations.",
+      "quote_verified": true
+    },
+    {
+      "related": "CER_SYN1deg-MHour_Terra-Aqua-NOAA20",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "CER_SYN1deg-MHour_Terra-Aqua-NOAA20 is made from SYN1deg-1Hour (SYN1deg guide, batch 3); GEO data reach it only through 1Hour (rule 1c-1). Corrected after batch 3.",
+      "evidence_doc": "cmr:CER_SYN1deg-MHour_Terra-Aqua-NOAA20@Edition4B",
+      "evidence_section": "SYN1deg-MHour Edition4B CMR abstract",
+      "evidence_quote": "The CERES SYN1deg products use 1-hourly radiances and cloud property data from geostationary (GEO) imagers to more accurately model variability between CERES observations.",
+      "quote_verified": true
+    },
+    {
+      "related": "CER_SYN1deg-Month_Terra-Aqua-NOAA20",
+      "lineage_relationship": "input_to",
+      "reason": "not_direct",
+      "detail": "CER_SYN1deg-Month_Terra-Aqua-NOAA20 is made from SYN1deg-1Hour (SYN1deg guide, batch 3); GEO data reach it only through 1Hour (rule 1c-1). Corrected after batch 3.",
+      "evidence_doc": "cmr:CER_SYN1deg-Month_Terra-Aqua-NOAA20@Edition4B",
+      "evidence_section": "SYN1deg-Month Edition4B CMR abstract",
+      "evidence_quote": "CERES SYN1deg products use 1-hourly radiances and cloud property data from geostationary (GEO) imagers to more accurately model variability between CERES observations.",
+      "quote_verified": true
+    },
+    {
+      "related": "CER_CldTypHist_GEO-MODIS-VIIRS",
+      "lineage_relationship": "input_to",
+      "reason": "no_temporal_overlap",
+      "detail": "CER_GEO_Ed4_MET10_NH V01 covers ('2013-01-21', '2017-02-28'); CER_CldTypHist_GEO-MODIS-VIIRS covers ('2018-05-01', '2026-11-16').",
+      "evidence_doc": "cmr:CER_CldTypHist_GEO-MODIS-VIIRS@Edition4A",
+      "evidence_section": "CldTypHist_GEO-MODIS-VIIRS Edition4A CMR abstract",
+      "evidence_quote": "The CldTypHist product combines cloud properties from Terra-MODIS (10:30 AM local equator crossing time LECT), NOAA20-VIIRS (1:30 PM LECT), and geostationary satellites (GEO) to provide the most diurnally complete product.",
+      "quote_verified": true
+    },
+    {
+      "related": "CER_GEO_Ed4_MET10_NH V01.2",
+      "lineage_relationship": "version_of",
+      "reason": "same_shortname",
+      "detail": "Same ShortName, version V01.2 (('2015-07-31', '2024-08-01')): edition history, not a lineage row (no self-relations).",
+      "evidence_doc": "cmr:CER_CldTypHist_GEO-MODIS-VIIRS@Edition4A",
+      "evidence_section": "CldTypHist_GEO-MODIS-VIIRS Edition4A CMR abstract",
+      "evidence_quote": "The CldTypHist product combines cloud properties from Terra-MODIS (10:30 AM local equator crossing time LECT), NOAA20-VIIRS (1:30 PM LECT), and geostationary satellites (GEO) to provide the most diurnally complete product.",
+      "quote_verified": true
+    },
+    {
+      "related": "CER_GEO_Ed4_MET10_NH V01.4",
+      "lineage_relationship": "version_of",
+      "reason": "same_shortname",
+      "detail": "Same ShortName, version V01.4 (('2023-03-21', '2026-11-16')): edition history, not a lineage row (no self-relations).",
+      "evidence_doc": "cmr:CER_GEO_Ed4_MET10_NH@V01.4",
+      "evidence_section": "CER_GEO_Ed4_MET10_NH V01.4 CMR abstract (version note)",
+      "evidence_quote": "Note: Version 1.4 uses the Global Modeling and Assimilation Office (GMAO) Modern-Era Retrospective analysis for Research and Applications, Version 2 (MERRA-2) reanalysis for atmospheric input; Version 1.2 used GMAO's GEOS-5.4.1.",
+      "quote_verified": true
+    }
+  ],
+  "existing_metadata_associations": [
+    {
+      "existing": {
+        "Description": "Succeeding version",
+        "EntryId": "CER_GEO_Ed4_MET10_NH",
+        "Type": "CHILD",
+        "Version": "V01.1"
+      },
+      "issues": [
+        "same ShortName (Succeeding version): version history, not lineage; version V01.1 is not in CMR (CMR has ['V01', 'V01.2', 'V01.4'])",
+        "Type CHILD used for a version change; the Generation skill reserves PARENT/CHILD for data flow"
+      ]
+    }
+  ],
+  "recommended_metadata_associations": [
+    {
+      "Type": "INPUT",
+      "EntryId": "CER_CldTypHist_GEO-MODIS",
+      "Version": "Edition4A"
+    },
+    {
+      "Type": "INPUT",
+      "EntryId": "CER_SYN1deg-1Hour_Terra-Aqua-NOAA20",
+      "Version": "Edition4B"
+    },
+    {
+      "Type": "RELATED",
+      "EntryId": "CER_GEO_Ed4_MET10_SH",
+      "Version": "V01"
+    }
+  ],
+  "recommended_metadata_associations_note": "UMM-C 1.18.x field names (EntryId); under the proposed UMM-C 1.18.8, EntryId becomes ShortName and Type, ShortName and Version are required.",
+  "csv_validation": {
+    "valid": true,
+    "errors": []
+  }
+}

@@ -1,0 +1,2 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+CER_SYN1deg-MHour_Terra-Aqua-NOAA20,Edition4B,PARENT,CER_SYN1deg-1Hour_Terra-Aqua-NOAA20,Edition4B,MEDIUM,derived_from

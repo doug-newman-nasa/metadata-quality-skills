@@ -1,0 +1,3 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+CER_CRS_Aqua-FM3-MODIS,Edition4A,PARENT,CER_SSF_Aqua-FM3-MODIS,Edition4A,MEDIUM,derived_from
+CER_CRS_Aqua-FM3-MODIS,Edition4A,CHILD,CER_CRS1deg-Hour_Aqua-MODIS,Edition4A,MEDIUM,downstream_product

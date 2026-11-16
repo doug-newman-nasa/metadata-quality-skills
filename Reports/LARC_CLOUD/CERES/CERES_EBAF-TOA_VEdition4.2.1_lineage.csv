@@ -1,0 +1,5 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+CERES_EBAF-TOA,Edition4.2.1,PARENT,CER_SSF1deg-Month_Aqua-MODIS,Edition4A,MEDIUM,derived_from
+CERES_EBAF-TOA,Edition4.2.1,PARENT,CER_SSF1deg-Month_NOAA20-VIIRS,Edition1C,MEDIUM,derived_from
+CERES_EBAF-TOA,Edition4.2.1,PARENT,CER_SSF1deg-Month_Terra-MODIS,Edition4A,MEDIUM,derived_from
+CERES_EBAF-TOA,Edition4.2.1,RELATED,CERES_EBAF,Edition4.2.1,MEDIUM,related_to

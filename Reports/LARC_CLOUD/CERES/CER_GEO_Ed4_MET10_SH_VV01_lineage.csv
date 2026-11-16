@@ -1,0 +1,4 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+CER_GEO_Ed4_MET10_SH,V01,INPUT,CER_CldTypHist_GEO-MODIS,Edition4A,MEDIUM,input_to
+CER_GEO_Ed4_MET10_SH,V01,INPUT,CER_SYN1deg-1Hour_Terra-Aqua-NOAA20,Edition4B,MEDIUM,input_to
+CER_GEO_Ed4_MET10_SH,V01,RELATED,CER_GEO_Ed4_MET10_NH,V01,MEDIUM,related_to

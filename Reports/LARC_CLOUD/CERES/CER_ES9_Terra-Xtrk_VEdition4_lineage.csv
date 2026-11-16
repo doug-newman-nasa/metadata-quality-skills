@@ -1,0 +1,4 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+CER_ES9_Terra-Xtrk,Edition4,PARENT,CER_ES8_Terra-FM1,Edition4,HIGH,derived_from
+CER_ES9_Terra-Xtrk,Edition4,PARENT,CER_ES8_Terra-FM2,Edition4,HIGH,derived_from
+CER_ES9_Terra-Xtrk,Edition4,CHILD,CER_ES4_Terra-Xtrk,Edition4,HIGH,downstream_product

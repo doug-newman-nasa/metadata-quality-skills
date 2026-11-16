@@ -1,0 +1,8 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+CER_SSF_Aqua-FM3-MODIS,Edition4A,PARENT,MYD04_L2,Unknown,MEDIUM,derived_from
+CER_SSF_Aqua-FM3-MODIS,Edition4A,CHILD,CER_CRS_Aqua-FM3-MODIS,Edition4A,MEDIUM,downstream_product
+CER_SSF_Aqua-FM3-MODIS,Edition4A,CHILD,CER_FluxByCldTyp-Day_Terra-Aqua-MODIS,Edition4A,HIGH,downstream_product
+CER_SSF_Aqua-FM3-MODIS,Edition4A,CHILD,CER_FluxByCldTyp-Month_Terra-Aqua-MODIS,Edition4A,HIGH,downstream_product
+CER_SSF_Aqua-FM3-MODIS,Edition4A,CHILD,CER_SSF1deg-Day_Aqua-MODIS,Edition4A,MEDIUM,downstream_product
+CER_SSF_Aqua-FM3-MODIS,Edition4A,CHILD,CER_SSF1deg-Hour_Aqua-MODIS,Edition4A,HIGH,downstream_product
+CER_SSF_Aqua-FM3-MODIS,Edition4A,RELATED,CER_CCCM_Aqua-FM3-MODIS-CAL-CS,RelD2,MEDIUM,related_to

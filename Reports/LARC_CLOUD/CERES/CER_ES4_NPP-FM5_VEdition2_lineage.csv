@@ -1,0 +1,2 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
+CER_ES4_NPP-FM5,Edition2,PARENT,CER_ES9_NPP-FM5,Edition2,HIGH,derived_from
