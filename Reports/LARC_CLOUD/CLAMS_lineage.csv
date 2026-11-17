@@ -1,0 +1,2 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,Match
+CLAMS_MODIS_L2_AEROSOL_PRODUCTS,1,PARENT,MOD04_L2,6.1,MEDIUM,derived_from,false

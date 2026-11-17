@@ -1,3 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-FLASH_SSF_NOAA20-FM6-VIIRS,Version1B,CHILD,FLASH_TISA_NOAA20,Version1A,MEDIUM,downstream_product
-FLASH_SSF_NOAA20-FM6-VIIRS,Version1B,RELATED,CER_SSF_NOAA20-FM6-VIIRS,Edition1C,MEDIUM,template_of

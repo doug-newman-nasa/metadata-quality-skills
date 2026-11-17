@@ -1,9 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-OMI_MINDS_NO2,2,PARENT,OML1BRVG,004,MEDIUM,derived_from
-OMI_MINDS_NO2,2,INPUT,NISE,5,MEDIUM,input_to
-OMI_MINDS_NO2,2,INPUT,OMGLER,004,MEDIUM,input_to
-OMI_MINDS_NO2,2,INPUT,OML1BIRR,004,MEDIUM,input_to
-OMI_MINDS_NO2,2,INPUT,OMVANC,004,MEDIUM,input_to
-OMI_MINDS_NO2,2,RELATED,GOME_MINDS_NO2,1.1,MEDIUM,equivalent_product
-OMI_MINDS_NO2,2,RELATED,OMNO2,004,MEDIUM,template_of
-OMI_MINDS_NO2,2,RELATED,TROPOMI_MINDS_NO2,1.1,MEDIUM,equivalent_product

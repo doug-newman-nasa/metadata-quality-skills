@@ -1,4 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-DSCOVR_EPIC_L2_MAIAC,02,PARENT,DSCOVR_EPIC_L1B,3,HIGH,derived_from
-DSCOVR_EPIC_L2_MAIAC,02,CHILD,DSCOVR_EPIC_L2_MAIAC-DAILY,01,MEDIUM,downstream_product
-DSCOVR_EPIC_L2_MAIAC,02,CHILD,DSCOVR_EPIC_L2_VESDR,02,HIGH,downstream_product

@@ -1,5 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-AIRS2RET_NRT,7.0,PARENT,AIRIBRAD_NRT,005,MEDIUM,derived_from
-AIRS2RET_NRT,7.0,RELATED,AIRS2CCF_NRT,7.0,HIGH,parallel_product
-AIRS2RET_NRT,7.0,RELATED,AIRS2RET,7.0,HIGH,related_to
-AIRS2RET_NRT,7.0,RELATED,AIRS2SUP_NRT,7.0,HIGH,parallel_product

@@ -1,3 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-CAR_DISCOVERAQ_BRDF,2,RELATED,CAR_DISCOVERAQ_L1C,1,MEDIUM,parallel_product
-CAR_DISCOVERAQ_BRDF,2,RELATED,DISCOVERAQ_Colorado_Radiation_AircraftRemoteSensing_CAR_Data,1,LOW,related_to

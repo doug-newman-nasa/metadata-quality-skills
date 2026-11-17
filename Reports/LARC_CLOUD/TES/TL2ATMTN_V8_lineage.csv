@@ -1,5 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-TL2ATMTN,8,PARENT,TL1BN,6,MEDIUM,derived_from
-TL2ATMTN,8,CHILD,TL3ATD,6,MEDIUM,downstream_product
-TL2ATMTN,8,CHILD,TL3ATM,6,MEDIUM,downstream_product
-TL2ATMTN,8,RELATED,TL2ANC,8,MEDIUM,parallel_product

@@ -1,3 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-AIRICRAD_NRT,6.7,PARENT,AIRIBRAD_NRT,005,MEDIUM,derived_from
-AIRICRAD_NRT,6.7,RELATED,AIRICRAD,6.7,HIGH,related_to

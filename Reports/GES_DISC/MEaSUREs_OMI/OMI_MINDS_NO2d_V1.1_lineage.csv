@@ -1,3 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-OMI_MINDS_NO2d,1.1,PARENT,OMI_MINDS_NO2,2,MEDIUM,aggregated_from
-OMI_MINDS_NO2d,1.1,RELATED,OMI_MINDS_NO2G,1.1,MEDIUM,related_to

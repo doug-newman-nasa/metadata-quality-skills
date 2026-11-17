@@ -1,0 +1,7 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,Match
+CMRMIAAE,002,PARENT,MIL2ASAE,002,MEDIUM,derived_from,false
+CMRMIAAE,002,RELATED,CMRMIALS,002,MEDIUM,parallel_product,false
+CMRMIALS,002,PARENT,MIL2ASLS,002,MEDIUM,derived_from,false
+CMRMIALS,002,RELATED,CMRMIAAE,002,MEDIUM,parallel_product,false
+CMRMIGEO,002,PARENT,MIB2GEOP,002,MEDIUM,derived_from,false
+CMRMITST,002,PARENT,MIL2TCST,002,MEDIUM,derived_from,false

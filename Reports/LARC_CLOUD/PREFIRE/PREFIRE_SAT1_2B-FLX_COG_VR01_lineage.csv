@@ -1,3 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-PREFIRE_SAT1_2B-FLX_COG,R01,PARENT,PREFIRE_SAT1_2B-FLX,R01,MEDIUM,derived_from
-PREFIRE_SAT1_2B-FLX_COG,R01,RELATED,PREFIRE_SAT2_2B-FLX_COG,R01,MEDIUM,equivalent_product

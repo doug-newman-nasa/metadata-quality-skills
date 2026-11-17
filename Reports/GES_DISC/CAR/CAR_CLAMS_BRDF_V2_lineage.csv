@@ -1,3 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-CAR_CLAMS_BRDF,2,RELATED,CAR_CLAMS_L1C,1,MEDIUM,parallel_product
-CAR_CLAMS_BRDF,2,RELATED,CLAMS_CV580_CAR,1,LOW,related_to

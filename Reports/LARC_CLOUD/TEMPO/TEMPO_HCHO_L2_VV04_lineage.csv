@@ -1,8 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-TEMPO_HCHO_L2,V04,PARENT,TEMPO_RAD_L1,V04,HIGH,derived_from
-TEMPO_HCHO_L2,V04,INPUT,TEMPO_Auxiliary,V01,MEDIUM,input_to
-TEMPO_HCHO_L2,V04,INPUT,TEMPO_CLDO4_L2,V04,HIGH,input_to
-TEMPO_HCHO_L2,V04,CHILD,TEMPO_HCHO_L3,V04,HIGH,downstream_product
-TEMPO_HCHO_L2,V04,RELATED,MCD43C1,061,MEDIUM,related_to
-TEMPO_HCHO_L2,V04,RELATED,MCD43C2,061,MEDIUM,related_to
-TEMPO_HCHO_L2,V04,RELATED,TEMPO_HCHO_L2_NRT,V02,MEDIUM,related_to

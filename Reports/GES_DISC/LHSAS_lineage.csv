@@ -1,0 +1,6 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,Match
+Global_Landslide_Exposure_Maps,1.0,PARENT,Global_Landslide_Nowcast,1.1,MEDIUM,aggregated_from,false
+Global_Landslide_Nowcast,1.1,CHILD,Global_Landslide_Exposure_Maps,1.0,MEDIUM,downstream_product,false
+Global_Landslide_Nowcast,2.0.0,PARENT,GPM_3IMERGDL,07,MEDIUM,derived_from,false
+Global_Landslide_Nowcast,2.0.0,INPUT,GPM_3IMERGDF,07,MEDIUM,input_to,false
+Global_Landslide_Nowcast,2.0.0,INPUT,SPL4SMGP,008,MEDIUM,input_to,false

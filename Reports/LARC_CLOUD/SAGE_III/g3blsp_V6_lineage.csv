@@ -1,3 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-g3blsp,6,CHILD,g3blmnc,6,MEDIUM,downstream_product
-g3blsp,6,RELATED,g3blspb,6,MEDIUM,parallel_product

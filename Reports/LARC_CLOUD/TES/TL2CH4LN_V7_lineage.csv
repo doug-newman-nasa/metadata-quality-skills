@@ -1,3 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-TL2CH4LN,7,PARENT,TL2CH4N,8,MEDIUM,derived_from
-TL2CH4LN,7,INPUT,TL2N2ON,8,MEDIUM,input_to

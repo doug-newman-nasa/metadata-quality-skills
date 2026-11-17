@@ -1,4 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-AIRX3STM,7.0,PARENT,AIRX3STD,7.0,MEDIUM,aggregated_from
-AIRX3STM,7.0,RELATED,AIRH3STM,7.0,HIGH,equivalent_product
-AIRX3STM,7.0,RELATED,AIRS3STM,7.0,HIGH,equivalent_product

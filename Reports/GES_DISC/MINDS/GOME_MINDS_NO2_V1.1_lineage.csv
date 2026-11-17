@@ -1,6 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-GOME_MINDS_NO2,1.1,PARENT,ERS.GOM.L1,6.0,MEDIUM,derived_from
-GOME_MINDS_NO2,1.1,INPUT,NISE,2,MEDIUM,input_to
-GOME_MINDS_NO2,1.1,RELATED,OMI_MINDS_NO2,2,MEDIUM,equivalent_product
-GOME_MINDS_NO2,1.1,RELATED,OMNO2,004,MEDIUM,template_of
-GOME_MINDS_NO2,1.1,RELATED,TROPOMI_MINDS_NO2,1.1,HIGH,equivalent_product

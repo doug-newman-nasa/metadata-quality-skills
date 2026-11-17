@@ -1,5 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-DSCOVR_EPIC_L2_TO3,03,PARENT,DSCOVR_EPIC_L1B,3,HIGH,derived_from
-DSCOVR_EPIC_L2_TO3,03,INPUT,DSCOVR_EPIC_L2_CLOUD,03,MEDIUM,input_to
-DSCOVR_EPIC_L2_TO3,03,CHILD,DSCOVR_EPIC_L3_PAR,02,MEDIUM,downstream_product
-DSCOVR_EPIC_L2_TO3,03,CHILD,DSCOVR_EPIC_L4_TrO3_highres,01,HIGH,downstream_product

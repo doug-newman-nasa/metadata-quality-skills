@@ -1,3 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-TL3COD,6,PARENT,TL2CON,8,MEDIUM,aggregated_from
-TL3COD,6,RELATED,TL3COM,6,MEDIUM,parallel_product

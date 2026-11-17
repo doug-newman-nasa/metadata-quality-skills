@@ -1,4 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-ERBE_S10N_WFOV_SF_ERBS_Regional,Edition4,INPUT,CERES_EBAF-TOA,Edition4.2.1,MEDIUM,input_to
-ERBE_S10N_WFOV_SF_ERBS_Regional,Edition4,RELATED,ERBE_S10N_WFOV_SF,Edition3,HIGH,version_of
-ERBE_S10N_WFOV_SF_ERBS_Regional,Edition4,RELATED,ERBE_S10N_WFOV_SF_ERBS_AreaAverageTimeSeries,Edition4,MEDIUM,parallel_product

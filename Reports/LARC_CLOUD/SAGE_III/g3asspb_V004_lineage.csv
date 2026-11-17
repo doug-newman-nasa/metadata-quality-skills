@@ -1,4 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-g3asspb,004,PARENT,g3atb,004,HIGH,derived_from
-g3asspb,004,CHILD,g3acldb,004,HIGH,downstream_product
-g3asspb,004,RELATED,g3assp,004,MEDIUM,parallel_product

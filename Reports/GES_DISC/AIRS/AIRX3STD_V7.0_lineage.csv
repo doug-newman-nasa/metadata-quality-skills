@@ -1,5 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-AIRX3STD,7.0,PARENT,AIRX2RET,7.0,MEDIUM,aggregated_from
-AIRX3STD,7.0,CHILD,AIRX3STM,7.0,MEDIUM,downstream_product
-AIRX3STD,7.0,RELATED,AIRH3STD,7.0,HIGH,equivalent_product
-AIRX3STD,7.0,RELATED,AIRS3STD,7.0,HIGH,equivalent_product

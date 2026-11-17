@@ -1,9 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-CAL_IIR_L2_Track-Standard-V4-51,V4-51,PARENT,CAL_IIR_L1-Standard-V2-00,V2-00,MEDIUM,derived_from
-CAL_IIR_L2_Track-Standard-V4-51,V4-51,PARENT,CAL_IIR_L1-Standard-V2-01,V2-01,MEDIUM,derived_from
-CAL_IIR_L2_Track-Standard-V4-51,V4-51,INPUT,CAL_LID_L2_05kmALay-Standard-V4-51,V4-51,HIGH,input_to
-CAL_IIR_L2_Track-Standard-V4-51,V4-51,INPUT,CAL_LID_L2_05kmCLay-Standard-V4-51,V4-51,HIGH,input_to
-CAL_IIR_L2_Track-Standard-V4-51,V4-51,INPUT,M2I1NXASM,5.12.4,MEDIUM,input_to
-CAL_IIR_L2_Track-Standard-V4-51,V4-51,INPUT,M2I3NVASM,5.12.4,MEDIUM,input_to
-CAL_IIR_L2_Track-Standard-V4-51,V4-51,CHILD,CAL_IIR_L2_Swath-Standard-V4-51,V4-51,MEDIUM,downstream_product
-CAL_IIR_L2_Track-Standard-V4-51,V4-51,RELATED,CAL_IIR_L2_Track-Standard-V5-00,V5-00,MEDIUM,version_of

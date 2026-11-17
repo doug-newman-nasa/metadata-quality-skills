@@ -1,4 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-ATSM2AEF,001,PARENT,MIL2ASAF,002,MEDIUM,derived_from
-ATSM2AEF,001,RELATED,ATSM2LSF,001,MEDIUM,parallel_product
-ATSM2AEF,001,RELATED,MIL2ASAE,002,MEDIUM,related_to

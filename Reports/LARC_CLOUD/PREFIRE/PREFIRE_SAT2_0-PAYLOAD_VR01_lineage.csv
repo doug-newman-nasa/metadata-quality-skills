@@ -1,3 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-PREFIRE_SAT2_0-PAYLOAD,R01,RELATED,PREFIRE_SAT1_0-PAYLOAD,R01,MEDIUM,equivalent_product
-PREFIRE_SAT2_0-PAYLOAD,R01,RELATED,PREFIRE_SAT2_0-PAYLOAD-TLM,R01,MEDIUM,related_to

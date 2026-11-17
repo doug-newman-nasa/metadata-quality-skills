@@ -1,3 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-TL2NH3NS,8,PARENT,TL1BSOL,6,MEDIUM,derived_from
-TL2NH3NS,8,RELATED,TL2ANCS,8,MEDIUM,parallel_product

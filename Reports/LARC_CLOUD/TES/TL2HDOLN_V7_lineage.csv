@@ -1,5 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-TL2HDOLN,7,PARENT,TL2HDON,8,MEDIUM,derived_from
-TL2HDOLN,7,INPUT,TL2ANC,8,MEDIUM,input_to
-TL2HDOLN,7,INPUT,TL2H2ON,8,MEDIUM,component_of
-TL2HDOLN,7,RELATED,TL2H2OLN,7,MEDIUM,parallel_product
