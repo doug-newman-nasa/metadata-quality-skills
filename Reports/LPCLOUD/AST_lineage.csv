@@ -1,0 +1,15 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,match
+AST_L1A,004,CHILD,AST14DEM,004,MEDIUM,downstream_product,false
+AST_L1A,004,CHILD,AST_L1B,004,HIGH,downstream_product,DEPENDENT
+AST_L1A,004,CHILD,AST_L1T,004,HIGH,downstream_product,false
+AST_L1A,004,RELATED,AST_L1AE,003,MEDIUM,related_to,false
+AST_L1B,004,PARENT,AST_L1A,004,HIGH,derived_from,INPUT
+AST_L1B,004,CHILD,AST_07,004,LOW,downstream_product,false
+AST_L1B,004,CHILD,AST_07XT,004,MEDIUM,downstream_product,false
+AST_L1B,004,CHILD,AST_09,004,MEDIUM,downstream_product,false
+AST_L1B,004,CHILD,AST_09T,004,LOW,downstream_product,false
+AST_L1B,004,CHILD,AST_09XT,004,MEDIUM,downstream_product,false
+AST_L1B,004,RELATED,AST_L1BE,003,MEDIUM,related_to,false
+AST_L1B,004,RELATED,AST_L1T,004,MEDIUM,related_to,false
+AST_L1T,004,PARENT,AST_L1A,004,HIGH,derived_from,INPUT
+AST_L1T,004,RELATED,AST_L1B,004,MEDIUM,related_to,false

@@ -1,0 +1,7 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,match
+RICMIAAE,002,PARENT,MIL2ASAE,002,MEDIUM,derived_from,false
+RICMIB2E,002,PARENT,MI1B2E,Unknown,MEDIUM,derived_from,false
+RICMIRCM,004,PARENT,MIRCCM,Unknown,MEDIUM,derived_from,false
+RICMITAL,002,PARENT,MIL2TCAL,002,MEDIUM,derived_from,false
+RICMITCL,003,PARENT,MIL2TCCL,Unknown,MEDIUM,derived_from,false
+RICMITST,002,PARENT,MIL2TCST,002,MEDIUM,derived_from,false

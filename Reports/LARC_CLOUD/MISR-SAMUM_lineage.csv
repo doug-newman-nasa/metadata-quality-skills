@@ -1,0 +1,7 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,match
+SAMMI2AE,002,PARENT,MIL2ASAE,002,MEDIUM,derived_from,false
+SAMMI2LS,002,PARENT,MIL2ASLS,002,MEDIUM,derived_from,false
+SAMMI2ST,002,PARENT,MIL2TCST,002,MEDIUM,derived_from,false
+SAMMIB2E,003,PARENT,MI1B2E,003,MEDIUM,derived_from,false
+SAMMIB2T,003,PARENT,MI1B2T,003,MEDIUM,derived_from,false
+SAMMIGEO,002,PARENT,MIB2GEOP,002,MEDIUM,derived_from,false

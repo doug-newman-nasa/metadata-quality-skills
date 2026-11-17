@@ -1,2 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-CER_SSF1deg-Month_NPP-VIIRS,Edition2B,PARENT,CER_SSF1deg-Day_NPP-VIIRS,Edition2B,HIGH,derived_from

@@ -1,5 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-MIRCCMF,002,PARENT,MI1B2E,003,MEDIUM,derived_from
-MIRCCMF,002,PARENT,MI1B2T,003,MEDIUM,derived_from
-MIRCCMF,002,INPUT,MIB2GEOP,002,MEDIUM,input_to
-MIRCCMF,002,RELATED,MIRCCM,004,MEDIUM,related_to

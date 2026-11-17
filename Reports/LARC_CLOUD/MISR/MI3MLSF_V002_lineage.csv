@@ -1,3 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-MI3MLSF,002,PARENT,MIL2ASLF,002,MEDIUM,aggregated_from
-MI3MLSF,002,RELATED,MI3MLSNF,002,MEDIUM,parallel_product

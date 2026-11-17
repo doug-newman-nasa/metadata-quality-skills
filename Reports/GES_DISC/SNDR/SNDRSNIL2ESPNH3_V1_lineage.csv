@@ -1,3 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-SNDRSNIL2ESPNH3,1,PARENT,SNPPCrISL1BNSR,Unknown,MEDIUM,derived_from
-SNDRSNIL2ESPNH3,1,INPUT,SNDRSNIML2CCPRETN,Unknown,MEDIUM,input_to

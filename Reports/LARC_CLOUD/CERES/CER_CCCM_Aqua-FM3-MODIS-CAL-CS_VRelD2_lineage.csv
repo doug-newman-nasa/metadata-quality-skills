@@ -1,6 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-CER_CCCM_Aqua-FM3-MODIS-CAL-CS,RelD2,PARENT,CAL_LID_L2_05kmALay-Standard-V4-51,V4-51,MEDIUM,derived_from
-CER_CCCM_Aqua-FM3-MODIS-CAL-CS,RelD2,PARENT,CAL_LID_L2_05kmCLay-Standard-V4-51,V4-51,MEDIUM,derived_from
-CER_CCCM_Aqua-FM3-MODIS-CAL-CS,RelD2,PARENT,CAL_LID_L2_05kmCPro-Standard-V4-51,V4-51,MEDIUM,derived_from
-CER_CCCM_Aqua-FM3-MODIS-CAL-CS,RelD2,PARENT,CAL_LID_L2_VFM-Standard-V4-51,V4-51,MEDIUM,derived_from
-CER_CCCM_Aqua-FM3-MODIS-CAL-CS,RelD2,RELATED,CER_SSF_Aqua-FM3-MODIS,Edition4A,MEDIUM,related_to

@@ -1,3 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-UAEMRMLS,004,PARENT,MIL2ASLS,Unknown,MEDIUM,aggregated_from
-UAEMRMLS,004,RELATED,MIL3MLS,004,MEDIUM,template_of

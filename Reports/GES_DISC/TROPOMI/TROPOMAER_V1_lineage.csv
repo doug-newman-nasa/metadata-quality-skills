@@ -1,8 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-TROPOMAER,1,PARENT,S5P_L1B_RA_BD3_HiR,2,MEDIUM,derived_from
-TROPOMAER,1,INPUT,AIRS3STD,006,MEDIUM,input_to
-TROPOMAER,1,INPUT,S5P_L1B_IR_UVN,2,MEDIUM,input_to
-TROPOMAER,1,RELATED,OMAERUV,004,MEDIUM,equivalent_product
-TROPOMAER,1,RELATED,OMIAuraAER,1,MEDIUM,equivalent_product
-TROPOMAER,1,RELATED,TOMSEPAER,2,LOW,equivalent_product
-TROPOMAER,1,RELATED,TOMSN7AER,2,LOW,equivalent_product

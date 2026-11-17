@@ -1,3 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-CER_ES9_TRMM-PFM,Edition2,PARENT,CER_ES8_TRMM-PFM,Edition2,HIGH,derived_from
-CER_ES9_TRMM-PFM,Edition2,CHILD,CER_ES4_TRMM-PFM,Edition2,HIGH,downstream_product

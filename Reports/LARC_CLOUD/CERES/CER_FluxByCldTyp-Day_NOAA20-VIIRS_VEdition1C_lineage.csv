@@ -1,3 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-CER_FluxByCldTyp-Day_NOAA20-VIIRS,Edition1C,PARENT,CER_SSF_NOAA20-FM6-VIIRS,Edition1C,HIGH,derived_from
-CER_FluxByCldTyp-Day_NOAA20-VIIRS,Edition1C,RELATED,CER_FluxByCldTyp-Month_NOAA20-VIIRS,Edition1C,MEDIUM,parallel_product

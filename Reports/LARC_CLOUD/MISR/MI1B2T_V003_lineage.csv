@@ -1,9 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-MI1B2T,003,PARENT,MI1B1,002,MEDIUM,derived_from
-MI1B2T,003,INPUT,MIANCAGP,001,MEDIUM,input_to
-MI1B2T,003,INPUT,MIANCARP,002,MEDIUM,input_to
-MI1B2T,003,CHILD,MIL2ASAF,002,MEDIUM,downstream_product
-MI1B2T,003,CHILD,MIL2ASLF,002,MEDIUM,downstream_product
-MI1B2T,003,CHILD,MIL2ASLS,003,HIGH,downstream_product
-MI1B2T,003,CHILD,MIL2TCAF,001,MEDIUM,downstream_product
-MI1B2T,003,RELATED,MI1B2E,003,MEDIUM,parallel_product

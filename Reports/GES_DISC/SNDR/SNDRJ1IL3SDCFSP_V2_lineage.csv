@@ -1,6 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-SNDRJ1IL3SDCFSP,2,PARENT,SNDR13CHRP1,2,MEDIUM,derived_from
-SNDRJ1IL3SDCFSP,2,PARENT,SNDR13CHRP1J1Cal,2,MEDIUM,derived_from
-SNDRJ1IL3SDCFSP,2,CHILD,SNDRJ1IL3SMCFSP,2,HIGH,downstream_product
-SNDRJ1IL3SDCFSP,2,RELATED,SNDRAQIL3SDCFSP,2,HIGH,equivalent_product
-SNDRJ1IL3SDCFSP,2,RELATED,SNDRSNIL3SDCFSP,2,HIGH,equivalent_product

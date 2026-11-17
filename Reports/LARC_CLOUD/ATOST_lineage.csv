@@ -1,0 +1,3 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,match
+ATOST_ER2_MAS,1,RELATED,MASL1B,1,MEDIUM,parallel_product,false
+ATOST_ER2_MAS,1,RELATED,THORPEX_ER2_MAS,1,MEDIUM,related_to,false

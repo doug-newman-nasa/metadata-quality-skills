@@ -1,4 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-UAEMRDRD,004,PARENT,MI1B2E,Unknown,MEDIUM,aggregated_from
-UAEMRDRD,004,PARENT,MI1B2T,Unknown,MEDIUM,aggregated_from
-UAEMRDRD,004,RELATED,MIL3DRD,004,MEDIUM,template_of

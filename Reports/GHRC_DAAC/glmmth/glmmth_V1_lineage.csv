@@ -1,3 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-glmmth,1,RELATED,glmhth,1,HIGH,parallel_product
-glmmth,1,RELATED,wwllnmth,1,HIGH,equivalent_product

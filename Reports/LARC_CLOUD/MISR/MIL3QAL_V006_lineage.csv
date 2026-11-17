@@ -1,3 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-MIL3QAL,006,PARENT,MIL2TCAL,002,MEDIUM,aggregated_from
-MIL3QAL,006,RELATED,MIL3QALN,006,MEDIUM,parallel_product

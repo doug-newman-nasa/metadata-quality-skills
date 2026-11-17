@@ -1,5 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-SNDRAQIML1CCALSUBRND,2,PARENT,AIRABRAD,005,MEDIUM,derived_from
-SNDRAQIML1CCALSUBRND,2,PARENT,AIRICRAD,6.7,MEDIUM,derived_from
-SNDRAQIML1CCALSUBRND,2,RELATED,SNDRAQIML1BCALSUBSUM,2,HIGH,parallel_product
-SNDRAQIML1CCALSUBRND,2,RELATED,SNDRSNIL1BCALSUBRNDN,2,HIGH,equivalent_product

@@ -1,3 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-SNDRSNIML3SDSFSP,2,PARENT,SNDRSNIML2SFSPRET,2,MEDIUM,aggregated_from
-SNDRSNIML3SDSFSP,2,CHILD,SNDRSNIML3SMSFSP,2,HIGH,downstream_product

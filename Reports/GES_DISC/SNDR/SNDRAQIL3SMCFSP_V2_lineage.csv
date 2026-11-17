@@ -1,4 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-SNDRAQIL3SMCFSP,2,PARENT,SNDRAQIL3SDCFSP,2,HIGH,aggregated_from
-SNDRAQIL3SMCFSP,2,RELATED,SNDRJ1IL3SMCFSP,2,HIGH,equivalent_product
-SNDRAQIL3SMCFSP,2,RELATED,SNDRSNIL3SMCFSP,2,HIGH,equivalent_product

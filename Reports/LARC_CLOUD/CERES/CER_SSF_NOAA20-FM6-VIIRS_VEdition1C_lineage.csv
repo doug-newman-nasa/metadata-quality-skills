@@ -1,6 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-CER_SSF_NOAA20-FM6-VIIRS,Edition1C,CHILD,CER_CldTypHist_GEO-MODIS-VIIRS,Edition4A,MEDIUM,downstream_product
-CER_SSF_NOAA20-FM6-VIIRS,Edition1C,CHILD,CER_FluxByCldTyp-Day_NOAA20-VIIRS,Edition1C,HIGH,downstream_product
-CER_SSF_NOAA20-FM6-VIIRS,Edition1C,CHILD,CER_FluxByCldTyp-Month_NOAA20-VIIRS,Edition1C,HIGH,downstream_product
-CER_SSF_NOAA20-FM6-VIIRS,Edition1C,CHILD,CER_SSF1deg-Day_NOAA20-VIIRS,Edition1C,MEDIUM,downstream_product
-CER_SSF_NOAA20-FM6-VIIRS,Edition1C,CHILD,CER_SSF1deg-Hour_NOAA20-VIIRS,Edition1C,HIGH,downstream_product

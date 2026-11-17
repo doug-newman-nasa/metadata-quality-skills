@@ -1,4 +1,0 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship
-CER_SSF1deg-Month_Aqua-MODIS,Edition4A,PARENT,CER_SSF1deg-Day_Aqua-MODIS,Edition4A,HIGH,derived_from
-CER_SSF1deg-Month_Aqua-MODIS,Edition4A,CHILD,CERES_EBAF,Edition4.2.1,MEDIUM,downstream_product
-CER_SSF1deg-Month_Aqua-MODIS,Edition4A,CHILD,CERES_EBAF-TOA,Edition4.2.1,MEDIUM,downstream_product
