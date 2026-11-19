@@ -13,3 +13,11 @@ The determination of associated collections that were used as input etc. to the 
 - Documentation referenced in the metadata such as Algorithm Theoretical Basis Documents (ATBD) and User Guides
 - Supplementary information found through web searches
 
+
+## Skill families
+
+Skills are grouped by dependency. Each family folder holds its skills, notebooks, reports and metrics, and has its own README.
+
+- [lineage/](lineage/README.md): collection lineage discovery, UMM-C MetadataAssociations and lineage CSV export
+- [processing-level-validation/](processing-level-validation/README.md): checks declared ProcessingLevel against ATBD and User Guide evidence
+- [keyword-extraction/](keyword-extraction/README.md): science keyword suggestions from collection documentation
