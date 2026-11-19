@@ -1,0 +1,11 @@
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,Match
+GOMI2AE,002,PARENT,MIL2ASAE,002,MEDIUM,derived_from,false
+GOMI2AE,002,RELATED,GOMI2LS,002,MEDIUM,parallel_product,false
+GOMI2LS,002,PARENT,MIL2ASLS,002,MEDIUM,derived_from,false
+GOMI2LS,002,RELATED,GOMI2AE,002,MEDIUM,parallel_product,false
+GOMI2ST,002,PARENT,MIL2TCST,002,MEDIUM,derived_from,false
+GOMIB2E,003,PARENT,MI1B2E,003,MEDIUM,derived_from,false
+GOMIB2E,003,RELATED,GOMIB2T,003,MEDIUM,parallel_product,false
+GOMIB2T,003,PARENT,MI1B2T,003,MEDIUM,derived_from,false
+GOMIB2T,003,RELATED,GOMIB2E,003,MEDIUM,parallel_product,false
+GOMIGEO,002,PARENT,MIB2GEOP,002,MEDIUM,derived_from,false
