@@ -1,12 +1,12 @@
 # Skill: Enhanced Collection Lineage Extraction Using ATBD Documentation
 
 ## Overview
-This refined skill extends the Generic_Collection_Lineage_Extraction_Skill by prioritizing ATBD (Algorithm Theoretical Basis Document) documentation found in collection metadata to determine data provenance and processing hierarchy.
+This refined skill extends the Collection_Lineage_Extraction_Skill by prioritizing ATBD (Algorithm Theoretical Basis Document) documentation found in collection metadata to determine data provenance and processing hierarchy.
 
 **Skill Type:** Data Provenance & Lineage Discovery with Document Analysis  
 **Difficulty Level:** Advanced  
 **Parent Skills:** 
-- Generic_Collection_Lineage_Extraction_Skill
+- Collection_Lineage_Extraction_Skill
 - Collection_ATBD_Analysis_Skill  
 **Use Cases:**
 - Determine exact parent collections from ATBD

@@ -1,11 +1,11 @@
 # Skill: Advanced ATBD Analysis for Collection Lineage and Algorithm Documentation
 
 ## Overview
-This skill refines and extends the Generic_Collection_Lineage_Extraction_Skill by systematically parsing Algorithm Theoretical Basis Documents (ATBDs) to extract detailed algorithm descriptions, data flow specifications, input/output requirements, mathematical formulas, and processing specifications.
+This skill refines and extends the Collection_Lineage_Extraction_Skill by systematically parsing Algorithm Theoretical Basis Documents (ATBDs) to extract detailed algorithm descriptions, data flow specifications, input/output requirements, mathematical formulas, and processing specifications.
 
 **Skill Type:** Scientific Documentation Analysis & Algorithm Extraction  
 **Difficulty Level:** Advanced  
-**Parent Skill:** Generic_Collection_Lineage_Extraction_Skill  
+**Parent Skill:** Collection_Lineage_Extraction_Skill  
 **Complementary Skills:** Generic_Collection_Keyword_Extraction_Skill  
 **Use Cases:**
 - Detailed algorithm understanding
@@ -687,7 +687,7 @@ def analyze_atbd_comprehensive(collection_short_name, atbd_url):
 - CMR Documentation: https://earthdata.nasa.gov/
 
 ## Related Skills
-- Generic_Collection_Lineage_Extraction_Skill (parent)
+- Collection_Lineage_Extraction_Skill (parent)
 - Generic_Collection_Keyword_Extraction_Skill
 - Validate_Algorithm_Implementation
 - Extract_Processing_Coefficients
@@ -702,7 +702,7 @@ def analyze_atbd_comprehensive(collection_short_name, atbd_url):
 
 ## Version History
 - **v1.0** (2025-09-10): Initial ATBD analysis skill
-- Extends Generic_Collection_Lineage_Extraction_Skill
+- Extends Collection_Lineage_Extraction_Skill
 - Includes formula extraction, QA analysis, data flow reconstruction
 - Tested with MOD11A2 ATBD documentation
 
