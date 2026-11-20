@@ -1,9 +1,9 @@
 # Collection Lineage Analysis Report: MOD11A2
-## Using Generic_Collection_Lineage_Extraction_Skill
+## Using Collection_Lineage_Extraction_Skill
 
 **Generated:** 2025-09-10  
 **Target Collection:** MOD11A2 (MODIS/Terra Land Surface Temperature/Emissivity 8-Day)  
-**Skill Applied:** Generic_Collection_Lineage_Extraction_Skill v1.0
+**Skill Applied:** Collection_Lineage_Extraction_Skill v1.0
 
 ---
 
@@ -453,7 +453,7 @@ MOD02HKM (L1B) → MOD11A1 (L2/L3) → MOD11A2 (L3) → MOD11C1/C2/C3 (L3 global
 
 ## Conclusion
 
-The **Generic_Collection_Lineage_Extraction_Skill** successfully identified and validated the complete data provenance chain for MOD11A2:
+The **Collection_Lineage_Extraction_Skill** successfully identified and validated the complete data provenance chain for MOD11A2:
 
 1. ✓ **Primary parent identified:** MOD11A1 (L3 daily LST)
 2. ✓ **Processing method documented:** 8-day temporal averaging
@@ -466,6 +466,6 @@ This skill can be applied to any CMR collection to automatically extract and doc
 ---
 
 **Report Status:** ✅ FINAL  
-**Skill Version:** Generic_Collection_Lineage_Extraction_Skill v1.0  
+**Skill Version:** Collection_Lineage_Extraction_Skill v1.0  
 **Execution Date:** 2025-09-10  
 **Next Steps:** Apply to other collection families (e.g., SMAP, Sentinel, Landsat)
