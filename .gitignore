@@ -8,9 +8,8 @@ __pycache__/
 .venv/
 venv/
 
-# Notebook run outputs (downloaded docs, cached Claude responses, generated records)
+# Notebook run outputs (downloaded docs, cached Claude responses, generated records), any folder
 lineage_output/
-Notebooks/lineage_output/
 
 # Local tool settings
 .claude/settings.local.json
