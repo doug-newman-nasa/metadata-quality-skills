@@ -15,8 +15,7 @@ lineage_output/
 .claude/settings.local.json
 
 # Broken symlinks to old skill names (targets do not exist)
-.claude/skills/Generic_Collection_Lineage_UMM_C_Export_Skill_Corrected.md
-.claude/skills/Generic_Collection_Lineage_with_ATBD_Skill.md
+.claude/
 
 # Continue extension config
 .continue/
