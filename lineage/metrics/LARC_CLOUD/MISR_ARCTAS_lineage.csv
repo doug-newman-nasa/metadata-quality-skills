@@ -1,4 +1,4 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,Match
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,match
 ATSM2AEF,001,PARENT,MIL2ASAF,002,MEDIUM,derived_from,false
 ATSM2AEF,001,RELATED,ATSM2LSF,001,MEDIUM,parallel_product,false
 ATSM2AEF,001,RELATED,MIL2ASAE,002,MEDIUM,related_to,false

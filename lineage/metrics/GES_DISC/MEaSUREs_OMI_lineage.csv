@@ -1,4 +1,4 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,Match
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,match
 OMIAuraAER,1,PARENT,OML1BRVG,004,MEDIUM,derived_from,false
 OMIAuraAER,1,INPUT,AIRS3STD,006,HIGH,input_to,false
 OMIAuraAER,1,RELATED,OMAERUV,004,MEDIUM,template_of,false

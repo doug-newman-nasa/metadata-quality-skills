@@ -1,4 +1,4 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,Match
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,match
 SENTINEL-1_BURSTS,1,PARENT,SENTINEL-1A_SLC,1,MEDIUM,derived_from,INPUT
 SENTINEL-1_BURSTS,1,PARENT,SENTINEL-1B_SLC,1,MEDIUM,derived_from,INPUT
 SENTINEL-1_BURSTS,1,PARENT,SENTINEL-1C_SLC,1,MEDIUM,derived_from,false

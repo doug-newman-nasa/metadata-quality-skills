@@ -1,4 +1,4 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,Match
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,match
 TOVSAMNA,02,RELATED,TOVSAMNC,02,MEDIUM,equivalent_product,false
 TOVSAMNA,02,RELATED,TOVSAMND,02,MEDIUM,equivalent_product,false
 TOVSAMNA,02,RELATED,TOVSAMNE,02,MEDIUM,equivalent_product,false

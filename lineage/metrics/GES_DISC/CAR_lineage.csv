@@ -1,4 +1,4 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,Match
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,match
 CAR_ARCTAS_BRDF,2,RELATED,ARCTAS_AircraftRemoteSensing_P3B_CAR_Data,1,LOW,related_to,false
 CAR_ARCTAS_BRDF,2,RELATED,CAR_ARCTAS_L1C,1,MEDIUM,parallel_product,false
 CAR_ARMCAS_BRDF,2,RELATED,CAR_ARMCAS_L1C,1,MEDIUM,parallel_product,false

@@ -1,4 +1,4 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,Match
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,match
 DSCOVR_EPIC_L1A_LUNAR,V1,RELATED,DSCOVR_EPIC_L1A,4,MEDIUM,parallel_product,true
 DSCOVR_EPIC_L1A_LUNAR,V1,RELATED,DSCOVR_EPIC_L1A_MISC,V1,MEDIUM,parallel_product,false
 DSCOVR_EPIC_L1A,3,CHILD,DSCOVR_EPIC_L1B,3,HIGH,downstream_product,false

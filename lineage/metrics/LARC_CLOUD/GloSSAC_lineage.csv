@@ -1,4 +1,4 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,Match
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,match
 GloSSAC,1.1,PARENT,SAGE2_AEROSOL_O3_NO2_H2O_BINARY,V7.0,MEDIUM,aggregated_from,false
 GloSSAC,1.1,INPUT,CAL_LID_L1-Standard-V4-51,V4-51,MEDIUM,component_of,false
 GloSSAC,1.1,INPUT,SAGE_I_AEROSOL_O3_NO2_BINARY,V1,MEDIUM,component_of,false

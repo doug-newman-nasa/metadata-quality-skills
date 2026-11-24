@@ -1,4 +1,4 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,Match
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,match
 OPERA_L2_CSLC-S1-STATIC_V1,1,INPUT,NISAR_DEM,1,HIGH,input_to,false
 OPERA_L2_CSLC-S1-STATIC_V1,1,INPUT,SENTINEL-1A_SLC,1,MEDIUM,input_to,true
 OPERA_L2_CSLC-S1-STATIC_V1,1,INPUT,SENTINEL-1B_SLC,1,MEDIUM,input_to,true

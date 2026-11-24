@@ -1,4 +1,4 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,Match
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,match
 TL1BL,5,CHILD,TL2HDOL,006,MEDIUM,downstream_product,false
 TL1BN,6,CHILD,TL2ANC,8,MEDIUM,downstream_product,false
 TL1BN,6,CHILD,TL2ATMTN,8,MEDIUM,downstream_product,false

@@ -1,4 +1,4 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,Match
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,match
 UAVSAR_POLSAR,1,INPUT,JPL_SRTM_V2,2,MEDIUM,input_to,false
 UAVSAR_POLSAR,1,INPUT,SRTMGL1,003,MEDIUM,input_to,false
 UAVSAR_POLSAR,1,INPUT,SRTMGL30,002,MEDIUM,input_to,false

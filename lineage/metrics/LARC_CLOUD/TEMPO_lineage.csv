@@ -1,4 +1,4 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,Match
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,match
 TEMPO_CLDO4_L2_NRT,V02,PARENT,TEMPO_RAD_L1_NRT,V02,HIGH,derived_from,false
 TEMPO_CLDO4_L2_NRT,V02,INPUT,TEMPO_Auxiliary,V01,MEDIUM,input_to,false
 TEMPO_CLDO4_L2_NRT,V02,INPUT,TEMPO_IRR_L1,V04,HIGH,input_to,false

@@ -1,2 +1,2 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,Match
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,match
 SAGE2_AEROSOL_O3_NO2_H2O_BINARY,V7.0,CHILD,GloSSAC,2.24,MEDIUM,downstream_product,false

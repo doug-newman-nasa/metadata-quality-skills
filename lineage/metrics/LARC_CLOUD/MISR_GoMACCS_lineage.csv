@@ -1,4 +1,4 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,Match
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,match
 GOMI2AE,002,PARENT,MIL2ASAE,002,MEDIUM,derived_from,false
 GOMI2AE,002,RELATED,GOMI2LS,002,MEDIUM,parallel_product,false
 GOMI2LS,002,PARENT,MIL2ASLS,002,MEDIUM,derived_from,false

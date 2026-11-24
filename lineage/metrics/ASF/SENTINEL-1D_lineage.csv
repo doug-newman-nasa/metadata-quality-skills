@@ -1,4 +1,4 @@
-shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,Match
+shortname,version,association_type,related_shortname,related_version,confidence,lineage_relationship,match
 SENTINEL-1D_DP_GRD_HIGH,1,PARENT,SENTINEL-1D_RAW,1,MEDIUM,derived_from,false
 SENTINEL-1D_DP_GRD_HIGH,1,CHILD,SENTINEL-1D_DP_META_GRD_HIGH,1,MEDIUM,downstream_product,SCIENCE ASSOCIATED
 SENTINEL-1D_DP_GRD_HIGH,1,RELATED,SENTINEL-1A_DP_GRD_HIGH,1,MEDIUM,equivalent_product,true
